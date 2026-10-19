@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T22:20:39.141Z",
+  "generatedAt": "2026-10-19T23:12:31.076Z",
   "collectUrl": "https://navigate-expo-contractor-starsmerchant.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -4840,7 +4840,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-19T22:20:39.141Z",
+    "fetchedAt": "2026-10-19T23:12:30.922Z",
     "today": "2026-10-20",
     "items": [
       {
@@ -4900,23 +4900,23 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vNUw3RXpPQVFLQzdLN3RsVkR6Tmw4RDEzbzFfbjc3VGc5NmVEWUJkSXlOWUxBOHF6Q1E1dUFKTUI2bVVGNWJ2RjAtT3dEbmtzNHVxNnVpMXA0WFNf?oc=5",
-        "source": "경인뷰",
-        "time": "2026-10-12T00:28:47.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
         "source": "기호일보",
+        "time": "2026-10-11T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄트램, 10월 우선시공분 착공 추진…장기 지연 끝 사업 본궤도 오르나",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fZ1NvTDFZa1hvSzhrcmQ3a2pZLVpnR3FLTVhtRTJTckZ0NXhxYWJSeXRNRGVMWGFKYjMwNnljbkktdDhOaUdaNUw5TnBWanQwNHlodHR5V3lOZ2hyQVFWbUc4ODJ2VVZyXzFXY3pn?oc=5",
+        "source": "아시아투데이",
         "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsGtx": {
-    "fetchedAt": "2026-10-19T22:20:39.131Z",
+    "fetchedAt": "2026-10-19T23:12:31.075Z",
     "today": "2026-10-20",
     "items": [
       {
