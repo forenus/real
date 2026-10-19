@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T15:26:48.329Z",
+  "generatedAt": "2026-10-19T22:20:39.141Z",
   "collectUrl": "https://navigate-expo-contractor-starsmerchant.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -4840,7 +4840,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-19T15:26:48.198Z",
+    "fetchedAt": "2026-10-19T22:20:39.141Z",
     "today": "2026-10-20",
     "items": [
       {
@@ -4900,10 +4900,10 @@
         "isToday": false
       },
       {
-        "title": "화성특례시, 동탄트램 심의 통과로 우선시공분 공사 계약 절차 추진",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPSm1KQmhRVUxobUFCWmRaSFNRMXF3MGhISFZ2QzJLRHZkVHQ1THVycXd3UVQwS1NSZEpsd3BNOENCUUlqSmFZYk1nbXktWVdFVk1qRzd2SEFIQWZkQnUyYW9aYlM?oc=5",
-        "source": "매일일보",
-        "time": "2026-10-11T08:36:49.000Z",
+        "title": "화성 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vNUw3RXpPQVFLQzdLN3RsVkR6Tmw4RDEzbzFfbjc3VGc5NmVEWUJkSXlOWUxBOHF6Q1E1dUFKTUI2bVVGNWJ2RjAtT3dEbmtzNHVxNnVpMXA0WFNf?oc=5",
+        "source": "경인뷰",
+        "time": "2026-10-12T00:28:47.000Z",
         "isToday": false
       },
       {
@@ -4916,7 +4916,7 @@
     ]
   },
   "newsGtx": {
-    "fetchedAt": "2026-10-19T15:26:48.327Z",
+    "fetchedAt": "2026-10-19T22:20:39.131Z",
     "today": "2026-10-20",
     "items": [
       {
