@@ -12,6 +12,10 @@ const ROOT = __dirname;
 const HISTORY_FILE = path.join(ROOT, "history.json");
 const CONFIG_FILE = path.join(ROOT, "config.json");
 const PORT = 5173;
+// GitHub Pages 공개 페이지 — 이 출처에서 오는 수동 수집 요청만 허용한다(CORS).
+const PAGES_ORIGIN = "https://sunguphong.github.io";
+// 외부(공개 페이지·터널)에서 수동 수집할 때 최소 간격 — 네이버 요청 제한 방지
+const REMOTE_COOLDOWN_MS = 10 * 60 * 1000;
 
 // ---------- 저장소 ----------
 function readJson(file, fallback) {
@@ -255,7 +259,16 @@ function toRecord(a) {
 }
 
 // ---------- 매물 수집 → 오늘 스냅샷 저장 (수동/자동 공용) ----------
+// 수집이 겹치면(자동 + 수동, 버튼 연타) 진행 중인 수집 결과를 함께 기다린다.
+let refreshing = null;
+let lastRefreshAt = 0;
 async function doRefresh() {
+  if (refreshing) return refreshing;
+  refreshing = refreshOnce();
+  try { const r = await refreshing; lastRefreshAt = Date.now(); return r; }
+  finally { refreshing = null; }
+}
+async function refreshOnce() {
   const history = loadHistory();
   const cfg = loadConfig();
   const complexNo = history.complexNo || cfg.complexNo;
@@ -409,17 +422,26 @@ function git(args) {
     });
   });
 }
+// 정적 페이지가 쓰는 응답 묶음 — 상태 + 평형별 변동 목록
+function buildStaticData() {
+  const history = loadHistory();
+  const state = buildState();
+  const changes = {};
+  for (const r of state.rows) changes[r.pyeong] = { complexNo: history.complexNo, ...computeChanges(r.pyeong) };
+  return { state, changes };
+}
 let publishing = null;
 async function publishPages() {
   if (publishing) return publishing; // 동시에 두 번 돌지 않게
   publishing = (async () => {
     fs.mkdirSync(DOCS, { recursive: true });
-    const history = loadHistory();
-    const state = buildState();
-    const changes = {};
-    for (const r of state.rows) changes[r.pyeong] = { complexNo: history.complexNo, ...computeChanges(r.pyeong) };
+    const { state, changes } = buildStaticData();
     const [news, newsGtx] = await Promise.all([getNews("tram"), getNews("gtx")]);
-    writeJson(path.join(DOCS, "data.json"), { generatedAt: new Date().toISOString(), state, changes, news, newsGtx });
+    // collectUrl: 공개 페이지의 '수동 수집' 버튼이 요청을 보낼 PC 서버 주소
+    // (config.json 의 publicUrl 우선, 없으면 tunnel.js 가 적어 둔 현재 Cloudflare 터널 주소)
+    let collectUrl = loadConfig().publicUrl || "";
+    if (!collectUrl) try { collectUrl = fs.readFileSync(path.join(ROOT, "tunnel-url.txt"), "utf8").trim(); } catch {}
+    writeJson(path.join(DOCS, "data.json"), { generatedAt: new Date().toISOString(), collectUrl, state, changes, news, newsGtx });
     for (const f of ["app.js", "style.css"]) fs.copyFileSync(path.join(ROOT, f), path.join(DOCS, f));
     const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8")
       .replace(`<script src="app.js"></script>`, `<script>window.STATIC_MODE = true;</script>
@@ -471,11 +493,31 @@ function requireAuth(res) {
   res.end("인증이 필요합니다.");
 }
 
+// PC 에서 직접 연 요청인지 — 터널을 거친 요청은 x-forwarded-for / cf-connecting-ip 가 붙는다
+function isLocal(req) {
+  const ra = req.socket.remoteAddress || "";
+  return /^(::1|127.0.0.1|::ffff:127.0.0.1)$/.test(ra) && !req.headers["x-forwarded-for"] && !req.headers["cf-connecting-ip"];
+}
+
 const server = http.createServer(async (req, res) => {
+  const url = req.url.split("?")[0];
+
+  // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
+  if (url === "/api/refresh" && req.headers.origin === PAGES_ORIGIN) {
+    res.setHeader("Access-Control-Allow-Origin", PAGES_ORIGIN);
+    res.setHeader("Vary", "Origin");
+    if (req.method === "OPTIONS") {
+      res.writeHead(204, {
+        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Headers": "bypass-tunnel-reminder, content-type",
+        "Access-Control-Max-Age": "600",
+      });
+      return res.end();
+    }
+  }
+
   // 모든 요청에 Basic Auth 적용 (config.json 에 auth 설정이 있을 때)
   if (!checkAuth(req)) return requireAuth(res);
-
-  const url = req.url.split("?")[0];
 
   // 현재 상태
   if (url === "/api/state" && req.method === "GET") {
@@ -512,8 +554,7 @@ const server = http.createServer(async (req, res) => {
 
   // GitHub Pages 수동 게시 (로컬에서만)
   if (url === "/api/publish" && req.method === "POST") {
-    const ra = req.socket.remoteAddress || "";
-    if (!/^(::1|127.0.0.1|::ffff:127.0.0.1)$/.test(ra) || req.headers["x-forwarded-for"]) {
+    if (!isLocal(req)) {
       return send(res, 403, { error: "로컬에서만 게시할 수 있습니다." });
     }
     try { return send(res, 200, await publishPages()); }
@@ -521,12 +562,19 @@ const server = http.createServer(async (req, res) => {
   }
 
   // 오늘 매물 갱신 (네이버 수집 → 스냅샷 저장)
+  // ?static=1 : 공개 페이지에서 온 요청 — 화면 갱신용 평형별 변동 목록(changes)도 함께 돌려준다.
   if (url === "/api/refresh" && req.method === "POST") {
+    const wait = lastRefreshAt + REMOTE_COOLDOWN_MS - Date.now();
+    if (!isLocal(req) && !refreshing && wait > 0) {
+      return send(res, 429, { error: `방금 수집했습니다. ${Math.ceil(wait / 60000)}분 후에 다시 시도해 주세요.` });
+    }
+    const full = new URLSearchParams(req.url.split("?")[1] || "").get("static") === "1";
+    const result = () => (full ? (({ state, changes }) => ({ ...state, changes }))(buildStaticData()) : buildState());
     try {
       const r = await doRefresh();
-      if (!r.warning) publishSafe("수동 갱신"); // 응답을 기다리게 하지 않는다
-      if (r.warning) return send(res, 200, { warning: r.warning, ...buildState() });
-      return send(res, 200, { ok: true, fetched: r.fetched, ...buildState() });
+      if (!r.warning) publishSafe(isLocal(req) ? "수동 갱신" : "원격 수동 갱신"); // 응답을 기다리게 하지 않는다
+      if (r.warning) return send(res, 200, { warning: r.warning, ...result() });
+      return send(res, 200, { ok: true, fetched: r.fetched, ...result() });
     } catch (e) {
       return send(res, 502, { error: "네이버에서 매물을 가져오지 못했습니다: " + e.message });
     }

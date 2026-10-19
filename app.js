@@ -654,27 +654,59 @@ $("save-config").addEventListener("click", async () => {
   setStatus("단지 정보를 저장했습니다.", "ok");
 });
 
+// 정적 페이지의 수동 수집 — 터널(collectUrl)을 거쳐 PC 서버에 수집을 요청한다.
+// 응답의 state·changes 로 화면을 바로 갱신하고, 공개 페이지 자체는 서버가 다시 게시한다.
+async function remoteRefresh() {
+  const base = (staticData && staticData.collectUrl) || "";
+  if (!base) throw new Error("수집 서버 주소가 설정되지 않았습니다.");
+  let res;
+  try {
+    res = await fetch(base.replace(/\/$/, "") + "/api/refresh?static=1", {
+      method: "POST",
+      headers: { "bypass-tunnel-reminder": "1" }, // localtunnel 안내 페이지 건너뛰기
+    });
+  } catch {
+    throw new Error("PC 서버에 연결하지 못했습니다. PC에서 서버(server.js)와 터널(tunnel.js)이 켜져 있는지 확인해 주세요.");
+  }
+  let r;
+  try { r = await res.json(); }
+  catch { throw new Error(`PC 서버 응답 오류 (HTTP ${res.status}). 서버·터널 상태를 확인해 주세요.`); }
+  if (!r.error) {
+    const { changes, ...state } = r;
+    staticData.state = state;
+    if (changes) staticData.changes = changes;
+    staticData.generatedAt = new Date().toISOString();
+  }
+  return r;
+}
+
 $("refresh").addEventListener("click", async () => {
   const btn = $("refresh");
+  const label = btn.textContent;
   btn.disabled = true; btn.textContent = "수집 중…";
-  setStatus("네이버에서 매매 매물을 가져오는 중입니다…", "info");
+  setStatus("네이버에서 매매 매물을 가져오는 중입니다… (10~20초)", "info");
   try {
-    const r = await api("/api/refresh", { method: "POST" });
+    const r = STATIC ? await remoteRefresh() : await api("/api/refresh", { method: "POST" });
     if (r.error) { setStatus(r.error, "error"); }
     else if (r.warning) { setStatus(r.warning, "error"); render(r); }
-    else { setStatus(`갱신 완료 — 매매 매물 ${r.fetched}건 수집됨.`, "ok"); render(r); }
+    else {
+      const note = STATIC ? " 공개 페이지에는 1~2분 뒤 반영됩니다." : "";
+      setStatus(`갱신 완료 — 매매 매물 ${r.fetched}건 수집됨.${note}`, "ok");
+      render(r);
+    }
   } catch (e) {
-    setStatus("요청 실패: " + e.message, "error");
+    setStatus(STATIC ? e.message : "요청 실패: " + e.message, "error");
   } finally {
-    btn.disabled = false; btn.textContent = "📥 오늘 매물 갱신";
+    btn.disabled = false; btn.textContent = label;
   }
 });
 
 if (STATIC) {
-  // 설정·수집은 PC 서버에서만 — 정적 페이지에서는 숨긴다
+  // 단지 설정은 PC 서버에서만 — 정적 페이지에서는 숨긴다. 수집 버튼은 터널로 PC 서버에 요청한다.
   document.querySelector(".setup").style.display = "none";
-  $("refresh").style.display = "none";
+  $("refresh").textContent = "📥 지금 수동 수집";
   load().then(() => {
+    if (!staticData || !staticData.collectUrl) $("refresh").style.display = "none";
     const t = staticData && staticData.generatedAt ? new Date(staticData.generatedAt).toLocaleString("ko-KR") : "";
     $("subtitle").textContent = `매매 매물만 집계합니다. 매일 자동 갱신 · 마지막 갱신 ${t}`;
   });

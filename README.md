@@ -64,6 +64,17 @@ node server.js
 > 자동 실행된 서버는 매일 오전 9시 이후 매물을 자동 기록합니다.
 > 브라우저에서 http://localhost:5173 로 언제든 확인하세요.
 
+
+## 공개 페이지에서 수동 수집
+
+GitHub Pages 공개 페이지의 **"📥 지금 수동 수집"** 버튼은 Cloudflare 터널을 거쳐
+이 PC 서버에 수집을 요청합니다(PC 서버와 `tunnel.js`가 켜져 있어야 함).
+
+- `tunnel.js` 는 `cloudflared`(winget `Cloudflare.cloudflared`)로 계정 없는 Quick Tunnel을 엽니다.
+  주소가 실행할 때마다 바뀌므로 새 주소를 `tunnel-url.txt` 에 적고 공개 페이지를 자동 재게시합니다.
+- 외부 요청은 **10분에 1회**로 제한됩니다(네이버 요청 제한 방지).
+- 고정 주소를 쓰려면 `config.json` 에 `"publicUrl": "https://..."` 를 넣으세요.
+
 ## 구성 파일
 
 - `server.js` : 웹 서버 + 스냅샷 저장/비교

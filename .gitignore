@@ -3,3 +3,4 @@ history.json
 viewer/history.json
 *.bak
 *.log
+tunnel-url.txt
