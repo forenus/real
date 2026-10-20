@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T01:50:54.789Z",
+  "generatedAt": "2026-10-20T03:36:19.199Z",
   "collectUrl": "https://navigate-expo-contractor-starsmerchant.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -152,9 +152,9 @@
         "pyeong": 33,
         "label": "전용 84㎡",
         "prev": 78,
-        "today": 78,
-        "diff": 0,
-        "avgPrice": "10억 300",
+        "today": 77,
+        "diff": -1,
+        "avgPrice": "10억 200",
         "realPrice": "",
         "realCount": 0,
         "realDays": 10,
@@ -555,7 +555,7 @@
             73,
             76,
             78,
-            78
+            77
           ]
         }
       ],
@@ -680,7 +680,7 @@
         80,
         83,
         86,
-        86
+        85
       ]
     },
     "realChart": {
@@ -2225,7 +2225,7 @@
       },
       {
         "date": "2026-10-20",
-        "total": 86
+        "total": 85
       }
     ]
   },
@@ -2524,8 +2524,56 @@
       "prevDate": "2026-10-19",
       "pyeong": 33,
       "added": [],
-      "sold": [],
+      "sold": [
+        {
+          "no": "2651403302",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억 7,000",
+          "floor": "중/20",
+          "dir": "남서향",
+          "confirm": "20260923",
+          "desc": "전면동, 탁트인 시원한 뷰, 주차편리, 전자계약",
+          "bldg": "477동",
+          "realtor": "예스포레너스공인중개사사무소",
+          "firstSeen": "2026-09-24",
+          "days": 25,
+          "beforeStart": false
+        }
+      ],
       "relisted": [
+        {
+          "before": {
+            "no": "2656091124",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "중/20",
+            "dir": "남서향",
+            "confirm": "20261017",
+            "desc": "입주가, 전면 탁트인 뷰,시스템에어컨4대, 중문, ㄷ자주방,깨끗,일조권굿",
+            "bldg": "476동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-19",
+            "days": 0,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656597873",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "중/20",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "입주가, 전면 탁트인 뷰,시스템에어컨4대, 중문, ㄷ자주방,깨끗,일조권굿",
+            "bldg": "476동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-19",
+            "days": 1,
+            "beforeStart": false
+          }
+        },
         {
           "before": {
             "no": "2656371732",
@@ -2575,18 +2623,82 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2656533683",
+            "no": "2656598540",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 7,000",
             "floor": "중/15",
             "dir": "남서향",
             "confirm": "20261020",
-            "desc": "입주가능,햇살좋은 치동천 최고뷰,주인거주",
+            "desc": "추천매물. 전면동, 탁트인 치동천 뷰, 입주가. 로얄동호수, 일조권굿",
             "bldg": "488동",
-            "realtor": "탑포레너스공인중개사사무소",
+            "realtor": "예스포레너스공인중개사사무소",
             "firstSeen": "2026-10-11",
             "days": 9,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2656033864",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "5/25",
+            "dir": "남서향",
+            "confirm": "20261017",
+            "desc": "추천, 입주가, 사이드 트인뷰, 일조권 굿, 주차편리, 선호하는 로얄동",
+            "bldg": "474동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-08",
+            "days": 11,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656598328",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "5/25",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "추천, 입주가, 사이드 트인뷰, 일조권 굿, 주차편리, 선호하는 로얄동",
+            "bldg": "474동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-08",
+            "days": 12,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2656372080",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 4,000",
+            "floor": "6/15",
+            "dir": "남동향",
+            "confirm": "20261019",
+            "desc": "생활편리,탁트인거실뷰",
+            "bldg": "486동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-23",
+            "days": 26,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656594134",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 4,000",
+            "floor": "6/15",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "A타입,대단지,트여있는단지조망,27.5월입주가능",
+            "bldg": "486동",
+            "realtor": "동탄이지공인중개사사무소",
+            "firstSeen": "2026-09-23",
+            "days": 27,
             "beforeStart": false
           }
         },
@@ -2607,18 +2719,50 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2656531256",
+            "no": "2656598106",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 6,000",
             "floor": "13/15",
             "dir": "남서향",
             "confirm": "20261020",
-            "desc": "햇살좋고 생활편리,시에4대,중문,올인테리어됨,공실,입주",
+            "desc": "공실, 늦은잔금가능, 최신 시에4대, 강마루, 중문 등 깔끔한 인테리어",
             "bldg": "482동",
-            "realtor": "탑포레너스공인중개사사무소",
+            "realtor": "예스포레너스공인중개사사무소",
             "firstSeen": "2026-09-10",
             "days": 40,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2656371141",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "2/15",
+            "dir": "남동향",
+            "confirm": "20261019",
+            "desc": "84A,입주,시에5대,중문,화장실2곳 수리,정원뷰,주인거주 집상태최상",
+            "bldg": "482동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-08",
+            "days": 41,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656558582",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "2/15",
+            "dir": "남동향",
+            "confirm": "20261020",
+            "desc": "씨템5대 목욕탕2곳 타일교체 후황교체 인덕션 식기세척기 주인거주 ",
+            "bldg": "482동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-09-08",
+            "days": 42,
             "beforeStart": false
           }
         },
@@ -2689,6 +2833,21 @@
       ],
       "current": [
         {
+          "no": "2656597873",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "중/20",
+          "dir": "남서향",
+          "confirm": "20261020",
+          "desc": "입주가, 전면 탁트인 뷰,시스템에어컨4대, 중문, ㄷ자주방,깨끗,일조권굿",
+          "bldg": "476동",
+          "realtor": "예스포레너스공인중개사사무소",
+          "firstSeen": "2026-10-19",
+          "days": 1,
+          "beforeStart": false
+        },
+        {
           "no": "2656451782",
           "pyeong": 33,
           "excl": 84,
@@ -2714,21 +2873,6 @@
           "desc": "입주가능.2년전풀에어컨설치.동간넓고일조량우수.날짜협의가능",
           "bldg": "475동",
           "realtor": "동탄퀸포레너스공인중개사사무소",
-          "firstSeen": "2026-10-19",
-          "days": 1,
-          "beforeStart": false
-        },
-        {
-          "no": "2656091124",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "중/20",
-          "dir": "남서향",
-          "confirm": "20261017",
-          "desc": "입주가, 전면 탁트인 뷰,시스템에어컨4대, 중문, ㄷ자주방,깨끗,일조권굿",
-          "bldg": "476동",
-          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-10-19",
           "days": 1,
           "beforeStart": false
@@ -2809,18 +2953,33 @@
           "beforeStart": false
         },
         {
-          "no": "2656533683",
+          "no": "2656598540",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 7,000",
           "floor": "중/15",
           "dir": "남서향",
           "confirm": "20261020",
-          "desc": "입주가능,햇살좋은 치동천 최고뷰,주인거주",
+          "desc": "추천매물. 전면동, 탁트인 치동천 뷰, 입주가. 로얄동호수, 일조권굿",
           "bldg": "488동",
-          "realtor": "탑포레너스공인중개사사무소",
+          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-10-11",
           "days": 9,
+          "beforeStart": false
+        },
+        {
+          "no": "2656598328",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 7,000",
+          "floor": "5/25",
+          "dir": "남서향",
+          "confirm": "20261020",
+          "desc": "추천, 입주가, 사이드 트인뷰, 일조권 굿, 주차편리, 선호하는 로얄동",
+          "bldg": "474동",
+          "realtor": "예스포레너스공인중개사사무소",
+          "firstSeen": "2026-10-08",
+          "days": 12,
           "beforeStart": false
         },
         {
@@ -2834,21 +2993,6 @@
           "desc": "중문 단지조망 예쁨  전자계약가능",
           "bldg": "482동",
           "realtor": "포레너스유성공인중개사사무소",
-          "firstSeen": "2026-10-08",
-          "days": 12,
-          "beforeStart": false
-        },
-        {
-          "no": "2656033864",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 7,000",
-          "floor": "5/25",
-          "dir": "남서향",
-          "confirm": "20261017",
-          "desc": "추천, 입주가, 사이드 트인뷰, 일조권 굿, 주차편리, 선호하는 로얄동",
-          "bldg": "474동",
-          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-10-08",
           "days": 12,
           "beforeStart": false
@@ -3034,31 +3178,16 @@
           "beforeStart": false
         },
         {
-          "no": "2651403302",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억 7,000",
-          "floor": "중/20",
-          "dir": "남서향",
-          "confirm": "20260923",
-          "desc": "전면동, 탁트인 시원한 뷰, 주차편리, 전자계약",
-          "bldg": "477동",
-          "realtor": "예스포레너스공인중개사사무소",
-          "firstSeen": "2026-09-24",
-          "days": 26,
-          "beforeStart": false
-        },
-        {
-          "no": "2656372080",
+          "no": "2656594134",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 4,000",
           "floor": "6/15",
-          "dir": "남동향",
-          "confirm": "20261019",
-          "desc": "생활편리,탁트인거실뷰",
+          "dir": "남서향",
+          "confirm": "20261020",
+          "desc": "A타입,대단지,트여있는단지조망,27.5월입주가능",
           "bldg": "486동",
-          "realtor": "탑포레너스공인중개사사무소",
+          "realtor": "동탄이지공인중개사사무소",
           "firstSeen": "2026-09-23",
           "days": 27,
           "beforeStart": false
@@ -3184,31 +3313,31 @@
           "beforeStart": false
         },
         {
-          "no": "2656531256",
+          "no": "2656598106",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 6,000",
           "floor": "13/15",
           "dir": "남서향",
           "confirm": "20261020",
-          "desc": "햇살좋고 생활편리,시에4대,중문,올인테리어됨,공실,입주",
+          "desc": "공실, 늦은잔금가능, 최신 시에4대, 강마루, 중문 등 깔끔한 인테리어",
           "bldg": "482동",
-          "realtor": "탑포레너스공인중개사사무소",
+          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-09-10",
           "days": 40,
           "beforeStart": false
         },
         {
-          "no": "2656371141",
+          "no": "2656558582",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 3,000",
           "floor": "2/15",
           "dir": "남동향",
-          "confirm": "20261019",
-          "desc": "84A,입주,시에5대,중문,화장실2곳 수리,정원뷰,주인거주 집상태최상",
+          "confirm": "20261020",
+          "desc": "씨템5대 목욕탕2곳 타일교체 후황교체 인덕션 식기세척기 주인거주 ",
           "bldg": "482동",
-          "realtor": "탑포레너스공인중개사사무소",
+          "realtor": "포레너스유성공인중개사사무소",
           "firstSeen": "2026-09-08",
           "days": 42,
           "beforeStart": false
@@ -5034,7 +5163,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-20T01:50:54.299Z",
+    "fetchedAt": "2026-10-20T03:36:18.926Z",
     "today": "2026-10-20",
     "items": [
       {
@@ -5110,7 +5239,7 @@
     ]
   },
   "newsGtx": {
-    "fetchedAt": "2026-10-20T01:50:54.779Z",
+    "fetchedAt": "2026-10-20T03:36:19.198Z",
     "today": "2026-10-20",
     "items": [
       {
