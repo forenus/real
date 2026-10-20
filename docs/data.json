@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T23:12:31.076Z",
+  "generatedAt": "2026-10-20T01:50:54.789Z",
   "collectUrl": "https://navigate-expo-contractor-starsmerchant.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -2238,7 +2238,40 @@
       "pyeong": 25,
       "added": [],
       "sold": [],
-      "relisted": [],
+      "relisted": [
+        {
+          "before": {
+            "no": "2655089887",
+            "pyeong": 25,
+            "excl": 60,
+            "price": "8억",
+            "floor": "저/15",
+            "dir": "남서향",
+            "confirm": "20261013",
+            "desc": "추천,개방감 좋은거실 정원뷰, 입주가능해요",
+            "bldg": "479동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-20",
+            "days": 29,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656530263",
+            "pyeong": 25,
+            "excl": 60,
+            "price": "8억",
+            "floor": "저/15",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "추천,개방감 좋은거실 정원뷰, 입주가능해요",
+            "bldg": "479동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-20",
+            "days": 30,
+            "beforeStart": false
+          }
+        }
+      ],
       "current": [
         {
           "no": "2655870574",
@@ -2301,13 +2334,13 @@
           "beforeStart": false
         },
         {
-          "no": "2655089887",
+          "no": "2656530263",
           "pyeong": 25,
           "excl": 60,
           "price": "8억",
           "floor": "저/15",
           "dir": "남서향",
-          "confirm": "20261013",
+          "confirm": "20261020",
           "desc": "추천,개방감 좋은거실 정원뷰, 입주가능해요",
           "bldg": "479동",
           "realtor": "탑포레너스공인중개사사무소",
@@ -2492,7 +2525,168 @@
       "pyeong": 33,
       "added": [],
       "sold": [],
-      "relisted": [],
+      "relisted": [
+        {
+          "before": {
+            "no": "2656371732",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261019",
+            "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
+            "bldg": "485동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 4,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656532055",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
+            "bldg": "485동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 5,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2656032918",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "중/15",
+            "dir": "남서향",
+            "confirm": "20261017",
+            "desc": "추천매물. 전면동, 탁트인 치동천 뷰, 입주가. 로얄동호수, 일조권굿",
+            "bldg": "488동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-11",
+            "days": 8,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656533683",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "중/15",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "입주가능,햇살좋은 치동천 최고뷰,주인거주",
+            "bldg": "488동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-11",
+            "days": 9,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2656470505",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261019",
+            "desc": "공실 최신형시스템에어컨4대 햇살가득한 올수리된 집 늦은잔금",
+            "bldg": "482동",
+            "realtor": "반도2차동탄골드공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 39,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656531256",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "햇살좋고 생활편리,시에4대,중문,올인테리어됨,공실,입주",
+            "bldg": "482동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 40,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2656198908",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "8억 9,000",
+            "floor": "4/25",
+            "dir": "남서향",
+            "confirm": "20261019",
+            "desc": "전자계약가능 84A 남서향 7층높이 , 전세39,900 계약갱신행사완료",
+            "bldg": "471동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-07-14",
+            "days": 97,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656525360",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "8억 9,000",
+            "floor": "4/25",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "84A,전세승계,28년1월중순만기,전자계약",
+            "bldg": "471동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-07-14",
+            "days": 98,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2656200966",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "25/25",
+            "dir": "남동향",
+            "confirm": "20261019",
+            "desc": "전자계약가능 탑층 입주가능 84A 남동향 , 산조망최고 ",
+            "bldg": "471동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 127,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2656526092",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "25/25",
+            "dir": "남동향",
+            "confirm": "20261020",
+            "desc": "탑층추천84A,숲세권 무봉산 최고뷰,입주협의",
+            "bldg": "471동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 128,
+            "beforeStart": true
+          }
+        }
+      ],
       "current": [
         {
           "no": "2656451782",
@@ -2540,13 +2734,13 @@
           "beforeStart": false
         },
         {
-          "no": "2656371732",
+          "no": "2656532055",
           "pyeong": 33,
           "excl": 84,
           "price": "10억",
           "floor": "12/15",
           "dir": "남서향",
-          "confirm": "20261019",
+          "confirm": "20261020",
           "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
           "bldg": "485동",
           "realtor": "탑포레너스공인중개사사무소",
@@ -2615,16 +2809,16 @@
           "beforeStart": false
         },
         {
-          "no": "2656032918",
+          "no": "2656533683",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 7,000",
           "floor": "중/15",
           "dir": "남서향",
-          "confirm": "20261017",
-          "desc": "추천매물. 전면동, 탁트인 치동천 뷰, 입주가. 로얄동호수, 일조권굿",
+          "confirm": "20261020",
+          "desc": "입주가능,햇살좋은 치동천 최고뷰,주인거주",
           "bldg": "488동",
-          "realtor": "예스포레너스공인중개사사무소",
+          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-10-11",
           "days": 9,
           "beforeStart": false
@@ -2990,16 +3184,16 @@
           "beforeStart": false
         },
         {
-          "no": "2656470505",
+          "no": "2656531256",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 6,000",
           "floor": "13/15",
           "dir": "남서향",
-          "confirm": "20261019",
-          "desc": "공실 최신형시스템에어컨4대 햇살가득한 올수리된 집 늦은잔금",
+          "confirm": "20261020",
+          "desc": "햇살좋고 생활편리,시에4대,중문,올인테리어됨,공실,입주",
           "bldg": "482동",
-          "realtor": "반도2차동탄골드공인중개사사무소",
+          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-09-10",
           "days": 40,
           "beforeStart": false
@@ -3260,16 +3454,16 @@
           "beforeStart": false
         },
         {
-          "no": "2656198908",
+          "no": "2656525360",
           "pyeong": 33,
           "excl": 84,
           "price": "8억 9,000",
           "floor": "4/25",
           "dir": "남서향",
-          "confirm": "20261019",
-          "desc": "전자계약가능 84A 남서향 7층높이 , 전세39,900 계약갱신행사완료",
+          "confirm": "20261020",
+          "desc": "84A,전세승계,28년1월중순만기,전자계약",
           "bldg": "471동",
-          "realtor": "포레탑공인중개사사무소",
+          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-07-14",
           "days": 98,
           "beforeStart": false
@@ -3425,6 +3619,21 @@
           "beforeStart": false
         },
         {
+          "no": "2656526092",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 5,000",
+          "floor": "25/25",
+          "dir": "남동향",
+          "confirm": "20261020",
+          "desc": "탑층추천84A,숲세권 무봉산 최고뷰,입주협의",
+          "bldg": "471동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 128,
+          "beforeStart": true
+        },
+        {
           "no": "2656248373",
           "pyeong": 33,
           "excl": 84,
@@ -3435,21 +3644,6 @@
           "desc": "지대높은1층,전세안고가능,갭3.5억",
           "bldg": "483동",
           "realtor": "동탄퀸포레너스공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 128,
-          "beforeStart": true
-        },
-        {
-          "no": "2656200966",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 5,000",
-          "floor": "25/25",
-          "dir": "남동향",
-          "confirm": "20261019",
-          "desc": "전자계약가능 탑층 입주가능 84A 남동향 , 산조망최고 ",
-          "bldg": "471동",
-          "realtor": "포레탑공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 128,
           "beforeStart": true
@@ -4840,7 +5034,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-19T23:12:30.922Z",
+    "fetchedAt": "2026-10-20T01:50:54.299Z",
     "today": "2026-10-20",
     "items": [
       {
@@ -4916,7 +5110,7 @@
     ]
   },
   "newsGtx": {
-    "fetchedAt": "2026-10-19T23:12:31.075Z",
+    "fetchedAt": "2026-10-20T01:50:54.779Z",
     "today": "2026-10-20",
     "items": [
       {
