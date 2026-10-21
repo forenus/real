@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T15:26:59.045Z",
+  "generatedAt": "2026-10-21T01:49:31.941Z",
   "collectUrl": "https://navigate-expo-contractor-starsmerchant.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -8,6 +8,18 @@
       "date": "2026-10-21",
       "today": "2026-10-21",
       "list": [
+        {
+          "date": "2026-10-19",
+          "pyeong": 33,
+          "excl": 85,
+          "floor": "12",
+          "price": 90500,
+          "canceled": false,
+          "label": "전용 84㎡",
+          "priceText": "9억 500",
+          "isToday": false,
+          "isNew": true
+        },
         {
           "date": "2026-10-05",
           "pyeong": 33,
@@ -155,12 +167,12 @@
         "today": 79,
         "diff": 2,
         "avgPrice": "10억 500",
-        "realPrice": "",
-        "realCount": 0,
+        "realPrice": "9억 500",
+        "realCount": 1,
         "realDays": 10,
-        "maxPrice": "9억",
-        "maxYm": "2026.09",
-        "minPrice": "6억 4,000",
+        "maxPrice": "9억 500",
+        "maxYm": "2026.10",
+        "minPrice": "6억 7,500",
         "minYm": "2026.06"
       }
     ],
@@ -1158,7 +1170,7 @@
             88000,
             null,
             null,
-            null
+            90500
           ],
           "counts": [
             21,
@@ -1274,7 +1286,7 @@
             1,
             0,
             0,
-            0
+            1
           ]
         },
         {
@@ -2543,6 +2555,38 @@
       "relisted": [
         {
           "before": {
+            "no": "2656081970",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "10/15",
+            "dir": "남동향",
+            "confirm": "20261017",
+            "desc": "중문 단지조망 예쁨  전자계약가능",
+            "bldg": "482동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-10-08",
+            "days": 12,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656765114",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "10/15",
+            "dir": "남동향",
+            "confirm": "20261021",
+            "desc": "중문 단지조망 예쁨  전자계약가능",
+            "bldg": "482동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-10-08",
+            "days": 13,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2656359778",
             "pyeong": 33,
             "excl": 84,
@@ -2570,6 +2614,38 @@
             "realtor": "동탄이지탑공인중개사사무소",
             "firstSeen": "2026-09-30",
             "days": 21,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2656598106",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261020",
+            "desc": "공실, 늦은잔금가능, 최신 시에4대, 강마루, 중문 등 깔끔한 인테리어",
+            "bldg": "482동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 40,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2656734293",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261021",
+            "desc": "전자계약가능 84B 남서향 시시템에어컨 4대 강마루 중문 등 인테리어",
+            "bldg": "482동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 41,
             "beforeStart": false
           }
         },
@@ -2869,6 +2945,21 @@
           "beforeStart": false
         },
         {
+          "no": "2656765114",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 5,000",
+          "floor": "10/15",
+          "dir": "남동향",
+          "confirm": "20261021",
+          "desc": "중문 단지조망 예쁨  전자계약가능",
+          "bldg": "482동",
+          "realtor": "포레너스유성공인중개사사무소",
+          "firstSeen": "2026-10-08",
+          "days": 13,
+          "beforeStart": false
+        },
+        {
           "no": "2656598328",
           "pyeong": 33,
           "excl": 84,
@@ -2879,21 +2970,6 @@
           "desc": "추천, 입주가, 사이드 트인뷰, 일조권 굿, 주차편리, 선호하는 로얄동",
           "bldg": "474동",
           "realtor": "예스포레너스공인중개사사무소",
-          "firstSeen": "2026-10-08",
-          "days": 13,
-          "beforeStart": false
-        },
-        {
-          "no": "2656081970",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 5,000",
-          "floor": "10/15",
-          "dir": "남동향",
-          "confirm": "20261017",
-          "desc": "중문 단지조망 예쁨  전자계약가능",
-          "bldg": "482동",
-          "realtor": "포레너스유성공인중개사사무소",
           "firstSeen": "2026-10-08",
           "days": 13,
           "beforeStart": false
@@ -3214,16 +3290,16 @@
           "beforeStart": false
         },
         {
-          "no": "2656598106",
+          "no": "2656734293",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 6,000",
           "floor": "13/15",
           "dir": "남서향",
-          "confirm": "20261020",
-          "desc": "공실, 늦은잔금가능, 최신 시에4대, 강마루, 중문 등 깔끔한 인테리어",
+          "confirm": "20261021",
+          "desc": "전자계약가능 84B 남서향 시시템에어컨 4대 강마루 중문 등 인테리어",
           "bldg": "482동",
-          "realtor": "예스포레너스공인중개사사무소",
+          "realtor": "포레탑공인중개사사무소",
           "firstSeen": "2026-09-10",
           "days": 41,
           "beforeStart": false
@@ -5049,7 +5125,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-20T15:26:59.007Z",
+    "fetchedAt": "2026-10-21T01:49:31.939Z",
     "today": "2026-10-21",
     "items": [
       {
@@ -5081,6 +5157,13 @@
         "isToday": false
       },
       {
+        "title": "17년 기다린 동탄 트램, 이달 착공 추진… 남동탄 아파트도 신고가 - 조선비즈",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNU5XdmJzS1Q5dEVlbHJ3Z2RLOVhDZHpTTnV4SGhfelRudExjRWFic21ocVlBVERvSlJJT0hPQ2dRSkZOMmNfQTlYbl80bkx0QXF5RFRrVHQ3Rm51VmpnMnFvNDVmTjJ4OVE0NWFrU29WUEwtNndnbnk1SDVLcDN5SXdQSHF0c2VNLWNKUExoX282Z2hHYnFwRdIBrAFBVV95cUxQLUtxOVBoM0hhcloxQk1pVWhaRXpRajF6Y2pTNUJ4di1SX0FWdTVOLVFwbVNfZWY4RW9qdFAyYmY0TWNobXhkSlNBN21HV05HMC1Dbkl0WUVlaENqUy1fMVN5cnlaTmJrLXFyUVc1bE80QTVDUmo3ZThQanp5VmNpR0dMUkRubXpiUTNPaDhkc2NFNHZJeEFFWE43cmdRdXZvQzV5Um5vcjVsbnhv?oc=5",
+        "source": "Chosunbiz",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
         "source": "한국일보",
@@ -5088,10 +5171,10 @@
         "isToday": false
       },
       {
-        "title": "17년 기다린 동탄 트램, 이달 착공 추진… 남동탄 아파트도 신고가 - 조선비즈",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNU5XdmJzS1Q5dEVlbHJ3Z2RLOVhDZHpTTnV4SGhfelRudExjRWFic21ocVlBVERvSlJJT0hPQ2dRSkZOMmNfQTlYbl80bkx0QXF5RFRrVHQ3Rm51VmpnMnFvNDVmTjJ4OVE0NWFrU29WUEwtNndnbnk1SDVLcDN5SXdQSHF0c2VNLWNKUExoX282Z2hHYnFwRdIBrAFBVV95cUxQLUtxOVBoM0hhcloxQk1pVWhaRXpRajF6Y2pTNUJ4di1SX0FWdTVOLVFwbVNfZWY4RW9qdFAyYmY0TWNobXhkSlNBN21HV05HMC1Dbkl0WUVlaENqUy1fMVN5cnlaTmJrLXFyUVc1bE80QTVDUmo3ZThQanp5VmNpR0dMUkRubXpiUTNPaDhkc2NFNHZJeEFFWE43cmdRdXZvQzV5Um5vcjVsbnhv?oc=5",
-        "source": "Chosunbiz",
-        "time": "2026-10-12T06:13:00.000Z",
+        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
+        "source": "경인일보",
+        "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
       {
@@ -5109,13 +5192,6 @@
         "isToday": false
       },
       {
-        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
-        "source": "경인일보",
-        "time": "2026-10-12T01:19:21.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
         "source": "기호일보",
@@ -5125,7 +5201,7 @@
     ]
   },
   "newsGtx": {
-    "fetchedAt": "2026-10-20T15:26:59.042Z",
+    "fetchedAt": "2026-10-21T01:49:31.917Z",
     "today": "2026-10-21",
     "items": [
       {
