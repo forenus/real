@@ -48,6 +48,32 @@ function requestPublish(tries = 0) {
   req.end();
 }
 
+// 주소로 요청해 HTTP 상태코드를 받는다(연결 실패는 0)
+function probe(url) {
+  return new Promise((resolve) => {
+    const mod = url.startsWith("https") ? require("https") : http;
+    const req = mod.get(url, { timeout: 20000 }, (res) => { res.resume(); resolve(res.statusCode); });
+    req.on("timeout", () => req.destroy());
+    req.on("error", () => resolve(0));
+  });
+}
+
+// 터널 상태 점검 — 로컬 서버는 살아 있는데 터널 주소로 3번 연속 닿지 않으면
+// cloudflared 를 재시작해 새 주소를 받는다(Quick Tunnel 은 소리 없이 끊기기도 한다).
+const CHECK_MS = 5 * 60 * 1000;
+let current = null; // { cp, url, fails }
+setInterval(async () => {
+  const c = current;
+  if (!c || !c.url) return;
+  const local = await probe(`http://127.0.0.1:${PORT}/`);
+  if (!local) return; // 서버가 꺼진 동안은 터널 탓이 아님
+  const remote = await probe(c.url + "/");
+  if (remote && remote < 500) { c.fails = 0; return; }
+  c.fails++;
+  log(`터널 점검 실패 ${c.fails}/3 (HTTP ${remote || "연결 실패"})`);
+  if (c.fails >= 3 && current === c) { log("터널 재시작"); c.cp.kill(); }
+}, CHECK_MS);
+
 let retry = 0;
 function scheduleRestart() {
   const delay = Math.min(30000, 2000 * Math.pow(2, retry++)); // 2s→4s→…최대 30s
@@ -59,12 +85,14 @@ function start() {
   log(`cloudflared 실행 (port=${PORT})`);
   const cp = spawn(CLOUDFLARED, ["tunnel", "--no-autoupdate", "--url", `http://localhost:${PORT}`], { windowsHide: true });
   let found = false;
+  current = { cp, url: null, fails: 0 };
   const onData = (chunk) => {
     if (found) return;
     const m = String(chunk).match(/https:\/\/[a-z0-9-]+\.trycloudflare\.com/);
     if (!m) return;
     found = true;
     retry = 0;
+    current.url = m[0];
     log(`터널 연결됨 → ${m[0]}`);
     fs.writeFileSync(URL_FILE, m[0], "utf8");
     requestPublish();

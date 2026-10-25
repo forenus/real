@@ -264,9 +264,24 @@ let refreshing = null;
 let lastRefreshAt = 0;
 async function doRefresh() {
   if (refreshing) return refreshing;
-  refreshing = refreshOnce();
+  refreshing = refreshOnce().catch(async (e) => {
+    // Playwright 브라우저가 지워진 경우(PC 정리 등) — 다시 설치하고 한 번 더 시도
+    if (!/Executable doesn't exist/.test(e.message)) throw e;
+    console.log("  [수집] Playwright 브라우저가 없어 다시 설치합니다…");
+    await installBrowser();
+    return refreshOnce();
+  });
   try { const r = await refreshing; lastRefreshAt = Date.now(); return r; }
   finally { refreshing = null; }
+}
+function installBrowser() {
+  const cli = path.join(ROOT, "node_modules", "playwright", "cli.js");
+  return new Promise((resolve, reject) => {
+    execFile(process.execPath, [cli, "install", "chromium"], { cwd: ROOT, timeout: 10 * 60 * 1000 }, (err, _o, stderr) => {
+      if (err) { err.message = "브라우저 재설치 실패: " + err.message + " " + String(stderr || "").trim(); return reject(err); }
+      resolve();
+    });
+  });
 }
 async function refreshOnce() {
   const history = loadHistory();
@@ -601,9 +616,15 @@ async function maybeAutoRefresh() {
     console.log(`  [자동] ${t} 갱신 실패: ${e.message}`);
   }
 }
+// 예기치 못한 오류로 서버가 죽지 않게 — 기록만 남긴다(꺼지면 감시 작업이 다시 띄운다)
+process.on("uncaughtException", (e) => { console.log("  [오류] uncaughtException:", e && e.stack || e); });
+process.on("unhandledRejection", (e) => { console.log("  [오류] unhandledRejection:", e && e.stack || e); });
+
 setTimeout(maybeAutoRefresh, 5000);            // 시작 직후 1회
 setInterval(maybeAutoRefresh, 30 * 60 * 1000); // 30분마다 점검
 
+// 포트를 못 열면(이미 실행 중) 바로 종료 — 위 오류 처리기 때문에 살아남아 중복 수집하지 않게
+server.on("error", (e) => { console.log("  [오류] 서버 시작 실패:", e.message); process.exit(1); });
 server.listen(PORT, () => {
   console.log(`\n  매물 추적기 실행 중 →  http://localhost:${PORT}`);
   console.log(`  매일 오전 ${REFRESH_HOUR}시 이후 자동 갱신됩니다.\n`);
