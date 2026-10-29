@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T23:09:36.377Z",
+  "generatedAt": "2026-10-29T00:32:47.199Z",
   "collectUrl": "https://burlington-worldwide-playback-tribes.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -8,6 +8,18 @@
       "date": "2026-10-29",
       "today": "2026-10-29",
       "list": [
+        {
+          "date": "2026-10-28",
+          "pyeong": 33,
+          "excl": 85,
+          "floor": "15",
+          "price": 100000,
+          "canceled": false,
+          "label": "전용 84㎡",
+          "priceText": "10억",
+          "isToday": false,
+          "isNew": true
+        },
         {
           "date": "2026-10-26",
           "pyeong": 33,
@@ -155,10 +167,10 @@
         "today": 81,
         "diff": 0,
         "avgPrice": "9억 9,900",
-        "realPrice": "8억 6,300",
-        "realCount": 2,
+        "realPrice": "9억 800",
+        "realCount": 3,
         "realDays": 10,
-        "maxPrice": "9억 500",
+        "maxPrice": "10억",
         "maxYm": "2026.10",
         "minPrice": "6억 7,500",
         "minYm": "2026.06"
@@ -1206,7 +1218,7 @@
             90500,
             90500,
             86250,
-            86250
+            90833
           ],
           "counts": [
             21,
@@ -1328,7 +1340,7 @@
             1,
             1,
             2,
-            2
+            3
           ]
         },
         {
@@ -2551,7 +2563,40 @@
       "pyeong": 33,
       "added": [],
       "sold": [],
-      "relisted": [],
+      "relisted": [
+        {
+          "before": {
+            "no": "2656248373",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억",
+            "floor": "1/15",
+            "dir": "남서향",
+            "confirm": "20261019",
+            "desc": "지대높은1층,전세안고가능,갭3.5억",
+            "bldg": "483동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 136,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2658217991",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억",
+            "floor": "1/15",
+            "dir": "남서향",
+            "confirm": "20261029",
+            "desc": "A타입. 세낀매물. 정원같은 단지뷰. ",
+            "bldg": "483동",
+            "realtor": "포레너스대표공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 137,
+            "beforeStart": true
+          }
+        }
+      ],
       "current": [
         {
           "no": "2658191876",
@@ -3544,6 +3589,21 @@
           "beforeStart": false
         },
         {
+          "no": "2658217991",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억",
+          "floor": "1/15",
+          "dir": "남서향",
+          "confirm": "20261029",
+          "desc": "A타입. 세낀매물. 정원같은 단지뷰. ",
+          "bldg": "483동",
+          "realtor": "포레너스대표공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 137,
+          "beforeStart": true
+        },
+        {
           "no": "2658146257",
           "pyeong": 33,
           "excl": 84,
@@ -3644,21 +3704,6 @@
           "desc": "입주,84A,생활편리,탁트인 거실뷰,중문",
           "bldg": "485동",
           "realtor": "탑포레너스공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 137,
-          "beforeStart": true
-        },
-        {
-          "no": "2656248373",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억",
-          "floor": "1/15",
-          "dir": "남서향",
-          "confirm": "20261019",
-          "desc": "지대높은1층,전세안고가능,갭3.5억",
-          "bldg": "483동",
-          "realtor": "동탄퀸포레너스공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 137,
           "beforeStart": true
@@ -4989,7 +5034,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-28T23:09:36.376Z",
+    "fetchedAt": "2026-10-29T00:32:47.197Z",
     "today": "2026-10-29",
     "items": [
       {
@@ -5035,13 +5080,6 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHOA?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-10-09T07:00:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "31.55㎞ 동탄 트램 첫 삽 가시권…화성시, 10월 우선공사 착수",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tRndhZEU0dlAzTnNUNXptNFhKM0NRVTNNdlJoaWVxcFJIYnhIY1p6dzJ6V1IzS053bWY5SGpWOTd3Umt6QVdWVGJQaFA3YVNqWWRWVk9oRFBXX28?oc=5",
         "source": "에너지경제신문",
@@ -5056,6 +5094,13 @@
         "isToday": false
       },
       {
+        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHOA?oc=5",
+        "source": "KPI뉴스",
+        "time": "2026-10-09T07:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성특례시, 동탄트램 1단계 본격 추진…연내 착공 목표 속도:경인투데이뉴스",
         "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFB6Tmk5akdpeDB0T2JmaVI5d3F3aTBOT0ZzXzZ5VVZMa3h4UkdCLTRra2lYRmZsNUVoaWJXeTFyNXp1QmfSAV9BVV95cUxPTzJDS1ozcDUybnFHQ1Q4dW9kdlhPU1FWSmhVRDREX002OFQ1TDZuMnJnak9VSkdhd2hqNXVqUk9HMHRLVXc4VWx1UkhPSnJNSWpldUFNUERDcWVLZDdLZw?oc=5",
         "source": "경인투데이뉴스",
@@ -5065,7 +5110,7 @@
     ]
   },
   "newsGtx": {
-    "fetchedAt": "2026-10-28T23:09:36.162Z",
+    "fetchedAt": "2026-10-29T00:32:47.067Z",
     "today": "2026-10-29",
     "items": [
       {
