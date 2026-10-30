@@ -553,3 +553,5 @@ a.logo { text-decoration: none; padding: 0 2px; }
   .logo-card { display: inline-block; padding: 5px 9px; border-radius: 9px; }
   .logo-card img { width: auto; height: 26px; }
 }
+/* 휴대폰은 위 막대에 로고가 이미 있으므로 제목 자리 로고는 감춘다 */
+@media (max-width: 760px) { .page-head h1 .brand-logo { display: none; } .page-head .sub { margin-top: 0; } }

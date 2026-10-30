@@ -1016,8 +1016,8 @@ async function loadStats(msg) {
     if (r.error) { lockStats(true); return setStatus(r.error, "error"); }
     if (STATIC) savePw(pw);
     setStatus("");
+    lockStats(false); // 화면을 먼저 보여야 그래프 폭을 잴 수 있다
     renderStats(r);
-    lockStats(false);
   } catch (e) {
     lockStats(true);
     setStatus(e.message, "error");
