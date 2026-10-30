@@ -61,7 +61,7 @@ node server.js
 - **지금 수동 실행**: `start-hidden.vbs` 더블클릭 (창 없이 실행됨)
 - 실행 중인 서버 종료: 작업 관리자에서 `node.exe` 종료
 
-> 자동 실행된 서버는 매일 오전 9시 이후 매물을 자동 기록합니다.
+> 서버가 켜져 있으면 **30분마다** 자동으로 수집해 공개 페이지에 다시 게시합니다(같은 날은 최신 값으로 덮어씀).
 
 **자동 복구**
 - `start-hidden.vbs` 는 꺼진 것만 띄우므로 여러 번 실행해도 안전합니다.
@@ -81,6 +81,7 @@ GitHub Pages 공개 페이지의 **"📥 지금 수동 수집"** 버튼은 Cloud
 - `tunnel.js` 는 `cloudflared`(winget `Cloudflare.cloudflared`)로 계정 없는 Quick Tunnel을 엽니다.
   주소가 실행할 때마다 바뀌므로 새 주소를 `tunnel-url.txt` 에 적고 공개 페이지를 자동 재게시합니다.
 - 외부 요청은 **10분에 1회**로 제한됩니다(네이버 요청 제한 방지).
+- 공개 페이지에서는 **비밀번호**가 필요합니다. 비밀번호는 저장소에 올라가지 않는 `secret.json` 의 `refreshPassword` 에 둡니다. 5번 틀리면 15분간 막힙니다.
 - 고정 주소를 쓰려면 `config.json` 에 `"publicUrl": "https://..."` 를 넣으세요.
 
 ## 개선·문의

@@ -63,64 +63,76 @@ function renderChart(chart) {
   }
 
   const dates = chart.dates;
+  const series = chart.series;
   const estSet = new Set(chart.estimatedDates || []);
-  const W = 760, H = 300, pad = { l: 40, r: 16, t: 16, b: 46 };
+  // 실거래 가격추이와 같은 틀(여백·선 굵기·끝 라벨·툴팁)로 그린다
+  const W = 760, H = 300, pad = { l: 44, r: 50, t: 16, b: 44 };
   const iw = W - pad.l - pad.r, ih = H - pad.t - pad.b;
 
   let maxY = 0;
-  for (const s of chart.series) for (const v of s.data) if (v > maxY) maxY = v;
-  maxY = Math.max(5, Math.ceil(maxY / 5) * 5);
+  for (const s of series) for (const v of s.data) if (v > maxY) maxY = v;
+  const STEP = maxY > 50 ? 20 : maxY > 20 ? 10 : 5; // 눈금은 보기 좋은 단위로
+  maxY = Math.max(STEP, Math.ceil(maxY / STEP) * STEP);
+  const ticks = maxY / STEP;
 
   const x = (i) => pad.l + (dates.length === 1 ? iw / 2 : (iw * i) / (dates.length - 1));
   const y = (v) => pad.t + ih - (ih * v) / maxY;
 
   const NS = "http://www.w3.org/2000/svg";
   const el = (n, a) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, class: "chart-svg", preserveAspectRatio: "xMidYMid meet" });
+  const txt = (a, s) => { const t = el("text", a); t.textContent = s; return t; };
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, class: "chart-svg", preserveAspectRatio: "xMidYMid meet", role: "img" });
 
-  // y 격자 + 눈금
-  for (let g = 0; g <= 5; g++) {
-    const yy = pad.t + (ih * g) / 5;
+  // y 격자 + 눈금 (개)
+  for (let g = 0; g <= ticks; g++) {
+    const v = maxY - STEP * g;
+    const yy = y(v);
     svg.appendChild(el("line", { x1: pad.l, y1: yy, x2: W - pad.r, y2: yy, stroke: INK.grid, "stroke-width": 1 }));
-    const lab = el("text", { x: pad.l - 8, y: yy + 4, fill: INK.axis, "font-size": 11, "text-anchor": "end" });
-    lab.textContent = Math.round(maxY - (maxY * g) / 5);
-    svg.appendChild(lab);
+    svg.appendChild(txt({ x: pad.l - 8, y: yy + 4, fill: INK.axis, "font-size": 11, "text-anchor": "end" }, v + "개"));
   }
 
-  // x 라벨 (최대 8개만)
+  // x 라벨 (최대 8개)
   const step = Math.ceil(dates.length / 8);
   dates.forEach((d, i) => {
     if (i % step !== 0 && i !== dates.length - 1) return;
-    const t = el("text", { x: x(i), y: H - pad.b + 18, fill: INK.axis, "font-size": 10, "text-anchor": "middle" });
-    t.textContent = d.slice(5); // MM-DD
-    svg.appendChild(t);
+    svg.appendChild(txt({ x: x(i), y: H - pad.b + 18, fill: INK.axis, "font-size": 10, "text-anchor": "middle" }, d.slice(5)));
   });
 
-  // 추정/실제 경계 표시 (첫 실제 날짜에 세로선)
+  // 추정/실제 경계 (첫 실제 날짜에 세로 점선 + 표시)
   const firstReal = dates.findIndex((d) => !estSet.has(d));
   if (firstReal > 0) {
     svg.appendChild(el("line", { x1: x(firstReal), y1: pad.t, x2: x(firstReal), y2: pad.t + ih, stroke: INK.hair, "stroke-width": 1, "stroke-dasharray": "3 3" }));
+    svg.appendChild(txt({ x: x(firstReal) + 5, y: pad.t + 11, fill: INK.axis, "font-size": 10 }, "실제 수집 →"));
   }
 
-  // 평형별 라인 — 추정 구간(점선)과 실제 구간(실선) 분리
-  chart.series.forEach((s, si) => {
+  // 평형별: 추정 구간(점선)과 실제 구간(실선)을 각각 한 줄로 + 마지막 점 + 끝 라벨
+  series.forEach((s, si) => {
     const color = COLORS[si % COLORS.length];
-    for (let i = 1; i < dates.length; i++) {
-      const seg = el("line", {
-        x1: x(i - 1), y1: y(s.data[i - 1]), x2: x(i), y2: y(s.data[i]),
-        stroke: color, "stroke-width": 2.4, "stroke-linecap": "round",
-      });
-      if (estSet.has(dates[i])) seg.setAttribute("stroke-dasharray", "4 4");
-      svg.appendChild(seg);
-    }
-    dates.forEach((d, i) => {
-      svg.appendChild(el("circle", { cx: x(i), cy: y(s.data[i]), r: 3, fill: color }));
-    });
+    const pts = (from, to) => { const a = []; for (let i = from; i <= to; i++) a.push(`${x(i)},${y(s.data[i])}`); return a.join(" "); };
+    const line = (from, to, dash) => {
+      if (to <= from) return;
+      svg.appendChild(el("polyline", {
+        points: pts(from, to), fill: "none", stroke: color, "stroke-width": 2,
+        "stroke-linecap": "round", "stroke-linejoin": "round", ...(dash ? { "stroke-dasharray": "4 4" } : {}),
+      }));
+    };
+    const last = dates.length - 1;
+    if (firstReal > 0) { line(0, firstReal, true); line(firstReal, last, false); }
+    else line(0, last, firstReal < 0);
+
+    svg.appendChild(el("circle", { cx: x(last), cy: y(s.data[last]), r: 4, fill: color, stroke: INK.ring, "stroke-width": 2 }));
+    const ly = Math.min(pad.t + ih - 2, Math.max(pad.t + 10, y(s.data[last])));
+    svg.appendChild(txt({ x: x(last) + 9, y: ly + 4, fill: INK.label, "font-size": 11, "font-weight": 700 }, `${s.pyeong}평`));
   });
 
-  // 크로스헤어 + 툴팁 (실거래 차트와 같은 방식)
+  // 크로스헤어 + 마우스가 가리키는 날의 점 + 툴팁
   const hair = el("line", { y1: pad.t, y2: pad.t + ih, stroke: INK.hair, "stroke-width": 1, visibility: "hidden" });
   svg.appendChild(hair);
+  const marks = series.map((s, si) => {
+    const m = el("circle", { r: 4, fill: COLORS[si % COLORS.length], stroke: INK.ring, "stroke-width": 2, visibility: "hidden" });
+    svg.appendChild(m);
+    return m;
+  });
   svg.appendChild(el("rect", { x: pad.l, y: pad.t, width: iw, height: ih, fill: "transparent" }));
 
   wrap.innerHTML = "";
@@ -136,13 +148,17 @@ function renderChart(chart) {
     cur = i;
     hair.setAttribute("x1", x(i)); hair.setAttribute("x2", x(i));
     hair.setAttribute("visibility", "visible");
+    marks.forEach((m, si) => {
+      m.setAttribute("cx", x(i)); m.setAttribute("cy", y(series[si].data[i]));
+      m.setAttribute("visibility", "visible");
+    });
 
     tip.textContent = "";
     const head = document.createElement("div");
     head.className = "viz-tip-date";
     head.textContent = dates[i] + (estSet.has(dates[i]) ? " (추정)" : "");
     tip.appendChild(head);
-    chart.series.forEach((s, si) => {
+    series.forEach((s, si) => {
       const row = document.createElement("div");
       row.className = "viz-tip-row";
       const key = document.createElement("i");
@@ -157,13 +173,17 @@ function renderChart(chart) {
     });
     tip.hidden = false;
 
+    // SVG 좌표 → 화면 좌표 (뷰박스가 반응형이라 배율 보정)
     const rect = wrap.getBoundingClientRect();
     const scale = rect.width / W;
     const left = x(i) * scale;
     tip.style.left = Math.max(4, Math.min(rect.width - tip.offsetWidth - 4, left - tip.offsetWidth / 2)) + "px";
     tip.style.top = Math.max(2, pad.t * scale) + "px";
   }
-  function hide() { tip.hidden = true; hair.setAttribute("visibility", "hidden"); }
+  function hide() {
+    tip.hidden = true; hair.setAttribute("visibility", "hidden");
+    marks.forEach((m) => m.setAttribute("visibility", "hidden"));
+  }
   function nearest(clientX) {
     const rect = wrap.getBoundingClientRect();
     const ux = (clientX - rect.left) / (rect.width / W);
@@ -181,12 +201,12 @@ function renderChart(chart) {
   };
   wrap.onblur = hide;
 
-  legend.innerHTML = chart.series
+  legend.innerHTML = series
     .map((s, i) => `<span class="lg line"><i style="background:${COLORS[i % COLORS.length]}"></i>${s.pyeong}평</span>`)
     .join("");
   note.innerHTML = estSet.size
-    ? `점선 구간(${chart.estimatedDates[0].slice(5)}~)은 <b>추정치</b>(현재 매물 등록일 기준), 실선은 <b>실제 수집값</b>입니다.`
-    : "";
+    ? `점선 구간(${chart.estimatedDates[0].slice(5)}~)은 <b>추정치</b>(현재 매물 등록일 기준), 실선은 <b>실제 수집값</b>입니다. 마우스를 올리면 날짜별 매물 수와 전날 대비 증감이 보입니다.`
+    : "마우스를 올리면 날짜별 매물 수와 전날 대비 증감이 보입니다.";
 }
 
 // ---------- 실거래 가격추이 (SVG 라인 차트) ----------
@@ -806,7 +826,10 @@ async function openDayList(pyeong, label, which) {
     listBlock(`${isPrev ? "전일" : "오늘"} ${esc(pyeong)}평 매물`, "neutral", list, cn, "이 날짜에 기록된 매물이 없습니다.");
 }
 
-function closeModal() { $("modal").hidden = true; }
+function closeModal() {
+  $("modal").hidden = true;
+  if (pwResolve) { const r = pwResolve; pwResolve = null; r(null); } // 비밀번호 창을 닫으면 취소
+}
 $("modal").addEventListener("click", (e) => { if (e.target.dataset.close !== undefined) closeModal(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 $("tbody").addEventListener("click", (e) => {
@@ -828,14 +851,45 @@ $("save-config").addEventListener("click", async () => {
 
 // 정적 페이지의 수동 수집 — 터널(collectUrl)을 거쳐 PC 서버에 수집을 요청한다.
 // 응답의 state·changes 로 화면을 바로 갱신하고, 공개 페이지 자체는 서버가 다시 게시한다.
+// 수동 수집은 비밀번호로 로그인해야 한다. 맞춘 비밀번호는 이 탭(sessionStorage)에만 기억한다.
+const PW_KEY = "refreshPw";
+function savedPw() { try { return sessionStorage.getItem(PW_KEY) || ""; } catch { return ""; } }
+function savePw(v) { try { if (v) sessionStorage.setItem(PW_KEY, v); else sessionStorage.removeItem(PW_KEY); } catch {} }
+let pwResolve = null; // 비밀번호 창이 열려 있을 때의 응답 함수
+function askPassword(msg) {
+  return new Promise((resolve) => {
+    pwResolve = resolve;
+    $("modal-content").innerHTML =
+      `<h3>수동 수집 로그인</h3>` +
+      `<form id="pw-form" class="pw-form">` +
+      `<p class="chg-dates">${esc(msg || "수동 수집은 비밀번호가 필요합니다. 평소에는 30분마다 자동으로 수집됩니다.")}</p>` +
+      `<div class="field"><label for="pw-input">비밀번호</label>` +
+      `<input type="password" id="pw-input" inputmode="numeric" autocomplete="current-password" required /></div>` +
+      `<div class="contact-actions"><button type="submit" class="btn primary">로그인 후 수집</button></div>` +
+      `</form>`;
+    $("modal").hidden = false;
+    $("pw-input").focus();
+    $("pw-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const v = $("pw-input").value.trim();
+      if (!v) return;
+      pwResolve = null;
+      closeModal();
+      resolve(v);
+    });
+  });
+}
+
 async function remoteRefresh() {
   const base = (staticData && staticData.collectUrl) || "";
   if (!base) throw new Error("수집 서버 주소가 설정되지 않았습니다.");
+  let pw = savedPw() || await askPassword();
+  if (!pw) return null; // 창을 닫음 → 취소
   let res;
   try {
     res = await fetch(base.replace(/\/$/, "") + "/api/refresh?static=1", {
       method: "POST",
-      headers: { "bypass-tunnel-reminder": "1" }, // localtunnel 안내 페이지 건너뛰기
+      headers: { "bypass-tunnel-reminder": "1", "x-refresh-password": pw }, // localtunnel 안내 페이지 건너뛰기
     });
   } catch {
     throw new Error("PC 서버에 연결하지 못했습니다. PC에서 서버(server.js)와 터널(tunnel.js)이 켜져 있는지 확인해 주세요.");
@@ -843,6 +897,8 @@ async function remoteRefresh() {
   let r;
   try { r = await res.json(); }
   catch { throw new Error(`PC 서버 응답 오류 (HTTP ${res.status}). 서버·터널 상태를 확인해 주세요.`); }
+  if (r.auth) { savePw(""); return r; } // 비밀번호 틀림 — 다음에 다시 묻는다
+  savePw(pw);
   if (!r.error) {
     const { changes, ...state } = r;
     staticData.state = state;
@@ -859,7 +915,8 @@ $("refresh").addEventListener("click", async () => {
   setStatus("네이버에서 매매 매물을 가져오는 중입니다… (10~20초)", "info");
   try {
     const r = STATIC ? await remoteRefresh() : await api("/api/refresh", { method: "POST" });
-    if (r.error) { setStatus(r.error, "error"); }
+    if (!r) { setStatus("수동 수집을 취소했습니다.", "info"); }
+    else if (r.error) { setStatus(r.error, "error"); }
     else if (r.warning) { setStatus(r.warning, "error"); render(r); }
     else {
       const note = STATIC ? " 공개 페이지에는 1~2분 뒤 반영됩니다." : "";
@@ -881,7 +938,7 @@ if (STATIC) {
   load().then(() => {
     if (!staticData || !staticData.collectUrl) $("refresh").style.display = "none";
     const t = staticData && staticData.generatedAt ? new Date(staticData.generatedAt).toLocaleString("ko-KR") : "";
-    $("subtitle").textContent = `매매 매물만 집계합니다. 매일 자동 갱신 · 마지막 갱신 ${t}`;
+    $("subtitle").textContent = `매매 매물만 집계합니다. 30분마다 자동 갱신 · 마지막 갱신 ${t}`;
   });
 } else {
   showView();

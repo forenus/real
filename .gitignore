@@ -5,3 +5,4 @@ viewer/history.json
 *.log
 tunnel-url.txt
 mail.json
+secret.json

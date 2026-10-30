@@ -5,6 +5,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const { execFile } = require("child_process");
+const crypto = require("crypto");
 const { fetchSaleAndReal, aggregateByPyeong } = require("./naver");
 const { fetchNews, TOPICS: NEWS_TOPICS } = require("./news");
 
@@ -20,6 +21,12 @@ const REMOTE_COOLDOWN_MS = 10 * 60 * 1000;
 const MAIL_FILE = path.join(ROOT, "mail.json");
 const CONTACT_MAX_BYTES = 12 * 1024 * 1024; // 첨부 포함 요청 크기 상한(base64 로 커지는 것 감안)
 const CONTACT_GAP_MS = 60 * 1000; // 같은 곳에서 연달아 보내지 못하게 하는 최소 간격
+// 외부 수동 수집 비밀번호 — 공개 저장소에 올리지 않도록 secret.json 에 따로 둔다
+const SECRET_FILE = path.join(ROOT, "secret.json");
+const PW_MAX_FAILS = 5;                  // 이만큼 틀리면
+const PW_LOCK_MS = 15 * 60 * 1000;       // 이 시간 동안 같은 곳(IP)의 시도를 막는다
+// 자동 수집 간격
+const AUTO_REFRESH_MS = 30 * 60 * 1000;
 
 // ---------- 저장소 ----------
 function readJson(file, fallback) {
@@ -571,6 +578,27 @@ function requireAuth(res) {
 }
 
 // PC 에서 직접 연 요청인지 — 터널을 거친 요청은 x-forwarded-for / cf-connecting-ip 가 붙는다
+// 외부 수동 수집 비밀번호 확인 — 틀린 횟수를 IP별로 세어 연속으로 맞춰 보지 못하게 막는다
+const pwFails = new Map(); // ip → { n, until }
+function checkRefreshPassword(req) {
+  const want = String((readJson(SECRET_FILE, {}) || {}).refreshPassword || "");
+  if (!want) return { code: 503, error: "수동 수집 비밀번호가 설정되지 않았습니다(secret.json)." };
+  const ip = req.headers["cf-connecting-ip"] || req.socket.remoteAddress || "";
+  const f = pwFails.get(ip) || { n: 0, until: 0 };
+  if (f.until > Date.now()) {
+    return { code: 429, error: `비밀번호를 여러 번 틀렸습니다. ${Math.ceil((f.until - Date.now()) / 60000)}분 후에 다시 시도해 주세요.` };
+  }
+  const got = String(req.headers["x-refresh-password"] || "");
+  if (got.length === want.length && crypto.timingSafeEqual(Buffer.from(got), Buffer.from(want))) {
+    pwFails.delete(ip);
+    return null;
+  }
+  f.n += 1;
+  if (f.n >= PW_MAX_FAILS) { f.n = 0; f.until = Date.now() + PW_LOCK_MS; }
+  pwFails.set(ip, f);
+  return { code: 401, error: "비밀번호가 맞지 않습니다." };
+}
+
 function isLocal(req) {
   const ra = req.socket.remoteAddress || "";
   return /^(::1|127.0.0.1|::ffff:127.0.0.1)$/.test(ra) && !req.headers["x-forwarded-for"] && !req.headers["cf-connecting-ip"];
@@ -586,7 +614,7 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "OPTIONS") {
       res.writeHead(204, {
         "Access-Control-Allow-Methods": "POST",
-        "Access-Control-Allow-Headers": "bypass-tunnel-reminder, content-type",
+        "Access-Control-Allow-Headers": "bypass-tunnel-reminder, content-type, x-refresh-password",
         "Access-Control-Max-Age": "600",
       });
       return res.end();
@@ -649,6 +677,10 @@ const server = http.createServer(async (req, res) => {
   // 오늘 매물 갱신 (네이버 수집 → 스냅샷 저장)
   // ?static=1 : 공개 페이지에서 온 요청 — 화면 갱신용 평형별 변동 목록(changes)도 함께 돌려준다.
   if (url === "/api/refresh" && req.method === "POST") {
+    if (!isLocal(req)) { // 공개 페이지(터널)에서 온 요청은 비밀번호 필요
+      const denied = checkRefreshPassword(req);
+      if (denied) return send(res, denied.code, { error: denied.error, auth: denied.code === 401 });
+    }
     const wait = lastRefreshAt + REMOTE_COOLDOWN_MS - Date.now();
     if (!isLocal(req) && !refreshing && wait > 0) {
       return send(res, 429, { error: `방금 수집했습니다. ${Math.ceil(wait / 60000)}분 후에 다시 시도해 주세요.` });
@@ -668,18 +700,12 @@ const server = http.createServer(async (req, res) => {
   return serveStatic(req, res);
 });
 
-// ---------- 매일 자동 갱신 ----------
-// 서버가 켜져 있으면 매일 REFRESH_HOUR 시 이후 오늘치를 자동 수집한다.
-const REFRESH_HOUR = 9; // 오전 9시 이후 자동 수집
-let lastAutoYmd = loadHistory().snapshots[todayStr()] ? todayStr() : null;
-async function maybeAutoRefresh() {
+// ---------- 자동 갱신 (30분마다) ----------
+// 서버가 켜져 있으면 AUTO_REFRESH_MS 마다 수집해 오늘 스냅샷을 덮어쓰고 공개 페이지를 다시 게시한다.
+async function autoRefresh() {
   const t = todayStr();
-  const missing = !loadHistory().snapshots[t];
-  const due = lastAutoYmd !== t && new Date().getHours() >= REFRESH_HOUR;
-  if (!missing && !due) return;
   try {
     const r = await doRefresh();
-    lastAutoYmd = t;
     if (!r.warning) await publishSafe("자동 갱신");
     console.log(`  [자동] ${t} 갱신 완료 — 매매 ${r.fetched ?? 0}건`);
   } catch (e) {
@@ -690,12 +716,12 @@ async function maybeAutoRefresh() {
 process.on("uncaughtException", (e) => { console.log("  [오류] uncaughtException:", e && e.stack || e); });
 process.on("unhandledRejection", (e) => { console.log("  [오류] unhandledRejection:", e && e.stack || e); });
 
-setTimeout(maybeAutoRefresh, 5000);            // 시작 직후 1회
-setInterval(maybeAutoRefresh, 30 * 60 * 1000); // 30분마다 점검
+setTimeout(autoRefresh, 5000);               // 시작 직후 1회
+setInterval(autoRefresh, AUTO_REFRESH_MS);   // 이후 30분마다
 
 // 포트를 못 열면(이미 실행 중) 바로 종료 — 위 오류 처리기 때문에 살아남아 중복 수집하지 않게
 server.on("error", (e) => { console.log("  [오류] 서버 시작 실패:", e.message); process.exit(1); });
 server.listen(PORT, () => {
   console.log(`\n  매물 추적기 실행 중 →  http://localhost:${PORT}`);
-  console.log(`  매일 오전 ${REFRESH_HOUR}시 이후 자동 갱신됩니다.\n`);
+  console.log(`  ${AUTO_REFRESH_MS / 60000}분마다 자동 갱신됩니다.\n`);
 });

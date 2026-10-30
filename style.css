@@ -308,3 +308,4 @@ td.tags { white-space: nowrap; text-align: right; }
   /* 좁은 화면 표 — 글자를 세로로 쪼개지 말고 가로 스크롤 */
   .table-wrap th, .table-wrap td { white-space: nowrap; padding: 10px 8px; }
 }
+.pw-form { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
