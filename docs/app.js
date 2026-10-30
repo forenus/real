@@ -8,7 +8,7 @@ async function api(path, opts) {
   if (STATIC) {
     if (!staticData) staticData = await (await fetch("data.json", { cache: "no-store" })).json();
     if (path.startsWith("/api/state")) return staticData.state;
-    if (path.startsWith("/api/news?topic=gtx")) return staticData.newsGtx || { items: [] };
+    if (path.startsWith("/api/news?topic=dongtan")) return staticData.newsDongtan || { items: [] };
     if (path.startsWith("/api/news")) return staticData.news || { items: [] };
     if (path.startsWith("/api/changes")) {
       const py = decodeURIComponent((path.match(/pyeong=([^&]+)/) || [])[1] || "");
@@ -740,7 +740,7 @@ function renderDeals(rd) {
   top.className = "deals-today";
 }
 
-// ---------- 최신 기사 (동탄트램 / GTX-C 병점역) ----------
+// ---------- 최신 기사 (동탄트램 / 동탄 소식) ----------
 function fmtNewsTime(iso) {
   const d = new Date(iso);
   const p = (n) => String(n).padStart(2, "0");
@@ -767,8 +767,8 @@ async function load() {
   render(await api("/api/state"));
   try { renderNews(await api("/api/news")); }
   catch { renderNews(null); }
-  try { renderNews(await api("/api/news?topic=gtx"), "gtx-news"); }
-  catch { renderNews(null, "gtx-news"); }
+  try { renderNews(await api("/api/news?topic=dongtan"), "dt-news"); }
+  catch { renderNews(null, "dt-news"); }
 }
 
 // ---------- 증감 매물 목록 모달 ----------
