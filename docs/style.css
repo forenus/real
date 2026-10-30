@@ -309,3 +309,5 @@ td.tags { white-space: nowrap; text-align: right; }
   .table-wrap th, .table-wrap td { white-space: nowrap; padding: 10px 8px; }
 }
 .pw-form { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
+.deals-more { display: flex; justify-content: center; margin-top: 12px; }
+.deals-more[hidden] { display: none; }
