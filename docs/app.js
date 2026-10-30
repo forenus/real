@@ -523,6 +523,10 @@ function render(state) {
   const hg = $("hgnn-link");
   hg.hidden = !state.hogangnonoUrl;
   if (state.hogangnonoUrl) { hg.href = state.hogangnonoUrl; hg.title = `${state.complexName || "단지"} 호갱노노에서 보기(새 창)`; }
+  // 네이버 부동산 바로가기(단지 번호로)
+  const nl = $("nland-link");
+  nl.hidden = !state.complexNo;
+  if (state.complexNo) { nl.href = `https://new.land.naver.com/complexes/${encodeURIComponent(state.complexNo)}`; nl.title = `${state.complexName || "단지"} 네이버 부동산에서 보기(새 창)`; }
 }
 
 // 최근 n일 전체 매물 수 미니 추이선(KPI 카드용) — 축·라벨 없이 흐름만 보여준다
@@ -547,6 +551,16 @@ function labelCells(table) {
     [...tr.children].forEach((td, i) => { if (heads[i]) td.dataset.label = heads[i]; }));
 }
 
+// 호갱노노 실시간 방문자 카드 — 누르면 호갱노노 단지 페이지(새 창)
+function hogangnonoTile(h) {
+  if (!h || typeof h.realtime !== "number") return "";
+  const t = new Date(h.fetchedAt).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit", hour12: false });
+  return `<a class="kpi kpi-hg" href="${esc(h.url)}" target="_blank" rel="noopener" title="호갱노노에서 보기(새 창)">` +
+    `<span class="kpi-label"><img src="hogangnono.png" alt="" width="16" height="16" />호갱노노 실시간 방문자</span>` +
+    `<b class="kpi-value">${h.realtime.toLocaleString()}<small>명</small></b>` +
+    `<span class="kpi-sub">최근 24시간 ${(h.recent24h || 0).toLocaleString()}명 · ${esc(t)} 기준</span></a>`;
+}
+
 // ---------- 대시보드 요약 지표 ----------
 function renderKpis(state) {
   const rows = state.rows || [];
@@ -556,10 +570,14 @@ function renderKpis(state) {
   const deals = (state.realDeals && state.realDeals.list) || [];
   const nToday = deals.filter((x) => x.isToday).length;
   const nNew = deals.filter((x) => x.isNew).length;
-  const realCnt = rows.reduce((a, r) => a + (r.realCount || 0), 0);
-  const realDays = (rows.find((r) => r.realDays) || {}).realDays || 10;
-  // 실거래가 가장 많은 평형의 평균가를 대표값으로 보여준다
-  const top = rows.filter((r) => r.realPrice).sort((a, b) => b.realCount - a.realCount)[0];
+  // 최근 30일 실거래(해제 건 제외) — 거래가 가장 많은 평형의 평균가를 대표값으로 보여준다
+  const KPI_REAL_DAYS = 30;
+  const from = new Date(Date.parse(state.realDeals && state.realDeals.today || Date.now()) - KPI_REAL_DAYS * 86400000).toISOString().slice(0, 10);
+  const recent = deals.filter((x) => !x.canceled && x.date >= from);
+  const byPy = {};
+  for (const x of recent) (byPy[x.pyeong] = byPy[x.pyeong] || []).push(x.price);
+  const topPy = Object.keys(byPy).sort((a, b) => byPy[b].length - byPy[a].length)[0];
+  const topAvg = topPy ? byPy[topPy].reduce((a, p) => a + p, 0) / byPy[topPy].length : null;
   // 마지막 수집 시각(HH:MM) — 서버가 수집할 때마다 기록한다
   const fetchedTime = state.lastFetchedAt
     ? new Date(state.lastFetchedAt).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit", hour12: false })
@@ -570,12 +588,13 @@ function renderKpis(state) {
     tile("현재 매매 매물", `${today}<small>건</small>`,
       state.prevDate ? `<span class="delta pill ${d.cls}">${d.txt}</span> ${esc(state.prevDate.slice(5))} 대비` : "내일부터 증감 표시", "dashboard",
       sparkline(state.chart, 30)),
-    tile(`최근 ${realDays}일 실거래`, `${realCnt}<small>건</small>`,
-      top ? `${top.pyeong}평 평균 ${esc(top.realPrice)}` : "거래 없음", "deals"),
+    tile(`최근 ${KPI_REAL_DAYS}일 실거래`, `${recent.length}<small>건</small>`,
+      topPy ? `${topPy}평 평균 ${esc(fmtMan(topAvg))}` : "거래 없음", "deals"),
     tile("오늘 거래 · 신규 신고", `${nToday} · ${nNew}<small>건</small>`,
       nToday || nNew ? "실거래 목록에서 확인" : "새 소식 없음", "deals"),
     tile("마지막 수집", esc(state.todayDate ? state.todayDate.slice(5).replace("-", "/") : "–"),
       `${fetchedTime ? `${fetchedTime} 수집 · ` : ""}평형 ${rows.length}개 집계`, "dashboard"),
+    hogangnonoTile(state.hogangnono),
   ].join("");
   $("side-meta").textContent = state.todayDate ? `마지막 수집 ${state.todayDate}${fetchedTime ? " " + fetchedTime : ""}` : "";
 }
@@ -1090,8 +1109,8 @@ function renderStats(s) {
   $("st-recent").innerHTML = s.recent.length
     ? s.recent.map((r) => `<tr><td>${esc(new Date(r.t).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }))}</td>` +
         `<td>#${esc(r.vid)}${r.isNew ? ` <span class="tag new">첫 방문</span>` : ""}</td>` +
-        `<td>${esc(VIEW_LABELS[r.view] || r.view)}</td><td>${r.mobile ? "휴대폰" : "PC"}</td><td>${esc(r.ref || "–")}</td></tr>`).join("")
-    : `<tr><td colspan="5" class="empty">아직 방문 기록이 없습니다.</td></tr>`;
+        `<td class="st-ip">${esc(r.ip || "–")}</td><td>${esc(VIEW_LABELS[r.view] || r.view)}</td><td>${r.mobile ? "휴대폰" : "PC"}</td><td>${esc(r.ref || "–")}</td></tr>`).join("")
+    : `<tr><td colspan="6" class="empty">아직 방문 기록이 없습니다.</td></tr>`;
   $("st-updated").textContent = `${new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" })} 기준 · 최근 50건`;
 }
 
