@@ -117,6 +117,16 @@ function renderChart(chart) {
       }));
     };
     const last = dates.length - 1;
+    // 선 아래 옅은 그라데이션 면 — 위에서 아래로 사라지게
+    const gid = `cg-${si}`;
+    const defs = svg.querySelector("defs") || svg.insertBefore(el("defs", {}), svg.firstChild);
+    const lg = el("linearGradient", { id: gid, x1: 0, y1: 0, x2: 0, y2: 1 });
+    lg.appendChild(el("stop", { offset: "0%", "stop-color": color, "stop-opacity": 0.12 }));
+    lg.appendChild(el("stop", { offset: "100%", "stop-color": color, "stop-opacity": 0 }));
+    defs.appendChild(lg);
+    svg.appendChild(el("polygon", {
+      points: `${x(0)},${pad.t + ih} ${pts(0, last)} ${x(last)},${pad.t + ih}`, fill: `url(#${gid})`,
+    }));
     if (firstReal > 0) { line(0, firstReal, true); line(firstReal, last, false); }
     else line(0, last, firstReal < 0);
 
@@ -472,6 +482,21 @@ function render(state) {
   renderKpis(state);
 }
 
+// 최근 n일 전체 매물 수 미니 추이선(KPI 카드용) — 축·라벨 없이 흐름만 보여준다
+function sparkline(chart, n) {
+  if (!chart || !chart.dates || chart.dates.length < 2) return "";
+  const from = Math.max(0, chart.dates.length - n);
+  const vals = chart.dates.slice(from).map((_, i) => chart.series.reduce((a, s) => a + (s.data[from + i] || 0), 0));
+  const lo = Math.min(...vals), hi = Math.max(...vals), W = 120, H = 34;
+  const pts = vals.map((v, i) => [(W * i) / (vals.length - 1), hi === lo ? H / 2 : 3 + (H - 6) * (1 - (v - lo) / (hi - lo))]);
+  const line = pts.map((p) => p.map((v) => v.toFixed(1)).join(",")).join(" ");
+  const [lx, ly] = pts[pts.length - 1];
+  return `<svg class="kpi-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">` +
+    `<polyline points="0,${H} ${line} ${W},${H}" class="spark-area"/>` +
+    `<polyline points="${line}" class="spark-line"/>` +
+    `<circle cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="2.6" class="spark-dot"/></svg>`;
+}
+
 // ---------- 대시보드 요약 지표 ----------
 function renderKpis(state) {
   const rows = state.rows || [];
@@ -485,11 +510,12 @@ function renderKpis(state) {
   const realDays = (rows.find((r) => r.realDays) || {}).realDays || 10;
   // 실거래가 가장 많은 평형의 평균가를 대표값으로 보여준다
   const top = rows.filter((r) => r.realPrice).sort((a, b) => b.realCount - a.realCount)[0];
-  const tile = (label, value, sub, view) =>
-    `<a class="kpi" href="#${view}"><span class="kpi-label">${label}</span><b class="kpi-value">${value}</b><span class="kpi-sub">${sub}</span></a>`;
+  const tile = (label, value, sub, view, extra = "") =>
+    `<a class="kpi" href="#${view}"><span class="kpi-label">${label}</span><b class="kpi-value">${value}</b><span class="kpi-sub">${sub}</span>${extra}</a>`;
   $("kpis").innerHTML = [
     tile("현재 매매 매물", `${today}<small>건</small>`,
-      state.prevDate ? `<span class="delta ${d.cls}">${d.txt}</span> ${esc(state.prevDate.slice(5))} 대비` : "내일부터 증감 표시", "dashboard"),
+      state.prevDate ? `<span class="delta pill ${d.cls}">${d.txt}</span> ${esc(state.prevDate.slice(5))} 대비` : "내일부터 증감 표시", "dashboard",
+      sparkline(state.chart, 30)),
     tile(`최근 ${realDays}일 실거래`, `${realCnt}<small>건</small>`,
       top ? `${top.pyeong}평 평균 ${esc(top.realPrice)}` : "거래 없음", "deals"),
     tile("오늘 거래 · 신규 신고", `${nToday} · ${nNew}<small>건</small>`,
@@ -514,7 +540,7 @@ function showView() {
     if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   });
   const cur = document.querySelector(`#nav a[data-view="${v}"]`);
-  $("view-name").textContent = cur ? cur.lastChild.textContent.trim() : "";
+  $("view-name").textContent = cur ? cur.textContent.trim() : "";
   if (section) $(section).scrollIntoView({ block: "start" });
   else window.scrollTo(0, 0);
 }
@@ -600,8 +626,12 @@ $("contact-form").addEventListener("submit", async (e) => {
 // 평형 선택 버튼 — 목록에 있는 평형으로 만든다(선택은 이 브라우저에 기억).
 let lastDeals = null;
 let dealsExpanded = false; // 전체 펼치기 상태(새로고침하면 다시 최근 60일)
+const DEALS_PAGE = 100;     // 펼쳤을 때 한 번에 보여줄 건수 — 수백~수천 건을 한꺼번에 그리지 않는다
+let dealsLimit = DEALS_PAGE;
+$("deals-page").addEventListener("click", () => { dealsLimit += DEALS_PAGE; renderDeals(lastDeals); });
 $("deals-toggle").addEventListener("click", () => {
   dealsExpanded = !dealsExpanded;
+  dealsLimit = DEALS_PAGE;
   renderDeals(lastDeals);
   if (!dealsExpanded) $("deals").scrollIntoView({ block: "start" }); // 접으면 목록 머리로 돌아간다
 });
@@ -615,10 +645,11 @@ $("deals-filter").addEventListener("click", (e) => {
 });
 
 // 같은 평형의 직전 거래일(더 이른 날짜) 대비 증감 — 그날 거래가 여러 건이면 평균과 비교한다. 해제 건은 제외.
-function dealDiffs(all) {
+// rows: 화면에 그릴 거래, base: 비교 대상(전체 목록이 있으면 그것 — 60일 맨 끝 거래도 비교되게)
+function dealDiffs(rows, base = rows) {
   const out = new Map();
-  const valid = all.filter((x) => !x.canceled);
-  for (const x of all) {
+  const valid = base.filter((x) => !x.canceled);
+  for (const x of rows) {
     const older = valid.filter((y) => y.pyeong === x.pyeong && y.date < x.date);
     if (!older.length) continue;
     const pd = older.reduce((m, y) => (y.date > m ? y.date : m), "");
@@ -665,8 +696,9 @@ function renderDeals(rd) {
   if (!list.length) {
     body.innerHTML = `<tr><td colspan="6" class="empty">${showAll ? "" : "최근 60일 "}${sel === "all" ? "" : sel + "평 "}실거래가 없습니다.</td></tr>`;
   } else {
-    const diffs = dealDiffs(full || all); // 직전 거래 비교는 전체 목록이 있으면 그걸로(60일 맨 끝 거래도 비교 가능)
-    body.innerHTML = list.map((x) => {
+    const shown = showAll ? list.slice(0, dealsLimit) : list;
+    const diffs = dealDiffs(shown, full || all);
+    body.innerHTML = shown.map((x) => {
       const tags = [
         x.isToday ? `<span class="tag today">오늘 거래</span>` : "",
         x.isNew ? `<span class="tag new">신규 신고</span>` : "",
@@ -687,6 +719,9 @@ function renderDeals(rd) {
   if (!more.hidden) {
     const nFull = sel === "all" ? full.length : full.filter((x) => String(x.pyeong) === sel).length;
     tg.textContent = showAll ? "▲ 최근 60일만 보기" : `▼ 전체 펼치기 (${nFull}건)`;
+    const rest = showAll ? list.length - dealsLimit : 0;
+    $("deals-page").hidden = rest <= 0;
+    if (rest > 0) $("deals-page").textContent = `더 보기 (${Math.min(DEALS_PAGE, rest)}건 · 남은 ${rest}건)`;
     tg.setAttribute("aria-expanded", showAll);
   }
   const oldest = full && full.length ? full[full.length - 1].date : "";
@@ -929,8 +964,9 @@ async function remoteRefresh() {
 
 $("refresh").addEventListener("click", async () => {
   const btn = $("refresh");
-  const label = btn.textContent;
-  btn.disabled = true; btn.textContent = "수집 중…";
+  const lb = $("refresh-label");
+  const label = lb.textContent;
+  btn.disabled = true; btn.classList.add("busy"); lb.textContent = "수집 중…";
   setStatus("네이버에서 매매 매물을 가져오는 중입니다… (10~20초)", "info");
   try {
     const r = STATIC ? await remoteRefresh() : await api("/api/refresh", { method: "POST" });
@@ -945,14 +981,14 @@ $("refresh").addEventListener("click", async () => {
   } catch (e) {
     setStatus(STATIC ? e.message : "요청 실패: " + e.message, "error");
   } finally {
-    btn.disabled = false; btn.textContent = label;
+    btn.disabled = false; btn.classList.remove("busy"); lb.textContent = label;
   }
 });
 
 if (STATIC) {
   // 단지 설정은 PC 서버에서만 — 정적 페이지에서는 메뉴를 숨긴다. 수집 버튼은 터널로 PC 서버에 요청한다.
   $("nav-settings").hidden = true;
-  $("refresh").textContent = "📥 지금 수동 수집";
+  $("refresh-label").textContent = "지금 수동 수집";
   showView();
   load().then(() => {
     if (!staticData || !staticData.collectUrl) $("refresh").style.display = "none";
