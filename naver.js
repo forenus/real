@@ -74,12 +74,42 @@ async function fetchListings(ctx, headers, complexNo) {
   return all;
 }
 
+// 네이버 실거래 표(type=table)는 최신순으로 한 번에 몇 건씩만 준다 —
+// 응답의 addedRowCount(지금까지 받은 줄 수)를 다음 요청에 넘겨 이어받는다.
+// stopYmd(YYYYMMDD 숫자)가 있으면 그보다 오래된 거래가 나온 페이지에서 멈추고, 0 이면 끝까지 받는다.
+async function fetchRealRows(ctx, headers, complexNo, areaNo, stopYmd) {
+  const rows = [];
+  let off = 0;
+  for (let page = 0; page < 500; page++) {
+    const url =
+      `https://new.land.naver.com/api/complexes/${complexNo}/prices/real` +
+      `?complexNo=${complexNo}&tradeType=A1&year=10&priceChartChange=false&areaNo=${areaNo}&type=table` +
+      (off ? `&addedRowCount=${off}` : "");
+    const res = await ctx.request.get(url, { headers });
+    if (!res.ok()) break;
+    const j = await res.json();
+    let oldest = Infinity;
+    for (const mon of j.realPriceOnMonthList || []) {
+      for (const t of mon.realPriceList || []) {
+        rows.push(t);
+        oldest = Math.min(oldest, Number(t.tradeYear) * 10000 + Number(t.tradeMonth) * 100 + Number(t.tradeDate));
+      }
+    }
+    const next = Number(j.addedRowCount) || 0;
+    if (!next || next <= off || next >= (Number(j.totalRowCount) || 0)) break;
+    if (stopYmd && oldest < stopYmd) break;
+    off = next;
+  }
+  return rows;
+}
+
 // 실거래 평균가 — 평형타입(areaNo)별 실거래 중 '조회일 기준 최근 days일' 거래만
 // 평형으로 묶어 평균(만원) 계산. 네이버 prices/real(type=table)은 최신순으로
 // 거래를 주므로, 반환된 데이터에서 최근 days일 구간만 추려도 충분하다.
 // 함께, 조회 구간(최근 5년) 전체에서 평형별 최고가/최저가와 그 거래월도 계산한다.
 // 함께, 거래일 기준 최근 listDays일 실거래를 건별 목록(deals)으로, 조회 구간 전체를 allDeals 로 반환한다.
-async function fetchRealAvgByPyeong(ctx, headers, complexNo, days = 10, listDays = 60) {
+// full=false 면 최근 구간(days·listDays)까지만 받는다 — 이때 allDeals 와 최고/최저가는 null(불완전하므로).
+async function fetchRealAvgByPyeong(ctx, headers, complexNo, days = 10, listDays = 60, full = true) {
   // 단지의 평형타입 목록(pyeongNo + 공급면적) 확보
   const cRes = await ctx.request.get(
     `https://new.land.naver.com/api/complexes/${complexNo}?sameAddressGroup=false`,
@@ -106,52 +136,45 @@ async function fetchRealAvgByPyeong(ctx, headers, complexNo, days = 10, listDays
     const areaNo = pt.pyeongNo;
     if (!areaNo) continue;
 
-    const url =
-      `https://new.land.naver.com/api/complexes/${complexNo}/prices/real` +
-      `?complexNo=${complexNo}&tradeType=A1&year=5&priceChartChange=false&areaNo=${areaNo}&type=table`;
-    const rRes = await ctx.request.get(url, { headers });
-    if (!rRes.ok()) continue;
-    const rj = await rRes.json();
+    const rows = await fetchRealRows(ctx, headers, complexNo, areaNo, full ? 0 : Math.min(cutoff, listCutoff));
 
     const seen = new Set(); // 같은 거래 중복 제거
-    for (const mon of rj.realPriceOnMonthList || []) {
-      for (const t of mon.realPriceList || []) {
-        if (t.tradeType && t.tradeType !== "A1") continue; // 매매만
-        const price = Number(t.dealPrice);
-        if (!price) continue;
-        const key = `${t.tradeYear}-${t.tradeMonth}-${t.tradeDate}-${t.floor}-${price}`;
-        if (seen.has(key)) continue;
-        seen.add(key);
-        const a = (agg[pyeong] = agg[pyeong] || { sum: 0, n: 0, max: null, min: null });
-        // 최고가/최저가는 조회 구간(최근 5년) 전체 거래 기준
-        const ym = `${t.tradeYear}.${String(t.tradeMonth).padStart(2, "0")}`;
-        if (!a.max || price > a.max.price) a.max = { price, ym };
-        if (!a.min || price < a.min.price) a.min = { price, ym };
-        const ymd = Number(t.tradeYear) * 10000 + Number(t.tradeMonth) * 100 + Number(t.tradeDate);
-        const p2 = (n) => String(n).padStart(2, "0");
-        const deal = {
-          date: `${t.tradeYear}-${p2(t.tradeMonth)}-${p2(t.tradeDate)}`,
-          pyeong, excl, floor: t.floor != null ? String(t.floor) : "", price,
-          canceled: t.deleteYn === true || t.deleteYn === "Y",
-        };
-        allDeals.push(deal);
-        if (ymd >= listCutoff) deals.push(deal);
-        if (ymd < cutoff) continue; // 평균은 조회일 기준 최근 days일 거래만
-        a.sum += price;
-        a.n += 1;
-      }
+    for (const t of rows) {
+      if (t.tradeType && t.tradeType !== "A1") continue; // 매매만
+      const price = Number(t.dealPrice);
+      if (!price) continue;
+      const key = `${t.tradeYear}-${t.tradeMonth}-${t.tradeDate}-${t.floor}-${price}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const a = (agg[pyeong] = agg[pyeong] || { sum: 0, n: 0, max: null, min: null });
+      // 최고가/최저가는 조회 구간 전체 거래 기준(full=false 면 불완전하므로 버린다)
+      const ym = `${t.tradeYear}.${String(t.tradeMonth).padStart(2, "0")}`;
+      if (!a.max || price > a.max.price) a.max = { price, ym };
+      if (!a.min || price < a.min.price) a.min = { price, ym };
+      const ymd = Number(t.tradeYear) * 10000 + Number(t.tradeMonth) * 100 + Number(t.tradeDate);
+      const p2 = (n) => String(n).padStart(2, "0");
+      const deal = {
+        date: `${t.tradeYear}-${p2(t.tradeMonth)}-${p2(t.tradeDate)}`,
+        pyeong, excl, floor: t.floor != null ? String(t.floor) : "", price,
+        canceled: t.deleteYn === true || t.deleteYn === "Y",
+      };
+      allDeals.push(deal);
+      if (ymd >= listCutoff) deals.push(deal);
+      if (ymd < cutoff) continue; // 평균은 조회일 기준 최근 days일 거래만
+      a.sum += price;
+      a.n += 1;
     }
   }
 
   const avg = {};
   for (const p in agg) {
     const a = agg[p];
-    avg[p] = { price: a.n ? a.sum / a.n : null, count: a.n, days, max: a.max, min: a.min };
+    avg[p] = { price: a.n ? a.sum / a.n : null, count: a.n, days, max: full ? a.max : null, min: full ? a.min : null };
   }
   const byDate = (a, b) => b.date.localeCompare(a.date) || b.price - a.price;
   deals.sort(byDate);
   allDeals.sort(byDate);
-  return { avg, deals, allDeals };
+  return { avg, deals, allDeals: full ? allDeals : null };
 }
 
 // 비교 단지 실거래 — 단지별 실거래 건별 목록을 listDays일치 가져온다.
@@ -160,7 +183,7 @@ async function fetchCompareReal(ctx, headers, compares) {
   for (const c of compares || []) {
     if (!c.complexNo) continue;
     try {
-      const { deals } = await fetchRealAvgByPyeong(ctx, headers, c.complexNo, 10, c.listDays || 150);
+      const { deals } = await fetchRealAvgByPyeong(ctx, headers, c.complexNo, 10, c.listDays || 150, false);
       out.push({ name: c.name, complexNo: String(c.complexNo), deals });
     } catch (e) {
       console.log(`  [비교] ${c.name} 수집 실패:`, e.message);
@@ -170,12 +193,13 @@ async function fetchCompareReal(ctx, headers, compares) {
 }
 
 // 한 세션에서 매물 + 실거래 평균/목록(+비교 단지 실거래)을 함께 수집
-async function fetchSaleAndReal(complexNo, compares = []) {
+// fullReal: 실거래를 처음부터 끝까지 받을지(하루 한 번) — 아니면 최근 구간만
+async function fetchSaleAndReal(complexNo, compares = [], fullReal = true) {
   return withSession(complexNo, async (ctx, headers) => {
     const articles = await fetchListings(ctx, headers, complexNo);
     let realAvg = {}, realDeals = null, realDealsAll = null;
     try {
-      ({ avg: realAvg, deals: realDeals, allDeals: realDealsAll } = await fetchRealAvgByPyeong(ctx, headers, complexNo));
+      ({ avg: realAvg, deals: realDeals, allDeals: realDealsAll } = await fetchRealAvgByPyeong(ctx, headers, complexNo, 10, 60, fullReal));
     } catch (e) {
       // 실거래 수집 실패는 매물 수집을 막지 않는다(선택 정보)
       console.log("  [실거래] 수집 실패:", e.message);

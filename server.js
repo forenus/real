@@ -133,7 +133,7 @@ function buildState() {
         realPrice: r && r.price ? fmtPriceManwon(r.price) : "",
         realCount: r ? r.count : 0,
         realDays: r ? r.days : 10,
-        // 실거래 최고가/최저가 (조회 구간 최근 5년) + 거래월
+        // 실거래 최고가/최저가 (전체 기간) + 거래월
         maxPrice: r && r.max ? fmtPriceManwon(r.max.price) : "",
         maxYm: r && r.max ? r.max.ym : "",
         minPrice: r && r.min ? fmtPriceManwon(r.min.price) : "",
@@ -367,7 +367,10 @@ async function refreshOnce() {
   const compares = (cfg.compareComplexes || []).map((c) => ({
     ...c, listDays: dayDiff(DISPLAY_START, todayStr()) + 15,
   }));
-  const { articles, realAvg, realDeals, realDealsAll, compareReal } = await fetchSaleAndReal(complexNo, compares);
+  // 실거래 전체(입주 전 분양권 거래부터)는 수백 건이라 네이버에 수십 번 요청해야 한다 — 하루 한 번만 끝까지 받고,
+  // 나머지 수집은 최근 구간만 받아 보관된 전체 목록에 합친다.
+  const fullReal = !history.realDealsAll || history.realDealsAll.date !== todayStr() || !history.realDealsAll.complete;
+  const { articles, realAvg, realDeals, realDealsAll, compareReal } = await fetchSaleAndReal(complexNo, compares, fullReal);
   if (articles.length === 0) {
     return { fetched: 0, warning: "매매 매물이 0건이거나 단지 번호가 올바르지 않을 수 있습니다." };
   }
@@ -379,16 +382,36 @@ async function refreshOnce() {
   // 매물 단위 기록(증감 목록용) — 실제 수집한 날만 저장
   history.articles = history.articles || {};
   history.articles[today] = articles.map(toRecord).filter((r) => r.no && r.pyeong);
-  // 실거래 평균가(최근 1년) — 평형별 { price(만원), count }
-  history.realAvg = history.realAvg || {};
-  history.realAvg[today] = realAvg || {};
   // 실거래 건별 목록(최근 60일) — 수집 실패(null)면 기존 기록을 건드리지 않는다
   if (realDeals) {
     history.realDeals = history.realDeals || {};
     history.realDeals[today] = realDeals;
   }
-  // 실거래 전체 목록(조회 구간 최근 5년) — 날짜별로 쌓지 않고 최신 수집분만 보관
-  if (realDealsAll && realDealsAll.length) history.realDealsAll = { date: today, list: realDealsAll };
+  // 실거래 전체 목록 — 날짜별로 쌓지 않고 최신분만 보관
+  if (realDealsAll && realDealsAll.length) {
+    history.realDealsAll = { date: today, complete: true, list: realDealsAll };
+  } else if (realDeals && history.realDealsAll) {
+    // 최근 구간만 받은 경우: 최근 60일은 새로 받은 것으로, 그 이전은 보관분으로
+    const from = realDeals.length ? realDeals[realDeals.length - 1].date : today;
+    const older = history.realDealsAll.list.filter((x) => x.date < from);
+    history.realDealsAll = { ...history.realDealsAll, list: [...realDeals, ...older] };
+  }
+  // 실거래 평균가(최근 10일) — 평형별 { price(만원), count, max, min }
+  // 최고/최저가는 전체 목록으로 계산한다(최근 구간만 받은 수집에서는 naver.js 가 비워 둔다).
+  const avgToday = realAvg || {};
+  if (history.realDealsAll) {
+    for (const p in avgToday) {
+      if (avgToday[p].max) continue;
+      for (const x of history.realDealsAll.list) {
+        if (String(x.pyeong) !== String(p) || x.canceled) continue;
+        const ym = x.date.slice(0, 7).replace("-", ".");
+        if (!avgToday[p].max || x.price > avgToday[p].max.price) avgToday[p].max = { price: x.price, ym };
+        if (!avgToday[p].min || x.price < avgToday[p].min.price) avgToday[p].min = { price: x.price, ym };
+      }
+    }
+  }
+  history.realAvg = history.realAvg || {};
+  history.realAvg[today] = avgToday;
   // 비교 단지 실거래 — 최신 수집분만 보관(과거 날짜 평균은 건별 목록에서 다시 계산)
   if (compareReal && compareReal.length) {
     history.compareReal = history.compareReal || {};
