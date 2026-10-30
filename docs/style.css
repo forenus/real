@@ -527,3 +527,29 @@ td.tags { white-space: nowrap; text-align: right; }
 /* 단지 로고(상단 제목 자리) — 흰 바탕이 배경에 녹아들게 multiply */
 .page-head h1 .brand-logo { display: block; height: 46px; width: auto; mix-blend-mode: multiply; }
 @media (max-width: 760px) { .page-head h1 .brand-logo { height: 36px; } }
+
+/* ---------- 접속 통계 (관리자) ---------- */
+.nav .nav-lock { margin-left: auto; opacity: .45; }
+.st-locked { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 48px 24px; color: var(--muted); }
+.st-locked[hidden] { display: none; }
+.st-locked h2 { color: var(--text); margin: 6px 0 0; }
+.st-locked p { margin: 0 0 12px; font-size: 13.5px; }
+#st-body[hidden] { display: none; }
+#st-body .kpi { min-height: 112px; }
+.st-bars { display: flex; flex-direction: column; gap: 12px; }
+.st-bar { display: grid; grid-template-columns: 92px minmax(0, 1fr) 76px; align-items: center; gap: 12px; font-size: 13.5px; }
+.st-name { color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.st-track { height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.st-track i { display: block; height: 100%; border-radius: 999px; background: var(--primary); }
+.st-val { text-align: right; font-weight: 650; font-variant-numeric: tabular-nums; }
+.st-val small { color: var(--muted); font-weight: 400; font-size: 11.5px; }
+
+/* 사이드바 로고 — 어두운 메뉴 위에서도 보이게 흰 카드에 */
+a.logo { text-decoration: none; padding: 0 2px; }
+.logo-card { display: block; background: #fff; border-radius: 12px; padding: 10px 12px; box-shadow: 0 6px 18px -8px rgba(0, 0, 0, .5); }
+.logo-card img { display: block; width: 100%; height: auto; }
+@media (max-width: 760px) {
+  a.logo { flex: 1; padding: 0; }
+  .logo-card { display: inline-block; padding: 5px 9px; border-radius: 9px; }
+  .logo-card img { width: auto; height: 26px; }
+}

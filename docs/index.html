@@ -15,12 +15,13 @@
   <div class="layout">
     <!-- 좌측 메뉴 -->
     <aside class="sidebar">
-      <div class="logo"><span class="logo-mark"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span><span>매물 추적기</span></div>
+      <a class="logo" href="#dashboard" aria-label="동탄역 포레너스 매물 추적기 — 대시보드"><span class="logo-card"><img src="logo-forenus.png" alt="동탄역 포레너스" width="620" height="149" /></span></a>
       <nav class="nav" id="nav" aria-label="메뉴">
         <a href="#dashboard" data-view="dashboard"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1.5"/><rect width="7" height="5" x="14" y="3" rx="1.5"/><rect width="7" height="9" x="14" y="12" rx="1.5"/><rect width="7" height="5" x="3" y="16" rx="1.5"/></svg><span>대시보드</span></a>
         <a href="#news" data-view="news"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg><span>지역 소식</span></a>
         <a href="#board" data-view="board"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>개선·문의</span></a>
         <a href="#guide" data-view="guide"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg><span>사용법</span></a>
+        <a href="#stats" data-view="stats"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg><span>접속 통계</span><svg class="ico nav-lock" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></a>
         <a href="#settings" data-view="settings" id="nav-settings"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg><span>설정</span></a>
       </nav>
       <div class="side-foot">
@@ -347,6 +348,45 @@
         <section class="card guide-sec">
           <h2><span class="g-no">!</span>참고</h2>
           <p class="guide-note">네이버 부동산 데이터를 비공식으로 모은 것이라 실제와 다를 수 있습니다. 관리자 PC가 꺼져 있으면 자동 갱신·수동 수집·문의 발송이 잠시 멈춥니다. 개인 참고용으로만 활용해 주세요.</p>
+        </section>
+      </section>
+
+      <!-- ===== 접속 통계 (관리자 — 수동 수집과 같은 비밀번호) ===== -->
+      <section class="view" data-view="stats" hidden>
+        <div id="st-body" hidden>
+          <div class="kpis" id="st-kpis"></div>
+          <section class="card">
+            <div class="table-head">
+              <h2>최근 30일 방문 추이</h2>
+              <span class="dates"><span class="lg"><i style="background:var(--primary)"></i>방문자</span><span class="lg"><i style="background:#c9d3ff"></i>페이지뷰</span></span>
+            </div>
+            <div id="st-daily" class="chart-wrap"></div>
+          </section>
+          <div class="grid-2">
+            <section class="card"><h2>많이 본 메뉴</h2><div id="st-views" class="st-bars"></div></section>
+            <section class="card"><h2>유입 경로</h2><div id="st-refs" class="st-bars"></div></section>
+            <section class="card"><h2>시간대별 방문</h2><div id="st-hours" class="chart-wrap"></div></section>
+            <section class="card"><h2>기기</h2><div id="st-dev" class="st-bars"></div></section>
+          </div>
+          <section class="card">
+            <div class="table-head">
+              <h2>최근 방문 기록</h2>
+              <span class="dates" id="st-updated"></span>
+            </div>
+            <div class="table-wrap">
+              <table class="st-recent">
+                <thead><tr><th>시각</th><th>방문자</th><th>본 메뉴</th><th>기기</th><th>유입 경로</th></tr></thead>
+                <tbody id="st-recent"></tbody>
+              </table>
+            </div>
+            <p class="hint">공개 페이지 방문만 셉니다(PC에서 연 화면 제외). IP 등 개인정보는 저장하지 않고, 같은 브라우저는 같은 방문자로 셉니다. PC 서버가 꺼져 있던 동안의 방문은 기록되지 않습니다.</p>
+          </section>
+        </div>
+        <section class="card st-locked" id="st-locked">
+          <svg class="ico" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <h2>관리자 전용 화면입니다</h2>
+          <p>접속 통계는 관리자 비밀번호로 로그인해야 볼 수 있습니다.</p>
+          <button type="button" class="btn primary" id="st-login">로그인</button>
         </section>
       </section>
 
