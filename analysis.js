@@ -10,7 +10,6 @@ const ROOT = __dirname;
 const FILE = path.join(ROOT, "analysis.json");
 const SECRET_FILE = path.join(ROOT, "secret.json");
 const MODEL = "claude-opus-5-5";
-const MIN_GAP_MS = 3 * 60 * 60 * 1000; // 같은 날은 3시간에 한 번까지만 다시 쓴다(수집은 30분마다라 비용 절약)
 
 function readJson(file, fallback) {
   try { return JSON.parse(fs.readFileSync(file, "utf8")); } catch { return fallback; }
@@ -134,14 +133,12 @@ async function claudeText(facts, key) {
   return out;
 }
 
-// 데이터가 바뀌었고 마지막 생성 후 충분히 지났으면(또는 날짜가 바뀌었으면) 새로 쓴다.
+// 수집할 때마다(자동 30분 간격·수동) 새로 분석한다. 키가 없을 때만 숫자가 같으면 이전 자동 문장을 그대로 쓴다.
 async function updateAnalysis(state, allDeals, { force = false } = {}) {
   const facts = buildFacts(state, allDeals);
   const key = crypto.createHash("sha1").update(JSON.stringify(facts)).digest("hex");
   const prev = loadAnalysis();
-  if (!force && prev && prev.key === key) return prev;
-  const fresh = !prev || prev.date !== facts.기준일 || Date.now() - Date.parse(prev.generatedAt) >= MIN_GAP_MS;
-  if (!force && !fresh && prev.source === "ai") return prev;
+  if (!force && prev && prev.key === key && !apiKey()) return prev;
 
   let result = null;
   const k = apiKey();

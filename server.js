@@ -580,7 +580,7 @@ async function publishPages() {
   try { return await publishing; } finally { publishing = null; }
 }
 async function publishSafe(tag) {
-  // 게시 전에 추이 해설을 새로 쓴다(데이터가 바뀌었을 때만, Claude 호출은 3시간에 한 번까지)
+  // 게시 전에 추이 해설을 새로 쓴다(수집할 때마다 AI 가 다시 분석)
   try {
     const a = await updateAnalysis(buildState(), (loadHistory().realDealsAll || {}).list);
     console.log(`  [해설] ${a.source === "ai" ? "Claude" : "자동 분석"} ${a.generatedAt}`);
