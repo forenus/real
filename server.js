@@ -15,7 +15,8 @@ const HISTORY_FILE = path.join(ROOT, "history.json");
 const CONFIG_FILE = path.join(ROOT, "config.json");
 const PORT = 5173;
 // GitHub Pages 공개 페이지 — 이 출처에서 오는 수동 수집 요청만 허용한다(CORS).
-const PAGES_ORIGIN = "https://sunguphong.github.io";
+// 저장소를 forenus 조직으로 옮기는 동안 옛 주소도 함께 허용한다
+const PAGES_ORIGINS = ["https://forenus.github.io", "https://sunguphong.github.io"];
 // 외부(공개 페이지·터널)에서 수동 수집할 때 최소 간격 — 네이버 요청 제한 방지
 const REMOTE_COOLDOWN_MS = 10 * 60 * 1000;
 // 개선·문의 메일 발송 설정(보내는 Gmail·앱 비밀번호·받는 주소) — 공개 저장소에 올리지 않도록 mail.json 에 따로 둔다
@@ -652,8 +653,8 @@ const server = http.createServer(async (req, res) => {
   const url = req.url.split("?")[0];
 
   // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
-  if ((url === "/api/refresh" || url === "/api/contact") && req.headers.origin === PAGES_ORIGIN) {
-    res.setHeader("Access-Control-Allow-Origin", PAGES_ORIGIN);
+  if ((url === "/api/refresh" || url === "/api/contact") && PAGES_ORIGINS.includes(req.headers.origin)) {
+    res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Vary", "Origin");
     if (req.method === "OPTIONS") {
       res.writeHead(204, {
