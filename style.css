@@ -461,22 +461,56 @@ td.tags { white-space: nowrap; text-align: right; }
 }
 
 /* ---------- 사용법 ---------- */
-.guide-hero p { margin: 0; color: var(--text-2); line-height: 1.7; max-width: 760px; }
-.guide-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
-.guide-steps div { display: flex; align-items: center; gap: 12px; background: var(--surface-2); border-radius: var(--radius-sm); padding: 14px 16px; font-size: 13.5px; color: var(--text-2); line-height: 1.5; }
+.guide-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 28px; align-items: center; }
+.guide-hero p { margin: 0; color: var(--text-2); line-height: 1.75; }
+.guide-steps { display: grid; gap: 8px; margin-top: 18px; }
+.guide-steps div { display: flex; align-items: center; gap: 12px; background: var(--surface-2); border-radius: var(--radius-sm); padding: 11px 14px; font-size: 13.5px; color: var(--text-2); }
 .guide-steps b {
-  flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
-  background: var(--primary); color: #fff; font-size: 13px; font-weight: 700;
+  flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--primary); color: #fff; font-size: 12.5px; font-weight: 700;
 }
-.guide > .card { margin: 0; }
-.guide dl { margin: 0; }
-.guide dt { font-weight: 650; font-size: 14px; margin-top: 16px; }
-.guide dt:first-child { margin-top: 0; }
-.guide dd { margin: 4px 0 0; color: var(--text-2); font-size: 13.5px; line-height: 1.7; }
-.guide dd .tag:first-child { margin-left: 0; }
+.guide-toc { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+.guide-toc a {
+  font-size: 12.5px; font-weight: 500; color: var(--text-2); text-decoration: none;
+  border: 1px solid var(--border-strong); border-radius: 999px; padding: 4px 11px; background: var(--surface);
+}
+.guide-toc a:hover { border-color: var(--primary); color: var(--primary); }
+.guide-hero-shots { position: relative; padding-right: 64px; padding-bottom: 6px; }
+.guide-hero-shots .phone { position: absolute; right: 0; bottom: 30px; width: 30%; }
+.guide-hero-shots .phone img { border-radius: 14px; box-shadow: var(--shadow-lg); border: 4px solid #0f1218; }
+
+.guide-sec { scroll-margin-top: 96px; }
+.guide-sec h2 { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.g-no {
+  width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; flex: none;
+  background: var(--primary-soft); color: var(--primary-700); font-size: 13px; font-weight: 700;
+}
+.guide-row { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.guide-shot { margin: 0; }
+.guide-shot a { display: block; }
+.guide-shot img {
+  display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border);
+  box-shadow: 0 6px 20px -10px rgba(16, 24, 40, .25); background: var(--surface-2);
+}
+.guide-shot a:hover img { border-color: var(--primary); }
+.guide-shot figcaption { font-size: 12px; color: var(--muted); margin-top: 8px; text-align: center; }
+.guide-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 20px; align-items: start; }
+.guide-pair.tight { margin-top: 0; grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); align-items: center; }
+.guide-small { max-width: 260px; margin: 16px auto 0; }
+.guide-small img { box-shadow: none; }
+.guide-sec dl { margin: 0; }
+.guide-sec dt { font-weight: 650; font-size: 14px; margin-top: 16px; }
+.guide-sec dt:first-child { margin-top: 0; }
+.guide-sec dd { margin: 4px 0 0; color: var(--text-2); font-size: 13.5px; line-height: 1.75; }
+.guide-sec dd .tag:first-child { margin-left: 0; }
+.guide-note { margin: 0; color: var(--text-2); line-height: 1.75; }
+@media (max-width: 1100px) {
+  .guide-hero, .guide-row { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+}
 @media (max-width: 760px) {
-  .guide-steps { grid-template-columns: minmax(0, 1fr); }
-  .guide-steps br { display: none; }
+  .guide-pair { grid-template-columns: minmax(0, 1fr); }
+  .guide-hero-shots { padding-right: 0; }
+  .guide-hero-shots .phone { display: none; }
 }
 
 /* ---------- 그래프 추이 해설 ---------- */
@@ -489,3 +523,7 @@ td.tags { white-space: nowrap; text-align: right; }
 .ai-head b { font-size: 13px; font-weight: 700; }
 .ai-head span { margin-left: auto; font-size: 11.5px; color: var(--muted); font-weight: 400; }
 .ai-note p { margin: 0; font-size: 14px; line-height: 1.75; color: var(--text); }
+
+/* 단지 로고(상단 제목 자리) — 흰 바탕이 배경에 녹아들게 multiply */
+.page-head h1 .brand-logo { display: block; height: 46px; width: auto; mix-blend-mode: multiply; }
+@media (max-width: 760px) { .page-head h1 .brand-logo { height: 36px; } }

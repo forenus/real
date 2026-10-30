@@ -560,7 +560,8 @@ async function publishPages() {
     let collectUrl = loadConfig().publicUrl || "";
     if (!collectUrl) try { collectUrl = fs.readFileSync(path.join(ROOT, "tunnel-url.txt"), "utf8").trim(); } catch {}
     writeJson(path.join(DOCS, "data.json"), { generatedAt: new Date().toISOString(), collectUrl, state, changes, news, newsDongtan });
-    for (const f of ["app.js", "style.css"]) fs.copyFileSync(path.join(ROOT, f), path.join(DOCS, f));
+    for (const f of ["app.js", "style.css", "logo-forenus.png"]) fs.copyFileSync(path.join(ROOT, f), path.join(DOCS, f));
+    fs.cpSync(path.join(ROOT, "guide"), path.join(DOCS, "guide"), { recursive: true }); // 사용법 참고 캡처
     const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8")
       .replace(`<script src="app.js"></script>`, `<script>window.STATIC_MODE = true;</script>
   <script src="app.js"></script>`);

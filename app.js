@@ -468,7 +468,11 @@ function render(state) {
   // 헤더/요약
   $("complexNo").value = state.complexNo || "";
   $("complexName").value = state.complexName || "";
-  $("title").textContent = state.complexName || (state.complexNo ? `단지 ${state.complexNo}` : "단지를 설정해 주세요");
+  // 동탄역포레너스는 단지 로고로, 그 밖의 단지는 이름 글자로 보여준다
+  const name = state.complexName || (state.complexNo ? `단지 ${state.complexNo}` : "단지를 설정해 주세요");
+  $("title").innerHTML = /포레너스/.test(name)
+    ? `<img class="brand-logo" src="logo-forenus.png" alt="${esc(name)}" width="620" height="149" />`
+    : esc(name);
 
   // 표 헤더 날짜
   $("col-prev").textContent = state.prevDate ? `${state.prevDate}` : "이전";
@@ -587,6 +591,13 @@ function showView() {
   else window.scrollTo(0, 0);
 }
 window.addEventListener("hashchange", () => { showView(); redrawCharts(); });
+// 사용법 목차 — 주소(#뷰이름)는 그대로 두고 해당 칸으로 스크롤만 한다
+document.querySelector(".guide-toc").addEventListener("click", (e) => {
+  const a = e.target.closest("[data-jump]");
+  if (!a) return;
+  e.preventDefault();
+  $(a.dataset.jump).scrollIntoView({ behavior: "smooth", block: "start" });
+});
 
 // ---------- 개선·문의 (메일 발송) ----------
 // 글은 저장하지 않고 PC 서버(/api/contact)가 관리자 메일로만 보낸다.
