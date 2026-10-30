@@ -8,6 +8,7 @@ const { execFile } = require("child_process");
 const crypto = require("crypto");
 const { fetchSaleAndReal, aggregateByPyeong } = require("./naver");
 const { fetchNews, TOPICS: NEWS_TOPICS } = require("./news");
+const { updateAnalysis, loadAnalysis } = require("./analysis");
 
 const ROOT = __dirname;
 const HISTORY_FILE = path.join(ROOT, "history.json");
@@ -225,6 +226,8 @@ function buildState() {
       totals: dates.map((d) => Object.values(history.snapshots[d]).reduce((s, n) => s + n, 0)),
     },
     realChart: { dates: realDates, series: [...realSeries, ...compareSeries], days: realWindow, mainName: history.complexName || "" },
+    // 그래프 아래 추이 해설(analysis.js 가 수집 후 갱신)
+    analysis: (({ listing, real, source, generatedAt } = {}) => (listing ? { listing, real, source, generatedAt } : null))(loadAnalysis() || {}),
     history: dates.map((d) => ({
       date: d,
       total: Object.values(history.snapshots[d]).reduce((s, n) => s + n, 0),
@@ -574,6 +577,13 @@ async function publishPages() {
   try { return await publishing; } finally { publishing = null; }
 }
 async function publishSafe(tag) {
+  // 게시 전에 추이 해설을 새로 쓴다(데이터가 바뀌었을 때만, Claude 호출은 3시간에 한 번까지)
+  try {
+    const a = await updateAnalysis(buildState(), (loadHistory().realDealsAll || {}).list);
+    console.log(`  [해설] ${a.source === "ai" ? "Claude" : "자동 분석"} ${a.generatedAt}`);
+  } catch (e) {
+    console.log("  [해설] 실패:", e.message);
+  }
   try {
     const r = await publishPages();
     console.log(`  [게시] ${tag}: ${r.pushed ? "GitHub Pages 푸시 완료" : "변경 없음"}`);

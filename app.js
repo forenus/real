@@ -238,6 +238,20 @@ function renderChart(chart) {
     : "마우스를 올리면 날짜별 매물 수와 전날 대비 증감이 보입니다.";
 }
 
+// ---------- 그래프 추이 해설 (서버의 analysis.js 가 수집 후 작성) ----------
+const AI_ICO = '<svg class="ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.94 14.06 4 20"/><path d="m14 4 1.5 3.5L19 9l-3.5 1.5L14 14l-1.5-3.5L9 9l3.5-1.5z"/><path d="M5 3v4"/><path d="M3 5h4"/></svg>';
+function renderAnalysis(a) {
+  for (const [id, key] of [["chart-ai", "listing"], ["real-ai", "real"]]) {
+    const box = $(id);
+    if (!a || !a[key]) { box.hidden = true; continue; }
+    const t = a.generatedAt ? new Date(a.generatedAt).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
+    box.innerHTML =
+      `<div class="ai-head">${AI_ICO}<b>${a.source === "ai" ? "AI 추이 해설" : "자동 추이 해설"}</b><span>${esc(t)} 기준${a.source === "ai" ? " · Claude 분석" : ""}</span></div>` +
+      `<p>${esc(a[key])}</p>`;
+    box.hidden = false;
+  }
+}
+
 // ---------- 실거래 가격추이 (SVG 라인 차트) ----------
 // 설계 메모
 //  - 거래가 없던 날(price:null)은 선을 끊는다. 없는 값을 이어 그리면 거래가 있었던 것처럼 보인다.
@@ -499,6 +513,7 @@ function render(state) {
   // 차트
   renderChart(state.chart);
   renderRealChart(state.realChart);
+  renderAnalysis(state.analysis);
   renderKpis(state);
 }
 

@@ -12,6 +12,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@anthropic-ai/sdk": "0.135.0",
     "localtunnel": "^2.0.2",
     "nodemailer": "10.1.1",
     "playwright": "^1.60.0"
