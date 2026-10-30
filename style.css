@@ -1,15 +1,27 @@
+/* 본문은 밝은 테마, 좌측 메뉴(.sidebar)만 다크 */
 :root {
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --surface-2: #f1f3f7;
+  --border: #e2e6ec;
+  --text: #1a1f29;
+  --muted: #5f6b7a;
+  --primary: #2563eb;
+  --primary-700: #1d4ed8;
+  --up: #dc2626;     /* 증가 = 빨강(매물이 늘어남) */
+  --down: #16a34a;   /* 감소 = 초록(매물이 줄어듦) */
+  --radius: 14px;
+}
+.sidebar {
   --bg: #0f1115;
   --surface: #181b22;
-  --surface-2: #20242d;
+  --surface-2: #232833;
   --border: #2b313c;
   --text: #e7ebf0;
   --muted: #9aa3b2;
   --primary: #3b82f6;
   --primary-700: #2563eb;
-  --up: #ef4444;     /* 증가 = 빨강(매물이 늘어남) */
-  --down: #22c55e;   /* 감소 = 초록(매물이 줄어듦) */
-  --radius: 14px;
+  color: var(--text);
 }
 
 * { box-sizing: border-box; }
@@ -58,6 +70,7 @@ body {
 .kpi {
   display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--text);
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px;
+  box-shadow: 0 1px 2px rgba(15,23,42,.04);
 }
 .kpi:hover { border-color: var(--primary); }
 .kpi-label { font-size: 12px; color: var(--muted); }
@@ -89,7 +102,7 @@ body {
 }
 
 /* Cards */
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin: 18px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin: 18px 0; box-shadow: 0 1px 2px rgba(15,23,42,.04); }
 .card h2 { font-size: 16px; margin: 0 0 14px; }
 
 /* Setup */
@@ -115,9 +128,9 @@ body {
 
 /* Status */
 .status { border-radius: 10px; padding: 12px 14px; font-size: 14px; margin: 14px 0; }
-.status.info { background: #15233b; border: 1px solid #1e3a5f; color: #9ecbff; }
-.status.error { background: #2a1618; border: 1px solid #5f1e22; color: #ff9ea4; }
-.status.ok { background: #14271b; border: 1px solid #1e5f33; color: #9effb4; }
+.status.info { background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; }
+.status.error { background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; }
+.status.ok { background: #f0fdf4; border: 1px solid #bbf7d0; color: #15803d; }
 
 /* Table */
 .table-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
@@ -199,7 +212,7 @@ tfoot td { font-weight: 700; border-top: 2px solid var(--border); }
   position: absolute; z-index: 5; pointer-events: none;
   background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px;
   padding: 8px 10px; font-size: 12px; min-width: 128px;
-  box-shadow: 0 6px 20px rgba(0,0,0,.45);
+  box-shadow: 0 6px 20px rgba(15,23,42,.14);
 }
 .viz-tip[hidden] { display: none; }
 .viz-tip-date { color: var(--muted); font-size: 11px; margin-bottom: 5px; }
@@ -229,18 +242,18 @@ tfoot td { font-weight: 700; border-top: 2px solid var(--border); }
 /* 매물 등록 경과일 */
 .age { display: inline-block; font-size: 11px; font-weight: 600; color: var(--muted); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0 6px; margin-left: 6px; vertical-align: 2px; }
 .age.new { color: var(--up); border-color: var(--up); }
-.age.recent { color: #9ecbff; border-color: #1e3a5f; }
+.age.recent { color: #1d4ed8; border-color: #bfdbfe; }
 .age.old { opacity: .75; }
 
 /* 실거래 목록 */
-.deals-today { background: #2a1618; border: 1px solid #5f1e22; color: #ffb3b8; border-radius: 10px; padding: 10px 12px; font-size: 14px; margin-bottom: 8px; }
+.deals-today { background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; border-radius: 10px; padding: 10px 12px; font-size: 14px; margin-bottom: 8px; }
 .deals-today.none { background: var(--surface-2); border-color: var(--border); color: var(--muted); }
 tr.deal-hl td { background: rgba(239, 68, 68, .08); }
 tr.deal-cancel td { text-decoration: line-through; opacity: .6; }
 td.tags { white-space: nowrap; text-align: right; }
 .tag { display: inline-block; font-size: 11px; font-weight: 700; border-radius: 6px; padding: 1px 6px; margin-left: 4px; }
 .tag.today { background: var(--up); color: #fff; }
-.tag.new { background: #1e3a5f; color: #9ecbff; }
+.tag.new { background: #dbeafe; color: #1d4ed8; }
 .tag.cancel { background: var(--surface-2); color: var(--muted); }
 
 
@@ -254,7 +267,7 @@ td.tags { white-space: nowrap; text-align: right; }
 /* 동탄트램 기사 */
 .news-item { display: block; text-decoration: none; color: var(--text); padding: 10px 0; border-bottom: 1px solid var(--border); }
 .news-item:last-child { border-bottom: none; }
-.news-item:hover .news-title { color: #9ecbff; }
+.news-item:hover .news-title { color: var(--primary); }
 .news-title { font-size: 14px; font-weight: 600; line-height: 1.45; }
 .news-meta { color: var(--muted); font-size: 12px; margin-top: 3px; }
 
@@ -269,7 +282,7 @@ td.tags { white-space: nowrap; text-align: right; }
 /* 실거래 직전 거래 대비 (가격: 상승 빨강 / 하락 파랑) */
 .pdiff { font-weight: 700; font-size: 13px; white-space: nowrap; }
 .pdiff.up { color: var(--up); }
-.pdiff.down { color: #60a5fa; }
+.pdiff.down { color: #2563eb; }
 .pdiff.same { color: var(--muted); font-weight: 400; }
 .pdiff-sub { display: block; color: var(--muted); font-size: 11px; font-weight: 400; }
 
@@ -286,17 +299,17 @@ td.tags { white-space: nowrap; text-align: right; }
 .post:hover { background: var(--surface-2); }
 .post:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
 .post .tag { margin-left: 0; }
-.tag.improve { background: #1e3a5f; color: #9ecbff; }
-.tag.ask { background: #3b2346; color: #e7b6f5; }
+.tag.improve { background: #dbeafe; color: #1d4ed8; }
+.tag.ask { background: #f3e8ff; color: #7e22ce; }
 .post-title { font-size: 14px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .post-meta { font-size: 12px; color: var(--muted); white-space: nowrap; }
 .pst { font-size: 11px; font-weight: 700; border-radius: 6px; padding: 1px 7px; white-space: nowrap; }
 .pst.wait { color: var(--muted); border: 1px solid var(--border); }
-.pst.answered { color: #9effb4; border: 1px solid #1e5f33; }
+.pst.answered { color: #15803d; border: 1px solid #bbf7d0; }
 .pst.done { color: var(--muted); background: var(--surface-2); }
 .post-body { font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }
 .post-body img { max-width: 100%; }
-.post-body a { color: #9ecbff; }
+.post-body a { color: var(--primary); }
 .post-body pre { background: var(--surface-2); padding: 10px; border-radius: 8px; overflow-x: auto; }
 .reply { border-top: 1px solid var(--border); margin-top: 14px; padding-top: 12px; }
 .reply-head { font-size: 12px; color: var(--muted); margin-bottom: 4px; }

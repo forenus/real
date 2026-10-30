@@ -45,10 +45,11 @@ function fmtDelta(diff) {
   return { cls: "same", txt: "–" };
 }
 
-// 카테고리 팔레트 — 다크 배경(#181b22)에서 검증 통과:
-//   명도대 L 0.48~0.67 / 채도 >=0.1 / 색약 분리 ΔE 8.4 이상 / 정상시야 19.3 이상 / 배경 대비 3:1 이상
+// 카테고리 팔레트 — 흰 카드 배경(#ffffff) 기준. 4번째(호박색)는 흰 배경 대비 3:1 을 넘기도록 어둡게 조정.
 // 두 차트가 같은 배열을 쓴다 — 색이 순위가 아니라 평형(개체)을 따라가야 하므로 25평은 두 그래프에서 같은 색.
-const COLORS = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300"];
+const COLORS = ["#3987e5", "#d95926", "#199e70", "#a86f00", "#d55181", "#008300"];
+// 차트 보조 색 — 밝은 본문 테마(격자·축 글자·점 테두리·직접 라벨·크로스헤어)
+const INK = { grid: "#e5e8ee", axis: "#6b7686", ring: "#ffffff", label: "#1a1f29", hair: "#9aa3b2" };
 
 // SVG 라인 차트 — 평형별 매물 추이. 추정 구간은 점선.
 function renderChart(chart) {
@@ -80,8 +81,8 @@ function renderChart(chart) {
   // y 격자 + 눈금
   for (let g = 0; g <= 5; g++) {
     const yy = pad.t + (ih * g) / 5;
-    svg.appendChild(el("line", { x1: pad.l, y1: yy, x2: W - pad.r, y2: yy, stroke: "#2b313c", "stroke-width": 1 }));
-    const lab = el("text", { x: pad.l - 8, y: yy + 4, fill: "#9aa3b2", "font-size": 11, "text-anchor": "end" });
+    svg.appendChild(el("line", { x1: pad.l, y1: yy, x2: W - pad.r, y2: yy, stroke: INK.grid, "stroke-width": 1 }));
+    const lab = el("text", { x: pad.l - 8, y: yy + 4, fill: INK.axis, "font-size": 11, "text-anchor": "end" });
     lab.textContent = Math.round(maxY - (maxY * g) / 5);
     svg.appendChild(lab);
   }
@@ -90,7 +91,7 @@ function renderChart(chart) {
   const step = Math.ceil(dates.length / 8);
   dates.forEach((d, i) => {
     if (i % step !== 0 && i !== dates.length - 1) return;
-    const t = el("text", { x: x(i), y: H - pad.b + 18, fill: "#9aa3b2", "font-size": 10, "text-anchor": "middle" });
+    const t = el("text", { x: x(i), y: H - pad.b + 18, fill: INK.axis, "font-size": 10, "text-anchor": "middle" });
     t.textContent = d.slice(5); // MM-DD
     svg.appendChild(t);
   });
@@ -98,7 +99,7 @@ function renderChart(chart) {
   // 추정/실제 경계 표시 (첫 실제 날짜에 세로선)
   const firstReal = dates.findIndex((d) => !estSet.has(d));
   if (firstReal > 0) {
-    svg.appendChild(el("line", { x1: x(firstReal), y1: pad.t, x2: x(firstReal), y2: pad.t + ih, stroke: "#5f6b7e", "stroke-width": 1, "stroke-dasharray": "3 3" }));
+    svg.appendChild(el("line", { x1: x(firstReal), y1: pad.t, x2: x(firstReal), y2: pad.t + ih, stroke: INK.hair, "stroke-width": 1, "stroke-dasharray": "3 3" }));
   }
 
   // 평형별 라인 — 추정 구간(점선)과 실제 구간(실선) 분리
@@ -204,15 +205,15 @@ function renderRealChart(rc) {
   for (let g = 0; g <= ticks; g++) {
     const v = hi - ((hi - lo) * g) / ticks;
     const yy = y(v);
-    svg.appendChild(el("line", { x1: pad.l, y1: yy, x2: W - pad.r, y2: yy, stroke: "#2b313c", "stroke-width": 1 }));
-    svg.appendChild(txt({ x: pad.l - 8, y: yy + 4, fill: "#9aa3b2", "font-size": 11, "text-anchor": "end" }, (v / 10000).toFixed(1) + "억"));
+    svg.appendChild(el("line", { x1: pad.l, y1: yy, x2: W - pad.r, y2: yy, stroke: INK.grid, "stroke-width": 1 }));
+    svg.appendChild(txt({ x: pad.l - 8, y: yy + 4, fill: INK.axis, "font-size": 11, "text-anchor": "end" }, (v / 10000).toFixed(1) + "억"));
   }
 
   // x 라벨 (최대 8개)
   const step = Math.ceil(dates.length / 8);
   dates.forEach((d, i) => {
     if (i % step !== 0 && i !== dates.length - 1) return;
-    svg.appendChild(txt({ x: x(i), y: H - pad.b + 18, fill: "#9aa3b2", "font-size": 10, "text-anchor": "middle" }, d.slice(5)));
+    svg.appendChild(txt({ x: x(i), y: H - pad.b + 18, fill: INK.axis, "font-size": 10, "text-anchor": "middle" }, d.slice(5)));
   });
 
   // 계열별: 값이 있는 구간만 이어서 그린다(결측에서 끊김) + 관측점 + 마지막 점 직접 라벨
@@ -238,19 +239,19 @@ function renderRealChart(rc) {
       if (s.data[i] === null) return;
       lastIdx = i;
       svg.appendChild(s.compare
-        ? el("circle", { cx: x(i), cy: y(s.data[i]), r: 3.5, fill: "#181b22", stroke: color, "stroke-width": 2 })
-        : el("circle", { cx: x(i), cy: y(s.data[i]), r: 4, fill: color, stroke: "#181b22", "stroke-width": 2 }));
+        ? el("circle", { cx: x(i), cy: y(s.data[i]), r: 3.5, fill: INK.ring, stroke: color, "stroke-width": 2 })
+        : el("circle", { cx: x(i), cy: y(s.data[i]), r: 4, fill: color, stroke: INK.ring, "stroke-width": 2 }));
     });
 
     // 직접 라벨 (계열 4개 이하이므로 색에만 의존하지 않게 평형을 바로 적는다)
     if (lastIdx >= 0) {
       const ly = Math.min(pad.t + ih - 2, Math.max(pad.t + 10, y(s.data[lastIdx])));
-      svg.appendChild(txt({ x: x(lastIdx) + 9, y: ly + 4, fill: "#e7ebf0", "font-size": 11, "font-weight": s.compare ? 400 : 700 }, nameOf(s)));
+      svg.appendChild(txt({ x: x(lastIdx) + 9, y: ly + 4, fill: INK.label, "font-size": 11, "font-weight": s.compare ? 400 : 700 }, nameOf(s)));
     }
   });
 
   // 크로스헤어 + 툴팁
-  const hair = el("line", { y1: pad.t, y2: pad.t + ih, stroke: "#5f6b7e", "stroke-width": 1, visibility: "hidden" });
+  const hair = el("line", { y1: pad.t, y2: pad.t + ih, stroke: INK.hair, "stroke-width": 1, visibility: "hidden" });
   svg.appendChild(hair);
   const hit = el("rect", { x: pad.l, y: pad.t, width: iw, height: ih, fill: "transparent" });
   svg.appendChild(hit);
@@ -411,19 +412,19 @@ function renderKpis(state) {
     `<a class="kpi" href="#${view}"><span class="kpi-label">${label}</span><b class="kpi-value">${value}</b><span class="kpi-sub">${sub}</span></a>`;
   $("kpis").innerHTML = [
     tile("현재 매매 매물", `${today}<small>건</small>`,
-      state.prevDate ? `<span class="delta ${d.cls}">${d.txt}</span> ${esc(state.prevDate.slice(5))} 대비` : "내일부터 증감 표시", "listings"),
+      state.prevDate ? `<span class="delta ${d.cls}">${d.txt}</span> ${esc(state.prevDate.slice(5))} 대비` : "내일부터 증감 표시", "dashboard"),
     tile(`최근 ${realDays}일 실거래`, `${realCnt}<small>건</small>`,
       top ? `${top.pyeong}평 평균 ${esc(top.realPrice)}` : "거래 없음", "deals"),
     tile("오늘 거래 · 신규 신고", `${nToday} · ${nNew}<small>건</small>`,
       nToday || nNew ? "실거래 목록에서 확인" : "새 소식 없음", "deals"),
     tile("마지막 수집", esc(state.todayDate ? state.todayDate.slice(5).replace("-", "/") : "–"),
-      `평형 ${rows.length}개 집계`, "listings"),
+      `평형 ${rows.length}개 집계`, "dashboard"),
   ].join("");
   $("side-meta").textContent = state.todayDate ? `마지막 수집 ${state.todayDate}` : "";
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
-const VIEWS = ["dashboard", "listings", "deals", "news", "board", "settings"];
+const VIEWS = ["dashboard", "deals", "news", "board", "settings"];
 function showView() {
   let v = location.hash.slice(1);
   if (!VIEWS.includes(v) || (STATIC && v === "settings")) v = "dashboard";
