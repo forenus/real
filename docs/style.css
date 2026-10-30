@@ -489,3 +489,7 @@ td.tags { white-space: nowrap; text-align: right; }
 .ai-head b { font-size: 13px; font-weight: 700; }
 .ai-head span { margin-left: auto; font-size: 11.5px; color: var(--muted); font-weight: 400; }
 .ai-note p { margin: 0; font-size: 14px; line-height: 1.75; color: var(--text); }
+
+/* 단지 로고(상단 제목 자리) — 흰 바탕이 배경에 녹아들게 multiply */
+.page-head h1 .brand-logo { display: block; height: 46px; width: auto; mix-blend-mode: multiply; }
+@media (max-width: 760px) { .page-head h1 .brand-logo { height: 36px; } }

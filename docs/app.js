@@ -468,7 +468,11 @@ function render(state) {
   // 헤더/요약
   $("complexNo").value = state.complexNo || "";
   $("complexName").value = state.complexName || "";
-  $("title").textContent = state.complexName || (state.complexNo ? `단지 ${state.complexNo}` : "단지를 설정해 주세요");
+  // 동탄역포레너스는 단지 로고로, 그 밖의 단지는 이름 글자로 보여준다
+  const name = state.complexName || (state.complexNo ? `단지 ${state.complexNo}` : "단지를 설정해 주세요");
+  $("title").innerHTML = /포레너스/.test(name)
+    ? `<img class="brand-logo" src="logo-forenus.png" alt="${esc(name)}" width="620" height="149" />`
+    : esc(name);
 
   // 표 헤더 날짜
   $("col-prev").textContent = state.prevDate ? `${state.prevDate}` : "이전";
