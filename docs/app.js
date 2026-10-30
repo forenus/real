@@ -642,7 +642,7 @@ function renderDeals(rd) {
   lastDeals = rd;
   const body = $("deals-body"), top = $("deals-today"), dl = $("deals-dates");
   const recent = (rd && rd.list) || [];
-  const full = (rd && rd.all) || null;          // 조회 구간 전체(최근 5년) — 수집 전이면 없음
+  const full = (rd && rd.all) || null;          // 실거래 전체(분양권 거래부터) — 수집 전이면 없음
   const showAll = dealsExpanded && !!full;
   const all = showAll ? full : recent;
   const pys = [...new Set(all.map((x) => x.pyeong))].sort((a, b) => a - b);
