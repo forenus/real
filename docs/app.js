@@ -591,6 +591,13 @@ function showView() {
   else window.scrollTo(0, 0);
 }
 window.addEventListener("hashchange", () => { showView(); redrawCharts(); });
+// 사용법 목차 — 주소(#뷰이름)는 그대로 두고 해당 칸으로 스크롤만 한다
+document.querySelector(".guide-toc").addEventListener("click", (e) => {
+  const a = e.target.closest("[data-jump]");
+  if (!a) return;
+  e.preventDefault();
+  $(a.dataset.jump).scrollIntoView({ behavior: "smooth", block: "start" });
+});
 
 // ---------- 개선·문의 (메일 발송) ----------
 // 글은 저장하지 않고 PC 서버(/api/contact)가 관리자 메일로만 보낸다.
