@@ -554,7 +554,7 @@ function renderKpis(state) {
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
-const VIEWS = ["dashboard", "news", "board", "settings"];
+const VIEWS = ["dashboard", "news", "board", "guide", "settings"];
 // 화면 대신 대시보드 안의 카드로 가는 주소(#deals → 대시보드의 실거래 목록)
 const SECTIONS = { deals: "dashboard" };
 function showView() {
