@@ -217,6 +217,7 @@ function buildState() {
     complexName: history.complexName,
     realDeals,
     todayDate: todayKey,
+    lastFetchedAt: history.lastFetchedAt || null,
     prevDate: prevKey,
     rows,
     chart: {
@@ -420,6 +421,7 @@ async function refreshOnce() {
     history.compareReal = history.compareReal || {};
     for (const c of compareReal) history.compareReal[c.name] = { complexNo: c.complexNo, updated: today, deals: c.deals };
   }
+  history.lastFetchedAt = new Date().toISOString(); // 화면의 '마지막 수집' 시각
   writeJson(HISTORY_FILE, history);
   return { fetched: articles.length };
 }
