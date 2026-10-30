@@ -19,6 +19,7 @@
         <a href="#dashboard" data-view="dashboard"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1.5"/><rect width="7" height="5" x="14" y="3" rx="1.5"/><rect width="7" height="9" x="14" y="12" rx="1.5"/><rect width="7" height="5" x="3" y="16" rx="1.5"/></svg><span>대시보드</span></a>
         <a href="#news" data-view="news"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg><span>지역 소식</span></a>
         <a href="#board" data-view="board"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>개선·문의</span></a>
+        <a href="#guide" data-view="guide"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg><span>사용법</span></a>
         <a href="#settings" data-view="settings" id="nav-settings"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg><span>설정</span></a>
       </nav>
       <div class="side-foot">
@@ -209,6 +210,78 @@
           </form>
           <p class="hint">보낸 글은 이 사이트에 저장·공개되지 않고 관리자 메일로만 전달됩니다. PC 서버가 켜져 있을 때 보낼 수 있습니다.</p>
         </section>
+      </section>
+
+      <!-- ===== 사용법 ===== -->
+      <section class="view" data-view="guide" hidden>
+        <section class="card guide-hero">
+          <h2>매물 추적기 사용법</h2>
+          <p>동탄역포레너스의 <b>매매 매물 수</b>와 <b>실거래가</b>를 매일 기록해, 시장이 어느 쪽으로 움직이는지 한눈에 보여주는 화면입니다.
+            데이터는 네이버 부동산에서 <b>30분마다 자동으로</b> 모읍니다.</p>
+          <div class="guide-steps">
+            <div><b>1</b><span>대시보드에서 오늘 매물 수와<br>전일 대비 증감을 확인</span></div>
+            <div><b>2</b><span>그래프로 매물·실거래가<br>흐름을 살펴보기</span></div>
+            <div><b>3</b><span>숫자·화살표를 눌러<br>실제 매물 목록 보기</span></div>
+          </div>
+        </section>
+
+        <div class="grid-2 guide">
+          <section class="card">
+            <h2>대시보드 보는 법</h2>
+            <dl>
+              <dt>맨 위 숫자 칸</dt>
+              <dd>현재 매매 매물 수(전일 대비 증감·최근 30일 흐름), 최근 10일 실거래, 오늘 거래·신규 신고, 마지막 수집일입니다.</dd>
+              <dt>매물 추이 그래프</dt>
+              <dd>평형별 매물 수의 하루하루 변화입니다. <b>점선</b> 구간은 수집 시작 전이라 매물 등록일로 거꾸로 추정한 값, <b>실선</b>은 실제 수집값입니다.</dd>
+              <dt>실거래 가격추이</dt>
+              <dd>최근 10일 실거래 평균가입니다. 거래가 없던 날은 선이 끊깁니다. <b>이지더원 비교</b>를 켜면 이웃 단지와 함께 볼 수 있습니다.</dd>
+              <dt>평형별 매매 매물 증감</dt>
+              <dd>전일과 오늘의 평형별 매물 수, 평균 호가, 최근 실거래 평균가입니다.</dd>
+              <dt>실거래 목록</dt>
+              <dd>최근 60일 실거래와 <b>직전 거래 대비</b> 가격 변화입니다. 아래 <b>전체 펼치기</b>를 누르면 2016년 분양권 거래부터 전체가 100건씩 나옵니다.</dd>
+            </dl>
+          </section>
+
+          <section class="card">
+            <h2>눌러 보기 · 색의 의미</h2>
+            <dl>
+              <dt>그래프에 마우스 올리기(휴대폰은 터치)</dt>
+              <dd>그날의 매물 수·가격과 전날 대비 증감이 팝업으로 나옵니다. PC에서는 그래프를 누른 뒤 ← → 키로 날짜를 옮길 수 있습니다.</dd>
+              <dt>표의 매물 수 숫자</dt>
+              <dd>그날 등록돼 있던 매물 목록(가격·층·중개사)이 열립니다. 매물을 누르면 네이버 부동산으로 이동합니다.</dd>
+              <dt>증감 ▲▼</dt>
+              <dd>전일 대비 <b>새로 올라온 매물</b>과 <b>사라진 매물</b>(거래됐거나 내린 매물)이 보입니다.</dd>
+              <dt>색</dt>
+              <dd><span class="delta up">▲ 빨강</span> 매물 증가 · 가격 상승 &nbsp; <span class="delta down">▼ 초록</span> 매물 감소 &nbsp; <span class="pdiff down">▼ 파랑</span> 실거래가 하락</dd>
+              <dt>실거래 목록 표시</dt>
+              <dd><span class="tag today">오늘 거래</span> 오늘 계약된 거래, <span class="tag new">신규 신고</span> 직전 수집 이후 새로 공개된 거래(실거래는 계약 후 최대 30일 안에 신고됩니다), <span class="tag cancel">해제</span> 계약이 취소된 거래입니다.</dd>
+            </dl>
+          </section>
+
+          <section class="card">
+            <h2>데이터 갱신</h2>
+            <dl>
+              <dt>자동 수집</dt>
+              <dd>관리자 PC가 켜져 있으면 <b>30분마다</b> 자동으로 수집하고 이 페이지에 반영합니다. 위쪽 초록 점(30분마다 자동 수집)이 그 표시입니다.</dd>
+              <dt>수동 수집</dt>
+              <dd>왼쪽 아래(휴대폰은 오른쪽 위) <b>지금 수동 수집</b> 버튼을 누르고 관리자에게 받은 <b>비밀번호</b>를 넣으면 바로 수집합니다. 한 번 맞히면 그 창을 닫기 전까지 다시 묻지 않습니다.</dd>
+              <dt>제한</dt>
+              <dd>네이버 요청 제한을 피하려고 수동 수집은 <b>10분에 한 번</b>만 됩니다. 비밀번호를 5번 틀리면 15분 동안 막힙니다.</dd>
+            </dl>
+          </section>
+
+          <section class="card">
+            <h2>그 밖의 메뉴 · 참고</h2>
+            <dl>
+              <dt>지역 소식</dt>
+              <dd>왼쪽은 동탄트램, 오른쪽은 동탄 관련 최신 기사입니다(분양 광고성 기사는 뺍니다). 오늘 나온 기사는 따로 표시됩니다.</dd>
+              <dt>개선·문의</dt>
+              <dd>원하는 기능이나 궁금한 점을 적어 보내면 관리자 메일로만 전달됩니다. 사이트에는 저장·공개되지 않습니다. 이미지·파일은 5개, 합계 8MB까지 첨부할 수 있습니다.</dd>
+              <dt>주의</dt>
+              <dd>네이버 부동산 데이터를 비공식으로 모은 것이라 실제와 다를 수 있습니다. 관리자 PC가 꺼져 있으면 갱신·수동 수집·문의 발송이 잠시 멈춥니다. 개인 참고용으로만 활용해 주세요.</dd>
+            </dl>
+          </section>
+        </div>
       </section>
 
       <!-- ===== 설정 (PC 서버 화면에서만) ===== -->

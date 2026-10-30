@@ -459,3 +459,22 @@ td.tags { white-space: nowrap; text-align: right; }
   .deals-table td.tags .tag:first-child { margin-left: 0; }
   .deals-table .pdiff-sub { display: inline; margin-left: 4px; }
 }
+
+/* ---------- 사용법 ---------- */
+.guide-hero p { margin: 0; color: var(--text-2); line-height: 1.7; max-width: 760px; }
+.guide-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+.guide-steps div { display: flex; align-items: center; gap: 12px; background: var(--surface-2); border-radius: var(--radius-sm); padding: 14px 16px; font-size: 13.5px; color: var(--text-2); line-height: 1.5; }
+.guide-steps b {
+  flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--primary); color: #fff; font-size: 13px; font-weight: 700;
+}
+.guide > .card { margin: 0; }
+.guide dl { margin: 0; }
+.guide dt { font-weight: 650; font-size: 14px; margin-top: 16px; }
+.guide dt:first-child { margin-top: 0; }
+.guide dd { margin: 4px 0 0; color: var(--text-2); font-size: 13.5px; line-height: 1.7; }
+.guide dd .tag:first-child { margin-left: 0; }
+@media (max-width: 760px) {
+  .guide-steps { grid-template-columns: minmax(0, 1fr); }
+  .guide-steps br { display: none; }
+}
