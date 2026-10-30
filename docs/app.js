@@ -556,6 +556,10 @@ function renderKpis(state) {
   const realDays = (rows.find((r) => r.realDays) || {}).realDays || 10;
   // 실거래가 가장 많은 평형의 평균가를 대표값으로 보여준다
   const top = rows.filter((r) => r.realPrice).sort((a, b) => b.realCount - a.realCount)[0];
+  // 마지막 수집 시각(HH:MM) — 서버가 수집할 때마다 기록한다
+  const fetchedTime = state.lastFetchedAt
+    ? new Date(state.lastFetchedAt).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit", hour12: false })
+    : "";
   const tile = (label, value, sub, view, extra = "") =>
     `<a class="kpi" href="#${view}"><span class="kpi-label">${label}</span><b class="kpi-value">${value}</b><span class="kpi-sub">${sub}</span>${extra}</a>`;
   $("kpis").innerHTML = [
@@ -567,9 +571,9 @@ function renderKpis(state) {
     tile("오늘 거래 · 신규 신고", `${nToday} · ${nNew}<small>건</small>`,
       nToday || nNew ? "실거래 목록에서 확인" : "새 소식 없음", "deals"),
     tile("마지막 수집", esc(state.todayDate ? state.todayDate.slice(5).replace("-", "/") : "–"),
-      `평형 ${rows.length}개 집계`, "dashboard"),
+      `${fetchedTime ? `${fetchedTime} 수집 · ` : ""}평형 ${rows.length}개 집계`, "dashboard"),
   ].join("");
-  $("side-meta").textContent = state.todayDate ? `마지막 수집 ${state.todayDate}` : "";
+  $("side-meta").textContent = state.todayDate ? `마지막 수집 ${state.todayDate}${fetchedTime ? " " + fetchedTime : ""}` : "";
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
