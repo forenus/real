@@ -102,7 +102,7 @@ function renderChart(chart) {
   const firstReal = dates.findIndex((d) => !estSet.has(d));
   if (firstReal > 0) {
     svg.appendChild(el("line", { x1: x(firstReal), y1: pad.t, x2: x(firstReal), y2: pad.t + ih, stroke: INK.hair, "stroke-width": 1, "stroke-dasharray": "3 3" }));
-    svg.appendChild(txt({ x: x(firstReal) - 4, y: pad.t + 10, fill: INK.axis, "font-size": 10, "text-anchor": "end" }, "추정"));
+    svg.appendChild(txt({ x: x(firstReal) + 5, y: pad.t + 11, fill: INK.axis, "font-size": 10 }, "실제 수집 →"));
   }
 
   // 평형별: 추정 구간(점선)과 실제 구간(실선)을 각각 한 줄로 + 마지막 점 + 끝 라벨
