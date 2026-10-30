@@ -1,5 +1,5 @@
 // 접속 통계 — 공개 페이지가 열릴 때(메뉴 이동 포함) 보내 오는 기록을 날짜별로 모은다.
-// IP 등 개인정보는 저장하지 않는다. 방문자 구분은 브라우저가 만든 무작위 번호(vid)로만 한다.
+// 방문자 구분은 브라우저가 만든 무작위 번호(vid)로 한다. IP 는 관리자 확인용으로 '최근 방문 기록'(최근 50건)에만 남긴다.
 const fs = require("fs");
 const path = require("path");
 
@@ -45,7 +45,7 @@ function refName(host) {
   return h.slice(0, 40);
 }
 
-function record(body) {
+function record(body, ip = "") {
   const d = load();
   const vid = String(body.vid || "");
   if (!/^[a-z0-9]{8,32}$/.test(vid)) return false;
@@ -66,7 +66,7 @@ function record(body) {
     t.refs[r] = (t.refs[r] || 0) + 1;
   }
   if (newVisitor) d.seen[vid] = day;
-  d.recent.unshift({ t: now.toISOString(), view, mobile: !!body.mobile, ref: firstToday ? refName(body.ref) : "", isNew: newVisitor, vid: vid.slice(0, 6) });
+  d.recent.unshift({ t: now.toISOString(), view, mobile: !!body.mobile, ref: firstToday ? refName(body.ref) : "", isNew: newVisitor, vid: vid.slice(0, 6), ip: String(ip).replace(/^::ffff:/, "").slice(0, 45) });
   d.recent.length = Math.min(d.recent.length, RECENT_MAX);
   // 오래된 날짜 정리
   const cut = ymd(new Date(now.getTime() - KEEP_DAYS * 86400000));

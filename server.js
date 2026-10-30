@@ -10,6 +10,7 @@ const { fetchSaleAndReal, aggregateByPyeong } = require("./naver");
 const { fetchNews, TOPICS: NEWS_TOPICS } = require("./news");
 const { updateAnalysis, loadAnalysis } = require("./analysis");
 const stats = require("./stats");
+const { updateHogangnono, loadHogangnono } = require("./hogangnono");
 
 const ROOT = __dirname;
 const HISTORY_FILE = path.join(ROOT, "history.json");
@@ -220,6 +221,8 @@ function buildState() {
     realDeals,
     todayDate: todayKey,
     lastFetchedAt: history.lastFetchedAt || null,
+    hogangnonoUrl: loadConfig().hogangnonoUrl || "", // 상단 '호갱노노' 바로가기
+    hogangnono: loadHogangnono(), // 호갱노노 실시간 방문자(수집 때마다 갱신)
     prevDate: prevKey,
     rows,
     chart: {
@@ -564,7 +567,7 @@ async function publishPages() {
     let collectUrl = loadConfig().publicUrl || "";
     if (!collectUrl) try { collectUrl = fs.readFileSync(path.join(ROOT, "tunnel-url.txt"), "utf8").trim(); } catch {}
     writeJson(path.join(DOCS, "data.json"), { generatedAt: new Date().toISOString(), collectUrl, state, changes, news, newsDongtan });
-    for (const f of ["app.js", "style.css", "logo-forenus.png"]) fs.copyFileSync(path.join(ROOT, f), path.join(DOCS, f));
+    for (const f of ["app.js", "style.css", "logo-forenus.png", "hogangnono.png", "naverland.png"]) fs.copyFileSync(path.join(ROOT, f), path.join(DOCS, f));
     fs.cpSync(path.join(ROOT, "guide"), path.join(DOCS, "guide"), { recursive: true }); // 사용법 참고 캡처
     const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8")
       .replace(`<script src="app.js"></script>`, `<script>window.STATIC_MODE = true;</script>
@@ -582,6 +585,13 @@ async function publishPages() {
   try { return await publishing; } finally { publishing = null; }
 }
 async function publishSafe(tag) {
+  // 호갱노노 실시간 방문자 — 실패해도 게시는 계속한다
+  try {
+    const h = await updateHogangnono(loadConfig().hogangnonoUrl);
+    if (h) console.log(`  [호갱노노] 지금 ${h.realtime}명 · 24시간 ${h.recent24h}명`);
+  } catch (e) {
+    console.log("  [호갱노노] 실패:", e.message);
+  }
   // 게시 전에 추이 해설을 새로 쓴다(수집할 때마다 AI 가 다시 분석)
   try {
     const a = await updateAnalysis(buildState(), (loadHistory().realDealsAll || {}).list);
@@ -715,7 +725,7 @@ const server = http.createServer(async (req, res) => {
   // 접속 기록 — 공개 페이지가 열릴 때·메뉴를 옮길 때 보낸다(응답 본문 없음)
   if (url === "/api/hit" && req.method === "POST") {
     const body = await readJsonLimited(req, 4096);
-    if (body) stats.record(body);
+    if (body) stats.record(body, req.headers["cf-connecting-ip"] || String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || req.socket.remoteAddress);
     res.writeHead(204);
     return res.end();
   }

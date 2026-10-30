@@ -39,6 +39,8 @@
         </div>
         <div class="head-chips">
           <span class="chip live"><i></i>30분마다 자동 수집</span>
+          <a class="app-btn hgnn" id="hgnn-link" target="_blank" rel="noopener" aria-label="호갱노노에서 보기(새 창)" hidden><img src="hogangnono.png" alt="호갱노노" width="104" height="104" /></a>
+          <a class="app-btn nland" id="nland-link" target="_blank" rel="noopener" aria-label="네이버 부동산에서 보기(새 창)" hidden><img src="naverland.png" alt="네이버 부동산" width="167" height="164" /></a>
           <span class="badge" id="view-name">대시보드</span>
         </div>
       </header>
@@ -246,7 +248,7 @@
             <figure class="guide-shot"><a href="guide/kpis.jpg" target="_blank" rel="noopener"><img src="guide/kpis.jpg" alt="요약 숫자 칸 화면" loading="lazy" /></a></figure>
             <dl>
               <dt>현재 매매 매물</dt><dd>오늘 등록된 전체 매매 매물 수입니다. 아래 알약 모양이 전일 대비 증감, 오른쪽 작은 선은 최근 30일 흐름입니다.</dd>
-              <dt>최근 10일 실거래</dt><dd>최근 10일 동안 신고된 실거래 건수와, 거래가 가장 많은 평형의 평균가입니다.</dd>
+              <dt>최근 30일 실거래</dt><dd>최근 30일 동안의 실거래 건수(해제 건 제외)와, 거래가 가장 많은 평형의 평균가입니다.</dd>
               <dt>오늘 거래 · 신규 신고</dt><dd>오늘 계약된 거래와 직전 수집 이후 새로 공개된 거래 수입니다. 누르면 실거래 목록으로 이동합니다.</dd>
             </dl>
           </div>
@@ -375,11 +377,11 @@
             </div>
             <div class="table-wrap">
               <table class="st-recent">
-                <thead><tr><th>시각</th><th>방문자</th><th>본 메뉴</th><th>기기</th><th>유입 경로</th></tr></thead>
+                <thead><tr><th>시각</th><th>방문자</th><th>IP</th><th>본 메뉴</th><th>기기</th><th>유입 경로</th></tr></thead>
                 <tbody id="st-recent"></tbody>
               </table>
             </div>
-            <p class="hint">공개 페이지 방문만 셉니다(PC에서 연 화면 제외). IP 등 개인정보는 저장하지 않고, 같은 브라우저는 같은 방문자로 셉니다. PC 서버가 꺼져 있던 동안의 방문은 기록되지 않습니다.</p>
+            <p class="hint">공개 페이지 방문만 셉니다(PC에서 연 화면 제외). 같은 브라우저는 같은 방문자로 세고, IP는 최근 방문 기록 50건에만 남깁니다. PC 서버가 꺼져 있던 동안의 방문은 기록되지 않습니다.</p>
           </section>
         </div>
         <section class="card st-locked" id="st-locked">
