@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T17:17:30.525Z",
+  "generatedAt": "2026-10-30T17:47:39.901Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14689,15 +14689,15 @@
       ]
     },
     "todayDate": "2026-10-31",
-    "lastFetchedAt": "2026-10-30T17:17:10.256Z",
+    "lastFetchedAt": "2026-10-30T17:47:16.992Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 114,
-      "recent24h": 2129,
-      "frequent": 56,
-      "new": 34,
-      "fetchedAt": "2026-10-30T17:17:17.008Z"
+      "realtime": 77,
+      "recent24h": 2102,
+      "frequent": 36,
+      "new": 24,
+      "fetchedAt": "2026-10-30T17:47:28.459Z"
     },
     "prevDate": "2026-10-30",
     "rows": [
@@ -16428,10 +16428,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 저점에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 다만 최근 1주는 79건에서 멈춰 증가세가 다소 주춤한 상태입니다. 25평은 6건으로 30일 전과 같고, 6~8건 범위에서 소폭 등락하는 횡보 흐름입니다.",
-      "real": "33평은 최근 30일 4건 평균 9억 100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 다만 같은 달 2층 8억 2,000만 원 거래도 있어 층에 따라 편차가 크고, 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만 원으로 이전 5억 원대 후반 거래보다 크게 높았지만 단 1건이라 흐름으로 보기는 어렵습니다.",
+      "listing": "33평 매물은 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 안팎에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 다만 최근 1주는 79건 수준에서 횡보하고 있습니다. 25평은 6건으로 30일 전과 같으며, 12주 전 4건대에서 6~8건 범위로 소폭 늘어난 뒤 안정된 흐름입니다.",
+      "real": "33평은 최근 30일 4건 평균 9억 100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 크게 높아진 수준입니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했지만, 같은 달 2층이 8억 2,000만 원에 거래되는 등 건수가 적어 평균이 층에 따라 크게 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없고, 9월 6일 7억 2,000만 원(역대 최고) 이후 추가 거래가 없어 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-10-30T17:17:30.310Z"
+      "generatedAt": "2026-10-30T17:47:38.941Z"
     },
     "history": [
       {
@@ -19568,7 +19568,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-30T16:47:31.806Z",
+    "fetchedAt": "2026-10-30T17:47:39.794Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -19644,7 +19644,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-30T16:47:31.783Z",
+    "fetchedAt": "2026-10-30T17:47:39.900Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -19652,13 +19652,6 @@
         "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
         "source": "화성신문",
         "time": "2026-10-29T08:31:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄9동 다올공원도서관 2029년 착공 추진",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5DcGpLRm9EcVc2QXBGbEdiQXNXbmxwTVdSMDVGQU9IUUd3alRlN2wtMjFBMzdDTGtQVHpIRWVxTC05MDRDVWpQLW9BSmhIRk5sNDgxaF9OWnhxZTV4UmtJaEpjUk9lYjNMREdJQ2hTVkdsSDNLX0h0cGJB0gF_QVVfeXFMTlF0dExRUWtBdWM1WmpaT1EwRGtzYjNTTTRPaV9GS0Ftb01DWktPTFdTU0xRaGd1ZGtrUTZFTDZkcHJ6eUgzUUI1ZldTazlfQ2NKOFA1SmhYRmpXYXlSOVRrV0IyU3V2YXQ1Zzd5ejhoX2VIRVJkM1NlaUM3N2FkNA?oc=5",
-        "source": "뉴데일리 경기",
-        "time": "2026-10-28T04:03:00.000Z",
         "isToday": false
       },
       {
@@ -19715,6 +19708,13 @@
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZMjBiUE45ZFI4Z3RGS2V5bTZ1dWJISkhhTnpWUDJ5ZmE1UzZ2VXBwODBpVF9SSjVSbXBxbi1ubTRWQjVoZ3V6TDJIeXdsdjRlRnVNQVdYTnJKX193cE4tYU1CeGREMW9McXBfV0gtbkc?oc=5",
         "source": "데일리경기신문",
         "time": "2026-10-26T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄호수공원서 오는 31일 루나빛축제",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyeGV5Zkd3bURaNm13ZTExV2QxcmlNWmRNTWQwV0lIVzNLYV9LQjVySVRfS1VFVGRGYXg4QzFUaGpIOXRuRDdKSndmT2lJby1rQUdobmJsdTRtb3c?oc=5",
+        "source": "KBS 뉴스",
+        "time": "2026-10-26T06:12:00.000Z",
         "isToday": false
       }
     ]
