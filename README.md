@@ -83,6 +83,14 @@ GitHub Pages 공개 페이지의 **"📥 지금 수동 수집"** 버튼은 Cloud
 - 외부 요청은 **10분에 1회**로 제한됩니다(네이버 요청 제한 방지).
 - 고정 주소를 쓰려면 `config.json` 에 `"publicUrl": "https://..."` 를 넣으세요.
 
+## 개선·문의 게시판
+
+화면 왼쪽 메뉴 **개선·문의** 는 이 저장소의 GitHub 이슈(라벨 `개선`/`문의`)를 게시판으로 보여줍니다.
+
+- 글쓰기·답글은 GitHub 로그인 후 이슈 양식(`.github/ISSUE_TEMPLATE`)에서 합니다. 이미지·파일은 끌어다 놓거나 붙여넣으면 첨부됩니다.
+- 새 글이 올라오면 `.github/workflows/board-mail.yml` 이 메일로 알립니다.
+  저장소 Secrets 에 `MAIL_USERNAME`(보내는 Gmail), `MAIL_PASSWORD`(Gmail 앱 비밀번호), `MAIL_TO`(받는 주소)가 있어야 합니다.
+
 ## 구성 파일
 
 - `server.js` : 웹 서버 + 스냅샷 저장/비교
