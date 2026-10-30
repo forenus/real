@@ -13,6 +13,7 @@
   "type": "commonjs",
   "dependencies": {
     "localtunnel": "^2.0.2",
+    "nodemailer": "10.1.1",
     "playwright": "^1.60.0"
   }
 }

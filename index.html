@@ -15,7 +15,6 @@
       <div class="logo">🏠 매물 추적기</div>
       <nav class="nav" id="nav" aria-label="메뉴">
         <a href="#dashboard" data-view="dashboard"><span class="nav-ico">📊</span>대시보드</a>
-        <a href="#deals" data-view="deals"><span class="nav-ico">💰</span>실거래</a>
         <a href="#news" data-view="news"><span class="nav-ico">📰</span>지역 소식</a>
         <a href="#board" data-view="board"><span class="nav-ico">💬</span>개선·문의</a>
         <a href="#settings" data-view="settings" id="nav-settings"><span class="nav-ico">⚙️</span>설정</a>
@@ -49,7 +48,7 @@
               <h2>매물 추이 그래프</h2>
               <span class="dates" id="chart-legend"></span>
             </div>
-            <div id="chart-wrap" class="chart-wrap">
+            <div id="chart-wrap" class="chart-wrap" tabindex="0" aria-label="평형별 매물 수 추이 그래프. 좌우 화살표로 날짜를 이동합니다.">
               <p class="empty" id="chart-empty">데이터가 쌓이면 그래프가 표시됩니다.</p>
             </div>
             <p class="hint" id="chart-note"></p>
@@ -111,11 +110,8 @@
           </div>
           <p class="hint">건수를 누르면 그날 매물 목록이, 증감(▲▼)을 누르면 새로 올라오거나 사라진 매물이 보입니다.</p>
         </section>
-      </section>
-
-      <!-- ===== 실거래 ===== -->
-      <section class="view" data-view="deals" hidden>
-        <section class="card">
+        <!-- 실거래 목록 (매물 증감 아래) -->
+        <section class="card" id="deals">
           <div class="table-head">
             <h2>실거래 목록</h2>
             <span class="dates" id="deals-dates"></span>
@@ -163,19 +159,46 @@
         </div>
       </section>
 
-      <!-- ===== 개선·문의 게시판 (GitHub Issues) ===== -->
+      <!-- ===== 개선·문의 (메일로만 보내고 저장하지 않음) ===== -->
       <section class="view" data-view="board" hidden>
-        <section class="card">
-          <div class="table-head board-head">
-            <h2>개선·문의 게시판</h2>
-            <div class="board-actions">
-              <a class="btn ghost sm" id="board-new-improve" target="_blank" rel="noopener">💡 개선 제안</a>
-              <a class="btn primary sm" id="board-new-question" target="_blank" rel="noopener">❓ 문의하기</a>
-            </div>
+        <section class="card contact">
+          <div class="table-head">
+            <h2>개선·문의 보내기</h2>
           </div>
-          <div class="seg" id="board-filter" role="group" aria-label="분류 선택"></div>
-          <div id="board-list" class="board-list"><p class="empty-sm">불러오는 중…</p></div>
-          <p class="hint">글은 GitHub 이슈로 저장됩니다. 글쓰기·답글은 GitHub 로그인 후 가능하고, 글쓰기 칸에 <b>이미지·파일을 끌어다 놓거나 붙여넣으면</b> 첨부됩니다. 새 글은 몇 분 뒤 목록에 보입니다.</p>
+          <form id="contact-form" novalidate>
+            <div class="seg" id="contact-kind" role="group" aria-label="분류 선택">
+              <button type="button" data-k="개선" aria-pressed="true">💡 개선 제안</button>
+              <button type="button" data-k="문의" aria-pressed="false">❓ 문의</button>
+            </div>
+            <div class="field">
+              <label for="c-title">제목</label>
+              <input type="text" id="c-title" maxlength="120" required />
+            </div>
+            <div class="field">
+              <label for="c-body">내용</label>
+              <textarea id="c-body" rows="8" maxlength="20000" required></textarea>
+            </div>
+            <div class="contact-row">
+              <div class="field grow">
+                <label for="c-name">이름 (선택)</label>
+                <input type="text" id="c-name" maxlength="60" autocomplete="name" />
+              </div>
+              <div class="field grow">
+                <label for="c-contact">답장 받을 이메일·연락처 (선택)</label>
+                <input type="text" id="c-contact" maxlength="120" autocomplete="email" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="c-files">이미지·파일 첨부 (최대 5개, 합계 8MB)</label>
+              <input type="file" id="c-files" multiple />
+              <ul class="file-list" id="c-file-list"></ul>
+            </div>
+            <input type="text" id="c-website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="contact-actions">
+              <button type="submit" class="btn primary" id="c-send">보내기</button>
+            </div>
+          </form>
+          <p class="hint">보낸 글은 이 사이트에 저장·공개되지 않고 관리자 메일로만 전달됩니다. PC 서버가 켜져 있을 때 보낼 수 있습니다.</p>
         </section>
       </section>
 
@@ -207,7 +230,7 @@
     </main>
   </div>
 
-  <!-- 상세 모달 (매물 목록 / 게시글) -->
+  <!-- 상세 모달 (매물 목록) -->
   <div class="modal" id="modal" hidden>
     <div class="modal-backdrop" data-close></div>
     <div class="modal-box" role="dialog" aria-modal="true">

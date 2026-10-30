@@ -114,15 +114,72 @@ function renderChart(chart) {
       svg.appendChild(seg);
     }
     dates.forEach((d, i) => {
-      const c = el("circle", { cx: x(i), cy: y(s.data[i]), r: 3, fill: color });
-      const title = el("title"); title.textContent = `${d} · ${s.pyeong}평: ${s.data[i]}개${estSet.has(d) ? " (추정)" : ""}`;
-      c.appendChild(title);
-      svg.appendChild(c);
+      svg.appendChild(el("circle", { cx: x(i), cy: y(s.data[i]), r: 3, fill: color }));
     });
   });
 
+  // 크로스헤어 + 툴팁 (실거래 차트와 같은 방식)
+  const hair = el("line", { y1: pad.t, y2: pad.t + ih, stroke: INK.hair, "stroke-width": 1, visibility: "hidden" });
+  svg.appendChild(hair);
+  svg.appendChild(el("rect", { x: pad.l, y: pad.t, width: iw, height: ih, fill: "transparent" }));
+
   wrap.innerHTML = "";
   wrap.appendChild(svg);
+  const tip = document.createElement("div");
+  tip.className = "viz-tip";
+  tip.hidden = true;
+  wrap.appendChild(tip);
+
+  let cur = -1;
+  function showAt(i) {
+    if (i < 0 || i >= dates.length) return;
+    cur = i;
+    hair.setAttribute("x1", x(i)); hair.setAttribute("x2", x(i));
+    hair.setAttribute("visibility", "visible");
+
+    tip.textContent = "";
+    const head = document.createElement("div");
+    head.className = "viz-tip-date";
+    head.textContent = dates[i] + (estSet.has(dates[i]) ? " (추정)" : "");
+    tip.appendChild(head);
+    chart.series.forEach((s, si) => {
+      const row = document.createElement("div");
+      row.className = "viz-tip-row";
+      const key = document.createElement("i");
+      key.style.background = COLORS[si % COLORS.length];
+      const val = document.createElement("b");
+      val.textContent = `${s.data[i]}개`;
+      const nm = document.createElement("span");
+      const diff = i > 0 ? s.data[i] - s.data[i - 1] : 0;
+      nm.textContent = `${s.pyeong}평` + (i > 0 ? (diff ? ` · ${diff > 0 ? "▲" : "▼"}${Math.abs(diff)}` : " · 변동 없음") : "");
+      row.append(key, val, nm);
+      tip.appendChild(row);
+    });
+    tip.hidden = false;
+
+    const rect = wrap.getBoundingClientRect();
+    const scale = rect.width / W;
+    const left = x(i) * scale;
+    tip.style.left = Math.max(4, Math.min(rect.width - tip.offsetWidth - 4, left - tip.offsetWidth / 2)) + "px";
+    tip.style.top = Math.max(2, pad.t * scale) + "px";
+  }
+  function hide() { tip.hidden = true; hair.setAttribute("visibility", "hidden"); }
+  function nearest(clientX) {
+    const rect = wrap.getBoundingClientRect();
+    const ux = (clientX - rect.left) / (rect.width / W);
+    let best = 0, bd = Infinity;
+    for (let i = 0; i < dates.length; i++) { const d = Math.abs(x(i) - ux); if (d < bd) { bd = d; best = i; } }
+    return best;
+  }
+  svg.addEventListener("pointermove", (e) => showAt(nearest(e.clientX)));
+  svg.addEventListener("pointerleave", hide);
+  // 키보드 — 다시 그릴 때 핸들러가 쌓이지 않게 on* 속성으로 단다
+  wrap.onkeydown = (e) => {
+    if (e.key === "ArrowRight") { showAt(Math.min(dates.length - 1, cur + 1)); e.preventDefault(); }
+    else if (e.key === "ArrowLeft") { showAt(Math.max(0, (cur < 0 ? dates.length : cur) - 1)); e.preventDefault(); }
+    else if (e.key === "Escape") hide();
+  };
+  wrap.onblur = hide;
 
   legend.innerHTML = chart.series
     .map((s, i) => `<span class="lg line"><i style="background:${COLORS[i % COLORS.length]}"></i>${s.pyeong}평</span>`)
@@ -424,9 +481,13 @@ function renderKpis(state) {
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
-const VIEWS = ["dashboard", "deals", "news", "board", "settings"];
+const VIEWS = ["dashboard", "news", "board", "settings"];
+// 화면 대신 대시보드 안의 카드로 가는 주소(#deals → 대시보드의 실거래 목록)
+const SECTIONS = { deals: "dashboard" };
 function showView() {
   let v = location.hash.slice(1);
+  const section = SECTIONS[v] ? v : "";
+  if (section) v = SECTIONS[v];
   if (!VIEWS.includes(v) || (STATIC && v === "settings")) v = "dashboard";
   document.querySelectorAll(".view").forEach((s) => { s.hidden = s.dataset.view !== v; });
   document.querySelectorAll("#nav a").forEach((a) => {
@@ -434,107 +495,86 @@ function showView() {
   });
   const cur = document.querySelector(`#nav a[data-view="${v}"]`);
   $("view-name").textContent = cur ? cur.lastChild.textContent.trim() : "";
-  if (v === "board") loadBoard();
-  window.scrollTo(0, 0);
+  if (section) $(section).scrollIntoView({ block: "start" });
+  else window.scrollTo(0, 0);
 }
 window.addEventListener("hashchange", showView);
 
-// ---------- 개선·문의 게시판 (GitHub Issues) ----------
-// 글은 저장소 이슈로 저장한다. 읽기는 GitHub 공개 API(로그인 불필요, IP당 시간당 60회)로,
-// 쓰기·답글은 GitHub 이슈 양식(.github/ISSUE_TEMPLATE)으로 연결한다.
-const BOARD_REPO = "sunguphong/real";
-const BOARD_LABELS = ["개선", "문의"];
-const BOARD_KEY = "boardFilter";
-const BOARD_CACHE_MS = 3 * 60 * 1000; // 같은 목록을 이 시간 동안은 다시 부르지 않는다(요청 한도 절약)
-let boardCache = null; // { at, items }
-$("board-new-improve").href = `https://github.com/${BOARD_REPO}/issues/new?template=improve.yml`;
-$("board-new-question").href = `https://github.com/${BOARD_REPO}/issues/new?template=question.yml`;
-
-async function gh(path) {
-  const res = await fetch(`https://api.github.com/repos/${BOARD_REPO}${path}`, {
-    headers: { Accept: "application/vnd.github.html+json" }, // 본문을 GitHub 이 정리한 HTML 로 받는다
-  });
-  if (res.status === 403 || res.status === 429) throw new Error("GitHub 요청 한도를 넘었습니다. 잠시 후 다시 열어 주세요.");
-  if (!res.ok) throw new Error(`GitHub 응답 오류 (HTTP ${res.status})`);
-  return res.json();
-}
-function boardFilter() { try { return localStorage.getItem(BOARD_KEY) || "all"; } catch { return "all"; } }
-$("board-filter").addEventListener("click", (e) => {
-  const b = e.target.closest("button[data-f]");
+// ---------- 개선·문의 (메일 발송) ----------
+// 글은 저장하지 않고 PC 서버(/api/contact)가 관리자 메일로만 보낸다.
+// 공개 페이지에서는 수동 수집처럼 터널(collectUrl)을 거친다.
+const CONTACT_MAX_FILES = 5;
+const CONTACT_MAX_BYTES = 8 * 1024 * 1024;
+let contactKind = "개선";
+$("contact-kind").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-k]");
   if (!b) return;
-  try { localStorage.setItem(BOARD_KEY, b.dataset.f); } catch {}
-  renderBoard();
+  contactKind = b.dataset.k;
+  $("contact-kind").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b));
 });
-function fmtDay(iso) { const d = new Date(iso); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; }
-function postKind(it) { return BOARD_LABELS.find((l) => it.labels.some((x) => x.name === l)); }
-function postState(it) {
-  if (it.state === "closed") return `<span class="pst done">처리 완료</span>`;
-  if (it.comments > 0) return `<span class="pst answered">답변 ${it.comments}</span>`;
-  return `<span class="pst wait">답변 대기</span>`;
+function fmtSize(n) { return n >= 1048576 ? (n / 1048576).toFixed(1) + "MB" : Math.max(1, Math.round(n / 1024)) + "KB"; }
+function contactFiles() { return [...$("c-files").files]; }
+function checkFiles(files) {
+  if (files.length > CONTACT_MAX_FILES) return `첨부는 ${CONTACT_MAX_FILES}개까지 가능합니다.`;
+  if (files.reduce((t, f) => t + f.size, 0) > CONTACT_MAX_BYTES) return "첨부 파일 합계가 8MB를 넘습니다.";
+  return "";
 }
+$("c-files").addEventListener("change", () => {
+  const files = contactFiles();
+  $("c-file-list").innerHTML = files.map((f) => `<li>${esc(f.name)} <span>${fmtSize(f.size)}</span></li>`).join("");
+  const err = checkFiles(files);
+  if (err) setStatus(err, "error");
+});
+function readBase64(file) {
+  return new Promise((resolve, reject) => {
+    const r = new FileReader();
+    r.onload = () => resolve(String(r.result).split(",")[1] || "");
+    r.onerror = () => reject(new Error(`${file.name} 파일을 읽지 못했습니다.`));
+    r.readAsDataURL(file);
+  });
+}
+$("contact-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const title = $("c-title").value.trim();
+  const body = $("c-body").value.trim();
+  if (!title || !body) return setStatus("제목과 내용을 입력해 주세요.", "error");
+  const files = contactFiles();
+  const err = checkFiles(files);
+  if (err) return setStatus(err, "error");
+  const base = STATIC ? ((staticData && staticData.collectUrl) || "").replace(/\/$/, "") : "";
+  if (STATIC && !base) return setStatus("지금은 PC 서버가 꺼져 있어 보낼 수 없습니다. 나중에 다시 시도해 주세요.", "error");
 
-async function loadBoard(force) {
-  if (!force && boardCache && Date.now() - boardCache.at < BOARD_CACHE_MS) return renderBoard();
-  $("board-list").innerHTML = `<p class="empty-sm">불러오는 중…</p>`;
+  const btn = $("c-send");
+  btn.disabled = true; btn.textContent = "보내는 중…";
   try {
-    const all = await gh("/issues?state=all&per_page=100&sort=created&direction=desc");
-    // PR 제외, 게시판 분류(개선/문의) 라벨이 붙은 글만
-    boardCache = { at: Date.now(), items: all.filter((it) => !it.pull_request && postKind(it)) };
-    renderBoard();
-  } catch (e) {
-    $("board-list").innerHTML = `<p class="empty-sm">게시판을 불러오지 못했습니다. ${esc(e.message)}</p>`;
+    const payload = {
+      kind: contactKind, title, body,
+      name: $("c-name").value.trim(), contact: $("c-contact").value.trim(),
+      website: $("c-website").value,
+      files: await Promise.all(files.map(async (f) => ({ name: f.name, type: f.type, data: await readBase64(f) }))),
+    };
+    let res;
+    try {
+      res = await fetch(base + "/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch {
+      throw new Error("PC 서버에 연결하지 못했습니다. 나중에 다시 시도해 주세요.");
+    }
+    let r;
+    try { r = await res.json(); } catch { throw new Error(`서버 응답 오류 (HTTP ${res.status})`); }
+    if (r.error) throw new Error(r.error);
+    $("contact-form").reset();
+    $("c-file-list").innerHTML = "";
+    setStatus("보냈습니다. 관리자 메일로 전달되었습니다.", "ok");
+  } catch (e2) {
+    setStatus(e2.message, "error");
+  } finally {
+    btn.disabled = false; btn.textContent = "보내기";
   }
-}
-function renderBoard() {
-  const items = (boardCache && boardCache.items) || [];
-  let sel = boardFilter();
-  if (sel !== "all" && !BOARD_LABELS.includes(sel)) sel = "all";
-  $("board-filter").innerHTML = [["all", "전체"], ...BOARD_LABELS.map((l) => [l, l])]
-    .map(([v, t]) => `<button type="button" data-f="${v}" aria-pressed="${v === sel}">${t} <span class="seg-n">${v === "all" ? items.length : items.filter((it) => postKind(it) === v).length}</span></button>`)
-    .join("");
-  const list = sel === "all" ? items : items.filter((it) => postKind(it) === sel);
-  if (!list.length) {
-    $("board-list").innerHTML = `<p class="empty-sm">아직 글이 없습니다. 위 버튼으로 첫 글을 남겨 주세요.</p>`;
-    return;
-  }
-  $("board-list").innerHTML = list.map((it) => {
-    const kind = postKind(it);
-    const title = it.title.replace(/^\[(개선|문의)\]\s*/, "");
-    return `<button type="button" class="post" data-no="${it.number}">` +
-      `<span class="tag ${kind === "개선" ? "improve" : "ask"}">${kind}</span>` +
-      `<span class="post-title">${esc(title)}</span>` +
-      `<span class="post-meta">${esc(it.user.login)} · ${fmtDay(it.created_at)}</span>` +
-      postState(it) + `</button>`;
-  }).join("");
-}
-$("board-list").addEventListener("click", (e) => {
-  const p = e.target.closest(".post");
-  if (p) openPost(Number(p.dataset.no));
 });
-
-async function openPost(no) {
-  const box = $("modal-content");
-  const it = boardCache && boardCache.items.find((x) => x.number === no);
-  if (!it) return;
-  const url = it.html_url;
-  const head =
-    `<h3>${esc(it.title)}</h3>` +
-    `<p class="chg-dates">#${it.number} · ${esc(it.user.login)} · ${fmtDay(it.created_at)} ${postState(it)}</p>`;
-  // body_html / comment.body_html 은 GitHub 이 정리(sanitize)해 준 HTML 이다
-  box.innerHTML = head + `<div class="post-body">${it.body_html || "<p class=\"empty-sm\">(내용 없음)</p>"}</div>` +
-    `<p class="empty-sm">답글 불러오는 중…</p>`;
-  $("modal").hidden = false;
-  let comments = [];
-  try { if (it.comments) comments = await gh(`/issues/${no}/comments?per_page=100`); }
-  catch (e) { comments = null; }
-  if ($("modal").hidden) return;
-  box.innerHTML = head + `<div class="post-body">${it.body_html || "<p class=\"empty-sm\">(내용 없음)</p>"}</div>` +
-    (comments === null ? `<p class="empty-sm">답글을 불러오지 못했습니다.</p>` :
-      comments.map((c) =>
-        `<div class="reply"><div class="reply-head"><b>${esc(c.user.login)}</b>${c.author_association === "OWNER" ? ` <span class="tag new">관리자</span>` : ""} · ${fmtDay(c.created_at)}</div>` +
-        `<div class="post-body">${c.body_html || ""}</div></div>`).join("")) +
-    `<p class="post-link"><a class="btn ghost sm" href="${esc(url)}" target="_blank" rel="noopener">GitHub에서 답글 달기 ↗</a></p>`;
-}
 
 // ---------- 실거래 목록 ----------
 // 평형 선택 버튼 — 목록에 있는 평형으로 만든다(선택은 이 브라우저에 기억).

@@ -16,6 +16,10 @@ const PORT = 5173;
 const PAGES_ORIGIN = "https://sunguphong.github.io";
 // 외부(공개 페이지·터널)에서 수동 수집할 때 최소 간격 — 네이버 요청 제한 방지
 const REMOTE_COOLDOWN_MS = 10 * 60 * 1000;
+// 개선·문의 메일 발송 설정(보내는 Gmail·앱 비밀번호·받는 주소) — 공개 저장소에 올리지 않도록 mail.json 에 따로 둔다
+const MAIL_FILE = path.join(ROOT, "mail.json");
+const CONTACT_MAX_BYTES = 12 * 1024 * 1024; // 첨부 포함 요청 크기 상한(base64 로 커지는 것 감안)
+const CONTACT_GAP_MS = 60 * 1000; // 같은 곳에서 연달아 보내지 못하게 하는 최소 간격
 
 // ---------- 저장소 ----------
 function readJson(file, fallback) {
@@ -240,6 +244,64 @@ function readBody(req) {
     req.on("data", (c) => (b += c));
     req.on("end", () => { try { resolve(JSON.parse(b || "{}")); } catch { resolve({}); } });
   });
+}
+
+// 크기 제한을 두고 JSON 본문을 읽는다 — 넘치면 null
+function readJsonLimited(req, max) {
+  return new Promise((resolve) => {
+    const chunks = [];
+    let size = 0;
+    req.on("data", (c) => {
+      size += c.length;
+      if (size > max) { resolve(null); req.destroy(); return; }
+      chunks.push(c);
+    });
+    req.on("end", () => { try { resolve(JSON.parse(Buffer.concat(chunks).toString("utf8") || "{}")); } catch { resolve({}); } });
+  });
+}
+
+// ---------- 개선·문의 메일 ----------
+// 글은 어디에도 저장하지 않고 메일로만 보낸다(로그에도 내용을 남기지 않는다).
+const contactLast = new Map(); // 보낸 곳(IP) → 마지막 발송 시각
+async function sendContact(req, body) {
+  const mail = readJson(MAIL_FILE, null);
+  if (!mail || !mail.user || !mail.pass || !mail.to) {
+    return { code: 503, body: { error: "메일 발송 설정이 아직 없습니다(mail.json)." } };
+  }
+  if (body.website) return { code: 200, body: { ok: true } }; // 스팸 봇용 숨은 칸
+  const kind = body.kind === "문의" ? "문의" : "개선";
+  const title = String(body.title || "").trim().slice(0, 120);
+  const text = String(body.body || "").trim().slice(0, 20000);
+  const name = String(body.name || "").trim().slice(0, 60);
+  const contact = String(body.contact || "").trim().slice(0, 120);
+  if (!title || !text) return { code: 400, body: { error: "제목과 내용을 입력해 주세요." } };
+  const files = (Array.isArray(body.files) ? body.files : []).slice(0, 5).map((f) => ({
+    filename: String(f.name || "첨부").slice(0, 120),
+    contentType: String(f.type || "application/octet-stream"),
+    content: Buffer.from(String(f.data || ""), "base64"),
+  }));
+
+  const ip = req.headers["cf-connecting-ip"] || req.socket.remoteAddress || "";
+  const last = contactLast.get(ip) || 0;
+  if (Date.now() - last < CONTACT_GAP_MS) {
+    return { code: 429, body: { error: "방금 보냈습니다. 1분 뒤에 다시 보내 주세요." } };
+  }
+
+  const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const who = [name, contact].filter(Boolean).join(" · ") || "(이름 없음)";
+  const nodemailer = require("nodemailer");
+  const tx = nodemailer.createTransport({ host: "smtp.gmail.com", port: 465, secure: true, auth: { user: mail.user, pass: mail.pass } });
+  await tx.sendMail({
+    from: `매물 추적기 <${mail.user}>`,
+    to: mail.to,
+    replyTo: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact) ? contact : undefined,
+    subject: `[매물 추적기 ${kind}] ${title}`,
+    text: `분류: ${kind}\n보낸 사람: ${who}\n\n${text}`,
+    html: `<p><b>분류</b> ${kind}<br><b>보낸 사람</b> ${esc(who)}</p><hr><div style="white-space:pre-wrap">${esc(text)}</div>`,
+    attachments: files,
+  });
+  contactLast.set(ip, Date.now());
+  return { code: 200, body: { ok: true } };
 }
 
 // 원본 매물 → 저장용 간략 레코드
@@ -518,7 +580,7 @@ const server = http.createServer(async (req, res) => {
   const url = req.url.split("?")[0];
 
   // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
-  if (url === "/api/refresh" && req.headers.origin === PAGES_ORIGIN) {
+  if ((url === "/api/refresh" || url === "/api/contact") && req.headers.origin === PAGES_ORIGIN) {
     res.setHeader("Access-Control-Allow-Origin", PAGES_ORIGIN);
     res.setHeader("Vary", "Origin");
     if (req.method === "OPTIONS") {
@@ -574,6 +636,14 @@ const server = http.createServer(async (req, res) => {
     }
     try { return send(res, 200, await publishPages()); }
     catch (e) { return send(res, 500, { error: e.message }); }
+  }
+
+  // 개선·문의 글 → 메일 발송(저장하지 않음)
+  if (url === "/api/contact" && req.method === "POST") {
+    const body = await readJsonLimited(req, CONTACT_MAX_BYTES);
+    if (!body) return send(res, 413, { error: "첨부 파일이 너무 큽니다(합계 8MB 이하)." });
+    try { const r = await sendContact(req, body); return send(res, r.code, r.body); }
+    catch (e) { console.error("[contact] 메일 발송 실패:", e.message); return send(res, 502, { error: "메일을 보내지 못했습니다. 잠시 후 다시 시도해 주세요." }); }
   }
 
   // 오늘 매물 갱신 (네이버 수집 → 스냅샷 저장)

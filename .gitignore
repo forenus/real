@@ -4,3 +4,4 @@ viewer/history.json
 *.bak
 *.log
 tunnel-url.txt
+mail.json
