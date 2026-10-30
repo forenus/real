@@ -555,3 +555,13 @@ a.logo { text-decoration: none; padding: 0 2px; }
 }
 /* 휴대폰은 위 막대에 로고가 이미 있으므로 제목 자리 로고는 감춘다 */
 @media (max-width: 760px) { .page-head h1 .brand-logo { display: none; } .page-head .sub { margin-top: 0; } }
+
+/* 상단 호갱노노 바로가기 */
+.chip.link { text-decoration: none; color: var(--primary-700); border-color: #d9e0ff; background: var(--primary-soft); font-weight: 600; transition: background .15s var(--ease); }
+.chip.link:hover { background: #e3e8ff; }
+.chip.link[hidden] { display: none; }
+@media (max-width: 760px) {
+  /* 휴대폰은 바로가기만 남긴다 */
+  .head-chips { display: flex; }
+  .head-chips .chip.live, .head-chips .badge { display: none; }
+}

@@ -519,6 +519,10 @@ function render(state) {
   renderRealChart(state.realChart);
   renderAnalysis(state.analysis);
   renderKpis(state);
+  // 호갱노노 바로가기(config.json 의 hogangnonoUrl)
+  const hg = $("hgnn-link");
+  hg.hidden = !state.hogangnonoUrl;
+  if (state.hogangnonoUrl) { hg.href = state.hogangnonoUrl; hg.title = `${state.complexName || "단지"} 호갱노노에서 보기(새 창)`; }
 }
 
 // 최근 n일 전체 매물 수 미니 추이선(KPI 카드용) — 축·라벨 없이 흐름만 보여준다
