@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T02:02:23.174Z",
+  "generatedAt": "2026-10-30T03:42:07.030Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -5724,7 +5724,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-30T01:50:46.860Z",
+    "fetchedAt": "2026-10-30T03:34:57.351Z",
     "today": "2026-10-30",
     "items": [
       {
@@ -5738,13 +5738,6 @@
         "title": "17년 기다린 동탄 트램, 이달 착공 추진… 남동탄 아파트도 신고가",
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNU5XdmJzS1Q5dEVlbHJ3Z2RLOVhDZHpTTnV4SGhfelRudExjRWFic21ocVlBVERvSlJJT0hPQ2dRSkZOMmNfQTlYbl80bkx0QXF5RFRrVHQ3Rm51VmpnMnFvNDVmTjJ4OVE0NWFrU29WUEwtNndnbnk1SDVLcDN5SXdQSHF0c2VNLWNKUExoX282Z2hHYnFwRdIBrAFBVV95cUxQLUtxOVBoM0hhcloxQk1pVWhaRXpRajF6Y2pTNUJ4di1SX0FWdTVOLVFwbVNfZWY4RW9qdFAyYmY0TWNobXhkSlNBN21HV05HMC1Dbkl0WUVlaENqUy1fMVN5cnlaTmJrLXFyUVc1bE80QTVDUmo3ZThQanp5VmNpR0dMUkRubXpiUTNPaDhkc2NFNHZJeEFFWE43cmdRdXZvQzV5Um5vcjVsbnhv?oc=5",
         "source": "Chosunbiz",
-        "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
-        "source": "경인일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
@@ -5763,6 +5756,13 @@
         "isToday": false
       },
       {
+        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
+        "source": "경인일보",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
         "source": "기호일보",
@@ -5770,37 +5770,37 @@
         "isToday": false
       },
       {
-        "title": "동탄트램, 10월 우선시공분 착공 추진…장기 지연 끝 사업 본궤도 오르나",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fZ1NvTDFZa1hvSzhrcmQ3a2pZLVpnR3FLTVhtRTJTckZ0NXhxYWJSeXRNRGVMWGFKYjMwNnljbkktdDhOaUdaNUw5TnBWanQwNHlodHR5V3lOZ2hyQVFWbUc4ODJ2VVZyXzFXY3pn?oc=5",
-        "source": "아시아투데이",
-        "time": "2026-10-11T07:00:00.000Z",
+        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHOA?oc=5",
+        "source": "KPI뉴스",
+        "time": "2026-10-09T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성특례시, 동탄트램 심의 통과로 우선시공분 공사 계약 절차 추진",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPSm1KQmhRVUxobUFCWmRaSFNRMXF3MGhISFZ2QzJLRHZkVHQ1THVycXd3UVQwS1NSZEpsd3BNOENCUUlqSmFZYk1nbXktWVdFVk1qRzd2SEFIQWZkQnUyYW9aYlM?oc=5",
-        "source": "매일일보",
-        "time": "2026-10-11T07:00:00.000Z",
+        "title": "화성시 “동탄트램(31.55km 실제 공사 단계”…10월 우선시공분 공사 착수",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOSVNfWDliV0FXRGNUak45N1UtZWltd3pmQlhwSzdCQ2hHSVAzcEtpLTVTaXZjY2hVTmdDSXVFdmhrQjV6R1MzRF9fZlJOR3FjQzVtTXcyTWlRVVRhOHJkcG84aC1ZTFE?oc=5",
+        "source": "경인신문",
+        "time": "2026-10-09T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
-        "source": "OBC 뉴스",
-        "time": "2026-10-11T02:59:12.000Z",
+        "title": "31.55㎞ 동탄 트램 첫 삽 가시권…화성시, 10월 우선공사 착수",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tRndhZEU0dlAzTnNUNXptNFhKM0NRVTNNdlJoaWVxcFJIYnhIY1p6dzJ6V1IzS053bWY5SGpWOTd3Umt6QVdWVGJQaFA3YVNqWWRWVk9oRFBXX28?oc=5",
+        "source": "에너지경제신문",
+        "time": "2026-10-09T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성특례시, 동탄 트램 건설 본격화…10월 중 우선시공분 착공 추진:경인투데이뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9TSjlscFgxb3RVTmIyQ01vVTJrN2hiRkNJeTFXRGJzb1lTaHFIVENaczJhd29RaGlYcGZQM2FwM3VtU2fSAV9BVV95cUxQNWY1TkZMSExaUVVvSzVFQmVJWjd4S2taSjVvV2NydlRiQ0Q5N2Rkb0pyZ0hYaGFjSV82S3Y2djVDN3NIVjdhYWtLLXloWmN5czRNYjRsLUpfVEdvRWROcw?oc=5",
+        "title": "화성특례시, 동탄트램 1단계 본격 추진…연내 착공 목표 속도:경인투데이뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFB6Tmk5akdpeDB0T2JmaVI5d3F3aTBOT0ZzXzZ5VVZMa3h4UkdCLTRra2lYRmZsNUVoaWJXeTFyNXp1QmfSAV9BVV95cUxPTzJDS1ozcDUybnFHQ1Q4dW9kdlhPU1FWSmhVRDREX002OFQ1TDZuMnJnak9VSkdhd2hqNXVqUk9HMHRLVXc4VWx1UkhPSnJNSWpldUFNUERDcWVLZDdLZw?oc=5",
         "source": "경인투데이뉴스",
-        "time": "2026-10-10T07:00:00.000Z",
+        "time": "2026-09-26T21:39:48.000Z",
         "isToday": false
       }
     ]
   },
   "newsGtx": {
-    "fetchedAt": "2026-10-30T01:50:47.391Z",
+    "fetchedAt": "2026-10-30T03:34:57.761Z",
     "today": "2026-10-30",
     "items": [
       {
@@ -5832,24 +5832,10 @@
         "isToday": false
       },
       {
-        "title": "GTX-C 본공사 착수…화성시 \"병점 연장도 차질 없이 추진\"",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ZTlVoQzFoWFNudFpUNkdILXlOTmtiaGYzQ3dMZUNBWm9oVW1CVnFHMGZMTjlycHJjVi1GcXotQWlqaG4xejR6aHdfVmtUUGxBdmc2dnFXNF85aVYxMHh4RFFsUnF2YVo2eWtpWFB0a0w?oc=5",
-        "source": "한국철도일보",
-        "time": "2026-09-18T07:00:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "\"GTX-C 병점까지 반드시 잇는다\"…화성시, 동시 개통 총력전",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HRG5RcEQ0WmRVRmdKR2ZtWjhkaC10Z0FGX2ZFWmVnMEt5U0hQdDZ2SVR0R1lwUnl3VGNSdWpManZyc2hDOUFxdm53ZjJyOUNYQUVpWlRIamk2dw?oc=5",
         "source": "한국경제",
         "time": "2026-09-17T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "경기 남부 신흥 주거벨트의 새 중심축… GTX-C 노선 병점역 연장, 트램 등 예정",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVTJiUlBpLW96MUh6aEtEbXFRa19odmttazFfVzl3aDZEQVV6Rm53Uk4wLURPT053TThfRFk4UEZRaGhtQllGbkQ0YUNRb1VWYlpvei1HWl9WMERDYWNjVXRqSUNmbHphS255V1NNckY2X0lzamM0NnFzSzJLSXc0SlNZVmFXU1ltTnJhRGx3?oc=5",
-        "source": "조선일보",
-        "time": "2026-08-20T07:00:00.000Z",
         "isToday": false
       },
       {
@@ -5867,10 +5853,24 @@
         "isToday": false
       },
       {
-        "title": "병점·오산 아파트 거래 증가…GTX-C 연장 추진 주목",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBOUHY0SFdsSW92UXVTQXhwWVQ2M25kbWVNVDU4Y2ctSWdsUjdhUERhbzlfM3pJMlNfLUE4RVUzVHJ0Y094V0NqT1laVkY4cXNlc004NGloMkFYVWJtUURwYlJzVVh2QQ?oc=5",
-        "source": "비건뉴스",
-        "time": "2026-08-14T07:00:00.000Z",
+        "title": "화성시가 제시한 GTX-C 병점 연장 사업비 303억원, 과연 충분한가?",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9OaXZONXdscnU2Nm5BWkRKOVpJdmtpM09adFl4c21LaThPdXd3Vm85ZG9vcElwNExDOWNheTF5bnNfVW9LWEREczdicHRGRXNON2c3aFZUbS1DSjRNWmx6NW9Tc1FUTEtvcDVfdERn?oc=5",
+        "source": "아시아투데이",
+        "time": "2026-08-13T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "‘GTX-C 병점 연장’...공약 앞섰지만 아직도 진행형",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB5cU9xV19NWG1XYzNYUGxyRmk5X0hsRDJKNHFXWDhaREhMVGpqOUpDbGhocnpTeGZma25Rc0F0OHRHd0JDRzlxTVlGaXd2b1hocnRDUGppamtuaGZ6Tlg4c1FiRlMzcFRJZGFaZm5qOUQ?oc=5",
+        "source": "데일리경기신문",
+        "time": "2026-08-13T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "“의욕만으론 부족해”…GTX-C 화성 병점 연장, 과연 가능할까?",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fal92NXRZQTBWY1RfN2JwNk1FTWVhbHpRNDFSSWxzd1JDUGZKR196ODhjaDJqRUZOQzNDaFE3SzhQVE5vTjRVMjAya3JIb0p3aHpfemtoMWoxQTUyQy1fYjBvMHBSVmxIX2dKUGJB?oc=5",
+        "source": "아시아투데이",
+        "time": "2026-08-12T07:00:00.000Z",
         "isToday": false
       }
     ]
