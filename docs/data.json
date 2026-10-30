@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T05:37:38.325Z",
+  "generatedAt": "2026-10-30T05:41:15.141Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -20366,7 +20366,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-30T05:10:06.835Z",
+    "fetchedAt": "2026-10-30T05:41:15.140Z",
     "today": "2026-10-30",
     "items": [
       {
@@ -20442,14 +20442,14 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-30T05:09:55.814Z",
+    "fetchedAt": "2026-10-30T05:41:14.963Z",
     "today": "2026-10-30",
     "items": [
       {
-        "title": "화성동탄경찰서, 북한이탈주민 100명 독감 예방접종 무료 지원",
-        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
-        "source": "화성신문",
-        "time": "2026-10-29T08:31:00.000Z",
+        "title": "화성동탄중앙도서관, 배움과 창작의 즐거움 더하는 하반기 문화교실 운영",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1RemxYeklrNXlsRVNwX0h6YXhoX1RnTTlOU0ZmSkJscjJwekMzbW53YUhmRTJpLTdXZjMyY0FyMG55VDBkRE1Wa3FzZWtkMmI3THZ3TzBrMmRXdUJBb2ZqbzNtdTdWR3NjS1VkQmVkcw?oc=5",
+        "source": "뉴스파노라마",
+        "time": "2026-10-28T09:40:26.000Z",
         "isToday": false
       },
       {
@@ -20464,20 +20464,6 @@
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5N0Vsa1BNWHhOLTE3NWFDb2hqdi1ZTkFtTzZZaFNodndTcEtSZDBVbkFqcE5hYi1jN2dPeVRKN05WOHpqMVRBczVySXljd2VadDQ3bjFBTVN1UmhoX01yaGphS01DSzJDMnlxMEQtZ3l0UQ?oc=5",
         "source": "웹이코노미",
         "time": "2026-10-28T00:20:50.000Z",
-        "isToday": false
-      },
-      {
-        "title": "문봉균 화성동탄경찰서장, 일상을 지키는 사람이 도시를 지킨다",
-        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUbE12S1dfZXBrWVdBSzhqQ2YweHJhcTI3UGRqWnhEamxuOXowbGNtWVBtU0tCRmViTEFQTDFScnJJQXBJaHpYQg?oc=5",
-        "source": "얼리어답터뉴스",
-        "time": "2026-10-28T00:20:36.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄중앙도서관, 배움과 창작의 즐거움 더하는 하반기 문화교실 운영",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtMzdKUXBvcG9yUzlrdDhnYW8tVFUxRmhvNER5VEVyM0NJZGZTZDRialA2M3ZjNUZGMllrbkJjUG1PM0RUOHgyNDJuZlVmWWJQZWh4aUcyRGFiMVdFRm1FQ0drRlg4Zw?oc=5",
-        "source": "경기탑뉴스",
-        "time": "2026-10-27T23:30:16.000Z",
         "isToday": false
       },
       {
@@ -20502,17 +20488,31 @@
         "isToday": false
       },
       {
-        "title": "[2026 국정감사] 동탄역 이용수요 '2만 8,000명' 해명 오류…철도공단 국감서 인정",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd0lyeGNkY0JFWHk3SUp1MkhaSktqWHEtVEd6LXROSVJWdFNEbVpvYzlER0p4cHFNcEMyVTZTRlR0TUhHcElNZXV1UkwzcnAtTlJnWE5uYmI4TjZNWU9sVmhRRU44akJaalJrajlrbEI?oc=5",
-        "source": "한국철도일보",
-        "time": "2026-10-26T07:38:59.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성동탄경찰서, 북한이탈주민 건강한 겨울나기 지원",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fVGxvLXllRzB2RzIzQkV0OU5UbDBhOGtyd3NzWWZsVkVwZTNzdlNuTEF0QU9LUGhibVZCcllaelhheFBUZmZoZFFyUTV4cUkwZ1pEQUxOVHV4dUtBd2g4ZkZubGbSAWhBVV95cUxPeHVNZWJDOUFSOXlmb2U5TV9LakdTRmFBV1JZMnFKRXhKb1hYWWFLZ2NFX0tmOVZDYWR2R24zUlVSb3Y5by1jQWV2QlFfb1RUOXRJR2JjdUNPNE1RNThjalNmcWpGTmg5eQ?oc=5",
         "source": "경인방송 뉴스",
         "time": "2026-10-26T07:05:40.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄호수공원서 오는 31일 루나빛축제",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyeGV5Zkd3bURaNm13ZTExV2QxcmlNWmRNTWQwV0lIVzNLYV9LQjVySVRfS1VFVGRGYXg4QzFUaGpIOXRuRDdKSndmT2lJby1rQUdobmJsdTRtb3c?oc=5",
+        "source": "KBS 뉴스",
+        "time": "2026-10-26T06:12:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성동탄경찰서-동탄시티병원, 북한이탈주민 무료 독감 예방접종 협약",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE82QmthaW9oOWNnRHVzMTBydktzel9tN0E5V05aRFVIWUNRQlZ3VUMxZ1RTV19SbUtqYnNsOW0zN1VXcWtaaXlodnpKWnJwYXE3cjdNZ3dSOW5jcFFJdVotVlhwQVZYNldGYkpJ?oc=5",
+        "source": "프레시안",
+        "time": "2026-10-26T06:06:34.000Z",
+        "isToday": false
+      },
+      {
+        "title": "“꿈꾸던 도서관이 되었나요?”... 화성동탄중앙도서관, 개관 1주년 축제 열린다",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5zNGx5NkptNjFMenRFdlZ2bWFpVEtzbkhoVGFaOWI4QWRRalNKcElLSzNYNnllUTQ0Ylh2YzJVU09ReUQtandOYzdqSFd4R0NWa0lCOWhHOTljem9DYlhz?oc=5",
+        "source": "세계환경신문",
+        "time": "2026-10-26T02:46:15.000Z",
         "isToday": false
       }
     ]
