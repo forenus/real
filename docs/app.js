@@ -690,7 +690,7 @@ function renderDeals(rd) {
     tg.setAttribute("aria-expanded", showAll);
   }
   const oldest = full && full.length ? full[full.length - 1].date : "";
-  $("deals-range").textContent = showAll ? `거래일 기준 전체(${oldest} ~, 네이버 제공 최근 5년)` : "거래일 기준 최근 60일";
+  $("deals-range").textContent = showAll ? `거래일 기준 전체(${oldest} ~)` : "거래일 기준 최근 60일";
   const nToday = list.filter((x) => x.isToday).length;
   const nNew = list.filter((x) => x.isNew).length;
   if (nToday || nNew) {
