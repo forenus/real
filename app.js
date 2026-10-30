@@ -577,9 +577,10 @@ function renderKpis(state) {
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
-const VIEWS = ["dashboard", "news", "board", "guide", "settings"];
+const VIEWS = ["dashboard", "news", "board", "guide", "stats", "settings"];
 // 화면 대신 대시보드 안의 카드로 가는 주소(#deals → 대시보드의 실거래 목록)
 const SECTIONS = { deals: "dashboard" };
+let curView = "dashboard";
 function showView() {
   let v = location.hash.slice(1);
   const section = SECTIONS[v] ? v : "";
@@ -593,6 +594,9 @@ function showView() {
   $("view-name").textContent = cur ? cur.textContent.trim() : "";
   if (section) $(section).scrollIntoView({ block: "start" });
   else window.scrollTo(0, 0);
+  curView = v;
+  if (v === "stats") loadStats();
+  else trackHit(v);
 }
 window.addEventListener("hashchange", () => { showView(); redrawCharts(); });
 // 사용법 목차 — 주소(#뷰이름)는 그대로 두고 해당 칸으로 스크롤만 한다
@@ -960,6 +964,133 @@ $("save-config").addEventListener("click", async () => {
   setStatus("단지 정보를 저장했습니다.", "ok");
 });
 
+// ---------- 접속 기록 · 접속 통계 (관리자) ----------
+// 공개 페이지에서만 기록한다(PC에서 연 화면 제외). 방문자 번호는 이 브라우저에 한 번 만들어 둔 무작위 값.
+const VIEW_LABELS = { dashboard: "대시보드", news: "지역 소식", board: "개선·문의", guide: "사용법" };
+function visitorId() {
+  try {
+    let v = localStorage.getItem("vid");
+    if (!v) { v = Math.random().toString(36).slice(2, 12) + Date.now().toString(36); localStorage.setItem("vid", v); }
+    return v;
+  } catch { return ""; }
+}
+let lastHit = "";
+function trackHit(view) {
+  if (!STATIC || !VIEW_LABELS[view] || !staticData || !staticData.collectUrl) return;
+  if (view === lastHit) return; // 같은 메뉴 안에서의 이동(목차 등)은 한 번만
+  lastHit = view;
+  const vid = visitorId();
+  if (!vid) return;
+  let ref = "";
+  try {
+    if (!sessionStorage.getItem("refSent")) { ref = document.referrer ? new URL(document.referrer).host : ""; sessionStorage.setItem("refSent", "1"); }
+  } catch {}
+  const mobile = matchMedia("(max-width: 760px)").matches;
+  // text/plain 으로 보내 사전 확인 요청(preflight) 없이 가볍게 — 응답은 보지 않는다
+  fetch(staticData.collectUrl.replace(/\/$/, "") + "/api/hit", {
+    method: "POST", keepalive: true, headers: { "Content-Type": "text/plain" },
+    body: JSON.stringify({ vid, view, ref, mobile }),
+  }).catch(() => {});
+}
+
+async function fetchStats(pw) {
+  if (!STATIC) return api("/api/stats");
+  if (!staticData) await api("/api/state"); // 주소로 바로 들어온 경우 data.json 부터
+  const base = ((staticData && staticData.collectUrl) || "").replace(/\/$/, "");
+  if (!base) throw new Error("지금은 PC 서버가 꺼져 있어 통계를 볼 수 없습니다.");
+  let res;
+  try { res = await fetch(base + "/api/stats", { headers: { "x-refresh-password": pw } }); }
+  catch { throw new Error("PC 서버에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요."); }
+  return res.json();
+}
+function lockStats(locked) { $("st-body").hidden = locked; $("st-locked").hidden = !locked; }
+async function loadStats(msg) {
+  let pw = "";
+  if (STATIC) {
+    pw = savedPw() || await askPassword(msg || "접속 통계는 관리자만 볼 수 있습니다.", { title: "관리자 로그인", button: "로그인" });
+    if (!pw) { lockStats(true); return; } // 창을 닫음
+  }
+  try {
+    const r = await fetchStats(pw);
+    if (r.auth) { savePw(""); lockStats(true); return loadStats("비밀번호가 맞지 않습니다. 다시 입력해 주세요."); }
+    if (r.error) { lockStats(true); return setStatus(r.error, "error"); }
+    if (STATIC) savePw(pw);
+    setStatus("");
+    lockStats(false); // 화면을 먼저 보여야 그래프 폭을 잴 수 있다
+    renderStats(r);
+  } catch (e) {
+    lockStats(true);
+    setStatus(e.message, "error");
+  }
+}
+$("st-login").addEventListener("click", () => loadStats());
+
+function stBars(box, entries, total) {
+  if (!entries.length) { box.innerHTML = `<p class="empty-sm">아직 기록이 없습니다.</p>`; return; }
+  const max = Math.max(...entries.map((e) => e[1]));
+  box.innerHTML = entries.map(([name, n]) =>
+    `<div class="st-bar"><span class="st-name">${esc(name)}</span>` +
+    `<span class="st-track"><i style="width:${(100 * n / max).toFixed(1)}%"></i></span>` +
+    `<span class="st-val">${n.toLocaleString()}<small>${total ? ` ${Math.round(100 * n / total)}%` : ""}</small></span></div>`).join("");
+}
+// 세로 막대 그래프(SVG) — series: [{values, color}] 를 겹쳐 그린다(뒤 → 앞)
+function stColumns(box, labels, series, every, unitLabel) {
+  const W = chartWidth(box), H = W < 520 ? 190 : 220, pad = { l: 34, r: 8, t: 12, b: 28 };
+  const iw = W - pad.l - pad.r, ih = H - pad.t - pad.b;
+  const max = Math.max(4, ...series.flatMap((s) => s.values));
+  const step = Math.ceil(max / 4);
+  const top = step * 4;
+  const bw = iw / labels.length;
+  let svg = `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(unitLabel)}">`;
+  for (let g = 0; g <= 4; g++) {
+    const y = pad.t + ih - (ih * g) / 4;
+    svg += `<line x1="${pad.l}" x2="${W - pad.r}" y1="${y}" y2="${y}" stroke="${INK.grid}"/>` +
+      `<text x="${pad.l - 6}" y="${y + 4}" fill="${INK.axis}" font-size="10" text-anchor="end">${step * g}</text>`;
+  }
+  series.forEach((s, si) => {
+    const w = bw * (si === 0 ? 0.72 : 0.42);
+    s.values.forEach((v, i) => {
+      if (!v) return;
+      const h = (ih * v) / top;
+      svg += `<rect x="${(pad.l + bw * i + (bw - w) / 2).toFixed(1)}" y="${(pad.t + ih - h).toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="2" fill="${s.color}"><title>${esc(labels[i])} ${s.name} ${v}</title></rect>`;
+    });
+  });
+  labels.forEach((t, i) => {
+    if (i % every !== 0 && i !== labels.length - 1) return;
+    svg += `<text x="${(pad.l + bw * i + bw / 2).toFixed(1)}" y="${H - 9}" fill="${INK.axis}" font-size="10" text-anchor="middle">${esc(t)}</text>`;
+  });
+  box.innerHTML = svg + "</svg>";
+}
+
+let lastStats = null;
+function renderStats(s) {
+  lastStats = s;
+  const tile = (label, v, sub) => `<div class="kpi"><span class="kpi-label">${label}</span><b class="kpi-value">${v.toLocaleString()}<small>명</small></b><span class="kpi-sub">${sub}</span></div>`;
+  $("st-kpis").innerHTML = [
+    tile("오늘 방문자", s.today.visitors, `페이지뷰 ${s.today.pv.toLocaleString()}`),
+    tile("최근 7일 방문자", s.week.visitors, `페이지뷰 ${s.week.pv.toLocaleString()}`),
+    tile("최근 30일 방문자", s.month.visitors, `페이지뷰 ${s.month.pv.toLocaleString()}`),
+    tile("누적 방문자", s.total.visitors, s.total.since ? `${s.total.since}부터 · 페이지뷰 ${s.total.pv.toLocaleString()}` : "기록 시작 전"),
+  ].join("");
+  stColumns($("st-daily"), s.daily.map((d) => d.date.slice(5)),
+    [{ name: "페이지뷰", values: s.daily.map((d) => d.pv), color: "#c9d3ff" }, { name: "방문자", values: s.daily.map((d) => d.visitors), color: "var(--primary)" }],
+    5, "최근 30일 방문자·페이지뷰");
+  stColumns($("st-hours"), s.hours.map((_, h) => `${h}시`), [{ name: "조회", values: s.hours, color: "var(--primary)" }], 3, "시간대별 조회 수");
+  const sorted = (o) => Object.entries(o).sort((a, b) => b[1] - a[1]);
+  const views = sorted(s.views).map(([k, n]) => [VIEW_LABELS[k] || k, n]);
+  stBars($("st-views"), views, views.reduce((a, e) => a + e[1], 0));
+  const refs = sorted(s.refs).slice(0, 8);
+  stBars($("st-refs"), refs, refs.reduce((a, e) => a + e[1], 0));
+  const dev = [["PC", s.devices.pc || 0], ["휴대폰", s.devices.mobile || 0]].filter((e) => e[1]);
+  stBars($("st-dev"), dev, dev.reduce((a, e) => a + e[1], 0));
+  $("st-recent").innerHTML = s.recent.length
+    ? s.recent.map((r) => `<tr><td>${esc(new Date(r.t).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }))}</td>` +
+        `<td>#${esc(r.vid)}${r.isNew ? ` <span class="tag new">첫 방문</span>` : ""}</td>` +
+        `<td>${esc(VIEW_LABELS[r.view] || r.view)}</td><td>${r.mobile ? "휴대폰" : "PC"}</td><td>${esc(r.ref || "–")}</td></tr>`).join("")
+    : `<tr><td colspan="5" class="empty">아직 방문 기록이 없습니다.</td></tr>`;
+  $("st-updated").textContent = `${new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" })} 기준 · 최근 50건`;
+}
+
 // 정적 페이지의 수동 수집 — 터널(collectUrl)을 거쳐 PC 서버에 수집을 요청한다.
 // 응답의 state·changes 로 화면을 바로 갱신하고, 공개 페이지 자체는 서버가 다시 게시한다.
 // 수동 수집은 비밀번호로 로그인해야 한다. 맞춘 비밀번호는 이 탭(sessionStorage)에만 기억한다.
@@ -967,16 +1098,16 @@ const PW_KEY = "refreshPw";
 function savedPw() { try { return sessionStorage.getItem(PW_KEY) || ""; } catch { return ""; } }
 function savePw(v) { try { if (v) sessionStorage.setItem(PW_KEY, v); else sessionStorage.removeItem(PW_KEY); } catch {} }
 let pwResolve = null; // 비밀번호 창이 열려 있을 때의 응답 함수
-function askPassword(msg) {
+function askPassword(msg, { title = "수동 수집 로그인", button = "로그인 후 수집" } = {}) {
   return new Promise((resolve) => {
     pwResolve = resolve;
     $("modal-content").innerHTML =
-      `<h3>수동 수집 로그인</h3>` +
+      `<h3>${esc(title)}</h3>` +
       `<form id="pw-form" class="pw-form">` +
       `<p class="chg-dates">${esc(msg || "수동 수집은 비밀번호가 필요합니다. 평소에는 30분마다 자동으로 수집됩니다.")}</p>` +
       `<div class="field"><label for="pw-input">비밀번호</label>` +
       `<input type="password" id="pw-input" inputmode="numeric" autocomplete="current-password" required /></div>` +
-      `<div class="contact-actions"><button type="submit" class="btn primary">로그인 후 수집</button></div>` +
+      `<div class="contact-actions"><button type="submit" class="btn primary">${esc(button)}</button></div>` +
       `</form>`;
     $("modal").hidden = false;
     $("pw-input").focus();
@@ -1049,6 +1180,7 @@ if (STATIC) {
   showView();
   load().then(() => {
     if (!staticData || !staticData.collectUrl) $("refresh").style.display = "none";
+    trackHit(curView); // 첫 화면 기록은 data.json(collectUrl)을 받은 뒤에
     const t = staticData && staticData.generatedAt ? new Date(staticData.generatedAt).toLocaleString("ko-KR") : "";
     $("subtitle").textContent = `매매 매물만 집계합니다. 30분마다 자동 갱신 · 마지막 갱신 ${t}`;
   });

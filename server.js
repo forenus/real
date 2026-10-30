@@ -9,6 +9,7 @@ const crypto = require("crypto");
 const { fetchSaleAndReal, aggregateByPyeong } = require("./naver");
 const { fetchNews, TOPICS: NEWS_TOPICS } = require("./news");
 const { updateAnalysis, loadAnalysis } = require("./analysis");
+const stats = require("./stats");
 
 const ROOT = __dirname;
 const HISTORY_FILE = path.join(ROOT, "history.json");
@@ -653,12 +654,12 @@ const server = http.createServer(async (req, res) => {
   const url = req.url.split("?")[0];
 
   // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
-  if ((url === "/api/refresh" || url === "/api/contact") && PAGES_ORIGINS.includes(req.headers.origin)) {
+  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
     res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Vary", "Origin");
     if (req.method === "OPTIONS") {
       res.writeHead(204, {
-        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Methods": "GET, POST",
         "Access-Control-Allow-Headers": "bypass-tunnel-reminder, content-type, x-refresh-password",
         "Access-Control-Max-Age": "600",
       });
@@ -709,6 +710,23 @@ const server = http.createServer(async (req, res) => {
     }
     try { return send(res, 200, await publishPages()); }
     catch (e) { return send(res, 500, { error: e.message }); }
+  }
+
+  // 접속 기록 — 공개 페이지가 열릴 때·메뉴를 옮길 때 보낸다(응답 본문 없음)
+  if (url === "/api/hit" && req.method === "POST") {
+    const body = await readJsonLimited(req, 4096);
+    if (body) stats.record(body);
+    res.writeHead(204);
+    return res.end();
+  }
+
+  // 접속 통계 — 관리자만(공개 페이지에서는 수동 수집과 같은 비밀번호)
+  if (url === "/api/stats" && req.method === "GET") {
+    if (!isLocal(req)) {
+      const denied = checkRefreshPassword(req);
+      if (denied) return send(res, denied.code, { error: denied.error, auth: denied.code === 401 });
+    }
+    return send(res, 200, stats.summary(30));
   }
 
   // 개선·문의 글 → 메일 발송(저장하지 않음)
