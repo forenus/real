@@ -512,7 +512,7 @@ function computeChanges(pyeong) {
   return { available: true, todayDate: todayK, prevDate: prevK, pyeong: py, added, sold, relisted, current: todayList, prevList };
 }
 
-// ---------- 주제별 최신 기사: tram(동탄트램) / gtx(GTX-C 병점역) (30분 캐시) ----------
+// ---------- 주제별 최신 기사: tram(동탄트램) / dongtan(동탄 소식) (30분 캐시) ----------
 const newsCache = {};
 async function getNews(topic = "tram") {
   const c = newsCache[topic];
@@ -551,12 +551,12 @@ async function publishPages() {
   publishing = (async () => {
     fs.mkdirSync(DOCS, { recursive: true });
     const { state, changes } = buildStaticData();
-    const [news, newsGtx] = await Promise.all([getNews("tram"), getNews("gtx")]);
+    const [news, newsDongtan] = await Promise.all([getNews("tram"), getNews("dongtan")]);
     // collectUrl: 공개 페이지의 '수동 수집' 버튼이 요청을 보낼 PC 서버 주소
     // (config.json 의 publicUrl 우선, 없으면 tunnel.js 가 적어 둔 현재 Cloudflare 터널 주소)
     let collectUrl = loadConfig().publicUrl || "";
     if (!collectUrl) try { collectUrl = fs.readFileSync(path.join(ROOT, "tunnel-url.txt"), "utf8").trim(); } catch {}
-    writeJson(path.join(DOCS, "data.json"), { generatedAt: new Date().toISOString(), collectUrl, state, changes, news, newsGtx });
+    writeJson(path.join(DOCS, "data.json"), { generatedAt: new Date().toISOString(), collectUrl, state, changes, news, newsDongtan });
     for (const f of ["app.js", "style.css"]) fs.copyFileSync(path.join(ROOT, f), path.join(DOCS, f));
     const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8")
       .replace(`<script src="app.js"></script>`, `<script>window.STATIC_MODE = true;</script>
@@ -681,7 +681,7 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, buildState());
   }
 
-  // 최신 기사 (?topic=tram|gtx)
+  // 최신 기사 (?topic=tram|dongtan)
   if (url === "/api/news" && req.method === "GET") {
     const topic = new URL(req.url, "http://x").searchParams.get("topic") || "tram";
     if (!NEWS_TOPICS[topic]) return send(res, 400, { error: "알 수 없는 뉴스 주제" });
