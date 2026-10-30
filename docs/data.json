@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T15:47:59.258Z",
+  "generatedAt": "2026-10-30T16:17:30.121Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14689,15 +14689,15 @@
       ]
     },
     "todayDate": "2026-10-31",
-    "lastFetchedAt": "2026-10-30T15:47:22.141Z",
+    "lastFetchedAt": "2026-10-30T16:17:10.254Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 200,
-      "recent24h": 2219,
-      "frequent": 98,
-      "new": 69,
-      "fetchedAt": "2026-10-30T15:47:46.502Z"
+      "realtime": 175,
+      "recent24h": 2169,
+      "frequent": 83,
+      "new": 63,
+      "fetchedAt": "2026-10-30T16:17:16.377Z"
     },
     "prevDate": "2026-10-30",
     "rows": [
@@ -16428,10 +16428,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 안팎에서 79건까지 꾸준히 올라와 매도 물량이 쌓이는 모습으로 보입니다. 다만 10월 28일 81건을 고점으로 최근 일주일은 79건 수준에서 횡보하고 있습니다. 25평은 6건으로 12주 전 4건에서 소폭 늘었지만 6~8건 사이에서 큰 변화 없이 유지되고 있습니다.",
-      "real": "33평은 최근 30일 4건, 평균 9억 100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 크게 상승한 수준입니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했지만 같은 달 2층은 8억 2,000만 원에 거래되는 등 건수가 적어 평균이 층·개별 거래에 따라 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없고, 마지막 거래는 9월 6일 7억 2,000만 원으로 상반기 5억 원대 후반보다 높았지만 1건뿐이라 추세로 보기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 저점에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 30일 최고치는 10월 28일 81건이었으며, 최근 일주일은 79건 안팎에서 횡보하고 있습니다. 25평은 6건으로 30일 전과 같고 6~8건 범위에서 소폭 등락하는 수준입니다.",
+      "real": "33평은 최근 30일 4건 평균 9억 100만 원으로 그전 30일(5건, 8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 다만 같은 달 2층 8억 2,000만 원 거래도 있어 거래 건수가 적은 만큼 층에 따라 평균이 크게 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없고, 마지막 거래는 9월 6일 7억 2,000만 원으로 1년 전 무렵 평균 5억 3,200만 원보다 높은 수준입니다.",
       "source": "ai",
-      "generatedAt": "2026-10-30T15:47:59.086Z"
+      "generatedAt": "2026-10-30T16:17:28.898Z"
     },
     "history": [
       {
@@ -19568,7 +19568,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-30T15:18:25.811Z",
+    "fetchedAt": "2026-10-30T16:17:30.121Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -19586,13 +19586,6 @@
         "isToday": false
       },
       {
-        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
-        "source": "경인일보",
-        "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성 동탄트램 10월 우선시공분 착공 추진… '30분 생활권' 공약 박차",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWaUhfR21mLXJVMzdDbW9JaW1QSU11MXozN1dqbEpSd3oxY29xYUhManM5X3JIdUN1ZHZlSWZDTGdFRXQ5TjRQeTZtODgyLVRiRncwSi1WT2xVOURHUEhDN0t5cmhJRDNLYXhZbzI2LVQ2T2RpV2R1Z3pn0gF_QVVfeXFMT2VBZlhuM1gwa0x6aUZVOWpfZl9qMFhPLWlZVVJ0M2ticW9wMGJBMU91TW9XbGhOalBISExLd3RvanBFamVlMHoxWmh1RE5RNTFQUHdDUkxROWExZXFrWnFTZTZUWGhqcy15RV9Hd3cyMDRiTjBHWnpYMFV2aEQ2OA?oc=5",
         "source": "뉴데일리 경기",
@@ -19603,6 +19596,13 @@
         "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
         "source": "한국일보",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
+        "source": "경인일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
@@ -19644,7 +19644,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-30T15:18:25.679Z",
+    "fetchedAt": "2026-10-30T16:17:30.004Z",
     "today": "2026-10-31",
     "items": [
       {
