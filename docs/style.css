@@ -579,3 +579,7 @@ a.logo { text-decoration: none; padding: 0 2px; }
 .kpi-hg .kpi-label img { border-radius: 4px; background: #554cde; }
 .kpi-hg .kpi-value { color: #4a41d0; }
 .st-ip { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.st-iptable td.num b { font-weight: 650; margin-right: 1px; }
+.st-ipbar { display: inline-block; width: 90px; height: 6px; border-radius: 999px; background: var(--surface-2); margin-right: 10px; vertical-align: middle; overflow: hidden; }
+.st-ipbar i { display: block; height: 100%; border-radius: 999px; background: var(--primary); }
+@media (max-width: 760px) { .st-ipbar { display: none; } }
