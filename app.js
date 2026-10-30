@@ -1106,6 +1106,14 @@ function renderStats(s) {
   stBars($("st-refs"), refs, refs.reduce((a, e) => a + e[1], 0));
   const dev = [["PC", s.devices.pc || 0], ["휴대폰", s.devices.mobile || 0]].filter((e) => e[1]);
   stBars($("st-dev"), dev, dev.reduce((a, e) => a + e[1], 0));
+  const ips = s.ips || [];
+  const maxIp = Math.max(1, ...ips.map((x) => x.count));
+  $("st-ips").innerHTML = ips.length
+    ? ips.map((x) => `<tr><td class="st-ip">${esc(x.ip)}</td>` +
+        `<td class="num"><span class="st-ipbar"><i style="width:${(100 * x.count / maxIp).toFixed(1)}%"></i></span><b>${x.count.toLocaleString()}</b>회</td>` +
+        `<td class="num">${x.days}일</td>` +
+        `<td>${x.last ? esc(new Date(x.last).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })) : "–"}</td></tr>`).join("")
+    : `<tr><td colspan="4" class="empty">아직 IP 기록이 없습니다(IP 기록을 시작한 뒤의 방문부터 집계됩니다).</td></tr>`;
   $("st-recent").innerHTML = s.recent.length
     ? s.recent.map((r) => `<tr><td>${esc(new Date(r.t).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }))}</td>` +
         `<td>#${esc(r.vid)}${r.isNew ? ` <span class="tag new">첫 방문</span>` : ""}</td>` +

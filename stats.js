@@ -1,5 +1,5 @@
 // 접속 통계 — 공개 페이지가 열릴 때(메뉴 이동 포함) 보내 오는 기록을 날짜별로 모은다.
-// 방문자 구분은 브라우저가 만든 무작위 번호(vid)로 한다. IP 는 관리자 확인용으로 '최근 방문 기록'(최근 50건)에만 남긴다.
+// 방문자 구분은 브라우저가 만든 무작위 번호(vid)로 한다. IP 는 관리자 확인용으로 날짜별 IP 접속 횟수와 최근 방문 기록(50건)에 남긴다.
 const fs = require("fs");
 const path = require("path");
 
@@ -17,6 +17,7 @@ function load() {
   data.days = data.days || {};
   data.seen = data.seen || {};   // vid → 처음 온 날
   data.recent = data.recent || [];
+  data.ipLast = data.ipLast || {}; // ip → 마지막 접속 시각
   return data;
 }
 // 기록마다 파일을 쓰지 않고 잠깐 모았다가 한 번에 쓴다
@@ -66,11 +67,18 @@ function record(body, ip = "") {
     t.refs[r] = (t.refs[r] || 0) + 1;
   }
   if (newVisitor) d.seen[vid] = day;
-  d.recent.unshift({ t: now.toISOString(), view, mobile: !!body.mobile, ref: firstToday ? refName(body.ref) : "", isNew: newVisitor, vid: vid.slice(0, 6), ip: String(ip).replace(/^::ffff:/, "").slice(0, 45) });
+  const ipText = String(ip || "").replace(/^::ffff:/, "").slice(0, 45);
+  if (ipText) {
+    t.ips = t.ips || {};
+    t.ips[ipText] = (t.ips[ipText] || 0) + 1;
+    d.ipLast[ipText] = now.toISOString();
+  }
+  d.recent.unshift({ t: now.toISOString(), view, mobile: !!body.mobile, ref: firstToday ? refName(body.ref) : "", isNew: newVisitor, vid: vid.slice(0, 6), ip: ipText });
   d.recent.length = Math.min(d.recent.length, RECENT_MAX);
   // 오래된 날짜 정리
   const cut = ymd(new Date(now.getTime() - KEEP_DAYS * 86400000));
   for (const k of Object.keys(d.days)) if (k < cut) delete d.days[k];
+  for (const [k, v] of Object.entries(d.ipLast)) if (v.slice(0, 10) < cut) delete d.ipLast[k];
   saveSoon();
   return true;
 }
@@ -93,6 +101,15 @@ function summary(n = 30) {
   const last7 = dates.slice(-7);
   const hours = Array(24).fill(0);
   for (const k of dates) { const x = day(k); if (x) x.hours.forEach((c, h) => (hours[h] += c)); }
+  // IP별 접속 횟수(페이지뷰)·접속한 날 수 — 많은 순 상위 50개
+  const ipAgg = {};
+  for (const k of dates) {
+    const x = day(k);
+    if (!x || !x.ips) continue;
+    for (const [ip, c] of Object.entries(x.ips)) { const a = (ipAgg[ip] = ipAgg[ip] || { ip, count: 0, days: 0 }); a.count += c; a.days += 1; }
+  }
+  const ips = Object.values(ipAgg).map((a) => ({ ...a, last: d.ipLast[a.ip] || null }))
+    .sort((a, b) => b.count - a.count || String(b.last).localeCompare(String(a.last))).slice(0, 50);
   return {
     today: { visitors: uniq([today]), pv: sum([today], (x) => x.pv) },
     week: { visitors: uniq(last7), pv: sum(last7, (x) => x.pv) },
@@ -103,6 +120,7 @@ function summary(n = 30) {
     refs: merge(dates, "refs"),
     devices: merge(dates, "dev"),
     hours,
+    ips,
     recent: d.recent,
   };
 }

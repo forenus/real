@@ -372,6 +372,19 @@
           </div>
           <section class="card">
             <div class="table-head">
+              <h2>IP별 접속 횟수</h2>
+              <span class="dates">최근 30일 · 많은 순</span>
+            </div>
+            <div class="table-wrap">
+              <table class="st-iptable">
+                <thead><tr><th>IP</th><th class="num">접속 횟수</th><th class="num">접속한 날</th><th>마지막 접속</th></tr></thead>
+                <tbody id="st-ips"></tbody>
+              </table>
+            </div>
+            <p class="hint">접속 횟수는 페이지(메뉴)를 연 횟수입니다. 같은 집·회사 와이파이나 휴대폰 통신사망은 여러 사람이 같은 IP로 보일 수 있습니다.</p>
+          </section>
+          <section class="card">
+            <div class="table-head">
               <h2>최근 방문 기록</h2>
               <span class="dates" id="st-updated"></span>
             </div>
