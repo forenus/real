@@ -599,6 +599,12 @@ $("contact-form").addEventListener("submit", async (e) => {
 // ---------- 실거래 목록 ----------
 // 평형 선택 버튼 — 목록에 있는 평형으로 만든다(선택은 이 브라우저에 기억).
 let lastDeals = null;
+let dealsExpanded = false; // 전체 펼치기 상태(새로고침하면 다시 최근 60일)
+$("deals-toggle").addEventListener("click", () => {
+  dealsExpanded = !dealsExpanded;
+  renderDeals(lastDeals);
+  if (!dealsExpanded) $("deals").scrollIntoView({ block: "start" }); // 접으면 목록 머리로 돌아간다
+});
 const DEAL_PY_KEY = "dealPyeong";
 function dealPy() { try { return localStorage.getItem(DEAL_PY_KEY) || "all"; } catch { return "all"; } }
 $("deals-filter").addEventListener("click", (e) => {
@@ -635,7 +641,10 @@ function fmtDiff(d) {
 function renderDeals(rd) {
   lastDeals = rd;
   const body = $("deals-body"), top = $("deals-today"), dl = $("deals-dates");
-  const all = (rd && rd.list) || [];
+  const recent = (rd && rd.list) || [];
+  const full = (rd && rd.all) || null;          // 조회 구간 전체(최근 5년) — 수집 전이면 없음
+  const showAll = dealsExpanded && !!full;
+  const all = showAll ? full : recent;
   const pys = [...new Set(all.map((x) => x.pyeong))].sort((a, b) => a - b);
   let sel = dealPy();
   if (sel !== "all" && !pys.includes(Number(sel))) sel = "all";
@@ -654,9 +663,9 @@ function renderDeals(rd) {
     return;
   }
   if (!list.length) {
-    body.innerHTML = `<tr><td colspan="6" class="empty">최근 60일 ${sel === "all" ? "" : sel + "평 "}실거래가 없습니다.</td></tr>`;
+    body.innerHTML = `<tr><td colspan="6" class="empty">${showAll ? "" : "최근 60일 "}${sel === "all" ? "" : sel + "평 "}실거래가 없습니다.</td></tr>`;
   } else {
-    const diffs = dealDiffs(all);
+    const diffs = dealDiffs(full || all); // 직전 거래 비교는 전체 목록이 있으면 그걸로(60일 맨 끝 거래도 비교 가능)
     body.innerHTML = list.map((x) => {
       const tags = [
         x.isToday ? `<span class="tag today">오늘 거래</span>` : "",
@@ -672,6 +681,16 @@ function renderDeals(rd) {
         `<td class="tags">${tags}</td></tr>`;
     }).join("");
   }
+  // 전체 펼치기 버튼 — 전체 목록이 60일 목록보다 많을 때만
+  const more = $("deals-more"), tg = $("deals-toggle");
+  more.hidden = !full || full.length <= recent.length;
+  if (!more.hidden) {
+    const nFull = sel === "all" ? full.length : full.filter((x) => String(x.pyeong) === sel).length;
+    tg.textContent = showAll ? "▲ 최근 60일만 보기" : `▼ 전체 펼치기 (${nFull}건)`;
+    tg.setAttribute("aria-expanded", showAll);
+  }
+  const oldest = full && full.length ? full[full.length - 1].date : "";
+  $("deals-range").textContent = showAll ? `거래일 기준 전체(${oldest} ~)` : "거래일 기준 최근 60일";
   const nToday = list.filter((x) => x.isToday).length;
   const nNew = list.filter((x) => x.isNew).length;
   if (nToday || nNew) {

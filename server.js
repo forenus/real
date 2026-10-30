@@ -193,16 +193,22 @@ function buildState() {
   const dealKey = (x) => `${x.date}|${x.pyeong}|${x.floor}|${x.price}`;
   const dealPrevSet = dk.length >= 2 ? new Set(dealMap[dk[dk.length - 2]].map(dealKey)) : null;
   const nowStr = todayStr();
+  const latest = dk.length ? dealMap[dk[dk.length - 1]] : [];
+  // '신규 신고'는 최근 목록 기준으로만 판단한다(오래된 거래는 직전 목록에 없어도 신규가 아님)
+  const newSet = new Set(dealPrevSet ? latest.map(dealKey).filter((k) => !dealPrevSet.has(k)) : []);
+  const dealView = (x) => ({
+    ...x,
+    label: labels[x.pyeong] || "",
+    priceText: fmtPriceManwon(x.price),
+    isToday: x.date === nowStr,
+    isNew: newSet.has(dealKey(x)),
+  });
   const realDeals = {
     date: dk[dk.length - 1] || null,
     today: nowStr,
-    list: (dk.length ? dealMap[dk[dk.length - 1]] : []).map((x) => ({
-      ...x,
-      label: labels[x.pyeong] || "",
-      priceText: fmtPriceManwon(x.price),
-      isToday: x.date === nowStr,
-      isNew: !!dealPrevSet && !dealPrevSet.has(dealKey(x)),
-    })),
+    list: latest.map(dealView),
+    // 전체 펼치기용 — 조회 구간 전체 (아직 수집 전이면 없음)
+    all: history.realDealsAll ? history.realDealsAll.list.map(dealView) : null,
   };
 
   return {
@@ -361,7 +367,7 @@ async function refreshOnce() {
   const compares = (cfg.compareComplexes || []).map((c) => ({
     ...c, listDays: dayDiff(DISPLAY_START, todayStr()) + 15,
   }));
-  const { articles, realAvg, realDeals, compareReal } = await fetchSaleAndReal(complexNo, compares);
+  const { articles, realAvg, realDeals, realDealsAll, compareReal } = await fetchSaleAndReal(complexNo, compares);
   if (articles.length === 0) {
     return { fetched: 0, warning: "매매 매물이 0건이거나 단지 번호가 올바르지 않을 수 있습니다." };
   }
@@ -381,6 +387,8 @@ async function refreshOnce() {
     history.realDeals = history.realDeals || {};
     history.realDeals[today] = realDeals;
   }
+  // 실거래 전체 목록(조회 구간 최근 5년) — 날짜별로 쌓지 않고 최신 수집분만 보관
+  if (realDealsAll && realDealsAll.length) history.realDealsAll = { date: today, list: realDealsAll };
   // 비교 단지 실거래 — 최신 수집분만 보관(과거 날짜 평균은 건별 목록에서 다시 계산)
   if (compareReal && compareReal.length) {
     history.compareReal = history.compareReal || {};
