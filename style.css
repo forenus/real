@@ -414,3 +414,48 @@ td.tags { white-space: nowrap; text-align: right; }
   /* 좁은 화면 표 — 글자를 세로로 쪼개지 말고 가로 스크롤 */
   .table-wrap th, .table-wrap td { white-space: nowrap; padding: 11px 9px; }
 }
+
+/* ---------- 휴대폰: 표를 행마다 카드처럼 쌓는다(가로 스크롤 없이 가격·증감이 보이게) ---------- */
+@media (max-width: 760px) {
+  .stack-table thead, .deals-table thead { display: none; }
+  .stack-table, .stack-table tbody, .stack-table tfoot,
+  .deals-table, .deals-table tbody { display: block; }
+  .stack-table tfoot[hidden] { display: none; }
+  .table-wrap .stack-table td, .table-wrap .deals-table td { border: none; padding: 0; white-space: normal; background: none; }
+  .stack-table td.empty, .deals-table td.empty { display: block; padding: 28px 0; text-align: center; }
+
+  /* 평형별 매물 증감 — 평형 | 증감 / 이전 | 오늘 / 평균호가 | 실거래 평균가 */
+  .stack-table tr {
+    display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: "py diff" "prev today" "ask real";
+    gap: 10px 12px; padding: 14px 2px; border-bottom: 1px solid var(--border);
+  }
+  .stack-table tbody tr:last-child { border-bottom: none; }
+  .stack-table tfoot tr { grid-template-areas: "py diff" "prev today"; border-top: 1px solid var(--border-strong); border-bottom: none; }
+  .stack-table td:nth-child(1) { grid-area: py; font-size: 15px; align-self: center; }
+  .stack-table td:nth-child(2) { grid-area: prev; }
+  .stack-table td:nth-child(3) { grid-area: today; }
+  .stack-table td:nth-child(4) { grid-area: diff; text-align: right; align-self: center; }
+  .stack-table td:nth-child(5) { grid-area: ask; }
+  .stack-table td:nth-child(6) { grid-area: real; }
+  .stack-table tfoot td:nth-child(n+5) { display: none !important; } /* 합계 줄의 빈 호가·실거래 칸 */
+  .stack-table td:nth-child(n+2):not(:nth-child(4)) { text-align: left; display: flex; flex-direction: column; gap: 1px; }
+  .stack-table td:nth-child(n+2):not(:nth-child(4))::before { content: attr(data-label); font-size: 11.5px; font-weight: 500; color: var(--muted); }
+  .stack-table .cnt-btn { padding: 0; align-self: flex-start; font-size: 15px; font-weight: 600; }
+  .stack-table td.price { font-size: 14px; }
+
+  /* 실거래 목록 — 거래일·태그 | 거래가 / 평형·층 | 직전 거래 대비 */
+  .deals-table tr {
+    display: grid; grid-template-columns: auto auto 1fr auto; grid-template-areas: "date tags tags price" "py fl . diff";
+    align-items: center; gap: 4px 8px; padding: 12px 2px; border-bottom: 1px solid var(--border);
+  }
+  .deals-table tbody tr:last-child { border-bottom: none; }
+  .deals-table tr.deal-hl { background: #fff7f7; margin: 0 -8px; padding: 12px 10px; border-radius: 10px; }
+  .deals-table td:nth-child(1) { grid-area: date; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .deals-table td:nth-child(2) { grid-area: py; }
+  .deals-table td:nth-child(3) { grid-area: fl; text-align: left; color: var(--muted); font-size: 13px; }
+  .deals-table td:nth-child(4) { grid-area: price; font-size: 15px; }
+  .deals-table td:nth-child(5) { grid-area: diff; }
+  .deals-table td:nth-child(6) { grid-area: tags; text-align: left; }
+  .deals-table td.tags .tag:first-child { margin-left: 0; }
+  .deals-table .pdiff-sub { display: inline; margin-left: 4px; }
+}

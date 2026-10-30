@@ -52,7 +52,25 @@ const COLORS = ["#3987e5", "#d95926", "#199e70", "#a86f00", "#d55181", "#008300"
 const INK = { grid: "#e5e8ee", axis: "#6b7686", ring: "#ffffff", label: "#1a1f29", hair: "#9aa3b2" };
 
 // SVG 라인 차트 — 평형별 매물 추이. 추정 구간은 점선.
+// 그래프 그리는 폭 — 실제 화면 폭에 맞춰 그려야 휴대폰에서도 눈금 글자가 작아지지 않는다(최대 760)
+function chartWidth(wrap) {
+  const w = wrap.clientWidth;
+  return w ? Math.max(300, Math.min(760, Math.round(w))) : 760;
+}
+// 화면 폭이 바뀌면(회전·창 크기) 다시 그린다
+let lastChart = null;
+let chartDrawnW = 0;
+function redrawCharts() {
+  const w = chartWidth($("chart-wrap"));
+  if (!w || w === chartDrawnW) return;
+  if (lastChart) renderChart(lastChart);
+  if (lastRealChart) renderRealChart(lastRealChart);
+}
+let redrawTimer = null;
+window.addEventListener("resize", () => { clearTimeout(redrawTimer); redrawTimer = setTimeout(redrawCharts, 150); });
+
 function renderChart(chart) {
+  lastChart = chart;
   const wrap = $("chart-wrap");
   const note = $("chart-note");
   const legend = $("chart-legend");
@@ -66,7 +84,8 @@ function renderChart(chart) {
   const series = chart.series;
   const estSet = new Set(chart.estimatedDates || []);
   // 실거래 가격추이와 같은 틀(여백·선 굵기·끝 라벨·툴팁)로 그린다
-  const W = 760, H = 300, pad = { l: 44, r: 50, t: 16, b: 44 };
+  const W = chartWidth(wrap), H = W < 520 ? 240 : 300, pad = { l: 44, r: 50, t: 16, b: 44 };
+  chartDrawnW = W;
   const iw = W - pad.l - pad.r, ih = H - pad.t - pad.b;
 
   let maxY = 0;
@@ -92,7 +111,7 @@ function renderChart(chart) {
   }
 
   // x 라벨 (최대 8개)
-  const step = Math.ceil(dates.length / 8);
+  const step = Math.ceil(dates.length / (W < 520 ? 4 : 8)); // 좁으면 라벨 수를 줄인다
   dates.forEach((d, i) => {
     if (i % step !== 0 && i !== dates.length - 1) return;
     svg.appendChild(txt({ x: x(i), y: H - pad.b + 18, fill: INK.axis, "font-size": 10, "text-anchor": "middle" }, d.slice(5)));
@@ -278,7 +297,7 @@ function renderRealChart(rc) {
   const shortName = (n) => String(n || "").replace(/^동탄역/, "");
   const nameOf = (s) => (s.compare ? `${shortName(s.complex)} ` : "") + `${s.pyeong}평`;
 
-  const W = 760, H = 300, pad = { l: 56, r: 62, t: 16, b: 44 };
+  const W = chartWidth(wrap), H = W < 520 ? 240 : 300, pad = { l: 50, r: 56, t: 16, b: 44 };
   const iw = W - pad.l - pad.r, ih = H - pad.t - pad.b;
   const x = (i) => pad.l + (dates.length === 1 ? iw / 2 : (iw * i) / (dates.length - 1));
   const y = (v) => pad.t + ih - (ih * (v - lo)) / (hi - lo);
@@ -297,7 +316,7 @@ function renderRealChart(rc) {
   }
 
   // x 라벨 (최대 8개)
-  const step = Math.ceil(dates.length / 8);
+  const step = Math.ceil(dates.length / (W < 520 ? 4 : 8)); // 좁으면 라벨 수를 줄인다
   dates.forEach((d, i) => {
     if (i % step !== 0 && i !== dates.length - 1) return;
     svg.appendChild(txt({ x: x(i), y: H - pad.b + 18, fill: INK.axis, "font-size": 10, "text-anchor": "middle" }, d.slice(5)));
@@ -472,6 +491,7 @@ function render(state) {
     $("sum-today").textContent = st || "–";
     $("sum-diff").innerHTML = `<span class="delta ${ds.cls}">${ds.txt}</span>`;
     $("tfoot").hidden = false;
+    labelCells($("table"));
   }
 
   renderDeals(state.realDeals);
@@ -495,6 +515,13 @@ function sparkline(chart, n) {
     `<polyline points="0,${H} ${line} ${W},${H}" class="spark-area"/>` +
     `<polyline points="${line}" class="spark-line"/>` +
     `<circle cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="2.6" class="spark-dot"/></svg>`;
+}
+
+// 휴대폰에서 표를 카드처럼 쌓을 때 칸 이름을 붙이기 위해, 머리글 글자를 각 칸의 data-label 로 복사한다
+function labelCells(table) {
+  const heads = [...table.querySelectorAll("thead th")].map((th) => th.firstChild ? th.firstChild.textContent.trim() : "");
+  table.querySelectorAll("tbody tr, tfoot tr").forEach((tr) =>
+    [...tr.children].forEach((td, i) => { if (heads[i]) td.dataset.label = heads[i]; }));
 }
 
 // ---------- 대시보드 요약 지표 ----------
@@ -544,7 +571,7 @@ function showView() {
   if (section) $(section).scrollIntoView({ block: "start" });
   else window.scrollTo(0, 0);
 }
-window.addEventListener("hashchange", showView);
+window.addEventListener("hashchange", () => { showView(); redrawCharts(); });
 
 // ---------- 개선·문의 (메일 발송) ----------
 // 글은 저장하지 않고 PC 서버(/api/contact)가 관리자 메일로만 보낸다.
