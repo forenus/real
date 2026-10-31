@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T03:52:24.250Z",
+  "generatedAt": "2026-10-31T04:22:20.951Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14713,15 +14713,15 @@
       ]
     },
     "todayDate": "2026-10-31",
-    "lastFetchedAt": "2026-10-31T03:52:02.470Z",
+    "lastFetchedAt": "2026-10-31T04:21:57.328Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 489,
-      "recent24h": 1438,
-      "frequent": 267,
-      "new": 132,
-      "fetchedAt": "2026-10-31T03:52:16.490Z"
+      "realtime": 417,
+      "recent24h": 1432,
+      "frequent": 228,
+      "new": 109,
+      "fetchedAt": "2026-10-31T04:22:14.179Z"
     },
     "prevDate": "2026-10-30",
     "rows": [
@@ -16452,10 +16452,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 저점에서 79건까지 꾸준히 증가해 매도 물량이 쌓이는 모습으로 보입니다. 10월 28일 81건으로 30일 최고를 기록한 뒤 소폭 줄었지만 높은 수준이 유지되고 있습니다. 25평은 6건으로 6~8건 사이에서 큰 변화 없이 횡보하고 있습니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 큽니다. 10월 28일 15층이 10억 원에 거래되며 역대 최고를 경신했지만, 같은 시기 2층은 8억 2,000만 원에 거래되는 등 층별 편차가 큽니다. 25평은 최근 30일 거래가 없고, 9월 6일 7억 2,000만 원 단 1건이 직전 거래여서 평균만으로 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 수준에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 30일 최고치는 10월 28일의 81건이었습니다. 25평은 6건으로 30일 전과 같으며, 12주 동안 4~7건 사이에서 소폭 움직이는 데 그쳤습니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 1,100만 원에 거래되어 그전 30일(8억 6,800만 원)보다 올랐습니다. 10월 28일에는 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 다만 같은 기간 2층이 8억 2,000만 원에 거래되는 등 층별 편차가 크고, 평균호가 9억 9,900만 원은 최근 실거래 평균보다 7천만 원가량 높습니다. 25평은 최근 30일 거래가 없고, 마지막 거래는 9월 6일 7억 2,000만 원 1건이어서 흐름을 판단하기에는 표본이 적습니다.",
       "source": "ai",
-      "generatedAt": "2026-10-31T03:52:23.597Z"
+      "generatedAt": "2026-10-31T04:22:19.967Z"
     },
     "history": [
       {
@@ -19945,7 +19945,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-31T03:50:38.414Z",
+    "fetchedAt": "2026-10-31T04:22:20.892Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -20021,7 +20021,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-31T03:50:38.891Z",
+    "fetchedAt": "2026-10-31T04:22:20.950Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -20036,13 +20036,6 @@
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
         "source": "KB Think",
         "time": "2026-10-27T08:06:34.000Z",
-        "isToday": false
-      },
-      {
-        "title": "“반도체 장비부터 K뷰티까지”…화성 동탄 미래 먹거리, 시의원들 현장서 살폈다",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5McU9qeW9fa3pqR2NuRUZaM2FCTUI4OW8xMFRvMUZNZFM4d3U4SjN1dHBPLXA2SUJHOHd0RkwtT0ZnZm1HSnpwSDMwWnJVX1hVTW1fTkUxbENIbzZ4WU5Mcy1ON0laM1pLaV9mdUtFc3jSAXRBVV95cUxPTEtYT1NUZTJXeWNycmxxR3ZrMHRNM0hiVWppWnlocHJWU3BZY0VncVp3YXp4Q1VUMUxTTEdha2pTdGN3dEtKRmIwQXdER2VSeVlJWlZGWDRjNnBlRkx5MW9XUGdqclRmU3pYVFlMd2pZeGRVWg?oc=5",
-        "source": "주간한국",
-        "time": "2026-10-26T08:50:10.000Z",
         "isToday": false
       },
       {
@@ -20092,6 +20085,13 @@
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE12dFROMHdXUXh6azFSNjRqR2c1Q3F0UlV0TExYV3FyZnRpUU1GQ21pZ3duUWphZlQ0dmdZeWNNZEhVSnJ3cnBwcmo1eGM4cjk4dnF5QzZtLXNJU09EamtUMWFlSURrckpWQ0pVOHhvS1otZw?oc=5",
         "source": "스포츠동아",
         "time": "2026-10-26T00:48:19.000Z",
+        "isToday": false
+      },
+      {
+        "title": "'사라진 달빛을 찾아서'…화성 동탄호수공원서 31일 루나빛축제",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XYnp3eXR2MHVsY0wyb2xPcW53QUVEb3RLNkpWT2tSdktXTkFPS2lqS19VVHBGZlN6YmRoX3V2OW1nZUdzcWk3eE1NTlA1cGhhMkE?oc=5",
+        "source": "매일경제 마켓",
+        "time": "2026-10-26T00:33:22.000Z",
         "isToday": false
       }
     ]
