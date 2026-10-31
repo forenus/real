@@ -1255,6 +1255,36 @@ $("refresh").addEventListener("click", async () => {
   }
 });
 
+// ---------- 오픈 공지 팝업 ----------
+// '오늘 하루 보지 않기'는 오늘 날짜를 기억하고, '닫기'는 이 탭에서만(새로 고침해도 다시 뜨지 않게) 기억한다.
+const NOTICE_KEY = "noticeOpen";
+function showNotice() {
+  const d = new Date();
+  const today = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+  try {
+    if (localStorage.getItem(NOTICE_KEY) === today || sessionStorage.getItem(NOTICE_KEY)) return;
+  } catch {}
+  const box = $("notice");
+  const close = () => {
+    box.hidden = true;
+    document.body.classList.remove("notice-open");
+    document.removeEventListener("keydown", onKey);
+    try { sessionStorage.setItem(NOTICE_KEY, "1"); } catch {}
+  };
+  const onKey = (e) => { if (e.key === "Escape") close(); };
+  box.querySelectorAll("[data-notice-close]").forEach((el) => el.addEventListener("click", close));
+  $("notice-today").addEventListener("click", () => {
+    try { localStorage.setItem(NOTICE_KEY, today); } catch {}
+    close();
+  });
+  document.addEventListener("keydown", onKey);
+  document.body.classList.add("notice-open");
+  box.hidden = false;
+  $("notice-close").focus({ preventScroll: true });
+}
+
+showNotice();
+
 if (STATIC) {
   // 단지 설정은 PC 서버에서만 — 정적 페이지에서는 메뉴를 숨긴다. 수집 버튼은 터널로 PC 서버에 요청한다.
   $("nav-settings").hidden = true;

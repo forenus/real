@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T03:31:16.739Z",
+  "generatedAt": "2026-10-31T03:48:58.792Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -19945,7 +19945,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-31T03:02:21.301Z",
+    "fetchedAt": "2026-10-31T03:32:57.461Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -19963,9 +19963,9 @@
         "isToday": false
       },
       {
-        "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
-        "source": "한국일보",
+        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
+        "source": "경인일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
@@ -19977,9 +19977,9 @@
         "isToday": false
       },
       {
-        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
-        "source": "경인일보",
+        "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
+        "source": "한국일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
@@ -20012,16 +20012,16 @@
         "isToday": false
       },
       {
-        "title": "화성특례시, 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BUVJYMDQyNWgzaFg0Z2ZaU2R1ZXg1SktiVjVGZU1JRU9qRW5qMEN4OW96WjVvX2pyeGxlcDk3Mk52R0V5Sm81UkxndnpuZlUtRlRQQVltVzNfRzU4OUpzM0I4ekZHOWNT?oc=5",
-        "source": "광교신문",
+        "title": "화성특례시, 동탄 트램 건설 본격화…10월 중 우선시공분 착공 추진:경인투데이뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9TSjlscFgxb3RVTmIyQ01vVTJrN2hiRkNJeTFXRGJzb1lTaHFIVENaczJhd29RaGlYcGZQM2FwM3VtU2fSAV9BVV95cUxQNWY1TkZMSExaUVVvSzVFQmVJWjd4S2taSjVvV2NydlRiQ0Q5N2Rkb0pyZ0hYaGFjSV82S3Y2djVDN3NIVjdhYWtLLXloWmN5czRNYjRsLUpfVEdvRWROcw?oc=5",
+        "source": "경인투데이뉴스",
         "time": "2026-10-10T07:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-31T03:02:21.507Z",
+    "fetchedAt": "2026-10-31T03:32:58.045Z",
     "today": "2026-10-31",
     "items": [
       {
