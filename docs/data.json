@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T02:31:50.511Z",
+  "generatedAt": "2026-10-31T03:02:21.508Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14713,15 +14713,15 @@
       ]
     },
     "todayDate": "2026-10-31",
-    "lastFetchedAt": "2026-10-31T02:30:50.797Z",
+    "lastFetchedAt": "2026-10-31T03:01:33.800Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 565,
-      "recent24h": 1491,
-      "frequent": 315,
-      "new": 144,
-      "fetchedAt": "2026-10-31T02:31:00.264Z"
+      "realtime": 578,
+      "recent24h": 1472,
+      "frequent": 317,
+      "new": 146,
+      "fetchedAt": "2026-10-31T03:01:39.269Z"
     },
     "prevDate": "2026-10-30",
     "rows": [
@@ -14746,7 +14746,7 @@
         "prev": 80,
         "today": 79,
         "diff": -1,
-        "avgPrice": "9억 9,800",
+        "avgPrice": "9억 9,900",
         "realPrice": "9억 2,300",
         "realCount": 3,
         "realDays": 10,
@@ -16452,10 +16452,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 12주 전 71건에서 64건까지 줄었다가 최근 79건으로 다시 늘어 매도 물량이 쌓이는 흐름으로 보입니다. 30일 최고치는 10월 28일의 81건이며, 최근 1주일은 큰 변동 없이 79건 안팎을 유지하고 있습니다. 25평은 6건으로 30일 전과 같고, 12주간 4~7건 사이에서 소폭 늘었다 줄어드는 수준입니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 1,100만 원으로, 그전 30일 평균 8억 6,800만 원보다 약 4,300만 원 올랐고 1년 전 무렵 평균 6억 3,600만 원과 비교하면 크게 상승했습니다. 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했지만, 같은 달 2층 거래는 8억 2,000만 원이어서 층에 따라 가격 차이가 큽니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원 1건이 마지막 거래여서, 거래가 드물어 평균만으로 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 10월 28일에는 30일 최고치인 81건까지 올라 최근 12주 동안 64건에서 79건 수준으로 꾸준히 증가했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 30일 전과 같으며, 4~8건 사이의 적은 물량에서 소폭 오르내리고 있습니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 1,100만 원에 거래되어 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 다만 같은 기간 2층 8억 2,000만 원 거래도 있어 층에 따른 편차가 큽니다. 25평은 9월 6일 7억 2,000만 원 거래 이후 최근 30일간 거래가 없어, 거래 1건에 기댄 평균은 흐름을 판단하는 근거로 삼기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-10-31T02:31:49.336Z"
+      "generatedAt": "2026-10-31T03:02:20.261Z"
     },
     "history": [
       {
@@ -17266,6 +17266,38 @@
         },
         {
           "before": {
+            "no": "2658110311",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "10/15",
+            "dir": "남동향",
+            "confirm": "20261028",
+            "desc": "중문 단지조망 예쁨  전자계약가능",
+            "bldg": "482동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-10-08",
+            "days": 22,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2658828220",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "10/15",
+            "dir": "남동향",
+            "confirm": "20261031",
+            "desc": "중문 단지조망 예쁨  전자계약가능",
+            "bldg": "482동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-10-08",
+            "days": 23,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2658543192",
             "pyeong": 33,
             "excl": 84,
@@ -17422,6 +17454,70 @@
             "firstSeen": "2026-06-23",
             "days": 130,
             "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2658351225",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "12/15",
+            "dir": "남향",
+            "confirm": "20261029",
+            "desc": "탁트인 치동천뷰 상록뷰 로얄동 로얄층 27년1월입주 전자계약 가능입니다",
+            "bldg": "488동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 138,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2658828706",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "12/15",
+            "dir": "남향",
+            "confirm": "20261031",
+            "desc": "탁트인 치동천뷰 상록뷰 로얄동 로얄층 27년1월입주 전자계약 가능입니다",
+            "bldg": "488동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 139,
+            "beforeStart": true
+          }
+        },
+        {
+          "before": {
+            "no": "2657701860",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "10/15",
+            "dir": "남향",
+            "confirm": "20261026",
+            "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
+            "bldg": "488동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 138,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2658830764",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "10/15",
+            "dir": "남향",
+            "confirm": "20261031",
+            "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
+            "bldg": "488동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 139,
+            "beforeStart": true
           }
         },
         {
@@ -17699,6 +17795,21 @@
           "beforeStart": false
         },
         {
+          "no": "2658828220",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 5,000",
+          "floor": "10/15",
+          "dir": "남동향",
+          "confirm": "20261031",
+          "desc": "중문 단지조망 예쁨  전자계약가능",
+          "bldg": "482동",
+          "realtor": "포레너스유성공인중개사사무소",
+          "firstSeen": "2026-10-08",
+          "days": 23,
+          "beforeStart": false
+        },
+        {
           "no": "2658145328",
           "pyeong": 33,
           "excl": 84,
@@ -17709,21 +17820,6 @@
           "desc": "전자계약가능 84A 남서향 조망굿 27년2월 입주가능 잔금전 인테리어가능",
           "bldg": "474동",
           "realtor": "포레탑공인중개사사무소",
-          "firstSeen": "2026-10-08",
-          "days": 23,
-          "beforeStart": false
-        },
-        {
-          "no": "2658110311",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 5,000",
-          "floor": "10/15",
-          "dir": "남동향",
-          "confirm": "20261028",
-          "desc": "중문 단지조망 예쁨  전자계약가능",
-          "bldg": "482동",
-          "realtor": "포레너스유성공인중개사사무소",
           "firstSeen": "2026-10-08",
           "days": 23,
           "beforeStart": false
@@ -17792,7 +17888,7 @@
           "no": "2657920878",
           "pyeong": 33,
           "excl": 84,
-          "price": "10억 5,000",
+          "price": "11억",
           "floor": "13/20",
           "dir": "남서향",
           "confirm": "20261027",
@@ -18434,6 +18530,36 @@
           "beforeStart": true
         },
         {
+          "no": "2658830764",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 6,000",
+          "floor": "10/15",
+          "dir": "남향",
+          "confirm": "20261031",
+          "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
+          "bldg": "488동",
+          "realtor": "포레너스유성공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 139,
+          "beforeStart": true
+        },
+        {
+          "no": "2658828706",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 7,000",
+          "floor": "12/15",
+          "dir": "남향",
+          "confirm": "20261031",
+          "desc": "탁트인 치동천뷰 상록뷰 로얄동 로얄층 27년1월입주 전자계약 가능입니다",
+          "bldg": "488동",
+          "realtor": "포레너스유성공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 139,
+          "beforeStart": true
+        },
+        {
           "no": "2658710620",
           "pyeong": 33,
           "excl": 84,
@@ -18474,21 +18600,6 @@
           "desc": "햇살좋고 3층높이감1층,아이키우기좋은집",
           "bldg": "483동",
           "realtor": "탑포레너스공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 139,
-          "beforeStart": true
-        },
-        {
-          "no": "2658351225",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 7,000",
-          "floor": "12/15",
-          "dir": "남향",
-          "confirm": "20261029",
-          "desc": "탁트인 치동천뷰 상록뷰 로얄동 로얄층 27년1월입주 전자계약 가능입니다",
-          "bldg": "488동",
-          "realtor": "포레너스유성공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 139,
           "beforeStart": true
@@ -18549,21 +18660,6 @@
           "desc": "추천,최근화이트톤인테리어,강마루,조명,거실실링팬,주인거주",
           "bldg": "472동",
           "realtor": "동탄퀸포레너스공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 139,
-          "beforeStart": true
-        },
-        {
-          "no": "2657701860",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 7,000",
-          "floor": "10/15",
-          "dir": "남향",
-          "confirm": "20261026",
-          "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
-          "bldg": "488동",
-          "realtor": "포레너스유성공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 139,
           "beforeStart": true
@@ -19849,7 +19945,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-31T02:31:50.510Z",
+    "fetchedAt": "2026-10-31T03:02:21.301Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -19867,9 +19963,9 @@
         "isToday": false
       },
       {
-        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
-        "source": "경인일보",
+        "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
+        "source": "한국일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
@@ -19881,9 +19977,9 @@
         "isToday": false
       },
       {
-        "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
-        "source": "한국일보",
+        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
+        "source": "경인일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
@@ -19916,23 +20012,44 @@
         "isToday": false
       },
       {
-        "title": "화성특례시, 동탄 트램 건설 본격화…10월 중 우선시공분 착공 추진:경인투데이뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9TSjlscFgxb3RVTmIyQ01vVTJrN2hiRkNJeTFXRGJzb1lTaHFIVENaczJhd29RaGlYcGZQM2FwM3VtU2fSAV9BVV95cUxQNWY1TkZMSExaUVVvSzVFQmVJWjd4S2taSjVvV2NydlRiQ0Q5N2Rkb0pyZ0hYaGFjSV82S3Y2djVDN3NIVjdhYWtLLXloWmN5czRNYjRsLUpfVEdvRWROcw?oc=5",
-        "source": "경인투데이뉴스",
+        "title": "화성특례시, 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BUVJYMDQyNWgzaFg0Z2ZaU2R1ZXg1SktiVjVGZU1JRU9qRW5qMEN4OW96WjVvX2pyeGxlcDk3Mk52R0V5Sm81UkxndnpuZlUtRlRQQVltVzNfRzU4OUpzM0I4ekZHOWNT?oc=5",
+        "source": "광교신문",
         "time": "2026-10-10T07:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-31T02:31:50.407Z",
+    "fetchedAt": "2026-10-31T03:02:21.507Z",
     "today": "2026-10-31",
     "items": [
+      {
+        "title": "화성동탄중앙도서관, 배움과 창작의 즐거움 더하는 하반기 문화교실 운영",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vZUZCaWgtS29BdDRXQ3VyZ255dF9LQkljbmFTa0otbk01MTFDQkZocnZ1TDB5ckxpY3VfOWNXY1pCekVQS09iUmtqdFdvZHFoWWs1NzJOTzRFLWhNeDFtdlFkd3M3ZFBw?oc=5",
+        "source": "광교신문",
+        "time": "2026-10-29T12:20:49.000Z",
+        "isToday": false
+      },
       {
         "title": "화성동탄경찰서, 북한이탈주민 100명 독감 예방접종 무료 지원",
         "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
         "source": "화성신문",
         "time": "2026-10-29T08:31:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성동탄중앙도서관, 하반기 문화교실로 독서·창작 경험 확대",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5N0Vsa1BNWHhOLTE3NWFDb2hqdi1ZTkFtTzZZaFNodndTcEtSZDBVbkFqcE5hYi1jN2dPeVRKN05WOHpqMVRBczVySXljd2VadDQ3bjFBTVN1UmhoX01yaGphS01DSzJDMnlxMEQtZ3l0UQ?oc=5",
+        "source": "웹이코노미",
+        "time": "2026-10-28T00:20:50.000Z",
+        "isToday": false
+      },
+      {
+        "title": "문봉균 화성동탄경찰서장, 일상을 지키는 사람이 도시를 지킨다",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUbE12S1dfZXBrWVdBSzhqQ2YweHJhcTI3UGRqWnhEamxuOXowbGNtWVBtU0tCRmViTEFQTDFScnJJQXBJaHpYQg?oc=5",
+        "source": "얼리어답터뉴스",
+        "time": "2026-10-28T00:20:36.000Z",
         "isToday": false
       },
       {
@@ -19950,6 +20067,13 @@
         "isToday": false
       },
       {
+        "title": "[2026 국정감사] 동탄역 이용수요 '2만 8,000명' 해명 오류…철도공단 국감서 인정",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd0lyeGNkY0JFWHk3SUp1MkhaSktqWHEtVEd6LXROSVJWdFNEbVpvYzlER0p4cHFNcEMyVTZTRlR0TUhHcElNZXV1UkwzcnAtTlJnWE5uYmI4TjZNWU9sVmhRRU44akJaalJrajlrbEI?oc=5",
+        "source": "한국철도일보",
+        "time": "2026-10-26T07:38:59.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성동탄경찰서, 북한이탈주민 건강한 겨울나기 지원",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fVGxvLXllRzB2RzIzQkV0OU5UbDBhOGtyd3NzWWZsVkVwZTNzdlNuTEF0QU9LUGhibVZCcllaelhheFBUZmZoZFFyUTV4cUkwZ1pEQUxOVHV4dUtBd2g4ZkZubGbSAWhBVV95cUxPeHVNZWJDOUFSOXlmb2U5TV9LakdTRmFBV1JZMnFKRXhKb1hYWWFLZ2NFX0tmOVZDYWR2R24zUlVSb3Y5by1jQWV2QlFfb1RUOXRJR2JjdUNPNE1RNThjalNmcWpGTmg5eQ?oc=5",
         "source": "경인방송 뉴스",
@@ -19957,45 +20081,17 @@
         "isToday": false
       },
       {
+        "title": "6월 GTX-A 전 구간 개통 위한 사전점검 착수‘",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZMjBiUE45ZFI4Z3RGS2V5bTZ1dWJISkhhTnpWUDJ5ZmE1UzZ2VXBwODBpVF9SSjVSbXBxbi1ubTRWQjVoZ3V6TDJIeXdsdjRlRnVNQVdYTnJKX193cE4tYU1CeGREMW9McXBfV0gtbkc?oc=5",
+        "source": "데일리경기신문",
+        "time": "2026-10-26T07:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성 동탄호수공원서 오는 31일 루나빛축제",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyeGV5Zkd3bURaNm13ZTExV2QxcmlNWmRNTWQwV0lIVzNLYV9LQjVySVRfS1VFVGRGYXg4QzFUaGpIOXRuRDdKSndmT2lJby1rQUdobmJsdTRtb3c?oc=5",
         "source": "KBS 뉴스",
         "time": "2026-10-26T06:12:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄경찰서-동탄시티병원, 북한이탈주민 무료 독감 예방접종 협약",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE82QmthaW9oOWNnRHVzMTBydktzel9tN0E5V05aRFVIWUNRQlZ3VUMxZ1RTV19SbUtqYnNsOW0zN1VXcWtaaXlodnpKWnJwYXE3cjdNZ3dSOW5jcFFJdVotVlhwQVZYNldGYkpJ?oc=5",
-        "source": "프레시안",
-        "time": "2026-10-26T06:06:34.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄경찰서, 북한이탈주민 무료 독감 예방접종 지원",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqVURRYnpCVkdSUzJscHE0cWVxOURnYzl2Z0lwSHlpQlBLTnpOZnFrZS1yRERXeXktT3YyMmNFTWVJTVlPYUxLaUlWTHN2QTJuejduMTRTa1lJbEQ2Q0QzRXQxaGRDbU04clM4bW9mbw?oc=5",
-        "source": "기호일보",
-        "time": "2026-10-26T04:49:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "[화성소식]화성동탄중앙도서관, 개관 1주년 맞아 다채로운 프로그램 운영",
-        "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOUTZKa2dxWDlpOFI1c3Vueno1SXBNR245MnRqZGdHdGROODFRaVo0N2Q5cjlCYmpDdEhZM0NrMUkzTmtvOUpSdXV4OEdvRmVqQ1RFWDRjVkNkVWZBQzJhUDA3Qno2RXFtR3ZwaGVOYk45ZXNWU3R1ZXdQcExRTlRLTXlQMTIyenJRSlduTTA3MlF1alJTdFk0UVA4NXdNdnB0ejdxYl9QbzNDVnFDRnZmYVFzTWMxNTBja2Y3dnpjcDltUzlsNWpSUzREOHI0b0VjS2ZiUEI3NFlpUURNc2UxalZleHBJZ0dqdUd5YTUxMUl5T0xnUFNNOFBSUE1ySFFoaGRkQTBLbHktbDFtYWJ5V1hxTWc4SjZ5SVJ5VGNkOExrRHJMWHV1VC0zaUZwUQ?oc=5",
-        "source": "데일리안",
-        "time": "2026-10-26T02:50:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄중앙도서관 개관 1주년…독서·공연 행사 마련",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TZ1lFd0MwSjlpTzZoYnpqX0Yyb3JndWxkTTVXdnlFcGJhdUNrbWp1RU14Qmk0YXVzeDBRbl9NQnNLbzFwd0t3aFlYNUtnSlgyS0xmMUF3OW9oWlZGcXNDVXBMZzlfcTU0TDNzcg?oc=5",
-        "source": "한국사회복지저널",
-        "time": "2026-10-26T01:28:53.000Z",
-        "isToday": false
-      },
-      {
-        "title": "전용기 의원 “동탄역 수요 오류 인정, 출입구 규모 재산정해야”",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE12dFROMHdXUXh6azFSNjRqR2c1Q3F0UlV0TExYV3FyZnRpUU1GQ21pZ3duUWphZlQ0dmdZeWNNZEhVSnJ3cnBwcmo1eGM4cjk4dnF5QzZtLXNJU09EamtUMWFlSURrckpWQ0pVOHhvS1otZw?oc=5",
-        "source": "스포츠동아",
-        "time": "2026-10-26T00:48:19.000Z",
         "isToday": false
       }
     ]
