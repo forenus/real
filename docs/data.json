@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T21:52:34.005Z",
+  "generatedAt": "2026-10-31T22:22:20.718Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14701,15 +14701,15 @@
       ]
     },
     "todayDate": "2026-11-01",
-    "lastFetchedAt": "2026-10-31T21:52:22.951Z",
+    "lastFetchedAt": "2026-10-31T22:21:57.831Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 23,
-      "recent24h": 1267,
-      "frequent": 11,
-      "new": 7,
-      "fetchedAt": "2026-10-31T21:52:28.244Z"
+      "realtime": 32,
+      "recent24h": 1263,
+      "frequent": 15,
+      "new": 9,
+      "fetchedAt": "2026-10-31T22:22:15.224Z"
     },
     "prevDate": "2026-10-31",
     "rows": [
@@ -16453,10 +16453,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 65~70건대에서 79건까지 꾸준히 올라 매도 물량이 쌓이고 있는 것으로 보입니다. 30일 최고치는 10월 28일의 81건이었습니다. 25평은 오늘 5건으로 7일 전보다 2건 줄어 30일 최저 수준이며, 10월 19일 8건을 정점으로 다소 소진되는 모습입니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 1,100만 원에 거래되어 그전 30일(8억 6,800만 원)보다 약 4,300만 원 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 큰 폭으로 상승했습니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했지만, 같은 달 2층이 8억 2,000만 원에 거래되는 등 층별 편차가 있어 평균이 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없고 마지막 거래는 9월 6일 7억 2,000만 원(역대 최고) 1건이라 추세를 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 동안 65~70건대에서 79건까지 꾸준히 증가해 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 5건으로 7일 전보다 2건 줄어 30일 최저 수준이며, 10월 19일 8건 이후 다소 소진된 것으로 보입니다.",
+      "real": "33평은 최근 30일 5건의 평균이 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 크지만, 같은 기간 2층 8억 2,000만 원 거래도 있어 층에 따라 가격 차이가 큽니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원이 마지막 거래여서, 건수가 적은 만큼 평균만으로 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-10-31T21:52:33.729Z"
+      "generatedAt": "2026-10-31T22:22:20.529Z"
     },
     "history": [
       {
@@ -19536,7 +19536,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-31T21:22:52.344Z",
+    "fetchedAt": "2026-10-31T22:04:16.433Z",
     "today": "2026-11-01",
     "items": [
       {
@@ -19612,16 +19612,9 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-31T21:22:52.565Z",
+    "fetchedAt": "2026-10-31T22:04:17.230Z",
     "today": "2026-11-01",
     "items": [
-      {
-        "title": "문봉균 화성동탄경찰서장, 일상을 지키는 사람이 도시를 지킨다",
-        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUbE12S1dfZXBrWVdBSzhqQ2YweHJhcTI3UGRqWnhEamxuOXowbGNtWVBtU0tCRmViTEFQTDFScnJJQXBJaHpYQg?oc=5",
-        "source": "얼리어답터뉴스",
-        "time": "2026-10-30T13:57:47.000Z",
-        "isToday": false
-      },
       {
         "title": "화성동탄중앙도서관, 배움과 창작의 즐거움 더하는 하반기 문화교실 운영",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vZUZCaWgtS29BdDRXQ3VyZ255dF9LQkljbmFTa0otbk01MTFDQkZocnZ1TDB5ckxpY3VfOWNXY1pCekVQS09iUmtqdFdvZHFoWWs1NzJOTzRFLWhNeDFtdlFkd3M3ZFBw?oc=5",
@@ -19648,6 +19641,13 @@
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5N0Vsa1BNWHhOLTE3NWFDb2hqdi1ZTkFtTzZZaFNodndTcEtSZDBVbkFqcE5hYi1jN2dPeVRKN05WOHpqMVRBczVySXljd2VadDQ3bjFBTVN1UmhoX01yaGphS01DSzJDMnlxMEQtZ3l0UQ?oc=5",
         "source": "웹이코노미",
         "time": "2026-10-28T00:20:50.000Z",
+        "isToday": false
+      },
+      {
+        "title": "문봉균 화성동탄경찰서장, 일상을 지키는 사람이 도시를 지킨다",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUbE12S1dfZXBrWVdBSzhqQ2YweHJhcTI3UGRqWnhEamxuOXowbGNtWVBtU0tCRmViTEFQTDFScnJJQXBJaHpYQg?oc=5",
+        "source": "얼리어답터뉴스",
+        "time": "2026-10-28T00:20:36.000Z",
         "isToday": false
       },
       {
