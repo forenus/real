@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T11:21:44.679Z",
+  "generatedAt": "2026-10-31T11:53:25.587Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14713,15 +14713,15 @@
       ]
     },
     "todayDate": "2026-10-31",
-    "lastFetchedAt": "2026-10-31T11:21:31.182Z",
+    "lastFetchedAt": "2026-10-31T11:53:09.536Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 204,
-      "recent24h": 1254,
-      "frequent": 107,
-      "new": 59,
-      "fetchedAt": "2026-10-31T11:21:38.914Z"
+      "realtime": 215,
+      "recent24h": 1257,
+      "frequent": 110,
+      "new": 61,
+      "fetchedAt": "2026-10-31T11:53:17.374Z"
     },
     "prevDate": "2026-10-30",
     "rows": [
@@ -14731,7 +14731,7 @@
         "prev": 6,
         "today": 5,
         "diff": -1,
-        "avgPrice": "8억 4,000",
+        "avgPrice": "8억 3,200",
         "realPrice": "",
         "realCount": 0,
         "realDays": 10,
@@ -16452,10 +16452,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 수준에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 내 최저치이며, 10월 19일 8건 고점 이후 줄어들어 일부 소진된 것으로 보입니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 크지만, 같은 달 2층이 8억 2,000만 원에 거래되는 등 층별 편차가 있어 건수가 적은 평균은 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만 원(역대 최고)으로 현재 평균 호가 8억 4,000만 원과 차이가 있습니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 안팎에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 30일 최고치는 10월 28일의 81건이었고, 이후 소폭 줄었지만 높은 수준을 유지하고 있습니다. 25평은 10월 19일 8건에서 오늘 5건으로 줄어 30일 최저를 기록했으며, 물량이 일부 소진되는 흐름으로 보입니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 1,100만 원에 거래되어 그전 30일(8억 6,800만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 큽니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했지만, 10월 26일 2층은 8억 2,000만 원에 거래되는 등 층에 따라 차이가 있고, 평균 호가 9억 9,900만 원은 최근 실거래 수준보다 높게 형성되어 있습니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원이 마지막 거래로, 거래가 드물어 평균만으로 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-10-31T11:21:44.284Z"
+      "generatedAt": "2026-10-31T11:53:24.396Z"
     },
     "history": [
       {
@@ -17005,7 +17005,40 @@
           "beforeStart": true
         }
       ],
-      "relisted": [],
+      "relisted": [
+        {
+          "before": {
+            "no": "2658718250",
+            "pyeong": 25,
+            "excl": 60,
+            "price": "8억",
+            "floor": "2/15",
+            "dir": "남서향",
+            "confirm": "20261030",
+            "desc": "27년6월입주협의,3층높이감,거실정원뷰",
+            "bldg": "479동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-11",
+            "days": 19,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2654492277",
+            "pyeong": 25,
+            "excl": 60,
+            "price": "7억 6,000",
+            "floor": "2/15",
+            "dir": "남서향",
+            "confirm": "20261010",
+            "desc": "세안고, 상권접근성우수, 27년6월입주협의, 학세권아파트단지 ",
+            "bldg": "479동",
+            "realtor": "더레이크팰리스공인중개사사무소",
+            "firstSeen": "2026-10-11",
+            "days": 20,
+            "beforeStart": false
+          }
+        }
+      ],
       "current": [
         {
           "no": "2655870574",
@@ -17023,16 +17056,16 @@
           "beforeStart": false
         },
         {
-          "no": "2658718250",
+          "no": "2654492277",
           "pyeong": 25,
           "excl": 60,
-          "price": "8억",
+          "price": "7억 6,000",
           "floor": "2/15",
           "dir": "남서향",
-          "confirm": "20261030",
-          "desc": "27년6월입주협의,3층높이감,거실정원뷰",
+          "confirm": "20261010",
+          "desc": "세안고, 상권접근성우수, 27년6월입주협의, 학세권아파트단지 ",
           "bldg": "479동",
-          "realtor": "탑포레너스공인중개사사무소",
+          "realtor": "더레이크팰리스공인중개사사무소",
           "firstSeen": "2026-10-11",
           "days": 20,
           "beforeStart": false
@@ -19978,7 +20011,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-31T10:52:09.619Z",
+    "fetchedAt": "2026-10-31T11:53:25.347Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -20024,37 +20057,37 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHOA?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "동탄트램, 10월 우선시공분 착공 추진…장기 지연 끝 사업 본궤도 오르나",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fZ1NvTDFZa1hvSzhrcmQ3a2pZLVpnR3FLTVhtRTJTckZ0NXhxYWJSeXRNRGVMWGFKYjMwNnljbkktdDhOaUdaNUw5TnBWanQwNHlodHR5V3lOZ2hyQVFWbUc4ODJ2VVZyXzFXY3pn?oc=5",
+        "source": "아시아투데이",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성시 “동탄트램(31.55km 실제 공사 단계”…10월 우선시공분 공사 착수",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOSVNfWDliV0FXRGNUak45N1UtZWltd3pmQlhwSzdCQ2hHSVAzcEtpLTVTaXZjY2hVTmdDSXVFdmhrQjV6R1MzRF9fZlJOR3FjQzVtTXcyTWlRVVRhOHJkcG84aC1ZTFE?oc=5",
-        "source": "경인신문",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "화성특례시, 동탄트램 심의 통과로 우선시공분 공사 계약 절차 추진",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPSm1KQmhRVUxobUFCWmRaSFNRMXF3MGhISFZ2QzJLRHZkVHQ1THVycXd3UVQwS1NSZEpsd3BNOENCUUlqSmFZYk1nbXktWVdFVk1qRzd2SEFIQWZkQnUyYW9aYlM?oc=5",
+        "source": "매일일보",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "31.55㎞ 동탄 트램 첫 삽 가시권…화성시, 10월 우선공사 착수",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tRndhZEU0dlAzTnNUNXptNFhKM0NRVTNNdlJoaWVxcFJIYnhIY1p6dzJ6V1IzS053bWY5SGpWOTd3Umt6QVdWVGJQaFA3YVNqWWRWVk9oRFBXX28?oc=5",
-        "source": "에너지경제신문",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
+        "source": "OBC 뉴스",
+        "time": "2026-10-11T02:59:12.000Z",
         "isToday": false
       },
       {
-        "title": "동탄트램. 연내 우선시공분 착공 본격화",
-        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE02eEU3ZDVjZmJlODNZa1dKLTVSMTB5Znl2RTJqMkprcldhc2VzakVWNk0zSXp3eUt4RUlrN1AtbzNvUQ?oc=5",
-        "source": "화성신문",
-        "time": "2026-09-11T07:00:00.000Z",
+        "title": "화성특례시, 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BUVJYMDQyNWgzaFg0Z2ZaU2R1ZXg1SktiVjVGZU1JRU9qRW5qMEN4OW96WjVvX2pyeGxlcDk3Mk52R0V5Sm81UkxndnpuZlUtRlRQQVltVzNfRzU4OUpzM0I4ekZHOWNT?oc=5",
+        "source": "광교신문",
+        "time": "2026-10-10T07:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-31T10:52:09.999Z",
+    "fetchedAt": "2026-10-31T11:53:25.586Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -20114,17 +20147,17 @@
         "isToday": false
       },
       {
-        "title": "화성동탄경찰서, 북한이탈주민 건강한 겨울나기 지원",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fVGxvLXllRzB2RzIzQkV0OU5UbDBhOGtyd3NzWWZsVkVwZTNzdlNuTEF0QU9LUGhibVZCcllaelhheFBUZmZoZFFyUTV4cUkwZ1pEQUxOVHV4dUtBd2g4ZkZubGbSAWhBVV95cUxPeHVNZWJDOUFSOXlmb2U5TV9LakdTRmFBV1JZMnFKRXhKb1hYWWFLZ2NFX0tmOVZDYWR2R24zUlVSb3Y5by1jQWV2QlFfb1RUOXRJR2JjdUNPNE1RNThjalNmcWpGTmg5eQ?oc=5",
-        "source": "경인방송 뉴스",
-        "time": "2026-10-26T07:05:40.000Z",
-        "isToday": false
-      },
-      {
         "title": "6월 GTX-A 전 구간 개통 위한 사전점검 착수‘",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZMjBiUE45ZFI4Z3RGS2V5bTZ1dWJISkhhTnpWUDJ5ZmE1UzZ2VXBwODBpVF9SSjVSbXBxbi1ubTRWQjVoZ3V6TDJIeXdsdjRlRnVNQVdYTnJKX193cE4tYU1CeGREMW9McXBfV0gtbkc?oc=5",
         "source": "데일리경기신문",
         "time": "2026-10-26T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄호수공원서 오는 31일 루나빛축제",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyeGV5Zkd3bURaNm13ZTExV2QxcmlNWmRNTWQwV0lIVzNLYV9LQjVySVRfS1VFVGRGYXg4QzFUaGpIOXRuRDdKSndmT2lJby1rQUdobmJsdTRtb3c?oc=5",
+        "source": "KBS 뉴스",
+        "time": "2026-10-26T06:12:00.000Z",
         "isToday": false
       }
     ]
