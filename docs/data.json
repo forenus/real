@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T06:24:00.162Z",
+  "generatedAt": "2026-10-31T06:57:39.286Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14713,15 +14713,15 @@
       ]
     },
     "todayDate": "2026-10-31",
-    "lastFetchedAt": "2026-10-31T06:23:47.418Z",
+    "lastFetchedAt": "2026-10-31T06:57:26.373Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 223,
-      "recent24h": 1367,
-      "frequent": 108,
-      "new": 63,
-      "fetchedAt": "2026-10-31T06:23:53.198Z"
+      "realtime": 204,
+      "recent24h": 1362,
+      "frequent": 99,
+      "new": 54,
+      "fetchedAt": "2026-10-31T06:57:32.060Z"
     },
     "prevDate": "2026-10-30",
     "rows": [
@@ -16452,10 +16452,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 안팎에서 79건까지 꾸준히 증가해 매도 물량이 쌓이는 모습으로 보입니다. 10월 28일 81건으로 30일 최고를 찍은 뒤 소폭 줄었지만 높은 수준이 유지되고 있습니다. 25평은 6건으로 30일 전과 같아 4~8건 사이에서 소폭 등락하는 수준입니다.",
-      "real": "33평은 최근 30일 5건의 평균이 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 크지만, 같은 기간 2층 8억 2,000만 원 거래도 있어 층에 따른 편차가 보입니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원이 마지막 거래여서 흐름을 판단하기에는 표본이 부족합니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64건 안팎에서 79건까지 올라와 매도 물량이 점차 쌓이는 흐름으로 보입니다. 다만 최근 2주는 79건에서 머물러 증가세가 다소 주춤한 모습입니다. 25평은 6건으로 30일 전과 같고, 6~8건 사이에서 소폭 오르내리는 횡보 흐름입니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 1,100만 원에 거래되어 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원으로 역대 최고가를 기록했습니다. 같은 기간 2층은 8억 2,000만 원에 거래되는 등 층별 편차가 커서, 건수가 적은 만큼 평균이 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만 원(역대 최고)으로 이전 5억 원대 후반 거래들보다 높은 수준이었습니다.",
       "source": "ai",
-      "generatedAt": "2026-10-31T06:23:59.087Z"
+      "generatedAt": "2026-10-31T06:57:38.062Z"
     },
     "history": [
       {
@@ -19945,7 +19945,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-10-31T06:24:00.141Z",
+    "fetchedAt": "2026-10-31T06:57:39.072Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -20021,7 +20021,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-10-31T06:24:00.161Z",
+    "fetchedAt": "2026-10-31T06:57:39.286Z",
     "today": "2026-10-31",
     "items": [
       {
@@ -20036,6 +20036,13 @@
         "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
         "source": "화성신문",
         "time": "2026-10-29T08:31:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄 아파트 1채 팔면 김포 6채 산다?…성과급 효과에 몸값 급등",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5LSU9QX1VHOWFMRDJkQjlZUjJxbjRJTnNHSWx2STNRTTRQa0VqNl9xMzVoX01jNUppVTQ1VmVJVGNlcG52VWc?oc=5",
+        "source": "매일경제",
+        "time": "2026-10-28T06:29:04.000Z",
         "isToday": false
       },
       {
@@ -20085,13 +20092,6 @@
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyeGV5Zkd3bURaNm13ZTExV2QxcmlNWmRNTWQwV0lIVzNLYV9LQjVySVRfS1VFVGRGYXg4QzFUaGpIOXRuRDdKSndmT2lJby1rQUdobmJsdTRtb3c?oc=5",
         "source": "KBS 뉴스",
         "time": "2026-10-26T06:12:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄경찰서-동탄시티병원, 북한이탈주민 무료 독감 예방접종 협약",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE82QmthaW9oOWNnRHVzMTBydktzel9tN0E5V05aRFVIWUNRQlZ3VUMxZ1RTV19SbUtqYnNsOW0zN1VXcWtaaXlodnpKWnJwYXE3cjdNZ3dSOW5jcFFJdVotVlhwQVZYNldGYkpJ?oc=5",
-        "source": "프레시안",
-        "time": "2026-10-26T06:06:34.000Z",
         "isToday": false
       }
     ]
