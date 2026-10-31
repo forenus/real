@@ -2,6 +2,7 @@
 // 방문자 구분은 브라우저가 만든 무작위 번호(vid)로 한다. IP 는 관리자 확인용으로 날짜별 IP 접속 횟수와 최근 방문 기록(50건)에 남긴다.
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const FILE = path.join(__dirname, "stats.json");
 const KEEP_DAYS = 400;           // 날짜별 기록 보관 기간
@@ -125,4 +126,34 @@ function summary(n = 30) {
   };
 }
 
-module.exports = { record, summary };
+// ---------- 현재 접속자 ----------
+// 열린 화면이 주기적으로 보내는 신호로 판단한다. 메모리에만 두고 저장하지 않는다.
+// 공개 페이지에 보이는 목록이므로 IP·방문자 번호는 내보내지 않고, 번호에서 만든 짧은 표시 코드만 준다.
+const ONLINE_MS = 60 * 1000;  // 이 시간 동안 신호가 없으면 나간 것으로 본다
+const ONLINE_MAX = 2000;      // 메모리 상한
+const ONLINE_LIST = 20;       // 화면에 내보낼 최대 인원
+const online = new Map();     // vid → { view, mobile, since, t }
+
+function presence(body) {
+  const vid = String((body && body.vid) || "");
+  const valid = /^[a-z0-9]{8,32}$/.test(vid);
+  const now = Date.now();
+  for (const [k, v] of online) if (now - v.t > ONLINE_MS) online.delete(k);
+  if (valid) {
+    if (body.leave) online.delete(vid);
+    else if (online.has(vid) || online.size < ONLINE_MAX) {
+      const view = VIEWS.includes(body.view) ? body.view : "dashboard";
+      online.set(vid, { view, mobile: !!body.mobile, since: (online.get(vid) || {}).since || now, t: now });
+    }
+  }
+  const list = [...online.entries()]
+    .sort((a, b) => (b[0] === vid) - (a[0] === vid) || a[1].since - b[1].since)
+    .slice(0, ONLINE_LIST)
+    .map(([k, v]) => {
+      const hash = crypto.createHash("sha256").update(k).digest("hex");
+      return { code: hash.slice(0, 4).toUpperCase(), hue: parseInt(hash.slice(4, 8), 16) % 360, view: v.view, mobile: v.mobile, me: k === vid };
+    });
+  return { count: online.size, list };
+}
+
+module.exports = { record, summary, presence };

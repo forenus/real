@@ -82,6 +82,20 @@ h1, h2, h3, h4 { letter-spacing: -0.025em; }
   content: ""; position: absolute; left: -14px; top: 9px; bottom: 9px; width: 3px; border-radius: 0 3px 3px 0; background: var(--primary);
 }
 .nav a[aria-current="page"] .ico { color: var(--primary); }
+.presence { display: flex; flex-direction: column; gap: 10px; min-height: 0; padding: 14px 8px 0; border-top: 1px solid var(--border); }
+.presence[hidden] { display: none; }
+.presence-head { display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: var(--muted); }
+.presence-count { display: inline-flex; align-items: center; gap: 5px; }
+.presence-count b { color: var(--text); font-weight: 600; }
+.presence-dot { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; }
+.presence-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; overflow-y: auto; max-height: 240px; scrollbar-width: thin; }
+.presence-list li { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.presence-av { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 11px; font-weight: 700; }
+.presence-who { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.presence-who b, .presence-who small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.presence-who b { font-size: 12.5px; font-weight: 600; color: var(--text); }
+.presence-who small { font-size: 11px; color: var(--muted); }
+.presence-more { font-size: 11.5px; color: var(--muted); padding-left: 37px; }
 .side-foot { margin-top: auto; display: flex; flex-direction: column; gap: 10px; }
 .side-foot .btn { width: 100%; }
 .side-meta { margin: 0; font-size: 12px; color: var(--muted); text-align: center; }
@@ -155,6 +169,8 @@ h1, h2, h3, h4 { letter-spacing: -0.025em; }
   .side-foot { margin: 0; flex: none; }
   .side-foot .btn { width: auto; padding: 8px 12px; font-size: 13px; }
   .side-meta { display: none; }
+  .presence { order: 1; padding: 0; border-top: none; }
+  .presence-label, .presence-list { display: none; }
   .main { padding: 0 16px; }
   .page-head { position: static; margin: 0 -16px; padding: 16px 16px 8px; backdrop-filter: none; -webkit-backdrop-filter: none; }
   .page-head h1 { font-size: 20px; }

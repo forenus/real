@@ -620,6 +620,7 @@ function showView() {
   curView = v;
   if (v === "stats") loadStats();
   else trackHit(v);
+  pingPresence();
 }
 window.addEventListener("hashchange", () => { showView(); redrawCharts(); });
 // 사용법 목차 — 주소(#뷰이름)는 그대로 두고 해당 칸으로 스크롤만 한다
@@ -1016,6 +1017,55 @@ function trackHit(view) {
   }).catch(() => {});
 }
 
+// 현재 접속자 — 화면이 보이는 동안 주기적으로 신호를 보내고 응답으로 사이드바 목록을 그린다.
+const PRESENCE_MS = 20000;
+let presenceTimer = null;
+function presenceUrl() {
+  if (!STATIC) return "/api/presence";
+  const base = ((staticData && staticData.collectUrl) || "").replace(/\/$/, "");
+  return base ? base + "/api/presence" : "";
+}
+function renderPresence(p) {
+  const box = $("presence");
+  if (!p || !p.count) { box.hidden = true; return; }
+  box.hidden = false;
+  $("presence-count").textContent = p.count.toLocaleString();
+  const rest = p.count - p.list.length;
+  $("presence-list").innerHTML = p.list.map((x) =>
+    `<li><span class="presence-av" style="background:hsl(${Number(x.hue)} 62% 46%)">${esc(x.code.slice(0, 2))}</span>` +
+    `<span class="presence-who"><b>방문자 ${esc(x.code)}${x.me ? " (나)" : ""}</b>` +
+    `<small>${esc(VIEW_LABELS[x.view] || VIEW_LABELS.dashboard)} 보는 중 · ${x.mobile ? "모바일" : "PC"}</small></span></li>`).join("") +
+    (rest > 0 ? `<li class="presence-more">외 ${rest.toLocaleString()}명</li>` : "");
+}
+async function pingPresence() {
+  const url = presenceUrl();
+  const vid = visitorId();
+  if (!url || !vid || document.hidden) return;
+  try {
+    const res = await fetch(url, {
+      method: "POST", headers: { "Content-Type": "text/plain" },
+      body: JSON.stringify({ vid, view: curView, mobile: matchMedia("(max-width: 760px)").matches }),
+    });
+    renderPresence(res.ok ? await res.json() : null);
+  } catch { renderPresence(null); } // PC 서버가 꺼져 있으면 칸을 숨긴다
+}
+function leavePresence() {
+  const url = presenceUrl();
+  const vid = visitorId();
+  if (url && vid && navigator.sendBeacon) navigator.sendBeacon(url, new Blob([JSON.stringify({ vid, leave: true })], { type: "text/plain" }));
+}
+function startPresence() {
+  clearInterval(presenceTimer);
+  pingPresence();
+  presenceTimer = setInterval(pingPresence, PRESENCE_MS);
+}
+// 다른 탭·앱으로 가면 나간 것으로 치고, 돌아오면 바로 다시 알린다
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) { clearInterval(presenceTimer); leavePresence(); }
+  else startPresence();
+});
+window.addEventListener("pagehide", leavePresence);
+
 async function fetchStats(pw) {
   if (!STATIC) return api("/api/stats");
   if (!staticData) await api("/api/state"); // 주소로 바로 들어온 경우 data.json 부터
@@ -1212,10 +1262,12 @@ if (STATIC) {
   load().then(() => {
     if (!staticData || !staticData.collectUrl) $("refresh").style.display = "none";
     trackHit(curView); // 첫 화면 기록은 data.json(collectUrl)을 받은 뒤에
+    startPresence();
     const t = staticData && staticData.generatedAt ? new Date(staticData.generatedAt).toLocaleString("ko-KR") : "";
     $("subtitle").textContent = `매매 매물만 집계합니다. 30분마다 자동 갱신 · 마지막 갱신 ${t}`;
   });
 } else {
   showView();
   load();
+  startPresence();
 }

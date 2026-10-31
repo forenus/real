@@ -664,7 +664,7 @@ const server = http.createServer(async (req, res) => {
   const url = req.url.split("?")[0];
 
   // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
-  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
+  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
     res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Vary", "Origin");
     if (req.method === "OPTIONS") {
@@ -728,6 +728,11 @@ const server = http.createServer(async (req, res) => {
     if (body) stats.record(body, req.headers["cf-connecting-ip"] || String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || req.socket.remoteAddress);
     res.writeHead(204);
     return res.end();
+  }
+
+  // 현재 접속자 — 열린 화면의 주기 신호를 받고 지금 목록을 돌려준다
+  if (url === "/api/presence" && req.method === "POST") {
+    return send(res, 200, stats.presence(await readJsonLimited(req, 1024)));
   }
 
   // 접속 통계 — 관리자만(공개 페이지에서는 수동 수집과 같은 비밀번호)
