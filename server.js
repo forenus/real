@@ -10,7 +10,7 @@ const { fetchSaleAndReal, aggregateByPyeong } = require("./naver");
 const { fetchNews, TOPICS: NEWS_TOPICS } = require("./news");
 const { updateAnalysis, loadAnalysis } = require("./analysis");
 const stats = require("./stats");
-const { updateHogangnono, loadHogangnono } = require("./hogangnono");
+const { updateHogangnono, loadHogangnono, fetchHogangnonoDeals, mergeHogangnonoDeals } = require("./hogangnono");
 
 const ROOT = __dirname;
 const HISTORY_FILE = path.join(ROOT, "history.json");
@@ -383,6 +383,16 @@ async function refreshOnce() {
   if (articles.length === 0) {
     return { fetched: 0, warning: "매매 매물이 0건이거나 단지 번호가 올바르지 않을 수 있습니다." };
   }
+  // 호갱노노에 먼저 올라온 실거래를 보탠다 — 실패해도 네이버 수집 결과로 계속한다
+  try {
+    const hgDeals = await fetchHogangnonoDeals(cfg.hogangnonoUrl, cfg.hogangnonoAreas, 60);
+    const avgFrom = new Date(Date.now() - 10 * 86400000);
+    const p2 = (n) => String(n).padStart(2, "0");
+    const added = mergeHogangnonoDeals({ realDeals, realDealsAll, realAvg: realAvg || {} }, hgDeals, `${avgFrom.getFullYear()}-${p2(avgFrom.getMonth() + 1)}-${p2(avgFrom.getDate())}`);
+    console.log(`  [호갱노노 실거래] ${hgDeals.length}건 확인, 네이버에 없는 ${added.length}건 추가`);
+  } catch (e) {
+    console.log("  [호갱노노 실거래] 실패:", e.message);
+  }
   const { counts, exclusive } = aggregateByPyeong(articles);
   const today = todayStr();
   history.snapshots[today] = counts; // 같은 날 재갱신 시 덮어씀
@@ -567,7 +577,7 @@ async function publishPages() {
     let collectUrl = loadConfig().publicUrl || "";
     if (!collectUrl) try { collectUrl = fs.readFileSync(path.join(ROOT, "tunnel-url.txt"), "utf8").trim(); } catch {}
     writeJson(path.join(DOCS, "data.json"), { generatedAt: new Date().toISOString(), collectUrl, state, changes, news, newsDongtan });
-    for (const f of ["app.js", "style.css", "logo-forenus.png", "hogangnono.png", "naverland.png"]) fs.copyFileSync(path.join(ROOT, f), path.join(DOCS, f));
+    for (const f of ["app.js", "style.css", "logo-forenus.png", "hogangnono.png", "naverland.png", "manifest.json", "apple-touch-icon.png", "icon-192.png", "icon-512.png"]) fs.copyFileSync(path.join(ROOT, f), path.join(DOCS, f));
     fs.cpSync(path.join(ROOT, "guide"), path.join(DOCS, "guide"), { recursive: true }); // 사용법 참고 캡처
     const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8")
       .replace(`<script src="app.js"></script>`, `<script>window.STATIC_MODE = true;</script>

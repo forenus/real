@@ -5,6 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>매물 추적기 · 동탄</title>
+  <!-- 휴대폰 홈 화면에 추가할 때 쓰는 아이콘·이름 -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0d12" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="포레너스" />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <!-- 글꼴은 기다리지 않는다(외부 CDN 이 느려도 화면부터 뜨게) — 받는 대로 적용 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" media="print" onload="this.media='all'" />
@@ -155,7 +163,7 @@
             <button type="button" class="btn ghost sm" id="deals-page" hidden></button>
             <button type="button" class="btn ghost sm" id="deals-toggle" aria-expanded="false"></button>
           </div>
-          <p class="hint"><span id="deals-range">거래일 기준 최근 60일</span> 매매 실거래(국토부 신고분, 네이버 제공)입니다. 실거래는 계약 후 최대 30일 내 신고되므로 <b>신규 신고</b>는 직전 수집 이후 새로 공개된 거래입니다.</p>
+          <p class="hint"><span id="deals-range">거래일 기준 최근 60일</span> 매매 실거래(국토부 신고분, 네이버·호갱노노 제공)입니다. 실거래는 계약 후 최대 30일 내 신고되므로 <b>신규 신고</b>는 직전 수집 이후 새로 공개된 거래입니다.</p>
         </section>
       </section>
 
@@ -353,7 +361,7 @@
 
         <section class="card guide-sec">
           <h2><span class="g-no">!</span>참고</h2>
-          <p class="guide-note">네이버 부동산 데이터를 비공식으로 모은 것이라 실제와 다를 수 있습니다. 관리자 PC가 꺼져 있으면 자동 갱신·수동 수집·문의 발송이 잠시 멈춥니다. 개인 참고용으로만 활용해 주세요.</p>
+          <p class="guide-note">네이버 부동산·호갱노노 데이터를 비공식으로 모은 것이라 실제와 다를 수 있습니다. 관리자 PC가 꺼져 있으면 자동 갱신·수동 수집·문의 발송이 잠시 멈춥니다. 개인 참고용으로만 활용해 주세요.</p>
         </section>
       </section>
 
@@ -432,7 +440,7 @@
       </section>
 
       <footer class="site-footer">
-        <p>데이터 출처: 네이버 부동산(비공식). 매물 개수는 수집 시점 기준이며 실제와 다를 수 있습니다.</p>
+        <p>데이터 출처: 네이버 부동산·호갱노노(비공식). 매물 개수는 수집 시점 기준이며 실제와 다를 수 있습니다.</p>
       </footer>
     </main>
   </div>
