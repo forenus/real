@@ -391,6 +391,7 @@ td.tags { white-space: nowrap; text-align: right; }
 .tag.today { background: var(--up); color: #fff; }
 .tag.new { background: var(--primary-soft); color: var(--primary-700); }
 .tag.cancel { background: var(--surface-2); color: var(--muted); }
+.tag.src { background: #ecebfc; color: #554cde; }
 .deals-more { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
 .deals-more[hidden] { display: none; }
 

@@ -788,6 +788,7 @@ function renderDeals(rd) {
         x.isToday ? `<span class="tag today">오늘 거래</span>` : "",
         x.isNew ? `<span class="tag new">신규 신고</span>` : "",
         x.canceled ? `<span class="tag cancel">해제</span>` : "",
+        x.source === "hogangnono" ? `<span class="tag src" title="네이버에 아직 올라오지 않아 호갱노노에서 가져온 거래">호갱노노</span>` : "",
       ].join("");
       const cls = [x.isToday || x.isNew ? "deal-hl" : "", x.canceled ? "deal-cancel" : ""].join(" ").trim();
       return `<tr class="${cls}"><td>${esc(x.date)}</td>` +
