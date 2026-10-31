@@ -552,13 +552,22 @@ function labelCells(table) {
 }
 
 // 호갱노노 실시간 방문자 카드 — 누르면 호갱노노 단지 페이지(새 창)
+let hgLive = null; // PC 서버에서 받은 최신 방문자 수(공개 페이지의 data.json 은 30분마다만 바뀐다)
 function hogangnonoTile(h) {
+  if (hgLive && (!h || hgLive.fetchedAt > h.fetchedAt)) h = hgLive;
   if (!h || typeof h.realtime !== "number") return "";
   const t = new Date(h.fetchedAt).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit", hour12: false });
   return `<a class="kpi kpi-hg" href="${esc(h.url)}" target="_blank" rel="noopener" title="호갱노노에서 보기(새 창)">` +
     `<span class="kpi-label"><img src="hogangnono.png" alt="" width="16" height="16" />호갱노노 실시간 방문자</span>` +
     `<b class="kpi-value">${h.realtime.toLocaleString()}<small>명</small></b>` +
     `<span class="kpi-sub">최근 24시간 ${(h.recent24h || 0).toLocaleString()}명 · ${esc(t)} 기준</span></a>`;
+}
+// 현재 접속자 응답에 함께 오는 값으로 카드만 바꾼다
+function updateHogangnonoTile(h) {
+  if (!h || !h.fetchedAt || (hgLive && hgLive.fetchedAt === h.fetchedAt)) return;
+  hgLive = h;
+  const tile = document.querySelector(".kpi-hg");
+  if (tile) tile.outerHTML = hogangnonoTile(null);
 }
 
 // ---------- 대시보드 요약 지표 ----------
@@ -1047,7 +1056,9 @@ async function pingPresence() {
       method: "POST", headers: { "Content-Type": "text/plain" },
       body: JSON.stringify({ vid, view: curView, mobile: matchMedia("(max-width: 760px)").matches }),
     });
-    renderPresence(res.ok ? await res.json() : null);
+    const p = res.ok ? await res.json() : null;
+    renderPresence(p);
+    if (p) updateHogangnonoTile(p.hogangnono);
   } catch { renderPresence(null); } // PC 서버가 꺼져 있으면 칸을 숨긴다
 }
 function leavePresence() {
