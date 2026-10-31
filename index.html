@@ -208,12 +208,12 @@
             </div>
             <div class="contact-row">
               <div class="field grow">
-                <label for="c-name">이름 (선택)</label>
-                <input type="text" id="c-name" maxlength="60" autocomplete="name" />
+                <label for="c-name">이름</label>
+                <input type="text" id="c-name" maxlength="60" autocomplete="name" placeholder="선택사항" />
               </div>
               <div class="field grow">
-                <label for="c-contact">답장 받을 이메일·연락처 (선택)</label>
-                <input type="text" id="c-contact" maxlength="120" autocomplete="email" />
+                <label for="c-contact">답장 받을 이메일·연락처</label>
+                <input type="text" id="c-contact" maxlength="120" autocomplete="email" placeholder="선택사항" />
               </div>
             </div>
             <div class="field">
@@ -451,6 +451,64 @@
     <div class="modal-box" role="dialog" aria-modal="true">
       <button class="modal-close" data-close aria-label="닫기">✕</button>
       <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- 오픈 공지 팝업 — 내용은 여기서 고치면 된다. 다시 띄우려면 app.js 의 NOTICE_KEY 를 바꾼다. -->
+  <div class="modal notice" id="notice" hidden>
+    <div class="modal-backdrop" data-notice-close></div>
+    <div class="notice-box" role="dialog" aria-modal="true" aria-labelledby="notice-title">
+      <div class="notice-hero">
+        <svg class="notice-art" viewBox="0 0 560 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="nt-sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b2a52"/><stop offset=".6" stop-color="#23327f"/><stop offset="1" stop-color="#5b4bd6"/></linearGradient>
+            <radialGradient id="nt-glow"><stop offset="0" stop-color="#ffc76b" stop-opacity=".75"/><stop offset="1" stop-color="#ffc76b" stop-opacity="0"/></radialGradient>
+            <linearGradient id="nt-line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".15"/><stop offset=".55" stop-color="#ffd58a"/><stop offset="1" stop-color="#ffb648"/></linearGradient>
+            <pattern id="nt-win" width="39" height="26" patternUnits="userSpaceOnUse" patternTransform="translate(6 4)">
+              <rect x="0" y="0" width="7" height="8" rx="1" fill="#ffc76b"/><rect x="13" y="0" width="7" height="8" rx="1" fill="#2c4a80"/><rect x="26" y="0" width="7" height="8" rx="1" fill="#2c4a80"/>
+              <rect x="0" y="13" width="7" height="8" rx="1" fill="#2c4a80"/><rect x="13" y="13" width="7" height="8" rx="1" fill="#2c4a80"/><rect x="26" y="13" width="7" height="8" rx="1" fill="#ffe2ad"/>
+            </pattern>
+          </defs>
+          <rect width="560" height="200" fill="url(#nt-sky)"/>
+          <circle cx="490" cy="40" r="90" fill="url(#nt-glow)"/>
+          <rect x="18" y="96" width="52" height="104" rx="2" fill="#17386b"/><rect x="96" y="74" width="56" height="126" rx="2" fill="#17386b"/><rect x="186" y="104" width="50" height="96" rx="2" fill="#17386b"/><rect x="262" y="64" width="56" height="136" rx="2" fill="#17386b"/><rect x="350" y="88" width="54" height="112" rx="2" fill="#17386b"/><rect x="436" y="58" width="58" height="142" rx="2" fill="#17386b"/><rect x="510" y="94" width="50" height="106" rx="2" fill="#17386b"/>
+          <g><rect x="48" y="122" width="60" height="78" rx="3" fill="#0d2347"/><rect x="48" y="122" width="60" height="78" rx="3" fill="url(#nt-win)"/><rect x="70" y="116" width="16" height="6" rx="1.5" fill="#0d2347"/></g>
+            <g><rect x="142" y="108" width="62" height="92" rx="3" fill="#0d2347"/><rect x="142" y="108" width="62" height="92" rx="3" fill="url(#nt-win)"/><rect x="165" y="102" width="16" height="6" rx="1.5" fill="#0d2347"/></g>
+            <g><rect x="228" y="130" width="56" height="70" rx="3" fill="#0d2347"/><rect x="228" y="130" width="56" height="70" rx="3" fill="url(#nt-win)"/><rect x="248" y="124" width="16" height="6" rx="1.5" fill="#0d2347"/></g>
+            <g><rect x="312" y="104" width="62" height="96" rx="3" fill="#0d2347"/><rect x="312" y="104" width="62" height="96" rx="3" fill="url(#nt-win)"/><rect x="335" y="98" width="16" height="6" rx="1.5" fill="#0d2347"/></g>
+            <g><rect x="398" y="124" width="60" height="76" rx="3" fill="#0d2347"/><rect x="398" y="124" width="60" height="76" rx="3" fill="url(#nt-win)"/><rect x="420" y="118" width="16" height="6" rx="1.5" fill="#0d2347"/></g>
+            <g><rect x="478" y="112" width="62" height="88" rx="3" fill="#0d2347"/><rect x="478" y="112" width="62" height="88" rx="3" fill="url(#nt-win)"/><rect x="501" y="106" width="16" height="6" rx="1.5" fill="#0d2347"/></g>
+          <rect y="192" width="560" height="8" fill="#081a36"/>
+          <polyline class="notice-trend" points="14,132 74,122 134,134 194,102 254,112 314,78 374,88 434,54 516,30" fill="none" stroke="url(#nt-line)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/>
+          <circle class="notice-dot" cx="516" cy="30" r="5.5" fill="#fff" stroke="#ffb648" stroke-width="3"/>
+        </svg>
+        <span class="notice-logo"><img src="logo-forenus.png" alt="동탄역 포레너스" width="620" height="149" /></span>
+        <span class="notice-badge">GRAND OPEN</span>
+      </div>
+      <div class="notice-body">
+        <h2 id="notice-title"><span aria-hidden="true">🏠</span> 포레너스 입주민 여러분, 안녕하세요</h2>
+        <p class="notice-lead">우리 단지 부동산 흐름을 한눈에 볼 수 있도록<br />입주민이 직접 만든 <b>'포레너스 매물 추적기'</b>를 오픈합니다.</p>
+        <h3>이런 걸 볼 수 있어요</h3>
+        <ul class="notice-feats">
+          <li><span class="notice-ico" aria-hidden="true">📊</span><span>평형별 매매 매물 수 변화<small>30분마다 자동 갱신</small></span></li>
+          <li><span class="notice-ico" aria-hidden="true">💰</span><span>최근 실거래가와 가격 추이</span></li>
+          <li><span class="notice-ico" aria-hidden="true">🆕</span><span>새로 올라온 매물 / 사라진 매물</span></li>
+          <li><span class="notice-ico" aria-hidden="true">📰</span><span>동탄·트램 관련 지역 소식</span></li>
+        </ul>
+        <div class="notice-callout free">
+          <b><span aria-hidden="true">💡</span> 비영리 안내</b>
+          <p>이 사이트는 광고·영업·수익 목적이 전혀 없는 순수 입주민 정보 공유용입니다. 특정 중개사무소나 업체와도 관련이 없습니다.</p>
+        </div>
+        <div class="notice-callout ask">
+          <b><span aria-hidden="true">🙋</span> 의견을 기다립니다</b>
+          <p>"이런 기능이 있었으면 좋겠다", "여기가 불편하다" 하는 점은 상단 <a href="#board" data-notice-close>[개선·문의]</a> 메뉴로 편하게 보내주세요. 하나씩 반영해 나가겠습니다.</p>
+        </div>
+        <p class="notice-fine">※ 네이버 부동산·호갱노노 공개 정보를 모은 것으로 실제와 다를 수 있으니 참고용으로만 봐 주세요.</p>
+      </div>
+      <div class="notice-foot">
+        <button type="button" class="notice-btn ghost" id="notice-today">오늘 하루 보지 않기</button>
+        <button type="button" class="notice-btn solid" id="notice-close" data-notice-close>닫기</button>
+      </div>
     </div>
   </div>
 

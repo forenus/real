@@ -14,7 +14,7 @@ async function open(browser, hash, viewport = { width: 1440, height: 900 }, mobi
   const page = await browser.newPage({ viewport, deviceScaleFactor: 1.5, isMobile: mobile });
   await page.goto(BASE + "#" + hash, { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(2500);
-  await page.addStyleTag({ content: ".page-head{position:static!important} .status{display:none!important} .view{animation:none!important}" });
+  await page.addStyleTag({ content: ".page-head{position:static!important} .status{display:none!important} .view{animation:none!important} #notice{display:none!important} body{overflow:auto!important}" });
   await page.evaluate(() => {
     document.getElementById("nav-settings").hidden = true;
     document.getElementById("refresh-label").textContent = "지금 수동 수집";
