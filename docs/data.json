@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T01:21:30.119Z",
+  "generatedAt": "2026-11-01T01:51:47.261Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14701,15 +14701,15 @@
       ]
     },
     "todayDate": "2026-11-01",
-    "lastFetchedAt": "2026-11-01T01:21:13.298Z",
+    "lastFetchedAt": "2026-11-01T01:51:34.507Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 118,
-      "recent24h": 1060,
-      "frequent": 62,
-      "new": 29,
-      "fetchedAt": "2026-11-01T01:17:56.101Z"
+      "realtime": 140,
+      "recent24h": 987,
+      "frequent": 78,
+      "new": 33,
+      "fetchedAt": "2026-11-01T01:51:39.122Z"
     },
     "prevDate": "2026-10-31",
     "rows": [
@@ -16453,10 +16453,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 65~70건대에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 25평은 오늘 4건으로 7일 전보다 3건 줄어 30일 최저치를 기록했으며, 10월 19일 8건을 정점으로 일부 소진된 것으로 보입니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 높아졌고, 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 크지만, 같은 시기 2층 8억 2,000만 원 거래도 있어 층에 따라 가격 차이가 큽니다. 25평은 최근 30일 거래가 없고, 9월 6일 7억 2,000만 원 1건이 역대 최고여서 거래가 적은 만큼 평균만으로 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 65~70건대에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 25평은 4건으로 30일 중 최저 수준이며, 10월 19일 8건에서 절반으로 줄어 일부 소진된 것으로 보입니다. 다만 25평은 매물 규모 자체가 작아 몇 건의 변동에도 흐름이 크게 바뀔 수 있습니다.",
+      "real": "33평은 최근 30일 5건 평균 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 높아졌고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 크며, 평균 호가는 9억 9,900만 원으로 최근 실거래 평균보다 7천만 원가량 높게 형성돼 있습니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원 1건이 마지막이라, 거래가 적어 평균만으로 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-01T01:21:29.101Z"
+      "generatedAt": "2026-11-01T01:51:45.011Z"
     },
     "history": [
       {
@@ -19537,7 +19537,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-01T01:21:30.018Z",
+    "fetchedAt": "2026-11-01T01:51:47.081Z",
     "today": "2026-11-01",
     "items": [
       {
@@ -19584,7 +19584,7 @@
       },
       {
         "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHOA?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHONIBU0FVX3lxTE90OVZJNDVKdDRvR2J1d2MwbXVVcl9KWlRlZW00RjF6Q0JVVVZyZW1LT0luVGwyU19Qbm1kbXdWZEhZdmdCSUlGMjVIVkppQ3RiZTJj?oc=5",
         "source": "KPI뉴스",
         "time": "2026-10-09T07:00:00.000Z",
         "isToday": false
@@ -19613,7 +19613,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-01T01:21:30.116Z",
+    "fetchedAt": "2026-11-01T01:51:47.261Z",
     "today": "2026-11-01",
     "items": [
       {
