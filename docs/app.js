@@ -644,7 +644,68 @@ async function openDongList(name) {
   box.innerHTML = head + `<p class="chg-dates">${esc(parts[0].todayDate)} 기준 · 최근 등록순</p>` +
     parts.map((c, i) => listBlock(`${esc(pys[i])}평 매물`, "neutral", (c.current || []).filter((r) => r.bldg === name), c.complexNo, "매물이 없습니다.")).join("");
 }
+// 실거래 동 직접 입력(관리자) — 수동 수집과 같은 비밀번호. 고르는 즉시 저장한다.
+async function dongAdminPost(body, pw) {
+  const base = STATIC ? ((staticData && staticData.collectUrl) || "").replace(/\/$/, "") : "";
+  if (STATIC && !base) throw new Error("지금은 PC 서버가 꺼져 있어 입력할 수 없습니다.");
+  let res;
+  try {
+    res = await fetch(base + "/api/dong-override", {
+      method: "POST", headers: { "Content-Type": "application/json", "x-refresh-password": pw || "" }, body: JSON.stringify(body),
+    });
+  } catch { throw new Error("PC 서버에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요."); }
+  return res.json();
+}
+async function openDongEditor(msg) {
+  const box = $("modal-content");
+  let pw = "";
+  if (STATIC) {
+    pw = (!msg && savedPw()) || await askPassword(msg || "실거래의 동을 직접 입력하려면 관리자 비밀번호가 필요합니다.", { title: "관리자 로그인", button: "로그인" });
+    if (!pw) return; // 창을 닫음 → 취소
+  }
+  $("modal").hidden = false;
+  box.innerHTML = `<p class="empty-sm">확인 중…</p>`;
+  let r;
+  try { r = await dongAdminPost({ check: true }, pw); }
+  catch (e) { box.innerHTML = `<p class="empty-sm">${esc(e.message)}</p>`; return; }
+  if (r.auth) { savePw(""); return openDongEditor("비밀번호가 맞지 않습니다. 다시 입력해 주세요."); }
+  if (r.error) { box.innerHTML = `<p class="empty-sm">${esc(r.error)}</p>`; return; }
+  if (STATIC) savePw(pw);
+  renderDongEditor(pw);
+}
+function renderDongEditor(pw) {
+  const real = (lastDongs && lastDongs.real) || { pending: [], conflicts: [] };
+  const names = ((lastDongs && lastDongs.list) || []).map((d) => d.name);
+  const options = (sel) => `<option value="">동 모름</option>` + names.map((n) => `<option value="${esc(n)}"${n === sel ? " selected" : ""}>${esc(n)}</option>`).join("");
+  const conflicts = (real.conflicts || []).map((x) => `<li>${esc(x.date)} ${esc(x.floor)}층 ${esc(x.priceText)} — 입력 ${esc(x.manualDong)}, 국토부 ${esc(x.molitDong)} (국토부 값 적용 중)</li>`).join("");
+  $("modal-content").innerHTML =
+    `<h3>실거래 동 입력 <span class="sub-label">${real.pending.length}건</span></h3>` +
+    `<p class="chg-dates">국토교통부 자료에 동이 없는 거래입니다. 동을 고르면 바로 저장되고, 공개 페이지에는 1분쯤 뒤 반영됩니다. 나중에 국토교통부 자료에 동이 올라오면 그 값이 우선합니다.</p>` +
+    (conflicts ? `<div class="dong-conflict"><b>입력값과 국토교통부 자료가 다른 거래</b><ul>${conflicts}</ul></div>` : "") +
+    `<div class="dong-edit">` + real.pending.map((x) =>
+      `<div class="dong-edit-row"><span class="dong-edit-deal"><b>${esc(x.priceText)}</b><small>${esc(x.date)} · ${esc(x.pyeong)}평 · ${esc(x.floor)}층</small></span>` +
+      `<select aria-label="${esc(x.date)} ${esc(x.floor)}층 ${esc(x.priceText)} 거래의 동" data-date="${esc(x.date)}" data-floor="${esc(x.floor)}" data-price="${esc(x.price)}" data-saved="${esc(x.manualDong)}">${options(x.manualDong)}</select>` +
+      `<span class="dong-edit-state"></span></div>`).join("") + `</div>`;
+  $("modal-content").querySelectorAll(".dong-edit select").forEach((sel) => sel.addEventListener("change", async () => {
+    const state = sel.parentElement.querySelector(".dong-edit-state");
+    state.textContent = "저장 중…";
+    let r;
+    try { r = await dongAdminPost({ date: sel.dataset.date, floor: sel.dataset.floor, price: sel.dataset.price, dong: sel.value }, pw); }
+    catch (e) { r = { error: e.message }; }
+    if (r.dongs) {
+      sel.dataset.saved = sel.value;
+      state.textContent = "저장됨";
+      renderDongs(r.dongs);
+    } else {
+      sel.value = sel.dataset.saved; // 저장 실패 — 화면을 저장된 값으로 되돌린다
+      state.textContent = r.auth ? "비밀번호 오류" : "저장 실패";
+      state.title = r.error || "";
+    }
+  }));
+}
+
 document.querySelector('[data-view="dongs"].view').addEventListener("click", (e) => {
+  if (e.target.closest("#dong-admin-open")) { openDongEditor(); return; }
   const el = e.target.closest("[data-dong]");
   if (el) openDongList(el.dataset.dong);
 });
@@ -661,22 +722,23 @@ function renderDongs(dongs) {
   $("dongs-date").textContent = dongs && dongs.date ? `매물 ${dongs.date} 기준` : "";
   const noReal = `<span class="dong-na" title="최근 1년 거래 중 이 동으로 확인된 거래가 없습니다">공개된 거래 없음</span>`;
   const realPrice = (x) => x
-    ? `<span class="dong-avg" title="${esc(x.date)} · ${esc(x.floor)}층"><small>${esc(x.pyeong)}평</small> <b>${esc(x.priceText)}</b></span>`
+    ? `<span class="dong-avg" title="${esc(x.date)} · ${esc(x.floor)}층">${x.manual ? `<em class="dong-manual">수동</em> ` : ""}<small>${esc(x.pyeong)}평</small> <b>${esc(x.priceText)}</b></span>`
     : noReal;
   const real = dongs && dongs.real;
   $("dongs-real-note").innerHTML = real
-    ? `실거래는 대시보드와 같은 자료(네이버·호갱노노)입니다. 최근 1년(${esc(real.from)}부터, 계약일 기준) 거래 <b>${real.total}건</b> 중 국토교통부 공개 자료로 동을 확인한 <b>${real.known}건</b>은 동별 카드에, 동을 알 수 없는 <b>${real.unknown ? real.unknown.count : 0}건</b>은 '동 미공개' 카드에 있습니다. 동은 등기를 마친 거래부터 공개되어 차례로 옮겨 갑니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
+    ? `실거래는 대시보드와 같은 자료(네이버·호갱노노)입니다. 최근 1년(${esc(real.from)}부터, 계약일 기준) 거래 <b>${real.total}건</b> 중 국토교통부 공개 자료로 동을 확인한 <b>${real.known}건</b>은 동별 카드에, 동을 알 수 없는 <b>${real.unknown ? real.unknown.count : 0}건</b>은 '동 미공개' 카드에 있습니다. 동은 등기를 마친 거래부터 공개되어 차례로 옮겨 갑니다.${real.manual ? ` <b>수동</b> 표시 ${real.manual}건은 관리자가 직접 확인해 입력한 값입니다.` : ""} 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
     : "실거래 자료를 아직 받지 못했습니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준입니다.";
   const row = (k, v) => `<div class="dong-row"><dt>${k}</dt><dd>${v}</dd></div>`;
   const unknownCard = real && real.unknown
     ? `<article class="dong-card dong-unknown"><header><h3>동 미공개</h3><span class="dong-count zero">동 확인 전</span></header><dl>` +
       row("최근 1년 최고가", realPrice(real.unknown.max)) + row("최근 1년 최저가", realPrice(real.unknown.min)) +
-      row("최근 1년 실거래", `<b>${real.unknown.count}건</b>`) + `</dl></article>`
+      row("최근 1년 실거래", `<b>${real.unknown.count}건</b>`) +
+      `</dl><button type="button" class="dong-admin" id="dong-admin-open">동 입력 (관리자)</button></article>`
     : "";
   $("dongs-grid").innerHTML = list.length ? unknownCard + list.map((d) => `<article class="dong-card">` +
     `<header><h3>${esc(d.name)}</h3><button type="button" class="dong-count${d.count ? "" : " zero"}" data-dong="${esc(d.name)}" aria-label="${esc(d.name)} 매물 목록 보기"><b>${d.count}</b>건</button></header><dl>` +
     row("최근 1년 최고가", realPrice(d.real && d.real.max)) + row("최근 1년 최저가", realPrice(d.real && d.real.min)) +
-    row("최근 1년 실거래", `<b>${(d.real && d.real.count) || 0}건</b>`) +
+    row("최근 1년 실거래", `${d.real && d.real.manual ? `<em class="dong-manual">수동 ${d.real.manual}</em> ` : ""}<b>${(d.real && d.real.count) || 0}건</b>`) +
     row("등록 매물", `<button type="button" class="dong-link" data-dong="${esc(d.name)}" aria-label="${esc(d.name)} 매물 목록 보기">${d.count}건</button>`) +
     row("매물 평균가", d.avg.length
       ? d.avg.map((a) => `<span class="dong-avg"><small>${esc(a.pyeong)}평</small> <b>${esc(a.priceText)}</b></span>`).join("")
