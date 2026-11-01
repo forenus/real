@@ -697,3 +697,4 @@ body.notice-open { overflow: hidden; }
 .dbar-tip { position: absolute; z-index: 5; pointer-events: none; white-space: nowrap; font-size: 12px; font-weight: 600; color: var(--text); }
 .dong-chart .seg { margin: 10px 0 0; }
 .dong-chart .hint { margin-top: 10px; }
+.dong-unknown { background: var(--surface-2); border-style: dashed; }

@@ -641,10 +641,15 @@ function renderDongs(dongs) {
     : noReal;
   const real = dongs && dongs.real;
   $("dongs-real-note").innerHTML = real
-    ? `실거래는 국토교통부 실거래가 공개시스템 자료입니다. 어느 동의 거래인지는 <b>등기를 마친 거래</b>에만 공개되어, 최근 1년(${esc(real.from)}부터) 거래 <b>${real.total}건 중 ${real.known}건</b>만 동별로 집계됩니다. 등기가 끝나면 나머지도 차례로 반영됩니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
+    ? `실거래는 국토교통부 실거래가 공개시스템 자료입니다. 최근 1년(${esc(real.from)}부터, 계약일 기준) 신고된 거래 <b>${real.total}건</b> 중 <b>${real.known}건</b>은 동별 카드에, 등기 전이라 동이 공개되지 않은 <b>${real.unknown ? real.unknown.count : 0}건</b>은 '동 미공개' 카드에 있습니다. 등기가 끝나면 해당 동으로 옮겨 갑니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
     : "실거래 자료를 아직 받지 못했습니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준입니다.";
   const row = (k, v) => `<div class="dong-row"><dt>${k}</dt><dd>${v}</dd></div>`;
-  $("dongs-grid").innerHTML = list.length ? list.map((d) => `<article class="dong-card">` +
+  const unknownCard = real && real.unknown
+    ? `<article class="dong-card dong-unknown"><header><h3>동 미공개</h3><span class="dong-count zero">등기 전</span></header><dl>` +
+      row("최근 1년 최고가", realPrice(real.unknown.max)) + row("최근 1년 최저가", realPrice(real.unknown.min)) +
+      row("최근 1년 실거래", `<b>${real.unknown.count}건</b>`) + `</dl></article>`
+    : "";
+  $("dongs-grid").innerHTML = list.length ? unknownCard + list.map((d) => `<article class="dong-card">` +
     `<header><h3>${esc(d.name)}</h3><span class="dong-count${d.count ? "" : " zero"}"><b>${d.count}</b>건</span></header><dl>` +
     row("최근 1년 최고가", realPrice(d.real && d.real.max)) + row("최근 1년 최저가", realPrice(d.real && d.real.min)) +
     row("최근 1년 실거래", `<b>${(d.real && d.real.count) || 0}건</b>`) +
