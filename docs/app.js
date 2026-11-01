@@ -653,23 +653,23 @@ $("dong-count-bars").addEventListener("keydown", (e) => {
   if (el && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openDongList(el.dataset.dong); }
 });
 
-// 동별 분석 카드 — 실거래는 국토부 자료에서 동이 공개된 거래만 집계한다(다른 값으로 추정하지 않는다)
+// 동별 분석 카드 — 실거래는 대시보드 목록 기준, 동은 국토부 자료와 맞는 거래에만 붙는다(다른 값으로 추정하지 않는다)
 function renderDongs(dongs) {
   const list = (dongs && dongs.list) || [];
   lastDongs = dongs;
   renderDongCharts(list);
   $("dongs-date").textContent = dongs && dongs.date ? `매물 ${dongs.date} 기준` : "";
-  const noReal = `<span class="dong-na" title="최근 1년 거래 중 이 동으로 공개된 거래가 없습니다">공개된 거래 없음</span>`;
+  const noReal = `<span class="dong-na" title="최근 1년 거래 중 이 동으로 확인된 거래가 없습니다">공개된 거래 없음</span>`;
   const realPrice = (x) => x
     ? `<span class="dong-avg" title="${esc(x.date)} · ${esc(x.floor)}층"><small>${esc(x.pyeong)}평</small> <b>${esc(x.priceText)}</b></span>`
     : noReal;
   const real = dongs && dongs.real;
   $("dongs-real-note").innerHTML = real
-    ? `실거래는 국토교통부 실거래가 공개시스템 자료입니다. 최근 1년(${esc(real.from)}부터, 계약일 기준) 신고된 거래 <b>${real.total}건</b> 중 <b>${real.known}건</b>은 동별 카드에, 등기 전이라 동이 공개되지 않은 <b>${real.unknown ? real.unknown.count : 0}건</b>은 '동 미공개' 카드에 있습니다. 등기가 끝나면 해당 동으로 옮겨 갑니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
+    ? `실거래는 대시보드와 같은 자료(네이버·호갱노노)입니다. 최근 1년(${esc(real.from)}부터, 계약일 기준) 거래 <b>${real.total}건</b> 중 국토교통부 공개 자료로 동을 확인한 <b>${real.known}건</b>은 동별 카드에, 동을 알 수 없는 <b>${real.unknown ? real.unknown.count : 0}건</b>은 '동 미공개' 카드에 있습니다. 동은 등기를 마친 거래부터 공개되어 차례로 옮겨 갑니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
     : "실거래 자료를 아직 받지 못했습니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준입니다.";
   const row = (k, v) => `<div class="dong-row"><dt>${k}</dt><dd>${v}</dd></div>`;
   const unknownCard = real && real.unknown
-    ? `<article class="dong-card dong-unknown"><header><h3>동 미공개</h3><span class="dong-count zero">등기 전</span></header><dl>` +
+    ? `<article class="dong-card dong-unknown"><header><h3>동 미공개</h3><span class="dong-count zero">동 확인 전</span></header><dl>` +
       row("최근 1년 최고가", realPrice(real.unknown.max)) + row("최근 1년 최저가", realPrice(real.unknown.min)) +
       row("최근 1년 실거래", `<b>${real.unknown.count}건</b>`) + `</dl></article>`
     : "";

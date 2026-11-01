@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T10:36:26.358Z",
+  "generatedAt": "2026-11-01T10:44:12.684Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14704,22 +14704,22 @@
       "date": "2026-11-01",
       "real": {
         "from": "2025-11-01",
-        "total": 170,
+        "total": 178,
         "known": 144,
         "fetchedAt": "2026-11-01T10:20:33.887Z",
         "unknown": {
-          "count": 26,
+          "count": 34,
           "max": {
             "priceText": "10억",
-            "pyeong": "33",
+            "pyeong": 33,
             "date": "2026-10-28",
             "floor": "15"
           },
           "min": {
-            "priceText": "6억 2,500",
-            "pyeong": "33",
-            "date": "2025-11-15",
-            "floor": "10"
+            "priceText": "5억 1,900",
+            "pyeong": 25,
+            "date": "2025-11-01",
+            "floor": "4"
           }
         }
       },
@@ -14731,13 +14731,13 @@
             "count": 11,
             "max": {
               "priceText": "7억",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-06-03",
               "floor": "6"
             },
             "min": {
               "priceText": "5억 9,800",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-01-30",
               "floor": "1"
             }
@@ -14758,13 +14758,13 @@
             "count": 14,
             "max": {
               "priceText": "8억 5,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-09-01",
               "floor": "12"
             },
             "min": {
               "priceText": "5억 9,500",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-05-06",
               "floor": "4"
             }
@@ -14785,13 +14785,13 @@
             "count": 18,
             "max": {
               "priceText": "7억 5,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-06-06",
               "floor": "20"
             },
             "min": {
               "priceText": "5억 8,500",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-01-03",
               "floor": "1"
             }
@@ -14812,13 +14812,13 @@
             "count": 7,
             "max": {
               "priceText": "7억 7,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-06-02",
               "floor": "19"
             },
             "min": {
               "priceText": "4억 9,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-03-31",
               "floor": "9"
             }
@@ -14839,13 +14839,13 @@
             "count": 12,
             "max": {
               "priceText": "7억 6,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-04-17",
               "floor": "15"
             },
             "min": {
               "priceText": "6억 2,500",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-01-29",
               "floor": "3"
             }
@@ -14866,13 +14866,13 @@
             "count": 6,
             "max": {
               "priceText": "7억 5,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-05-08",
               "floor": "19"
             },
             "min": {
               "priceText": "6억 4,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-01-07",
               "floor": "1"
             }
@@ -14893,13 +14893,13 @@
             "count": 6,
             "max": {
               "priceText": "7억 2,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-03-31",
               "floor": "11"
             },
             "min": {
               "priceText": "6억 8,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2025-12-20",
               "floor": "5"
             }
@@ -14920,13 +14920,13 @@
             "count": 7,
             "max": {
               "priceText": "7억 2,000",
-              "pyeong": "25",
+              "pyeong": 25,
               "date": "2026-09-06",
               "floor": "5"
             },
             "min": {
               "priceText": "5억 5,800",
-              "pyeong": "25",
+              "pyeong": 25,
               "date": "2026-01-10",
               "floor": "10"
             }
@@ -14947,13 +14947,13 @@
             "count": 7,
             "max": {
               "priceText": "6억 1,000",
-              "pyeong": "25",
+              "pyeong": 25,
               "date": "2026-05-14",
               "floor": "11"
             },
             "min": {
               "priceText": "5억 3,700",
-              "pyeong": "25",
+              "pyeong": 25,
               "date": "2025-11-15",
               "floor": "9"
             }
@@ -14974,13 +14974,13 @@
             "count": 8,
             "max": {
               "priceText": "6억 7,500",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-05-16",
               "floor": "10"
             },
             "min": {
               "priceText": "6억 1,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2025-11-07",
               "floor": "9"
             }
@@ -15001,13 +15001,13 @@
             "count": 6,
             "max": {
               "priceText": "7억",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-04-24",
               "floor": "11"
             },
             "min": {
               "priceText": "6억 4,500",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-01-10",
               "floor": "2"
             }
@@ -15028,13 +15028,13 @@
             "count": 11,
             "max": {
               "priceText": "7억 2,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-06-19",
               "floor": "8"
             },
             "min": {
               "priceText": "5억 8,400",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-02-10",
               "floor": "1"
             }
@@ -15055,13 +15055,13 @@
             "count": 3,
             "max": {
               "priceText": "6억 7,800",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-03-14",
               "floor": "12"
             },
             "min": {
               "priceText": "6억 3,900",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2025-11-16",
               "floor": "13"
             }
@@ -15082,13 +15082,13 @@
             "count": 4,
             "max": {
               "priceText": "7억 2,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-06-03",
               "floor": "8"
             },
             "min": {
               "priceText": "5억 9,300",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-02-01",
               "floor": "2"
             }
@@ -15109,13 +15109,13 @@
             "count": 8,
             "max": {
               "priceText": "7억 5,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-06-06",
               "floor": "14"
             },
             "min": {
               "priceText": "6억 500",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2025-11-05",
               "floor": "3"
             }
@@ -15136,13 +15136,13 @@
             "count": 8,
             "max": {
               "priceText": "7억 6,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-05-16",
               "floor": "14"
             },
             "min": {
               "priceText": "6억 2,700",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2025-11-14",
               "floor": "4"
             }
@@ -15163,13 +15163,13 @@
             "count": 5,
             "max": {
               "priceText": "7억",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-03-30",
               "floor": "5"
             },
             "min": {
               "priceText": "6억 5,000",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2025-11-11",
               "floor": "3"
             }
@@ -15190,13 +15190,13 @@
             "count": 3,
             "max": {
               "priceText": "6억 7,500",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-06-03",
               "floor": "15"
             },
             "min": {
               "priceText": "6억 4,500",
-              "pyeong": "33",
+              "pyeong": 33,
               "date": "2026-01-20",
               "floor": "12"
             }
@@ -15213,15 +15213,15 @@
       ]
     },
     "todayDate": "2026-11-01",
-    "lastFetchedAt": "2026-11-01T10:33:38.025Z",
+    "lastFetchedAt": "2026-11-01T10:43:53.721Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 258,
-      "recent24h": 1099,
-      "frequent": 128,
-      "new": 77,
-      "fetchedAt": "2026-11-01T10:34:12.219Z"
+      "realtime": 247,
+      "recent24h": 1101,
+      "frequent": 125,
+      "new": 72,
+      "fetchedAt": "2026-11-01T10:44:05.287Z"
     },
     "prevDate": "2026-10-31",
     "rows": [
@@ -16965,10 +16965,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 65~70건대에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 25평은 4건으로 30일 최저 수준이며, 10월 19일 8건에서 줄어든 뒤 7일 전보다 3건 감소해 물량이 소진되는 흐름으로 보입니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 1,100만원으로 그전 30일(8억 6,800만원)보다 올랐고, 10월 28일 15층이 10억에 거래되며 역대 최고를 기록했습니다. 다만 같은 기간 2층 8억 2,000만원 거래도 있어 층에 따른 편차가 크며, 평균호가 9억 9,900만원은 최근 10일 실거래 평균 9억 2,300만원보다 높게 형성돼 있습니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만원 1건이 마지막 거래여서, 거래가 적은 만큼 평균만으로 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 동안 65~70건대에서 79건까지 꾸준히 증가해 매도 물량이 쌓이는 흐름으로 보입니다. 30일 최고치는 10월 28일의 81건이었습니다. 25평은 오늘 4건으로 7일 전보다 3건 줄어 30일 최저 수준이며, 10월 19일 8건 이후 물량이 소진되는 모습으로 보입니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 1,100만 원에 거래되어 그전 30일(8억 6,800만 원)보다 높아졌고, 10월 28일 15층이 10억 원으로 역대 최고가를 기록했습니다. 다만 같은 기간 2층 8억 2,000만 원 거래도 있어 층에 따른 편차가 크며, 평균호가 9억 9,900만 원은 최근 실거래 평균보다 약 7,600만 원 높습니다. 25평은 최근 30일 거래가 없고, 9월 6일 7억 2,000만 원 1건이 역대 최고가로 이전 5억 원대 후반 거래보다 크게 높아 거래가 적은 만큼 해석에 주의가 필요합니다.",
       "source": "ai",
-      "generatedAt": "2026-11-01T10:33:58.436Z"
+      "generatedAt": "2026-11-01T10:44:11.196Z"
     },
     "history": [
       {
@@ -20049,7 +20049,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-01T10:30:59.499Z",
+    "fetchedAt": "2026-11-01T10:44:12.683Z",
     "today": "2026-11-01",
     "items": [
       {
@@ -20088,6 +20088,13 @@
         "isToday": false
       },
       {
+        "title": "화성특례시, 동탄트램 기술제안서 심의 적격, 계약절차 돌입... 10월 우선시공분 착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDWXd0YkpTMEljNjRZMXhURnFob0pTNFEtSURacWdkS1JxZVIzZUhyM181YWktYzhxTkhYM25aaXRIblBPNnhGZGxHb0pXUXBpWHlhbkNNX0o5TTE2eDNFZUg2dU04aDRjd1pJdVZB0gFyQVVfeXFMTktRYld4UHRMMGtiZHN5YV9ZQmpJNkt5MjBBZGFpTGJ0OEJVR2w4clo2eXZSVGN3Mko1R2k1SWduTVNZZmd3SkRaaDBzRlp6amRVazF1Wk5GSU5mZXpNVVhYaXViSi0wWTUySmNfdThwUXhB?oc=5",
+        "source": "뉴스신",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
         "source": "기호일보",
@@ -20095,37 +20102,30 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHONIBU0FVX3lxTE90OVZJNDVKdDRvR2J1d2MwbXVVcl9KWlRlZW00RjF6Q0JVVVZyZW1LT0luVGwyU19Qbm1kbXdWZEhZdmdCSUlGMjVIVkppQ3RiZTJj?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "동탄트램, 10월 우선시공분 착공 추진…장기 지연 끝 사업 본궤도 오르나",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fZ1NvTDFZa1hvSzhrcmQ3a2pZLVpnR3FLTVhtRTJTckZ0NXhxYWJSeXRNRGVMWGFKYjMwNnljbkktdDhOaUdaNUw5TnBWanQwNHlodHR5V3lOZ2hyQVFWbUc4ODJ2VVZyXzFXY3pn?oc=5",
+        "source": "아시아투데이",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성시 “동탄트램(31.55km 실제 공사 단계”…10월 우선시공분 공사 착수",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOSVNfWDliV0FXRGNUak45N1UtZWltd3pmQlhwSzdCQ2hHSVAzcEtpLTVTaXZjY2hVTmdDSXVFdmhrQjV6R1MzRF9fZlJOR3FjQzVtTXcyTWlRVVRhOHJkcG84aC1ZTFE?oc=5",
-        "source": "경인신문",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "화성특례시, 동탄트램 심의 통과로 우선시공분 공사 계약 절차 추진",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPSm1KQmhRVUxobUFCWmRaSFNRMXF3MGhISFZ2QzJLRHZkVHQ1THVycXd3UVQwS1NSZEpsd3BNOENCUUlqSmFZYk1nbXktWVdFVk1qRzd2SEFIQWZkQnUyYW9aYlM?oc=5",
+        "source": "매일일보",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "31.55㎞ 동탄 트램 첫 삽 가시권…화성시, 10월 우선공사 착수",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tRndhZEU0dlAzTnNUNXptNFhKM0NRVTNNdlJoaWVxcFJIYnhIY1p6dzJ6V1IzS053bWY5SGpWOTd3Umt6QVdWVGJQaFA3YVNqWWRWVk9oRFBXX28?oc=5",
-        "source": "에너지경제신문",
-        "time": "2026-10-09T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄트램. 연내 우선시공분 착공 본격화",
-        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE02eEU3ZDVjZmJlODNZa1dKLTVSMTB5Znl2RTJqMkprcldhc2VzakVWNk0zSXp3eUt4RUlrN1AtbzNvUQ?oc=5",
-        "source": "화성신문",
-        "time": "2026-09-11T07:00:00.000Z",
+        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
+        "source": "OBC 뉴스",
+        "time": "2026-10-11T02:59:12.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-01T10:31:00.304Z",
+    "fetchedAt": "2026-11-01T10:44:12.633Z",
     "today": "2026-11-01",
     "items": [
       {
