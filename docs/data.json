@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T12:06:10.425Z",
+  "generatedAt": "2026-11-01T12:11:18.234Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14705,15 +14705,15 @@
       "real": {
         "from": "2025-11-01",
         "total": 178,
-        "known": 144,
+        "known": 162,
         "fetchedAt": "2026-11-01T10:20:33.887Z",
         "unknown": {
-          "count": 34,
+          "count": 16,
           "max": {
-            "priceText": "10억",
+            "priceText": "7억 6,800",
             "pyeong": 33,
-            "date": "2026-10-28",
-            "floor": "15",
+            "date": "2026-05-16",
+            "floor": "13",
             "manual": false
           },
           "min": {
@@ -14724,7 +14724,7 @@
             "manual": false
           }
         },
-        "manual": 0,
+        "manual": 18,
         "pending": [
           {
             "date": "2026-10-28",
@@ -14732,7 +14732,7 @@
             "price": 100000,
             "pyeong": 33,
             "priceText": "10억",
-            "manualDong": ""
+            "manualDong": "474동"
           },
           {
             "date": "2026-10-27",
@@ -14740,7 +14740,7 @@
             "price": 95000,
             "pyeong": 33,
             "priceText": "9억 5,000",
-            "manualDong": ""
+            "manualDong": "474동"
           },
           {
             "date": "2026-10-26",
@@ -14748,7 +14748,7 @@
             "price": 82000,
             "pyeong": 33,
             "priceText": "8억 2,000",
-            "manualDong": ""
+            "manualDong": "488동"
           },
           {
             "date": "2026-10-19",
@@ -14756,7 +14756,7 @@
             "price": 90500,
             "pyeong": 33,
             "priceText": "9억 500",
-            "manualDong": ""
+            "manualDong": "487동"
           },
           {
             "date": "2026-10-05",
@@ -14764,7 +14764,7 @@
             "price": 88000,
             "pyeong": 33,
             "priceText": "8억 8,000",
-            "manualDong": ""
+            "manualDong": "475동"
           },
           {
             "date": "2026-09-22",
@@ -14772,7 +14772,7 @@
             "price": 90000,
             "pyeong": 33,
             "priceText": "9억",
-            "manualDong": ""
+            "manualDong": "474동"
           },
           {
             "date": "2026-09-17",
@@ -14780,7 +14780,7 @@
             "price": 85000,
             "pyeong": 33,
             "priceText": "8억 5,000",
-            "manualDong": ""
+            "manualDong": "482동"
           },
           {
             "date": "2026-09-16",
@@ -14788,7 +14788,7 @@
             "price": 85000,
             "pyeong": 33,
             "priceText": "8억 5,000",
-            "manualDong": ""
+            "manualDong": "473동"
           },
           {
             "date": "2026-09-11",
@@ -14796,7 +14796,7 @@
             "price": 89000,
             "pyeong": 33,
             "priceText": "8억 9,000",
-            "manualDong": ""
+            "manualDong": "473동"
           },
           {
             "date": "2026-09-09",
@@ -14804,7 +14804,7 @@
             "price": 85000,
             "pyeong": 33,
             "priceText": "8억 5,000",
-            "manualDong": ""
+            "manualDong": "486동"
           },
           {
             "date": "2026-08-29",
@@ -14812,7 +14812,7 @@
             "price": 81400,
             "pyeong": 33,
             "priceText": "8억 1,400",
-            "manualDong": ""
+            "manualDong": "481동"
           },
           {
             "date": "2026-08-28",
@@ -14820,7 +14820,7 @@
             "price": 85000,
             "pyeong": 33,
             "priceText": "8억 5,000",
-            "manualDong": ""
+            "manualDong": "483동"
           },
           {
             "date": "2026-07-31",
@@ -14828,7 +14828,7 @@
             "price": 83000,
             "pyeong": 33,
             "priceText": "8억 3,000",
-            "manualDong": ""
+            "manualDong": "482동"
           },
           {
             "date": "2026-06-30",
@@ -14836,7 +14836,7 @@
             "price": 81500,
             "pyeong": 33,
             "priceText": "8억 1,500",
-            "manualDong": ""
+            "manualDong": "474동"
           },
           {
             "date": "2026-06-30",
@@ -14844,7 +14844,7 @@
             "price": 79500,
             "pyeong": 33,
             "priceText": "7억 9,500",
-            "manualDong": ""
+            "manualDong": "472동"
           },
           {
             "date": "2026-06-24",
@@ -14852,7 +14852,7 @@
             "price": 85000,
             "pyeong": 33,
             "priceText": "8억 5,000",
-            "manualDong": ""
+            "manualDong": "475동"
           },
           {
             "date": "2026-06-22",
@@ -14860,7 +14860,7 @@
             "price": 80000,
             "pyeong": 33,
             "priceText": "8억",
-            "manualDong": ""
+            "manualDong": "484동"
           },
           {
             "date": "2026-06-10",
@@ -14868,7 +14868,7 @@
             "price": 75000,
             "pyeong": 33,
             "priceText": "7억 5,000",
-            "manualDong": ""
+            "manualDong": "485동"
           },
           {
             "date": "2026-06-09",
@@ -15036,8 +15036,8 @@
           "name": "472동",
           "count": 8,
           "real": {
-            "count": 14,
-            "manual": 0,
+            "count": 15,
+            "manual": 1,
             "max": {
               "priceText": "8억 5,000",
               "pyeong": 33,
@@ -15066,14 +15066,14 @@
           "name": "473동",
           "count": 7,
           "real": {
-            "count": 18,
-            "manual": 0,
+            "count": 20,
+            "manual": 2,
             "max": {
-              "priceText": "7억 5,000",
+              "priceText": "8억 9,000",
               "pyeong": 33,
-              "date": "2026-06-06",
-              "floor": "20",
-              "manual": false
+              "date": "2026-09-11",
+              "floor": "9",
+              "manual": true
             },
             "min": {
               "priceText": "5억 8,500",
@@ -15096,14 +15096,14 @@
           "name": "474동",
           "count": 2,
           "real": {
-            "count": 7,
-            "manual": 0,
+            "count": 11,
+            "manual": 4,
             "max": {
-              "priceText": "7억 7,000",
+              "priceText": "10억",
               "pyeong": 33,
-              "date": "2026-06-02",
-              "floor": "19",
-              "manual": false
+              "date": "2026-10-28",
+              "floor": "15",
+              "manual": true
             },
             "min": {
               "priceText": "4억 9,000",
@@ -15126,14 +15126,14 @@
           "name": "475동",
           "count": 4,
           "real": {
-            "count": 12,
-            "manual": 0,
+            "count": 14,
+            "manual": 2,
             "max": {
-              "priceText": "7억 6,000",
+              "priceText": "8억 8,000",
               "pyeong": 33,
-              "date": "2026-04-17",
-              "floor": "15",
-              "manual": false
+              "date": "2026-10-05",
+              "floor": "20",
+              "manual": true
             },
             "min": {
               "priceText": "6억 2,500",
@@ -15306,14 +15306,14 @@
           "name": "481동",
           "count": 4,
           "real": {
-            "count": 6,
-            "manual": 0,
+            "count": 7,
+            "manual": 1,
             "max": {
-              "priceText": "7억",
+              "priceText": "8억 1,400",
               "pyeong": 33,
-              "date": "2026-04-24",
-              "floor": "11",
-              "manual": false
+              "date": "2026-08-29",
+              "floor": "5",
+              "manual": true
             },
             "min": {
               "priceText": "6억 4,500",
@@ -15336,14 +15336,14 @@
           "name": "482동",
           "count": 4,
           "real": {
-            "count": 11,
-            "manual": 0,
+            "count": 13,
+            "manual": 2,
             "max": {
-              "priceText": "7억 2,000",
+              "priceText": "8억 5,000",
               "pyeong": 33,
-              "date": "2026-06-19",
-              "floor": "8",
-              "manual": false
+              "date": "2026-09-17",
+              "floor": "7",
+              "manual": true
             },
             "min": {
               "priceText": "5억 8,400",
@@ -15366,14 +15366,14 @@
           "name": "483동",
           "count": 4,
           "real": {
-            "count": 3,
-            "manual": 0,
+            "count": 4,
+            "manual": 1,
             "max": {
-              "priceText": "6억 7,800",
+              "priceText": "8억 5,000",
               "pyeong": 33,
-              "date": "2026-03-14",
-              "floor": "12",
-              "manual": false
+              "date": "2026-08-28",
+              "floor": "14",
+              "manual": true
             },
             "min": {
               "priceText": "6억 3,900",
@@ -15396,14 +15396,14 @@
           "name": "484동",
           "count": 2,
           "real": {
-            "count": 4,
-            "manual": 0,
+            "count": 5,
+            "manual": 1,
             "max": {
-              "priceText": "7억 2,000",
+              "priceText": "8억",
               "pyeong": 33,
-              "date": "2026-06-03",
-              "floor": "8",
-              "manual": false
+              "date": "2026-06-22",
+              "floor": "12",
+              "manual": true
             },
             "min": {
               "priceText": "5억 9,300",
@@ -15426,14 +15426,14 @@
           "name": "485동",
           "count": 6,
           "real": {
-            "count": 8,
-            "manual": 0,
+            "count": 9,
+            "manual": 1,
             "max": {
               "priceText": "7억 5,000",
               "pyeong": 33,
-              "date": "2026-06-06",
-              "floor": "14",
-              "manual": false
+              "date": "2026-06-10",
+              "floor": "9",
+              "manual": true
             },
             "min": {
               "priceText": "6억 500",
@@ -15456,14 +15456,14 @@
           "name": "486동",
           "count": 3,
           "real": {
-            "count": 8,
-            "manual": 0,
+            "count": 9,
+            "manual": 1,
             "max": {
-              "priceText": "7억 6,000",
+              "priceText": "8억 5,000",
               "pyeong": 33,
-              "date": "2026-05-16",
-              "floor": "14",
-              "manual": false
+              "date": "2026-09-09",
+              "floor": "5",
+              "manual": true
             },
             "min": {
               "priceText": "6억 2,700",
@@ -15486,14 +15486,14 @@
           "name": "487동",
           "count": 6,
           "real": {
-            "count": 5,
-            "manual": 0,
+            "count": 6,
+            "manual": 1,
             "max": {
-              "priceText": "7억",
+              "priceText": "9억 500",
               "pyeong": 33,
-              "date": "2026-03-30",
-              "floor": "5",
-              "manual": false
+              "date": "2026-10-19",
+              "floor": "12",
+              "manual": true
             },
             "min": {
               "priceText": "6억 5,000",
@@ -15516,14 +15516,14 @@
           "name": "488동",
           "count": 7,
           "real": {
-            "count": 3,
-            "manual": 0,
+            "count": 4,
+            "manual": 1,
             "max": {
-              "priceText": "6억 7,500",
+              "priceText": "8억 2,000",
               "pyeong": 33,
-              "date": "2026-06-03",
-              "floor": "15",
-              "manual": false
+              "date": "2026-10-26",
+              "floor": "2",
+              "manual": true
             },
             "min": {
               "priceText": "6억 4,500",
@@ -15549,11 +15549,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 234,
-      "recent24h": 1117,
-      "frequent": 120,
-      "new": 59,
-      "fetchedAt": "2026-11-01T12:04:17.555Z"
+      "realtime": 238,
+      "recent24h": 1120,
+      "frequent": 121,
+      "new": 60,
+      "fetchedAt": "2026-11-01T12:10:10.764Z"
     },
     "prevDate": "2026-10-31",
     "rows": [
