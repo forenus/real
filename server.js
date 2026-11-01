@@ -31,6 +31,8 @@ const PW_MAX_FAILS = 5;                  // 이만큼 틀리면
 const PW_LOCK_MS = 15 * 60 * 1000;       // 이 시간 동안 같은 곳(IP)의 시도를 막는다
 // 자동 수집 간격
 const AUTO_REFRESH_MS = 30 * 60 * 1000;
+// 호갱노노 실시간 방문자 갱신 간격
+const HOGANGNONO_MS = 3 * 60 * 1000;
 
 // ---------- 저장소 ----------
 function readJson(file, fallback) {
@@ -742,7 +744,7 @@ const server = http.createServer(async (req, res) => {
 
   // 현재 접속자 — 열린 화면의 주기 신호를 받고 지금 목록을 돌려준다
   if (url === "/api/presence" && req.method === "POST") {
-    return send(res, 200, stats.presence(await readJsonLimited(req, 1024)));
+    return send(res, 200, { ...stats.presence(await readJsonLimited(req, 1024)), hogangnono: loadHogangnono() });
   }
 
   // 접속 통계 — 관리자만(공개 페이지에서는 수동 수집과 같은 비밀번호)
@@ -806,6 +808,10 @@ process.on("unhandledRejection", (e) => { console.log("  [오류] unhandledRejec
 
 setTimeout(autoRefresh, 5000);               // 시작 직후 1회
 setInterval(autoRefresh, AUTO_REFRESH_MS);   // 이후 30분마다
+// 호갱노노 방문자 수만 3분마다 — 공개 페이지는 다시 게시하지 않고 현재 접속자 응답으로 받아 간다
+setInterval(() => {
+  updateHogangnono(loadConfig().hogangnonoUrl).catch((e) => console.log("  [호갱노노] 실패:", e.message));
+}, HOGANGNONO_MS);
 
 // 포트를 못 열면(이미 실행 중) 바로 종료 — 위 오류 처리기 때문에 살아남아 중복 수집하지 않게
 server.on("error", (e) => { console.log("  [오류] 서버 시작 실패:", e.message); process.exit(1); });
