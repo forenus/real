@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T10:23:45.766Z",
+  "generatedAt": "2026-11-01T10:29:27.353Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14703,9 +14703,9 @@
     "dongs": {
       "date": "2026-11-01",
       "real": {
-        "from": "2026-08-01",
-        "total": 14,
-        "known": 2,
+        "from": "2025-11-01",
+        "total": 170,
+        "known": 144,
         "fetchedAt": "2026-11-01T10:20:33.887Z"
       },
       "list": [
@@ -14713,7 +14713,19 @@
           "name": "471동",
           "count": 7,
           "real": {
-            "count": 0
+            "count": 11,
+            "max": {
+              "priceText": "7억",
+              "pyeong": "33",
+              "date": "2026-06-03",
+              "floor": "6"
+            },
+            "min": {
+              "priceText": "5억 9,800",
+              "pyeong": "33",
+              "date": "2026-01-30",
+              "floor": "1"
+            }
           },
           "avg": [
             {
@@ -14728,7 +14740,7 @@
           "name": "472동",
           "count": 8,
           "real": {
-            "count": 1,
+            "count": 14,
             "max": {
               "priceText": "8억 5,000",
               "pyeong": "33",
@@ -14736,10 +14748,10 @@
               "floor": "12"
             },
             "min": {
-              "priceText": "8억 5,000",
+              "priceText": "5억 9,500",
               "pyeong": "33",
-              "date": "2026-09-01",
-              "floor": "12"
+              "date": "2026-05-06",
+              "floor": "4"
             }
           },
           "avg": [
@@ -14755,7 +14767,19 @@
           "name": "473동",
           "count": 7,
           "real": {
-            "count": 0
+            "count": 18,
+            "max": {
+              "priceText": "7억 5,000",
+              "pyeong": "33",
+              "date": "2026-06-06",
+              "floor": "20"
+            },
+            "min": {
+              "priceText": "5억 8,500",
+              "pyeong": "33",
+              "date": "2026-01-03",
+              "floor": "1"
+            }
           },
           "avg": [
             {
@@ -14770,7 +14794,19 @@
           "name": "474동",
           "count": 2,
           "real": {
-            "count": 0
+            "count": 7,
+            "max": {
+              "priceText": "7억 7,000",
+              "pyeong": "33",
+              "date": "2026-06-02",
+              "floor": "19"
+            },
+            "min": {
+              "priceText": "4억 9,000",
+              "pyeong": "33",
+              "date": "2026-03-31",
+              "floor": "9"
+            }
           },
           "avg": [
             {
@@ -14785,7 +14821,19 @@
           "name": "475동",
           "count": 4,
           "real": {
-            "count": 0
+            "count": 12,
+            "max": {
+              "priceText": "7억 6,000",
+              "pyeong": "33",
+              "date": "2026-04-17",
+              "floor": "15"
+            },
+            "min": {
+              "priceText": "6억 2,500",
+              "pyeong": "33",
+              "date": "2026-01-29",
+              "floor": "3"
+            }
           },
           "avg": [
             {
@@ -14800,7 +14848,19 @@
           "name": "476동",
           "count": 6,
           "real": {
-            "count": 0
+            "count": 6,
+            "max": {
+              "priceText": "7억 5,000",
+              "pyeong": "33",
+              "date": "2026-05-08",
+              "floor": "19"
+            },
+            "min": {
+              "priceText": "6억 4,000",
+              "pyeong": "33",
+              "date": "2026-01-07",
+              "floor": "1"
+            }
           },
           "avg": [
             {
@@ -14815,7 +14875,19 @@
           "name": "477동",
           "count": 5,
           "real": {
-            "count": 0
+            "count": 6,
+            "max": {
+              "priceText": "7억 2,000",
+              "pyeong": "33",
+              "date": "2026-03-31",
+              "floor": "11"
+            },
+            "min": {
+              "priceText": "6억 8,000",
+              "pyeong": "33",
+              "date": "2025-12-20",
+              "floor": "5"
+            }
           },
           "avg": [
             {
@@ -14830,7 +14902,7 @@
           "name": "478동",
           "count": 3,
           "real": {
-            "count": 1,
+            "count": 7,
             "max": {
               "priceText": "7억 2,000",
               "pyeong": "25",
@@ -14838,10 +14910,10 @@
               "floor": "5"
             },
             "min": {
-              "priceText": "7억 2,000",
+              "priceText": "5억 5,800",
               "pyeong": "25",
-              "date": "2026-09-06",
-              "floor": "5"
+              "date": "2026-01-10",
+              "floor": "10"
             }
           },
           "avg": [
@@ -14857,7 +14929,19 @@
           "name": "479동",
           "count": 1,
           "real": {
-            "count": 0
+            "count": 7,
+            "max": {
+              "priceText": "6억 1,000",
+              "pyeong": "25",
+              "date": "2026-05-14",
+              "floor": "11"
+            },
+            "min": {
+              "priceText": "5억 3,700",
+              "pyeong": "25",
+              "date": "2025-11-15",
+              "floor": "9"
+            }
           },
           "avg": [
             {
@@ -14872,7 +14956,19 @@
           "name": "480동",
           "count": 4,
           "real": {
-            "count": 0
+            "count": 8,
+            "max": {
+              "priceText": "6억 7,500",
+              "pyeong": "33",
+              "date": "2026-05-16",
+              "floor": "10"
+            },
+            "min": {
+              "priceText": "6억 1,000",
+              "pyeong": "33",
+              "date": "2025-11-07",
+              "floor": "9"
+            }
           },
           "avg": [
             {
@@ -14887,7 +14983,19 @@
           "name": "481동",
           "count": 4,
           "real": {
-            "count": 0
+            "count": 6,
+            "max": {
+              "priceText": "7억",
+              "pyeong": "33",
+              "date": "2026-04-24",
+              "floor": "11"
+            },
+            "min": {
+              "priceText": "6억 4,500",
+              "pyeong": "33",
+              "date": "2026-01-10",
+              "floor": "2"
+            }
           },
           "avg": [
             {
@@ -14902,7 +15010,19 @@
           "name": "482동",
           "count": 4,
           "real": {
-            "count": 0
+            "count": 11,
+            "max": {
+              "priceText": "7억 2,000",
+              "pyeong": "33",
+              "date": "2026-06-19",
+              "floor": "8"
+            },
+            "min": {
+              "priceText": "5억 8,400",
+              "pyeong": "33",
+              "date": "2026-02-10",
+              "floor": "1"
+            }
           },
           "avg": [
             {
@@ -14917,7 +15037,19 @@
           "name": "483동",
           "count": 4,
           "real": {
-            "count": 0
+            "count": 3,
+            "max": {
+              "priceText": "6억 7,800",
+              "pyeong": "33",
+              "date": "2026-03-14",
+              "floor": "12"
+            },
+            "min": {
+              "priceText": "6억 3,900",
+              "pyeong": "33",
+              "date": "2025-11-16",
+              "floor": "13"
+            }
           },
           "avg": [
             {
@@ -14932,7 +15064,19 @@
           "name": "484동",
           "count": 2,
           "real": {
-            "count": 0
+            "count": 4,
+            "max": {
+              "priceText": "7억 2,000",
+              "pyeong": "33",
+              "date": "2026-06-03",
+              "floor": "8"
+            },
+            "min": {
+              "priceText": "5억 9,300",
+              "pyeong": "33",
+              "date": "2026-02-01",
+              "floor": "2"
+            }
           },
           "avg": [
             {
@@ -14947,7 +15091,19 @@
           "name": "485동",
           "count": 6,
           "real": {
-            "count": 0
+            "count": 8,
+            "max": {
+              "priceText": "7억 5,000",
+              "pyeong": "33",
+              "date": "2026-06-06",
+              "floor": "14"
+            },
+            "min": {
+              "priceText": "6억 500",
+              "pyeong": "33",
+              "date": "2025-11-05",
+              "floor": "3"
+            }
           },
           "avg": [
             {
@@ -14962,7 +15118,19 @@
           "name": "486동",
           "count": 3,
           "real": {
-            "count": 0
+            "count": 8,
+            "max": {
+              "priceText": "7억 6,000",
+              "pyeong": "33",
+              "date": "2026-05-16",
+              "floor": "14"
+            },
+            "min": {
+              "priceText": "6억 2,700",
+              "pyeong": "33",
+              "date": "2025-11-14",
+              "floor": "4"
+            }
           },
           "avg": [
             {
@@ -14977,7 +15145,19 @@
           "name": "487동",
           "count": 6,
           "real": {
-            "count": 0
+            "count": 5,
+            "max": {
+              "priceText": "7억",
+              "pyeong": "33",
+              "date": "2026-03-30",
+              "floor": "5"
+            },
+            "min": {
+              "priceText": "6억 5,000",
+              "pyeong": "33",
+              "date": "2025-11-11",
+              "floor": "3"
+            }
           },
           "avg": [
             {
@@ -14992,7 +15172,19 @@
           "name": "488동",
           "count": 7,
           "real": {
-            "count": 0
+            "count": 3,
+            "max": {
+              "priceText": "6억 7,500",
+              "pyeong": "33",
+              "date": "2026-06-03",
+              "floor": "15"
+            },
+            "min": {
+              "priceText": "6억 4,500",
+              "pyeong": "33",
+              "date": "2026-01-20",
+              "floor": "12"
+            }
           },
           "avg": [
             {
@@ -15006,15 +15198,15 @@
       ]
     },
     "todayDate": "2026-11-01",
-    "lastFetchedAt": "2026-11-01T10:23:33.679Z",
+    "lastFetchedAt": "2026-11-01T10:28:59.087Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 285,
-      "recent24h": 1103,
-      "frequent": 139,
-      "new": 86,
-      "fetchedAt": "2026-11-01T10:23:39.864Z"
+      "realtime": 269,
+      "recent24h": 1098,
+      "frequent": 132,
+      "new": 84,
+      "fetchedAt": "2026-11-01T10:29:20.736Z"
     },
     "prevDate": "2026-10-31",
     "rows": [
@@ -16758,10 +16950,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 동안 65~70건대에서 79건까지 꾸준히 증가해 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 오늘 4건으로 30일 내 최저치이며, 10월 19일 최고 8건에서 줄어 일부 소진된 것으로 보입니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 크지만, 같은 기간에도 2층 8억 2,000만 원 거래가 있어 층에 따라 가격 차이가 큰 편입니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원이 마지막 거래여서, 현재 평균 호가 8억 5,000만 원과 비교할 실거래 근거는 부족합니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 65~70건대에서 79건까지 꾸준히 올라 매도 물량이 쌓이는 모습으로 보입니다. 25평은 오늘 4건으로 7일 전보다 3건 줄어 30일 최저치를 기록했으며, 10월 19일 최고 8건에서 소진되는 흐름으로 보입니다.",
+      "real": "33평은 최근 30일 5건 평균 9억 1,100만원으로 그전 30일(8억 6,800만원)보다 올랐고, 10월 28일 15층이 10억에 거래되며 역대 최고를 경신했습니다. 다만 같은 기간 2층이 8억 2,000만원에 거래되는 등 층별 편차가 크고, 평균호가 9억 9,900만원은 최근 실거래 평균(9억 2,300만원)보다 높게 형성돼 있습니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만원 1건이 마지막 거래여서, 거래가 적어 시세 판단에 참고 정도로 보시는 것이 좋겠습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-01T10:23:45.540Z"
+      "generatedAt": "2026-11-01T10:29:26.808Z"
     },
     "history": [
       {
@@ -19842,7 +20034,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-01T10:21:35.201Z",
+    "fetchedAt": "2026-11-01T10:26:39.324Z",
     "today": "2026-11-01",
     "items": [
       {
@@ -19881,13 +20073,6 @@
         "isToday": false
       },
       {
-        "title": "화성특례시, 동탄트램 기술제안서 심의 적격, 계약절차 돌입... 10월 우선시공분 착공 추진",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDWXd0YkpTMEljNjRZMXhURnFob0pTNFEtSURacWdkS1JxZVIzZUhyM181YWktYzhxTkhYM25aaXRIblBPNnhGZGxHb0pXUXBpWHlhbkNNX0o5TTE2eDNFZUg2dU04aDRjd1pJdVZB0gFyQVVfeXFMTktRYld4UHRMMGtiZHN5YV9ZQmpJNkt5MjBBZGFpTGJ0OEJVR2w4clo2eXZSVGN3Mko1R2k1SWduTVNZZmd3SkRaaDBzRlp6amRVazF1Wk5GSU5mZXpNVVhYaXViSi0wWTUySmNfdThwUXhB?oc=5",
-        "source": "뉴스신",
-        "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
         "source": "기호일보",
@@ -19895,32 +20080,74 @@
         "isToday": false
       },
       {
-        "title": "동탄트램, 10월 우선시공분 착공 추진…장기 지연 끝 사업 본궤도 오르나",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fZ1NvTDFZa1hvSzhrcmQ3a2pZLVpnR3FLTVhtRTJTckZ0NXhxYWJSeXRNRGVMWGFKYjMwNnljbkktdDhOaUdaNUw5TnBWanQwNHlodHR5V3lOZ2hyQVFWbUc4ODJ2VVZyXzFXY3pn?oc=5",
-        "source": "아시아투데이",
-        "time": "2026-10-11T07:00:00.000Z",
+        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHONIBU0FVX3lxTE90OVZJNDVKdDRvR2J1d2MwbXVVcl9KWlRlZW00RjF6Q0JVVVZyZW1LT0luVGwyU19Qbm1kbXdWZEhZdmdCSUlGMjVIVkppQ3RiZTJj?oc=5",
+        "source": "KPI뉴스",
+        "time": "2026-10-09T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성특례시, 동탄트램 심의 통과로 우선시공분 공사 계약 절차 추진",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPSm1KQmhRVUxobUFCWmRaSFNRMXF3MGhISFZ2QzJLRHZkVHQ1THVycXd3UVQwS1NSZEpsd3BNOENCUUlqSmFZYk1nbXktWVdFVk1qRzd2SEFIQWZkQnUyYW9aYlM?oc=5",
-        "source": "매일일보",
-        "time": "2026-10-11T07:00:00.000Z",
+        "title": "화성시 “동탄트램(31.55km 실제 공사 단계”…10월 우선시공분 공사 착수",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOSVNfWDliV0FXRGNUak45N1UtZWltd3pmQlhwSzdCQ2hHSVAzcEtpLTVTaXZjY2hVTmdDSXVFdmhrQjV6R1MzRF9fZlJOR3FjQzVtTXcyTWlRVVRhOHJkcG84aC1ZTFE?oc=5",
+        "source": "경인신문",
+        "time": "2026-10-09T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
-        "source": "OBC 뉴스",
-        "time": "2026-10-11T02:59:12.000Z",
+        "title": "31.55㎞ 동탄 트램 첫 삽 가시권…화성시, 10월 우선공사 착수",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tRndhZEU0dlAzTnNUNXptNFhKM0NRVTNNdlJoaWVxcFJIYnhIY1p6dzJ6V1IzS053bWY5SGpWOTd3Umt6QVdWVGJQaFA3YVNqWWRWVk9oRFBXX28?oc=5",
+        "source": "에너지경제신문",
+        "time": "2026-10-09T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄트램. 연내 우선시공분 착공 본격화",
+        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE02eEU3ZDVjZmJlODNZa1dKLTVSMTB5Znl2RTJqMkprcldhc2VzakVWNk0zSXp3eUt4RUlrN1AtbzNvUQ?oc=5",
+        "source": "화성신문",
+        "time": "2026-09-11T07:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-01T10:21:35.635Z",
+    "fetchedAt": "2026-11-01T10:26:39.858Z",
     "today": "2026-11-01",
     "items": [
+      {
+        "title": "문봉균 화성동탄경찰서장, 일상을 지키는 사람이 도시를 지킨다",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUbE12S1dfZXBrWVdBSzhqQ2YweHJhcTI3UGRqWnhEamxuOXowbGNtWVBtU0tCRmViTEFQTDFScnJJQXBJaHpYQg?oc=5",
+        "source": "얼리어답터뉴스",
+        "time": "2026-10-30T13:57:47.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성동탄중앙도서관, 배움과 창작의 즐거움 더하는 하반기 문화교실 운영",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vZUZCaWgtS29BdDRXQ3VyZ255dF9LQkljbmFTa0otbk01MTFDQkZocnZ1TDB5ckxpY3VfOWNXY1pCekVQS09iUmtqdFdvZHFoWWs1NzJOTzRFLWhNeDFtdlFkd3M3ZFBw?oc=5",
+        "source": "광교신문",
+        "time": "2026-10-29T12:20:49.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성동탄경찰서, 북한이탈주민 100명 독감 예방접종 무료 지원",
+        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
+        "source": "화성신문",
+        "time": "2026-10-29T08:31:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄 아파트 1채 팔면 김포 6채 산다?…성과급 효과에 몸값 급등",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5LSU9QX1VHOWFMRDJkQjlZUjJxbjRJTnNHSWx2STNRTTRQa0VqNl9xMzVoX01jNUppVTQ1VmVJVGNlcG52VWc?oc=5",
+        "source": "매일경제",
+        "time": "2026-10-28T06:29:04.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성동탄중앙도서관, 하반기 문화교실로 독서·창작 경험 확대",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5N0Vsa1BNWHhOLTE3NWFDb2hqdi1ZTkFtTzZZaFNodndTcEtSZDBVbkFqcE5hYi1jN2dPeVRKN05WOHpqMVRBczVySXljd2VadDQ3bjFBTVN1UmhoX01yaGphS01DSzJDMnlxMEQtZ3l0UQ?oc=5",
+        "source": "웹이코노미",
+        "time": "2026-10-28T00:20:50.000Z",
+        "isToday": false
+      },
       {
         "title": "서울 상승폭 둔화, 화성 동탄/병점 집값이 이끌었다!",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
@@ -19936,59 +20163,24 @@
         "isToday": false
       },
       {
+        "title": "[2026 국정감사] 동탄역 이용수요 '2만 8,000명' 해명 오류…철도공단 국감서 인정",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd0lyeGNkY0JFWHk3SUp1MkhaSktqWHEtVEd6LXROSVJWdFNEbVpvYzlER0p4cHFNcEMyVTZTRlR0TUhHcElNZXV1UkwzcnAtTlJnWE5uYmI4TjZNWU9sVmhRRU44akJaalJrajlrbEI?oc=5",
+        "source": "한국철도일보",
+        "time": "2026-10-26T07:38:59.000Z",
+        "isToday": false
+      },
+      {
+        "title": "6월 GTX-A 전 구간 개통 위한 사전점검 착수‘",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZMjBiUE45ZFI4Z3RGS2V5bTZ1dWJISkhhTnpWUDJ5ZmE1UzZ2VXBwODBpVF9SSjVSbXBxbi1ubTRWQjVoZ3V6TDJIeXdsdjRlRnVNQVdYTnJKX193cE4tYU1CeGREMW9McXBfV0gtbkc?oc=5",
+        "source": "데일리경기신문",
+        "time": "2026-10-26T07:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성 동탄호수공원서 오는 31일 루나빛축제",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyeGV5Zkd3bURaNm13ZTExV2QxcmlNWmRNTWQwV0lIVzNLYV9LQjVySVRfS1VFVGRGYXg4QzFUaGpIOXRuRDdKSndmT2lJby1rQUdobmJsdTRtb3c?oc=5",
         "source": "KBS 뉴스",
         "time": "2026-10-26T06:12:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄경찰서, 북한이탈주민 무료 독감 예방접종 지원",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqVURRYnpCVkdSUzJscHE0cWVxOURnYzl2Z0lwSHlpQlBLTnpOZnFrZS1yRERXeXktT3YyMmNFTWVJTVlPYUxLaUlWTHN2QTJuejduMTRTa1lJbEQ2Q0QzRXQxaGRDbU04clM4bW9mbw?oc=5",
-        "source": "기호일보",
-        "time": "2026-10-26T04:49:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "[화성소식]화성동탄중앙도서관, 개관 1주년 맞아 다채로운 프로그램 운영",
-        "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOUTZKa2dxWDlpOFI1c3Vueno1SXBNR245MnRqZGdHdGROODFRaVo0N2Q5cjlCYmpDdEhZM0NrMUkzTmtvOUpSdXV4OEdvRmVqQ1RFWDRjVkNkVWZBQzJhUDA3Qno2RXFtR3ZwaGVOYk45ZXNWU3R1ZXdQcExRTlRLTXlQMTIyenJRSlduTTA3MlF1alJTdFk0UVA4NXdNdnB0ejdxYl9QbzNDVnFDRnZmYVFzTWMxNTBja2Y3dnpjcDltUzlsNWpSUzREOHI0b0VjS2ZiUEI3NFlpUURNc2UxalZleHBJZ0dqdUd5YTUxMUl5T0xnUFNNOFBSUE1ySFFoaGRkQTBLbHktbDFtYWJ5V1hxTWc4SjZ5SVJ5VGNkOExrRHJMWHV1VC0zaUZwUQ?oc=5",
-        "source": "데일리안",
-        "time": "2026-10-26T02:50:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄중앙도서관 개관 1주년…독서·공연 행사 마련",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TZ1lFd0MwSjlpTzZoYnpqX0Yyb3JndWxkTTVXdnlFcGJhdUNrbWp1RU14Qmk0YXVzeDBRbl9NQnNLbzFwd0t3aFlYNUtnSlgyS0xmMUF3OW9oWlZGcXNDVXBMZzlfcTU0TDNzcg?oc=5",
-        "source": "한국사회복지저널",
-        "time": "2026-10-26T01:28:53.000Z",
-        "isToday": false
-      },
-      {
-        "title": "전용기 의원 “동탄역 수요 오류 인정, 출입구 규모 재산정해야”",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE12dFROMHdXUXh6azFSNjRqR2c1Q3F0UlV0TExYV3FyZnRpUU1GQ21pZ3duUWphZlQ0dmdZeWNNZEhVSnJ3cnBwcmo1eGM4cjk4dnF5QzZtLXNJU09EamtUMWFlSURrckpWQ0pVOHhvS1otZw?oc=5",
-        "source": "스포츠동아",
-        "time": "2026-10-26T00:48:19.000Z",
-        "isToday": false
-      },
-      {
-        "title": "'사라진 달빛을 찾아서'…화성 동탄호수공원서 31일 루나빛축제",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XYnp3eXR2MHVsY0wyb2xPcW53QUVEb3RLNkpWT2tSdktXTkFPS2lqS19VVHBGZlN6YmRoX3V2OW1nZUdzcWk3eE1NTlA1cGhhMkE?oc=5",
-        "source": "매일경제 마켓",
-        "time": "2026-10-26T00:33:22.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄호수공원에 드론 500대 뜬다…31일 ‘루나빛축제’",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDakY2UVh6QXRJRzR4QklYSlYzVHNJeEV5VVdNT0M1b0N3QVdsTWN1aUM0Qm90RUVCWUJOSGxJV2Y2YUVOTmxDTDViRXpWYVBmX1dWakhQMHhHdw?oc=5",
-        "source": "데일리엔뉴스",
-        "time": "2026-10-25T23:12:14.000Z",
-        "isToday": false
-      },
-      {
-        "title": "\"동탄인덕원선 동탄역 이용수요 해명에 오류 있었다\"",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9LY2F4cDY2aS1OdnZVOXdjY2JZNE5QMVV0MlJkQ2NrSmo0cXNHYTVhalczU1lYUDFHbG5RZ2diai1uNkMwSXVOa3M1Q29jY09yQi1mUExLRTlvSThMdHItetIBeEFVX3lxTE5LdnY5N1ZDNzFidVZVc3lack9yQzF2dFR4UEdYUkRSYng2Y0llWkFXQV9aLU1xczgydC1tOHNmS1VEU3BORVpweWU4Ujd1RmR5MWRtTEhlZ1ZJYlJvbGpaOEhhVGZ2Ullzam50c2JrZnE2WnY4UmVBMQ?oc=5",
-        "source": "뉴시스",
-        "time": "2026-10-25T06:27:36.000Z",
         "isToday": false
       }
     ]

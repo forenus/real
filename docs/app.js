@@ -635,19 +635,19 @@ function renderDongs(dongs) {
   lastDongs = dongs;
   renderDongCharts(list);
   $("dongs-date").textContent = dongs && dongs.date ? `매물 ${dongs.date} 기준` : "";
-  const noReal = `<span class="dong-na" title="최근 3개월 거래 중 이 동으로 공개된 거래가 없습니다">공개된 거래 없음</span>`;
+  const noReal = `<span class="dong-na" title="최근 1년 거래 중 이 동으로 공개된 거래가 없습니다">공개된 거래 없음</span>`;
   const realPrice = (x) => x
     ? `<span class="dong-avg" title="${esc(x.date)} · ${esc(x.floor)}층"><small>${esc(x.pyeong)}평</small> <b>${esc(x.priceText)}</b></span>`
     : noReal;
   const real = dongs && dongs.real;
   $("dongs-real-note").innerHTML = real
-    ? `실거래는 국토교통부 실거래가 공개시스템 자료입니다. 어느 동의 거래인지는 <b>등기를 마친 거래</b>에만 공개되어, 최근 3개월(${esc(real.from)}부터) 거래 <b>${real.total}건 중 ${real.known}건</b>만 동별로 집계됩니다. 등기가 끝나면 나머지도 차례로 반영됩니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
+    ? `실거래는 국토교통부 실거래가 공개시스템 자료입니다. 어느 동의 거래인지는 <b>등기를 마친 거래</b>에만 공개되어, 최근 1년(${esc(real.from)}부터) 거래 <b>${real.total}건 중 ${real.known}건</b>만 동별로 집계됩니다. 등기가 끝나면 나머지도 차례로 반영됩니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
     : "실거래 자료를 아직 받지 못했습니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준입니다.";
   const row = (k, v) => `<div class="dong-row"><dt>${k}</dt><dd>${v}</dd></div>`;
   $("dongs-grid").innerHTML = list.length ? list.map((d) => `<article class="dong-card">` +
     `<header><h3>${esc(d.name)}</h3><span class="dong-count${d.count ? "" : " zero"}"><b>${d.count}</b>건</span></header><dl>` +
-    row("최근 3개월 최고가", realPrice(d.real && d.real.max)) + row("최근 3개월 최저가", realPrice(d.real && d.real.min)) +
-    row("최근 3개월 실거래", `<b>${(d.real && d.real.count) || 0}건</b>`) +
+    row("최근 1년 최고가", realPrice(d.real && d.real.max)) + row("최근 1년 최저가", realPrice(d.real && d.real.min)) +
+    row("최근 1년 실거래", `<b>${(d.real && d.real.count) || 0}건</b>`) +
     row("등록 매물", `<b>${d.count}건</b>`) +
     row("매물 평균가", d.avg.length
       ? d.avg.map((a) => `<span class="dong-avg"><small>${esc(a.pyeong)}평</small> <b>${esc(a.priceText)}</b></span>`).join("")
