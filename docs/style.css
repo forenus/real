@@ -698,3 +698,18 @@ body.notice-open { overflow: hidden; }
 .dong-chart .seg { margin: 10px 0 0; }
 .dong-chart .hint { margin-top: 10px; }
 .dong-unknown { background: var(--surface-2); border-style: dashed; }
+#dong-count-bars .dbar { cursor: pointer; }
+#dong-count-bars .dbar:focus-visible, .dong-count:focus-visible, .dong-link:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+button.dong-count { border: none; font: inherit; font-size: 12px; cursor: pointer; transition: background .15s var(--ease); }
+button.dong-count:hover { background: var(--primary); color: #fff; }
+.dong-link { padding: 0; border: none; background: none; font: inherit; font-weight: 700; color: var(--primary-700); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.notice-new {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 18px; padding: 13px 14px; border-radius: 14px; text-decoration: none; color: var(--text);
+  background: linear-gradient(120deg, #fff4df, #ffe9e2); transition: transform .15s var(--ease);
+}
+.notice-new:hover { transform: translateY(-1px); }
+.notice-new-tag { flex: none; padding: 3px 8px; border-radius: 999px; background: #d9480f; color: #fff; font-size: 10.5px; font-weight: 800; letter-spacing: .06em; }
+.notice-new-text { flex: 1; min-width: 0; font-size: 14px; }
+.notice-new-text b { font-weight: 800; }
+.notice-new-text small { display: block; margin-top: 3px; font-size: 12px; line-height: 1.5; color: var(--text-2); }
+.notice-new-go { flex: none; font-size: 22px; line-height: 1; color: #d9480f; }

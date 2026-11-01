@@ -576,15 +576,15 @@ function updateHogangnonoTile(h) {
 let lastDongs = null;
 let dongPy = null; // 평균가 그래프에서 고른 평형
 function dongBars(rows, max) {
-  return rows.map((r) => `<div class="dbar" data-tip="${esc(r.tip)}"><span class="dbar-name">${esc(r.name)}</span>` +
+  return rows.map((r) => `<div class="dbar" data-tip="${esc(r.tip)}"${r.dong ? ` data-dong="${esc(r.dong)}" role="button" tabindex="0" aria-label="${esc(r.tip)}"` : ""}><span class="dbar-name">${esc(r.name)}</span>` +
     `<span class="dbar-track"><i style="width:${(100 * r.value / max).toFixed(1)}%"></i></span>` +
     `<span class="dbar-val">${r.label}</span></div>`).join("");
 }
 function renderDongCharts(list) {
   const byCount = [...list].sort((a, b) => b.count - a.count);
   $("dong-count-bars").innerHTML = dongBars(byCount.map((d) => ({
-    name: d.name, value: d.count, label: `<b>${d.count}</b>건`,
-    tip: `${d.name} · 등록 매물 ${d.count}건`,
+    name: d.name, dong: d.name, value: d.count, label: `<b>${d.count}</b>건`,
+    tip: `${d.name} · 등록 매물 ${d.count}건 (눌러서 목록 보기)`,
   })), Math.max(1, ...list.map((d) => d.count)));
 
   // 평형이 다르면 가격을 비교할 수 없으므로 평형별로 나눠 그린다(기본은 매물이 가장 많은 평형)
@@ -629,6 +629,30 @@ document.querySelectorAll(".dong-chart").forEach((box) => {
   box.addEventListener("mouseleave", () => { tip.hidden = true; });
 });
 
+// 동을 누르면 그 동의 현재 매물 목록을 팝업으로 — 평형별 매물 목록에서 동으로 추린다
+async function openDongList(name) {
+  const box = $("modal-content");
+  const dong = ((lastDongs && lastDongs.list) || []).find((d) => d.name === name);
+  const head = `<h3>${esc(name)} <span class="sub-label">등록 매물 ${dong ? dong.count : 0}건</span></h3>`;
+  const pys = dong ? dong.avg.map((a) => a.pyeong) : [];
+  $("modal").hidden = false;
+  if (!pys.length) { box.innerHTML = head + `<p class="empty-sm">지금 등록된 매물이 없습니다.</p>`; return; }
+  box.innerHTML = `<p class="empty-sm">불러오는 중…</p>`;
+  let parts;
+  try { parts = await Promise.all(pys.map((p) => api(`/api/changes?pyeong=${encodeURIComponent(p)}`))); }
+  catch (e) { box.innerHTML = `<p class="empty-sm">불러오기 실패: ${esc(e.message)}</p>`; return; }
+  box.innerHTML = head + `<p class="chg-dates">${esc(parts[0].todayDate)} 기준 · 최근 등록순</p>` +
+    parts.map((c, i) => listBlock(`${esc(pys[i])}평 매물`, "neutral", (c.current || []).filter((r) => r.bldg === name), c.complexNo, "매물이 없습니다.")).join("");
+}
+document.querySelector('[data-view="dongs"].view').addEventListener("click", (e) => {
+  const el = e.target.closest("[data-dong]");
+  if (el) openDongList(el.dataset.dong);
+});
+$("dong-count-bars").addEventListener("keydown", (e) => {
+  const el = e.target.closest("[data-dong]");
+  if (el && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openDongList(el.dataset.dong); }
+});
+
 // 동별 분석 카드 — 실거래는 국토부 자료에서 동이 공개된 거래만 집계한다(다른 값으로 추정하지 않는다)
 function renderDongs(dongs) {
   const list = (dongs && dongs.list) || [];
@@ -650,10 +674,10 @@ function renderDongs(dongs) {
       row("최근 1년 실거래", `<b>${real.unknown.count}건</b>`) + `</dl></article>`
     : "";
   $("dongs-grid").innerHTML = list.length ? unknownCard + list.map((d) => `<article class="dong-card">` +
-    `<header><h3>${esc(d.name)}</h3><span class="dong-count${d.count ? "" : " zero"}"><b>${d.count}</b>건</span></header><dl>` +
+    `<header><h3>${esc(d.name)}</h3><button type="button" class="dong-count${d.count ? "" : " zero"}" data-dong="${esc(d.name)}" aria-label="${esc(d.name)} 매물 목록 보기"><b>${d.count}</b>건</button></header><dl>` +
     row("최근 1년 최고가", realPrice(d.real && d.real.max)) + row("최근 1년 최저가", realPrice(d.real && d.real.min)) +
     row("최근 1년 실거래", `<b>${(d.real && d.real.count) || 0}건</b>`) +
-    row("등록 매물", `<b>${d.count}건</b>`) +
+    row("등록 매물", `<button type="button" class="dong-link" data-dong="${esc(d.name)}" aria-label="${esc(d.name)} 매물 목록 보기">${d.count}건</button>`) +
     row("매물 평균가", d.avg.length
       ? d.avg.map((a) => `<span class="dong-avg"><small>${esc(a.pyeong)}평</small> <b>${esc(a.priceText)}</b></span>`).join("")
       : `<span class="dong-na">매물 없음</span>`) +
