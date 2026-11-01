@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T23:01:46.813Z",
+  "generatedAt": "2026-11-01T23:31:25.678Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15701,15 +15701,15 @@
       ]
     },
     "todayDate": "2026-11-02",
-    "lastFetchedAt": "2026-11-01T23:01:31.627Z",
+    "lastFetchedAt": "2026-11-01T23:31:12.484Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 72,
-      "recent24h": 1099,
-      "frequent": 48,
-      "new": 15,
-      "fetchedAt": "2026-11-01T23:01:40.402Z"
+      "realtime": 99,
+      "recent24h": 1101,
+      "frequent": 66,
+      "new": 20,
+      "fetchedAt": "2026-11-01T23:31:18.458Z"
     },
     "prevDate": "2026-11-01",
     "rows": [
@@ -17466,10 +17466,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 77건으로 30일 전보다 7건 늘었으며, 최근 12주 동안 64~70건대에서 79건까지 올라 매도 물량이 점차 쌓이는 흐름으로 보입니다. 다만 10월 28일 81건으로 정점을 찍은 뒤 최근 며칠은 소폭 줄었습니다. 25평은 10월 19일 8건까지 늘었다가 오늘 4건으로 30일 최저 수준까지 내려와, 물량이 일부 소진된 것으로 보입니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 1,100만 원에 거래되어 그전 30일 평균 8억 6,800만 원보다 약 4,300만 원 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 크게 상승했습니다. 10월 28일 15층이 10억 원으로 역대 최고가를 기록했으나, 같은 달 2층 거래는 8억 2,000만 원으로 층에 따라 편차가 큽니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원 1건이 마지막 거래여서, 평균 흐름을 판단하기에는 표본이 부족합니다.",
+      "listing": "25평 매물은 오늘 4건으로 30일 최고치였던 10월 19일 8건에서 절반으로 줄었고, 30일 최저 수준에 머물러 있어 물량이 소진되는 흐름으로 보입니다. 반면 33평은 77건으로 전일·7일 전보다 2건 줄었지만 30일 전보다는 7건 많고, 최근 12주 동안 64~70건대에서 70건대 후반까지 늘어 매도 물량이 쌓인 모습입니다. 10월 28일 81건으로 정점을 찍은 뒤 소폭 줄어드는 중입니다.",
+      "real": "33평은 최근 30일 5건의 평균이 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 높아졌고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 다만 같은 달 2층이 8억 2,000만 원에 거래되는 등 층별 차이가 크고, 평균호가 9억 9,700만 원은 최근 실거래 평균보다 7천만 원가량 높습니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원 1건이 마지막이라, 이 가격만으로 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-01T23:01:46.656Z"
+      "generatedAt": "2026-11-01T23:31:24.546Z"
     },
     "history": [
       {
@@ -20524,9 +20524,16 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-01T23:00:53.898Z",
+    "fetchedAt": "2026-11-01T23:31:25.438Z",
     "today": "2026-11-02",
     "items": [
+      {
+        "title": "17년 만에 삽 뜬다, 동탄 트램 착공…서·남동탄 단지도 집값 들썩",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mc054TEtsT0VGZEdjZTZadUR2UU1rVXA5NldNaEphcU9VWEpuemVNTGM1R1EtM1lQaVlaQjd1blpzRnFSMTdDalgxZHVvVFVWOExNWFZaSFNKQ3d0d1o4WXJON3dIdHpRbzgzSVQ5T3gzUzl4U1MwcjZld19ISG_SAXNBVV95cUxQYTZBb1h6bE9qZ0E1TkRfQUUxQWlnTG5rcXVXNFRvNzM1Q1Z2cTRiWldQc3lYbTRjd0h3LWRMcnNpUVhlZDdyNGZERUUyanByZHVZUEoteVcwYzU2bno0OXZRMW5Xd3Y2dHhCUWxTMjFjSzZB?oc=5",
+        "source": "땅집고",
+        "time": "2026-11-01T21:00:00.000Z",
+        "isToday": true
+      },
       {
         "title": "동탄트램 2031년 개통 목표…차량계약 관건",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYkJoQml5X2RtQlNyRHNSZ2xRNWhLZ2JMcTRucXV0VU81eFo3TEJkUFdNTm82dW91MGk0em5NYnlYSzNGSzRDVzN3N25OZFlOSDlFemdXVV9YSGxIQzBDMkZrcmJqU01XWVE?oc=5",
@@ -20589,18 +20596,11 @@
         "source": "매일일보",
         "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
-        "source": "OBC 뉴스",
-        "time": "2026-10-11T02:59:12.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-01T23:00:54.000Z",
+    "fetchedAt": "2026-11-01T23:31:25.677Z",
     "today": "2026-11-02",
     "items": [
       {
@@ -20632,6 +20632,13 @@
         "isToday": false
       },
       {
+        "title": "[화성소식]화성동탄중앙도서관, 개관 1주년 맞아 다채로운 프로그램 운영",
+        "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOUTZKa2dxWDlpOFI1c3Vueno1SXBNR245MnRqZGdHdGROODFRaVo0N2Q5cjlCYmpDdEhZM0NrMUkzTmtvOUpSdXV4OEdvRmVqQ1RFWDRjVkNkVWZBQzJhUDA3Qno2RXFtR3ZwaGVOYk45ZXNWU3R1ZXdQcExRTlRLTXlQMTIyenJRSlduTTA3MlF1alJTdFk0UVA4NXdNdnB0ejdxYl9QbzNDVnFDRnZmYVFzTWMxNTBja2Y3dnpjcDltUzlsNWpSUzREOHI0b0VjS2ZiUEI3NFlpUURNc2UxalZleHBJZ0dqdUd5YTUxMUl5T0xnUFNNOFBSUE1ySFFoaGRkQTBLbHktbDFtYWJ5V1hxTWc4SjZ5SVJ5VGNkOExrRHJMWHV1VC0zaUZwUQ?oc=5",
+        "source": "데일리안",
+        "time": "2026-10-26T02:50:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성동탄중앙도서관 개관 1주년…독서·공연 행사 마련",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TZ1lFd0MwSjlpTzZoYnpqX0Yyb3JndWxkTTVXdnlFcGJhdUNrbWp1RU14Qmk0YXVzeDBRbl9NQnNLbzFwd0t3aFlYNUtnSlgyS0xmMUF3OW9oWlZGcXNDVXBMZzlfcTU0TDNzcg?oc=5",
         "source": "한국사회복지저널",
@@ -20650,13 +20657,6 @@
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XYnp3eXR2MHVsY0wyb2xPcW53QUVEb3RLNkpWT2tSdktXTkFPS2lqS19VVHBGZlN6YmRoX3V2OW1nZUdzcWk3eE1NTlA1cGhhMkE?oc=5",
         "source": "매일경제 마켓",
         "time": "2026-10-26T00:33:22.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성특례시, 화성동탄중앙도서관 개관 1주년 축제 즐겨보세요",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9meVFtelN3Um9neGdkOEpjdTBVZ2EwS29SVDdGSkdFaW1XbmVxRlVtV3JMZTZvWDliQzZYd2xUai1kbGRxMGdUVlROUHpvOFBqNHRXWW9OSnVSeHR1T1RkdTUySjdqcm5y?oc=5",
-        "source": "뉴스피크",
-        "time": "2026-10-25T23:35:12.000Z",
         "isToday": false
       },
       {
