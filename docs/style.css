@@ -665,3 +665,21 @@ body.notice-open { overflow: hidden; }
   .notice-trend { animation: none; stroke-dashoffset: 0; }
   .notice-dot { animation: none; opacity: 1; }
 }
+
+/* ---------- 동별 분석 ---------- */
+.dongs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(236px, 1fr)); gap: 12px; margin-top: 14px; }
+.dong-card { padding: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; }
+.dong-card header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+.dong-card h3 { margin: 0; font-size: 17px; font-weight: 800; letter-spacing: -.02em; }
+.dong-count { padding: 3px 10px; border-radius: 999px; font-size: 12px; background: var(--primary-soft); color: var(--primary-700); }
+.dong-count b { font-weight: 800; }
+.dong-count.zero { background: var(--surface-2); color: var(--muted); }
+.dong-card dl { margin: 0; }
+.dong-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 7px 0; border-top: 1px solid var(--border); font-size: 13px; }
+.dong-row dt { flex: none; color: var(--muted); }
+.dong-row dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.dong-avg { display: block; }
+.dong-avg + .dong-avg { margin-top: 2px; }
+.dong-avg small { color: var(--muted); font-size: 11.5px; }
+.dong-na { color: #a3a9b6; font-size: 12px; }
+@media (max-width: 480px) { .dongs-grid { grid-template-columns: minmax(0, 1fr); } }

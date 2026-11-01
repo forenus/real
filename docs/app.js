@@ -519,6 +519,7 @@ function render(state) {
   renderRealChart(state.realChart);
   renderAnalysis(state.analysis);
   renderKpis(state);
+  renderDongs(state.dongs);
   // 호갱노노 바로가기(config.json 의 hogangnonoUrl)
   const hg = $("hgnn-link");
   hg.hidden = !state.hogangnonoUrl;
@@ -571,6 +572,22 @@ function updateHogangnonoTile(h) {
 }
 
 // ---------- 대시보드 요약 지표 ----------
+// 동별 분석 카드 — 실거래 칸은 자료에 동 정보가 없어 비워 둔다(다른 값으로 추정하지 않는다)
+function renderDongs(dongs) {
+  const list = (dongs && dongs.list) || [];
+  $("dongs-date").textContent = dongs && dongs.date ? `매물 ${dongs.date} 기준` : "";
+  const noReal = `<span class="dong-na" title="실거래 자료에 동 정보가 없습니다">동 정보 없음</span>`;
+  const row = (k, v) => `<div class="dong-row"><dt>${k}</dt><dd>${v}</dd></div>`;
+  $("dongs-grid").innerHTML = list.length ? list.map((d) => `<article class="dong-card">` +
+    `<header><h3>${esc(d.name)}</h3><span class="dong-count${d.count ? "" : " zero"}"><b>${d.count}</b>건</span></header><dl>` +
+    row("실거래 최고가", noReal) + row("실거래 최저가", noReal) + row("최근 3개월 실거래", noReal) +
+    row("등록 매물", `<b>${d.count}건</b>`) +
+    row("매물 평균가", d.avg.length
+      ? d.avg.map((a) => `<span class="dong-avg"><small>${esc(a.pyeong)}평</small> <b>${esc(a.priceText)}</b></span>`).join("")
+      : `<span class="dong-na">매물 없음</span>`) +
+    `</dl></article>`).join("") : `<p class="empty">아직 동별 자료가 없습니다.</p>`;
+}
+
 function renderKpis(state) {
   const rows = state.rows || [];
   const today = rows.reduce((a, r) => a + r.today, 0);
@@ -609,7 +626,7 @@ function renderKpis(state) {
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
-const VIEWS = ["dashboard", "news", "board", "guide", "stats", "settings"];
+const VIEWS = ["dashboard", "dongs", "news", "board", "guide", "stats", "settings"];
 // 화면 대신 대시보드 안의 카드로 가는 주소(#deals → 대시보드의 실거래 목록)
 const SECTIONS = { deals: "dashboard" };
 let curView = "dashboard";
@@ -1000,7 +1017,7 @@ $("save-config").addEventListener("click", async () => {
 
 // ---------- 접속 기록 · 접속 통계 (관리자) ----------
 // 공개 페이지에서만 기록한다(PC에서 연 화면 제외). 방문자 번호는 이 브라우저에 한 번 만들어 둔 무작위 값.
-const VIEW_LABELS = { dashboard: "대시보드", news: "지역 소식", board: "개선·문의", guide: "사용법" };
+const VIEW_LABELS = { dashboard: "대시보드", dongs: "동별 분석", news: "지역 소식", board: "개선·문의", guide: "사용법" };
 function visitorId() {
   try {
     let v = localStorage.getItem("vid");
