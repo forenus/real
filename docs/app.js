@@ -572,9 +572,68 @@ function updateHogangnonoTile(h) {
 }
 
 // ---------- 대시보드 요약 지표 ----------
+// 동별 분석 그래프 — 순위를 비교하는 막대(한 색, 0 기준, 많은·높은 순). 표시 값은 아래 카드와 같다.
+let lastDongs = null;
+let dongPy = null; // 평균가 그래프에서 고른 평형
+function dongBars(rows, max) {
+  return rows.map((r) => `<div class="dbar" data-tip="${esc(r.tip)}"><span class="dbar-name">${esc(r.name)}</span>` +
+    `<span class="dbar-track"><i style="width:${(100 * r.value / max).toFixed(1)}%"></i></span>` +
+    `<span class="dbar-val">${r.label}</span></div>`).join("");
+}
+function renderDongCharts(list) {
+  const byCount = [...list].sort((a, b) => b.count - a.count);
+  $("dong-count-bars").innerHTML = dongBars(byCount.map((d) => ({
+    name: d.name, value: d.count, label: `<b>${d.count}</b>건`,
+    tip: `${d.name} · 등록 매물 ${d.count}건`,
+  })), Math.max(1, ...list.map((d) => d.count)));
+
+  // 평형이 다르면 가격을 비교할 수 없으므로 평형별로 나눠 그린다(기본은 매물이 가장 많은 평형)
+  const nByPy = {};
+  for (const d of list) for (const a of d.avg) nByPy[a.pyeong] = (nByPy[a.pyeong] || 0) + a.count;
+  const pys = Object.keys(nByPy).sort((a, b) => a - b);
+  if (!pys.includes(String(dongPy))) dongPy = pys.slice().sort((a, b) => nByPy[b] - nByPy[a])[0];
+  $("dong-py").hidden = pys.length < 2;
+  $("dong-py").innerHTML = pys.map((p) => `<button type="button" data-py="${esc(p)}" aria-pressed="${p === String(dongPy)}">${esc(p)}평 <span class="seg-n">${nByPy[p]}</span></button>`).join("");
+  const rows = list
+    .map((d) => ({ d, a: d.avg.find((x) => String(x.pyeong) === String(dongPy)) }))
+    .filter((x) => x.a)
+    .sort((x, y) => y.a.price - x.a.price);
+  $("dong-price-bars").innerHTML = dongBars(rows.map(({ d, a }) => ({
+    name: d.name, value: a.price, label: `<b>${esc(a.priceText)}</b><small>${a.count}건</small>`,
+    tip: `${d.name} · ${dongPy}평 평균 ${a.priceText} (매물 ${a.count}건 기준)`,
+  })), Math.max(1, ...rows.map((x) => x.a.price)));
+  const missing = list.length - rows.length;
+  $("dong-price-note").textContent = `호가 평균이며 실거래가가 아닙니다. 매물이 적은 동은 한두 건의 호가에 크게 좌우됩니다.${missing ? ` ${dongPy}평 매물이 없는 ${missing}개 동은 뺐습니다.` : ""}`;
+}
+$("dong-py").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-py]");
+  if (!b) return;
+  dongPy = b.dataset.py;
+  renderDongCharts((lastDongs && lastDongs.list) || []);
+});
+// 막대 위 말풍선 — 행 전체가 마우스 영역이다
+document.querySelectorAll(".dong-chart").forEach((box) => {
+  const tip = document.createElement("div");
+  tip.className = "viz-tip dbar-tip";
+  tip.hidden = true;
+  box.appendChild(tip);
+  box.addEventListener("mousemove", (e) => {
+    const row = e.target.closest(".dbar");
+    if (!row) { tip.hidden = true; return; }
+    tip.textContent = row.dataset.tip;
+    tip.hidden = false;
+    const r = box.getBoundingClientRect();
+    tip.style.left = `${Math.min(e.clientX - r.left + 12, r.width - tip.offsetWidth - 8)}px`;
+    tip.style.top = `${e.clientY - r.top - tip.offsetHeight - 10}px`;
+  });
+  box.addEventListener("mouseleave", () => { tip.hidden = true; });
+});
+
 // 동별 분석 카드 — 실거래 칸은 자료에 동 정보가 없어 비워 둔다(다른 값으로 추정하지 않는다)
 function renderDongs(dongs) {
   const list = (dongs && dongs.list) || [];
+  lastDongs = dongs;
+  renderDongCharts(list);
   $("dongs-date").textContent = dongs && dongs.date ? `매물 ${dongs.date} 기준` : "";
   const noReal = `<span class="dong-na" title="실거래 자료에 동 정보가 없습니다">동 정보 없음</span>`;
   const row = (k, v) => `<div class="dong-row"><dt>${k}</dt><dd>${v}</dd></div>`;

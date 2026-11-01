@@ -683,3 +683,17 @@ body.notice-open { overflow: hidden; }
 .dong-avg small { color: var(--muted); font-size: 11.5px; }
 .dong-na { color: #a3a9b6; font-size: 12px; }
 @media (max-width: 480px) { .dongs-grid { grid-template-columns: minmax(0, 1fr); } }
+.dong-charts { margin-bottom: 16px; align-items: start; }
+.dong-chart { position: relative; }
+.dbars { display: flex; flex-direction: column; margin-top: 10px; }
+.dbar { display: grid; grid-template-columns: 44px minmax(0, 1fr) 112px; align-items: center; gap: 10px; height: 26px; font-size: 12.5px; border-radius: 6px; }
+.dbar:hover { background: var(--surface-2); }
+.dbar-name { color: var(--text-2); font-weight: 600; font-variant-numeric: tabular-nums; }
+.dbar-track { display: block; height: 10px; }
+.dbar-track i { display: block; height: 100%; min-width: 2px; background: var(--primary); border-radius: 0 4px 4px 0; }
+.dbar-val { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.dbar-val b { color: var(--text); font-weight: 700; }
+.dbar-val small { margin-left: 5px; font-size: 11px; }
+.dbar-tip { position: absolute; z-index: 5; pointer-events: none; white-space: nowrap; font-size: 12px; font-weight: 600; color: var(--text); }
+.dong-chart .seg { margin: 10px 0 0; }
+.dong-chart .hint { margin-top: 10px; }

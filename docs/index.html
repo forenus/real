@@ -170,6 +170,24 @@
 
       <!-- ===== 지역 소식 ===== -->
       <section class="view" data-view="dongs" hidden>
+        <div class="grid-2 dong-charts">
+          <section class="card dong-chart">
+            <div class="table-head">
+              <h2>동별 매물 수</h2>
+              <span class="dates">많은 순</span>
+            </div>
+            <div class="dbars" id="dong-count-bars"></div>
+          </section>
+          <section class="card dong-chart">
+            <div class="table-head">
+              <h2>동별 매물 평균가</h2>
+              <span class="dates">높은 순</span>
+            </div>
+            <div class="seg" id="dong-py" role="group" aria-label="평형 선택"></div>
+            <div class="dbars" id="dong-price-bars"></div>
+            <p class="hint" id="dong-price-note"></p>
+          </section>
+        </div>
         <section class="card">
           <div class="table-head">
             <h2>동별 분석</h2>
