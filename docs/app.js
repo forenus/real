@@ -1275,6 +1275,8 @@ function showNotice() {
   try {
     if (localStorage.getItem(NOTICE_KEY) === today || sessionStorage.getItem(NOTICE_KEY)) return;
   } catch {}
+  // 공지가 뜨는 접속은 대시보드로 시작한다(#stats 로 열면 공지 뒤에 로그인 창이 뜨는 것도 막는다)
+  history.replaceState(null, "", "#dashboard");
   const box = $("notice");
   const close = () => {
     box.hidden = true;
