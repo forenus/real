@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T17:47:56.125Z",
-  "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
+  "generatedAt": "2026-11-01T23:00:54.004Z",
+  "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
     "complexName": "동탄역포레너스",
@@ -15705,11 +15705,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 67,
+      "realtime": 58,
       "recent24h": 1087,
-      "frequent": 36,
-      "new": 15,
-      "fetchedAt": "2026-11-01T17:47:49.205Z"
+      "frequent": 30,
+      "new": 14,
+      "fetchedAt": "2026-11-01T18:00:49.076Z"
     },
     "prevDate": "2026-11-01",
     "rows": [
@@ -20524,7 +20524,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-01T17:47:56.124Z",
+    "fetchedAt": "2026-11-01T23:00:53.898Z",
     "today": "2026-11-02",
     "items": [
       {
@@ -20563,6 +20563,13 @@
         "isToday": false
       },
       {
+        "title": "화성특례시, 동탄트램 기술제안서 심의 적격, 계약절차 돌입... 10월 우선시공분 착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDWXd0YkpTMEljNjRZMXhURnFob0pTNFEtSURacWdkS1JxZVIzZUhyM181YWktYzhxTkhYM25aaXRIblBPNnhGZGxHb0pXUXBpWHlhbkNNX0o5TTE2eDNFZUg2dU04aDRjd1pJdVZB0gFyQVVfeXFMTktRYld4UHRMMGtiZHN5YV9ZQmpJNkt5MjBBZGFpTGJ0OEJVR2w4clo2eXZSVGN3Mko1R2k1SWduTVNZZmd3SkRaaDBzRlp6amRVazF1Wk5GSU5mZXpNVVhYaXViSi0wWTUySmNfdThwUXhB?oc=5",
+        "source": "뉴스신",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
         "source": "기호일보",
@@ -20570,37 +20577,30 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHONIBU0FVX3lxTE90OVZJNDVKdDRvR2J1d2MwbXVVcl9KWlRlZW00RjF6Q0JVVVZyZW1LT0luVGwyU19Qbm1kbXdWZEhZdmdCSUlGMjVIVkppQ3RiZTJj?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "동탄트램, 10월 우선시공분 착공 추진…장기 지연 끝 사업 본궤도 오르나",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fZ1NvTDFZa1hvSzhrcmQ3a2pZLVpnR3FLTVhtRTJTckZ0NXhxYWJSeXRNRGVMWGFKYjMwNnljbkktdDhOaUdaNUw5TnBWanQwNHlodHR5V3lOZ2hyQVFWbUc4ODJ2VVZyXzFXY3pn?oc=5",
+        "source": "아시아투데이",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성시 “동탄트램(31.55km 실제 공사 단계”…10월 우선시공분 공사 착수",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOSVNfWDliV0FXRGNUak45N1UtZWltd3pmQlhwSzdCQ2hHSVAzcEtpLTVTaXZjY2hVTmdDSXVFdmhrQjV6R1MzRF9fZlJOR3FjQzVtTXcyTWlRVVRhOHJkcG84aC1ZTFE?oc=5",
-        "source": "경인신문",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "화성특례시, 동탄트램 심의 통과로 우선시공분 공사 계약 절차 추진",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPSm1KQmhRVUxobUFCWmRaSFNRMXF3MGhISFZ2QzJLRHZkVHQ1THVycXd3UVQwS1NSZEpsd3BNOENCUUlqSmFZYk1nbXktWVdFVk1qRzd2SEFIQWZkQnUyYW9aYlM?oc=5",
+        "source": "매일일보",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "31.55㎞ 동탄 트램 첫 삽 가시권…화성시, 10월 우선공사 착수",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tRndhZEU0dlAzTnNUNXptNFhKM0NRVTNNdlJoaWVxcFJIYnhIY1p6dzJ6V1IzS053bWY5SGpWOTd3Umt6QVdWVGJQaFA3YVNqWWRWVk9oRFBXX28?oc=5",
-        "source": "에너지경제신문",
-        "time": "2026-10-09T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄트램. 연내 우선시공분 착공 본격화",
-        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE02eEU3ZDVjZmJlODNZa1dKLTVSMTB5Znl2RTJqMkprcldhc2VzakVWNk0zSXp3eUt4RUlrN1AtbzNvUQ?oc=5",
-        "source": "화성신문",
-        "time": "2026-09-11T07:00:00.000Z",
+        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
+        "source": "OBC 뉴스",
+        "time": "2026-10-11T02:59:12.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-01T17:47:55.979Z",
+    "fetchedAt": "2026-11-01T23:00:54.000Z",
     "today": "2026-11-02",
     "items": [
       {
@@ -20632,13 +20632,6 @@
         "isToday": false
       },
       {
-        "title": "[화성소식]화성동탄중앙도서관, 개관 1주년 맞아 다채로운 프로그램 운영",
-        "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOUTZKa2dxWDlpOFI1c3Vueno1SXBNR245MnRqZGdHdGROODFRaVo0N2Q5cjlCYmpDdEhZM0NrMUkzTmtvOUpSdXV4OEdvRmVqQ1RFWDRjVkNkVWZBQzJhUDA3Qno2RXFtR3ZwaGVOYk45ZXNWU3R1ZXdQcExRTlRLTXlQMTIyenJRSlduTTA3MlF1alJTdFk0UVA4NXdNdnB0ejdxYl9QbzNDVnFDRnZmYVFzTWMxNTBja2Y3dnpjcDltUzlsNWpSUzREOHI0b0VjS2ZiUEI3NFlpUURNc2UxalZleHBJZ0dqdUd5YTUxMUl5T0xnUFNNOFBSUE1ySFFoaGRkQTBLbHktbDFtYWJ5V1hxTWc4SjZ5SVJ5VGNkOExrRHJMWHV1VC0zaUZwUQ?oc=5",
-        "source": "데일리안",
-        "time": "2026-10-26T02:50:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성동탄중앙도서관 개관 1주년…독서·공연 행사 마련",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TZ1lFd0MwSjlpTzZoYnpqX0Yyb3JndWxkTTVXdnlFcGJhdUNrbWp1RU14Qmk0YXVzeDBRbl9NQnNLbzFwd0t3aFlYNUtnSlgyS0xmMUF3OW9oWlZGcXNDVXBMZzlfcTU0TDNzcg?oc=5",
         "source": "한국사회복지저널",
@@ -20657,6 +20650,13 @@
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XYnp3eXR2MHVsY0wyb2xPcW53QUVEb3RLNkpWT2tSdktXTkFPS2lqS19VVHBGZlN6YmRoX3V2OW1nZUdzcWk3eE1NTlA1cGhhMkE?oc=5",
         "source": "매일경제 마켓",
         "time": "2026-10-26T00:33:22.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성특례시, 화성동탄중앙도서관 개관 1주년 축제 즐겨보세요",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9meVFtelN3Um9neGdkOEpjdTBVZ2EwS29SVDdGSkdFaW1XbmVxRlVtV3JMZTZvWDliQzZYd2xUai1kbGRxMGdUVlROUHpvOFBqNHRXWW9OSnVSeHR1T1RkdTUySjdqcm5y?oc=5",
+        "source": "뉴스피크",
+        "time": "2026-10-25T23:35:12.000Z",
         "isToday": false
       },
       {
