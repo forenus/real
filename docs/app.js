@@ -605,6 +605,47 @@ function renderDongCharts(list) {
   const missing = list.length - rows.length;
   $("dong-price-note").textContent = `호가 평균이며 실거래가가 아닙니다. 매물이 적은 동은 한두 건의 호가에 크게 좌우됩니다.${missing ? ` ${dongPy}평 매물이 없는 ${missing}개 동은 뺐습니다.` : ""}`;
 }
+// 동별 실거래 그래프 — 건수(0 기준 막대), 가격 범위(최저~최고, 평형별)
+let dongRealPy = null;
+function renderDongRealCharts(dongs) {
+  const list = (dongs && dongs.list) || [];
+  const real = dongs && dongs.real;
+  const countOf = (d) => (d.real && d.real.count) || 0;
+  $("dong-real-count-bars").innerHTML = dongBars([...list].sort((a, b) => countOf(b) - countOf(a)).map((d) => ({
+    name: d.name, value: countOf(d), label: `<b>${countOf(d)}</b>건`,
+    tip: `${d.name} · 최근 1년 실거래 ${countOf(d)}건${d.real && d.real.manual ? ` (수동 입력 ${d.real.manual}건 포함)` : ""}`,
+  })), Math.max(1, ...list.map(countOf)));
+  const unknown = real && real.unknown ? real.unknown.count : 0;
+  $("dong-real-count-note").textContent = real ? `전체 ${real.total}건 중 동을 확인한 ${real.known}건입니다. 동 미공개 ${unknown}건은 빠져 있어, 건수가 적은 동이 실제로 거래가 적었다는 뜻은 아닙니다.` : "";
+
+  const nByPy = {};
+  for (const d of list) for (const a of (d.real && d.real.byPyeong) || []) nByPy[a.pyeong] = (nByPy[a.pyeong] || 0) + a.count;
+  const pys = Object.keys(nByPy).sort((a, b) => a - b);
+  if (!pys.includes(String(dongRealPy))) dongRealPy = pys.slice().sort((a, b) => nByPy[b] - nByPy[a])[0];
+  $("dong-real-py").hidden = pys.length < 2;
+  $("dong-real-py").innerHTML = pys.map((p) => `<button type="button" data-py="${esc(p)}" aria-pressed="${p === String(dongRealPy)}">${esc(p)}평 <span class="seg-n">${nByPy[p]}</span></button>`).join("");
+  const rows = list
+    .map((d) => ({ d, a: ((d.real && d.real.byPyeong) || []).find((x) => String(x.pyeong) === String(dongRealPy)) }))
+    .filter((x) => x.a)
+    .sort((x, y) => y.a.max - x.a.max || y.a.min - x.a.min);
+  if (!rows.length) { $("dong-real-range-bars").innerHTML = `<p class="empty-sm">아직 동을 확인한 거래가 없습니다.</p>`; return; }
+  // 가로축은 0.5억 단위로 끊는다
+  const lo = Math.floor(Math.min(...rows.map((x) => x.a.min)) / 5000) * 5000;
+  const hi = Math.max(lo + 5000, Math.ceil(Math.max(...rows.map((x) => x.a.max)) / 5000) * 5000);
+  const pos = (v) => (100 * (v - lo) / (hi - lo)).toFixed(1);
+  $("dong-real-range-bars").innerHTML = rows.map(({ d, a }) =>
+    `<div class="dbar dbar-range" data-tip="${esc(`${d.name} · ${dongRealPy}평 ${a.minText} ~ ${a.maxText} (${a.count}건)`)}"><span class="dbar-name">${esc(d.name)}</span>` +
+    `<span class="drange"><i class="drange-line" style="left:${pos(a.min)}%;width:${(pos(a.max) - pos(a.min)).toFixed(1)}%"></i>` +
+    `<i class="drange-dot" style="left:${pos(a.min)}%"></i><i class="drange-dot" style="left:${pos(a.max)}%"></i></span>` +
+    `<span class="dbar-val">${a.count > 1 && a.max !== a.min ? `${esc(a.minText)} ~ ` : ""}<b>${esc(a.maxText)}</b></span></div>`).join("") +
+    `<div class="dbar dbar-range drange-axis" aria-hidden="true"><span></span><span class="drange-ticks"><small>${(lo / 10000).toFixed(1)}억</small><small>${(hi / 10000).toFixed(1)}억</small></span><span></span></div>`;
+}
+$("dong-real-py").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-py]");
+  if (!b) return;
+  dongRealPy = b.dataset.py;
+  renderDongRealCharts(lastDongs);
+});
 $("dong-py").addEventListener("click", (e) => {
   const b = e.target.closest("button[data-py]");
   if (!b) return;
@@ -719,6 +760,7 @@ function renderDongs(dongs) {
   const list = (dongs && dongs.list) || [];
   lastDongs = dongs;
   renderDongCharts(list);
+  renderDongRealCharts(dongs);
   $("dongs-date").textContent = dongs && dongs.date ? `매물 ${dongs.date} 기준` : "";
   const noReal = `<span class="dong-na" title="최근 1년 거래 중 이 동으로 확인된 거래가 없습니다">공개된 거래 없음</span>`;
   const realPrice = (x) => x

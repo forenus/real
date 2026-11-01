@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T12:11:52.147Z",
+  "generatedAt": "2026-11-01T12:23:26.398Z",
   "collectUrl": "https://villages-wines-levels-infinite.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15021,7 +15021,17 @@
               "date": "2026-01-30",
               "floor": "1",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 11,
+                "max": 70000,
+                "min": 59800,
+                "maxText": "7억",
+                "minText": "5억 9,800"
+              }
+            ]
           },
           "avg": [
             {
@@ -15051,7 +15061,17 @@
               "date": "2026-05-06",
               "floor": "4",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 15,
+                "max": 85000,
+                "min": 59500,
+                "maxText": "8억 5,000",
+                "minText": "5억 9,500"
+              }
+            ]
           },
           "avg": [
             {
@@ -15081,7 +15101,17 @@
               "date": "2026-01-03",
               "floor": "1",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 20,
+                "max": 89000,
+                "min": 58500,
+                "maxText": "8억 9,000",
+                "minText": "5억 8,500"
+              }
+            ]
           },
           "avg": [
             {
@@ -15111,7 +15141,17 @@
               "date": "2026-03-31",
               "floor": "9",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 11,
+                "max": 100000,
+                "min": 49000,
+                "maxText": "10억",
+                "minText": "4억 9,000"
+              }
+            ]
           },
           "avg": [
             {
@@ -15141,7 +15181,17 @@
               "date": "2026-01-29",
               "floor": "3",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 14,
+                "max": 88000,
+                "min": 62500,
+                "maxText": "8억 8,000",
+                "minText": "6억 2,500"
+              }
+            ]
           },
           "avg": [
             {
@@ -15171,7 +15221,17 @@
               "date": "2026-01-07",
               "floor": "1",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 6,
+                "max": 75000,
+                "min": 64000,
+                "maxText": "7억 5,000",
+                "minText": "6억 4,000"
+              }
+            ]
           },
           "avg": [
             {
@@ -15201,7 +15261,17 @@
               "date": "2025-12-20",
               "floor": "5",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 6,
+                "max": 72000,
+                "min": 68000,
+                "maxText": "7억 2,000",
+                "minText": "6억 8,000"
+              }
+            ]
           },
           "avg": [
             {
@@ -15231,7 +15301,17 @@
               "date": "2026-01-10",
               "floor": "10",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 25,
+                "count": 7,
+                "max": 72000,
+                "min": 55800,
+                "maxText": "7억 2,000",
+                "minText": "5억 5,800"
+              }
+            ]
           },
           "avg": [
             {
@@ -15261,7 +15341,17 @@
               "date": "2025-11-15",
               "floor": "9",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 25,
+                "count": 7,
+                "max": 61000,
+                "min": 53700,
+                "maxText": "6억 1,000",
+                "minText": "5억 3,700"
+              }
+            ]
           },
           "avg": [
             {
@@ -15291,7 +15381,17 @@
               "date": "2025-11-07",
               "floor": "9",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 8,
+                "max": 67500,
+                "min": 61000,
+                "maxText": "6억 7,500",
+                "minText": "6억 1,000"
+              }
+            ]
           },
           "avg": [
             {
@@ -15321,7 +15421,17 @@
               "date": "2026-01-10",
               "floor": "2",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 7,
+                "max": 81400,
+                "min": 64500,
+                "maxText": "8억 1,400",
+                "minText": "6억 4,500"
+              }
+            ]
           },
           "avg": [
             {
@@ -15351,7 +15461,17 @@
               "date": "2026-02-10",
               "floor": "1",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 13,
+                "max": 85000,
+                "min": 58400,
+                "maxText": "8억 5,000",
+                "minText": "5억 8,400"
+              }
+            ]
           },
           "avg": [
             {
@@ -15381,7 +15501,17 @@
               "date": "2025-11-16",
               "floor": "13",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 4,
+                "max": 85000,
+                "min": 63900,
+                "maxText": "8억 5,000",
+                "minText": "6억 3,900"
+              }
+            ]
           },
           "avg": [
             {
@@ -15411,7 +15541,17 @@
               "date": "2026-02-01",
               "floor": "2",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 5,
+                "max": 80000,
+                "min": 59300,
+                "maxText": "8억",
+                "minText": "5억 9,300"
+              }
+            ]
           },
           "avg": [
             {
@@ -15441,7 +15581,17 @@
               "date": "2025-11-05",
               "floor": "3",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 9,
+                "max": 75000,
+                "min": 60500,
+                "maxText": "7억 5,000",
+                "minText": "6억 500"
+              }
+            ]
           },
           "avg": [
             {
@@ -15471,7 +15621,17 @@
               "date": "2025-11-14",
               "floor": "4",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 9,
+                "max": 85000,
+                "min": 62700,
+                "maxText": "8억 5,000",
+                "minText": "6억 2,700"
+              }
+            ]
           },
           "avg": [
             {
@@ -15501,7 +15661,17 @@
               "date": "2025-11-11",
               "floor": "3",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 6,
+                "max": 90500,
+                "min": 65000,
+                "maxText": "9억 500",
+                "minText": "6억 5,000"
+              }
+            ]
           },
           "avg": [
             {
@@ -15531,7 +15701,17 @@
               "date": "2026-01-20",
               "floor": "12",
               "manual": false
-            }
+            },
+            "byPyeong": [
+              {
+                "pyeong": 33,
+                "count": 4,
+                "max": 82000,
+                "min": 64500,
+                "maxText": "8억 2,000",
+                "minText": "6억 4,500"
+              }
+            ]
           },
           "avg": [
             {
@@ -15549,11 +15729,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 238,
-      "recent24h": 1120,
-      "frequent": 121,
+      "realtime": 240,
+      "recent24h": 1122,
+      "frequent": 123,
       "new": 60,
-      "fetchedAt": "2026-11-01T12:10:10.764Z"
+      "fetchedAt": "2026-11-01T12:21:43.592Z"
     },
     "prevDate": "2026-10-31",
     "rows": [
@@ -20381,7 +20561,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-01T12:03:55.181Z",
+    "fetchedAt": "2026-11-01T12:23:26.397Z",
     "today": "2026-11-01",
     "items": [
       {
@@ -20395,6 +20575,13 @@
         "title": "17년 기다린 동탄 트램, 이달 착공 추진… 남동탄 아파트도 신고가",
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNU5XdmJzS1Q5dEVlbHJ3Z2RLOVhDZHpTTnV4SGhfelRudExjRWFic21ocVlBVERvSlJJT0hPQ2dRSkZOMmNfQTlYbl80bkx0QXF5RFRrVHQ3Rm51VmpnMnFvNDVmTjJ4OVE0NWFrU29WUEwtNndnbnk1SDVLcDN5SXdQSHF0c2VNLWNKUExoX282Z2hHYnFwRdIBrAFBVV95cUxQLUtxOVBoM0hhcloxQk1pVWhaRXpRajF6Y2pTNUJ4di1SX0FWdTVOLVFwbVNfZWY4RW9qdFAyYmY0TWNobXhkSlNBN21HV05HMC1Dbkl0WUVlaENqUy1fMVN5cnlaTmJrLXFyUVc1bE80QTVDUmo3ZThQanp5VmNpR0dMUkRubXpiUTNPaDhkc2NFNHZJeEFFWE43cmdRdXZvQzV5Um5vcjVsbnhv?oc=5",
         "source": "Chosunbiz",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
+        "source": "경인일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
@@ -20413,17 +20600,10 @@
         "isToday": false
       },
       {
-        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
-        "source": "경인일보",
+        "title": "화성특례시, 동탄트램 기술제안서 심의 적격, 계약절차 돌입... 10월 우선시공분 착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDWXd0YkpTMEljNjRZMXhURnFob0pTNFEtSURacWdkS1JxZVIzZUhyM181YWktYzhxTkhYM25aaXRIblBPNnhGZGxHb0pXUXBpWHlhbkNNX0o5TTE2eDNFZUg2dU04aDRjd1pJdVZB0gFyQVVfeXFMTktRYld4UHRMMGtiZHN5YV9ZQmpJNkt5MjBBZGFpTGJ0OEJVR2w4clo2eXZSVGN3Mko1R2k1SWduTVNZZmd3SkRaaDBzRlp6amRVazF1Wk5GSU5mZXpNVVhYaXViSi0wWTUySmNfdThwUXhB?oc=5",
+        "source": "뉴스신",
         "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
-        "source": "OBC 뉴스",
-        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
@@ -20434,30 +20614,30 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHONIBU0FVX3lxTE90OVZJNDVKdDRvR2J1d2MwbXVVcl9KWlRlZW00RjF6Q0JVVVZyZW1LT0luVGwyU19Qbm1kbXdWZEhZdmdCSUlGMjVIVkppQ3RiZTJj?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "동탄트램, 10월 우선시공분 착공 추진…장기 지연 끝 사업 본궤도 오르나",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fZ1NvTDFZa1hvSzhrcmQ3a2pZLVpnR3FLTVhtRTJTckZ0NXhxYWJSeXRNRGVMWGFKYjMwNnljbkktdDhOaUdaNUw5TnBWanQwNHlodHR5V3lOZ2hyQVFWbUc4ODJ2VVZyXzFXY3pn?oc=5",
+        "source": "아시아투데이",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성시 “동탄트램(31.55km 실제 공사 단계”…10월 우선시공분 공사 착수",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOSVNfWDliV0FXRGNUak45N1UtZWltd3pmQlhwSzdCQ2hHSVAzcEtpLTVTaXZjY2hVTmdDSXVFdmhrQjV6R1MzRF9fZlJOR3FjQzVtTXcyTWlRVVRhOHJkcG84aC1ZTFE?oc=5",
-        "source": "경인신문",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "화성특례시, 동탄트램 심의 통과로 우선시공분 공사 계약 절차 추진",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPSm1KQmhRVUxobUFCWmRaSFNRMXF3MGhISFZ2QzJLRHZkVHQ1THVycXd3UVQwS1NSZEpsd3BNOENCUUlqSmFZYk1nbXktWVdFVk1qRzd2SEFIQWZkQnUyYW9aYlM?oc=5",
+        "source": "매일일보",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "31.55㎞ 동탄 트램 첫 삽 가시권…화성시, 10월 우선공사 착수",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tRndhZEU0dlAzTnNUNXptNFhKM0NRVTNNdlJoaWVxcFJIYnhIY1p6dzJ6V1IzS053bWY5SGpWOTd3Umt6QVdWVGJQaFA3YVNqWWRWVk9oRFBXX28?oc=5",
-        "source": "에너지경제신문",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
+        "source": "OBC 뉴스",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-01T12:03:55.729Z",
+    "fetchedAt": "2026-11-01T12:23:26.330Z",
     "today": "2026-11-01",
     "items": [
       {
