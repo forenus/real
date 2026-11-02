@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T11:01:35.461Z",
+  "generatedAt": "2026-11-02T11:31:39.361Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15701,15 +15701,15 @@
       ]
     },
     "todayDate": "2026-11-02",
-    "lastFetchedAt": "2026-11-02T11:01:21.456Z",
+    "lastFetchedAt": "2026-11-02T11:31:23.212Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 254,
-      "recent24h": 977,
-      "frequent": 152,
-      "new": 54,
-      "fetchedAt": "2026-11-02T11:01:29.315Z"
+      "realtime": 243,
+      "recent24h": 978,
+      "frequent": 135,
+      "new": 59,
+      "fetchedAt": "2026-11-02T11:31:31.551Z"
     },
     "prevDate": "2026-11-01",
     "rows": [
@@ -17466,10 +17466,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 80건으로 30일 전보다 10건 늘었고, 최근 12주 흐름도 64~70건대에서 79~80건으로 올라와 매도 물량이 점차 쌓이는 모습으로 보입니다. 25평은 오늘 6건으로 전일보다 2건 늘었지만 7일·30일 전과 같은 수준이며, 30일간 4~8건 사이에서 횡보하고 있습니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 경신했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 상승 폭이 크지만, 같은 기간 2층 8억 2,000만 원 거래도 있어 층에 따라 가격 차이가 있는 것으로 보입니다. 25평은 최근 30일 거래가 없고 마지막 거래가 9월 6일 7억 2,000만 원 1건이라, 현재 호가 8억 4,700만 원과 비교할 실거래 근거가 부족합니다.",
+      "listing": "33평 매물은 오늘 80건으로 30일 전보다 10건 늘었고, 최근 12주 흐름도 64~70건대에서 79~80건으로 올라와 매도 물량이 점차 쌓이는 모습으로 보입니다. 25평은 오늘 6건으로 30일 범위(4~8건) 안에서 움직이며 뚜렷한 방향 없이 횡보하고 있습니다.",
+      "real": "33평은 최근 30일 5건 평균 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 다만 같은 기간 2층이 8억 2,000만 원에 거래되는 등 층별 편차가 커서, 5건 수준의 평균은 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없고, 9월 6일 7억 2,000만 원 1건이 마지막 거래로, 1년 전 무렵 평균 5억 3,200만 원과 비교하면 높은 수준입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-02T11:01:35.283Z"
+      "generatedAt": "2026-11-02T11:31:37.209Z"
     },
     "history": [
       {
@@ -21668,9 +21668,23 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-02T10:31:37.623Z",
+    "fetchedAt": "2026-11-02T11:31:39.240Z",
     "today": "2026-11-02",
     "items": [
+      {
+        "title": "동탄트램 우선시공분 착수…화성시의회 “안전 확보” 당부",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1IcFFEODlQOV9xUjNQemp4WnNaeEsyY1BLUnNjQ19VZGpZaFJkSzNQVXoydnpwdkIwa2NWYkdxelNmOFk0YUFHS18zUm1DRzlINm9ZNWlmRDJ6eExEZGV4WGl3?oc=5",
+        "source": "경인미래신문",
+        "time": "2026-11-02T10:54:06.000Z",
+        "isToday": true
+      },
+      {
+        "title": "화성시 동탄 트램 건설공사 1단계 우선시공분 '착공'",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2R3hLeGFyazRFcVJVVWthQWRkd3NJUGhwVlM3NkZfb0U1eXJub1NaejBHcm5MMC1LM0p3WjVFWnNwZE5CSk1qQ1J1VGN4Q1lBWVFmRkFKSm1pRzZzZFFtcnNKWm4?oc=5",
+        "source": "열린뉴스통신",
+        "time": "2026-11-02T10:45:53.000Z",
+        "isToday": true
+      },
       {
         "title": "동탄트램 17년 만에 첫 삽…2031년 개통까지 남은 과제",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5oNWdhSWxSbG00YUN3SklDd01iYTVVRHZ0alFRNWV0c1Ytd0c1NVFvSFlLS0NFVXFzRVl2ZXhSME9TbkNSSW96dmxwRkRPc1NvNHNLd19faDJEWXZBMTZLRnVaLUJ2M2U0?oc=5",
@@ -21726,25 +21740,11 @@
         "source": "뉴스핌",
         "time": "2026-11-02T08:01:00.000Z",
         "isToday": true
-      },
-      {
-        "title": "[경기소식] 화성시, 동탄 트램 첫 삽···17년 숙원사업 본격화 등",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9JdjUzcm1mbk0wYkNGajFWNmpIOUNteVhYSXhkbndSYnJhWGxYTlMyS1FLellubWdwNlE5Sk9mU1hJaWRvTlFhUm96RGNpV21jeXVNcDVFM21TLVNJckt4VXhLald5aWpWRXc?oc=5",
-        "source": "서울파이낸스",
-        "time": "2026-11-02T08:00:00.000Z",
-        "isToday": true
-      },
-      {
-        "title": "화성 동탄 트램 우선시공분 공사 계약…본공사 실시설계 8개월 진행",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB0ckZVNVVSZDMyMzJfWDVNenRhRWNIY2RTRUdyVEI4VjZyakQyWmRhUC1JX0JSUWowS2JQY2RoT01vMF9yNTFNclRHdG53d1YtZUpuNDIwVTVLLTdNTnpuSFhPTnJ6UFg1a1VzOFIxOHZJZDli?oc=5",
-        "source": "대한경제",
-        "time": "2026-11-02T07:58:32.000Z",
-        "isToday": true
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-02T10:31:38.519Z",
+    "fetchedAt": "2026-11-02T11:31:39.360Z",
     "today": "2026-11-02",
     "items": [
       {
