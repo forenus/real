@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T03:01:33.344Z",
+  "generatedAt": "2026-11-02T03:31:38.862Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15701,15 +15701,15 @@
       ]
     },
     "todayDate": "2026-11-02",
-    "lastFetchedAt": "2026-11-02T03:01:18.660Z",
+    "lastFetchedAt": "2026-11-02T03:31:21.465Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
       "realtime": 235,
-      "recent24h": 1118,
-      "frequent": 154,
-      "new": 36,
-      "fetchedAt": "2026-11-02T03:01:27.003Z"
+      "recent24h": 1068,
+      "frequent": 153,
+      "new": 35,
+      "fetchedAt": "2026-11-02T03:31:30.803Z"
     },
     "prevDate": "2026-11-01",
     "rows": [
@@ -17466,10 +17466,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64~70건대에서 79건까지 올라와 매도 물량이 점차 쌓이는 모습으로 보입니다. 25평은 오늘 5건으로 30일 동안 4~8건 사이를 오가며 물량 자체가 적어 뚜렷한 방향 없이 횡보하는 흐름입니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 1,100만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, 10월 28일 15층이 10억 원에 거래되며 역대 최고를 기록했습니다. 다만 같은 기간 2층 8억 2,000만 원 거래도 있어 층에 따라 가격 차이가 큰 편이며, 1년 전 무렵 평균(6억 3,600만 원)과 비교하면 상승 폭이 크게 나타납니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원 1건이 마지막이라, 거래가 적어 평균만으로 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 79건으로 30일 전보다 9건 늘었고, 최근 12주 흐름도 64~70건대에서 79건까지 올라와 매도 물량이 점차 쌓이는 모습으로 보입니다. 10월 28일 81건으로 30일 최고를 찍은 뒤 79건에서 머물고 있습니다. 25평은 5건으로 4~8건 사이에서 소폭 오르내리며 큰 변화 없이 횡보하고 있습니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 1,100만 원에 거래되어 그전 30일(8억 6,800만 원)보다 약 4,300만 원 올랐고, 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 다만 같은 기간 2층이 8억 2,000만 원에 거래되는 등 층별 편차가 크고 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 최근 30일 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만 원(역대 최고)으로 현재 평균 호가 8억 3,600만 원과는 차이가 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-02T03:01:32.344Z"
+      "generatedAt": "2026-11-02T03:31:36.534Z"
     },
     "history": [
       {
@@ -18027,7 +18027,40 @@
         }
       ],
       "sold": [],
-      "relisted": [],
+      "relisted": [
+        {
+          "before": {
+            "no": "2653227545",
+            "pyeong": 25,
+            "excl": 60,
+            "price": "8억",
+            "floor": "5/15",
+            "dir": "남서향",
+            "confirm": "20261003",
+            "desc": "전자계약가능 ,  29년 4월 입주가능",
+            "bldg": "478동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-09-16",
+            "days": 46,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2659128104",
+            "pyeong": 25,
+            "excl": 60,
+            "price": "8억",
+            "floor": "5/15",
+            "dir": "남서향",
+            "confirm": "20261102",
+            "desc": "전자계약가능 ,  29년 4월 입주가능",
+            "bldg": "478동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-09-16",
+            "days": 47,
+            "beforeStart": false
+          }
+        }
+      ],
       "current": [
         {
           "no": "2658989628",
@@ -18075,13 +18108,13 @@
           "beforeStart": false
         },
         {
-          "no": "2653227545",
+          "no": "2659128104",
           "pyeong": 25,
           "excl": 60,
           "price": "8억",
           "floor": "5/15",
           "dir": "남서향",
-          "confirm": "20261003",
+          "confirm": "20261102",
           "desc": "전자계약가능 ,  29년 4월 입주가능",
           "bldg": "478동",
           "realtor": "포레탑공인중개사사무소",
@@ -18275,6 +18308,38 @@
         },
         {
           "before": {
+            "no": "2658479061",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261029",
+            "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
+            "bldg": "485동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 17,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2659131690",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261102",
+            "desc": "전자계약가능 84A 남서향 입주가능 조망굿 집상태최고 주인거주중 ",
+            "bldg": "485동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 18,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2655464433",
             "pyeong": 33,
             "excl": 84,
@@ -18302,6 +18367,38 @@
             "realtor": "포레너스대표공인중개사사무소",
             "firstSeen": "2026-10-15",
             "days": 18,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2657920878",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "11억",
+            "floor": "13/20",
+            "dir": "남서향",
+            "confirm": "20261027",
+            "desc": "탁트인 시내조망 중문 알파룸 대리석인테리어 생활이 편리한 로얄동 로얄층",
+            "bldg": "477동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-10-04",
+            "days": 28,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2659128558",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "11억",
+            "floor": "13/20",
+            "dir": "남서향",
+            "confirm": "20261102",
+            "desc": "전자계약가능 84A 남서향 입주가능 , 전면동 조망굿 집상태굿  ",
+            "bldg": "477동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-10-04",
+            "days": 29,
             "beforeStart": false
           }
         },
@@ -18627,6 +18724,38 @@
         },
         {
           "before": {
+            "no": "2657867627",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "중/25",
+            "dir": "남서향",
+            "confirm": "20261027",
+            "desc": "추천,최근화이트톤인테리어,강마루,조명,거실실링팬,주인거주",
+            "bldg": "472동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 140,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2659130414",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "중/25",
+            "dir": "남서향",
+            "confirm": "20261102",
+            "desc": "전자계약가능 84B 남서향 1년전 강마루 싱크대 조명 실링팬 디아망벽지 ",
+            "bldg": "472동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 141,
+            "beforeStart": true
+          }
+        },
+        {
+          "before": {
             "no": "2654373639",
             "pyeong": 33,
             "excl": 84,
@@ -18840,6 +18969,21 @@
           "beforeStart": false
         },
         {
+          "no": "2659131690",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "12/15",
+          "dir": "남서향",
+          "confirm": "20261102",
+          "desc": "전자계약가능 84A 남서향 입주가능 조망굿 집상태최고 주인거주중 ",
+          "bldg": "485동",
+          "realtor": "포레탑공인중개사사무소",
+          "firstSeen": "2026-10-15",
+          "days": 18,
+          "beforeStart": false
+        },
+        {
           "no": "2658890997",
           "pyeong": 33,
           "excl": 84,
@@ -18880,21 +19024,6 @@
           "desc": "전자계약가능 84A 남서향 입주가능 8층높이 ,도배 중문 등 집상태굿",
           "bldg": "473동",
           "realtor": "포레탑공인중개사사무소",
-          "firstSeen": "2026-10-15",
-          "days": 18,
-          "beforeStart": false
-        },
-        {
-          "no": "2658479061",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "12/15",
-          "dir": "남서향",
-          "confirm": "20261029",
-          "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
-          "bldg": "485동",
-          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-10-15",
           "days": 18,
           "beforeStart": false
@@ -19005,16 +19134,16 @@
           "beforeStart": false
         },
         {
-          "no": "2657920878",
+          "no": "2659128558",
           "pyeong": 33,
           "excl": 84,
           "price": "11억",
           "floor": "13/20",
           "dir": "남서향",
-          "confirm": "20261027",
-          "desc": "탁트인 시내조망 중문 알파룸 대리석인테리어 생활이 편리한 로얄동 로얄층",
+          "confirm": "20261102",
+          "desc": "전자계약가능 84A 남서향 입주가능 , 전면동 조망굿 집상태굿  ",
           "bldg": "477동",
-          "realtor": "포레너스유성공인중개사사무소",
+          "realtor": "포레탑공인중개사사무소",
           "firstSeen": "2026-10-04",
           "days": 29,
           "beforeStart": false
@@ -19635,6 +19764,21 @@
           "beforeStart": false
         },
         {
+          "no": "2659130414",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 5,000",
+          "floor": "중/25",
+          "dir": "남서향",
+          "confirm": "20261102",
+          "desc": "전자계약가능 84B 남서향 1년전 강마루 싱크대 조명 실링팬 디아망벽지 ",
+          "bldg": "472동",
+          "realtor": "포레탑공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 141,
+          "beforeStart": true
+        },
+        {
           "no": "2659069440",
           "pyeong": 33,
           "excl": 84,
@@ -19780,21 +19924,6 @@
           "desc": "입주협의, 탁트인 시원한 힐링 산뷰, 주인거주, 숲세권",
           "bldg": "471동",
           "realtor": "예스포레너스공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 141,
-          "beforeStart": true
-        },
-        {
-          "no": "2657867627",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 5,000",
-          "floor": "중/25",
-          "dir": "남서향",
-          "confirm": "20261027",
-          "desc": "추천,최근화이트톤인테리어,강마루,조명,거실실링팬,주인거주",
-          "bldg": "472동",
-          "realtor": "동탄퀸포레너스공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 141,
           "beforeStart": true
@@ -21035,7 +21164,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-02T03:01:33.302Z",
+    "fetchedAt": "2026-11-02T03:31:38.862Z",
     "today": "2026-11-02",
     "items": [
       {
@@ -21088,10 +21217,10 @@
         "isToday": false
       },
       {
-        "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
-        "source": "기호일보",
-        "time": "2026-10-11T07:00:00.000Z",
+        "title": "화성특례시, 동탄트램 기술제안서 심의 적격, 계약절차 돌입... 10월 우선시공분 착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HUHRzdUhrNndseHhIakwzNEFvTGtfdUVvcHZqaXFQZjI4Q1lubkh2akVkeVJGUEtVNUJuMGJDU3JuVDVqTzVYb045V0dDVjlLWk9NclVVR05TX29tNEVn?oc=5",
+        "source": "뉴스라이트",
+        "time": "2026-10-11T08:30:12.000Z",
         "isToday": false
       },
       {
@@ -21102,16 +21231,16 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHONIBU0FVX3lxTE90OVZJNDVKdDRvR2J1d2MwbXVVcl9KWlRlZW00RjF6Q0JVVVZyZW1LT0luVGwyU19Qbm1kbXdWZEhZdmdCSUlGMjVIVkppQ3RiZTJj?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-10-09T07:00:00.000Z",
+        "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
+        "source": "기호일보",
+        "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-02T03:01:33.344Z",
+    "fetchedAt": "2026-11-02T03:31:38.675Z",
     "today": "2026-11-02",
     "items": [
       {
