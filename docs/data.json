@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T12:24:20.900Z",
+  "generatedAt": "2026-11-02T12:24:44.762Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14705,10 +14705,10 @@
       "real": {
         "from": "2025-11-02",
         "total": 175,
-        "known": 165,
+        "known": 166,
         "fetchedAt": "2026-11-01T15:17:59.251Z",
         "unknown": {
-          "count": 10,
+          "count": 9,
           "max": {
             "priceText": "7억 6,800",
             "pyeong": 33,
@@ -14724,7 +14724,7 @@
             "manual": false
           }
         },
-        "manual": 21,
+        "manual": 22,
         "pending": [
           {
             "date": "2026-10-28",
@@ -14900,7 +14900,7 @@
             "price": 68000,
             "pyeong": 33,
             "priceText": "6억 8,000",
-            "manualDong": ""
+            "manualDong": "485동"
           },
           {
             "date": "2026-05-16",
@@ -15542,8 +15542,8 @@
           "name": "485동",
           "count": 6,
           "real": {
-            "count": 9,
-            "manual": 1,
+            "count": 10,
+            "manual": 2,
             "max": {
               "priceText": "7억 5,000",
               "pyeong": 33,
@@ -15561,7 +15561,7 @@
             "byPyeong": [
               {
                 "pyeong": 33,
-                "count": 9,
+                "count": 10,
                 "max": 75000,
                 "min": 60500,
                 "maxText": "7억 5,000",
