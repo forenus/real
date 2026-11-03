@@ -8,6 +8,12 @@
     }
   ],
   "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
+  "molit": {
+    "sido": "경기도",
+    "sgg": "동탄구",
+    "emd": "영천동",
+    "complex": "동탄역포레너스"
+  },
   "hogangnonoAreas": {
     "0": 25,
     "1": 33

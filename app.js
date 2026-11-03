@@ -247,7 +247,8 @@ function renderAnalysis(a) {
     const t = a.generatedAt ? new Date(a.generatedAt).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
     box.innerHTML =
       `<div class="ai-head">${AI_ICO}<b>AI 추이 해설</b><span>${esc(t)} 기준 · ${a.source === "ai" ? "Claude 분석" : "자동 분석"}</span></div>` +
-      `<p>${esc(a[key])}</p>`;
+      // **핵심** 표시만 빨간 굵은 글씨로 — 짝이 안 맞는 별표는 지운다
+      `<p>${esc(a[key]).replace(/\*\*(.+?)\*\*/g, '<b class="ai-key">$1</b>').replace(/\*\*/g, "")}</p>`;
     box.hidden = false;
   }
 }
@@ -519,6 +520,7 @@ function render(state) {
   renderRealChart(state.realChart);
   renderAnalysis(state.analysis);
   renderKpis(state);
+  renderDongs(state.dongs);
   // 호갱노노 바로가기(config.json 의 hogangnonoUrl)
   const hg = $("hgnn-link");
   hg.hidden = !state.hogangnonoUrl;
@@ -571,6 +573,222 @@ function updateHogangnonoTile(h) {
 }
 
 // ---------- 대시보드 요약 지표 ----------
+// 동별 분석 그래프 — 순위를 비교하는 막대(한 색, 0 기준, 많은·높은 순). 표시 값은 아래 카드와 같다.
+let lastDongs = null;
+let dongPy = null; // 평균가 그래프에서 고른 평형
+function dongBars(rows, max) {
+  return rows.map((r) => `<div class="dbar" data-tip="${esc(r.tip)}"${r.dong ? ` data-dong="${esc(r.dong)}" role="button" tabindex="0" aria-label="${esc(r.tip)}"` : ""}><span class="dbar-name">${esc(r.name)}</span>` +
+    `<span class="dbar-track"><i style="width:${(100 * r.value / max).toFixed(1)}%"></i></span>` +
+    `<span class="dbar-val">${r.label}</span></div>`).join("");
+}
+function renderDongCharts(list) {
+  const byCount = [...list].sort((a, b) => b.count - a.count);
+  $("dong-count-bars").innerHTML = dongBars(byCount.map((d) => ({
+    name: d.name, dong: d.name, value: d.count, label: `<b>${d.count}</b>건`,
+    tip: `${d.name} · 등록 매물 ${d.count}건 (눌러서 목록 보기)`,
+  })), Math.max(1, ...list.map((d) => d.count)));
+
+  // 평형이 다르면 가격을 비교할 수 없으므로 평형별로 나눠 그린다(기본은 매물이 가장 많은 평형)
+  const nByPy = {};
+  for (const d of list) for (const a of d.avg) nByPy[a.pyeong] = (nByPy[a.pyeong] || 0) + a.count;
+  const pys = Object.keys(nByPy).sort((a, b) => a - b);
+  if (!pys.includes(String(dongPy))) dongPy = pys.slice().sort((a, b) => nByPy[b] - nByPy[a])[0];
+  $("dong-py").hidden = pys.length < 2;
+  $("dong-py").innerHTML = pys.map((p) => `<button type="button" data-py="${esc(p)}" aria-pressed="${p === String(dongPy)}">${esc(p)}평 <span class="seg-n">${nByPy[p]}</span></button>`).join("");
+  const rows = list
+    .map((d) => ({ d, a: d.avg.find((x) => String(x.pyeong) === String(dongPy)) }))
+    .filter((x) => x.a)
+    .sort((x, y) => y.a.price - x.a.price);
+  $("dong-price-bars").innerHTML = dongBars(rows.map(({ d, a }) => ({
+    name: d.name, value: a.price, label: `<b>${esc(a.priceText)}</b><small>${a.count}건</small>`,
+    tip: `${d.name} · ${dongPy}평 평균 ${a.priceText} (매물 ${a.count}건 기준)`,
+  })), Math.max(1, ...rows.map((x) => x.a.price)));
+  const missing = list.length - rows.length;
+  $("dong-price-note").textContent = `호가 평균이며 실거래가가 아닙니다. 매물이 적은 동은 한두 건의 호가에 크게 좌우됩니다.${missing ? ` ${dongPy}평 매물이 없는 ${missing}개 동은 뺐습니다.` : ""}`;
+}
+// 동별 실거래 그래프 — 건수(0 기준 막대), 가격 범위(최저~최고, 평형별)
+let dongRealPy = null;
+function renderDongRealCharts(dongs) {
+  const list = (dongs && dongs.list) || [];
+  const real = dongs && dongs.real;
+  const countOf = (d) => (d.real && d.real.count) || 0;
+  $("dong-real-count-bars").innerHTML = dongBars([...list].sort((a, b) => countOf(b) - countOf(a)).map((d) => ({
+    name: d.name, value: countOf(d), label: `<b>${countOf(d)}</b>건`,
+    tip: `${d.name} · 최근 1년 실거래 ${countOf(d)}건${d.real && d.real.manual ? ` (수동 입력 ${d.real.manual}건 포함)` : ""}`,
+  })), Math.max(1, ...list.map(countOf)));
+  const unknown = real && real.unknown ? real.unknown.count : 0;
+  $("dong-real-count-note").textContent = real ? `전체 ${real.total}건 중 동을 확인한 ${real.known}건입니다. 동 미공개 ${unknown}건은 빠져 있어, 건수가 적은 동이 실제로 거래가 적었다는 뜻은 아닙니다.` : "";
+
+  const nByPy = {};
+  for (const d of list) for (const a of (d.real && d.real.byPyeong) || []) nByPy[a.pyeong] = (nByPy[a.pyeong] || 0) + a.count;
+  const pys = Object.keys(nByPy).sort((a, b) => a - b);
+  if (!pys.includes(String(dongRealPy))) dongRealPy = pys.slice().sort((a, b) => nByPy[b] - nByPy[a])[0];
+  $("dong-real-py").hidden = pys.length < 2;
+  $("dong-real-py").innerHTML = pys.map((p) => `<button type="button" data-py="${esc(p)}" aria-pressed="${p === String(dongRealPy)}">${esc(p)}평 <span class="seg-n">${nByPy[p]}</span></button>`).join("");
+  const rows = list
+    .map((d) => ({ d, a: ((d.real && d.real.byPyeong) || []).find((x) => String(x.pyeong) === String(dongRealPy)) }))
+    .filter((x) => x.a)
+    .sort((x, y) => y.a.max - x.a.max || y.a.min - x.a.min);
+  if (!rows.length) { $("dong-real-range-bars").innerHTML = `<p class="empty-sm">아직 동을 확인한 거래가 없습니다.</p>`; return; }
+  // 가로축은 0.5억 단위로 끊는다
+  const lo = Math.floor(Math.min(...rows.map((x) => x.a.min)) / 5000) * 5000;
+  const hi = Math.max(lo + 5000, Math.ceil(Math.max(...rows.map((x) => x.a.max)) / 5000) * 5000);
+  const pos = (v) => (100 * (v - lo) / (hi - lo)).toFixed(1);
+  $("dong-real-range-bars").innerHTML = rows.map(({ d, a }) =>
+    `<div class="dbar dbar-range" data-tip="${esc(`${d.name} · ${dongRealPy}평 ${a.minText} ~ ${a.maxText} (${a.count}건)`)}"><span class="dbar-name">${esc(d.name)}</span>` +
+    `<span class="drange"><i class="drange-line" style="left:${pos(a.min)}%;width:${(pos(a.max) - pos(a.min)).toFixed(1)}%"></i>` +
+    `<i class="drange-dot" style="left:${pos(a.min)}%"></i><i class="drange-dot" style="left:${pos(a.max)}%"></i></span>` +
+    `<span class="dbar-val">${a.count > 1 && a.max !== a.min ? `${esc(a.minText)} ~ ` : ""}<b>${esc(a.maxText)}</b></span></div>`).join("") +
+    `<div class="dbar dbar-range drange-axis" aria-hidden="true"><span></span><span class="drange-ticks"><small>${(lo / 10000).toFixed(1)}억</small><small>${(hi / 10000).toFixed(1)}억</small></span><span></span></div>`;
+}
+$("dong-real-py").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-py]");
+  if (!b) return;
+  dongRealPy = b.dataset.py;
+  renderDongRealCharts(lastDongs);
+});
+$("dong-py").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-py]");
+  if (!b) return;
+  dongPy = b.dataset.py;
+  renderDongCharts((lastDongs && lastDongs.list) || []);
+});
+// 막대 위 말풍선 — 행 전체가 마우스 영역이다
+document.querySelectorAll(".dong-chart").forEach((box) => {
+  const tip = document.createElement("div");
+  tip.className = "viz-tip dbar-tip";
+  tip.hidden = true;
+  box.appendChild(tip);
+  box.addEventListener("mousemove", (e) => {
+    const row = e.target.closest(".dbar");
+    if (!row) { tip.hidden = true; return; }
+    tip.textContent = row.dataset.tip;
+    tip.hidden = false;
+    const r = box.getBoundingClientRect();
+    tip.style.left = `${Math.min(e.clientX - r.left + 12, r.width - tip.offsetWidth - 8)}px`;
+    tip.style.top = `${e.clientY - r.top - tip.offsetHeight - 10}px`;
+  });
+  box.addEventListener("mouseleave", () => { tip.hidden = true; });
+});
+
+// 동을 누르면 그 동의 현재 매물 목록을 팝업으로 — 평형별 매물 목록에서 동으로 추린다
+async function openDongList(name) {
+  const box = $("modal-content");
+  const dong = ((lastDongs && lastDongs.list) || []).find((d) => d.name === name);
+  const head = `<h3>${esc(name)} <span class="sub-label">등록 매물 ${dong ? dong.count : 0}건</span></h3>`;
+  const pys = dong ? dong.avg.map((a) => a.pyeong) : [];
+  $("modal").hidden = false;
+  if (!pys.length) { box.innerHTML = head + `<p class="empty-sm">지금 등록된 매물이 없습니다.</p>`; return; }
+  box.innerHTML = `<p class="empty-sm">불러오는 중…</p>`;
+  let parts;
+  try { parts = await Promise.all(pys.map((p) => api(`/api/changes?pyeong=${encodeURIComponent(p)}`))); }
+  catch (e) { box.innerHTML = `<p class="empty-sm">불러오기 실패: ${esc(e.message)}</p>`; return; }
+  box.innerHTML = head + `<p class="chg-dates">${esc(parts[0].todayDate)} 기준 · 최근 등록순</p>` +
+    parts.map((c, i) => listBlock(`${esc(pys[i])}평 매물`, "neutral", (c.current || []).filter((r) => r.bldg === name), c.complexNo, "매물이 없습니다.")).join("");
+}
+// 실거래 동 직접 입력(관리자) — 수동 수집과 같은 비밀번호. 고르는 즉시 저장한다.
+async function dongAdminPost(body, pw) {
+  const base = STATIC ? ((staticData && staticData.collectUrl) || "").replace(/\/$/, "") : "";
+  if (STATIC && !base) throw new Error("지금은 PC 서버가 꺼져 있어 입력할 수 없습니다.");
+  let res;
+  try {
+    res = await fetch(base + "/api/dong-override", {
+      method: "POST", headers: { "Content-Type": "application/json", "x-refresh-password": pw || "" }, body: JSON.stringify(body),
+    });
+  } catch { throw new Error("PC 서버에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요."); }
+  return res.json();
+}
+async function openDongEditor(msg) {
+  const box = $("modal-content");
+  let pw = "";
+  if (STATIC) {
+    pw = (!msg && savedPw()) || await askPassword(msg || "실거래의 동을 직접 입력하려면 관리자 비밀번호가 필요합니다.", { title: "관리자 로그인", button: "로그인" });
+    if (!pw) return; // 창을 닫음 → 취소
+  }
+  $("modal").hidden = false;
+  box.innerHTML = `<p class="empty-sm">확인 중…</p>`;
+  let r;
+  try { r = await dongAdminPost({ check: true }, pw); }
+  catch (e) { box.innerHTML = `<p class="empty-sm">${esc(e.message)}</p>`; return; }
+  if (r.auth) { savePw(""); return openDongEditor("비밀번호가 맞지 않습니다. 다시 입력해 주세요."); }
+  if (r.error) { box.innerHTML = `<p class="empty-sm">${esc(r.error)}</p>`; return; }
+  if (STATIC) savePw(pw);
+  renderDongEditor(pw);
+}
+function renderDongEditor(pw) {
+  const real = (lastDongs && lastDongs.real) || { pending: [], conflicts: [] };
+  const names = ((lastDongs && lastDongs.list) || []).map((d) => d.name);
+  const options = (sel) => `<option value="">동 모름</option>` + names.map((n) => `<option value="${esc(n)}"${n === sel ? " selected" : ""}>${esc(n)}</option>`).join("");
+  const conflicts = (real.conflicts || []).map((x) => `<li>${esc(x.date)} ${esc(x.floor)}층 ${esc(x.priceText)} — 입력 ${esc(x.manualDong)}, 국토부 ${esc(x.molitDong)} (국토부 값 적용 중)</li>`).join("");
+  $("modal-content").innerHTML =
+    `<h3>실거래 동 입력 <span class="sub-label">${real.pending.length}건</span></h3>` +
+    `<p class="chg-dates">국토교통부 자료에 동이 없는 거래입니다. 동을 고르면 바로 저장되고, 공개 페이지에는 1분쯤 뒤 반영됩니다. 나중에 국토교통부 자료에 동이 올라오면 그 값이 우선합니다.</p>` +
+    (conflicts ? `<div class="dong-conflict"><b>입력값과 국토교통부 자료가 다른 거래</b><ul>${conflicts}</ul></div>` : "") +
+    `<div class="dong-edit">` + real.pending.map((x) =>
+      `<div class="dong-edit-row"><span class="dong-edit-deal"><b>${esc(x.priceText)}</b><small>${esc(x.date)} · ${esc(x.pyeong)}평 · ${esc(x.floor)}층</small></span>` +
+      `<select aria-label="${esc(x.date)} ${esc(x.floor)}층 ${esc(x.priceText)} 거래의 동" data-date="${esc(x.date)}" data-floor="${esc(x.floor)}" data-price="${esc(x.price)}" data-saved="${esc(x.manualDong)}">${options(x.manualDong)}</select>` +
+      `<span class="dong-edit-state"></span></div>`).join("") + `</div>`;
+  $("modal-content").querySelectorAll(".dong-edit select").forEach((sel) => sel.addEventListener("change", async () => {
+    const state = sel.parentElement.querySelector(".dong-edit-state");
+    state.textContent = "저장 중…";
+    let r;
+    try { r = await dongAdminPost({ date: sel.dataset.date, floor: sel.dataset.floor, price: sel.dataset.price, dong: sel.value }, pw); }
+    catch (e) { r = { error: e.message }; }
+    if (r.dongs) {
+      sel.dataset.saved = sel.value;
+      state.textContent = "저장됨";
+      renderDongs(r.dongs);
+    } else {
+      sel.value = sel.dataset.saved; // 저장 실패 — 화면을 저장된 값으로 되돌린다
+      state.textContent = r.auth ? "비밀번호 오류" : "저장 실패";
+      state.title = r.error || "";
+    }
+  }));
+}
+
+document.querySelector('[data-view="dongs"].view').addEventListener("click", (e) => {
+  if (e.target.closest("#dong-admin-open")) { openDongEditor(); return; }
+  const el = e.target.closest("[data-dong]");
+  if (el) openDongList(el.dataset.dong);
+});
+$("dong-count-bars").addEventListener("keydown", (e) => {
+  const el = e.target.closest("[data-dong]");
+  if (el && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openDongList(el.dataset.dong); }
+});
+
+// 동별 분석 카드 — 실거래는 대시보드 목록 기준, 동은 국토부 자료와 맞는 거래에만 붙는다(다른 값으로 추정하지 않는다)
+function renderDongs(dongs) {
+  const list = (dongs && dongs.list) || [];
+  lastDongs = dongs;
+  renderDongCharts(list);
+  renderDongRealCharts(dongs);
+  $("dongs-date").textContent = dongs && dongs.date ? `매물 ${dongs.date} 기준` : "";
+  const noReal = `<span class="dong-na" title="최근 1년 거래 중 이 동으로 확인된 거래가 없습니다">공개된 거래 없음</span>`;
+  const realPrice = (x) => x
+    ? `<span class="dong-avg" title="${esc(x.date)} · ${esc(x.floor)}층">${x.manual ? `<em class="dong-manual">수동</em> ` : ""}<small>${esc(x.pyeong)}평</small> <b>${esc(x.priceText)}</b></span>`
+    : noReal;
+  const real = dongs && dongs.real;
+  $("dongs-real-note").innerHTML = real
+    ? `실거래는 대시보드와 같은 자료(네이버·호갱노노)입니다. 최근 1년(${esc(real.from)}부터, 계약일 기준) 거래 <b>${real.total}건</b> 중 국토교통부 공개 자료로 동을 확인한 <b>${real.known}건</b>은 동별 카드에, 동을 알 수 없는 <b>${real.unknown ? real.unknown.count : 0}건</b>은 '동 미공개' 카드에 있습니다. 동은 등기를 마친 거래부터 공개되어 차례로 옮겨 갑니다.${real.manual ? ` <b>수동</b> 표시 ${real.manual}건은 관리자가 직접 확인해 입력한 값입니다.` : ""} 매물 수와 평균가는 네이버 부동산 등록 매물 기준이며, 모두 참고용입니다.`
+    : "실거래 자료를 아직 받지 못했습니다. 매물 수와 평균가는 네이버 부동산 등록 매물 기준입니다.";
+  const row = (k, v) => `<div class="dong-row"><dt>${k}</dt><dd>${v}</dd></div>`;
+  const unknownCard = real && real.unknown
+    ? `<article class="dong-card dong-unknown"><header><h3>동 미공개</h3><span class="dong-count zero">동 확인 전</span></header><dl>` +
+      row("최근 1년 최고가", realPrice(real.unknown.max)) + row("최근 1년 최저가", realPrice(real.unknown.min)) +
+      row("최근 1년 실거래", `<b>${real.unknown.count}건</b>`) +
+      `</dl><button type="button" class="dong-admin" id="dong-admin-open">동 입력 (관리자)</button></article>`
+    : "";
+  $("dongs-grid").innerHTML = list.length ? unknownCard + list.map((d) => `<article class="dong-card">` +
+    `<header><h3>${esc(d.name)}</h3><button type="button" class="dong-count${d.count ? "" : " zero"}" data-dong="${esc(d.name)}" aria-label="${esc(d.name)} 매물 목록 보기"><b>${d.count}</b>건</button></header><dl>` +
+    row("최근 1년 최고가", realPrice(d.real && d.real.max)) + row("최근 1년 최저가", realPrice(d.real && d.real.min)) +
+    row("최근 1년 실거래", `${d.real && d.real.manual ? `<em class="dong-manual">수동 ${d.real.manual}</em> ` : ""}<b>${(d.real && d.real.count) || 0}건</b>`) +
+    row("등록 매물", `<button type="button" class="dong-link" data-dong="${esc(d.name)}" aria-label="${esc(d.name)} 매물 목록 보기">${d.count}건</button>`) +
+    row("매물 평균가", d.avg.length
+      ? d.avg.map((a) => `<span class="dong-avg"><small>${esc(a.pyeong)}평</small> <b>${esc(a.priceText)}</b></span>`).join("")
+      : `<span class="dong-na">매물 없음</span>`) +
+    `</dl></article>`).join("") : `<p class="empty">아직 동별 자료가 없습니다.</p>`;
+}
+
 function renderKpis(state) {
   const rows = state.rows || [];
   const today = rows.reduce((a, r) => a + r.today, 0);
@@ -609,7 +827,7 @@ function renderKpis(state) {
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
-const VIEWS = ["dashboard", "news", "board", "guide", "stats", "settings"];
+const VIEWS = ["dashboard", "dongs", "news", "board", "guide", "stats", "settings"];
 // 화면 대신 대시보드 안의 카드로 가는 주소(#deals → 대시보드의 실거래 목록)
 const SECTIONS = { deals: "dashboard" };
 let curView = "dashboard";
@@ -1000,7 +1218,7 @@ $("save-config").addEventListener("click", async () => {
 
 // ---------- 접속 기록 · 접속 통계 (관리자) ----------
 // 공개 페이지에서만 기록한다(PC에서 연 화면 제외). 방문자 번호는 이 브라우저에 한 번 만들어 둔 무작위 값.
-const VIEW_LABELS = { dashboard: "대시보드", news: "지역 소식", board: "개선·문의", guide: "사용법" };
+const VIEW_LABELS = { dashboard: "대시보드", dongs: "동별 분석", news: "지역 소식", board: "개선·문의", guide: "사용법" };
 function visitorId() {
   try {
     let v = localStorage.getItem("vid");

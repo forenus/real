@@ -10,6 +10,7 @@ const { fetchSaleAndReal, aggregateByPyeong } = require("./naver");
 const { fetchNews, TOPICS: NEWS_TOPICS } = require("./news");
 const { updateAnalysis, loadAnalysis } = require("./analysis");
 const stats = require("./stats");
+const { updateMolit, loadMolit } = require("./molit");
 const { updateHogangnono, loadHogangnono, fetchHogangnonoDeals, mergeHogangnonoDeals } = require("./hogangnono");
 
 const ROOT = __dirname;
@@ -23,6 +24,7 @@ const PAGES_ORIGINS = ["https://forenus.github.io", "https://sunguphong.github.i
 const REMOTE_COOLDOWN_MS = 10 * 60 * 1000;
 // 개선·문의 메일 발송 설정(보내는 Gmail·앱 비밀번호·받는 주소) — 공개 저장소에 올리지 않도록 mail.json 에 따로 둔다
 const MAIL_FILE = path.join(ROOT, "mail.json");
+const DONG_OVERRIDE_FILE = path.join(ROOT, "dong-overrides.json"); // 관리자가 직접 입력한 실거래의 동 (날짜|층|가격 → 동)
 const CONTACT_MAX_BYTES = 12 * 1024 * 1024; // 첨부 포함 요청 크기 상한(base64 로 커지는 것 감안)
 const CONTACT_GAP_MS = 60 * 1000; // 같은 곳에서 연달아 보내지 못하게 하는 최소 간격
 // 외부 수동 수집 비밀번호 — 공개 저장소에 올리지 않도록 secret.json 에 따로 둔다
@@ -47,6 +49,10 @@ function loadHistory() {
 }
 function loadConfig() {
   return readJson(CONFIG_FILE, { complexNo: "", complexName: "", cookie: "" });
+}
+
+function loadDongOverrides() {
+  try { return JSON.parse(fs.readFileSync(DONG_OVERRIDE_FILE, "utf8")); } catch { return {}; }
 }
 
 function todayStr() {
@@ -217,10 +223,90 @@ function buildState() {
     all: history.realDealsAll ? history.realDealsAll.list.map(dealView) : null,
   };
 
+  // 동별 분석 — 최신 수집 매물을 동·평형별로 묶는다. 매물이 없는 동도 보이도록 동 목록은 지금까지 수집한 전체 기록에서 뽑는다.
+  // 실거래는 대시보드와 같은 목록(네이버·호갱노노)으로 최근 1년을 집계한다. 이 목록에는 동이 없어,
+  // 국토부 공개시스템 자료(등기를 마친 거래에만 동이 나온다)에서 날짜·층·가격이 같은 거래의 동을 붙인다.
+  const articleMap = history.articles || {};
+  const articleDays = Object.keys(articleMap).sort();
+  const dongMap = {};
+  for (const d of articleDays) for (const r of articleMap[d]) if (r.bldg) dongMap[r.bldg] = dongMap[r.bldg] || { name: r.bldg, count: 0, byPyeong: {} };
+  for (const r of articleDays.length ? articleMap[articleDays[articleDays.length - 1]] : []) {
+    const dong = r.bldg && dongMap[r.bldg];
+    if (!dong) continue;
+    dong.count += 1;
+    const price = parsePriceManwon(r.price);
+    if (!price) continue;
+    const a = (dong.byPyeong[r.pyeong] = dong.byPyeong[r.pyeong] || { pyeong: r.pyeong, n: 0, sum: 0 });
+    a.n += 1;
+    a.sum += price;
+  }
+  const molit = loadMolit();
+  const realFrom = new Date();
+  realFrom.setFullYear(realFrom.getFullYear() - 1);
+  const realFromStr = `${realFrom.getFullYear()}-${String(realFrom.getMonth() + 1).padStart(2, "0")}-${String(realFrom.getDate()).padStart(2, "0")}`;
+  const overrides = loadDongOverrides();
+  const dongOfDeal = {}; // 날짜|층|가격 → 동 목록
+  const dealPlace = (x) => `${x.date}|${x.floor}|${x.price}`;
+  for (const x of molit ? molit.deals : []) if (x.dong && !x.canceled) (dongOfDeal[dealPlace(x)] = dongOfDeal[dealPlace(x)] || []).push(x.dong);
+  const recentReal = (history.realDealsAll ? history.realDealsAll.list : [])
+    .filter((x) => x.date >= realFromStr && !x.canceled)
+    .map((x) => {
+      // 국토부 자료의 동이 우선이고, 없을 때만 관리자가 입력한 동을 쓴다
+      const molitDong = (dongOfDeal[dealPlace(x)] || []).shift() || "";
+      const manualDong = overrides[dealPlace(x)] || "";
+      return { ...x, dong: molitDong || manualDong, manual: !molitDong && !!manualDong, molitDong, manualDong };
+    });
+  const realView = (x) => ({ priceText: fmtPriceManwon(x.price), pyeong: x.pyeong, date: x.date, floor: x.floor, manual: x.manual });
+  const realByDong = {};
+  for (const x of recentReal) if (x.dong) (realByDong[x.dong] = realByDong[x.dong] || []).push(x);
+  for (const name of Object.keys(realByDong)) dongMap[name] = dongMap[name] || { name, count: 0, byPyeong: {} };
+  const dongs = {
+    date: articleDays[articleDays.length - 1] || null,
+    real: molit ? (() => {
+      // 동을 알 수 없는 거래도 빠뜨리지 않도록 따로 묶어 내보낸다
+      const unknown = recentReal.filter((x) => !x.dong).sort((a, b) => b.price - a.price);
+      const dealRef = (x) => ({ date: x.date, floor: x.floor, price: x.price, pyeong: x.pyeong, priceText: fmtPriceManwon(x.price) });
+      return {
+        from: realFromStr, total: recentReal.length, known: recentReal.length - unknown.length, fetchedAt: molit.fetchedAt,
+        unknown: unknown.length ? { count: unknown.length, max: realView(unknown[0]), min: realView(unknown[unknown.length - 1]) } : null,
+        manual: recentReal.filter((x) => x.manual).length,
+        // 관리자 입력 창용 — 국토부 자료에 동이 없는 거래, 입력값이 국토부 자료와 다른 거래
+        pending: recentReal.filter((x) => !x.molitDong).map((x) => ({ ...dealRef(x), manualDong: x.manualDong })),
+        conflicts: recentReal.filter((x) => x.molitDong && x.manualDong && x.molitDong !== x.manualDong)
+          .map((x) => ({ ...dealRef(x), manualDong: x.manualDong, molitDong: x.molitDong })),
+      };
+    })() : null,
+    list: Object.values(dongMap)
+      .sort((a, b) => a.name.localeCompare(b.name, "ko", { numeric: true }))
+      .map((x) => ({
+        name: x.name,
+        count: x.count,
+        real: (() => {
+          const list = realByDong[x.name] || [];
+          if (!list.length) return { count: 0 };
+          const sorted = [...list].sort((a, b) => b.price - a.price);
+          // 그래프용 평형별 범위 — 평형이 다른 가격은 비교하지 않는다
+          const byPyeong = {};
+          for (const y of sorted) {
+            const a = (byPyeong[y.pyeong] = byPyeong[y.pyeong] || { pyeong: y.pyeong, count: 0, max: y.price, min: y.price });
+            a.count += 1;
+            a.min = Math.min(a.min, y.price);
+          }
+          return {
+            count: list.length, manual: list.filter((y) => y.manual).length, max: realView(sorted[0]), min: realView(sorted[sorted.length - 1]),
+            byPyeong: Object.values(byPyeong).map((a) => ({ ...a, maxText: fmtPriceManwon(a.max), minText: fmtPriceManwon(a.min) })),
+          };
+        })(),
+        avg: Object.values(x.byPyeong).sort((a, b) => a.pyeong - b.pyeong)
+          .map((a) => ({ pyeong: a.pyeong, count: a.n, price: Math.round(a.sum / a.n), priceText: fmtPriceManwon(a.sum / a.n) })),
+      })),
+  };
+
   return {
     complexNo: history.complexNo,
     complexName: history.complexName,
     realDeals,
+    dongs,
     todayDate: todayKey,
     lastFetchedAt: history.lastFetchedAt || null,
     hogangnonoUrl: loadConfig().hogangnonoUrl || "", // 상단 '호갱노노' 바로가기
@@ -604,6 +690,16 @@ async function publishSafe(tag) {
   } catch (e) {
     console.log("  [호갱노노] 실패:", e.message);
   }
+  // 국토부 공개시스템 실거래(동별 분석) — 하루 한 번만, 실패하면 다음 수집 때 다시
+  try {
+    const m = loadMolit();
+    if (!m || new Date(m.fetchedAt).toDateString() !== new Date().toDateString()) {
+      const r = await updateMolit(loadConfig().molit);
+      if (r) console.log(`  [국토부 실거래] ${r.deals.length}건`);
+    }
+  } catch (e) {
+    console.log("  [국토부 실거래] 실패:", e.message);
+  }
   // 게시 전에 추이 해설을 새로 쓴다(수집할 때마다 AI 가 다시 분석)
   try {
     const a = await updateAnalysis(buildState(), (loadHistory().realDealsAll || {}).list);
@@ -667,6 +763,14 @@ function checkRefreshPassword(req) {
   return { code: 401, error: "비밀번호가 맞지 않습니다." };
 }
 
+let dongPublishTimer = null;
+function scheduleDongPublish() {
+  clearTimeout(dongPublishTimer);
+  dongPublishTimer = setTimeout(() => {
+    if (publishing) return scheduleDongPublish(); // 진행 중인 게시는 이번 입력을 담지 못할 수 있어 끝난 뒤 다시 게시한다
+    publishPages().catch((e) => console.log("  [게시] 동 입력 실패:", e.message));
+  }, 20000);
+}
 function isLocal(req) {
   const ra = req.socket.remoteAddress || "";
   return /^(::1|127.0.0.1|::ffff:127.0.0.1)$/.test(ra) && !req.headers["x-forwarded-for"] && !req.headers["cf-connecting-ip"];
@@ -676,7 +780,7 @@ const server = http.createServer(async (req, res) => {
   const url = req.url.split("?")[0];
 
   // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
-  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
+  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence", "/api/dong-override"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
     res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Vary", "Origin");
     if (req.method === "OPTIONS") {
@@ -745,6 +849,32 @@ const server = http.createServer(async (req, res) => {
   // 현재 접속자 — 열린 화면의 주기 신호를 받고 지금 목록을 돌려준다
   if (url === "/api/presence" && req.method === "POST") {
     return send(res, 200, { ...stats.presence(await readJsonLimited(req, 1024)), hogangnono: loadHogangnono() });
+  }
+
+  // 실거래 동 직접 입력 — 관리자만(수동 수집과 같은 비밀번호). check 는 비밀번호 확인만 한다.
+  if (url === "/api/dong-override" && req.method === "POST") {
+    if (!isLocal(req)) {
+      const denied = checkRefreshPassword(req);
+      if (denied) return send(res, denied.code, { error: denied.error, auth: denied.code === 401 });
+    }
+    const body = await readJsonLimited(req, 2048);
+    if (!body) return send(res, 400, { error: "요청 형식이 올바르지 않습니다." });
+    if (body.check) return send(res, 200, { ok: true });
+    const key = `${body.date}|${body.floor}|${body.price}`;
+    const { real, list } = buildState().dongs;
+    const dong = String(body.dong || "");
+    const overrides = loadDongOverrides();
+    if (dong) {
+      if (!list.some((d) => d.name === dong)) return send(res, 400, { error: "없는 동입니다." });
+      if (!real || !real.pending.some((x) => `${x.date}|${x.floor}|${x.price}` === key)) return send(res, 400, { error: "입력할 수 없는 거래입니다." });
+      overrides[key] = dong;
+    } else {
+      delete overrides[key];
+    }
+    fs.writeFileSync(DONG_OVERRIDE_FILE, JSON.stringify(overrides, null, 2), "utf8");
+    // 연달아 입력해도 게시는 한 번만 — GitHub Pages 게시 횟수를 아낀다
+    scheduleDongPublish();
+    return send(res, 200, { ok: true, dongs: buildState().dongs });
   }
 
   // 접속 통계 — 관리자만(공개 페이지에서는 수동 수집과 같은 비밀번호)

@@ -8,7 +8,7 @@ const FILE = path.join(__dirname, "stats.json");
 const KEEP_DAYS = 400;           // 날짜별 기록 보관 기간
 const RECENT_MAX = 50;           // 최근 방문 기록 개수
 const MAX_PV_PER_VISITOR = 300;  // 한 방문자가 하루에 셀 수 있는 최대 조회 수(새로고침 연타·장난 방지)
-const VIEWS = ["dashboard", "news", "board", "guide"];
+const VIEWS = ["dashboard", "dongs", "news", "board", "guide"];
 
 let data = null;
 let saveTimer = null;
