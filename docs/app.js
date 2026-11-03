@@ -247,7 +247,8 @@ function renderAnalysis(a) {
     const t = a.generatedAt ? new Date(a.generatedAt).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
     box.innerHTML =
       `<div class="ai-head">${AI_ICO}<b>AI 추이 해설</b><span>${esc(t)} 기준 · ${a.source === "ai" ? "Claude 분석" : "자동 분석"}</span></div>` +
-      `<p>${esc(a[key])}</p>`;
+      // **핵심** 표시만 빨간 굵은 글씨로 — 짝이 안 맞는 별표는 지운다
+      `<p>${esc(a[key]).replace(/\*\*(.+?)\*\*/g, '<b class="ai-key">$1</b>').replace(/\*\*/g, "")}</p>`;
     box.hidden = false;
   }
 }
