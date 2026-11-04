@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T06:33:01.210Z",
+  "generatedAt": "2026-11-04T07:03:05.446Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15692,7 +15692,7 @@
         },
         {
           "name": "488동",
-          "count": 6,
+          "count": 7,
           "real": {
             "count": 4,
             "manual": 1,
@@ -15724,24 +15724,24 @@
           "avg": [
             {
               "pyeong": 33,
-              "count": 6,
-              "price": 95833,
-              "priceText": "9억 5,800"
+              "count": 7,
+              "price": 95857,
+              "priceText": "9억 5,900"
             }
           ]
         }
       ]
     },
     "todayDate": "2026-11-04",
-    "lastFetchedAt": "2026-11-04T06:32:46.130Z",
+    "lastFetchedAt": "2026-11-04T07:02:51.948Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 312,
-      "recent24h": 1119,
-      "frequent": 220,
-      "new": 48,
-      "fetchedAt": "2026-11-04T06:32:55.786Z"
+      "realtime": 245,
+      "recent24h": 1123,
+      "frequent": 156,
+      "new": 51,
+      "fetchedAt": "2026-11-04T07:02:59.808Z"
     },
     "prevDate": "2026-11-03",
     "rows": [
@@ -15764,9 +15764,9 @@
         "pyeong": 33,
         "label": "전용 84㎡",
         "prev": 83,
-        "today": 84,
-        "diff": 1,
-        "avgPrice": "10억 200",
+        "today": 85,
+        "diff": 2,
+        "avgPrice": "10억 100",
         "realPrice": "9억 2,400",
         "realCount": 4,
         "realDays": 10,
@@ -16206,7 +16206,7 @@
             79,
             80,
             83,
-            84
+            85
           ]
         }
       ],
@@ -16344,7 +16344,7 @@
         83,
         86,
         89,
-        90
+        91
       ]
     },
     "realChart": {
@@ -17524,10 +17524,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 65~70건대에서 꾸준히 늘어 **오늘 84건으로 30일 최고치**를 기록했으며, 30일 전보다 13건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **6건으로 30일 전보다 1건 적은 수준**이며, 4~8건 사이에서 횡보하고 있습니다.",
-      "real": "33평은 최근 30일 5건이 거래되어 **평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고**, 10월 28일 15층이 10억에 거래되며 역대 최고를 경신했습니다. 1년 전 무렵 평균 6억 3,600과 비교하면 상승 폭이 큰 편이지만, 평균호가 10억 200은 최근 실거래보다 높게 형성되어 있습니다. 25평은 **최근 30일 거래가 없고**, 9월 6일 7억 2,000 거래 1건뿐이라 흐름을 판단하기에는 표본이 적습니다.",
+      "listing": "33평 매물은 85건으로 30일 전보다 14건 늘며 **30일 최고치를 경신했고**, 최근 12주 동안 65건대에서 꾸준히 증가해 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 6건으로 **4~8건 사이에서 횡보**하고 있어 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **10억에 거래되며 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,600과 비교하면 **상승 흐름이 뚜렷합니다**. 25평은 9월 6일 7억 2,000 이후 최근 30일 거래가 없어 흐름을 판단하기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-04T06:33:00.940Z"
+      "generatedAt": "2026-11-04T07:03:05.232Z"
     },
     "history": [
       {
@@ -18064,7 +18064,7 @@
       },
       {
         "date": "2026-11-04",
-        "total": 90
+        "total": 91
       }
     ]
   },
@@ -18361,21 +18361,6 @@
           "firstSeen": "2026-10-19",
           "days": 15,
           "beforeStart": false
-        },
-        {
-          "no": "2659069440",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 6,000",
-          "floor": "10/15",
-          "dir": "남향",
-          "confirm": "20261102",
-          "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
-          "bldg": "488동",
-          "realtor": "포레너스유성공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 142,
-          "beforeStart": true
         }
       ],
       "relisted": [
@@ -18665,6 +18650,38 @@
             "firstSeen": "2026-06-23",
             "days": 134,
             "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2659069440",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "10/15",
+            "dir": "남향",
+            "confirm": "20261102",
+            "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
+            "bldg": "488동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 142,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2659691570",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "10/15",
+            "dir": "남향",
+            "confirm": "20261104",
+            "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
+            "bldg": "488동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 143,
+            "beforeStart": true
           }
         },
         {
@@ -19765,6 +19782,21 @@
           "firstSeen": "2026-06-16",
           "days": 141,
           "beforeStart": false
+        },
+        {
+          "no": "2659691570",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 6,000",
+          "floor": "10/15",
+          "dir": "남향",
+          "confirm": "20261104",
+          "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
+          "bldg": "488동",
+          "realtor": "포레너스유성공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 143,
+          "beforeStart": true
         },
         {
           "no": "2659687456",
@@ -21212,7 +21244,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-04T06:03:01.518Z",
+    "fetchedAt": "2026-11-04T06:57:48.665Z",
     "today": "2026-11-04",
     "items": [
       {
@@ -21288,7 +21320,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-04T06:03:01.397Z",
+    "fetchedAt": "2026-11-04T06:57:49.130Z",
     "today": "2026-11-04",
     "items": [
       {
@@ -21310,13 +21342,6 @@
         "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
         "source": "화성신문",
         "time": "2026-10-29T08:31:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄서 공예 체험 한마당 열린다",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CR0V5bVFhRG10YlpXUVZaRkszODZPd2lvOVBvMXZUS0tfRWVEaFNTWThvQUJTMXhxTF9JRmxHeUt2WE1IWXkxcUp4eHpSaWRNMU95aHdXcDZxdw?oc=5",
-        "source": "브릿지경제",
-        "time": "2026-10-29T00:51:00.000Z",
         "isToday": false
       },
       {
@@ -21359,6 +21384,13 @@
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TZ1lFd0MwSjlpTzZoYnpqX0Yyb3JndWxkTTVXdnlFcGJhdUNrbWp1RU14Qmk0YXVzeDBRbl9NQnNLbzFwd0t3aFlYNUtnSlgyS0xmMUF3OW9oWlZGcXNDVXBMZzlfcTU0TDNzcg?oc=5",
         "source": "한국사회복지저널",
         "time": "2026-10-26T01:28:53.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성특례시, 화성동탄중앙도서관 개관 1주년 축제 즐겨보세요",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9meVFtelN3Um9neGdkOEpjdTBVZ2EwS29SVDdGSkdFaW1XbmVxRlVtV3JMZTZvWDliQzZYd2xUai1kbGRxMGdUVlROUHpvOFBqNHRXWW9OSnVSeHR1T1RkdTUySjdqcm5y?oc=5",
+        "source": "뉴스피크",
+        "time": "2026-10-25T23:35:12.000Z",
         "isToday": false
       }
     ]

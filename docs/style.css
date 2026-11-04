@@ -756,3 +756,4 @@ button.dong-count:hover { background: var(--primary); color: #fff; }
 .gb-empty { padding: 28px 0; text-align: center; color: var(--muted); font-size: 14px; }
 .gb-dev { padding: 1px 7px; border-radius: 999px; font-size: 11px; font-weight: 700; color: #fff; background: var(--primary); }
 .gb-item.is-dev .gb-avatar { background: var(--primary); }
+.notice-new + .notice-new { margin-top: -10px; }
