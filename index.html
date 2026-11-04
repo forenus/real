@@ -28,6 +28,7 @@
         <a href="#dashboard" data-view="dashboard"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1.5"/><rect width="7" height="5" x="14" y="3" rx="1.5"/><rect width="7" height="9" x="14" y="12" rx="1.5"/><rect width="7" height="5" x="3" y="16" rx="1.5"/></svg><span>대시보드</span></a>
         <a href="#dongs" data-view="dongs"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M12 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/></svg><span>동별 분석</span></a>
         <a href="#news" data-view="news"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg><span>지역 소식</span></a>
+        <a href="#guestbook" data-view="guestbook"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span>방명록</span></a>
         <a href="#board" data-view="board"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>개선·문의</span></a>
         <a href="#guide" data-view="guide"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg><span>사용법</span></a>
         <a href="#stats" data-view="stats"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg><span>접속 통계</span><svg class="ico nav-lock" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></a>
@@ -234,6 +235,45 @@
             <div id="dt-news-list" class="news">불러오는 중…</div>
           </section>
         </div>
+      </section>
+
+      <!-- ===== 방명록 (글은 PC 서버에만 저장, 터널로 읽고 쓴다) ===== -->
+      <section class="view" data-view="guestbook" hidden>
+        <section class="card gb-write">
+          <div class="table-head">
+            <h2>방명록 남기기</h2>
+            <span class="dates">누구나 볼 수 있는 공개 글입니다</span>
+          </div>
+          <form id="gb-form" novalidate>
+            <div class="field">
+              <label for="gb-text">내용</label>
+              <textarea id="gb-text" rows="4" maxlength="500" required placeholder="이웃에게 인사나 응원 한마디를 남겨 주세요."></textarea>
+              <span class="gb-count" id="gb-count">0 / 500</span>
+            </div>
+            <div class="contact-row">
+              <div class="field grow">
+                <label for="gb-name">닉네임</label>
+                <input type="text" id="gb-name" maxlength="20" autocomplete="nickname" placeholder="선택사항 (비우면 익명)" />
+              </div>
+              <div class="field grow">
+                <label for="gb-pw">삭제용 비밀번호</label>
+                <input type="password" id="gb-pw" maxlength="20" autocomplete="new-password" placeholder="4자 이상" required />
+              </div>
+            </div>
+            <input type="text" id="gb-website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="contact-actions">
+              <button type="submit" class="btn primary" id="gb-send">남기기</button>
+            </div>
+          </form>
+          <p class="hint">비밀번호는 내 글을 지울 때 씁니다. 욕설·광고·개인정보가 담긴 글은 관리자가 지울 수 있습니다.</p>
+        </section>
+        <section class="card">
+          <div class="table-head">
+            <h2>방명록 <span class="sub-label" id="gb-total"></span></h2>
+            <button type="button" class="btn" id="gb-reload">새로 고침</button>
+          </div>
+          <ul class="gb-list" id="gb-list"></ul>
+        </section>
       </section>
 
       <!-- ===== 개선·문의 (메일로만 보내고 저장하지 않음) ===== -->

@@ -10,6 +10,7 @@ const { fetchSaleAndReal, aggregateByPyeong } = require("./naver");
 const { fetchNews, TOPICS: NEWS_TOPICS } = require("./news");
 const { updateAnalysis, loadAnalysis } = require("./analysis");
 const stats = require("./stats");
+const guestbook = require("./guestbook");
 const { updateMolit, loadMolit } = require("./molit");
 const { updateHogangnono, loadHogangnono, fetchHogangnonoDeals, mergeHogangnonoDeals } = require("./hogangnono");
 
@@ -780,7 +781,7 @@ const server = http.createServer(async (req, res) => {
   const url = req.url.split("?")[0];
 
   // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
-  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence", "/api/dong-override"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
+  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence", "/api/dong-override", "/api/guestbook", "/api/guestbook/delete"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
     res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Vary", "Origin");
     if (req.method === "OPTIONS") {
@@ -884,6 +885,28 @@ const server = http.createServer(async (req, res) => {
       if (denied) return send(res, denied.code, { error: denied.error, auth: denied.code === 401 });
     }
     return send(res, 200, stats.summary(30));
+  }
+
+  // 방명록 — 목록·글쓰기·지우기(글 비밀번호 또는 관리자 비밀번호)
+  if (url === "/api/guestbook" && req.method === "GET") {
+    return send(res, 200, guestbook.list());
+  }
+  if (url === "/api/guestbook" && req.method === "POST") {
+    const r = guestbook.post(await readJsonLimited(req, 8192), req.headers["cf-connecting-ip"] || req.socket.remoteAddress || "");
+    return send(res, r.code, r.body);
+  }
+  if (url === "/api/guestbook/delete" && req.method === "POST") {
+    const body = await readJsonLimited(req, 2048);
+    if (!body || !body.id) return send(res, 400, { error: "요청 형식이 올바르지 않습니다." });
+    // 글 비밀번호가 틀리면 관리자 비밀번호로 확인한다(틀린 횟수 제한도 함께 걸린다)
+    let r = guestbook.remove(String(body.id), body.pw, isLocal(req));
+    if (!r) {
+      req.headers["x-refresh-password"] = String(body.pw || "");
+      const denied = checkRefreshPassword(req);
+      if (denied) return send(res, denied.code === 503 ? 401 : denied.code, { error: denied.code === 503 ? "비밀번호가 맞지 않습니다." : denied.error });
+      r = guestbook.remove(String(body.id), "", true);
+    }
+    return send(res, r.code, r.body);
   }
 
   // 개선·문의 글 → 메일 발송(저장하지 않음)
