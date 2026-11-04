@@ -67,15 +67,19 @@ function list() {
   const all = load();
   return {
     total: all.length,
-    list: all.slice(-LIST_MAX).reverse().map(({ id, name, text, at, hue }) => ({ id, name, text, at, hue })),
+    list: all.slice(-LIST_MAX).reverse().map(({ id, name, text, at, hue, dev }) => ({ id, name, text, at, hue, dev: !!dev })),
   };
 }
 
-async function post(body, ip) {
+// dev: 관리자(PC 에서 직접 또는 관리자 비밀번호)가 쓴 글 — '개발자' 표시가 붙는다
+async function post(body, ip, { dev = false } = {}) {
   if (!body) return { code: 400, body: { error: "요청 형식이 올바르지 않습니다." } };
   if (body.website) return { code: 200, body: { ok: true, ...list() } }; // 스팸 봇용 숨은 칸
   const clean = (s, n) => String(s || "").replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "").trim().slice(0, n);
-  const name = clean(body.name, NAME_MAX).replace(/\s+/g, " ") || "익명";
+  const name = clean(body.name, NAME_MAX).replace(/\s+/g, " ") || (dev ? "개발자" : "익명");
+  if (!dev && /개발자|관리자|운영자|admin|developer/i.test(name.replace(/\s/g, ""))) {
+    return { code: 400, body: { error: "개발자·관리자로 오해할 수 있는 닉네임은 쓸 수 없습니다." } };
+  }
   const text = clean(body.text, TEXT_MAX).replace(/\n{3,}/g, "\n\n");
   const pw = String(body.pw || "");
   if (!text) return { code: 400, body: { error: "내용을 입력해 주세요." } };
@@ -99,7 +103,7 @@ async function post(body, ip) {
   const all = load();
   // 같은 곳에서 쓴 글은 같은 색 — IP 자체는 저장하지 않는다
   const hue = parseInt(crypto.createHash("sha256").update("gb|" + ip).digest("hex").slice(0, 4), 16) % 360;
-  all.push({ id, name, text, at: new Date().toISOString(), hue, pw: hash(id, pw) });
+  all.push({ id, name, text, at: new Date().toISOString(), hue, pw: hash(id, pw), ...(dev ? { dev: true } : {}) });
   save(all);
   lastPost.set(ip, Date.now());
   return { code: 200, body: { ok: true, id, ...list() } };
