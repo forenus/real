@@ -827,7 +827,7 @@ function renderKpis(state) {
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
-const VIEWS = ["dashboard", "dongs", "news", "board", "guide", "stats", "settings"];
+const VIEWS = ["dashboard", "dongs", "news", "guestbook", "board", "guide", "stats", "settings"];
 // 화면 대신 대시보드 안의 카드로 가는 주소(#deals → 대시보드의 실거래 목록)
 const SECTIONS = { deals: "dashboard" };
 let curView = "dashboard";
@@ -847,6 +847,7 @@ function showView() {
   curView = v;
   if (v === "stats") loadStats();
   else trackHit(v);
+  if (v === "guestbook") loadGuestbook();
   pingPresence();
 }
 window.addEventListener("hashchange", () => { showView(); redrawCharts(); });
@@ -931,6 +932,94 @@ $("contact-form").addEventListener("submit", async (e) => {
     setStatus(e2.message, "error");
   } finally {
     btn.disabled = false; btn.textContent = "보내기";
+  }
+});
+
+// ---------- 방명록 ----------
+// 글은 PC 서버(guestbook.json)에만 저장된다. 공개 페이지는 터널(collectUrl)로 읽고 쓴다.
+const gbBase = () => (STATIC ? ((staticData && staticData.collectUrl) || "").replace(/\/$/, "") : "");
+let gbLoading = false;
+function gbTime(iso) {
+  const t = new Date(iso);
+  const s = (Date.now() - t) / 1000;
+  if (s < 60) return "방금 전";
+  if (s < 3600) return `${Math.floor(s / 60)}분 전`;
+  if (s < 86400) return `${Math.floor(s / 3600)}시간 전`;
+  if (s < 86400 * 7) return `${Math.floor(s / 86400)}일 전`;
+  return t.toLocaleDateString("ko-KR", { year: "numeric", month: "long", day: "numeric" });
+}
+function renderGuestbook(r) {
+  $("gb-total").textContent = r.total ? `${r.total}개` : "";
+  $("gb-list").innerHTML = r.list.length
+    ? r.list.map((x) =>
+      `<li class="gb-item"><span class="gb-avatar" style="--h:${Number(x.hue) || 0}" aria-hidden="true">${esc([...x.name][0] || "?")}</span>` +
+      `<div class="gb-body"><div class="gb-meta"><b>${esc(x.name)}</b><time datetime="${esc(x.at)}" title="${esc(new Date(x.at).toLocaleString("ko-KR"))}">${gbTime(x.at)}</time>` +
+      `<button type="button" class="gb-del" data-id="${esc(x.id)}" aria-label="${esc(x.name)}님의 글 지우기">지우기</button></div>` +
+      `<p class="gb-text">${esc(x.text)}</p></div></li>`).join("")
+    : `<li class="gb-empty">아직 글이 없습니다. 첫 인사를 남겨 주세요.</li>`;
+}
+async function gbFetch(path, opts) {
+  if (STATIC && !gbBase()) throw new Error("지금은 PC 서버가 꺼져 있어 방명록을 열 수 없습니다. 잠시 후 다시 시도해 주세요.");
+  let res;
+  try { res = await fetch(gbBase() + path, opts); }
+  catch { throw new Error("PC 서버에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요."); }
+  let r;
+  try { r = await res.json(); } catch { throw new Error(`서버 응답 오류 (HTTP ${res.status})`); }
+  return r;
+}
+async function loadGuestbook() {
+  if (STATIC && !staticData) { $("gb-list").innerHTML = `<li class="gb-empty">불러오는 중…</li>`; return; } // data.json 을 받은 뒤 다시 부른다
+  if (gbLoading) return;
+  gbLoading = true;
+  if (!$("gb-list").children.length) $("gb-list").innerHTML = `<li class="gb-empty">불러오는 중…</li>`;
+  try {
+    const r = await gbFetch("/api/guestbook");
+    if (r.error) throw new Error(r.error);
+    renderGuestbook(r);
+  } catch (e) {
+    $("gb-list").innerHTML = `<li class="gb-empty">${esc(e.message)}</li>`;
+  } finally { gbLoading = false; }
+}
+$("gb-reload").addEventListener("click", loadGuestbook);
+$("gb-text").addEventListener("input", () => { $("gb-count").textContent = `${$("gb-text").value.length} / 500`; });
+$("gb-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const text = $("gb-text").value.trim();
+  const pw = $("gb-pw").value;
+  if (!text) return setStatus("내용을 입력해 주세요.", "error");
+  if (pw.length < 4) return setStatus("삭제용 비밀번호를 4자 이상 입력해 주세요.", "error");
+  const btn = $("gb-send");
+  btn.disabled = true; btn.textContent = "남기는 중…";
+  try {
+    const r = await gbFetch("/api/guestbook", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, pw, name: $("gb-name").value.trim(), website: $("gb-website").value }),
+    });
+    if (r.error) throw new Error(r.error);
+    renderGuestbook(r);
+    $("gb-text").value = ""; $("gb-pw").value = ""; $("gb-count").textContent = "0 / 500";
+    setStatus("방명록에 글을 남겼습니다.", "ok");
+  } catch (e2) {
+    setStatus(e2.message, "error");
+  } finally {
+    btn.disabled = false; btn.textContent = "남기기";
+  }
+});
+$("gb-list").addEventListener("click", async (e) => {
+  const b = e.target.closest(".gb-del");
+  if (!b) return;
+  let msg = "글을 쓸 때 정한 비밀번호를 입력해 주세요. 관리자는 관리자 비밀번호로 지울 수 있습니다.";
+  for (;;) {
+    const pw = STATIC ? await askPassword(msg, { title: "글 지우기", button: "지우기", numeric: false }) : (confirm("이 글을 지울까요?") ? "local" : "");
+    if (!pw) return; // 창을 닫음 → 취소
+    let r;
+    try {
+      r = await gbFetch("/api/guestbook/delete", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: b.dataset.id, pw }) });
+    } catch (e2) { return setStatus(e2.message, "error"); }
+    if (r.list) renderGuestbook(r);
+    if (r.ok) return setStatus("글을 지웠습니다.", "ok");
+    if (r.error && /맞지 않습니다/.test(r.error)) { msg = "비밀번호가 맞지 않습니다. 다시 입력해 주세요."; continue; }
+    return setStatus(r.error || "지우지 못했습니다.", "error");
   }
 });
 
@@ -1218,7 +1307,7 @@ $("save-config").addEventListener("click", async () => {
 
 // ---------- 접속 기록 · 접속 통계 (관리자) ----------
 // 공개 페이지에서만 기록한다(PC에서 연 화면 제외). 방문자 번호는 이 브라우저에 한 번 만들어 둔 무작위 값.
-const VIEW_LABELS = { dashboard: "대시보드", dongs: "동별 분석", news: "지역 소식", board: "개선·문의", guide: "사용법" };
+const VIEW_LABELS = { dashboard: "대시보드", dongs: "동별 분석", news: "지역 소식", guestbook: "방명록", board: "개선·문의", guide: "사용법" };
 function visitorId() {
   try {
     let v = localStorage.getItem("vid");
@@ -1409,7 +1498,7 @@ const PW_KEY = "refreshPw";
 function savedPw() { try { return sessionStorage.getItem(PW_KEY) || ""; } catch { return ""; } }
 function savePw(v) { try { if (v) sessionStorage.setItem(PW_KEY, v); else sessionStorage.removeItem(PW_KEY); } catch {} }
 let pwResolve = null; // 비밀번호 창이 열려 있을 때의 응답 함수
-function askPassword(msg, { title = "수동 수집 로그인", button = "로그인 후 수집" } = {}) {
+function askPassword(msg, { title = "수동 수집 로그인", button = "로그인 후 수집", numeric = true } = {}) {
   return new Promise((resolve) => {
     pwResolve = resolve;
     $("modal-content").innerHTML =
@@ -1417,7 +1506,7 @@ function askPassword(msg, { title = "수동 수집 로그인", button = "로그�
       `<form id="pw-form" class="pw-form">` +
       `<p class="chg-dates">${esc(msg || "수동 수집은 비밀번호가 필요합니다. 평소에는 30분마다 자동으로 수집됩니다.")}</p>` +
       `<div class="field"><label for="pw-input">비밀번호</label>` +
-      `<input type="password" id="pw-input" inputmode="numeric" autocomplete="current-password" required /></div>` +
+      `<input type="password" id="pw-input"${numeric ? ` inputmode="numeric"` : ""} autocomplete="current-password" required /></div>` +
       `<div class="contact-actions"><button type="submit" class="btn primary">${esc(button)}</button></div>` +
       `</form>`;
     $("modal").hidden = false;
@@ -1524,6 +1613,7 @@ if (STATIC) {
   load().then(() => {
     if (!staticData || !staticData.collectUrl) $("refresh").style.display = "none";
     trackHit(curView); // 첫 화면 기록은 data.json(collectUrl)을 받은 뒤에
+    if (curView === "guestbook") loadGuestbook();
     startPresence();
     const t = staticData && staticData.generatedAt ? new Date(staticData.generatedAt).toLocaleString("ko-KR") : "";
     $("subtitle").textContent = `매매 매물만 집계합니다. 30분마다 자동 갱신 · 마지막 갱신 ${t}`;
