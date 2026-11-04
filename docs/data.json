@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T09:32:59.963Z",
+  "generatedAt": "2026-11-04T10:03:04.451Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15733,15 +15733,15 @@
       ]
     },
     "todayDate": "2026-11-04",
-    "lastFetchedAt": "2026-11-04T09:32:48.621Z",
+    "lastFetchedAt": "2026-11-04T10:02:49.774Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 190,
-      "recent24h": 1100,
-      "frequent": 109,
-      "new": 47,
-      "fetchedAt": "2026-11-04T09:32:53.107Z"
+      "realtime": 185,
+      "recent24h": 1096,
+      "frequent": 105,
+      "new": 38,
+      "fetchedAt": "2026-11-04T10:02:58.278Z"
     },
     "prevDate": "2026-11-03",
     "rows": [
@@ -17524,10 +17524,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65건대에서 **꾸준히 증가해 30일 최고치인 85건**을 기록했습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 6건으로 30일 동안 4~8건 사이에서 소폭 오르내리며 **횡보하는 모습**입니다.",
-      "real": "33평 실거래는 최근 30일 5건, 평균 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 10월 28일 15층이 **10억으로 역대 최고가**를 기록했지만, 같은 달 2층은 8억 2,000만 원에 거래되는 등 층별 차이가 컸습니다. 25평은 최근 30일 거래가 없고 9월 7억 2,000만 원 1건이 마지막 거래여서, 거래가 적어 평균 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘어 30일 최고치를 기록했으며, 최근 12주 흐름도 65건 안팎에서 **85건까지 꾸준히 증가**했습니다. 매도 물량이 점차 쌓이고 있는 것으로 보입니다. 25평은 6건으로 30일간 4~8건 사이에서 **소폭 등락하며 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 2,000만 원에 거래되어 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 15층이 **10억 원으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 **상승 흐름이 뚜렷합니다**. 25평은 최근 30일 거래가 없고 9월 7억 2,000만 원 1건이 마지막이어서, 거래가 적어 평균만으로 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-04T09:32:58.981Z"
+      "generatedAt": "2026-11-04T10:03:03.515Z"
     },
     "history": [
       {
@@ -21308,7 +21308,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-04T09:32:59.955Z",
+    "fetchedAt": "2026-11-04T10:03:04.450Z",
     "today": "2026-11-04",
     "items": [
       {
@@ -21316,6 +21316,13 @@
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
         "source": "서울경제TV",
         "time": "2026-11-04T09:30:04.000Z",
+        "isToday": true
+      },
+      {
+        "title": "동탄 트램 우선시공분 착수…\"17년 기다림 끝에 첫 삽\"",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIVkFuN3VYUzU5WUZNMDd5clJIUF96eXdqaGQxTFc4bE5SamNNb05nbUJrNEVpbDR3YnUzcWRWcnJSWnFvcXBscHFuOEpueEdEMkwtSU0xMWQteE9kQVVLSVl4TFhjd0RUSUJn?oc=5",
+        "source": "철도경제신문",
+        "time": "2026-11-04T09:28:35.000Z",
         "isToday": true
       },
       {
@@ -21373,18 +21380,11 @@
         "source": "뉴데일리 경기",
         "time": "2026-11-03T02:50:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "[사설] 동탄트램, 17년 기다림 끝에 첫발",
-        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1OU0Z0WVhtWEpFMldWSm90eGRPTzJSUUNwUlVMRFpldGNFV29oSDhJakxiM21lYTROQkNDbW5zeGhnRjQ?oc=5",
-        "source": "수원화성신문",
-        "time": "2026-11-03T01:46:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-04T09:32:59.961Z",
+    "fetchedAt": "2026-11-04T10:03:04.264Z",
     "today": "2026-11-04",
     "items": [
       {
@@ -21416,20 +21416,6 @@
         "isToday": true
       },
       {
-        "title": "원광종합병원 박천권 관리이사, 공공의료 기여 공로 화성동탄경찰서장 표창 수상",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9zY2NlaGxqQ3dkLW5OVm1OOURJSmFPck51RFpfM2QyS2ZMdUJ1aGlVYUpRelpRcXBQMVhXOGhhVkhoUEdzbzRINUttSF9Xd1QtTHhvZHp3Q0Z5YlB0aUVWbTFwWC14NGRucm15dnAtYlM?oc=5",
-        "source": "화성시민신문",
-        "time": "2026-11-02T00:41:31.000Z",
-        "isToday": false
-      },
-      {
-        "title": "문봉균 화성동탄경찰서장, 일상을 지키는 사람이 도시를 지킨다",
-        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUbE12S1dfZXBrWVdBSzhqQ2YweHJhcTI3UGRqWnhEamxuOXowbGNtWVBtU0tCRmViTEFQTDFScnJJQXBJaHpYQg?oc=5",
-        "source": "얼리어답터뉴스",
-        "time": "2026-10-30T13:57:47.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성동탄경찰서, 북한이탈주민 100명 독감 예방접종 무료 지원",
         "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
         "source": "화성신문",
@@ -21437,24 +21423,38 @@
         "isToday": false
       },
       {
-        "title": "6월 GTX-A 전 구간 개통 위한 사전점검 착수‘",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZMjBiUE45ZFI4Z3RGS2V5bTZ1dWJISkhhTnpWUDJ5ZmE1UzZ2VXBwODBpVF9SSjVSbXBxbi1ubTRWQjVoZ3V6TDJIeXdsdjRlRnVNQVdYTnJKX193cE4tYU1CeGREMW9McXBfV0gtbkc?oc=5",
-        "source": "데일리경기신문",
-        "time": "2026-10-29T07:00:00.000Z",
+        "title": "서울 상승폭 둔화, 화성 동탄/병점 집값이 이끌었다!",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
+        "source": "KB Think",
+        "time": "2026-10-27T08:06:34.000Z",
         "isToday": false
       },
       {
-        "title": "화성동탄중앙도서관, 하반기 문화교실로 독서·창작 경험 확대",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5N0Vsa1BNWHhOLTE3NWFDb2hqdi1ZTkFtTzZZaFNodndTcEtSZDBVbkFqcE5hYi1jN2dPeVRKN05WOHpqMVRBczVySXljd2VadDQ3bjFBTVN1UmhoX01yaGphS01DSzJDMnlxMEQtZ3l0UQ?oc=5",
-        "source": "웹이코노미",
-        "time": "2026-10-28T00:20:50.000Z",
+        "title": "[2026 국정감사] 동탄역 이용수요 '2만 8,000명' 해명 오류…철도공단 국감서 인정",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd0lyeGNkY0JFWHk3SUp1MkhaSktqWHEtVEd6LXROSVJWdFNEbVpvYzlER0p4cHFNcEMyVTZTRlR0TUhHcElNZXV1UkwzcnAtTlJnWE5uYmI4TjZNWU9sVmhRRU44akJaalJrajlrbEI?oc=5",
+        "source": "한국철도일보",
+        "time": "2026-10-26T07:38:59.000Z",
         "isToday": false
       },
       {
-        "title": "화성동탄중앙도서관, 배움과 창작의 즐거움 더하는 하반기 문화교실 운영",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1NQmZkMG0yb1lTdERCbjJXaEhndmEtSDNMUVJ6dThhek05UUNBVVBKbmtLTFVUWmV0UVloZ3ZVY3J1SWpUWHNSMEYzUk9HaDQ?oc=5",
-        "source": "화성인터넷신문",
-        "time": "2026-10-27T22:10:00.000Z",
+        "title": "'사라진 달빛을 찾아서'…화성 동탄호수공원서 31일 루나빛축제",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Pd1VQN0p1UWk3ZVdISHNPTUhUQy1ibmdrMTJPS2NXMzRjRmcyeEVEd0VuNEM2ZjdIUkxVZ2ZuLWZubzIzcXFqbUI0S3BBTlJ3N1lnb3VjeERyQ2fSAWBBVV95cUxOY2p2VWk0aC1Xc3FnbUxHcHJwTG42ZFFCY2lKa29yNnl1V0ZqSTVWT2piaVh5UTkwVzRWTzlKZ2RaSkFZU19QY0lzb1lUVDVUOVZuWkVnSmhrUFh5VVYtdlM?oc=5",
+        "source": "연합뉴스",
+        "time": "2026-10-26T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄호수공원서 오는 31일 루나빛축제",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyeGV5Zkd3bURaNm13ZTExV2QxcmlNWmRNTWQwV0lIVzNLYV9LQjVySVRfS1VFVGRGYXg4QzFUaGpIOXRuRDdKSndmT2lJby1rQUdobmJsdTRtb3c?oc=5",
+        "source": "KBS 뉴스",
+        "time": "2026-10-26T06:12:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성동탄경찰서, 북한이탈주민 무료 독감 예방접종 지원",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqVURRYnpCVkdSUzJscHE0cWVxOURnYzl2Z0lwSHlpQlBLTnpOZnFrZS1yRERXeXktT3YyMmNFTWVJTVlPYUxLaUlWTHN2QTJuejduMTRTa1lJbEQ2Q0QzRXQxaGRDbU04clM4bW9mbw?oc=5",
+        "source": "기호일보",
+        "time": "2026-10-26T04:49:00.000Z",
         "isToday": false
       }
     ]
