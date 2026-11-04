@@ -952,8 +952,8 @@ function renderGuestbook(r) {
   $("gb-total").textContent = r.total ? `${r.total}개` : "";
   $("gb-list").innerHTML = r.list.length
     ? r.list.map((x) =>
-      `<li class="gb-item"><span class="gb-avatar" style="--h:${Number(x.hue) || 0}" aria-hidden="true">${esc([...x.name][0] || "?")}</span>` +
-      `<div class="gb-body"><div class="gb-meta"><b>${esc(x.name)}</b><time datetime="${esc(x.at)}" title="${esc(new Date(x.at).toLocaleString("ko-KR"))}">${gbTime(x.at)}</time>` +
+      `<li class="gb-item${x.dev ? " is-dev" : ""}"><span class="gb-avatar" style="--h:${Number(x.hue) || 0}" aria-hidden="true">${esc([...x.name][0] || "?")}</span>` +
+      `<div class="gb-body"><div class="gb-meta"><b>${esc(x.name)}</b>${x.dev ? `<span class="gb-dev">개발자</span>` : ""}<time datetime="${esc(x.at)}" title="${esc(new Date(x.at).toLocaleString("ko-KR"))}">${gbTime(x.at)}</time>` +
       `<button type="button" class="gb-del" data-id="${esc(x.id)}" aria-label="${esc(x.name)}님의 글 지우기">지우기</button></div>` +
       `<p class="gb-text">${esc(x.text)}</p></div></li>`).join("")
     : `<li class="gb-empty">아직 글이 없습니다. 첫 인사를 남겨 주세요.</li>`;
@@ -991,8 +991,11 @@ $("gb-form").addEventListener("submit", async (e) => {
   const btn = $("gb-send");
   btn.disabled = true; btn.textContent = "AI 검사 중…";
   try {
+    // 관리자로 로그인한 탭(수동 수집 등)에서 쓰면 '개발자' 글로 남는다
+    const headers = { "Content-Type": "application/json" };
+    if (STATIC && savedPw()) headers["x-refresh-password"] = savedPw();
     const r = await gbFetch("/api/guestbook", {
-      method: "POST", headers: { "Content-Type": "application/json" },
+      method: "POST", headers,
       body: JSON.stringify({ text, pw, name: $("gb-name").value.trim(), website: $("gb-website").value }),
     });
     if (r.error) throw new Error(r.error);
