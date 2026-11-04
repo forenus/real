@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T09:03:00.745Z",
+  "generatedAt": "2026-11-04T09:32:59.963Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15733,15 +15733,15 @@
       ]
     },
     "todayDate": "2026-11-04",
-    "lastFetchedAt": "2026-11-04T09:02:46.645Z",
+    "lastFetchedAt": "2026-11-04T09:32:48.621Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 197,
-      "recent24h": 1115,
-      "frequent": 113,
-      "new": 44,
-      "fetchedAt": "2026-11-04T09:02:55.535Z"
+      "realtime": 190,
+      "recent24h": 1100,
+      "frequent": 109,
+      "new": 47,
+      "fetchedAt": "2026-11-04T09:32:53.107Z"
     },
     "prevDate": "2026-11-03",
     "rows": [
@@ -17524,10 +17524,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65건 안팎에서 **85건으로 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 30일간 4~8건 사이에서 **소폭 등락하며 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 2,000만 원에 거래되어 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 25평은 최근 30일 거래가 없고 9월 6일 7억 2,000만 원 1건이 마지막이어서, 거래가 적어 평균 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65건대에서 **꾸준히 증가해 30일 최고치인 85건**을 기록했습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 6건으로 30일 동안 4~8건 사이에서 소폭 오르내리며 **횡보하는 모습**입니다.",
+      "real": "33평 실거래는 최근 30일 5건, 평균 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 10월 28일 15층이 **10억으로 역대 최고가**를 기록했지만, 같은 달 2층은 8억 2,000만 원에 거래되는 등 층별 차이가 컸습니다. 25평은 최근 30일 거래가 없고 9월 7억 2,000만 원 1건이 마지막 거래여서, 거래가 적어 평균 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-04T09:03:00.603Z"
+      "generatedAt": "2026-11-04T09:32:58.981Z"
     },
     "history": [
       {
@@ -18718,6 +18718,38 @@
         },
         {
           "before": {
+            "no": "2659173176",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "9/15",
+            "dir": "남서향",
+            "confirm": "20261102",
+            "desc": "84A 치동천변 전면 로얄동 전세안고",
+            "bldg": "486동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 142,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2659726509",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "9/15",
+            "dir": "남향",
+            "confirm": "20261104",
+            "desc": "갭투자 치동천 최고뷰  로얄동 로얄층  기본형이며  전자계약가능",
+            "bldg": "486동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 143,
+            "beforeStart": true
+          }
+        },
+        {
+          "before": {
             "no": "2658710620",
             "pyeong": 33,
             "excl": 84,
@@ -19861,6 +19893,21 @@
           "beforeStart": true
         },
         {
+          "no": "2659726509",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "9/15",
+          "dir": "남향",
+          "confirm": "20261104",
+          "desc": "갭투자 치동천 최고뷰  로얄동 로얄층  기본형이며  전자계약가능",
+          "bldg": "486동",
+          "realtor": "포레너스유성공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 143,
+          "beforeStart": true
+        },
+        {
           "no": "2659458976",
           "pyeong": 33,
           "excl": 84,
@@ -19886,21 +19933,6 @@
           "desc": "전자계약가능 84B 남서향 1년전 강마루 싱크대 조명 실링팬 디아망벽지 ",
           "bldg": "472동",
           "realtor": "포레탑공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 143,
-          "beforeStart": true
-        },
-        {
-          "no": "2659173176",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "9/15",
-          "dir": "남서향",
-          "confirm": "20261102",
-          "desc": "84A 치동천변 전면 로얄동 전세안고",
-          "bldg": "486동",
-          "realtor": "아이공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 143,
           "beforeStart": true
@@ -21276,14 +21308,21 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-04T08:33:11.165Z",
+    "fetchedAt": "2026-11-04T09:32:59.955Z",
     "today": "2026-11-04",
     "items": [
       {
+        "title": "경기도의회, 17년 기다린 동탄트램…남은 과제는 적기 개통",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
+        "source": "서울경제TV",
+        "time": "2026-11-04T09:30:04.000Z",
+        "isToday": true
+      },
+      {
         "title": "신미숙 경기도의원, “경기도가 경기남부 광역교통망 구축 이끌어야”… 동탄트램 우선시공 착수 환영",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9PUkFkZE9EbktuN2RqbEFRdldsVzViUkx3VHkwRDRmbmF5NWVCcnRhU243VndDVlR5dXFLZ3F5UlZvRE1jX2RNQXB1bFpzaC1oRzdfdk05VnE3RHJZS1pPQlpNZTVpZw?oc=5",
-        "source": "화성저널",
-        "time": "2026-11-04T08:17:32.000Z",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1RdU9WWG5CVDBJMlJfRVRYY012Ulh1LVJSc3ZYVjZVSWZ3VU1JQ3k0WlZITE5xcWEzSVhQSHk2d3JPa0ExNVNqZXMtVDkyYzM4ZzFDQ2x6ckJSbXUzMkJLbUlNc0ZMVmxSS2lJbXlHUQ?oc=5",
+        "source": "뉴스파이어",
+        "time": "2026-11-04T08:04:38.000Z",
         "isToday": true
       },
       {
@@ -21341,18 +21380,11 @@
         "source": "수원화성신문",
         "time": "2026-11-03T01:46:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "화성 ‘동탄 트램’ 마침내 첫 삽… 우선시공분 착수",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE82a2c1MmRvZ3dnaGs0bHN2VnJPSUZiYVA0dDNFQXNIeV9SYkdjQ3ZGdjl0dklFOHo5bGNleFZtSjVycHVyazRJYVVjVjlEUFZCdzZMOFEzNk1JSEhyNEpXeXpWSE9hSWxxbkE?oc=5",
-        "source": "경인경제",
-        "time": "2026-11-03T01:08:56.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-04T08:33:11.217Z",
+    "fetchedAt": "2026-11-04T09:32:59.961Z",
     "today": "2026-11-04",
     "items": [
       {
@@ -21384,17 +21416,17 @@
         "isToday": true
       },
       {
-        "title": "문봉균 화성동탄경찰서장, 일상을 지키는 사람이 도시를 지킨다",
-        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUbE12S1dfZXBrWVdBSzhqQ2YweHJhcTI3UGRqWnhEamxuOXowbGNtWVBtU0tCRmViTEFQTDFScnJJQXBJaHpYQg?oc=5",
-        "source": "얼리어답터뉴스",
-        "time": "2026-11-02T14:19:03.000Z",
-        "isToday": false
-      },
-      {
         "title": "원광종합병원 박천권 관리이사, 공공의료 기여 공로 화성동탄경찰서장 표창 수상",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9zY2NlaGxqQ3dkLW5OVm1OOURJSmFPck51RFpfM2QyS2ZMdUJ1aGlVYUpRelpRcXBQMVhXOGhhVkhoUEdzbzRINUttSF9Xd1QtTHhvZHp3Q0Z5YlB0aUVWbTFwWC14NGRucm15dnAtYlM?oc=5",
         "source": "화성시민신문",
         "time": "2026-11-02T00:41:31.000Z",
+        "isToday": false
+      },
+      {
+        "title": "문봉균 화성동탄경찰서장, 일상을 지키는 사람이 도시를 지킨다",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUbE12S1dfZXBrWVdBSzhqQ2YweHJhcTI3UGRqWnhEamxuOXowbGNtWVBtU0tCRmViTEFQTDFScnJJQXBJaHpYQg?oc=5",
+        "source": "얼리어답터뉴스",
+        "time": "2026-10-30T13:57:47.000Z",
         "isToday": false
       },
       {
