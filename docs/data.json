@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T04:02:50.133Z",
+  "generatedAt": "2026-11-04T04:32:55.307Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15733,15 +15733,15 @@
       ]
     },
     "todayDate": "2026-11-04",
-    "lastFetchedAt": "2026-11-04T04:02:38.859Z",
+    "lastFetchedAt": "2026-11-04T04:32:36.895Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 391,
+      "realtime": 367,
       "recent24h": 1106,
-      "frequent": 267,
-      "new": 47,
-      "fetchedAt": "2026-11-04T04:02:43.488Z"
+      "frequent": 253,
+      "new": 43,
+      "fetchedAt": "2026-11-04T04:32:48.127Z"
     },
     "prevDate": "2026-11-03",
     "rows": [
@@ -17524,10 +17524,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65건 안팎에서 **85건까지 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 4~8건 사이에서 **소폭 등락하며 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 15층이 **10억 원에 거래되며 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,600만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 25평은 최근 30일 거래가 없고, 9월 7억 2,000만 원 1건이 최고가여서 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65건 안팎에서 **85건까지 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 최근 4~8건 사이에서 **소폭 오르내리는 횡보**를 이어가고 있습니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 2,000만 원에 거래돼 그전 30일(8억 7,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 10월 28일 15층이 **10억 원으로 역대 최고**를 기록했으며, 같은 시기 2층은 8억 2,000만 원에 거래돼 층에 따라 가격 차이가 있었습니다. 25평은 최근 30일 거래가 없고 마지막 거래가 9월 7억 2,000만 원 1건뿐이어서, 이 가격만으로 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-04T04:02:48.883Z"
+      "generatedAt": "2026-11-04T04:32:54.040Z"
     },
     "history": [
       {
@@ -21086,7 +21086,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-04T04:02:50.132Z",
+    "fetchedAt": "2026-11-04T04:32:55.307Z",
     "today": "2026-11-04",
     "items": [
       {
@@ -21118,10 +21118,24 @@
         "isToday": false
       },
       {
+        "title": "화성특례시, 동탄 트램 우선시공 착수…본공사 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOblVjV0hhekJ4RWIzV3JlMENJNElZMlFLSHlFb1phWEx2XzBWbjJsbHVzbnpfajRSVDhNS3VhcU96MTRzRFd3ZVVneUFkQjJiai1PVU1WS2g3SWRBTUhQZEdPQVh5X0NnTi1nRFp3Z9IBc0FVX3lxTE9NdW0wV0ZtYnNLTjBiQ0tMTEttazR3dElfdzRFWTdLRThPOTJJaXVjcmJMeE1jenFPeXhKUTBzcVFHUENRaFpBcXktMXNWSm9xR2NDaElpeWhmWTg0UUpidWRCWGYtVllVcGJXaTN2MGRGRlU?oc=5",
+        "source": "뉴스웍스",
+        "time": "2026-11-03T06:57:37.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성시, 동탄트램 첫 삽…2031년 말 개통 목표",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAySER0dUU5QWVTeWYwUG5iN2gtUk5tTjNKNXZuUmcwZ2wxTkV1WlIwQ2IxV1hlb0RrSnRlaDdWNkVpdEttdm9WekVVY0hHT2k3TFVzQWdhRDgtNWQ4THNKYllEWUN2VTExMktsaEdJdG4?oc=5",
         "source": "SK브로드밴드 회사소개",
         "time": "2026-11-03T04:50:45.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄 트램, 17년 기다림 끝 본격 추진",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE16bzNuTy1nWENkUEJPakVNQ1VlNG16Wkxhd0otekdrWk1kYllUY20wLUNRUVY5SnlrSVFLYnZ3RkJQTUhrajNDRkFiWXZaRTQwTl84a0NoTmtIUGV1TVJHQVE4akpGTmF5NzAtZndQdEliLVBNM0RENGZFX2RJT0XSAX9BVV95cUxNem8zbk8tZ1hDZFBCT2pFTUNVZTRtelpMYXdKLXpHa1pNZGJZVGNtMC1DUVFWOUp5a0lRS2J2d0ZCUE1Ia2ozQ0ZBYll2WkU0ME5fOGtDaE5rSFBldU1SR0FROGpKRk5heTcwLWZ3UHRJYi1QTTNERDRmRV9kSU9F?oc=5",
+        "source": "뉴데일리 경기",
+        "time": "2026-11-03T02:50:00.000Z",
         "isToday": false
       },
       {
@@ -21133,36 +21147,22 @@
       },
       {
         "title": "화성 ‘동탄 트램’ 마침내 첫 삽… 우선시공분 착수",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1HVnhDalhOTjRhOGJrV1JUdENGM1dZalBHTExxT3dqdndnM0U5ckJIZEtGblpFTXlpcXlETXRfOFViVWtDdkF5Qnp5aExrVVhhckVtdy1QWHkzTVozZ3d2LTZoYUlhdHU5RDJB?oc=5",
-        "source": "서울뉴스통신",
-        "time": "2026-11-03T01:07:25.000Z",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE82a2c1MmRvZ3dnaGs0bHN2VnJPSUZiYVA0dDNFQXNIeV9SYkdjQ3ZGdjl0dklFOHo5bGNleFZtSjVycHVyazRJYVVjVjlEUFZCdzZMOFEzNk1JSEhyNEpXeXpWSE9hSWxxbkE?oc=5",
+        "source": "경인경제",
+        "time": "2026-11-03T01:08:56.000Z",
         "isToday": false
       },
       {
-        "title": "정명근“17년 긴 기다림 오랜 숙원 동탄 트램 첫 삽”",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA0VnJRR0ltMzNsVFV5dzFuVTlSS3g5ZXhwamRKQS1qUVE3aDNIVTFpX1NzUGk4dlJXbjV1bFNRZmJVNWdyYWl5QmVYdGxDUGVFWmIzZ09XeFo?oc=5",
-        "source": "스포츠서울",
-        "time": "2026-11-02T19:31:45.000Z",
-        "isToday": false
-      },
-      {
-        "title": "정명근 화성시장 “17년 기다린 동탄트램 첫 삽”…2031년 개통 목표 본격 추진",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1XdUxodUx3WGVnZVkxYlJqSm5PVFlqWk9Ia1Rvb2JwZlpJODB4UC1maTdvSjcxRTJHOE9fY0xUUnctdzhaYmxjN1d1a2w3S3JDZTFlenhwOU9IRnNIYnQyaXNLbUZlMVhBYnVQSDVn?oc=5",
-        "source": "투어코리아",
-        "time": "2026-11-02T13:37:48.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄트램 우선시공분 착수…화성시의회 “안전 확보” 당부",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1IcFFEODlQOV9xUjNQemp4WnNaeEsyY1BLUnNjQ19VZGpZaFJkSzNQVXoydnpwdkIwa2NWYkdxelNmOFk0YUFHS18zUm1DRzlINm9ZNWlmRDJ6eExEZGV4WGl3?oc=5",
-        "source": "경인미래신문",
-        "time": "2026-11-02T10:54:06.000Z",
+        "title": "[강대웅의 정문일침(頂門一鍼)] 정명근 화성특례시장, 하늘과 땅에서 화성시의 미래를 찾는다",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8wUWJNcjNEdDdvM3VNR2pPRFh0TDQwdnhidF84MWwwcWZ2azlSUmF2aW9JQ3lBYzNUX2pRRXlUQndlYllaaTJjbjhOVFpHR19ZVkZBdmxueEzSAVhBVV95cUxPMFFiTXIzRHQ3bzN1TUdqT0RYdEw0MHZ4YnRfODFsMHFmdms5UlJhdmlvSUN5QWMzVF9qUUV5VEJ3ZWJZWmkyY244TlRaR0dfWVZGQXZsbnhM?oc=5",
+        "source": "아주경제",
+        "time": "2026-11-02T20:05:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-04T04:02:49.963Z",
+    "fetchedAt": "2026-11-04T04:32:55.046Z",
     "today": "2026-11-04",
     "items": [
       {
