@@ -948,15 +948,45 @@ function gbTime(iso) {
   if (s < 86400 * 7) return `${Math.floor(s / 86400)}일 전`;
   return t.toLocaleDateString("ko-KR", { year: "numeric", month: "long", day: "numeric" });
 }
+let gbReplyOpen = ""; // 댓글 입력칸이 열린 글(다시 그려도 유지)
+let gbLast = null;
+function gbAuthor(x, kind) {
+  return `<span class="gb-avatar" style="--h:${Number(x.hue) || 0}" aria-hidden="true">${esc([...x.name][0] || "?")}</span>` +
+    `<div class="gb-body"><div class="gb-meta"><b>${esc(x.name)}</b>${x.dev ? `<span class="gb-dev">개발자</span>` : ""}` +
+    `<time datetime="${esc(x.at)}" title="${esc(new Date(x.at).toLocaleString("ko-KR"))}">${gbTime(x.at)}</time>` +
+    `<button type="button" class="gb-del" data-id="${esc(x.id)}" data-kind="${kind}" aria-label="${esc(x.name)}님의 ${kind} 지우기">지우기</button></div>` +
+    `<p class="gb-text">${esc(x.text)}</p>`;
+}
+function gbReplyForm(id) {
+  return `<form class="gb-reply-form" data-parent="${esc(id)}" novalidate>` +
+    `<textarea class="gb-r-text" rows="2" maxlength="500" aria-label="댓글 내용" placeholder="댓글을 남겨 주세요."></textarea>` +
+    `<div class="gb-r-row"><input type="text" class="gb-r-name" maxlength="20" aria-label="닉네임" placeholder="닉네임 (선택)" />` +
+    `<input type="password" class="gb-r-pw" maxlength="20" aria-label="삭제용 비밀번호" placeholder="비밀번호 4자 이상" autocomplete="new-password" />` +
+    `<button type="submit" class="btn primary gb-r-send">등록</button></div><p class="gb-r-msg" role="alert"></p></form>`;
+}
 function renderGuestbook(r) {
+  gbLast = r;
+  // 다시 그려도 쓰던 댓글은 남긴다
+  const draft = {};
+  $("gb-list").querySelectorAll(".gb-reply-form").forEach((f) => {
+    draft[f.dataset.parent] = { text: f.querySelector(".gb-r-text").value, name: f.querySelector(".gb-r-name").value, pw: f.querySelector(".gb-r-pw").value };
+  });
   $("gb-total").textContent = r.total ? `${r.total}개` : "";
   $("gb-list").innerHTML = r.list.length
-    ? r.list.map((x) =>
-      `<li class="gb-item${x.dev ? " is-dev" : ""}"><span class="gb-avatar" style="--h:${Number(x.hue) || 0}" aria-hidden="true">${esc([...x.name][0] || "?")}</span>` +
-      `<div class="gb-body"><div class="gb-meta"><b>${esc(x.name)}</b>${x.dev ? `<span class="gb-dev">개발자</span>` : ""}<time datetime="${esc(x.at)}" title="${esc(new Date(x.at).toLocaleString("ko-KR"))}">${gbTime(x.at)}</time>` +
-      `<button type="button" class="gb-del" data-id="${esc(x.id)}" aria-label="${esc(x.name)}님의 글 지우기">지우기</button></div>` +
-      `<p class="gb-text">${esc(x.text)}</p></div></li>`).join("")
+    ? r.list.map((x) => {
+      const reps = x.replies || [];
+      const open = gbReplyOpen === x.id;
+      return `<li class="gb-item${x.dev ? " is-dev" : ""}">` + gbAuthor(x, "글") +
+        `<button type="button" class="gb-reply-btn" data-id="${esc(x.id)}" aria-expanded="${open}">💬 댓글${reps.length ? ` ${reps.length}` : " 쓰기"}</button>` +
+        (reps.length ? `<ul class="gb-replies">${reps.map((y) => `<li class="gb-reply${y.dev ? " is-dev" : ""}">${gbAuthor(y, "댓글")}</div></li>`).join("")}</ul>` : "") +
+        (open ? gbReplyForm(x.id) : "") + `</div></li>`;
+    }).join("")
     : `<li class="gb-empty">아직 글이 없습니다. 첫 인사를 남겨 주세요.</li>`;
+  $("gb-list").querySelectorAll(".gb-reply-form").forEach((f) => {
+    const v = draft[f.dataset.parent];
+    if (!v) return;
+    f.querySelector(".gb-r-text").value = v.text; f.querySelector(".gb-r-name").value = v.name; f.querySelector(".gb-r-pw").value = v.pw;
+  });
 }
 async function gbFetch(path, opts) {
   if (STATIC && !gbBase()) throw new Error("지금은 PC 서버가 꺼져 있어 방명록을 열 수 없습니다. 잠시 후 다시 시도해 주세요.");
@@ -1009,20 +1039,63 @@ $("gb-form").addEventListener("submit", async (e) => {
   }
 });
 $("gb-list").addEventListener("click", async (e) => {
+  const rb = e.target.closest(".gb-reply-btn");
+  if (rb) {
+    gbReplyOpen = gbReplyOpen === rb.dataset.id ? "" : rb.dataset.id;
+    renderGuestbook(gbLast);
+    const f = $("gb-list").querySelector(`.gb-reply-form[data-parent="${CSS.escape(rb.dataset.id)}"]`);
+    if (f) {
+      if (!f.querySelector(".gb-r-name").value) f.querySelector(".gb-r-name").value = $("gb-name").value; // 위에 쓴 닉네임을 가져온다
+      f.querySelector(".gb-r-text").focus();
+    }
+    return;
+  }
   const b = e.target.closest(".gb-del");
   if (!b) return;
-  let msg = "글을 쓸 때 정한 비밀번호를 입력해 주세요. 관리자는 관리자 비밀번호로 지울 수 있습니다.";
+  const kind = b.dataset.kind || "글";
+  let msg = `${kind}을 쓸 때 정한 비밀번호를 입력해 주세요. 관리자는 관리자 비밀번호로 지울 수 있습니다.` + (kind === "글" ? " 글을 지우면 달린 댓글도 함께 지워집니다." : "");
   for (;;) {
-    const pw = STATIC ? await askPassword(msg, { title: "글 지우기", button: "지우기", numeric: false }) : (confirm("이 글을 지울까요?") ? "local" : "");
+    const pw = STATIC ? await askPassword(msg, { title: `${kind} 지우기`, button: "지우기", numeric: false }) : (confirm(`이 ${kind}을 지울까요?`) ? "local" : "");
     if (!pw) return; // 창을 닫음 → 취소
     let r;
     try {
       r = await gbFetch("/api/guestbook/delete", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: b.dataset.id, pw }) });
     } catch (e2) { return setStatus(e2.message, "error"); }
     if (r.list) renderGuestbook(r);
-    if (r.ok) return setStatus("글을 지웠습니다.", "ok");
+    if (r.ok) return setStatus(`${kind}을 지웠습니다.`, "ok");
     if (r.error && /맞지 않습니다/.test(r.error)) { msg = "비밀번호가 맞지 않습니다. 다시 입력해 주세요."; continue; }
     return setStatus(r.error || "지우지 못했습니다.", "error");
+  }
+});
+// 댓글 등록
+$("gb-list").addEventListener("submit", async (e) => {
+  const f = e.target.closest(".gb-reply-form");
+  if (!f) return;
+  e.preventDefault();
+  const text = f.querySelector(".gb-r-text").value.trim();
+  const pw = f.querySelector(".gb-r-pw").value;
+  if (!text) return setStatus("댓글 내용을 입력해 주세요.", "error");
+  if (pw.length < 4) return setStatus("삭제용 비밀번호를 4자 이상 입력해 주세요.", "error");
+  const btn = f.querySelector(".gb-r-send");
+  btn.disabled = true; btn.textContent = "AI 검사 중…";
+  try {
+    const headers = { "Content-Type": "application/json" };
+    if (STATIC && savedPw()) headers["x-refresh-password"] = savedPw();
+    const r = await gbFetch("/api/guestbook", {
+      method: "POST", headers,
+      body: JSON.stringify({ parent: f.dataset.parent, text, pw, name: f.querySelector(".gb-r-name").value.trim() }),
+    });
+    if (r.error) { if (r.list && /원글이 지워져/.test(r.error)) renderGuestbook(r); throw new Error(r.error); }
+    f.querySelector(".gb-r-text").value = ""; // 다시 그릴 때 초안으로 남지 않게
+    gbReplyOpen = "";
+    renderGuestbook(r);
+    setStatus("댓글을 남겼습니다.", "ok");
+  } catch (e2) {
+    setStatus(e2.message, "error");
+    const m = f.querySelector(".gb-r-msg");
+    if (m) m.textContent = e2.message; // 화면 위 알림은 안 보일 수 있어 입력칸 아래에도 보여 준다
+  } finally {
+    btn.disabled = false; btn.textContent = "등록";
   }
 });
 

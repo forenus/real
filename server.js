@@ -416,7 +416,7 @@ async function sendContact(req, body) {
 }
 
 // 방명록 새 글 알림 메일 — 응답을 기다리게 하지 않고, 실패해도 글 저장에는 영향이 없다
-function notifyGuestbook(entry, total) {
+function notifyGuestbook(entry, total, parent) {
   const mail = readJson(MAIL_FILE, null);
   if (!mail || !mail.user || !mail.pass || !mail.to || !entry) return;
   const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -427,9 +427,10 @@ function notifyGuestbook(entry, total) {
   tx.sendMail({
     from: `매물 추적기 <${mail.user}>`,
     to: mail.to,
-    subject: `[매물 추적기 방명록] ${entry.name}님의 새 글`,
-    text: `작성자: ${entry.name}\n시각: ${when}\n전체 ${total}개\n\n${entry.text}\n\n${link}`,
-    html: `<p><b>작성자</b> ${esc(entry.name)}<br><b>시각</b> ${esc(when)}<br><b>전체</b> ${total}개</p><hr>` +
+    subject: `[매물 추적기 방명록] ${entry.name}님의 새 ${parent ? "댓글" : "글"}`,
+    text: `작성자: ${entry.name}\n시각: ${when}\n전체 ${total}개\n${parent ? `원글(${parent.name}): ${parent.text.slice(0, 80)}\n` : ""}\n${entry.text}\n\n${link}`,
+    html: `<p><b>작성자</b> ${esc(entry.name)}<br><b>시각</b> ${esc(when)}<br><b>전체</b> ${total}개` +
+      `${parent ? `<br><b>원글</b> ${esc(parent.name)} — ${esc(parent.text.slice(0, 80))}` : ""}</p><hr>` +
       `<div style="white-space:pre-wrap">${esc(entry.text)}</div><hr><p><a href="${link}">방명록 보기</a> · 문제가 있는 글은 지우기 버튼에서 관리자 비밀번호로 지울 수 있습니다.</p>`,
   }).catch((e) => console.log("  [방명록] 알림 메일 실패:", e.message));
 }
@@ -914,7 +915,10 @@ const server = http.createServer(async (req, res) => {
     // 관리자 비밀번호를 함께 보낸 경우에만 확인한다(일반 글쓰기는 틀린 횟수에 넣지 않는다)
     const dev = isLocal(req) || (!!req.headers["x-refresh-password"] && !checkRefreshPassword(req));
     const r = await guestbook.post(await readJsonLimited(req, 8192), req.headers["cf-connecting-ip"] || req.socket.remoteAddress || "", { dev });
-    if (r.body.id && !dev) notifyGuestbook(r.body.list.find((x) => x.id === r.body.id), r.body.total); // 내가 쓴 글은 알리지 않는다
+    if (r.body.id && !dev) { // 내가 쓴 글은 알리지 않는다
+      const parent = r.body.parent && r.body.list.find((x) => x.id === r.body.parent);
+      notifyGuestbook((parent ? parent.replies : r.body.list).find((x) => x.id === r.body.id), r.body.total, parent);
+    }
     return send(res, r.code, r.body);
   }
   if (url === "/api/guestbook/delete" && req.method === "POST") {

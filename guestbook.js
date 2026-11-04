@@ -62,14 +62,16 @@ function save(list) {
 const hash = (salt, pw) => crypto.createHash("sha256").update(salt + "|" + pw).digest("hex");
 const sameHash = (a, b) => a.length === b.length && crypto.timingSafeEqual(Buffer.from(a), Buffer.from(b));
 
-// 공개용 — 비밀번호·IP 해시는 빼고 최신 글부터
+// 공개용 — 비밀번호·IP 해시는 빼고 최신 글부터(댓글은 오래된 순)
+const pub = ({ id, name, text, at, hue, dev }) => ({ id, name, text, at, hue, dev: !!dev });
 function list() {
   const all = load();
   return {
     total: all.length,
-    list: all.slice(-LIST_MAX).reverse().map(({ id, name, text, at, hue, dev }) => ({ id, name, text, at, hue, dev: !!dev })),
+    list: all.slice(-LIST_MAX).reverse().map((x) => ({ ...pub(x), replies: (x.replies || []).map(pub) })),
   };
 }
+const REPLY_MAX = 100; // 글 하나에 달 수 있는 댓글 수
 
 // dev: 관리자(PC 에서 직접 또는 관리자 비밀번호)가 쓴 글 — '개발자' 표시가 붙는다
 async function post(body, ip, { dev = false } = {}) {
@@ -84,6 +86,13 @@ async function post(body, ip, { dev = false } = {}) {
   const pw = String(body.pw || "");
   if (!text) return { code: 400, body: { error: "내용을 입력해 주세요." } };
   if (pw.length < 4 || pw.length > 20) return { code: 400, body: { error: "삭제용 비밀번호를 4~20자로 입력해 주세요." } };
+  // 댓글이면 원글이 있는지 먼저 본다(AI 검사 비용을 쓰기 전에)
+  const parentId = body.parent ? String(body.parent) : "";
+  if (parentId) {
+    const p = load().find((x) => x.id === parentId);
+    if (!p) return { code: 404, body: { error: "원글이 지워져 댓글을 달 수 없습니다.", ...list() } };
+    if ((p.replies || []).length >= REPLY_MAX) return { code: 400, body: { error: "이 글에는 더 이상 댓글을 달 수 없습니다." } };
+  }
   const last = lastPost.get(ip) || 0;
   if (Date.now() - last < GAP_MS) {
     return { code: 429, body: { error: `방금 글을 남겼습니다. ${Math.ceil((GAP_MS - (Date.now() - last)) / 1000)}초 뒤에 다시 남겨 주세요.` } };
@@ -103,19 +112,33 @@ async function post(body, ip, { dev = false } = {}) {
   const all = load();
   // 같은 곳에서 쓴 글은 같은 색 — IP 자체는 저장하지 않는다
   const hue = parseInt(crypto.createHash("sha256").update("gb|" + ip).digest("hex").slice(0, 4), 16) % 360;
-  all.push({ id, name, text, at: new Date().toISOString(), hue, pw: hash(id, pw), ...(dev ? { dev: true } : {}) });
+  const entry = { id, name, text, at: new Date().toISOString(), hue, pw: hash(id, pw), ...(dev ? { dev: true } : {}) };
+  if (parentId) {
+    const p = all.find((x) => x.id === parentId);
+    if (!p) return { code: 404, body: { error: "원글이 지워져 댓글을 달 수 없습니다.", ...list() } }; // 검사하는 동안 지워진 경우
+    (p.replies = p.replies || []).push(entry);
+  } else {
+    all.push(entry);
+  }
   save(all);
   lastPost.set(ip, Date.now());
-  return { code: 200, body: { ok: true, id, ...list() } };
+  return { code: 200, body: { ok: true, id, parent: parentId || undefined, ...list() } };
 }
 
-// 글 비밀번호가 맞으면 지운다. 맞지 않으면 null — 관리자 확인은 server.js 가 한다.
+// 글·댓글 비밀번호가 맞으면 지운다(원글을 지우면 댓글도 함께). 맞지 않으면 null — 관리자 확인은 server.js 가 한다.
 function remove(id, pw, admin) {
   const all = load();
-  const i = all.findIndex((x) => x.id === id);
+  let arr = all;
+  let i = all.findIndex((x) => x.id === id);
+  if (i < 0) {
+    for (const p of all) {
+      const j = (p.replies || []).findIndex((r) => r.id === id);
+      if (j >= 0) { arr = p.replies; i = j; break; }
+    }
+  }
   if (i < 0) return { code: 404, body: { error: "이미 지워진 글입니다.", ...list() } };
-  if (!admin && !sameHash(all[i].pw, hash(id, String(pw || "")))) return null;
-  all.splice(i, 1);
+  if (!admin && !sameHash(arr[i].pw, hash(id, String(pw || "")))) return null;
+  arr.splice(i, 1);
   save(all);
   return { code: 200, body: { ok: true, ...list() } };
 }
