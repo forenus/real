@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T08:03:02.468Z",
+  "generatedAt": "2026-11-04T08:33:11.218Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15733,15 +15733,15 @@
       ]
     },
     "todayDate": "2026-11-04",
-    "lastFetchedAt": "2026-11-04T08:02:48.346Z",
+    "lastFetchedAt": "2026-11-04T08:32:55.852Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 228,
+      "realtime": 213,
       "recent24h": 1126,
-      "frequent": 129,
-      "new": 54,
-      "fetchedAt": "2026-11-04T08:02:56.932Z"
+      "frequent": 118,
+      "new": 52,
+      "fetchedAt": "2026-11-04T08:33:04.711Z"
     },
     "prevDate": "2026-11-03",
     "rows": [
@@ -17524,10 +17524,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65건 안팎에서 **85건까지 꾸준히 증가**해 30일 중 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 30일 동안 4~8건 사이를 오가며 **소폭 횡보**하고 있습니다.",
-      "real": "33평 실거래는 최근 30일 5건, 평균 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 10월 28일 15층이 **10억 원으로 역대 최고가**를 기록했지만, 같은 달 2층 8억 2,000만 원 거래도 있어 층에 따라 가격 차가 큽니다. 25평은 최근 30일 거래가 없고 9월 7억 2,000만 원 1건뿐이라, 거래가 적어 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65~70건대에서 **85건까지 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 30일간 4~8건 사이를 오가며 **소폭 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 5건, 평균 9억 2,000만원으로 그전 30일(8억 7,000만원)보다 올랐고, 1년 전 무렵 평균 6억 3,600만원과 비교하면 **큰 폭의 상승세**가 이어지고 있습니다. 10월 28일 15층이 **10억으로 역대 최고가**를 기록했으며, 다만 같은 시기 2층이 8억 2,000만원에 거래되는 등 층별 편차가 있습니다. 25평은 최근 30일 거래가 없고 9월 7억 2,000만원 1건이 마지막이어서, 거래가 적어 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-04T08:03:02.300Z"
+      "generatedAt": "2026-11-04T08:33:10.225Z"
     },
     "history": [
       {
@@ -21276,9 +21276,16 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-04T07:33:07.375Z",
+    "fetchedAt": "2026-11-04T08:33:11.165Z",
     "today": "2026-11-04",
     "items": [
+      {
+        "title": "신미숙 경기도의원, “경기도가 경기남부 광역교통망 구축 이끌어야”… 동탄트램 우선시공 착수 환영",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9PUkFkZE9EbktuN2RqbEFRdldsVzViUkx3VHkwRDRmbmF5NWVCcnRhU243VndDVlR5dXFLZ3F5UlZvRE1jX2RNQXB1bFpzaC1oRzdfdk05VnE3RHJZS1pPQlpNZTVpZw?oc=5",
+        "source": "화성저널",
+        "time": "2026-11-04T08:17:32.000Z",
+        "isToday": true
+      },
       {
         "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
         "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
@@ -21341,18 +21348,11 @@
         "source": "경인경제",
         "time": "2026-11-03T01:08:56.000Z",
         "isToday": false
-      },
-      {
-        "title": "[강대웅의 정문일침(頂門一鍼)] 정명근 화성특례시장, 하늘과 땅에서 화성시의 미래를 찾는다",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8wUWJNcjNEdDdvM3VNR2pPRFh0TDQwdnhidF84MWwwcWZ2azlSUmF2aW9JQ3lBYzNUX2pRRXlUQndlYllaaTJjbjhOVFpHR19ZVkZBdmxueEzSAVhBVV95cUxPMFFiTXIzRHQ3bzN1TUdqT0RYdEw0MHZ4YnRfODFsMHFmdms5UlJhdmlvSUN5QWMzVF9qUUV5VEJ3ZWJZWmkyY244TlRaR0dfWVZGQXZsbnhM?oc=5",
-        "source": "아주경제",
-        "time": "2026-11-02T20:05:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-04T07:33:07.150Z",
+    "fetchedAt": "2026-11-04T08:33:11.217Z",
     "today": "2026-11-04",
     "items": [
       {
@@ -21367,6 +21367,13 @@
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5iQmVwclZ0SU1yUjJkRmJjckQ5TmVRYjI5YThCSkIyTVp4VV82bU9PTmwwQlJEVEJIMmZRRFU1QWd4OTN4N0J0OVhpV005RHk3d2hPX1Vma3lJVGR4QXo0aUt2UkNsZXpaX001a1FrSdIBb0FVX3lxTE5iQmVwclZ0SU1yUjJkRmJjckQ5TmVRYjI5YThCSkIyTVp4VV82bU9PTmwwQlJEVEJIMmZRRFU1QWd4OTN4N0J0OVhpV005RHk3d2hPX1Vma3lJVGR4QXo0aUt2UkNsZXpaX001a1FrSQ?oc=5",
         "source": "한국아이닷컴",
         "time": "2026-11-04T02:03:10.000Z",
+        "isToday": true
+      },
+      {
+        "title": "삼성생명, AI 기반 지역 통합돌봄 모델 공개…화성 동탄서 실증",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjNXFxLW9JcjctTWpKN3Z6eXF5R3lVOXgwdDdLMzJFUWJMQ1pXQmxIYW5jNk9pMC1aQ0Fsdzg3bzB3dGhEVzBqZC1HT1BGb3NUNFFYMXJYUGJvcmNNUkRBSldzRQ?oc=5",
+        "source": "포쓰저널",
+        "time": "2026-11-04T01:49:01.000Z",
         "isToday": true
       },
       {
@@ -21416,13 +21423,6 @@
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1NQmZkMG0yb1lTdERCbjJXaEhndmEtSDNMUVJ6dThhek05UUNBVVBKbmtLTFVUWmV0UVloZ3ZVY3J1SWpUWHNSMEYzUk9HaDQ?oc=5",
         "source": "화성인터넷신문",
         "time": "2026-10-27T22:10:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "서울 상승폭 둔화, 화성 동탄/병점 집값이 이끌었다!",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
-        "source": "KB Think",
-        "time": "2026-10-27T08:06:34.000Z",
         "isToday": false
       }
     ]
