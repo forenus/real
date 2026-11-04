@@ -989,7 +989,7 @@ $("gb-form").addEventListener("submit", async (e) => {
   if (!text) return setStatus("내용을 입력해 주세요.", "error");
   if (pw.length < 4) return setStatus("삭제용 비밀번호를 4자 이상 입력해 주세요.", "error");
   const btn = $("gb-send");
-  btn.disabled = true; btn.textContent = "남기는 중…";
+  btn.disabled = true; btn.textContent = "AI 검사 중…";
   try {
     const r = await gbFetch("/api/guestbook", {
       method: "POST", headers: { "Content-Type": "application/json" },
