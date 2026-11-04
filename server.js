@@ -892,7 +892,7 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, guestbook.list());
   }
   if (url === "/api/guestbook" && req.method === "POST") {
-    const r = guestbook.post(await readJsonLimited(req, 8192), req.headers["cf-connecting-ip"] || req.socket.remoteAddress || "");
+    const r = await guestbook.post(await readJsonLimited(req, 8192), req.headers["cf-connecting-ip"] || req.socket.remoteAddress || "");
     return send(res, r.code, r.body);
   }
   if (url === "/api/guestbook/delete" && req.method === "POST") {
