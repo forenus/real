@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T01:05:28.541Z",
+  "generatedAt": "2026-11-04T01:21:18.297Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14729,15 +14729,15 @@
       "real": {
         "from": "2025-11-04",
         "total": 175,
-        "known": 166,
+        "known": 167,
         "fetchedAt": "2026-11-03T15:04:57.782Z",
         "unknown": {
-          "count": 9,
+          "count": 8,
           "max": {
-            "priceText": "9억 2,500",
+            "priceText": "7억 6,800",
             "pyeong": 33,
-            "date": "2026-10-27",
-            "floor": "7",
+            "date": "2026-05-16",
+            "floor": "13",
             "manual": false
           },
           "min": {
@@ -14748,7 +14748,7 @@
             "manual": false
           }
         },
-        "manual": 23,
+        "manual": 24,
         "pending": [
           {
             "date": "2026-10-28",
@@ -14772,7 +14772,7 @@
             "price": 92500,
             "pyeong": 33,
             "priceText": "9억 2,500",
-            "manualDong": ""
+            "manualDong": "485동"
           },
           {
             "date": "2026-10-26",
@@ -15574,13 +15574,13 @@
           "name": "485동",
           "count": 6,
           "real": {
-            "count": 10,
-            "manual": 2,
+            "count": 11,
+            "manual": 3,
             "max": {
-              "priceText": "7억 5,000",
+              "priceText": "9억 2,500",
               "pyeong": 33,
-              "date": "2026-06-10",
-              "floor": "9",
+              "date": "2026-10-27",
+              "floor": "7",
               "manual": true
             },
             "min": {
@@ -15593,10 +15593,10 @@
             "byPyeong": [
               {
                 "pyeong": 33,
-                "count": 10,
-                "max": 75000,
+                "count": 11,
+                "max": 92500,
                 "min": 60500,
-                "maxText": "7억 5,000",
+                "maxText": "9억 2,500",
                 "minText": "6억 500"
               }
             ]
@@ -15737,11 +15737,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 335,
-      "recent24h": 1060,
-      "frequent": 239,
-      "new": 36,
-      "fetchedAt": "2026-11-04T01:05:21.182Z"
+      "realtime": 376,
+      "recent24h": 1072,
+      "frequent": 270,
+      "new": 41,
+      "fetchedAt": "2026-11-04T01:19:18.503Z"
     },
     "prevDate": "2026-11-03",
     "rows": [
