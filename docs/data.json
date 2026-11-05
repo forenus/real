@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T08:39:34.293Z",
+  "generatedAt": "2026-11-05T09:09:34.929Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15749,15 +15749,15 @@
       ]
     },
     "todayDate": "2026-11-05",
-    "lastFetchedAt": "2026-11-05T08:39:20.695Z",
+    "lastFetchedAt": "2026-11-05T09:09:20.171Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
       "realtime": 139,
-      "recent24h": 701,
-      "frequent": 87,
-      "new": 25,
-      "fetchedAt": "2026-11-05T08:39:29.262Z"
+      "recent24h": 706,
+      "frequent": 85,
+      "new": 26,
+      "fetchedAt": "2026-11-05T09:09:28.777Z"
     },
     "prevDate": "2026-11-04",
     "rows": [
@@ -17553,10 +17553,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 69건에서 **85건까지 꾸준히 증가**해 30일 최고치를 기록하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **6건으로 4~8건 사이 횡보**하며 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 15층이 **역대 최고 10억 원**에 거래됐습니다. 1년 전 무렵 평균 6억 3,700만 원과 비교하면 **상승 흐름이 뚜렷**하지만, 최근 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000만 원 이후 최근 60일간 거래가 없습니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건, 7일 전보다 4건 늘었고, 최근 12주 동안 65~69건대에서 **꾸준히 증가해 30일 최고치를 기록**했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **6건으로 4~8건 사이에서 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 5건 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 1년 전 무렵 평균 6억 3,700과 비교하면 **약 2억 8,000 높은 수준**입니다. 10월 28일 15층이 **10억으로 역대 최고**를 기록했지만, 같은 달 2층은 8억 2,000에 거래되는 등 층별 편차가 있습니다. 25평은 9월 6일 7억 2,000 이후 최근 60일간 거래가 없어 흐름을 판단하기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-05T08:39:34.105Z"
+      "generatedAt": "2026-11-05T09:09:33.951Z"
     },
     "history": [
       {
@@ -21695,9 +21695,16 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-05T08:09:45.289Z",
+    "fetchedAt": "2026-11-05T09:09:34.928Z",
     "today": "2026-11-05",
     "items": [
+      {
+        "title": "동탄 집값 오르더니 또 '대박'…17년 만에 숙원 이뤄졌다는 '이것'",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9idUoya2l3ZVVtQ2JlaHZkRzZsd3JmR3J0NnYyM0FnaE9wWF9YSFpWRTJjTkpOUGhiV2FKNHpRdy0yMFI4VmxZMkdveEFsdmVfUDdzdG5R?oc=5",
+        "source": "위키트리",
+        "time": "2026-11-05T08:22:00.000Z",
+        "isToday": true
+      },
       {
         "title": "신미숙 경기도의원, 동탄트램 우선시공 환영…경기남부 교통망 연계 주문",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE95VGo4dU9SWXdURmRuV0VEeW9ZYWEtd0RsQnBTcEJCY2lqNlpzcVRJWmFVbVBiUTFGUWlyOEU5OW5XdjA4VWhYdHE3dW1EZFZ0MVhiNF8xRjdVTXhzOEp3dndOdmVwNWtr?oc=5",
@@ -21760,18 +21767,11 @@
         "source": "SK브로드밴드 회사소개",
         "time": "2026-11-03T04:50:45.000Z",
         "isToday": false
-      },
-      {
-        "title": "[사설] 동탄트램, 17년 기다림 끝에 첫발",
-        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1OU0Z0WVhtWEpFMldWSm90eGRPTzJSUUNwUlVMRFpldGNFV29oSDhJakxiM21lYTROQkNDbW5zeGhnRjQ?oc=5",
-        "source": "수원화성신문",
-        "time": "2026-11-03T01:46:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-05T08:09:45.200Z",
+    "fetchedAt": "2026-11-05T09:09:34.879Z",
     "today": "2026-11-05",
     "items": [
       {
