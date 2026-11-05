@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T02:39:45.293Z",
+  "generatedAt": "2026-11-05T03:10:34.962Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15749,15 +15749,15 @@
       ]
     },
     "todayDate": "2026-11-05",
-    "lastFetchedAt": "2026-11-05T02:39:29.921Z",
+    "lastFetchedAt": "2026-11-05T03:10:20.179Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 164,
-      "recent24h": 883,
-      "frequent": 108,
-      "new": 28,
-      "fetchedAt": "2026-11-05T02:39:39.342Z"
+      "realtime": 174,
+      "recent24h": 889,
+      "frequent": 112,
+      "new": 33,
+      "fetchedAt": "2026-11-05T03:10:29.128Z"
     },
     "prevDate": "2026-11-04",
     "rows": [
@@ -17553,10 +17553,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65~69건대에서 **85건까지 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 **4~8건 사이에서 횡보**하고 있어 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 1년 전 무렵 평균 6억 3,700과 비교하면 **1년 새 약 2억 8천만 원 상승**했습니다. 10월 28일 15층이 **10억으로 역대 최고가**를 기록했으나, 같은 달 2층 8억 2,000 거래도 있어 층에 따라 가격 차이가 큰 편입니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000입니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65~69건대에서 **꾸준히 증가해 30일 최고치인 85건**에 이르렀습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **6건으로 4~8건 사이에서 횡보**하고 있어 물량 변화가 크지 않습니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 2,000만 원에 거래돼 그전 30일(8억 7,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 3,700만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 10월 28일에는 **15층이 10억 원으로 역대 최고가**를 기록했습니다. 25평은 9월 6일 7억 2,000만 원 거래 이후 최근 60일간 거래가 없어 현재 시세를 판단하기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-05T02:39:44.388Z"
+      "generatedAt": "2026-11-05T03:10:34.041Z"
     },
     "history": [
       {
@@ -21247,7 +21247,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-05T02:39:45.293Z",
+    "fetchedAt": "2026-11-05T03:10:34.962Z",
     "today": "2026-11-05",
     "items": [
       {
@@ -21323,9 +21323,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-05T02:39:45.149Z",
+    "fetchedAt": "2026-11-05T03:10:34.814Z",
     "today": "2026-11-05",
     "items": [
+      {
+        "title": "외삼미1지구 개발사업 추진…서동탄역 랜시티 조합원 모집 마무리 단계",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBVb1QzUnd0NFBjRXNfSEJPcVdZN0NzUTJXZllYcTZlYUVpR1VXOEdCVndxaVNxZHczaHVyWU12Q0g5dFdQdEtnRGFCMGp6NlU4bU9Sb0VyVGdpMGU4Z1FGOFl0WXVRUQ?oc=5",
+        "source": "이로운넷",
+        "time": "2026-11-05T02:47:10.000Z",
+        "isToday": true
+      },
       {
         "title": "삼성생명, AI로 시니어 일상 돌본다…화성 동탄서 통합케어 실증",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5iQmVwclZ0SU1yUjJkRmJjckQ5TmVRYjI5YThCSkIyTVp4VV82bU9PTmwwQlJEVEJIMmZRRFU1QWd4OTN4N0J0OVhpV005RHk3d2hPX1Vma3lJVGR4QXo0aUt2UkNsZXpaX001a1FrSdIBb0FVX3lxTE5iQmVwclZ0SU1yUjJkRmJjckQ5TmVRYjI5YThCSkIyTVp4VV82bU9PTmwwQlJEVEJIMmZRRFU1QWd4OTN4N0J0OVhpV005RHk3d2hPX1Vma3lJVGR4QXo0aUt2UkNsZXpaX001a1FrSQ?oc=5",
@@ -21387,13 +21394,6 @@
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TZ1lFd0MwSjlpTzZoYnpqX0Yyb3JndWxkTTVXdnlFcGJhdUNrbWp1RU14Qmk0YXVzeDBRbl9NQnNLbzFwd0t3aFlYNUtnSlgyS0xmMUF3OW9oWlZGcXNDVXBMZzlfcTU0TDNzcg?oc=5",
         "source": "한국사회복지저널",
         "time": "2026-10-26T01:28:53.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성특례시, 화성동탄중앙도서관 개관 1주년 축제 즐겨보세요",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9meVFtelN3Um9neGdkOEpjdTBVZ2EwS29SVDdGSkdFaW1XbmVxRlVtV3JMZTZvWDliQzZYd2xUai1kbGRxMGdUVlROUHpvOFBqNHRXWW9OSnVSeHR1T1RkdTUySjdqcm5y?oc=5",
-        "source": "뉴스피크",
-        "time": "2026-10-25T23:35:12.000Z",
         "isToday": false
       }
     ]
