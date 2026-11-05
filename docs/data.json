@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T23:39:31.234Z",
+  "generatedAt": "2026-11-05T00:09:43.320Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15749,15 +15749,15 @@
       ]
     },
     "todayDate": "2026-11-05",
-    "lastFetchedAt": "2026-11-04T23:39:17.539Z",
+    "lastFetchedAt": "2026-11-05T00:09:26.961Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 79,
-      "recent24h": 1034,
-      "frequent": 54,
-      "new": 12,
-      "fetchedAt": "2026-11-04T23:39:25.893Z"
+      "realtime": 86,
+      "recent24h": 1032,
+      "frequent": 61,
+      "new": 11,
+      "fetchedAt": "2026-11-05T00:09:37.415Z"
     },
     "prevDate": "2026-11-04",
     "rows": [
@@ -17553,10 +17553,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65~69건대에서 **꾸준히 증가해 30일 최고치인 85건**에 도달했습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 6건으로 30일 동안 4~8건 사이에서 **소폭 오르내리며 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 5건의 평균이 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 1년 전 무렵 평균 6억 3,700과 비교하면 **크게 상승한 수준**입니다. 10월 28일 15층이 **10억에 거래되며 역대 최고**를 기록했지만, 같은 시기 2층 8억 2,000 거래도 있어 거래 건수가 적은 만큼 평균은 층에 따라 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 최근 60일간 거래가 없어 현재 시세를 판단하기는 어려운 상황입니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 69건에서 **85건까지 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **6건으로 30일 전 대비 1건 감소**하며 4~8건 사이에서 횡보하고 있습니다.",
+      "real": "33평 실거래 평균은 최근 30일 5건 기준 9억 2,000만 원으로, 그전 30일(8억 7,000만 원)보다 올랐고 1년 전 무렵 6억 3,700만 원 대비 **약 2억 8천만 원 높은 수준**입니다. 10월 28일 15층이 **10억 원에 거래되며 역대 최고가**를 기록했지만, 같은 달 2층은 8억 2,000만 원으로 층에 따라 가격 차이가 컸습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만 원입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-04T23:39:31.065Z"
+      "generatedAt": "2026-11-05T00:09:42.445Z"
     },
     "history": [
       {
@@ -20895,7 +20895,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-04T23:09:44.846Z",
+    "fetchedAt": "2026-11-05T00:09:43.320Z",
     "today": "2026-11-05",
     "items": [
       {
@@ -20921,9 +20921,9 @@
       },
       {
         "title": "경기도의회 신미숙 의원, “경기도가 경기남부 광역교통망 구축 이끌어야”... 동탄트램 우선시공 착수 환영",
-        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9pbDRudHp5Y3BJbHhyNnpKdWVkRTVISk9xMlVGLU1QeVk4MlBLdnZNQURfWlB0cXFLSDJZdlpSVVI3UW8?oc=5",
-        "source": "경기in",
-        "time": "2026-11-04T09:28:00.000Z",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5CM00zOWRVcExiZGFPOVFhM19lSG5vM2JQaThKb09wbXdic3hHZlQ5bjVBZ3JJTUs3UHZoRGpJY2ZOVWRTQzd2UVZUSHlCZUxIelpud3lITUJscGFxRlp5Umc3UjNOcXFyVjZGZUtBdw?oc=5",
+        "source": "내외일보",
+        "time": "2026-11-04T09:28:28.000Z",
         "isToday": false
       },
       {
@@ -20971,7 +20971,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-04T23:09:44.699Z",
+    "fetchedAt": "2026-11-05T00:09:43.205Z",
     "today": "2026-11-05",
     "items": [
       {
