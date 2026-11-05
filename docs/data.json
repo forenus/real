@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T09:09:34.929Z",
+  "generatedAt": "2026-11-05T09:39:37.762Z",
   "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15741,23 +15741,23 @@
             {
               "pyeong": 33,
               "count": 7,
-              "price": 95857,
-              "priceText": "9억 5,900"
+              "price": 96000,
+              "priceText": "9억 6,000"
             }
           ]
         }
       ]
     },
     "todayDate": "2026-11-05",
-    "lastFetchedAt": "2026-11-05T09:09:20.171Z",
+    "lastFetchedAt": "2026-11-05T09:39:23.751Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 139,
-      "recent24h": 706,
-      "frequent": 85,
-      "new": 26,
-      "fetchedAt": "2026-11-05T09:09:28.777Z"
+      "realtime": 143,
+      "recent24h": 702,
+      "frequent": 84,
+      "new": 28,
+      "fetchedAt": "2026-11-05T09:39:31.647Z"
     },
     "prevDate": "2026-11-04",
     "rows": [
@@ -17553,10 +17553,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건, 7일 전보다 4건 늘었고, 최근 12주 동안 65~69건대에서 **꾸준히 증가해 30일 최고치를 기록**했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **6건으로 4~8건 사이에서 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 1년 전 무렵 평균 6억 3,700과 비교하면 **약 2억 8,000 높은 수준**입니다. 10월 28일 15층이 **10억으로 역대 최고**를 기록했지만, 같은 달 2층은 8억 2,000에 거래되는 등 층별 편차가 있습니다. 25평은 9월 6일 7억 2,000 이후 최근 60일간 거래가 없어 흐름을 판단하기 어렵습니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 65~69건대에서 **85건까지 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 6건으로 30일 사이 4~8건 범위에서 오르내리며 **소폭 등락 속 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 5건 평균 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 높아졌고, 10월 28일 15층이 **10억으로 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,700만 원과 비교하면 **약 2억 8,000만 원 높은 수준**이지만, 거래 건수가 적어 평균이 층·동에 따라 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만 원입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-05T09:09:33.951Z"
+      "generatedAt": "2026-11-05T09:39:36.785Z"
     },
     "history": [
       {
@@ -19061,7 +19061,7 @@
             "no": "2659887599",
             "pyeong": 33,
             "excl": 84,
-            "price": "9억 6,000",
+            "price": "9억 7,000",
             "floor": "10/15",
             "dir": "남향",
             "confirm": "20261105",
@@ -20238,7 +20238,7 @@
           "no": "2659887599",
           "pyeong": 33,
           "excl": 84,
-          "price": "9억 6,000",
+          "price": "9억 7,000",
           "floor": "10/15",
           "dir": "남향",
           "confirm": "20261105",
@@ -21695,7 +21695,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-05T09:09:34.928Z",
+    "fetchedAt": "2026-11-05T09:39:37.762Z",
     "today": "2026-11-05",
     "items": [
       {
@@ -21771,9 +21771,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-05T09:09:34.879Z",
+    "fetchedAt": "2026-11-05T09:39:37.597Z",
     "today": "2026-11-05",
     "items": [
+      {
+        "title": "2026년도 제9회 화성동탄우체국 실적급 공무직 집배원 채용시험 서류전형 결과 및 실기/면접시험 공고",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1aVG1oUzRFZWIwSV9fbjU2ck5DSlRybVc5Ql9kbFY0Rlhzdi1vUXlYMERlbzlVMHpRZldYdU9lbnluSEoteGZtaUd6THdDRnh2QVFJeXNQWG9Fcy0yc3M3cGdB?oc=5",
+        "source": "서울Pn",
+        "time": "2026-11-05T09:09:25.000Z",
+        "isToday": true
+      },
       {
         "title": "화성 동탄9동, ‘동9동락 페스타’…운동회·공연 풍성",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MbXJKUUNKZS05a0sycDk0YkRiZFZ0dmYwTUlLaXJ2ektXVVFRR1BMbXV6Z0VXMS14MFNEem4taXBSWWhJREhGdEVKVVgzZFBL?oc=5",
@@ -21835,13 +21842,6 @@
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Pd1VQN0p1UWk3ZVdISHNPTUhUQy1ibmdrMTJPS2NXMzRjRmcyeEVEd0VuNEM2ZjdIUkxVZ2ZuLWZubzIzcXFqbUI0S3BBTlJ3N1lnb3VjeERyQ2fSAWBBVV95cUxOY2p2VWk0aC1Xc3FnbUxHcHJwTG42ZFFCY2lKa29yNnl1V0ZqSTVWT2piaVh5UTkwVzRWTzlKZ2RaSkFZU19QY0lzb1lUVDVUOVZuWkVnSmhrUFh5VVYtdlM?oc=5",
         "source": "연합뉴스",
         "time": "2026-10-26T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄호수공원서 오는 31일 루나빛축제",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyeGV5Zkd3bURaNm13ZTExV2QxcmlNWmRNTWQwV0lIVzNLYV9LQjVySVRfS1VFVGRGYXg4QzFUaGpIOXRuRDdKSndmT2lJby1rQUdobmJsdTRtb3c?oc=5",
-        "source": "KBS 뉴스",
-        "time": "2026-10-26T06:12:00.000Z",
         "isToday": false
       }
     ]
