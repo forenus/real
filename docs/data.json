@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T23:39:45.208Z",
-  "collectUrl": "https://competition-efficiency-highlighted-donation.trycloudflare.com",
+  "generatedAt": "2026-11-06T00:06:43.847Z",
+  "collectUrl": "https://mayor-rice-positioning-lifestyle.trycloudflare.com",
   "state": {
     "complexNo": "110837",
     "complexName": "동탄역포레너스",
@@ -15725,11 +15725,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 84,
-      "recent24h": 668,
-      "frequent": 49,
-      "new": 20,
-      "fetchedAt": "2026-11-05T23:39:39.153Z"
+      "realtime": 98,
+      "recent24h": 671,
+      "frequent": 60,
+      "new": 22,
+      "fetchedAt": "2026-11-06T00:00:04.261Z"
     },
     "prevDate": "2026-11-05",
     "rows": [
@@ -20851,7 +20851,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-05T23:09:45.257Z",
+    "fetchedAt": "2026-11-06T00:06:43.810Z",
     "today": "2026-11-06",
     "items": [
       {
@@ -20927,7 +20927,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-05T23:09:45.223Z",
+    "fetchedAt": "2026-11-06T00:06:42.053Z",
     "today": "2026-11-06",
     "items": [
       {
