@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T12:07:54.420Z",
+  "generatedAt": "2026-11-07T12:38:58.223Z",
   "collectUrl": "https://mayor-rice-positioning-lifestyle.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15715,15 +15715,15 @@
       ]
     },
     "todayDate": "2026-11-07",
-    "lastFetchedAt": "2026-11-07T12:07:29.020Z",
+    "lastFetchedAt": "2026-11-07T12:38:37.190Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 128,
-      "recent24h": 735,
-      "frequent": 75,
-      "new": 29,
-      "fetchedAt": "2026-11-07T12:07:47.084Z"
+      "realtime": 129,
+      "recent24h": 733,
+      "frequent": 73,
+      "new": 30,
+      "fetchedAt": "2026-11-07T12:35:21.916Z"
     },
     "prevDate": "2026-11-06",
     "rows": [
@@ -17545,10 +17545,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 14건 늘었고, 최근 12주 동안 68건에서 **85건까지 꾸준히 증가**해 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 2,000만 원으로, 그전 30일(6건, 8억 7,000만 원)보다 올랐고 1년 전 무렵 평균 6억 3,900만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 10월 28일 15층이 **10억 원으로 역대 최고가**를 기록했으나, 같은 시기 2층은 8억 2,000만 원에 거래되는 등 층별 편차가 큽니다. 25평은 최근 60일간 거래가 없어, 9월 6일 7억 2,000만 원 거래 한 건만으로 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 **오늘 85건으로 30일 최고치**를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 4~8건 사이에서 **6건 안팎으로 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 5건 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **10억에 거래되며 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **상승 흐름이 뚜렷**합니다. 25평은 최근 60일간 거래가 없어, 9월 6일 7억 2,000 이후 시세를 판단할 근거가 부족합니다.",
       "source": "ai",
-      "generatedAt": "2026-11-07T12:07:53.046Z"
+      "generatedAt": "2026-11-07T12:38:50.004Z"
     },
     "history": [
       {
@@ -21664,7 +21664,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-07T12:07:54.069Z",
+    "fetchedAt": "2026-11-07T12:38:58.220Z",
     "today": "2026-11-07",
     "items": [
       {
@@ -21740,7 +21740,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-07T12:07:54.343Z",
+    "fetchedAt": "2026-11-07T12:38:58.213Z",
     "today": "2026-11-07",
     "items": [
       {
@@ -21793,6 +21793,13 @@
         "isToday": false
       },
       {
+        "title": "“아이들이 그린 상상 밤하늘에 뜬다”…화성 동탄에 드론 500대 빛 축제 개최",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8wY1E5TGtwX2F4d3YzLVhidzZXZXZDZ1k3ZzRNTE9ka2xKY2E3ZmdEY1RXZHZMd1ZhLWotUExrX2h6SHRuRGVBNUZlZEZFLVoxbTRzNkp6TmY3clUyLUNqdjdUeHdSek9TanVCZ24tSFHSAXRBVV95cUxNNWM3X1QtVXdRVlJ1dXI1NTBrcXNISmN6dTdEc3FFX1FuTDZrcWxwUTlqSldrblhQekNJNkNWSE85T21zVERRclNlNVRxbU1ZSnEwdHM0LVlqZnYxaFYwOWNyajBEcndGbWRWbzd1RG9NT0o3Yg?oc=5",
+        "source": "주간한국",
+        "time": "2026-10-26T08:51:29.000Z",
+        "isToday": false
+      },
+      {
         "title": "[2026 국정감사] 동탄역 이용수요 '2만 8,000명' 해명 오류…철도공단 국감서 인정",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd0lyeGNkY0JFWHk3SUp1MkhaSktqWHEtVEd6LXROSVJWdFNEbVpvYzlER0p4cHFNcEMyVTZTRlR0TUhHcElNZXV1UkwzcnAtTlJnWE5uYmI4TjZNWU9sVmhRRU44akJaalJrajlrbEI?oc=5",
         "source": "한국철도일보",
@@ -21803,13 +21810,6 @@
         "title": "서울 상승폭 둔화, 화성 동탄/병점 집값이 이끌었다!",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
         "source": "KB Think",
-        "time": "2026-10-26T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄경찰서, 북한이탈주민 무료 독감 예방접종 지원",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqVURRYnpCVkdSUzJscHE0cWVxOURnYzl2Z0lwSHlpQlBLTnpOZnFrZS1yRERXeXktT3YyMmNFTWVJTVlPYUxLaUlWTHN2QTJuejduMTRTa1lJbEQ2Q0QzRXQxaGRDbU04clM4bW9mbw?oc=5",
-        "source": "기호일보",
         "time": "2026-10-26T07:00:00.000Z",
         "isToday": false
       }
