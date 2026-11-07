@@ -525,6 +525,9 @@ function render(state) {
   const hg = $("hgnn-link");
   hg.hidden = !state.hogangnonoUrl;
   if (state.hogangnonoUrl) { hg.href = state.hogangnonoUrl; hg.title = `${state.complexName || "단지"} 호갱노노에서 보기(새 창)`; }
+  // 호갱노노 이야기 바로가기 — 단지 페이지에 이야기가 함께 나온다
+  $("hg-story").hidden = !state.hogangnonoUrl;
+  if (state.hogangnonoUrl) $("hg-story").href = state.hogangnonoUrl;
   // 네이버 부동산 바로가기(단지 번호로)
   const nl = $("nland-link");
   nl.hidden = !state.complexNo;
