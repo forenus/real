@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T21:07:43.298Z",
+  "generatedAt": "2026-11-07T21:37:49.934Z",
   "collectUrl": "https://mayor-rice-positioning-lifestyle.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15707,15 +15707,15 @@
       ]
     },
     "todayDate": "2026-11-08",
-    "lastFetchedAt": "2026-11-07T21:07:25.294Z",
+    "lastFetchedAt": "2026-11-07T21:37:27.954Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 19,
-      "recent24h": 727,
-      "frequent": 11,
+      "realtime": 20,
+      "recent24h": 729,
+      "frequent": 13,
       "new": 4,
-      "fetchedAt": "2026-11-07T21:07:37.680Z"
+      "fetchedAt": "2026-11-07T21:37:43.312Z"
     },
     "prevDate": "2026-11-07",
     "rows": [
@@ -17550,10 +17550,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 12건 늘었고, 최근 12주 동안 65건에서 **85건까지 꾸준히 증가**해 30일 최고치 수준입니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 6건으로 30일간 4~8건 사이에서 **소폭 등락하며 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,400)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **상승 폭이 큰 편**이지만, 거래 건수가 적어 층별 가격 차이에 따라 평균이 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 **최근 60일간 거래가 없어** 현재 호가 8억 5,200과 비교할 실거래 근거가 부족합니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 12건, 7일 전보다 6건 늘어 **최근 12주간 65건에서 85건으로 꾸준히 증가**했고, 오늘이 30일 내 최고치입니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 오늘 6건으로 **4~8건 사이에서 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 5건의 평균이 9억 2,000만 원으로 그전 30일(8억 7,400만 원)보다 올랐고, 10월 28일 15층이 **10억에 거래되며 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,900만 원과 비교하면 **약 2억 8,000만 원 높은 수준**이지만, 최근 거래가 5건에 그쳐 평균이 층별 가격에 따라 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000만 원 이후 최근 60일간 거래가 없습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-07T21:07:43.109Z"
+      "generatedAt": "2026-11-07T21:37:48.905Z"
     },
     "history": [
       {
@@ -20871,7 +20871,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-07T20:37:44.462Z",
+    "fetchedAt": "2026-11-07T21:37:49.932Z",
     "today": "2026-11-08",
     "items": [
       {
@@ -20947,7 +20947,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-07T20:37:44.427Z",
+    "fetchedAt": "2026-11-07T21:37:49.768Z",
     "today": "2026-11-08",
     "items": [
       {
@@ -20980,9 +20980,9 @@
       },
       {
         "title": "삼성생명, AI로 시니어 일상 돌본다…화성 동탄서 통합케어 실증",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91QmdETzNaX2JiZVlxZ2VENlhhOTgwc0hnVzVucDFLemlYcE10eTB3Z0xoMHlnMWJoeVRlMERaZDItWlBnMlpPbVM0ekpfa29KVkk3eXpfeGtzQkkyZktaZU1FRXYzU2tfQm5N0gFvQVVfeXFMTmJCZXByVnRJTXJSMmRGYmNyRDlOZVFiMjlhOEJKQjJNWnhVXzZtT09ObDBCUkRUQkgyZlFEVTVBZ3g5M3g3QnQ5WGlXTTlEeTd3aE9fVWZreUlUZHhBejRpS3ZSQ2xlelpfTTVrUWtJ?oc=5",
-        "source": "한국아이닷컴",
-        "time": "2026-11-04T02:00:04.000Z",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLYWFLbHZ5My1vTzNvXzhqV1cyZFotZGxYVGg3V1AwRXVoZkxiY2h5Yy1zeHBZMEFqUE5uMWhWc3R5NkZOZHlZRi13SzZaYmJiNmVXMnNYQ25iOTkwdjdobldQTllna1dfUXNvR3k2TdIBc0FVX3lxTE5GTFNCa1VFZ0dhMXdvMWlCVUotcUVWTi05QnBxRmFFeWxZNzhGNmR6RGJMeFhTbjFVT251Y1ZZU0g1TE5UZHdVVUY0blJxSVMtQmJsOUUwbW95cm9RUDhEelo0NWNqV3pHRm5KaUNMRS1Ha28?oc=5",
+        "source": "데일리한국",
+        "time": "2026-11-04T01:47:39.000Z",
         "isToday": false
       },
       {
