@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T19:37:39.203Z",
+  "generatedAt": "2026-11-07T20:07:42.685Z",
   "collectUrl": "https://mayor-rice-positioning-lifestyle.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15707,15 +15707,15 @@
       ]
     },
     "todayDate": "2026-11-08",
-    "lastFetchedAt": "2026-11-07T19:37:22.164Z",
+    "lastFetchedAt": "2026-11-07T20:07:24.351Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 23,
-      "recent24h": 728,
-      "frequent": 12,
-      "new": 5,
-      "fetchedAt": "2026-11-07T19:37:33.498Z"
+      "realtime": 18,
+      "recent24h": 729,
+      "frequent": 11,
+      "new": 2,
+      "fetchedAt": "2026-11-07T20:07:36.242Z"
     },
     "prevDate": "2026-11-07",
     "rows": [
@@ -17550,10 +17550,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 12건, 7일 전보다 6건 늘었으며, 최근 12주 동안 **65건에서 85건으로 꾸준히 증가**해 30일 최고치를 기록하고 있습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 **6건으로 4~8건 사이에서 횡보**하고 있어 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,400)보다 올랐고, 10월 28일 15층이 **10억에 거래되며 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **상승 흐름이 뚜렷**하지만, 거래가 5건으로 적어 평균은 층별 차이에 따라 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 60일간 거래가 없어 최근 시세를 판단하기 어렵습니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 12건 늘었고, 최근 12주 동안 65건에서 **85건까지 꾸준히 증가**해 30일 최고치를 유지하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 30일 범위(4~8건) 안에서 **소폭 등락하는 횡보 흐름**입니다.",
+      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,400)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **상승 폭이 큰 흐름**이지만, 최근 거래가 월 5건 수준이라 평균이 층별 가격에 따라 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 최근 60일간 거래가 없어 현재 시세를 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-07T19:37:38.944Z"
+      "generatedAt": "2026-11-07T20:07:41.745Z"
     },
     "history": [
       {
@@ -20871,16 +20871,9 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-07T19:07:51.271Z",
+    "fetchedAt": "2026-11-07T20:07:42.678Z",
     "today": "2026-11-08",
     "items": [
-      {
-        "title": "동탄 트램 우선시공분 착수…\"17년 기다림 끝에 첫 삽\"",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIVkFuN3VYUzU5WUZNMDd5clJIUF96eXdqaGQxTFc4bE5SamNNb05nbUJrNEVpbDR3YnUzcWRWcnJSWnFvcXBscHFuOEpueEdEMkwtSU0xMWQteE9kQVVLSVl4TFhjd0RUSUJn?oc=5",
-        "source": "철도경제신문",
-        "time": "2026-11-04T09:28:35.000Z",
-        "isToday": false
-      },
       {
         "title": "화성시, 동탄 트램 첫 공정 착수",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9YR01MWmQ0Z0pEc3NJSFpRYjh3Q3kzbGJMamdXS3RZSU5JNkVnVWYyQ3ZaSGZkZERlRWdhbWtyM3FPOEZvRVpnVlBnTFJhR29QWlHSAVNBVV95cUxPWGNzUS1xc2FrTWRKMDFvWE1jTlp3SG94NkFZSjV4Zzd5SE9OZVBoN043bEd3OXNMeFRUWGgtXzdIMVQ2LUNNa3J0aHA3blJaMGlxRQ?oc=5",
@@ -20943,11 +20936,18 @@
         "source": "경인일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
+      },
+      {
+        "title": "화성특례시, 동탄 트램 우선시공분 심의 통과…이달 착공 계약 절차 돌입",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPVTF1c1F5ZjQ2d2NOWHFDY2NUQVd6Rk1DV0pUZy1DWUVOUDkwQVkwTGdMd1VqT2FaU1NXN2tqTHkzRVpHT09ONmZZenFMZmxDZnNjaVkwVGs0bEFHdkdYVjd5TG1SWFpqRUhuendSUQ?oc=5",
+        "source": "기호일보",
+        "time": "2026-10-11T07:00:00.000Z",
+        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-07T19:07:51.198Z",
+    "fetchedAt": "2026-11-07T20:07:42.682Z",
     "today": "2026-11-08",
     "items": [
       {
@@ -21000,6 +21000,13 @@
         "isToday": false
       },
       {
+        "title": "[2026 국정감사] 동탄역 이용수요 '2만 8,000명' 해명 오류…철도공단 국감서 인정",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd0lyeGNkY0JFWHk3SUp1MkhaSktqWHEtVEd6LXROSVJWdFNEbVpvYzlER0p4cHFNcEMyVTZTRlR0TUhHcElNZXV1UkwzcnAtTlJnWE5uYmI4TjZNWU9sVmhRRU44akJaalJrajlrbEI?oc=5",
+        "source": "한국철도일보",
+        "time": "2026-10-26T07:38:59.000Z",
+        "isToday": false
+      },
+      {
         "title": "서울 상승폭 둔화, 화성 동탄/병점 집값이 이끌었다!",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
         "source": "KB Think",
@@ -21010,13 +21017,6 @@
         "title": "화성동탄경찰서, 북한이탈주민 무료 독감 예방접종 지원",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqVURRYnpCVkdSUzJscHE0cWVxOURnYzl2Z0lwSHlpQlBLTnpOZnFrZS1yRERXeXktT3YyMmNFTWVJTVlPYUxLaUlWTHN2QTJuejduMTRTa1lJbEQ2Q0QzRXQxaGRDbU04clM4bW9mbw?oc=5",
         "source": "기호일보",
-        "time": "2026-10-26T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄경찰서, 북한이탈주민 건강한 겨울나기 지원",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fVGxvLXllRzB2RzIzQkV0OU5UbDBhOGtyd3NzWWZsVkVwZTNzdlNuTEF0QU9LUGhibVZCcllaelhheFBUZmZoZFFyUTV4cUkwZ1pEQUxOVHV4dUtBd2g4ZkZubGbSAWhBVV95cUxPeHVNZWJDOUFSOXlmb2U5TV9LakdTRmFBV1JZMnFKRXhKb1hYWWFLZ2NFX0tmOVZDYWR2R24zUlVSb3Y5by1jQWV2QlFfb1RUOXRJR2JjdUNPNE1RNThjalNmcWpGTmg5eQ?oc=5",
-        "source": "경인방송 뉴스",
         "time": "2026-10-26T07:00:00.000Z",
         "isToday": false
       }
