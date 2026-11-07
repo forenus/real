@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T03:08:59.927Z",
+  "generatedAt": "2026-11-07T03:51:26.297Z",
   "collectUrl": "https://mayor-rice-positioning-lifestyle.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15719,11 +15719,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 286,
-      "recent24h": 756,
-      "frequent": 196,
+      "realtime": 278,
+      "recent24h": 752,
+      "frequent": 192,
       "new": 39,
-      "fetchedAt": "2026-11-07T03:08:52.188Z"
+      "fetchedAt": "2026-11-07T03:31:43.073Z"
     },
     "prevDate": "2026-11-06",
     "rows": [
@@ -21216,7 +21216,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-07T02:39:04.206Z",
+    "fetchedAt": "2026-11-07T03:43:53.573Z",
     "today": "2026-11-07",
     "items": [
       {
@@ -21292,7 +21292,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-07T02:39:04.454Z",
+    "fetchedAt": "2026-11-07T03:43:54.163Z",
     "today": "2026-11-07",
     "items": [
       {

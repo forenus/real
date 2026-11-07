@@ -775,3 +775,13 @@ button.dong-count:hover { background: var(--primary); color: #fff; }
 .gb-r-msg { margin: 0; font-size: 12.5px; color: #d92d20; }
 .gb-r-msg:empty { display: none; }
 @media (max-width: 480px) { .gb-r-row { flex-wrap: wrap; } .gb-r-row input { flex: 1 1 40%; } .gb-r-send { flex: 1 1 100%; } }
+/* 호갱노노 이야기 바로가기 */
+.hg-story { display: flex; align-items: center; gap: 12px; margin: 0 0 16px; padding: 12px 16px; border-radius: 14px; text-decoration: none; color: var(--text); background: linear-gradient(120deg, #efedff, #e6e3ff); border: 1px solid #d9d5ff; transition: transform .15s var(--ease); }
+.hg-story:hover { transform: translateY(-1px); }
+.hg-story img { flex: none; border-radius: 9px; background: #554cde; }
+.hg-story-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.hg-story-text b { font-size: 15px; color: #4a41d0; }
+.hg-story-text small { font-size: 12.5px; color: var(--muted); }
+.hg-story-go { flex: none; font-size: 13px; font-weight: 600; color: #4a41d0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hg-story { background: linear-gradient(120deg, #24214a, #1e1b3f); border-color: #37327a; } :root:not([data-theme="light"]) .hg-story-text b, :root:not([data-theme="light"]) .hg-story-go { color: #b3adff; } }
+.hg-story[hidden] { display: none; }
