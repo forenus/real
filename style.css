@@ -785,3 +785,11 @@ button.dong-count:hover { background: var(--primary); color: #fff; }
 .hg-story-go { flex: none; font-size: 13px; font-weight: 600; color: #4a41d0; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hg-story { background: linear-gradient(120deg, #24214a, #1e1b3f); border-color: #37327a; } :root:not([data-theme="light"]) .hg-story-text b, :root:not([data-theme="light"]) .hg-story-go { color: #b3adff; } }
 .hg-story[hidden] { display: none; }
+/* 바로가기 줄(호갱노노 이야기 · 아파트너) */
+.quick-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0 0 16px; }
+.quick-links .hg-story { margin: 0; }
+@media (max-width: 760px) { .quick-links { grid-template-columns: 1fr; gap: 10px; } }
+.apt-site { background: linear-gradient(120deg, #e6f6f1, #d9f1ea); border-color: #bfe6da; }
+.apt-site-ico { flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 9px; color: #fff; background: #0f9f7a; }
+.apt-site .hg-story-text b, .apt-site .hg-story-go { color: #0b7a5e; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .apt-site { background: linear-gradient(120deg, #12302a, #0f2823); border-color: #1d5446; } :root:not([data-theme="light"]) .apt-site .hg-story-text b, :root:not([data-theme="light"]) .apt-site .hg-story-go { color: #6fe0bf; } }
