@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T01:47:35.822Z",
+  "generatedAt": "2026-11-08T03:15:59.953Z",
   "collectUrl": "https://mayor-rice-positioning-lifestyle.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15707,15 +15707,15 @@
       ]
     },
     "todayDate": "2026-11-08",
-    "lastFetchedAt": "2026-11-08T01:38:36.856Z",
+    "lastFetchedAt": "2026-11-08T03:14:44.060Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 112,
-      "recent24h": 689,
-      "frequent": 62,
-      "new": 26,
-      "fetchedAt": "2026-11-08T01:41:17.981Z"
+      "realtime": 130,
+      "recent24h": 589,
+      "frequent": 69,
+      "new": 29,
+      "fetchedAt": "2026-11-08T03:09:05.337Z"
     },
     "prevDate": "2026-11-07",
     "rows": [
@@ -17550,10 +17550,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 85건으로 30일 전보다 12건, 7일 전보다 6건 늘었으며, 최근 12주 동안 65건에서 **85건까지 꾸준히 증가**해 30일 최고치 수준입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **6건 안팎에서 횡보**하고 있으며, 30일 동안 4~8건 사이에서 소폭 등락했습니다.",
-      "real": "33평은 최근 30일 5건의 평균이 9억 2,000으로, 그 전 30일(8억 7,400)보다 올랐고 **10월 28일 15층 10억으로 역대 최고**를 기록했습니다. 다만 같은 기간 2층이 8억 2,000에 거래되는 등 건수가 적어 층에 따라 평균이 흔들릴 수 있습니다. 25평은 **최근 60일간 거래가 없으며**, 마지막 거래는 9월 6일 7억 2,000입니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 12건, 7일 전보다 6건 늘었고, 최근 12주 동안 65건에서 **85건으로 꾸준히 증가**해 30일 최고치를 기록하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 최근 30일간 **4~8건 사이에서 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 2,000만 원에 거래되어 그전 30일(8억 7,400만 원)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900만 원과 비교하면 **약 2억 8,000만 원 높은 수준**이며, 다만 거래가 5건씩으로 적어 평균이 층·동에 따라 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000만 원 이후 최근 60일간 거래가 없습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-08T01:38:59.197Z"
+      "generatedAt": "2026-11-08T03:15:49.293Z"
     },
     "history": [
       {
@@ -20871,7 +20871,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-08T01:39:00.255Z",
+    "fetchedAt": "2026-11-08T03:15:59.839Z",
     "today": "2026-11-08",
     "items": [
       {
@@ -20910,13 +20910,6 @@
         "isToday": false
       },
       {
-        "title": "트램이 초래할 동탄신도시 지각변동…교통사각지대 서·남동탄 단지도 들썩",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mc054TEtsT0VGZEdjZTZadUR2UU1rVXA5NldNaEphcU9VWEpuemVNTGM1R1EtM1lQaVlaQjd1blpzRnFSMTdDalgxZHVvVFVWOExNWFZaSFNKQ3d0d1o4WXJON3dIdHpRbzgzSVQ5T3gzUzl4U1MwcjZld19ISG_SAXNBVV95cUxQYTZBb1h6bE9qZ0E1TkRfQUUxQWlnTG5rcXVXNFRvNzM1Q1Z2cTRiWldQc3lYbTRjd0h3LWRMcnNpUVhlZDdyNGZERUUyanByZHVZUEoteVcwYzU2bno0OXZRMW5Xd3Y2dHhCUWxTMjFjSzZB?oc=5",
-        "source": "땅집고",
-        "time": "2026-11-01T21:00:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "동탄트램 2031년 개통 목표…차량계약 관건",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYkJoQml5X2RtQlNyRHNSZ2xRNWhLZ2JMcTRucXV0VU81eFo3TEJkUFdNTm82dW91MGk0em5NYnlYSzNGSzRDVzN3N25OZFlOSDlFemdXVV9YSGxIQzBDMkZrcmJqU01XWVE?oc=5",
         "source": "OBC 뉴스",
@@ -20943,19 +20936,26 @@
         "source": "한국일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
+      },
+      {
+        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
+        "source": "경인일보",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-08T01:39:00.204Z",
+    "fetchedAt": "2026-11-08T03:15:59.951Z",
     "today": "2026-11-08",
     "items": [
       {
-        "title": "화성 동탄고, 학생들이 함께 만든 작은 실천으로 세계에 희망을 전하다",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1HeGFzUjJReWE4eXM4bkg5bjUyVk12V3F2WTlOUVpTTVo5Q1JJb0JBYWcteDljbklDLWRMU0JOQ3hGb2gtcEdvcXNTQ2ZIUml5UkR0QWtDSVlXRG5lbXVIUDQ0Uzk0YXU4dTA1WHA1NNIBckFVX3lxTFBITHF2NnprQURTMlI4UG5oTWtQMkhIaTFnYzliQ01BbUE5czl3cGsteC1CX01fd3E0MG4wU3lmcXFZMWdldlNtVmpsUjlYSG9zNlZIT05UM25qZ3dlaG9zT21pNE5KaVF5d2RZU2o0a3dFUQ?oc=5",
-        "source": "뉴스 따옴",
-        "time": "2026-11-07T09:02:47.000Z",
-        "isToday": false
+        "title": "화성 동탄역신안인스빌리베라 1차, 가을 음악회·푸드 페스타 개최 - 보도자료 | 기사",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1JcEFCUHNaYjhXRS1zTG1sNTMxa1BwbWpwRVgxR203VUdCVGpWemNBRUxZcWhuOVdDb19UVGdZN0tkTDF2R0RYSEhqZEMxRno3SjFEMzZBUjhjdGFLQkk4?oc=5",
+        "source": "더팩트",
+        "time": "2026-11-08T02:49:19.000Z",
+        "isToday": true
       },
       {
         "title": "동탄역신안인스빌리베라1차, 11월 6~7일 단지 중앙공원서 가을 음악회·푸드페스타",
