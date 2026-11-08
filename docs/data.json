@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T00:07:47.594Z",
+  "generatedAt": "2026-11-08T00:37:53.552Z",
   "collectUrl": "https://mayor-rice-positioning-lifestyle.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15707,15 +15707,15 @@
       ]
     },
     "todayDate": "2026-11-08",
-    "lastFetchedAt": "2026-11-08T00:07:28.288Z",
+    "lastFetchedAt": "2026-11-08T00:37:31.606Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 59,
-      "recent24h": 718,
-      "frequent": 35,
-      "new": 16,
-      "fetchedAt": "2026-11-08T00:07:41.495Z"
+      "realtime": 78,
+      "recent24h": 714,
+      "frequent": 45,
+      "new": 21,
+      "fetchedAt": "2026-11-08T00:37:46.549Z"
     },
     "prevDate": "2026-11-07",
     "rows": [
@@ -17550,10 +17550,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 65건에서 85건으로 꾸준히 늘었고, **30일 전보다 12건 증가한 85건으로 30일 최고치**를 기록해 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 **6건 안팎에서 횡보**하며 30일 동안 4~8건 사이를 오갔습니다.",
-      "real": "33평 실거래는 **최근 30일 평균 9억 2,000으로 그전 30일(8억 7,400)보다 상승**했고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 다만 30일 거래가 5건에 불과해 평균이 층·동에 따라 크게 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 최근 60일간 거래가 없어 현재 시세 판단에 한계가 있습니다.",
+      "listing": "33평 매물은 오늘 85건으로 30일 전보다 12건, 7일 전보다 6건 늘었으며, 최근 12주 동안 65건에서 **85건으로 꾸준히 증가**해 30일 최고치 수준입니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 **6건 안팎에서 횡보**하며 30일간 4~8건 사이를 오가고 있습니다.",
+      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,400)보다 올랐고, 10월 28일 15층이 **10억에 거래되며 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**이지만, 건수가 5건으로 적어 평균이 층·동에 따라 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없어 9월 6일 7억 2,000 이후 가격 흐름을 판단하기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-08T00:07:46.644Z"
+      "generatedAt": "2026-11-08T00:37:52.357Z"
     },
     "history": [
       {
@@ -20871,7 +20871,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-08T00:07:47.592Z",
+    "fetchedAt": "2026-11-08T00:37:53.551Z",
     "today": "2026-11-08",
     "items": [
       {
@@ -20893,6 +20893,13 @@
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB1a2FQamI5cGNiQ0F5WGdiVFJYeldVbUIxcHVCT0ZYUE5DbVlxZFZCYWtFQjZJTDU4WlFrTFVFaWpoQlhFZzhjRk1oQlNIYTBjYTZiZ0ItQnRPNnfSAWBBVV95cUxOd0J0M181WC1SbW5GV09iQTRwX3BncGNZeVJyOEJXODlkM3Brd0lqSnBxWGg5RFlScWFFQy1oeXJXTFdFdzA3TXpiUm5RaVVSajRIUHl5OGNPYkdOR2pkeWg?oc=5",
         "source": "연합뉴스",
         "time": "2026-11-02T07:31:25.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄 트램 17년만에 첫삽",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmMi1fNGw5b1p4ZXpmS2RhNEZua1htVG9XbHVfdzh1RFBIWjdwZF9qdlFKQ0NGaXMwNDQtTTM0aTR5ZFNEOHhTT2o2SHZLMW1sZThtai1yRFk?oc=5",
+        "source": "매일경제",
+        "time": "2026-11-02T07:30:25.000Z",
         "isToday": false
       },
       {
@@ -20936,18 +20943,11 @@
         "source": "한국일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
-        "source": "경인일보",
-        "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-08T00:07:47.579Z",
+    "fetchedAt": "2026-11-08T00:37:53.328Z",
     "today": "2026-11-08",
     "items": [
       {
@@ -21000,13 +21000,6 @@
         "isToday": false
       },
       {
-        "title": "[2026 국정감사] 동탄역 이용수요 '2만 8,000명' 해명 오류…철도공단 국감서 인정",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd0lyeGNkY0JFWHk3SUp1MkhaSktqWHEtVEd6LXROSVJWdFNEbVpvYzlER0p4cHFNcEMyVTZTRlR0TUhHcElNZXV1UkwzcnAtTlJnWE5uYmI4TjZNWU9sVmhRRU44akJaalJrajlrbEI?oc=5",
-        "source": "한국철도일보",
-        "time": "2026-10-26T07:38:59.000Z",
-        "isToday": false
-      },
-      {
         "title": "서울 상승폭 둔화, 화성 동탄/병점 집값이 이끌었다!",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
         "source": "KB Think",
@@ -21017,6 +21010,13 @@
         "title": "화성동탄경찰서, 북한이탈주민 무료 독감 예방접종 지원",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqVURRYnpCVkdSUzJscHE0cWVxOURnYzl2Z0lwSHlpQlBLTnpOZnFrZS1yRERXeXktT3YyMmNFTWVJTVlPYUxLaUlWTHN2QTJuejduMTRTa1lJbEQ2Q0QzRXQxaGRDbU04clM4bW9mbw?oc=5",
         "source": "기호일보",
+        "time": "2026-10-26T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄호수공원서 '루나빛축제' 개최…드론 500대 밤하늘 수놓는다",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE50Vm5xV0VCLWhHTGk0YnFPTVBIcWlCLVo3TU9vM0xkZDF6QmN4ZUhnblJuRFNLYVdZSjh3X3RFd3g4VnRVMW5taEFPbHZ2emVKb3UwalRqWmVxemNSeFpaRkpWNG9JZXN3?oc=5",
+        "source": "팍스경제TV",
         "time": "2026-10-26T07:00:00.000Z",
         "isToday": false
       }
