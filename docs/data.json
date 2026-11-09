@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-09T05:38:53.446Z",
-  "collectUrl": "https://arabia-hindu-forth-vendor.trycloudflare.com",
+  "generatedAt": "2026-11-09T06:02:52.775Z",
+  "collectUrl": "",
   "state": {
     "complexNo": "110837",
     "complexName": "동탄역포레너스",
@@ -15691,11 +15691,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 137,
-      "recent24h": 591,
-      "frequent": 85,
+      "realtime": 138,
+      "recent24h": 587,
+      "frequent": 87,
       "new": 22,
-      "fetchedAt": "2026-11-09T05:38:46.863Z"
+      "fetchedAt": "2026-11-09T05:49:11.801Z"
     },
     "prevDate": "2026-11-08",
     "rows": [
