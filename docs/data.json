@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T13:37:38.146Z",
+  "generatedAt": "2026-11-09T14:07:40.658Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15687,15 +15687,15 @@
       ]
     },
     "todayDate": "2026-11-09",
-    "lastFetchedAt": "2026-11-09T13:37:21.135Z",
+    "lastFetchedAt": "2026-11-09T14:07:21.435Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 165,
-      "recent24h": 745,
-      "frequent": 94,
-      "new": 36,
-      "fetchedAt": "2026-11-09T13:37:32.453Z"
+      "realtime": 160,
+      "recent24h": 750,
+      "frequent": 91,
+      "new": 32,
+      "fetchedAt": "2026-11-09T14:07:34.496Z"
     },
     "prevDate": "2026-11-08",
     "rows": [
@@ -17543,10 +17543,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 86건으로 30일 최고치를 기록했으며, 30일 전보다 13건, 7일 전보다 6건 늘었습니다. 최근 12주 흐름도 64~71건대에서 **86건까지 꾸준히 증가**해 매도 물량이 쌓이는 모습으로 보입니다. 25평은 5건으로 **4~8건 사이 횡보**하고 있어 물량 변화가 크지 않습니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 2,000만원에 거래되어 그전 30일(8억 7,400만원)보다 올랐고, 1년 전 무렵 평균 6억 3,900만원과 비교하면 **큰 폭의 상승세**가 이어지고 있습니다. 10월 28일 15층이 **10억으로 역대 최고가**를 기록했지만, 같은 달 2층이 8억 2,000만원에 거래되는 등 층별 편차가 있고 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만원입니다.",
+      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건, 7일 전보다 6건 늘어 **30일 최고치를 기록**했습니다. 최근 12주 동안 68건에서 86건으로 **꾸준히 증가하는 흐름**이어서 매도 물량이 쌓이고 있는 것으로 보입니다. 25평은 5건으로 최근 4~8건 사이에서 소폭 등락하며 횡보하고 있습니다.",
+      "real": "33평은 최근 30일 5건 평균 9억 2,000으로 그전 30일(8억 7,400)보다 올랐고, 10월 28일 15층이 **역대 최고 10억에 거래**됐습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**이지만, 거래가 5건씩이라 층에 따라 평균이 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-09T13:37:37.960Z"
+      "generatedAt": "2026-11-09T14:07:39.650Z"
     },
     "history": [
       {
@@ -21157,7 +21157,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-09T13:07:42.139Z",
+    "fetchedAt": "2026-11-09T14:07:40.553Z",
     "today": "2026-11-09",
     "items": [
       {
@@ -21175,17 +21175,17 @@
         "isToday": false
       },
       {
-        "title": "17년 기다린 동탄 트램 첫 삽…31.5㎞·정거장 33곳 내년 8월 본공사",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53bVp2OG5ZUXFHYjBjNk1XNnljRDhuNERVVWpFeFBRRU83X3g1RWUyblNwVnN2ZjcwU2M5c3VQY1RwN2dWeVFwSGlxMmM2OFJWemVKblVJUjVHVWlOOGFid0hybFQwS2xqMGNBRG9kV1pMSDFKS0E?oc=5",
-        "source": "동아일보",
-        "time": "2026-11-03T07:22:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "[사설] 동탄트램, 17년 기다림 끝에 첫발",
         "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1OU0Z0WVhtWEpFMldWSm90eGRPTzJSUUNwUlVMRFpldGNFV29oSDhJakxiM21lYTROQkNDbW5zeGhnRjQ?oc=5",
         "source": "수원화성신문",
         "time": "2026-11-03T01:46:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄 트램 17년 만에 첫 삽…2031년 개통 목표",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE04eVJ3VngwWG9nTDh5YXFaZnZtZGUyVGV6UlhCMEl1b2JYQ1lGOVpBb1lsSDhxWTdmd3JmMTdHM0x1Z1NLTVdfOTNkaW9HQ2ZaU3dYZ195VzFfMDEwbDNqQ3h4OTRBaXBvQ1MyUUlR?oc=5",
+        "source": "OBS경인TV",
+        "time": "2026-11-02T08:53:30.000Z",
         "isToday": false
       },
       {
@@ -21233,7 +21233,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-09T13:07:41.868Z",
+    "fetchedAt": "2026-11-09T14:07:40.657Z",
     "today": "2026-11-09",
     "items": [
       {
