@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T04:49:02.246Z",
+  "generatedAt": "2026-11-10T05:19:02.934Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15687,15 +15687,15 @@
       ]
     },
     "todayDate": "2026-11-10",
-    "lastFetchedAt": "2026-11-10T04:48:48.287Z",
+    "lastFetchedAt": "2026-11-10T05:18:42.055Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 245,
-      "recent24h": 862,
-      "frequent": 175,
-      "new": 33,
-      "fetchedAt": "2026-11-10T04:48:56.013Z"
+      "realtime": 249,
+      "recent24h": 870,
+      "frequent": 181,
+      "new": 30,
+      "fetchedAt": "2026-11-10T05:18:55.485Z"
     },
     "prevDate": "2026-11-09",
     "rows": [
@@ -17556,10 +17556,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 **68건에서 86건으로 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 1건 줄었으며, **4~8건 사이에서 소폭 등락**하는 수준입니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**입니다. 10월 28일 15층이 **10억으로 역대 최고가**를 기록했으나, 같은 달 2층은 8억 2,000에 거래되는 등 건수가 적어 평균이 층에 따라 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000으로 이 가격이 역대 최고가입니다.",
+      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 **68건에서 86건으로 꾸준히 증가**해 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 1건 줄었으며, 10월 중순 8건 고점 이후 **4~5건 수준으로 다시 낮아진** 모습입니다.",
+      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**입니다. 다만 거래 건수가 적고 층별 가격 차이(8억 2,000~10억)가 커 평균이 흔들릴 수 있으며, 25평은 9월 6일 7억 2,000 이후 두 달간 거래가 없습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-10T04:49:01.945Z"
+      "generatedAt": "2026-11-10T05:19:01.858Z"
     },
     "history": [
       {
@@ -18551,6 +18551,38 @@
             "realtor": "동탄퀸포레너스공인중개사사무소",
             "firstSeen": "2026-09-17",
             "days": 54,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2660419821",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261107",
+            "desc": "공실, 늦은잔금가능, 최신 시에4대, 강마루, 중문 등 깔끔한 인테리어",
+            "bldg": "482동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 60,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2660921357",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "공실 강마루 안방북박이장 중문  알파룸문 도어교체 절수페달 LED교체",
+            "bldg": "482동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 61,
             "beforeStart": false
           }
         },
@@ -19648,16 +19680,16 @@
           "beforeStart": false
         },
         {
-          "no": "2660419821",
+          "no": "2660921357",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 6,000",
           "floor": "13/15",
           "dir": "남서향",
-          "confirm": "20261107",
-          "desc": "공실, 늦은잔금가능, 최신 시에4대, 강마루, 중문 등 깔끔한 인테리어",
+          "confirm": "20261110",
+          "desc": "공실 강마루 안방북박이장 중문  알파룸문 도어교체 절수페달 LED교체",
           "bldg": "482동",
-          "realtor": "예스포레너스공인중개사사무소",
+          "realtor": "포레너스유성공인중개사사무소",
           "firstSeen": "2026-09-10",
           "days": 61,
           "beforeStart": false
@@ -21558,7 +21590,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-10T04:20:20.377Z",
+    "fetchedAt": "2026-11-10T05:19:02.931Z",
     "today": "2026-11-10",
     "items": [
       {
@@ -21634,9 +21666,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-10T04:20:20.272Z",
+    "fetchedAt": "2026-11-10T05:19:02.685Z",
     "today": "2026-11-10",
     "items": [
+      {
+        "title": "화성 동탄 화남초교 앞 파손 볼라드 방치…어린이 안전 위협",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzaV9nczBTQ2JTeUlIbnBKNnJwZ1NMeU9rRzRraTNiTkwycjdsVGFEZ2tLVjl2X0F4Qms0XzFEYmtFYnRkQXpHNXllUUFpMGRjNWp1bV82RjFBdlpzNzdiSC1uY2VqU1BsS0tj?oc=5",
+        "source": "프레시안",
+        "time": "2026-11-10T05:12:14.000Z",
+        "isToday": true
+      },
       {
         "title": "화성 동탄8동, 봄철 거리 경관 조성 위해 청보리 씨앗 파종",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fV2xUeEdnUHJNYmJZR1FtR0x1cEtOR200dkF4RXM4WHdVZF9GMklHczk0bVhPMjRRbW1fMGhBaHVJSDFIQVFJS3lhX2pzQ0VsZ05DOTlna2p3bUtneFBqNEZZMm4?oc=5",
@@ -21645,7 +21684,7 @@
         "isToday": true
       },
       {
-        "title": "화성 동탄역신안인스빌 리베라 1차, 제4회 가을음악회·푸드 페스타 성황",
+        "title": "화성 동탄역신안인스빌리베라 1차, 제4회 가을음악회·푸드 페스타 성황",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WM2hUU0JIWkU0TzZocllxX3JvZk84ZFJoVG1ERENqaG5pZXZycXpraWkzSGc4dUlFX3dIdktRaE1raXJldTZ1LXZzbkZraDFWUWRacVQxVzR3c0JyeEpvVzdTMHrSAWhBVV95cUxORXJ3V3ZrbDhmRDZUZ3Y3dGQwYldHb3FqbXpieDNMcWdiSTM3a1UwWXQ4eG5UOUt3Z3dYeENZOC14SXZUaUVrcFhKYnZKSlVlVHJDYUZlUEJuSFh6UE5sREZscGpyaGxzdA?oc=5",
         "source": "경인방송 뉴스",
         "time": "2026-11-09T04:41:26.000Z",
@@ -21663,13 +21702,6 @@
         "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1JcEFCUHNaYjhXRS1zTG1sNTMxa1BwbWpwRVgxR203VUdCVGpWemNBRUxZcWhuOVdDb19UVGdZN0tkTDF2R0RYSEhqZEMxRno3SjFEMzZBUjhjdGFLQkk4?oc=5",
         "source": "더팩트",
         "time": "2026-11-08T02:49:19.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄역신안인스빌리베라1차, 11월 6~7일 단지 중앙공원서 가을 음악회·푸드페스타",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE95aUVocVo0cVZqR0RaT2JKOU4teS1lbHRaS0NYd2h6RHk0N255c3FhTWdQNWU4TUdJLVNMT2pqM1V1dEpiVXpaTU9EaXNlQ1lrbU5zck9sdHJNYjE5ZmxtS2pFOXVsME9RYnVFNE5KM08xU1U?oc=5",
-        "source": "스페셜타임스",
-        "time": "2026-11-07T05:01:35.000Z",
         "isToday": false
       },
       {
