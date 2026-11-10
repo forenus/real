@@ -784,6 +784,27 @@ function checkRefreshPassword(req) {
   return { code: 401, error: "비밀번호가 맞지 않습니다." };
 }
 
+// 관리자 메뉴 비밀번호(secret.json adminPassword) — 틀린 횟수 제한은 수동 수집과 따로 센다
+const adminFails = new Map();
+function checkAdminPassword(req) {
+  const want = String((readJson(SECRET_FILE, {}) || {}).adminPassword || "");
+  if (!want) return { code: 503, error: "관리자 비밀번호가 설정되지 않았습니다(secret.json)." };
+  const ip = req.headers["cf-connecting-ip"] || req.socket.remoteAddress || "";
+  const f = adminFails.get(ip) || { n: 0, until: 0 };
+  if (f.until > Date.now()) {
+    return { code: 429, error: `비밀번호를 여러 번 틀렸습니다. ${Math.ceil((f.until - Date.now()) / 60000)}분 후에 다시 시도해 주세요.` };
+  }
+  const got = String(req.headers["x-admin-password"] || "");
+  if (got.length === want.length && crypto.timingSafeEqual(Buffer.from(got), Buffer.from(want))) {
+    adminFails.delete(ip);
+    return null;
+  }
+  f.n += 1;
+  if (f.n >= PW_MAX_FAILS) { f.n = 0; f.until = Date.now() + PW_LOCK_MS; }
+  adminFails.set(ip, f);
+  return { code: 401, error: "비밀번호가 맞지 않습니다." };
+}
+
 let dongPublishTimer = null;
 function scheduleDongPublish() {
   clearTimeout(dongPublishTimer);
@@ -801,13 +822,13 @@ const server = http.createServer(async (req, res) => {
   const url = req.url.split("?")[0];
 
   // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
-  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence", "/api/dong-override", "/api/guestbook", "/api/guestbook/delete"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
+  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence", "/api/dong-override", "/api/guestbook", "/api/guestbook/delete", "/api/admin/infra"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
     res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Vary", "Origin");
     if (req.method === "OPTIONS") {
       res.writeHead(204, {
         "Access-Control-Allow-Methods": "GET, POST",
-        "Access-Control-Allow-Headers": "bypass-tunnel-reminder, content-type, x-refresh-password",
+        "Access-Control-Allow-Headers": "bypass-tunnel-reminder, content-type, x-refresh-password, x-admin-password",
         "Access-Control-Max-Age": "600",
       });
       return res.end();
@@ -905,6 +926,15 @@ const server = http.createServer(async (req, res) => {
       if (denied) return send(res, denied.code, { error: denied.error, auth: denied.code === 401 });
     }
     return send(res, 200, stats.summary(30));
+  }
+
+  // 관리자 메뉴 — 인프라 구성도(관리자 비밀번호, PC 에서 직접 열면 생략)
+  if (url === "/api/admin/infra" && req.method === "GET") {
+    if (!isLocal(req)) {
+      const denied = checkAdminPassword(req);
+      if (denied) return send(res, denied.code, { error: denied.error, auth: denied.code === 401 });
+    }
+    return send(res, 200, { html: require("./admin-infra").render() });
   }
 
   // 방명록 — 목록·글쓰기·지우기(글 비밀번호 또는 관리자 비밀번호)

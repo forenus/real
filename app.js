@@ -830,7 +830,7 @@ function renderKpis(state) {
 }
 
 // ---------- 좌측 메뉴 (주소 #뷰이름 으로 화면 전환) ----------
-const VIEWS = ["dashboard", "dongs", "news", "guestbook", "board", "guide", "stats", "settings"];
+const VIEWS = ["dashboard", "dongs", "news", "guestbook", "board", "guide", "stats", "admin", "settings"];
 // 화면 대신 대시보드 안의 카드로 가는 주소(#deals → 대시보드의 실거래 목록)
 const SECTIONS = { deals: "dashboard" };
 let curView = "dashboard";
@@ -849,6 +849,7 @@ function showView() {
   else window.scrollTo(0, 0);
   curView = v;
   if (v === "stats") loadStats();
+  else if (v === "admin") loadAdmin();
   else trackHit(v);
   if (v === "guestbook") loadGuestbook();
   pingPresence();
@@ -1496,6 +1497,35 @@ async function loadStats(msg) {
 }
 $("st-login").addEventListener("click", () => loadStats());
 
+// ---------- 관리자 메뉴 (인프라 구성도) ----------
+// 비밀번호는 PC 서버(secret.json)에서만 확인하고, 화면 내용도 맞춘 뒤에 서버가 보내 준다.
+const ADMIN_PW_KEY = "adminPw";
+function savedAdminPw() { try { return sessionStorage.getItem(ADMIN_PW_KEY) || ""; } catch { return ""; } }
+function saveAdminPw(v) { try { if (v) sessionStorage.setItem(ADMIN_PW_KEY, v); else sessionStorage.removeItem(ADMIN_PW_KEY); } catch {} }
+function lockAdmin(locked) { $("adm-body").hidden = locked; $("adm-locked").hidden = !locked; }
+async function loadAdmin(msg) {
+  let pw = "";
+  if (STATIC) {
+    if (!staticData) return lockAdmin(true); // data.json 을 받기 전
+    pw = (!msg && savedAdminPw()) || await askPassword(msg || "관리자 메뉴는 비밀번호가 필요합니다.", { title: "관리자 로그인", button: "로그인" });
+    if (!pw) return lockAdmin(true); // 창을 닫음
+  }
+  const base = STATIC ? ((staticData && staticData.collectUrl) || "").replace(/\/$/, "") : "";
+  if (STATIC && !base) { lockAdmin(true); return setStatus("지금은 PC 서버가 꺼져 있어 관리자 메뉴를 열 수 없습니다.", "error"); }
+  let r;
+  try {
+    const res = await fetch(base + "/api/admin/infra", { headers: { "x-admin-password": pw } });
+    r = await res.json();
+  } catch { lockAdmin(true); return setStatus("PC 서버에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요.", "error"); }
+  if (r.auth) { saveAdminPw(""); lockAdmin(true); return loadAdmin("비밀번호가 맞지 않습니다. 다시 입력해 주세요."); }
+  if (r.error) { lockAdmin(true); return setStatus(r.error, "error"); }
+  if (STATIC) saveAdminPw(pw);
+  setStatus("");
+  $("adm-body").innerHTML = r.html;
+  lockAdmin(false);
+}
+$("adm-login").addEventListener("click", () => loadAdmin());
+
 function stBars(box, entries, total) {
   if (!entries.length) { box.innerHTML = `<p class="empty-sm">아직 기록이 없습니다.</p>`; return; }
   const max = Math.max(...entries.map((e) => e[1]));
@@ -1693,6 +1723,7 @@ if (STATIC) {
     if (!staticData || !staticData.collectUrl) $("refresh").style.display = "none";
     trackHit(curView); // 첫 화면 기록은 data.json(collectUrl)을 받은 뒤에
     if (curView === "guestbook") loadGuestbook();
+    if (curView === "admin") loadAdmin();
     startPresence();
     const t = staticData && staticData.generatedAt ? new Date(staticData.generatedAt).toLocaleString("ko-KR") : "";
     $("subtitle").textContent = `매매 매물만 집계합니다. 30분마다 자동 갱신 · 마지막 갱신 ${t}`;
