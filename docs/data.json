@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T00:08:39.000Z",
+  "generatedAt": "2026-11-10T01:09:28.419Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14999,8 +14999,8 @@
             {
               "pyeong": 33,
               "count": 7,
-              "price": 94714,
-              "priceText": "9억 4,700"
+              "price": 96429,
+              "priceText": "9억 6,400"
             }
           ]
         },
@@ -15687,15 +15687,15 @@
       ]
     },
     "todayDate": "2026-11-10",
-    "lastFetchedAt": "2026-11-10T00:08:08.343Z",
+    "lastFetchedAt": "2026-11-10T01:08:59.031Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 117,
-      "recent24h": 791,
-      "frequent": 68,
-      "new": 20,
-      "fetchedAt": "2026-11-10T00:08:32.256Z"
+      "realtime": 185,
+      "recent24h": 812,
+      "frequent": 126,
+      "new": 26,
+      "fetchedAt": "2026-11-10T01:09:17.258Z"
     },
     "prevDate": "2026-11-09",
     "rows": [
@@ -15720,7 +15720,7 @@
         "prev": 86,
         "today": 86,
         "diff": 0,
-        "avgPrice": "9억 9,900",
+        "avgPrice": "10억",
         "realPrice": "",
         "realCount": 0,
         "realDays": 10,
@@ -17556,10 +17556,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 68건에서 **86건으로 꾸준히 증가**해 30일 최고치 수준입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 1건 줄었으며, 4~8건 사이에서 **소폭 등락하는 횡보세**입니다.",
-      "real": "33평은 최근 30일 5건 평균 9억 2,000으로, 그전 30일(4건, 8억 7,000)보다 올랐습니다. 10월 28일 15층이 **10억으로 역대 최고가**를 기록했으며, 1년 전 무렵 평균 6억 3,900과 비교해 **큰 폭으로 상승**했습니다. 다만 거래 건수가 적어 평균이 쉽게 흔들릴 수 있고, 25평은 9월 6일 7억 2,000 이후 최근 60일간 거래가 없습니다.",
+      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 68건에서 **86건까지 꾸준히 증가**해 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 한때 8건(10월 19일)까지 늘었다가 **최근 4~5건 수준으로 줄어든** 모습입니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 2,000만원에 거래돼 그전 30일(8억 7,000만원)보다 올랐고, 10월 28일에는 **15층 10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900만원과 비교하면 **약 2억 8,000만원 높은 수준**입니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만원(역대 최고)이지만 거래가 드물어 단건 가격으로 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-10T00:08:37.912Z"
+      "generatedAt": "2026-11-10T01:09:26.909Z"
     },
     "history": [
       {
@@ -18297,7 +18297,200 @@
       "pyeong": 33,
       "added": [],
       "sold": [],
-      "relisted": [],
+      "relisted": [
+        {
+          "before": {
+            "no": "2659908617",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "고/25",
+            "dir": "남서향",
+            "confirm": "20261105",
+            "desc": "주인거주 1년전 도배 김냉자리 미세방충망 줄눈시공 상태최상",
+            "bldg": "473동",
+            "realtor": "반도2차동탄골드공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 25,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2660791112",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "고/25",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "전자계약가능 입주가능 84A 남서향 방충망 냉장고자리 줄눈 도배 등",
+            "bldg": "473동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 26,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2659042621",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "12억",
+            "floor": "고/25",
+            "dir": "남서향",
+            "confirm": "20261102",
+            "desc": "전자계약가능 84A 입주가능 , 조망굿 집상태좋아요",
+            "bldg": "474동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-08-12",
+            "days": 89,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2660776124",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "12억",
+            "floor": "고/25",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "A타입. 탁트인 뷰. 남서향으로 일조량 매우 좋음. ",
+            "bldg": "474동",
+            "realtor": "포레너스대표공인중개사사무소",
+            "firstSeen": "2026-08-12",
+            "days": 90,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2659889750",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "25/25",
+            "dir": "남동향",
+            "confirm": "20261105",
+            "desc": "탑층 방마다 상록골프장뷰 멋진매물  한백초중고 근접",
+            "bldg": "471동",
+            "realtor": "반도2차동탄골드공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 148,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2660775691",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억 7,000",
+            "floor": "25/25",
+            "dir": "남동향",
+            "confirm": "20261110",
+            "desc": "A타입. 후문인접동. 사계절 예쁘고 탁트인 무봉산뷰. ",
+            "bldg": "471동",
+            "realtor": "포레너스대표공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 149,
+            "beforeStart": true
+          }
+        },
+        {
+          "before": {
+            "no": "2659805011",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "9/15",
+            "dir": "남서향",
+            "confirm": "20261105",
+            "desc": "84A 치동천변 전면 로얄동 전세안고",
+            "bldg": "486동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 148,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2660776031",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "9/15",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "A타입. 투자매물.치동천과 씨티뷰가 공존하는 뷰 최고 맛집. ",
+            "bldg": "486동",
+            "realtor": "포레너스대표공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 149,
+            "beforeStart": true
+          }
+        },
+        {
+          "before": {
+            "no": "2658976555",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억 3,000",
+            "floor": "중/25",
+            "dir": "남동향",
+            "confirm": "20261102",
+            "desc": "A타입. 강마루. 중문. LED등교체. 환상적인산뷰. 주인거주로 관리 굿",
+            "bldg": "473동",
+            "realtor": "포레너스대표공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 148,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2660789485",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억 3,000",
+            "floor": "중/25",
+            "dir": "남동향",
+            "confirm": "20261110",
+            "desc": "전자계약가능 84A 남동향 입주가능 조망최고 강마루 LED 미세방충망 등",
+            "bldg": "473동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 149,
+            "beforeStart": true
+          }
+        },
+        {
+          "before": {
+            "no": "2658304629",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억",
+            "floor": "1/15",
+            "dir": "남서향",
+            "confirm": "20261029",
+            "desc": "햇살좋고 3층높이감1층,아이키우기좋은집",
+            "bldg": "483동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 148,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2660791812",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억",
+            "floor": "1/15",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "전자계약가능 1층 84A 남서향 해 잘들어옵니다 ,  전세승계조건",
+            "bldg": "483동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 149,
+            "beforeStart": true
+          }
+        }
+      ],
       "current": [
         {
           "no": "2660597343",
@@ -18585,6 +18778,21 @@
           "beforeStart": false
         },
         {
+          "no": "2660791112",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "고/25",
+          "dir": "남서향",
+          "confirm": "20261110",
+          "desc": "전자계약가능 입주가능 84A 남서향 방충망 냉장고자리 줄눈 도배 등",
+          "bldg": "473동",
+          "realtor": "포레탑공인중개사사무소",
+          "firstSeen": "2026-10-15",
+          "days": 26,
+          "beforeStart": false
+        },
+        {
           "no": "2660363903",
           "pyeong": 33,
           "excl": 84,
@@ -18610,21 +18818,6 @@
           "desc": "초중고학교,숲세권 무봉산뷰,시에4대,입주협의",
           "bldg": "472동",
           "realtor": "탑포레너스공인중개사사무소",
-          "firstSeen": "2026-10-15",
-          "days": 26,
-          "beforeStart": false
-        },
-        {
-          "no": "2659908617",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "고/25",
-          "dir": "남서향",
-          "confirm": "20261105",
-          "desc": "주인거주 1년전 도배 김냉자리 미세방충망 줄눈시공 상태최상",
-          "bldg": "473동",
-          "realtor": "반도2차동탄골드공인중개사사무소",
           "firstSeen": "2026-10-15",
           "days": 26,
           "beforeStart": false
@@ -19140,16 +19333,16 @@
           "beforeStart": false
         },
         {
-          "no": "2659042621",
+          "no": "2660776124",
           "pyeong": 33,
           "excl": 84,
           "price": "12억",
           "floor": "고/25",
           "dir": "남서향",
-          "confirm": "20261102",
-          "desc": "전자계약가능 84A 입주가능 , 조망굿 집상태좋아요",
+          "confirm": "20261110",
+          "desc": "A타입. 탁트인 뷰. 남서향으로 일조량 매우 좋음. ",
           "bldg": "474동",
-          "realtor": "포레탑공인중개사사무소",
+          "realtor": "포레너스대표공인중개사사무소",
           "firstSeen": "2026-08-12",
           "days": 90,
           "beforeStart": false
@@ -19380,6 +19573,66 @@
           "beforeStart": false
         },
         {
+          "no": "2660791812",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억",
+          "floor": "1/15",
+          "dir": "남서향",
+          "confirm": "20261110",
+          "desc": "전자계약가능 1층 84A 남서향 해 잘들어옵니다 ,  전세승계조건",
+          "bldg": "483동",
+          "realtor": "포레탑공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 149,
+          "beforeStart": true
+        },
+        {
+          "no": "2660775691",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억 7,000",
+          "floor": "25/25",
+          "dir": "남동향",
+          "confirm": "20261110",
+          "desc": "A타입. 후문인접동. 사계절 예쁘고 탁트인 무봉산뷰. ",
+          "bldg": "471동",
+          "realtor": "포레너스대표공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 149,
+          "beforeStart": true
+        },
+        {
+          "no": "2660776031",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "9/15",
+          "dir": "남서향",
+          "confirm": "20261110",
+          "desc": "A타입. 투자매물.치동천과 씨티뷰가 공존하는 뷰 최고 맛집. ",
+          "bldg": "486동",
+          "realtor": "포레너스대표공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 149,
+          "beforeStart": true
+        },
+        {
+          "no": "2660789485",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억 3,000",
+          "floor": "중/25",
+          "dir": "남동향",
+          "confirm": "20261110",
+          "desc": "전자계약가능 84A 남동향 입주가능 조망최고 강마루 LED 미세방충망 등",
+          "bldg": "473동",
+          "realtor": "포레탑공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 149,
+          "beforeStart": true
+        },
+        {
           "no": "2660650575",
           "pyeong": 33,
           "excl": 84,
@@ -19405,36 +19658,6 @@
           "desc": "공동X 탁트인 치동천뷰 주인거주 집상태 최상 전자계약가능",
           "bldg": "488동",
           "realtor": "포레너스유성공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 149,
-          "beforeStart": true
-        },
-        {
-          "no": "2659889750",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 5,000",
-          "floor": "25/25",
-          "dir": "남동향",
-          "confirm": "20261105",
-          "desc": "탑층 방마다 상록골프장뷰 멋진매물  한백초중고 근접",
-          "bldg": "471동",
-          "realtor": "반도2차동탄골드공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 149,
-          "beforeStart": true
-        },
-        {
-          "no": "2659805011",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "9/15",
-          "dir": "남서향",
-          "confirm": "20261105",
-          "desc": "84A 치동천변 전면 로얄동 전세안고",
-          "bldg": "486동",
-          "realtor": "아이공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 149,
           "beforeStart": true
@@ -19485,21 +19708,6 @@
           "beforeStart": true
         },
         {
-          "no": "2658976555",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억 3,000",
-          "floor": "중/25",
-          "dir": "남동향",
-          "confirm": "20261102",
-          "desc": "A타입. 강마루. 중문. LED등교체. 환상적인산뷰. 주인거주로 관리 굿",
-          "bldg": "473동",
-          "realtor": "포레너스대표공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 149,
-          "beforeStart": true
-        },
-        {
           "no": "2658769533",
           "pyeong": 33,
           "excl": 84,
@@ -19509,21 +19717,6 @@
           "confirm": "20261031",
           "desc": "추천,선호동,초중고학교,5층이상,긴잔금",
           "bldg": "475동",
-          "realtor": "탑포레너스공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 149,
-          "beforeStart": true
-        },
-        {
-          "no": "2658304629",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억",
-          "floor": "1/15",
-          "dir": "남서향",
-          "confirm": "20261029",
-          "desc": "햇살좋고 3층높이감1층,아이키우기좋은집",
-          "bldg": "483동",
           "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 149,
@@ -20885,7 +21078,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-10T00:08:38.999Z",
+    "fetchedAt": "2026-11-10T01:09:28.015Z",
     "today": "2026-11-10",
     "items": [
       {
@@ -20952,16 +21145,16 @@
         "isToday": false
       },
       {
-        "title": "동탄트램 2031년 개통 목표…차량계약 관건",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYkJoQml5X2RtQlNyRHNSZ2xRNWhLZ2JMcTRucXV0VU81eFo3TEJkUFdNTm82dW91MGk0em5NYnlYSzNGSzRDVzN3N25OZFlOSDlFemdXVV9YSGxIQzBDMkZrcmJqU01XWVE?oc=5",
-        "source": "OBC 뉴스",
-        "time": "2026-10-14T07:00:00.000Z",
+        "title": "트램이 초래할 동탄신도시 지각변동…교통사각지대 서·남동탄 단지도 들썩",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mc054TEtsT0VGZEdjZTZadUR2UU1rVXA5NldNaEphcU9VWEpuemVNTGM1R1EtM1lQaVlaQjd1blpzRnFSMTdDalgxZHVvVFVWOExNWFZaSFNKQ3d0d1o4WXJON3dIdHpRbzgzSVQ5T3gzUzl4U1MwcjZld19ISG_SAXNBVV95cUxQYTZBb1h6bE9qZ0E1TkRfQUUxQWlnTG5rcXVXNFRvNzM1Q1Z2cTRiWldQc3lYbTRjd0h3LWRMcnNpUVhlZDdyNGZERUUyanByZHVZUEoteVcwYzU2bno0OXZRMW5Xd3Y2dHhCUWxTMjFjSzZB?oc=5",
+        "source": "땅집고",
+        "time": "2026-11-01T21:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-10T00:08:38.906Z",
+    "fetchedAt": "2026-11-10T01:09:27.933Z",
     "today": "2026-11-10",
     "items": [
       {
