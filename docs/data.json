@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T15:48:30.906Z",
+  "generatedAt": "2026-11-10T16:18:43.748Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15683,15 +15683,15 @@
       ]
     },
     "todayDate": "2026-11-11",
-    "lastFetchedAt": "2026-11-10T15:48:12.913Z",
+    "lastFetchedAt": "2026-11-10T16:18:30.224Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 127,
-      "recent24h": 797,
-      "frequent": 66,
-      "new": 36,
-      "fetchedAt": "2026-11-10T15:48:25.312Z"
+      "realtime": 107,
+      "recent24h": 795,
+      "frequent": 56,
+      "new": 31,
+      "fetchedAt": "2026-11-10T16:18:37.272Z"
     },
     "prevDate": "2026-11-10",
     "rows": [
@@ -17565,10 +17565,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 65건에서 86건으로 꾸준히 늘었고, 오늘 **86건으로 30일 최고치**이자 30일 전보다 12건 많은 수준입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 1건 줄었습니다.",
-      "real": "33평은 최근 30일 5건의 평균이 **9억 2,000으로 그전 30일(8억 7,000)보다 약 5,000만 원 높고**, 10월 28일 15층이 10억으로 역대 최고를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **상승 폭이 큰 편**이지만, 거래 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 최근 60일간 거래가 없습니다.",
+      "listing": "33평 매물은 최근 12주 동안 65건에서 86건으로 꾸준히 늘었고, 오늘 **86건으로 30일 전보다 12건 증가**해 30일 중 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 10월 중순 8건까지 늘었다가 **오늘 5건으로 줄어** 4~8건 사이의 적은 물량에서 움직이고 있습니다.",
+      "real": "33평은 최근 30일 5건이 **평균 9억 2,000으로 거래돼** 그전 30일(4건, 8억 7,000)보다 높아졌고, 10월 28일 15층이 10억으로 역대 최고를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **큰 폭으로 오른 수준**이지만, 최근 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없고, 마지막 거래는 9월 6일 7억 2,000입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-10T15:48:30.702Z"
+      "generatedAt": "2026-11-10T16:18:42.635Z"
     },
     "history": [
       {
@@ -20898,7 +20898,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-10T15:19:06.445Z",
+    "fetchedAt": "2026-11-10T16:18:43.726Z",
     "today": "2026-11-11",
     "items": [
       {
@@ -20974,7 +20974,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-10T15:19:06.344Z",
+    "fetchedAt": "2026-11-10T16:18:43.745Z",
     "today": "2026-11-11",
     "items": [
       {
@@ -21013,13 +21013,6 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄고, 학생들이 함께 만든 작은 실천으로 세계에 희망을 전하다",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1HeGFzUjJReWE4eXM4bkg5bjUyVk12V3F2WTlOUVpTTVo5Q1JJb0JBYWcteDljbklDLWRMU0JOQ3hGb2gtcEdvcXNTQ2ZIUml5UkR0QWtDSVlXRG5lbXVIUDQ0Uzk0YXU4dTA1WHA1NNIBckFVX3lxTFBITHF2NnprQURTMlI4UG5oTWtQMkhIaTFnYzliQ01BbUE5czl3cGsteC1CX01fd3E0MG4wU3lmcXFZMWdldlNtVmpsUjlYSG9zNlZIT05UM25qZ3dlaG9zT21pNE5KaVF5d2RZU2o0a3dFUQ?oc=5",
-        "source": "뉴스 따옴",
-        "time": "2026-11-07T09:02:47.000Z",
-        "isToday": false
-      },
-      {
         "title": "“동탄역 근처만 폭등인데 동탄구 전체 규제”… ‘집값 소외’ 주민들 분통",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2t0VUFhNUF0NVlzdzVCQVZRcjRCNXNMajV3SlkzTVRiZE1ZRE9FV19MWFgxV294MkxFekxJVkRvVHYzdFUzZS0wVFh1NGZpa3VMbndsdkVBRWlqVkFWTGV3WmhUc1JzX0NESzRLQ0FmNnM5TEE4cXhZVzY2Zkt6anhJclM5V291WWlWRzkzdVExUnNnNG9DVC13ek90UdIBZkFVX3lxTE9pd2dENW1ibFFhWERVd3ZWTGNHai1GSm1MQ05YNXlTNExEVDIxVFVyQS1uYjlhTy0yVzUxaTBhOHhwWjhCbWRjX3VOYVFLeFh5MFNOS1oyU0lhVDQtWDZxMjdWcVJyQQ?oc=5",
         "source": "동아일보",
@@ -21045,6 +21038,13 @@
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLYWFLbHZ5My1vTzNvXzhqV1cyZFotZGxYVGg3V1AwRXVoZkxiY2h5Yy1zeHBZMEFqUE5uMWhWc3R5NkZOZHlZRi13SzZaYmJiNmVXMnNYQ25iOTkwdjdobldQTllna1dfUXNvR3k2TdIBc0FVX3lxTE5GTFNCa1VFZ0dhMXdvMWlCVUotcUVWTi05QnBxRmFFeWxZNzhGNmR6RGJMeFhTbjFVT251Y1ZZU0g1TE5UZHdVVUY0blJxSVMtQmJsOUUwbW95cm9RUDhEelo0NWNqV3pHRm5KaUNMRS1Ha28?oc=5",
         "source": "데일리한국",
         "time": "2026-11-04T01:47:39.000Z",
+        "isToday": false
+      },
+      {
+        "title": "삼성생명, 지역 통합돌봄 모델 공개…화성 동탄서 12월까지 실증",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9YQ1FCdjJmaEEtamRQeDQ2djBVMFhXcHNvOEM4NEpOLXZwQU1uWFZ4MGpFT2pYa2xQazRORFpPdE5HWTRWQUE2N0pwU3phR3Iwd2xqRTVmU1JiTG5m?oc=5",
+        "source": "뉴스핌",
+        "time": "2026-11-04T01:04:00.000Z",
         "isToday": false
       }
     ]
