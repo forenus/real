@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T07:48:51.097Z",
+  "generatedAt": "2026-11-10T08:19:05.374Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15687,15 +15687,15 @@
       ]
     },
     "todayDate": "2026-11-10",
-    "lastFetchedAt": "2026-11-10T07:48:39.920Z",
+    "lastFetchedAt": "2026-11-10T08:18:44.774Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 188,
-      "recent24h": 866,
-      "frequent": 122,
-      "new": 43,
-      "fetchedAt": "2026-11-10T07:48:45.105Z"
+      "realtime": 190,
+      "recent24h": 851,
+      "frequent": 116,
+      "new": 46,
+      "fetchedAt": "2026-11-10T08:18:58.116Z"
     },
     "prevDate": "2026-11-09",
     "rows": [
@@ -17556,10 +17556,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 68건에서 **86건으로 꾸준히 증가**해 30일 최고치를 이어가고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 4~8건 사이에서 **소폭 등락하며 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**입니다. 10월 28일 15층이 **10억에 거래되며 역대 최고**를 기록했지만, 건수가 적어 층별 차이에 따라 평균이 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000입니다.",
+      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 **68건에서 86건으로 꾸준히 증가**해 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 1건 줄었으며, 10월 중순 8건을 정점으로 **4~8건 사이에서 소폭 등락**하고 있습니다.",
+      "real": "33평은 최근 30일 5건의 평균이 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 높아졌고, 10월 28일 15층이 **10억 원으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900만 원과 비교하면 **약 2억 8,000만 원 높은 수준**으로 보이나, 건수가 적어 평균이 층수에 따라 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000만 원 이후 최근 60일간 거래가 없어 흐름을 판단하기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-10T07:48:50.826Z"
+      "generatedAt": "2026-11-10T08:19:04.255Z"
     },
     "history": [
       {
@@ -18615,6 +18615,38 @@
             "realtor": "탑포레너스공인중개사사무소",
             "firstSeen": "2026-09-08",
             "days": 63,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2660038026",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "3/15",
+            "dir": "남서향",
+            "confirm": "20261106",
+            "desc": "전자계약가능 84A 남서향 입주가능 조망최고 , 잔금전 인테리어 가능",
+            "bldg": "487동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-09-01",
+            "days": 69,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2660977997",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "3/15",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "전면동 막힘없는 구조 인테리어됨 시스템에어컨4 집상태최상",
+            "bldg": "487동",
+            "realtor": "이지코너공인중개사사무소",
+            "firstSeen": "2026-09-01",
+            "days": 70,
             "beforeStart": false
           }
         },
@@ -19755,16 +19787,16 @@
           "beforeStart": false
         },
         {
-          "no": "2660038026",
+          "no": "2660977997",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 5,000",
           "floor": "3/15",
           "dir": "남서향",
-          "confirm": "20261106",
-          "desc": "전자계약가능 84A 남서향 입주가능 조망최고 , 잔금전 인테리어 가능",
+          "confirm": "20261110",
+          "desc": "전면동 막힘없는 구조 인테리어됨 시스템에어컨4 집상태최상",
           "bldg": "487동",
-          "realtor": "포레탑공인중개사사무소",
+          "realtor": "이지코너공인중개사사무소",
           "firstSeen": "2026-09-01",
           "days": 70,
           "beforeStart": false
@@ -21590,9 +21622,30 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-10T07:19:01.104Z",
+    "fetchedAt": "2026-11-10T08:19:05.371Z",
     "today": "2026-11-10",
     "items": [
+      {
+        "title": "17년만에…동탄트램 '착수'",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE11SUV2VlUzMF9XUzhmVzJtdGxGUWRvbHlVNFU1Y2pXMUNhR1N3UHkwOHpmSVd2R2kwU1VBZXREZkY2OFdOQV83dDVaSElUUjNzbEpYR1lyWklxcVN2T2hJ?oc=5",
+        "source": "매일경제",
+        "time": "2026-11-10T07:13:11.000Z",
+        "isToday": true
+      },
+      {
+        "title": "동탄 집값 오르더니 또 '대박'…17년 만에 숙원 이뤄졌다는 '이것'",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9idUoya2l3ZVVtQ2JlaHZkRzZsd3JmR3J0NnYyM0FnaE9wWF9YSFpWRTJjTkpOUGhiV2FKNHpRdy0yMFI4VmxZMkdveEFsdmVfUDdzdG5R?oc=5",
+        "source": "위키트리",
+        "time": "2026-11-05T08:22:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
+        "source": "동아일보",
+        "time": "2026-11-03T19:30:00.000Z",
+        "isToday": false
+      },
       {
         "title": "[사설] 동탄트램, 17년 기다림 끝에 첫발",
         "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1OU0Z0WVhtWEpFMldWSm90eGRPTzJSUUNwUlVMRFpldGNFV29oSDhJakxiM21lYTROQkNDbW5zeGhnRjQ?oc=5",
@@ -21615,6 +21668,13 @@
         "isToday": false
       },
       {
+        "title": "화성 동탄 트램 17년만에 첫삽",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmMi1fNGw5b1p4ZXpmS2RhNEZua1htVG9XbHVfdzh1RFBIWjdwZF9qdlFKQ0NGaXMwNDQtTTM0aTR5ZFNEOHhTT2o2SHZLMW1sZThtai1yRFk?oc=5",
+        "source": "매일경제",
+        "time": "2026-11-02T08:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성시, 동탄 트램 첫 공정 착수",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9YR01MWmQ0Z0pEc3NJSFpRYjh3Q3kzbGJMamdXS3RZSU5JNkVnVWYyQ3ZaSGZkZERlRWdhbWtyM3FPOEZvRVpnVlBnTFJhR29QWlHSAVNBVV95cUxPWGNzUS1xc2FrTWRKMDFvWE1jTlp3SG94NkFZSjV4Zzd5SE9OZVBoN043bEd3OXNMeFRUWGgtXzdIMVQ2LUNNa3J0aHA3blJaMGlxRQ?oc=5",
         "source": "서울경제",
@@ -21629,44 +21689,16 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄 트램 17년만에 첫삽",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmMi1fNGw5b1p4ZXpmS2RhNEZua1htVG9XbHVfdzh1RFBIWjdwZF9qdlFKQ0NGaXMwNDQtTTM0aTR5ZFNEOHhTT2o2SHZLMW1sZThtai1yRFk?oc=5",
-        "source": "매일경제",
-        "time": "2026-11-02T07:30:25.000Z",
-        "isToday": false
-      },
-      {
         "title": "\"17년 기다림 끝에 첫 삽\"…화성시, 동탄 트램 우선시공분 착수",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kQkgydTloY0Y4NDlJUWFacXJiRWxvRldEUjlkODN6ZjVPSzlxdzJIVnZ4RTMtODhYZnR5SGl4cnZudW1OaWRuWmJUTTEwT1NqNWRJem9ub1I0Zw?oc=5",
         "source": "파이낸셜뉴스",
         "time": "2026-11-02T06:59:40.000Z",
         "isToday": false
-      },
-      {
-        "title": "트램이 초래할 동탄신도시 지각변동…교통사각지대 서·남동탄 단지도 들썩",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mc054TEtsT0VGZEdjZTZadUR2UU1rVXA5NldNaEphcU9VWEpuemVNTGM1R1EtM1lQaVlaQjd1blpzRnFSMTdDalgxZHVvVFVWOExNWFZaSFNKQ3d0d1o4WXJON3dIdHpRbzgzSVQ5T3gzUzl4U1MwcjZld19ISG_SAXNBVV95cUxQYTZBb1h6bE9qZ0E1TkRfQUUxQWlnTG5rcXVXNFRvNzM1Q1Z2cTRiWldQc3lYbTRjd0h3LWRMcnNpUVhlZDdyNGZERUUyanByZHVZUEoteVcwYzU2bno0OXZRMW5Xd3Y2dHhCUWxTMjFjSzZB?oc=5",
-        "source": "땅집고",
-        "time": "2026-11-01T21:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄트램 2031년 개통 목표…차량계약 관건",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYkJoQml5X2RtQlNyRHNSZ2xRNWhLZ2JMcTRucXV0VU81eFo3TEJkUFdNTm82dW91MGk0em5NYnlYSzNGSzRDVzN3N25OZFlOSDlFemdXVV9YSGxIQzBDMkZrcmJqU01XWVE?oc=5",
-        "source": "OBC 뉴스",
-        "time": "2026-10-14T07:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "17년 기다린 동탄 트램, 이달 착공 추진… 남동탄 아파트도 신고가",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNU5XdmJzS1Q5dEVlbHJ3Z2RLOVhDZHpTTnV4SGhfelRudExjRWFic21ocVlBVERvSlJJT0hPQ2dRSkZOMmNfQTlYbl80bkx0QXF5RFRrVHQ3Rm51VmpnMnFvNDVmTjJ4OVE0NWFrU29WUEwtNndnbnk1SDVLcDN5SXdQSHF0c2VNLWNKUExoX282Z2hHYnFwRdIBrAFBVV95cUxQLUtxOVBoM0hhcloxQk1pVWhaRXpRajF6Y2pTNUJ4di1SX0FWdTVOLVFwbVNfZWY4RW9qdFAyYmY0TWNobXhkSlNBN21HV05HMC1Dbkl0WUVlaENqUy1fMVN5cnlaTmJrLXFyUVc1bE80QTVDUmo3ZThQanp5VmNpR0dMUkRubXpiUTNPaDhkc2NFNHZJeEFFWE43cmdRdXZvQzV5Um5vcjVsbnhv?oc=5",
-        "source": "Chosunbiz",
-        "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-10T07:19:01.043Z",
+    "fetchedAt": "2026-11-10T08:19:05.193Z",
     "today": "2026-11-10",
     "items": [
       {
