@@ -32,6 +32,7 @@
         <a href="#board" data-view="board"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>개선·문의</span></a>
         <a href="#guide" data-view="guide"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg><span>사용법</span></a>
         <a href="#stats" data-view="stats"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg><span>접속 통계</span><svg class="ico nav-lock" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></a>
+        <a href="#admin" data-view="admin"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></svg><span>관리자</span><svg class="ico nav-lock" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></a>
         <a href="#settings" data-view="settings" id="nav-settings"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg><span>설정</span></a>
       </nav>
       <section class="presence" id="presence" aria-label="현재 접속자" hidden>
@@ -517,6 +518,17 @@
           <h2>관리자 전용 화면입니다</h2>
           <p>접속 통계는 관리자 비밀번호로 로그인해야 볼 수 있습니다.</p>
           <button type="button" class="btn primary" id="st-login">로그인</button>
+        </section>
+      </section>
+
+      <!-- ===== 관리자 (내용은 비밀번호를 맞추면 PC 서버가 보내 준다) ===== -->
+      <section class="view" data-view="admin" hidden>
+        <div id="adm-body" hidden></div>
+        <section class="card st-locked" id="adm-locked">
+          <svg class="ico" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <h2>관리자 전용 화면입니다</h2>
+          <p>사이트 인프라 구성도는 관리자 비밀번호로 로그인해야 볼 수 있습니다.</p>
+          <button type="button" class="btn primary" id="adm-login">로그인</button>
         </section>
       </section>
 

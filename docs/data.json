@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T02:41:21.887Z",
+  "generatedAt": "2026-11-10T03:49:19.051Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15687,15 +15687,15 @@
       ]
     },
     "todayDate": "2026-11-10",
-    "lastFetchedAt": "2026-11-10T02:40:15.195Z",
+    "lastFetchedAt": "2026-11-10T03:48:56.746Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 221,
-      "recent24h": 828,
-      "frequent": 142,
-      "new": 35,
-      "fetchedAt": "2026-11-10T02:34:53.887Z"
+      "realtime": 229,
+      "recent24h": 848,
+      "frequent": 153,
+      "new": 36,
+      "fetchedAt": "2026-11-10T03:49:12.956Z"
     },
     "prevDate": "2026-11-09",
     "rows": [
@@ -17556,10 +17556,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 **68건에서 86건으로 꾸준히 증가**해 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 1건 줄었으며, 10월 중순 8건을 정점으로 **4~6건 수준에서 소폭 감소**하는 모습입니다.",
-      "real": "33평은 최근 30일 5건 거래의 평균이 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **큰 폭으로 상승한 수준**이지만, 최근 거래가 2층 8억 2,000부터 10억까지 층별 차이가 커 건수가 적을 때는 평균이 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 60일간 거래가 없어, 현재 평균호가 8억 5,600과 비교할 실거래 근거가 부족합니다.",
+      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 **68건에서 86건으로 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 1건 줄었으며, **4~8건 사이에서 소폭 등락**하는 수준입니다.",
+      "real": "33평은 최근 30일 5건의 평균이 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 15층이 **10억 원에 거래되며 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900만 원과 비교하면 **상승 폭이 큰 편**이지만, 최근 거래 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없었고, 마지막 거래는 9월 6일 7억 2,000만 원입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-10T02:41:15.836Z"
+      "generatedAt": "2026-11-10T03:49:18.714Z"
     },
     "history": [
       {
@@ -18364,6 +18364,38 @@
         },
         {
           "before": {
+            "no": "2660363903",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261107",
+            "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
+            "bldg": "485동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 25,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2660873231",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "A타입 추천, 입주협의, 전면동,탁트인 치동천뷰,중문,타일교체,로얄동호수",
+            "bldg": "485동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 26,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2659908617",
             "pyeong": 33,
             "excl": 84,
@@ -18411,18 +18443,50 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2660839638",
+            "no": "2660872945",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 7,000",
             "floor": "중/15",
             "dir": "남서향",
             "confirm": "20261110",
-            "desc": "입주가능,햇살좋은 치동천 최고뷰,주인거주",
+            "desc": "추천매물. 전면동, 탁트인 치동천 뷰, 입주가. 로얄동호수, 일조권굿",
             "bldg": "488동",
-            "realtor": "탑포레너스공인중개사사무소",
+            "realtor": "예스포레너스공인중개사사무소",
             "firstSeen": "2026-10-11",
             "days": 30,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2660419761",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "5/25",
+            "dir": "남서향",
+            "confirm": "20261107",
+            "desc": "추천,입주협의, 사이드 트인뷰, 잔금전 인테리어가능,일조권 굿, 주차편리",
+            "bldg": "474동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-08",
+            "days": 32,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2660870534",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "5/25",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "강추천.인기동A.학교아주가깝고동간넓음.잔금전인테리어가능",
+            "bldg": "474동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-10-08",
+            "days": 33,
             "beforeStart": false
           }
         },
@@ -19113,6 +19177,21 @@
           "beforeStart": false
         },
         {
+          "no": "2660873231",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "12/15",
+          "dir": "남서향",
+          "confirm": "20261110",
+          "desc": "A타입 추천, 입주협의, 전면동,탁트인 치동천뷰,중문,타일교체,로얄동호수",
+          "bldg": "485동",
+          "realtor": "예스포레너스공인중개사사무소",
+          "firstSeen": "2026-10-15",
+          "days": 26,
+          "beforeStart": false
+        },
+        {
           "no": "2660791112",
           "pyeong": 33,
           "excl": 84,
@@ -19123,21 +19202,6 @@
           "desc": "전자계약가능 입주가능 84A 남서향 방충망 냉장고자리 줄눈 도배 등",
           "bldg": "473동",
           "realtor": "포레탑공인중개사사무소",
-          "firstSeen": "2026-10-15",
-          "days": 26,
-          "beforeStart": false
-        },
-        {
-          "no": "2660363903",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "12/15",
-          "dir": "남서향",
-          "confirm": "20261107",
-          "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
-          "bldg": "485동",
-          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-10-15",
           "days": 26,
           "beforeStart": false
@@ -19188,31 +19252,31 @@
           "beforeStart": false
         },
         {
-          "no": "2660839638",
+          "no": "2660872945",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 7,000",
           "floor": "중/15",
           "dir": "남서향",
           "confirm": "20261110",
-          "desc": "입주가능,햇살좋은 치동천 최고뷰,주인거주",
+          "desc": "추천매물. 전면동, 탁트인 치동천 뷰, 입주가. 로얄동호수, 일조권굿",
           "bldg": "488동",
-          "realtor": "탑포레너스공인중개사사무소",
+          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-10-11",
           "days": 30,
           "beforeStart": false
         },
         {
-          "no": "2660419761",
+          "no": "2660870534",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 5,000",
           "floor": "5/25",
           "dir": "남서향",
-          "confirm": "20261107",
-          "desc": "추천,입주협의, 사이드 트인뷰, 잔금전 인테리어가능,일조권 굿, 주차편리",
+          "confirm": "20261110",
+          "desc": "강추천.인기동A.학교아주가깝고동간넓음.잔금전인테리어가능",
           "bldg": "474동",
-          "realtor": "예스포레너스공인중개사사무소",
+          "realtor": "동탄퀸포레너스공인중개사사무소",
           "firstSeen": "2026-10-08",
           "days": 33,
           "beforeStart": false
@@ -21398,23 +21462,9 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-10T02:41:21.885Z",
+    "fetchedAt": "2026-11-10T03:48:26.208Z",
     "today": "2026-11-10",
     "items": [
-      {
-        "title": "동탄 집값 오르더니 또 '대박'…17년 만에 숙원 이뤄졌다는 '이것'",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9idUoya2l3ZVVtQ2JlaHZkRzZsd3JmR3J0NnYyM0FnaE9wWF9YSFpWRTJjTkpOUGhiV2FKNHpRdy0yMFI4VmxZMkdveEFsdmVfUDdzdG5R?oc=5",
-        "source": "위키트리",
-        "time": "2026-11-05T08:22:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
-        "source": "동아일보",
-        "time": "2026-11-03T19:30:00.000Z",
-        "isToday": false
-      },
       {
         "title": "[사설] 동탄트램, 17년 기다림 끝에 첫발",
         "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1OU0Z0WVhtWEpFMldWSm90eGRPTzJSUUNwUlVMRFpldGNFV29oSDhJakxiM21lYTROQkNDbW5zeGhnRjQ?oc=5",
@@ -21470,11 +21520,25 @@
         "source": "땅집고",
         "time": "2026-11-01T21:00:00.000Z",
         "isToday": false
+      },
+      {
+        "title": "동탄트램 2031년 개통 목표…차량계약 관건",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYkJoQml5X2RtQlNyRHNSZ2xRNWhLZ2JMcTRucXV0VU81eFo3TEJkUFdNTm82dW91MGk0em5NYnlYSzNGSzRDVzN3N25OZFlOSDlFemdXVV9YSGxIQzBDMkZrcmJqU01XWVE?oc=5",
+        "source": "OBC 뉴스",
+        "time": "2026-10-14T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "17년 기다린 동탄 트램, 이달 착공 추진… 남동탄 아파트도 신고가",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNU5XdmJzS1Q5dEVlbHJ3Z2RLOVhDZHpTTnV4SGhfelRudExjRWFic21ocVlBVERvSlJJT0hPQ2dRSkZOMmNfQTlYbl80bkx0QXF5RFRrVHQ3Rm51VmpnMnFvNDVmTjJ4OVE0NWFrU29WUEwtNndnbnk1SDVLcDN5SXdQSHF0c2VNLWNKUExoX282Z2hHYnFwRdIBrAFBVV95cUxQLUtxOVBoM0hhcloxQk1pVWhaRXpRajF6Y2pTNUJ4di1SX0FWdTVOLVFwbVNfZWY4RW9qdFAyYmY0TWNobXhkSlNBN21HV05HMC1Dbkl0WUVlaENqUy1fMVN5cnlaTmJrLXFyUVc1bE80QTVDUmo3ZThQanp5VmNpR0dMUkRubXpiUTNPaDhkc2NFNHZJeEFFWE43cmdRdXZvQzV5Um5vcjVsbnhv?oc=5",
+        "source": "Chosunbiz",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-10T02:41:21.883Z",
+    "fetchedAt": "2026-11-10T03:48:26.667Z",
     "today": "2026-11-10",
     "items": [
       {
@@ -21520,6 +21584,13 @@
         "isToday": false
       },
       {
+        "title": "화성 동탄5동, 사회단체·동장 후원으로 '그냥드림' 나눔 확대",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPUE5VYTdyWmwzZm9uZzdGSlFkd2FDYmdxdTNxZGJOQXZJS1lFQU9UMkQxeklPTHM4TmxVTVpmRUkxNVppWnFkU25mTkcxMmdBT1E1QnJXSVZKSXNMbENfYmVNMEE?oc=5",
+        "source": "매일일보",
+        "time": "2026-11-05T04:46:58.000Z",
+        "isToday": false
+      },
+      {
         "title": "삼성생명, AI로 시니어 일상 돌본다…화성 동탄서 통합케어 실증",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLYWFLbHZ5My1vTzNvXzhqV1cyZFotZGxYVGg3V1AwRXVoZkxiY2h5Yy1zeHBZMEFqUE5uMWhWc3R5NkZOZHlZRi13SzZaYmJiNmVXMnNYQ25iOTkwdjdobldQTllna1dfUXNvR3k2TdIBc0FVX3lxTE5GTFNCa1VFZ0dhMXdvMWlCVUotcUVWTi05QnBxRmFFeWxZNzhGNmR6RGJMeFhTbjFVT251Y1ZZU0g1TE5UZHdVVUY0blJxSVMtQmJsOUUwbW95cm9RUDhEelo0NWNqV3pHRm5KaUNMRS1Ha28?oc=5",
         "source": "데일리한국",
@@ -21538,13 +21609,6 @@
         "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
         "source": "화성신문",
         "time": "2026-10-29T08:31:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "서울 상승폭 둔화, 화성 동탄/병점 집값이 이끌었다!",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
-        "source": "KB Think",
-        "time": "2026-10-26T07:00:00.000Z",
         "isToday": false
       }
     ]
