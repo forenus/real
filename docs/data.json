@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T09:48:36.659Z",
+  "generatedAt": "2026-11-10T10:18:48.865Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15687,15 +15687,15 @@
       ]
     },
     "todayDate": "2026-11-10",
-    "lastFetchedAt": "2026-11-10T09:48:20.416Z",
+    "lastFetchedAt": "2026-11-10T10:18:37.477Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 161,
-      "recent24h": 821,
+      "realtime": 167,
+      "recent24h": 818,
       "frequent": 102,
-      "new": 35,
-      "fetchedAt": "2026-11-10T09:48:30.741Z"
+      "new": 34,
+      "fetchedAt": "2026-11-10T10:18:42.036Z"
     },
     "prevDate": "2026-11-09",
     "rows": [
@@ -17556,10 +17556,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 12주 전 68건에서 **꾸준히 증가해 30일 최고치**를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 1건 줄었으며, 4~8건 사이에서 **소폭 등락하는 횡보세**입니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 1년 전 무렵 6억 3,900만 원과 비교하면 **큰 폭의 상승 흐름**입니다. 10월 28일 15층이 **역대 최고 10억 원**에 거래됐지만, 같은 달 2층은 8억 2,000만 원으로 층에 따른 차이가 큽니다. 25평은 최근 60일간 거래가 없어, 9월 6일 최고가 7억 2,000만 원 이후의 흐름은 판단하기 어렵습니다.",
+      "listing": "33평 매물은 오늘 86건으로 30일 전보다 13건 늘었고, 최근 12주 동안 **68건에서 86건으로 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 5건으로 4~8건 사이에서 소폭 오르내리며 큰 변화 없이 유지되고 있습니다.",
+      "real": "33평은 최근 30일 5건의 평균이 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **10억에 거래되며 역대 최고**를 경신했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8천만 원 높은 수준**이지만, 최근 거래가 5건에 불과해 평균은 층수 등에 따라 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 거래 이후 최근 60일간 실거래가 없어 현재 가격 흐름을 판단하기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-10T09:48:36.456Z"
+      "generatedAt": "2026-11-10T10:18:47.919Z"
     },
     "history": [
       {
@@ -21622,7 +21622,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-10T09:18:39.956Z",
+    "fetchedAt": "2026-11-10T10:18:48.848Z",
     "today": "2026-11-10",
     "items": [
       {
@@ -21698,7 +21698,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-10T09:18:39.934Z",
+    "fetchedAt": "2026-11-10T10:18:48.864Z",
     "today": "2026-11-10",
     "items": [
       {
@@ -21737,13 +21737,6 @@
         "isToday": false
       },
       {
-        "title": "“동탄역 근처만 폭등인데 동탄구 전체 규제”… ‘집값 소외’ 주민들 분통",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2t0VUFhNUF0NVlzdzVCQVZRcjRCNXNMajV3SlkzTVRiZE1ZRE9FV19MWFgxV294MkxFekxJVkRvVHYzdFUzZS0wVFh1NGZpa3VMbndsdkVBRWlqVkFWTGV3WmhUc1JzX0NESzRLQ0FmNnM5TEE4cXhZVzY2Zkt6anhJclM5V291WWlWRzkzdVExUnNnNG9DVC13ek90UdIBZkFVX3lxTE9pd2dENW1ibFFhWERVd3ZWTGNHai1GSm1MQ05YNXlTNExEVDIxVFVyQS1uYjlhTy0yVzUxaTBhOHhwWjhCbWRjX3VOYVFLeFh5MFNOS1oyU0lhVDQtWDZxMjdWcVJyQQ?oc=5",
-        "source": "동아일보",
-        "time": "2026-11-07T08:00:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성 동탄9동, ‘동9동락 페스타’…운동회·공연 풍성",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MbXJKUUNKZS05a0sycDk0YkRiZFZ0dmYwTUlLaXJ2ektXVVFRR1BMbXV6Z0VXMS14MFNEem4taXBSWWhJREhGdEVKVVgzZFBL?oc=5",
         "source": "문화일보",
@@ -21769,6 +21762,13 @@
         "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
         "source": "화성신문",
         "time": "2026-10-29T08:31:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "서울 상승폭 둔화, 화성 동탄/병점 집값이 이끌었다!",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS0ZfOGlSZjVIOUhVLXJZYlZhQmt0NnRpMXhGM3I5VEc3dVVRSVBlbDlGNlNKSFBneEFHSWFlQm9yNVdQcFdjOXo0OUpsUTNqa0lvT0RZYk10VEZ2X2RYa2dHRQ?oc=5",
+        "source": "KB Think",
+        "time": "2026-10-26T07:00:00.000Z",
         "isToday": false
       }
     ]
