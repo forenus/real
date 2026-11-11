@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T23:27:04.225Z",
+  "generatedAt": "2026-11-11T23:57:47.402Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15667,15 +15667,15 @@
       ]
     },
     "todayDate": "2026-11-12",
-    "lastFetchedAt": "2026-11-11T23:26:49.100Z",
+    "lastFetchedAt": "2026-11-11T23:57:26.374Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 51,
-      "recent24h": 777,
-      "frequent": 35,
-      "new": 9,
-      "fetchedAt": "2026-11-11T23:26:59.242Z"
+      "realtime": 63,
+      "recent24h": 766,
+      "frequent": 41,
+      "new": 12,
+      "fetchedAt": "2026-11-11T23:57:39.959Z"
     },
     "prevDate": "2026-11-11",
     "rows": [
@@ -17562,10 +17562,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 88건으로 30일 최고치**를 기록했고, 30일 전보다 12건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전 대비 2건 줄며** 10월 중순 8건 고점 이후 소폭 감소하는 모습입니다.",
-      "real": "33평은 최근 30일 5건 평균이 **9억 2,000으로 그전 30일(8억 7,000)보다 상승**했고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 다만 거래 건수가 적어 층별 가격에 따라 평균이 크게 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000입니다.",
+      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 오늘 **88건으로 30일 전보다 12건 증가**했으며, 30일 최고치를 기록하고 있습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 10월 중순 8건까지 늘었다가 **오늘 5건으로 줄어** 소폭 소진되는 모습입니다.",
+      "real": "33평은 최근 30일 5건이 **평균 9억 2,000으로 직전 30일(8억 7,000)보다 상승**했고, 10월 28일 15층이 10억에 거래되며 역대 최고를 경신했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 크게 오른 수준이지만, 최근 거래가 5건 안팎이라 평균이 흔들릴 수 있습니다. 25평은 **최근 60일간 거래가 없으며**, 마지막 거래는 9월 6일 7억 2,000입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-11T23:27:04.015Z"
+      "generatedAt": "2026-11-11T23:57:46.339Z"
     },
     "history": [
       {
@@ -20959,7 +20959,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-11T23:26:10.438Z",
+    "fetchedAt": "2026-11-11T23:57:47.401Z",
     "today": "2026-11-12",
     "items": [
       {
@@ -21035,9 +21035,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-11T23:26:10.312Z",
+    "fetchedAt": "2026-11-11T23:57:47.332Z",
     "today": "2026-11-12",
     "items": [
+      {
+        "title": "“동탄의 발전을 영종의 미래로”…영종구의회, 화성특례시 비교시찰",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9QWGlyeVl3VTE0RnhxX0R4LXFuemxUVkxzUThPZWR5bUhoT1V6QTF3QU5jbzFObGhsa2FKc3g3cWtySFZ3enZXR05Eanp0OWFDYUFsVGFLZzJPNGtYSjIzVUIxcmNRRDhzTm1MWQ?oc=5",
+        "source": "영종뉴스",
+        "time": "2026-11-11T23:09:14.000Z",
+        "isToday": true
+      },
       {
         "title": "신도시 낯선 이웃, 운동장서 하나 됐다… 화성 동탄5·9동 주민 화합 축제 ‘성료’",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9zdGdhSlVpSjBPV0ZsMnBPNVo0TE9OaGNOcVNST2lRbGFtMXVpYTJYTEN0ZFhDQzdqWmhJaWRlSzQ1R2VELW12RVJhNzlwQlpRMHJ4d2t1MnJldjZkQUhTazd3?oc=5",
@@ -21099,13 +21106,6 @@
         "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9YQ1FCdjJmaEEtamRQeDQ2djBVMFhXcHNvOEM4NEpOLXZwQU1uWFZ4MGpFT2pYa2xQazRORFpPdE5HWTRWQUE2N0pwU3phR3Iwd2xqRTVmU1JiTG5m?oc=5",
         "source": "뉴스핌",
         "time": "2026-11-04T01:04:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄경찰서, 북한이탈주민 100명 독감 예방접종 무료 지원",
-        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBWeGcwX3FhSThwNVc4MnBlZWxqQnhRZnRBXzFFS25fcm9lWmw2S3ZBMUxkZFBnYXZ0NElLbVZLWHNIZw?oc=5",
-        "source": "화성신문",
-        "time": "2026-10-29T08:31:00.000Z",
         "isToday": false
       }
     ]
