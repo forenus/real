@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T06:48:33.596Z",
+  "generatedAt": "2026-11-11T07:48:46.357Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15683,15 +15683,15 @@
       ]
     },
     "todayDate": "2026-11-11",
-    "lastFetchedAt": "2026-11-11T06:48:19.285Z",
+    "lastFetchedAt": "2026-11-11T07:48:34.629Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 139,
-      "recent24h": 800,
-      "frequent": 82,
-      "new": 34,
-      "fetchedAt": "2026-11-11T06:48:27.944Z"
+      "realtime": 134,
+      "recent24h": 792,
+      "frequent": 86,
+      "new": 30,
+      "fetchedAt": "2026-11-11T07:48:40.140Z"
     },
     "prevDate": "2026-11-10",
     "rows": [
@@ -17565,10 +17565,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 65건에서 88건으로 꾸준히 늘었고, 오늘 **88건으로 30일 최고치**를 기록해 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 10월 중순 8건까지 늘었다가 **5건으로 줄며** 소폭 감소세로 보입니다.",
-      "real": "33평은 최근 30일 5건의 평균이 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**입니다. 25평은 최근 60일간 거래가 없고, 마지막 거래는 9월 6일 7억 2,000으로 그 전 거래가(5억 중후반~6억)보다 크게 높아 한 건만으로 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 최근 12주 동안 65건에서 88건으로 꾸준히 늘었고, 오늘 **88건으로 30일 최고치**를 기록했습니다(30일 전 대비 +14건). 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 10월 19일 8건에서 **오늘 5건으로 줄어** 다시 소폭 감소하는 모습입니다.",
+      "real": "33평 최근 30일 실거래 평균은 9억 2,000만 원(5건)으로 그전 30일 8억 7,000만 원보다 올랐고, 10월 28일 15층이 **10억 원으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900만 원과 비교하면 **약 2억 8천만 원 높은 수준**입니다. 25평은 9월 6일 7억 2,000만 원 거래 이후 최근 60일간 거래가 없어 현재 시세를 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-11T06:48:33.377Z"
+      "generatedAt": "2026-11-11T07:48:45.346Z"
     },
     "history": [
       {
@@ -18376,6 +18376,38 @@
         },
         {
           "before": {
+            "no": "2660873231",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261110",
+            "desc": "A타입 추천, 입주협의, 전면동,탁트인 치동천뷰,중문,타일교체,로얄동호수",
+            "bldg": "485동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 26,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2661177086",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261111",
+            "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
+            "bldg": "485동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 27,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2660791112",
             "pyeong": 33,
             "excl": 84,
@@ -19027,6 +19059,21 @@
           "beforeStart": false
         },
         {
+          "no": "2661177086",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "12/15",
+          "dir": "남서향",
+          "confirm": "20261111",
+          "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
+          "bldg": "485동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-10-15",
+          "days": 27,
+          "beforeStart": false
+        },
+        {
           "no": "2661131100",
           "pyeong": 33,
           "excl": 84,
@@ -19037,21 +19084,6 @@
           "desc": "주인거주,2년전김냉자리,미세방충망,줄눈시공,상태최상",
           "bldg": "473동",
           "realtor": "동탄퀸포레너스공인중개사사무소",
-          "firstSeen": "2026-10-15",
-          "days": 27,
-          "beforeStart": false
-        },
-        {
-          "no": "2660873231",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "12/15",
-          "dir": "남서향",
-          "confirm": "20261110",
-          "desc": "A타입 추천, 입주협의, 전면동,탁트인 치동천뷰,중문,타일교체,로얄동호수",
-          "bldg": "485동",
-          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-10-15",
           "days": 27,
           "beforeStart": false
@@ -21312,7 +21344,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-11T06:18:51.898Z",
+    "fetchedAt": "2026-11-11T07:48:46.357Z",
     "today": "2026-11-11",
     "items": [
       {
@@ -21334,6 +21366,13 @@
         "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
         "source": "동아일보",
         "time": "2026-11-03T19:30:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "17년 기다린 동탄 트램 첫 삽…31.5㎞·정거장 33곳 내년 8월 본공사",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53bVp2OG5ZUXFHYjBjNk1XNnljRDhuNERVVWpFeFBRRU83X3g1RWUyblNwVnN2ZjcwU2M5c3VQY1RwN2dWeVFwSGlxMmM2OFJWemVKblVJUjVHVWlOOGFid0hybFQwS2xqMGNBRG9kV1pMSDFKS0HSAWZBVV95cUxObmlzMEF3SE56bjczWGlwdWkwUFd3TzdMT21sV2FYdGpWTW91ZzF2ZUZpd2JjUW1lTTRnVHl4ZlE2dTZtelRVa0JDV0c0RG56VEJNT01XOGlNakNEX2oxa0pSTnQ0clE?oc=5",
+        "source": "동아일보",
+        "time": "2026-11-03T07:22:00.000Z",
         "isToday": false
       },
       {
@@ -21377,18 +21416,11 @@
         "source": "땅집고",
         "time": "2026-11-01T21:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "동탄트램 2031년 개통 목표…차량계약 관건",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYkJoQml5X2RtQlNyRHNSZ2xRNWhLZ2JMcTRucXV0VU81eFo3TEJkUFdNTm82dW91MGk0em5NYnlYSzNGSzRDVzN3N25OZFlOSDlFemdXVV9YSGxIQzBDMkZrcmJqU01XWVE?oc=5",
-        "source": "OBC 뉴스",
-        "time": "2026-10-14T07:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-11T06:18:51.897Z",
+    "fetchedAt": "2026-11-11T07:48:46.355Z",
     "today": "2026-11-11",
     "items": [
       {
