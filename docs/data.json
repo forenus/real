@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T02:48:53.820Z",
+  "generatedAt": "2026-11-11T03:18:58.684Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15683,15 +15683,15 @@
       ]
     },
     "todayDate": "2026-11-11",
-    "lastFetchedAt": "2026-11-11T02:48:37.905Z",
+    "lastFetchedAt": "2026-11-11T03:18:24.013Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 320,
-      "recent24h": 835,
+      "realtime": 324,
+      "recent24h": 841,
       "frequent": 240,
-      "new": 37,
-      "fetchedAt": "2026-11-11T02:48:47.984Z"
+      "new": 39,
+      "fetchedAt": "2026-11-11T03:18:52.916Z"
     },
     "prevDate": "2026-11-10",
     "rows": [
@@ -17565,10 +17565,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 65건에서 88건으로 꾸준히 늘었고, 오늘 **88건으로 30일 최고치**를 기록했습니다(30일 전 대비 +14건). 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 10월 중순 8건까지 늘었다가 오늘 5건으로 줄어 **4~8건 사이에서 소폭 등락**하고 있습니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 2,000에 거래되어 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**입니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000이었습니다.",
+      "listing": "33평 매물은 최근 12주 동안 65건에서 88건으로 꾸준히 늘었고, 오늘 **88건으로 30일 최고치**를 기록해 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 10월 중순 8건까지 늘었다가 **오늘 5건으로 줄어** 다시 소진되는 모습으로 보입니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 2,000에 거래돼 그전 30일(8억 7,000)보다 높아졌고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**입니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000으로 평균호가 8억 5,600과는 차이가 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-11T02:48:52.890Z"
+      "generatedAt": "2026-11-11T03:18:57.875Z"
     },
     "history": [
       {
@@ -18487,16 +18487,16 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2661050717",
+            "no": "2661114229",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 5,000",
             "floor": "9/15",
             "dir": "남동향",
             "confirm": "20261111",
-            "desc": "치동천,상록골프장뷰 잔금일 협의가능",
+            "desc": "치동천뷰, 풀확장, 조망권보장, 입주협의가능",
             "bldg": "488동",
-            "realtor": "동탄부자공인중개사사무소",
+            "realtor": "반도114공인중개사사무소",
             "firstSeen": "2026-07-02",
             "days": 132,
             "beforeStart": false
@@ -18519,16 +18519,16 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2661050805",
+            "no": "2661114688",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 2,000",
             "floor": "고/15",
             "dir": "남동향",
             "confirm": "20261111",
-            "desc": "급매 무주택자갭투가능 세안고 조용한 단지 조망굿",
+            "desc": "84A타입, 드레드룸넓은구조, 탄성중문 입주협의",
             "bldg": "480동",
-            "realtor": "동탄부자공인중개사사무소",
+            "realtor": "반도114공인중개사사무소",
             "firstSeen": "2026-06-23",
             "days": 141,
             "beforeStart": false
@@ -19512,16 +19512,16 @@
           "beforeStart": false
         },
         {
-          "no": "2661050717",
+          "no": "2661114229",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 5,000",
           "floor": "9/15",
           "dir": "남동향",
           "confirm": "20261111",
-          "desc": "치동천,상록골프장뷰 잔금일 협의가능",
+          "desc": "치동천뷰, 풀확장, 조망권보장, 입주협의가능",
           "bldg": "488동",
-          "realtor": "동탄부자공인중개사사무소",
+          "realtor": "반도114공인중개사사무소",
           "firstSeen": "2026-07-02",
           "days": 132,
           "beforeStart": false
@@ -19572,16 +19572,16 @@
           "beforeStart": false
         },
         {
-          "no": "2661050805",
+          "no": "2661114688",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 2,000",
           "floor": "고/15",
           "dir": "남동향",
           "confirm": "20261111",
-          "desc": "급매 무주택자갭투가능 세안고 조용한 단지 조망굿",
+          "desc": "84A타입, 드레드룸넓은구조, 탄성중문 입주협의",
           "bldg": "480동",
-          "realtor": "동탄부자공인중개사사무소",
+          "realtor": "반도114공인중개사사무소",
           "firstSeen": "2026-06-23",
           "days": 141,
           "beforeStart": false
@@ -21152,7 +21152,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-11T02:48:53.780Z",
+    "fetchedAt": "2026-11-11T03:18:58.682Z",
     "today": "2026-11-11",
     "items": [
       {
@@ -21228,7 +21228,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-11T02:48:53.819Z",
+    "fetchedAt": "2026-11-11T03:18:58.634Z",
     "today": "2026-11-11",
     "items": [
       {
@@ -21267,13 +21267,6 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄고, 학생들이 함께 만든 작은 실천으로 세계에 희망을 전하다",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1HeGFzUjJReWE4eXM4bkg5bjUyVk12V3F2WTlOUVpTTVo5Q1JJb0JBYWcteDljbklDLWRMU0JOQ3hGb2gtcEdvcXNTQ2ZIUml5UkR0QWtDSVlXRG5lbXVIUDQ0Uzk0YXU4dTA1WHA1NNIBckFVX3lxTFBITHF2NnprQURTMlI4UG5oTWtQMkhIaTFnYzliQ01BbUE5czl3cGsteC1CX01fd3E0MG4wU3lmcXFZMWdldlNtVmpsUjlYSG9zNlZIT05UM25qZ3dlaG9zT21pNE5KaVF5d2RZU2o0a3dFUQ?oc=5",
-        "source": "뉴스 따옴",
-        "time": "2026-11-07T09:02:47.000Z",
-        "isToday": false
-      },
-      {
         "title": "“동탄역 근처만 폭등인데 동탄구 전체 규제”… ‘집값 소외’ 주민들 분통",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2t0VUFhNUF0NVlzdzVCQVZRcjRCNXNMajV3SlkzTVRiZE1ZRE9FV19MWFgxV294MkxFekxJVkRvVHYzdFUzZS0wVFh1NGZpa3VMbndsdkVBRWlqVkFWTGV3WmhUc1JzX0NESzRLQ0FmNnM5TEE4cXhZVzY2Zkt6anhJclM5V291WWlWRzkzdVExUnNnNG9DVC13ek90UdIBZkFVX3lxTE9pd2dENW1ibFFhWERVd3ZWTGNHai1GSm1MQ05YNXlTNExEVDIxVFVyQS1uYjlhTy0yVzUxaTBhOHhwWjhCbWRjX3VOYVFLeFh5MFNOS1oyU0lhVDQtWDZxMjdWcVJyQQ?oc=5",
         "source": "동아일보",
@@ -21299,6 +21292,13 @@
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLYWFLbHZ5My1vTzNvXzhqV1cyZFotZGxYVGg3V1AwRXVoZkxiY2h5Yy1zeHBZMEFqUE5uMWhWc3R5NkZOZHlZRi13SzZaYmJiNmVXMnNYQ25iOTkwdjdobldQTllna1dfUXNvR3k2TdIBc0FVX3lxTE5GTFNCa1VFZ0dhMXdvMWlCVUotcUVWTi05QnBxRmFFeWxZNzhGNmR6RGJMeFhTbjFVT251Y1ZZU0g1TE5UZHdVVUY0blJxSVMtQmJsOUUwbW95cm9RUDhEelo0NWNqV3pHRm5KaUNMRS1Ha28?oc=5",
         "source": "데일리한국",
         "time": "2026-11-04T01:47:39.000Z",
+        "isToday": false
+      },
+      {
+        "title": "삼성생명, 지역 통합돌봄 모델 공개…화성 동탄서 12월까지 실증",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9YQ1FCdjJmaEEtamRQeDQ2djBVMFhXcHNvOEM4NEpOLXZwQU1uWFZ4MGpFT2pYa2xQazRORFpPdE5HWTRWQUE2N0pwU3phR3Iwd2xqRTVmU1JiTG5m?oc=5",
+        "source": "뉴스핌",
+        "time": "2026-11-04T01:04:00.000Z",
         "isToday": false
       }
     ]
