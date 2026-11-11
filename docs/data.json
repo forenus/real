@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T12:48:32.561Z",
+  "generatedAt": "2026-11-11T13:19:29.408Z",
   "collectUrl": "https://python-king-keeps-slowly.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15683,15 +15683,15 @@
       ]
     },
     "todayDate": "2026-11-11",
-    "lastFetchedAt": "2026-11-11T12:48:22.377Z",
+    "lastFetchedAt": "2026-11-11T13:19:18.054Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 152,
+      "realtime": 159,
       "recent24h": 804,
-      "frequent": 96,
-      "new": 28,
-      "fetchedAt": "2026-11-11T12:48:26.818Z"
+      "frequent": 89,
+      "new": 39,
+      "fetchedAt": "2026-11-11T13:19:22.492Z"
     },
     "prevDate": "2026-11-10",
     "rows": [
@@ -17565,10 +17565,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 65건에서 88건으로 꾸준히 늘었고, **30일 전보다 14건 증가한 88건으로 30일 최고치**를 기록했습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 10월 중순 8건까지 늘었다가 **현재 5건으로 줄어** 소폭 소진되는 모습입니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 2,000만 원에 거래되어 그전 30일(8억 7,000만 원)보다 올랐으며, **10월 28일 15층이 10억 원으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900만 원과 비교하면 **상승 폭이 큰 편**이나, 거래 건수가 적어 평균이 층수에 따라 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000만 원 이후 최근 60일간 거래가 없어 현재 시세를 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 12주 전 65건에서 꾸준히 늘어 **오늘 88건으로 30일 최고치**를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 10월 19일 8건까지 늘었다가 **오늘 5건으로 다소 줄어** 소규모 물량 안에서 움직이고 있습니다.",
+      "real": "33평은 최근 30일 5건의 평균이 **9억 2,000으로 그전 30일(8억 7,000)보다 올랐고**, 10월 28일 15층이 10억에 거래되며 역대 최고를 경신했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **상승 폭이 큰 편**이지만, 최근 거래 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없어 9월 6일 7억 2,000 거래 이후 흐름을 판단하기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-11T12:48:32.401Z"
+      "generatedAt": "2026-11-11T13:19:28.148Z"
     },
     "history": [
       {
@@ -21408,16 +21408,9 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-11T12:18:38.997Z",
+    "fetchedAt": "2026-11-11T13:19:29.403Z",
     "today": "2026-11-11",
     "items": [
-      {
-        "title": "17년만에…동탄트램 '착수'",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE11SUV2VlUzMF9XUzhmVzJtdGxGUWRvbHlVNFU1Y2pXMUNhR1N3UHkwOHpmSVd2R2kwU1VBZXREZkY2OFdOQV83dDVaSElUUjNzbEpYR1lyWklxcVN2T2hJ?oc=5",
-        "source": "매일경제",
-        "time": "2026-11-10T07:13:11.000Z",
-        "isToday": false
-      },
       {
         "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
         "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
@@ -21480,11 +21473,18 @@
         "source": "OBC 뉴스",
         "time": "2026-10-14T07:00:00.000Z",
         "isToday": false
+      },
+      {
+        "title": "17년 기다린 동탄 트램, 이달 착공 추진… 남동탄 아파트도 신고가",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNU5XdmJzS1Q5dEVlbHJ3Z2RLOVhDZHpTTnV4SGhfelRudExjRWFic21ocVlBVERvSlJJT0hPQ2dRSkZOMmNfQTlYbl80bkx0QXF5RFRrVHQ3Rm51VmpnMnFvNDVmTjJ4OVE0NWFrU29WUEwtNndnbnk1SDVLcDN5SXdQSHF0c2VNLWNKUExoX282Z2hHYnFwRdIBrAFBVV95cUxQLUtxOVBoM0hhcloxQk1pVWhaRXpRajF6Y2pTNUJ4di1SX0FWdTVOLVFwbVNfZWY4RW9qdFAyYmY0TWNobXhkSlNBN21HV05HMC1Dbkl0WUVlaENqUy1fMVN5cnlaTmJrLXFyUVc1bE80QTVDUmo3ZThQanp5VmNpR0dMUkRubXpiUTNPaDhkc2NFNHZJeEFFWE43cmdRdXZvQzV5Um5vcjVsbnhv?oc=5",
+        "source": "Chosunbiz",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-11T12:18:38.604Z",
+    "fetchedAt": "2026-11-11T13:19:29.219Z",
     "today": "2026-11-11",
     "items": [
       {
