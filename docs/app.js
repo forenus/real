@@ -1714,6 +1714,38 @@ function showNotice() {
 
 showNotice();
 
+// ---------- 상단 시계 (보는 사람 위치와 상관없이 한국 시각) ----------
+// 오래된 브라우저에서 시계가 오류를 내도 아래 코드(공개 페이지 설정 등)는 계속 돌아가게 감싼다
+let CLOCK_FMT = null;
+try {
+  CLOCK_FMT = new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit", weekday: "short",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23", hour12: false, // hourCycle 을 모르는 엔진도 24시간제로
+  });
+  if (!CLOCK_FMT.formatToParts) CLOCK_FMT = null;
+} catch { CLOCK_FMT = null; }
+let clockTimer = 0;
+function tickClock() {
+  if (!CLOCK_FMT) return; // 지원 안 되면 시계 칸은 비어 있어 숨겨진다
+  const now = new Date();
+  const p = {};
+  for (const { type, value } of CLOCK_FMT.formatToParts(now)) p[type] = value;
+  if (p.hour === "24") p.hour = "00"; // 일부 엔진의 자정 "24시" 표기 보정
+  const el = $("clock");
+  el.textContent = `${p.month}.${p.day} (${p.weekday}) ${p.hour}:${p.minute}:${p.second}`;
+  // datetime 은 +09:00 오프셋을 붙인 한국 시각
+  el.setAttribute("datetime", `${p.year}-${p.month}-${p.day}T${p.hour}:${p.minute}:${p.second}+09:00`);
+  // 다음 초 경계에 맞춰 예약해 밀림을 막는다(가려진 탭에서는 예약하지 않음)
+  clearTimeout(clockTimer);
+  if (!document.hidden) clockTimer = setTimeout(tickClock, 1000 - (Date.now() % 1000));
+}
+// 탭이 가려지면 멈추고, 다시 보이면 바로 갱신
+document.addEventListener("visibilitychange", () => {
+  clearTimeout(clockTimer);
+  if (!document.hidden) tickClock();
+});
+tickClock();
+
 if (STATIC) {
   // 단지 설정은 PC 서버에서만 — 정적 페이지에서는 메뉴를 숨긴다. 수집 버튼은 터널로 PC 서버에 요청한다.
   $("nav-settings").hidden = true;

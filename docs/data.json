@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T05:00:30.895Z",
+  "generatedAt": "2026-11-12T06:59:45.045Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -14986,7 +14986,7 @@
         },
         {
           "name": "472동",
-          "count": 10,
+          "count": 11,
           "real": {
             "count": 14,
             "manual": 1,
@@ -15018,9 +15018,9 @@
           "avg": [
             {
               "pyeong": 33,
-              "count": 10,
-              "price": 96500,
-              "priceText": "9억 6,500"
+              "count": 11,
+              "price": 96364,
+              "priceText": "9억 6,400"
             }
           ]
         },
@@ -15539,8 +15539,8 @@
             {
               "pyeong": 33,
               "count": 6,
-              "price": 106000,
-              "priceText": "10억 6,000"
+              "price": 104833,
+              "priceText": "10억 4,800"
             }
           ]
         },
@@ -15619,8 +15619,8 @@
             {
               "pyeong": 33,
               "count": 8,
-              "price": 102250,
-              "priceText": "10억 2,300"
+              "price": 101875,
+              "priceText": "10억 1,900"
             }
           ]
         },
@@ -15667,15 +15667,15 @@
       ]
     },
     "todayDate": "2026-11-12",
-    "lastFetchedAt": "2026-11-12T05:00:09.607Z",
+    "lastFetchedAt": "2026-11-12T06:59:24.500Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 127,
-      "recent24h": 592,
-      "frequent": 81,
+      "realtime": 124,
+      "recent24h": 599,
+      "frequent": 71,
       "new": 25,
-      "fetchedAt": "2026-11-12T05:00:17.787Z"
+      "fetchedAt": "2026-11-12T06:59:37.258Z"
     },
     "prevDate": "2026-11-11",
     "rows": [
@@ -15698,9 +15698,9 @@
         "pyeong": 33,
         "label": "전용 84㎡",
         "prev": 88,
-        "today": 88,
-        "diff": 0,
-        "avgPrice": "10억",
+        "today": 89,
+        "diff": 1,
+        "avgPrice": "9억 9,800",
         "realPrice": "",
         "realCount": 0,
         "realDays": 10,
@@ -16164,7 +16164,7 @@
             86,
             86,
             88,
-            88
+            89
           ]
         }
       ],
@@ -16310,7 +16310,7 @@
         91,
         91,
         93,
-        93
+        94
       ]
     },
     "realChart": {
@@ -17562,10 +17562,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 67건에서 88건으로 꾸준히 늘었고, **30일 전보다 12건 증가해 30일 최고치인 88건**을 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 10월 중순 8건까지 늘었다가 **현재 5건으로 줄어** 다시 낮은 수준으로 돌아왔습니다.",
-      "real": "33평은 최근 30일간 5건이 평균 9억 2,000에 거래되어 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **역대 최고인 10억**에 거래됐습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**입니다. 25평은 9월 6일 7억 2,000 이후 최근 60일간 거래가 없어, 현재 평균호가 8억 5,600과 비교할 최근 실거래 근거는 부족합니다.",
+      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 오늘 **89건으로 30일 최고치**를 기록했고, 30일 전보다 13건 많아 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 10월 19일 8건까지 늘었다가 **오늘 5건으로 줄어** 30일 전보다 2건 적으며, 물량이 일부 소진된 것으로 보입니다.",
+      "real": "33평은 최근 30일 5건이 평균 9억 2,000에 거래되어 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**이지만, 최근 거래가 5건뿐이라 평균이 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 5층 7억 2,000으로 이전 거래가(5억 중후반~6억대)보다 높았습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-12T05:00:27.069Z"
+      "generatedAt": "2026-11-12T06:59:43.321Z"
     },
     "history": [
       {
@@ -18134,7 +18134,7 @@
       },
       {
         "date": "2026-11-12",
-        "total": 93
+        "total": 94
       }
     ]
   },
@@ -18309,7 +18309,23 @@
       "todayDate": "2026-11-12",
       "prevDate": "2026-11-11",
       "pyeong": 33,
-      "added": [],
+      "added": [
+        {
+          "no": "2661431252",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 5,000",
+          "floor": "중/25",
+          "dir": "남동향",
+          "confirm": "20261112",
+          "desc": "84A타입 산조망 숲세권 잔금일협의가능",
+          "bldg": "472동",
+          "realtor": "동탄부자공인중개사사무소",
+          "firstSeen": "2026-11-12",
+          "days": 0,
+          "beforeStart": false
+        }
+      ],
       "sold": [],
       "relisted": [
         {
@@ -18457,16 +18473,16 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2661418745",
+            "no": "2661425879",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 6,000",
             "floor": "13/15",
             "dir": "남서향",
             "confirm": "20261112",
-            "desc": "긴잔금가능 시에4최신 led안방붙박이 욕실장교체 초중고단지앞",
+            "desc": "공실  정문상가인접동 잔금일협의가능  시에4대 강마루 중문 인테리어",
             "bldg": "482동",
-            "realtor": "신안코너단지내공인중개사사무소",
+            "realtor": "동탄부자공인중개사사무소",
             "firstSeen": "2026-09-10",
             "days": 63,
             "beforeStart": false
@@ -18489,10 +18505,10 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2661303763",
+            "no": "2661427804",
             "pyeong": 33,
             "excl": 84,
-            "price": "10억",
+            "price": "9억 7,000",
             "floor": "저/15",
             "dir": "남서향",
             "confirm": "20261112",
@@ -18553,10 +18569,10 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2661303794",
+            "no": "2661427096",
             "pyeong": 33,
             "excl": 84,
-            "price": "10억 5,000",
+            "price": "9억 8,000",
             "floor": "중/15",
             "dir": "남서향",
             "confirm": "20261112",
@@ -18698,6 +18714,21 @@
         }
       ],
       "current": [
+        {
+          "no": "2661431252",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 5,000",
+          "floor": "중/25",
+          "dir": "남동향",
+          "confirm": "20261112",
+          "desc": "84A타입 산조망 숲세권 잔금일협의가능",
+          "bldg": "472동",
+          "realtor": "동탄부자공인중개사사무소",
+          "firstSeen": "2026-11-12",
+          "days": 0,
+          "beforeStart": false
+        },
         {
           "no": "2661104960",
           "pyeong": 33,
@@ -19404,16 +19435,16 @@
           "beforeStart": false
         },
         {
-          "no": "2661418745",
+          "no": "2661425879",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 6,000",
           "floor": "13/15",
           "dir": "남서향",
           "confirm": "20261112",
-          "desc": "긴잔금가능 시에4최신 led안방붙박이 욕실장교체 초중고단지앞",
+          "desc": "공실  정문상가인접동 잔금일협의가능  시에4대 강마루 중문 인테리어",
           "bldg": "482동",
-          "realtor": "신안코너단지내공인중개사사무소",
+          "realtor": "동탄부자공인중개사사무소",
           "firstSeen": "2026-09-10",
           "days": 63,
           "beforeStart": false
@@ -19554,10 +19585,10 @@
           "beforeStart": false
         },
         {
-          "no": "2661303763",
+          "no": "2661427804",
           "pyeong": 33,
           "excl": 84,
-          "price": "10억",
+          "price": "9억 7,000",
           "floor": "저/15",
           "dir": "남서향",
           "confirm": "20261112",
@@ -19614,10 +19645,10 @@
           "beforeStart": false
         },
         {
-          "no": "2661303794",
+          "no": "2661427096",
           "pyeong": 33,
           "excl": 84,
-          "price": "10억 5,000",
+          "price": "9억 8,000",
           "floor": "중/15",
           "dir": "남서향",
           "confirm": "20261112",
@@ -21344,7 +21375,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-12T05:00:30.870Z",
+    "fetchedAt": "2026-11-12T06:59:45.033Z",
     "today": "2026-11-12",
     "items": [
       {
@@ -21369,10 +21400,10 @@
         "isToday": false
       },
       {
-        "title": "17년 기다린 동탄 트램 첫 삽…31.5㎞·정거장 33곳 내년 8월 본공사",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53bVp2OG5ZUXFHYjBjNk1XNnljRDhuNERVVWpFeFBRRU83X3g1RWUyblNwVnN2ZjcwU2M5c3VQY1RwN2dWeVFwSGlxMmM2OFJWemVKblVJUjVHVWlOOGFid0hybFQwS2xqMGNBRG9kV1pMSDFKS0HSAWZBVV95cUxObmlzMEF3SE56bjczWGlwdWkwUFd3TzdMT21sV2FYdGpWTW91ZzF2ZUZpd2JjUW1lTTRnVHl4ZlE2dTZtelRVa0JDV0c0RG56VEJNT01XOGlNakNEX2oxa0pSTnQ0clE?oc=5",
-        "source": "동아일보",
-        "time": "2026-11-03T07:22:00.000Z",
+        "title": "화성시, 동탄 트램 첫 공정 착수",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9YR01MWmQ0Z0pEc3NJSFpRYjh3Q3kzbGJMamdXS3RZSU5JNkVnVWYyQ3ZaSGZkZERlRWdhbWtyM3FPOEZvRVpnVlBnTFJhR29QWlHSAVNBVV95cUxPWGNzUS1xc2FrTWRKMDFvWE1jTlp3SG94NkFZSjV4Zzd5SE9OZVBoN043bEd3OXNMeFRUWGgtXzdIMVQ2LUNNa3J0aHA3blJaMGlxRQ?oc=5",
+        "source": "서울경제",
+        "time": "2026-11-02T08:00:00.000Z",
         "isToday": false
       },
       {
@@ -21383,17 +21414,10 @@
         "isToday": false
       },
       {
-        "title": "화성시, 동탄 트램 첫 공정 착수",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9YR01MWmQ0Z0pEc3NJSFpRYjh3Q3kzbGJMamdXS3RZSU5JNkVnVWYyQ3ZaSGZkZERlRWdhbWtyM3FPOEZvRVpnVlBnTFJhR29QWlHSAVNBVV95cUxPWGNzUS1xc2FrTWRKMDFvWE1jTlp3SG94NkFZSjV4Zzd5SE9OZVBoN043bEd3OXNMeFRUWGgtXzdIMVQ2LUNNa3J0aHA3blJaMGlxRQ?oc=5",
-        "source": "서울경제",
-        "time": "2026-11-02T07:50:18.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성시, 동탄트램 실시설계·준비공사 착수…17년 만에 본궤도",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB1a2FQamI5cGNiQ0F5WGdiVFJYeldVbUIxcHVCT0ZYUE5DbVlxZFZCYWtFQjZJTDU4WlFrTFVFaWpoQlhFZzhjRk1oQlNIYTBjYTZiZ0ItQnRPNnfSAWBBVV95cUxOd0J0M181WC1SbW5GV09iQTRwX3BncGNZeVJyOEJXODlkM3Brd0lqSnBxWGg5RFlScWFFQy1oeXJXTFdFdzA3TXpiUm5RaVVSajRIUHl5OGNPYkdOR2pkeWg?oc=5",
-        "source": "연합뉴스",
-        "time": "2026-11-02T07:31:25.000Z",
+        "title": "\"17년 기다림 끝에 첫 삽\"…화성시, 동탄 트램 우선시공분 착수",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kQkgydTloY0Y4NDlJUWFacXJiRWxvRldEUjlkODN6ZjVPSzlxdzJIVnZ4RTMtODhYZnR5SGl4cnZudW1OaWRuWmJUTTEwT1NqNWRJem9ub1I0Zw?oc=5",
+        "source": "파이낸셜뉴스",
+        "time": "2026-11-02T06:59:40.000Z",
         "isToday": false
       },
       {
@@ -21416,11 +21440,18 @@
         "source": "뉴데일리 경기",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
+      },
+      {
+        "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
+        "source": "한국일보",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-12T05:00:30.890Z",
+    "fetchedAt": "2026-11-12T06:59:44.599Z",
     "today": "2026-11-12",
     "items": [
       {

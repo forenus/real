@@ -118,6 +118,10 @@ h1, h2, h3, h4 { letter-spacing: -0.025em; }
 .chip.live i { width: 7px; height: 7px; border-radius: 50%; background: var(--down); box-shadow: 0 0 0 3px var(--down-soft); animation: pulse 2.4s ease-in-out infinite; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 5px rgba(18, 161, 80, .08); } }
 @media (prefers-reduced-motion: reduce) { .chip.live i { animation: none; } }
+/* 한국 시각 시계 — 숫자 폭을 고정해 초가 바뀔 때 흔들리지 않게 */
+.chip.clock { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
+.chip.clock:has(> time:empty) { display: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .view[hidden] { display: none; }
 .view { animation: fade-in .25s var(--ease); }
 @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } }
