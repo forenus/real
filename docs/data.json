@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T20:29:22.069Z",
+  "generatedAt": "2026-11-12T20:59:13.507Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -8,6 +8,30 @@
       "date": "2026-11-13",
       "today": "2026-11-13",
       "list": [
+        {
+          "date": "2026-11-11",
+          "pyeong": 25,
+          "excl": 60,
+          "floor": "14",
+          "price": 71000,
+          "canceled": false,
+          "label": "전용 60㎡",
+          "priceText": "7억 1,000",
+          "isToday": false,
+          "isNew": true
+        },
+        {
+          "date": "2026-11-07",
+          "pyeong": 33,
+          "excl": 85,
+          "floor": "11",
+          "price": 90000,
+          "canceled": false,
+          "label": "전용 84㎡",
+          "priceText": "9억",
+          "isToday": false,
+          "isNew": true
+        },
         {
           "date": "2026-10-28",
           "pyeong": 33,
@@ -118,6 +142,30 @@
         }
       ],
       "all": [
+        {
+          "date": "2026-11-11",
+          "pyeong": 25,
+          "excl": 60,
+          "floor": "14",
+          "price": 71000,
+          "canceled": false,
+          "label": "전용 60㎡",
+          "priceText": "7억 1,000",
+          "isToday": false,
+          "isNew": true
+        },
+        {
+          "date": "2026-11-07",
+          "pyeong": 33,
+          "excl": 85,
+          "floor": "11",
+          "price": 90000,
+          "canceled": false,
+          "label": "전용 84㎡",
+          "priceText": "9억",
+          "isToday": false,
+          "isNew": true
+        },
         {
           "date": "2026-10-28",
           "pyeong": 33,
@@ -14692,16 +14740,16 @@
       "date": "2026-11-13",
       "real": {
         "from": "2025-11-13",
-        "total": 169,
+        "total": 171,
         "known": 161,
         "fetchedAt": "2026-11-12T15:29:54.952Z",
         "unknown": {
-          "count": 8,
+          "count": 10,
           "max": {
-            "priceText": "7억 6,800",
+            "priceText": "9억",
             "pyeong": 33,
-            "date": "2026-05-16",
-            "floor": "13",
+            "date": "2026-11-07",
+            "floor": "11",
             "manual": false
           },
           "min": {
@@ -14714,6 +14762,22 @@
         },
         "manual": 19,
         "pending": [
+          {
+            "date": "2026-11-11",
+            "floor": "14",
+            "price": 71000,
+            "pyeong": 25,
+            "priceText": "7억 1,000",
+            "manualDong": ""
+          },
+          {
+            "date": "2026-11-07",
+            "floor": "11",
+            "price": 90000,
+            "pyeong": 33,
+            "priceText": "9억",
+            "manualDong": ""
+          },
           {
             "date": "2026-10-28",
             "floor": "15",
@@ -15667,15 +15731,15 @@
       ]
     },
     "todayDate": "2026-11-13",
-    "lastFetchedAt": "2026-11-12T20:29:05.065Z",
+    "lastFetchedAt": "2026-11-12T20:58:58.132Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 27,
-      "recent24h": 719,
-      "frequent": 18,
-      "new": 5,
-      "fetchedAt": "2026-11-12T20:29:15.183Z"
+      "realtime": 32,
+      "recent24h": 723,
+      "frequent": 20,
+      "new": 7,
+      "fetchedAt": "2026-11-12T20:59:08.066Z"
     },
     "prevDate": "2026-11-12",
     "rows": [
@@ -15686,8 +15750,8 @@
         "today": 5,
         "diff": 0,
         "avgPrice": "8억 5,600",
-        "realPrice": "",
-        "realCount": 0,
+        "realPrice": "7억 1,000",
+        "realCount": 1,
         "realDays": 10,
         "maxPrice": "7억 2,000",
         "maxYm": "2026.09",
@@ -15701,8 +15765,8 @@
         "today": 89,
         "diff": 0,
         "avgPrice": "9억 9,800",
-        "realPrice": "",
-        "realCount": 0,
+        "realPrice": "9억",
+        "realCount": 1,
         "realDays": 10,
         "maxPrice": "10억",
         "maxYm": "2026.10",
@@ -16594,7 +16658,7 @@
             null,
             null,
             null,
-            null
+            71000
           ],
           "counts": [
             5,
@@ -16731,7 +16795,7 @@
             0,
             0,
             0,
-            0
+            1
           ]
         },
         {
@@ -16872,7 +16936,7 @@
             null,
             null,
             null,
-            null
+            90000
           ],
           "counts": [
             21,
@@ -17009,7 +17073,7 @@
             0,
             0,
             0,
-            0
+            1
           ]
         },
         {
@@ -17575,10 +17639,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 **67건에서 89건으로 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄어** 소폭 감소세이며, 물량 자체가 적어 큰 변화는 없습니다.",
-      "real": "33평 실거래는 최근 30일 5건, 평균 9억 2,000만 원으로 그전 30일(8억 7,000만 원)보다 높아졌고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **약 2억 8,000만 원 높은 수준**입니다. 10월 28일에는 **15층이 10억 원에 거래되며 역대 최고가**를 기록했으나, 거래 건수가 적어 층에 따라 평균이 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000만 원입니다.",
+      "listing": "33평 매물은 **최근 12주 67건에서 89건으로 꾸준히 증가**했고, 30일 전보다 14건 늘어 오늘(89건)이 30일 중 최고치입니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄어** 4~8건 사이에서 소폭 움직이고 있습니다.",
+      "real": "33평은 최근 30일 6건, 평균 9억 1,700만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, **1년 전 무렵 평균 6억 4,100만 원 대비 크게 높은 수준**입니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 25평은 **최근 30일 거래가 11월 11일 7억 1,000만 원 1건**뿐이라 평균이 크게 흔들릴 수 있으며, 9월 역대 최고(7억 2,000만 원)와 비슷한 수준입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-12T20:29:21.218Z"
+      "generatedAt": "2026-11-12T20:59:13.254Z"
     },
     "history": [
       {
