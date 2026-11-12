@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T23:29:41.663Z",
+  "generatedAt": "2026-11-12T23:59:51.327Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15731,15 +15731,15 @@
       ]
     },
     "todayDate": "2026-11-13",
-    "lastFetchedAt": "2026-11-12T23:29:24.656Z",
+    "lastFetchedAt": "2026-11-12T23:59:31.423Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 95,
-      "recent24h": 746,
-      "frequent": 54,
-      "new": 17,
-      "fetchedAt": "2026-11-12T23:29:36.253Z"
+      "realtime": 114,
+      "recent24h": 754,
+      "frequent": 68,
+      "new": 18,
+      "fetchedAt": "2026-11-12T23:56:14.215Z"
     },
     "prevDate": "2026-11-12",
     "rows": [
@@ -17639,10 +17639,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 오늘 **89건으로 꾸준히 늘어** 30일 최고치를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 10월 19일 8건에서 **소폭 줄어든 뒤 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 1,700으로 직전 30일(8억 7,000)보다 올랐고**, 10월 28일에는 역대 최고인 10억 거래도 있었습니다. 1년 전 무렵 평균 6억 4,100과 비교하면 상승 폭이 큰 편입니다. 25평은 최근 30일 거래가 11월 11일 7억 1,000 **1건뿐이어서** 평균만으로 흐름을 판단하기는 어렵습니다.",
+      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄며** 10월 고점(8건) 이후 소폭 감소세입니다.",
+      "real": "33평은 최근 30일 6건, 평균 9억 1,700만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 **역대 최고 10억 원** 거래도 나왔습니다. 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **약 2억 7천만 원 높은 수준**입니다. 25평은 최근 30일 거래가 1건(7억 1,000만 원)뿐이라 평균만으로 흐름을 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-12T23:29:41.381Z"
+      "generatedAt": "2026-11-12T23:59:50.255Z"
     },
     "history": [
       {
@@ -21070,7 +21070,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-12T23:00:40.607Z",
+    "fetchedAt": "2026-11-12T23:59:51.326Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21085,6 +21085,13 @@
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9YR01MWmQ0Z0pEc3NJSFpRYjh3Q3kzbGJMamdXS3RZSU5JNkVnVWYyQ3ZaSGZkZERlRWdhbWtyM3FPOEZvRVpnVlBnTFJhR29QWlHSAVNBVV95cUxPWGNzUS1xc2FrTWRKMDFvWE1jTlp3SG94NkFZSjV4Zzd5SE9OZVBoN043bEd3OXNMeFRUWGgtXzdIMVQ2LUNNa3J0aHA3blJaMGlxRQ?oc=5",
         "source": "서울경제",
         "time": "2026-11-02T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "\"17년 기다림 끝에 첫 삽\"…화성시, 동탄 트램 우선시공분 착수",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kQkgydTloY0Y4NDlJUWFacXJiRWxvRldEUjlkODN6ZjVPSzlxdzJIVnZ4RTMtODhYZnR5SGl4cnZudW1OaWRuWmJUTTEwT1NqNWRJem9ub1I0Zw?oc=5",
+        "source": "파이낸셜뉴스",
+        "time": "2026-11-02T06:59:40.000Z",
         "isToday": false
       },
       {
@@ -21135,18 +21142,11 @@
         "source": "OBC 뉴스",
         "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHONIBU0FVX3lxTE90OVZJNDVKdDRvR2J1d2MwbXVVcl9KWlRlZW00RjF6Q0JVVVZyZW1LT0luVGwyU19Qbm1kbXdWZEhZdmdCSUlGMjVIVkppQ3RiZTJj?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-10-09T07:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-12T23:00:40.365Z",
+    "fetchedAt": "2026-11-12T23:59:51.272Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21175,6 +21175,13 @@
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fV2xUeEdnUHJNYmJZR1FtR0x1cEtOR200dkF4RXM4WHdVZF9GMklHczk0bVhPMjRRbW1fMGhBaHVJSDFIQVFJS3lhX2pzQ0VsZ05DOTlna2p3bUtneFBqNEZZMm4?oc=5",
         "source": "매일일보",
         "time": "2026-11-10T01:59:54.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성동탄중앙도서관, 개관 1주년 기념 ‘도서관에서 만나는 클래식 공연’ 성황리 개최",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtZ1BxUmhubEdVMEJvV0pNaW5kelVkU01CS1RIQUNmXzBBY1ZfTEtLcGhzZDEyazlqMjFEYkM3MmxwQklqeGpraG56dXhNbzk2aHFocmNhY0FJNHlyX3ljWGprQ05TNXRh?oc=5",
+        "source": "뉴스피크",
+        "time": "2026-11-09T08:00:00.000Z",
         "isToday": false
       },
       {
@@ -21210,13 +21217,6 @@
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MbXJKUUNKZS05a0sycDk0YkRiZFZ0dmYwTUlLaXJ2ektXVVFRR1BMbXV6Z0VXMS14MFNEem4taXBSWWhJREhGdEVKVVgzZFBL?oc=5",
         "source": "문화일보",
         "time": "2026-11-05T05:32:52.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄5동, 사회단체·동장 후원으로 '그냥드림' 나눔 확대",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPUE5VYTdyWmwzZm9uZzdGSlFkd2FDYmdxdTNxZGJOQXZJS1lFQU9UMkQxeklPTHM4TmxVTVpmRUkxNVppWnFkU25mTkcxMmdBT1E1QnJXSVZKSXNMbENfYmVNMEE?oc=5",
-        "source": "매일일보",
-        "time": "2026-11-05T04:46:58.000Z",
         "isToday": false
       }
     ]
