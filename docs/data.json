@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T08:29:47.857Z",
+  "generatedAt": "2026-11-12T09:00:13.653Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15667,15 +15667,15 @@
       ]
     },
     "todayDate": "2026-11-12",
-    "lastFetchedAt": "2026-11-12T08:29:26.179Z",
+    "lastFetchedAt": "2026-11-12T08:59:43.572Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 255,
-      "recent24h": 682,
-      "frequent": 188,
-      "new": 36,
-      "fetchedAt": "2026-11-12T08:29:41.591Z"
+      "realtime": 267,
+      "recent24h": 691,
+      "frequent": 199,
+      "new": 37,
+      "fetchedAt": "2026-11-12T09:00:05.394Z"
     },
     "prevDate": "2026-11-11",
     "rows": [
@@ -17562,10 +17562,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했으며, 30일 전보다 13건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 최근 8건(10월 19일)까지 늘었다가 **5건으로 줄어** 30일 전보다 2건 적은 수준입니다.",
-      "real": "33평은 최근 30일 5건의 평균이 9억 2,000으로, 그전 30일(8억 7,000)보다 올랐고 1년 전 무렵(6억 3,900)과 비교하면 크게 높아졌습니다. 특히 10월 28일 15층이 **10억에 거래되며 역대 최고가**를 기록했지만, 거래 건수가 적어 평균이 크게 흔들릴 수 있습니다. 25평은 **최근 60일간 실거래가 없으며**, 마지막 거래는 9월 6일 7억 2,000으로 역대 최고가였습니다.",
+      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했고, 30일 전보다 13건 많아 매도 물량이 쌓이는 흐름으로 보입니다. 반면 25평은 10월 19일 8건을 정점으로 **오늘 5건까지 줄어** 소진되는 모습으로 보입니다.",
+      "real": "33평 실거래 평균은 그전 30일 8억 7,000에서 **최근 30일 9억 2,000으로 올랐고**, 10월 28일 15층이 10억에 거래되며 역대 최고를 경신했습니다. 1년 전 무렵 평균 6억 3,900과 비교해도 오른 수준이지만, 최근 거래가 5건에 그치고 2층 8억 2,000부터 15층 10억까지 층별 차이가 커 평균이 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 **최근 60일간 거래가 없어** 평균호가 8억 5,600의 수준을 실거래로 확인하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-12T08:29:47.586Z"
+      "generatedAt": "2026-11-12T09:00:11.657Z"
     },
     "history": [
       {
@@ -21375,7 +21375,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-12T08:00:17.248Z",
+    "fetchedAt": "2026-11-12T09:00:13.651Z",
     "today": "2026-11-12",
     "items": [
       {
@@ -21451,9 +21451,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-12T08:00:17.238Z",
+    "fetchedAt": "2026-11-12T09:00:13.647Z",
     "today": "2026-11-12",
     "items": [
+      {
+        "title": "화성동탄경찰서, 금곡초 앞 스쿨존 교통안전 캠페인 전개",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4wSHFGV2xOVFpLNjVHNnR6aUNNM0hLYzExVHFQZnppb0VnVmVCQlhpa1h5SGstbDRUdkdJMkxzSEl6a1V3TklENGZVRHRobnlpMkpXcmRhLXpLcS1WbUhwZGFybktpZk96UjVN?oc=5",
+        "source": "프레시안",
+        "time": "2026-11-12T07:47:37.000Z",
+        "isToday": true
+      },
       {
         "title": "화성동탄署, 「11.11 보행자의 날」 기념 화성금곡초 스쿨존 교통안전 캠페인 전개",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBpZVJUcDFnSHRuNGE5Zmc2ZFMwZHU2STY4dGFidE9wejE5THEzNFZDRGJmZ2pTUHVKSmRtOERYMktZRGRMdzFwQTRxbGw3cUNZNmtXOHhlVTREMjBRRU5GSnBTSkNBUQ?oc=5",
@@ -21515,13 +21522,6 @@
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2t0VUFhNUF0NVlzdzVCQVZRcjRCNXNMajV3SlkzTVRiZE1ZRE9FV19MWFgxV294MkxFekxJVkRvVHYzdFUzZS0wVFh1NGZpa3VMbndsdkVBRWlqVkFWTGV3WmhUc1JzX0NESzRLQ0FmNnM5TEE4cXhZVzY2Zkt6anhJclM5V291WWlWRzkzdVExUnNnNG9DVC13ek90UdIBZkFVX3lxTE9pd2dENW1ibFFhWERVd3ZWTGNHai1GSm1MQ05YNXlTNExEVDIxVFVyQS1uYjlhTy0yVzUxaTBhOHhwWjhCbWRjX3VOYVFLeFh5MFNOS1oyU0lhVDQtWDZxMjdWcVJyQQ?oc=5",
         "source": "동아일보",
         "time": "2026-11-07T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄9동, ‘동9동락 페스타’…운동회·공연 풍성",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MbXJKUUNKZS05a0sycDk0YkRiZFZ0dmYwTUlLaXJ2ektXVVFRR1BMbXV6Z0VXMS14MFNEem4taXBSWWhJREhGdEVKVVgzZFBL?oc=5",
-        "source": "문화일보",
-        "time": "2026-11-05T05:32:52.000Z",
         "isToday": false
       }
     ]
