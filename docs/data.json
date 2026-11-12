@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T18:59:19.023Z",
+  "generatedAt": "2026-11-12T19:29:20.670Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15667,15 +15667,15 @@
       ]
     },
     "todayDate": "2026-11-13",
-    "lastFetchedAt": "2026-11-12T18:59:02.109Z",
+    "lastFetchedAt": "2026-11-12T19:29:03.694Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 30,
-      "recent24h": 710,
-      "frequent": 22,
-      "new": 4,
-      "fetchedAt": "2026-11-12T18:59:11.801Z"
+      "realtime": 24,
+      "recent24h": 711,
+      "frequent": 21,
+      "new": 0,
+      "fetchedAt": "2026-11-12T19:29:14.121Z"
     },
     "prevDate": "2026-11-12",
     "rows": [
@@ -17575,10 +17575,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘어 30일 최고치를 기록했고, 최근 12주 동안 **67건에서 89건으로 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전 대비 2건 줄었으며, 10월 중순 8건을 정점으로 **완만한 감소세**를 보이고 있습니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 2,000에 거래되어 그전 30일 평균 8억 7,000보다 높아졌고, 10월 28일 15층이 **10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 4,100과 비교하면 **상승 폭이 큰 편**이지만, 최근 거래가 5건에 불과해 평균이 층에 따라 크게 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 7억 2,000입니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 **67건에서 89건으로 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 오늘 5건으로 **30일 전보다 2건 줄어** 한때 8건까지 늘었다가 다시 감소하는 모습입니다.",
+      "real": "33평은 최근 30일 5건의 평균이 9억 2,000으로 그전 30일 평균 8억 7,000보다 높아졌고, 1년 전 무렵 평균 6억 4,100과 비교하면 **약 2억 8,000 높은 수준**입니다. 10월 28일 15층이 **10억에 거래되며 역대최고**를 기록했지만 거래 건수가 적어 평균이 크게 흔들릴 수 있습니다. 25평은 최근 60일간 거래가 없으며, 마지막 거래는 9월 6일 5층 7억 2,000입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-12T18:59:17.996Z"
+      "generatedAt": "2026-11-12T19:29:19.782Z"
     },
     "history": [
       {
@@ -21006,16 +21006,9 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-12T18:59:19.022Z",
+    "fetchedAt": "2026-11-12T19:29:20.657Z",
     "today": "2026-11-13",
     "items": [
-      {
-        "title": "정명근 화성특례시장 “17년 기다림 끝”…동탄 트램 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBCb3JTNUVJTUNpaUtuOXdNd0hNTDcxYlk3U3JqbHAzQmZvWWtrRGhQSHlFSnBpZnlJc2dCRGkxemk3OFhwckE1U1kyUFFrOHNNOGpJdA?oc=5",
-        "source": "이투데이",
-        "time": "2026-11-02T08:25:00.000Z",
-        "isToday": false
-      },
       {
         "title": "화성 동탄 트램 17년만에 첫삽",
         "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmMi1fNGw5b1p4ZXpmS2RhNEZua1htVG9XbHVfdzh1RFBIWjdwZF9qdlFKQ0NGaXMwNDQtTTM0aTR5ZFNEOHhTT2o2SHZLMW1sZThtai1yRFk?oc=5",
@@ -21028,13 +21021,6 @@
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9YR01MWmQ0Z0pEc3NJSFpRYjh3Q3kzbGJMamdXS3RZSU5JNkVnVWYyQ3ZaSGZkZERlRWdhbWtyM3FPOEZvRVpnVlBnTFJhR29QWlHSAVNBVV95cUxPWGNzUS1xc2FrTWRKMDFvWE1jTlp3SG94NkFZSjV4Zzd5SE9OZVBoN043bEd3OXNMeFRUWGgtXzdIMVQ2LUNNa3J0aHA3blJaMGlxRQ?oc=5",
         "source": "서울경제",
         "time": "2026-11-02T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "\"17년 기다림 끝에 첫 삽\"…화성시, 동탄 트램 우선시공분 착수",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kQkgydTloY0Y4NDlJUWFacXJiRWxvRldEUjlkODN6ZjVPSzlxdzJIVnZ4RTMtODhYZnR5SGl4cnZudW1OaWRuWmJUTTEwT1NqNWRJem9ub1I0Zw?oc=5",
-        "source": "파이낸셜뉴스",
-        "time": "2026-11-02T06:59:40.000Z",
         "isToday": false
       },
       {
@@ -21078,11 +21064,25 @@
         "source": "기호일보",
         "time": "2026-10-11T07:00:00.000Z",
         "isToday": false
+      },
+      {
+        "title": "화성시 동탄트램 선공사비 200억 감액…착공 추진",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QcHY3RjBkS2pYcWd5ODVheEUtTWVGdVFlaWp2eTl2NDJoQzduTlkzcHduM3BReEhRQWhvS2FzSnltd3dTMTA4SVZRX2Fpc3RwVnRKbkw2X0U5UDJrd2p3TzhyZHRXSkN4LXc?oc=5",
+        "source": "OBC 뉴스",
+        "time": "2026-10-11T07:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄트램, 17년 기다림 끝에 첫 삽 눈앞",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BNm5hYkc2ZFpiVjdJWlVETXZPc2pMNk1DWWl0V0dET0x5X3RGTGNfekRJV1hzLWN6TExKZUFwTzhKQkY3SWM2TFFTRGxCbnRHVWhGQ2FHONIBU0FVX3lxTE90OVZJNDVKdDRvR2J1d2MwbXVVcl9KWlRlZW00RjF6Q0JVVVZyZW1LT0luVGwyU19Qbm1kbXdWZEhZdmdCSUlGMjVIVkppQ3RiZTJj?oc=5",
+        "source": "KPI뉴스",
+        "time": "2026-10-09T07:00:00.000Z",
+        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-12T18:59:19.014Z",
+    "fetchedAt": "2026-11-12T19:29:20.669Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21097,13 +21097,6 @@
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBpZVJUcDFnSHRuNGE5Zmc2ZFMwZHU2STY4dGFidE9wejE5THEzNFZDRGJmZ2pTUHVKSmRtOERYMktZRGRMdzFwQTRxbGw3cUNZNmtXOHhlVTREMjBRRU5GSnBTSkNBUQ?oc=5",
         "source": "화성저널",
         "time": "2026-11-12T07:41:42.000Z",
-        "isToday": false
-      },
-      {
-        "title": "“동탄의 발전을 영종의 미래로”…영종구의회, 화성특례시 비교시찰",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9QWGlyeVl3VTE0RnhxX0R4LXFuemxUVkxzUThPZWR5bUhoT1V6QTF3QU5jbzFObGhsa2FKc3g3cWtySFZ3enZXR05Eanp0OWFDYUFsVGFLZzJPNGtYSjIzVUIxcmNRRDhzTm1MWQ?oc=5",
-        "source": "영종뉴스",
-        "time": "2026-11-11T23:09:14.000Z",
         "isToday": false
       },
       {
@@ -21153,6 +21146,13 @@
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2t0VUFhNUF0NVlzdzVCQVZRcjRCNXNMajV3SlkzTVRiZE1ZRE9FV19MWFgxV294MkxFekxJVkRvVHYzdFUzZS0wVFh1NGZpa3VMbndsdkVBRWlqVkFWTGV3WmhUc1JzX0NESzRLQ0FmNnM5TEE4cXhZVzY2Zkt6anhJclM5V291WWlWRzkzdVExUnNnNG9DVC13ek90UdIBZkFVX3lxTE9pd2dENW1ibFFhWERVd3ZWTGNHai1GSm1MQ05YNXlTNExEVDIxVFVyQS1uYjlhTy0yVzUxaTBhOHhwWjhCbWRjX3VOYVFLeFh5MFNOS1oyU0lhVDQtWDZxMjdWcVJyQQ?oc=5",
         "source": "동아일보",
         "time": "2026-11-07T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄9동, ‘동9동락 페스타’…운동회·공연 풍성",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MbXJKUUNKZS05a0sycDk0YkRiZFZ0dmYwTUlLaXJ2ektXVVFRR1BMbXV6Z0VXMS14MFNEem4taXBSWWhJREhGdEVKVVgzZFBL?oc=5",
+        "source": "문화일보",
+        "time": "2026-11-05T05:32:52.000Z",
         "isToday": false
       }
     ]
