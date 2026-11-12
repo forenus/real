@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T00:26:47.429Z",
+  "generatedAt": "2026-11-12T00:56:54.343Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15667,15 +15667,15 @@
       ]
     },
     "todayDate": "2026-11-12",
-    "lastFetchedAt": "2026-11-12T00:26:37.488Z",
+    "lastFetchedAt": "2026-11-12T00:56:37.826Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 84,
-      "recent24h": 754,
-      "frequent": 57,
-      "new": 12,
-      "fetchedAt": "2026-11-12T00:26:41.840Z"
+      "realtime": 111,
+      "recent24h": 748,
+      "frequent": 73,
+      "new": 15,
+      "fetchedAt": "2026-11-12T00:56:47.961Z"
     },
     "prevDate": "2026-11-11",
     "rows": [
@@ -17562,10 +17562,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 오늘 **88건으로 30일 최고치**를 기록했고, 30일 전보다 12건 많습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄었으며**, 10월 중순 8건을 정점으로 다시 감소하는 모습입니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 2,000으로 그전 30일(8억 7,000)보다 올랐고, **10월 28일 15층이 10억으로 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**이지만, 최근 거래가 4~5건에 그쳐 평균이 크게 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 60일간 거래가 없어 최근 가격 흐름을 판단하기 어렵습니다.",
+      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 88건으로 30일 최고치**를 기록했고, 30일 전보다 12건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄었으며**, 10월 중순 8건을 정점으로 소폭 감소하는 모습입니다.",
+      "real": "33평은 최근 30일 5건 평균 9억 2,000으로 그전 30일(4건, 8억 7,000)보다 올랐고, **10월 28일 15층 10억으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 3,900과 비교하면 **약 2억 8,000 높은 수준**이지만, 최근 거래 건수가 적어 평균이 흔들릴 수 있습니다. 25평은 9월 6일 7억 2,000 이후 60일간 거래가 없어 최근 흐름을 판단하기 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-12T00:26:47.212Z"
+      "generatedAt": "2026-11-12T00:56:53.227Z"
     },
     "history": [
       {
@@ -20959,7 +20959,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-11T23:57:47.401Z",
+    "fetchedAt": "2026-11-12T00:56:54.340Z",
     "today": "2026-11-12",
     "items": [
       {
@@ -21012,13 +21012,6 @@
         "isToday": false
       },
       {
-        "title": "트램이 초래할 동탄신도시 지각변동…교통사각지대 서·남동탄 단지도 들썩",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mc054TEtsT0VGZEdjZTZadUR2UU1rVXA5NldNaEphcU9VWEpuemVNTGM1R1EtM1lQaVlaQjd1blpzRnFSMTdDalgxZHVvVFVWOExNWFZaSFNKQ3d0d1o4WXJON3dIdHpRbzgzSVQ5T3gzUzl4U1MwcjZld19ISG_SAXNBVV95cUxQYTZBb1h6bE9qZ0E1TkRfQUUxQWlnTG5rcXVXNFRvNzM1Q1Z2cTRiWldQc3lYbTRjd0h3LWRMcnNpUVhlZDdyNGZERUUyanByZHVZUEoteVcwYzU2bno0OXZRMW5Xd3Y2dHhCUWxTMjFjSzZB?oc=5",
-        "source": "땅집고",
-        "time": "2026-11-01T21:00:00.000Z",
-        "isToday": false
-      },
-      {
         "title": "동탄트램 2031년 개통 목표…차량계약 관건",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYkJoQml5X2RtQlNyRHNSZ2xRNWhLZ2JMcTRucXV0VU81eFo3TEJkUFdNTm82dW91MGk0em5NYnlYSzNGSzRDVzN3N25OZFlOSDlFemdXVV9YSGxIQzBDMkZrcmJqU01XWVE?oc=5",
         "source": "OBC 뉴스",
@@ -21031,11 +21024,18 @@
         "source": "Chosunbiz",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
+      },
+      {
+        "title": "화성 동탄트램 10월 우선시공분 착공 추진… '30분 생활권' 공약 박차",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWaUhfR21mLXJVMzdDbW9JaW1QSU11MXozN1dqbEpSd3oxY29xYUhManM5X3JIdUN1ZHZlSWZDTGdFRXQ5TjRQeTZtODgyLVRiRncwSi1WT2xVOURHUEhDN0t5cmhJRDNLYXhZbzI2LVQ2T2RpV2R1Z3pn0gF_QVVfeXFMT2VBZlhuM1gwa0x6aUZVOWpfZl9qMFhPLWlZVVJ0M2ticW9wMGJBMU91TW9XbGhOalBISExLd3RvanBFamVlMHoxWmh1RE5RNTFQUHdDUkxROWExZXFrWnFTZTZUWGhqcy15RV9Hd3cyMDRiTjBHWnpYMFV2aEQ2OA?oc=5",
+        "source": "뉴데일리 경기",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-11T23:57:47.332Z",
+    "fetchedAt": "2026-11-12T00:56:54.274Z",
     "today": "2026-11-12",
     "items": [
       {
