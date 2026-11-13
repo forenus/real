@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T16:02:25.422Z",
+  "generatedAt": "2026-11-13T16:32:28.198Z",
   "collectUrl": "https://spray-characteristics-guam-narrative.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15739,15 +15739,15 @@
       ]
     },
     "todayDate": "2026-11-14",
-    "lastFetchedAt": "2026-11-13T16:02:13.732Z",
+    "lastFetchedAt": "2026-11-13T16:32:13.934Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 97,
-      "recent24h": 1056,
-      "frequent": 48,
-      "new": 27,
-      "fetchedAt": "2026-11-13T16:02:18.443Z"
+      "realtime": 81,
+      "recent24h": 1055,
+      "frequent": 41,
+      "new": 23,
+      "fetchedAt": "2026-11-13T16:32:21.282Z"
     },
     "prevDate": "2026-11-13",
     "rows": [
@@ -17660,10 +17660,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건, 7일 전보다 4건 늘었으며, 최근 12주간 **67건에서 89건으로 꾸준히 증가**해 30일 최고치 수준입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 4~8건 사이에서 횡보**하고 있어 물량 변화는 크지 않습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래돼 그전 30일(4건, 8억 7,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **약 2억 7,600만 원 높은 수준**입니다. 10월 28일에는 역대 최고가인 10억 원이 나왔으나, 같은 시기 8억 2,000만 원 거래도 있어 층에 따라 가격 차이가 큽니다. 25평은 **최근 30일 거래가 1건(7억 1,000만 원)뿐**이라 평균만으로 흐름을 판단하기는 어렵지만, 9월 최고가 7억 2,000만 원과 비슷한 수준을 유지하고 있습니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건, 7일 전보다 4건 늘었고, 최근 12주 동안 67건에서 **89건까지 꾸준히 증가**해 30일 최고치 수준입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄었으나, 물량 자체가 적어 큰 변화로 보기는 어렵습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래돼 그전 30일(8억 7,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **약 2억 7,600만 원 높은 수준**입니다. 10월 28일에는 15층이 **10억 원으로 역대 최고가**를 기록했습니다. 25평은 최근 30일 거래가 7억 1,000만 원 1건뿐이라 평균을 해석할 때 유의가 필요하지만, 역대 최고가(7억 2,000만 원)에 근접한 가격입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-13T16:02:24.574Z"
+      "generatedAt": "2026-11-13T16:32:27.467Z"
     },
     "history": [
       {
@@ -21095,7 +21095,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-13T16:02:25.421Z",
+    "fetchedAt": "2026-11-13T16:32:28.198Z",
     "today": "2026-11-14",
     "items": [
       {
@@ -21162,16 +21162,16 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CaFVhT3NlSFJRWXhoUWN6eGt1X0tuR0k1SktwMEJ1UXpKdTA5VS1heDJXcVU5OF9INWpjRWMtN1R1bzdEVlVUSUtVTUpBcFl2S0ZVVjFCbm9vcGV5TmlKN2VR?oc=5",
-        "source": "경인뷰",
+        "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
+        "source": "경인일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-13T16:02:25.331Z",
+    "fetchedAt": "2026-11-13T16:32:28.169Z",
     "today": "2026-11-14",
     "items": [
       {
