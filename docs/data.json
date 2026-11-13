@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T02:29:50.420Z",
+  "generatedAt": "2026-11-13T03:01:14.101Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15731,15 +15731,15 @@
       ]
     },
     "todayDate": "2026-11-13",
-    "lastFetchedAt": "2026-11-13T02:29:37.019Z",
+    "lastFetchedAt": "2026-11-13T03:00:03.152Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 423,
-      "recent24h": 926,
-      "frequent": 287,
-      "new": 62,
-      "fetchedAt": "2026-11-13T02:29:38.600Z"
+      "realtime": 427,
+      "recent24h": 936,
+      "frequent": 288,
+      "new": 67,
+      "fetchedAt": "2026-11-13T02:56:29.064Z"
     },
     "prevDate": "2026-11-12",
     "rows": [
@@ -17639,10 +17639,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 오늘 **89건으로 꾸준히 늘어** 30일 최고치를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 오늘 5건으로 10월 19일 최고 8건 이후 **완만하게 줄어드는 모습**입니다.",
-      "real": "33평은 최근 30일 6건, 평균 9억 1,700으로 그전 30일 평균 8억 7,000보다 높고, 1년 전 무렵 평균 6억 4,100과 비교하면 **약 2억 7,600 오른 수준**입니다. 10월 28일에는 15층이 10억에 거래되며 역대 최고를 기록했습니다. 25평은 11월 11일 7억 1,000 **단 1건만 거래되어** 평균이 크게 흔들릴 수 있으나, 역대 최고 7억 2,000에 근접한 가격입니다.",
+      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 **30일 전보다 2건 줄어** 소폭 소진되는 모습입니다.",
+      "real": "33평은 최근 30일 6건 평균 9억 1,700으로 그전 30일(8억 7,000)보다 올랐고, 10월 28일 15층이 **역대 최고 10억**에 거래되는 등 **1년 전 무렵 평균 6억 4,100 대비 크게 상승**했습니다. 25평은 11월 11일 7억 1,000 단 1건이라 평균의 의미는 제한적이지만, 1년 전 무렵 평균 5억 3,200보다 높은 수준입니다. 평균호가는 33평 9억 9,800, 25평 8억 5,600으로 최근 실거래가보다 높게 형성돼 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-13T02:29:48.051Z"
+      "generatedAt": "2026-11-13T03:00:56.135Z"
     },
     "history": [
       {
@@ -21583,7 +21583,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-13T02:29:50.419Z",
+    "fetchedAt": "2026-11-13T03:01:14.071Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21659,21 +21659,14 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-13T02:29:49.314Z",
+    "fetchedAt": "2026-11-13T03:01:14.040Z",
     "today": "2026-11-13",
     "items": [
       {
-        "title": "화성동탄중앙도서관, 개관 1주년 문화공연 개최",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9uZmp3b0QwMHFOVUdaMUFZcE1jeDF5NjF4X3JpMXMySDFYZFIyWmNjMXM4N2xFbDhpUC1PQ1FpUHBreGdha0NsbXRmR2E3Vm1CUWtDWGZHSG9jWHZmNlBERnhB?oc=5",
-        "source": "경기뉴스광장",
-        "time": "2026-11-13T01:46:39.000Z",
-        "isToday": true
-      },
-      {
         "title": "\"책과 음악이 어우러진 도서관\" 화성동탄중앙도서관, 개관 1주년 문화공연 개최",
-        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1LMExLQ2FCYUVRaG1EbGxrX3lfdFFxVlNhdnJxS1c4Ni00aUl0bXBKOThFT0paS2tUWWRnRVJlMkdadw?oc=5",
-        "source": "화성인터넷신문",
-        "time": "2026-11-12T21:23:00.000Z",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pZ2ZXWVhHSWJXLTRkZ05OYWl6TFdORTNkd0xKZm1zRlJmZW54X2J3aHI1LVBZOVFoYUg5QWZUT1p2WjFCNTR2UlA4UG5sVmZxNVRWODVDR0c1T3RmeS1aZVBpTlNtVWo1a0FEdHQ4RQ?oc=5",
+        "source": "뉴스파노라마",
+        "time": "2026-11-13T02:30:31.000Z",
         "isToday": true
       },
       {
@@ -21730,6 +21723,13 @@
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2t0VUFhNUF0NVlzdzVCQVZRcjRCNXNMajV3SlkzTVRiZE1ZRE9FV19MWFgxV294MkxFekxJVkRvVHYzdFUzZS0wVFh1NGZpa3VMbndsdkVBRWlqVkFWTGV3WmhUc1JzX0NESzRLQ0FmNnM5TEE4cXhZVzY2Zkt6anhJclM5V291WWlWRzkzdVExUnNnNG9DVC13ek90UdIBZkFVX3lxTE9pd2dENW1ibFFhWERVd3ZWTGNHai1GSm1MQ05YNXlTNExEVDIxVFVyQS1uYjlhTy0yVzUxaTBhOHhwWjhCbWRjX3VOYVFLeFh5MFNOS1oyU0lhVDQtWDZxMjdWcVJyQQ?oc=5",
         "source": "동아일보",
         "time": "2026-11-07T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄9동, ‘동9동락 페스타’…운동회·공연 풍성",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MbXJKUUNKZS05a0sycDk0YkRiZFZ0dmYwTUlLaXJ2ektXVVFRR1BMbXV6Z0VXMS14MFNEem4taXBSWWhJREhGdEVKVVgzZFBL?oc=5",
+        "source": "문화일보",
+        "time": "2026-11-05T05:32:52.000Z",
         "isToday": false
       }
     ]
