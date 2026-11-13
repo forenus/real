@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T07:16:22.076Z",
+  "generatedAt": "2026-11-13T07:32:45.211Z",
   "collectUrl": "https://spray-characteristics-guam-narrative.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15731,15 +15731,15 @@
       ]
     },
     "todayDate": "2026-11-13",
-    "lastFetchedAt": "2026-11-13T07:16:04.152Z",
+    "lastFetchedAt": "2026-11-13T07:32:23.042Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 233,
-      "recent24h": 1063,
-      "frequent": 130,
-      "new": 56,
-      "fetchedAt": "2026-11-13T07:16:13.377Z"
+      "realtime": 219,
+      "recent24h": 1070,
+      "frequent": 116,
+      "new": 57,
+      "fetchedAt": "2026-11-13T07:32:33.078Z"
     },
     "prevDate": "2026-11-12",
     "rows": [
@@ -17639,10 +17639,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 2건 줄었으며, 10월 중순 8건 이후 **완만한 감소세**를 보이고 있습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 1,700으로 직전 30일(8억 7,000)보다 올랐고**, 10월 28일 15층이 역대 최고인 10억에 거래됐습니다. 1년 전 무렵 평균 6억 4,100과 비교하면 상승 폭이 큰 편입니다. 25평은 11월 11일 7억 1,000 **단 1건만 거래**돼 평균이 크게 흔들릴 수 있지만, 역대 최고 7억 2,000에 가까운 수준입니다.",
+      "listing": "33평 매물은 최근 12주간 67건에서 **89건으로 꾸준히 늘어** 30일 전보다 14건 많고, 오늘이 30일 중 최고치입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 **30일 전보다 2건 줄어** 소폭 감소 흐름이지만, 물량 자체가 적어 변동 폭은 작습니다.",
+      "real": "33평은 최근 30일 6건 평균 9억 1,700만 원으로 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 **10억 원으로 역대 최고가**를 기록했습니다. 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **상승 흐름이 뚜렷합니다**. 25평은 11월 11일 7억 1,000만 원 1건뿐이라 평균만으로 흐름을 판단하기는 어렵지만, 역대 최고가 7억 2,000만 원에 근접한 수준입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-13T07:16:21.015Z"
+      "generatedAt": "2026-11-13T07:32:44.988Z"
     },
     "history": [
       {
@@ -21615,7 +21615,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-13T07:16:22.075Z",
+    "fetchedAt": "2026-11-13T07:32:15.243Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21691,16 +21691,9 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-13T07:16:22.044Z",
+    "fetchedAt": "2026-11-13T07:32:15.705Z",
     "today": "2026-11-13",
     "items": [
-      {
-        "title": "클래식 공연 축하 ‘화성동탄중앙도서관’1주년 생일",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jWmNFaUktcDZKODgzRV8wTmN1UURIbUNTT1ljY096VHkzWkg5YWxnMmZQcG5fUUFHb3BFUkZNVnQwdWY0MkRac1djQ0puWXV6Nm1aVHFmQWZMc3hBc0hPYjZqTTZKS2UxVTloZnh3?oc=5",
-        "source": "현대일보",
-        "time": "2026-11-13T05:22:29.000Z",
-        "isToday": true
-      },
       {
         "title": "2026년도 제9회 화성동탄우체국 실적급 공무직 상시집배원 채용시험 최종합격자 공고",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ZM1FBQ1IzM0FVOHpMVHNFZ1hlcDJ0NFJMR1Y2LUZPSTZQeTk5aHdZVHpxYVFid3JyLTJON0ZvN3ZTVV90VVYzc2lrci1ramNRSnRnVnVBVGhXNXZhS1IxLWFn?oc=5",
@@ -21727,6 +21720,13 @@
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5KaE51bUFWV0RwbDNpVTc5LVpmMTlzZmZBVnVWblVYbS1aZnc3RHR6Tkt3MWsxYm80Y1RYVXJkOXBuSmVzWm1sbmJmQy1WdG1PdTRiTUQwTGM5LTdvOW01UFBtT09oWi1LQ3Jqa2x4LXo5Zw?oc=5",
         "source": "웹이코노미",
         "time": "2026-11-13T00:00:42.000Z",
+        "isToday": true
+      },
+      {
+        "title": "\"책과 음악이 어우러진 도서관\" 화성동탄중앙도서관, 개관 1주년 문화공연 개최",
+        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5wSnpyWHhjeTJnYkRlTTFKVFk0RlZ5dFNLM0hmcG5mbjBtaHZYeVl4X0RDd0NYbE9WY3F4ZVBRdlhsbmI4Q2QxQk1n?oc=5",
+        "source": "경기평화신문",
+        "time": "2026-11-12T21:23:00.000Z",
         "isToday": true
       },
       {

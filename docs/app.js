@@ -954,12 +954,21 @@ function gbTime(iso) {
 }
 let gbReplyOpen = ""; // 댓글 입력칸이 열린 글(다시 그려도 유지)
 let gbLast = null;
-function gbAuthor(x, kind) {
+// extra: 반응 줄 끝에 붙일 버튼(원글의 '댓글' 버튼)
+function gbAuthor(x, kind, extra = "") {
   return `<span class="gb-avatar" style="--h:${Number(x.hue) || 0}" aria-hidden="true">${esc([...x.name][0] || "?")}</span>` +
     `<div class="gb-body"><div class="gb-meta"><b>${esc(x.name)}</b>${x.dev ? `<span class="gb-dev">개발자</span>` : ""}` +
     `<time datetime="${esc(x.at)}" title="${esc(new Date(x.at).toLocaleString("ko-KR"))}">${gbTime(x.at)}</time>` +
     `<button type="button" class="gb-del" data-id="${esc(x.id)}" data-kind="${kind}" aria-label="${esc(x.name)}님의 ${kind} 지우기">지우기</button></div>` +
-    `<p class="gb-text">${esc(x.text)}</p>`;
+    `<p class="gb-text">${esc(x.text)}</p>` + gbReacts(x, kind, extra);
+}
+// 이모티콘 반응 — 누른 반응은 칩으로, 옆의 + 버튼으로 고르는 창을 연다
+function gbReacts(x, kind, extra) {
+  const chips = (x.reacts || []).map((r) =>
+    `<button type="button" class="gb-chip${r.mine ? " mine" : ""}" data-id="${esc(x.id)}" data-emoji="${esc(r.e)}" aria-pressed="${!!r.mine}" ` +
+    `aria-label="${esc(r.e)} 반응 ${r.n}개${r.mine ? ", 내가 누름 — 눌러서 취소" : ""}"><span aria-hidden="true">${esc(r.e)}</span><b>${r.n}</b></button>`).join("");
+  return `<div class="gb-react-row">${chips}<button type="button" class="gb-react-add" data-id="${esc(x.id)}" aria-haspopup="dialog" aria-label="이 ${kind}에 이모티콘 반응 달기" title="반응 달기">` +
+    `<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="12" r="8"/><path d="M8 14.5c.8 1 1.8 1.5 3 1.5s2.2-.5 3-1.5"/><circle cx="8.5" cy="10" r=".6" fill="currentColor"/><circle cx="13.5" cy="10" r=".6" fill="currentColor"/><path d="M19 2v5M16.5 4.5h5" stroke-width="1.6"/></svg></button>${extra}</div>`;
 }
 function gbReplyForm(id) {
   return `<form class="gb-reply-form" data-parent="${esc(id)}" novalidate>` +
@@ -980,8 +989,8 @@ function renderGuestbook(r) {
     ? r.list.map((x) => {
       const reps = x.replies || [];
       const open = gbReplyOpen === x.id;
-      return `<li class="gb-item${x.dev ? " is-dev" : ""}">` + gbAuthor(x, "글") +
-        `<button type="button" class="gb-reply-btn" data-id="${esc(x.id)}" aria-expanded="${open}">💬 댓글${reps.length ? ` ${reps.length}` : " 쓰기"}</button>` +
+      return `<li class="gb-item${x.dev ? " is-dev" : ""}">` + gbAuthor(x, "글",
+        `<button type="button" class="gb-reply-btn" data-id="${esc(x.id)}" aria-expanded="${open}">💬 댓글${reps.length ? ` ${reps.length}` : " 쓰기"}</button>`) +
         (reps.length ? `<ul class="gb-replies">${reps.map((y) => `<li class="gb-reply${y.dev ? " is-dev" : ""}">${gbAuthor(y, "댓글")}</div></li>`).join("")}</ul>` : "") +
         (open ? gbReplyForm(x.id) : "") + `</div></li>`;
     }).join("")
@@ -992,9 +1001,79 @@ function renderGuestbook(r) {
     f.querySelector(".gb-r-text").value = v.text; f.querySelector(".gb-r-name").value = v.name; f.querySelector(".gb-r-pw").value = v.pw;
   });
 }
+// 반응을 누른 브라우저를 구분하는 무작위 값(서버에는 해시로만 남는다)
+let gbWhoMem = "";
+function gbWho() {
+  if (gbWhoMem) return gbWhoMem;
+  try { gbWhoMem = localStorage.getItem("gbWho") || ""; } catch {}
+  if (!/^[0-9a-f]{32}$/.test(gbWhoMem)) {
+    const b = new Uint8Array(16); crypto.getRandomValues(b);
+    gbWhoMem = [...b].map((v) => v.toString(16).padStart(2, "0")).join("");
+    try { localStorage.setItem("gbWho", gbWhoMem); } catch {}
+  }
+  return gbWhoMem;
+}
+async function gbReact(id, emoji) {
+  try {
+    const r = await gbFetch("/api/guestbook/react", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id, emoji }) });
+    if (r.list) renderGuestbook(r);
+    if (r.error) setStatus(r.error, "error");
+  } catch (e) { setStatus(e.message, "error"); }
+}
+// 이모티콘 고르는 창 — 하나만 만들어 두고 누른 버튼 옆에 띄운다
+const GB_EMOJIS_FALLBACK = ["❤️", "👍", "😄", "😮", "😢", "👏", "🙏", "🎉"];
+let gbPickFor = null;
+function gbClosePicker(focusBack) {
+  const p = $("gb-picker");
+  if (!p || p.hidden) return;
+  p.hidden = true;
+  if (focusBack && gbPickFor) { const b = $("gb-list").querySelector(`.gb-react-add[data-id="${CSS.escape(gbPickFor)}"]`); if (b) b.focus(); }
+  gbPickFor = null;
+}
+function gbOpenPicker(btn) {
+  let p = $("gb-picker");
+  if (!p) {
+    p = document.createElement("div");
+    p.id = "gb-picker"; p.className = "gb-picker"; p.setAttribute("role", "dialog"); p.setAttribute("aria-label", "이모티콘 반응 고르기");
+    document.body.appendChild(p);
+    p.addEventListener("click", (e) => {
+      const b = e.target.closest("button[data-emoji]");
+      if (b && gbPickFor) { const id = gbPickFor; gbClosePicker(false); gbReact(id, b.dataset.emoji); }
+    });
+    p.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") { e.preventDefault(); gbClosePicker(true); return; }
+      const all = [...p.querySelectorAll("button")];
+      const i = all.indexOf(document.activeElement);
+      const step = { ArrowRight: 1, ArrowLeft: -1, ArrowDown: 6, ArrowUp: -6 }[e.key];
+      if (step && i >= 0) { e.preventDefault(); all[Math.max(0, Math.min(all.length - 1, i + step))].focus(); }
+    });
+  }
+  const id = btn.dataset.id;
+  const mine = new Set();
+  for (const x of (gbLast && gbLast.list) || []) for (const y of [x, ...(x.replies || [])]) if (y.id === id) (y.reacts || []).forEach((r) => r.mine && mine.add(r.e));
+  const emojis = (gbLast && gbLast.emojis) || GB_EMOJIS_FALLBACK;
+  p.innerHTML = `<p class="gb-picker-title">반응 달기</p><div class="gb-picker-grid">` +
+    emojis.map((e) => `<button type="button" data-emoji="${esc(e)}" class="${mine.has(e) ? "mine" : ""}" aria-pressed="${mine.has(e)}" aria-label="${esc(e)}">${esc(e)}</button>`).join("") + `</div>`;
+  gbPickFor = id;
+  p.hidden = false;
+  // 버튼 아래(공간이 없으면 위)에 화면 밖으로 나가지 않게 띄운다
+  const r = btn.getBoundingClientRect();
+  const w = p.offsetWidth, h = p.offsetHeight;
+  const left = Math.max(8, Math.min(window.innerWidth - w - 8, r.left));
+  const top = r.bottom + 6 + h > window.innerHeight - 8 ? Math.max(8, r.top - h - 6) : r.bottom + 6;
+  p.style.left = `${left}px`; p.style.top = `${top}px`;
+  (p.querySelector("button.mine") || p.querySelector("button")).focus({ preventScroll: true });
+}
+document.addEventListener("click", (e) => {
+  const p = $("gb-picker");
+  if (p && !p.hidden && !p.contains(e.target) && !e.target.closest(".gb-react-add")) gbClosePicker(false);
+});
+window.addEventListener("resize", () => gbClosePicker(false));
+window.addEventListener("scroll", () => gbClosePicker(false), { passive: true });
 async function gbFetch(path, opts) {
   if (STATIC && !gbBase()) throw new Error("지금은 PC 서버가 꺼져 있어 방명록을 열 수 없습니다. 잠시 후 다시 시도해 주세요.");
   let res;
+  opts = { ...(opts || {}), headers: { ...((opts && opts.headers) || {}), "x-gb-who": gbWho() } };
   try { res = await fetch(gbBase() + path, opts); }
   catch { throw new Error("PC 서버에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요."); }
   let r;
@@ -1054,6 +1133,13 @@ $("gb-list").addEventListener("click", async (e) => {
     }
     return;
   }
+  const add = e.target.closest(".gb-react-add");
+  if (add) {
+    if (gbPickFor === add.dataset.id) return gbClosePicker(false); // 같은 버튼을 다시 누르면 닫는다
+    return gbOpenPicker(add);
+  }
+  const chip = e.target.closest(".gb-chip");
+  if (chip) return gbReact(chip.dataset.id, chip.dataset.emoji);
   const b = e.target.closest(".gb-del");
   if (!b) return;
   const kind = b.dataset.kind || "글";
