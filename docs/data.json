@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T00:29:22.172Z",
+  "generatedAt": "2026-11-13T01:29:35.841Z",
   "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15731,15 +15731,15 @@
       ]
     },
     "todayDate": "2026-11-13",
-    "lastFetchedAt": "2026-11-13T00:29:07.254Z",
+    "lastFetchedAt": "2026-11-13T01:29:20.127Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 156,
-      "recent24h": 768,
-      "frequent": 98,
-      "new": 25,
-      "fetchedAt": "2026-11-13T00:29:14.827Z"
+      "realtime": 372,
+      "recent24h": 882,
+      "frequent": 260,
+      "new": 43,
+      "fetchedAt": "2026-11-13T01:29:26.472Z"
     },
     "prevDate": "2026-11-12",
     "rows": [
@@ -17639,10 +17639,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했으며, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄어** 소폭 감소세이나, 물량 자체가 적어 큰 변화로 보기는 어렵습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 1,700만 원으로 그전 30일(8억 7,000만 원)보다 올랐고**, 10월 28일 15층이 역대 최고인 10억 원에 거래됐습니다. 1년 전 무렵 평균 6억 4,100만 원과 비교하면 상승 폭이 큰 편입니다. 25평은 최근 30일 거래가 **11월 11일 7억 1,000만 원 1건뿐**이어서 평균만으로 흐름을 판단하기에는 한계가 있습니다.",
+      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했고, 30일 전보다 14건 많아 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 오늘 5건으로 30일 전 대비 2건 줄었으며, 10월 중순 8건 정점 이후 **완만한 감소세**를 보이고 있습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래돼 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 15층이 **역대 최고 10억 원**을 기록했습니다. 1년 전 무렵 평균 6억 4,100만 원과 비교하면 상승 폭이 크지만, 평균 호가 9억 9,800만 원은 최근 실거래보다 높게 형성돼 있습니다. 25평은 11월 11일 7억 1,000만 원 1건뿐이라 평균이 크게 흔들릴 수 있으나, **1년 전 평균 5억 3,200만 원보다 높은 수준**입니다.",
       "source": "ai",
-      "generatedAt": "2026-11-13T00:29:21.948Z"
+      "generatedAt": "2026-11-13T01:29:34.237Z"
     },
     "history": [
       {
@@ -21103,7 +21103,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-12T23:59:51.326Z",
+    "fetchedAt": "2026-11-13T01:29:35.838Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21179,9 +21179,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-12T23:59:51.272Z",
+    "fetchedAt": "2026-11-13T01:29:35.473Z",
     "today": "2026-11-13",
     "items": [
+      {
+        "title": "\"책과 음악이 어우러진 도서관\" 화성동탄중앙도서관, 개관 1주년 문화공연 개최",
+        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1LMExLQ2FCYUVRaG1EbGxrX3lfdFFxVlNhdnJxS1c4Ni00aUl0bXBKOThFT0paS2tUWWRnRVJlMkdadw?oc=5",
+        "source": "화성인터넷신문",
+        "time": "2026-11-12T21:23:00.000Z",
+        "isToday": true
+      },
       {
         "title": "화성동탄경찰서, 금곡초 앞 스쿨존 교통안전 캠페인 전개",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4wSHFGV2xOVFpLNjVHNnR6aUNNM0hLYzExVHFQZnppb0VnVmVCQlhpa1h5SGstbDRUdkdJMkxzSEl6a1V3TklENGZVRHRobnlpMkpXcmRhLXpLcS1WbUhwZGFybktpZk96UjVN?oc=5",
@@ -21208,13 +21215,6 @@
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fV2xUeEdnUHJNYmJZR1FtR0x1cEtOR200dkF4RXM4WHdVZF9GMklHczk0bVhPMjRRbW1fMGhBaHVJSDFIQVFJS3lhX2pzQ0VsZ05DOTlna2p3bUtneFBqNEZZMm4?oc=5",
         "source": "매일일보",
         "time": "2026-11-10T01:59:54.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄중앙도서관, 개관 1주년 기념 ‘도서관에서 만나는 클래식 공연’ 성황리 개최",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtZ1BxUmhubEdVMEJvV0pNaW5kelVkU01CS1RIQUNmXzBBY1ZfTEtLcGhzZDEyazlqMjFEYkM3MmxwQklqeGpraG56dXhNbzk2aHFocmNhY0FJNHlyX3ljWGprQ05TNXRh?oc=5",
-        "source": "뉴스피크",
-        "time": "2026-11-09T08:00:00.000Z",
         "isToday": false
       },
       {
