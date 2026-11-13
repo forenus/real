@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T05:46:08.399Z",
+  "generatedAt": "2026-11-13T06:16:09.434Z",
   "collectUrl": "https://spray-characteristics-guam-narrative.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15731,15 +15731,15 @@
       ]
     },
     "todayDate": "2026-11-13",
-    "lastFetchedAt": "2026-11-13T05:45:55.360Z",
+    "lastFetchedAt": "2026-11-13T06:15:58.324Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 374,
-      "recent24h": 1039,
-      "frequent": 270,
-      "new": 43,
-      "fetchedAt": "2026-11-13T05:46:02.629Z"
+      "realtime": 377,
+      "recent24h": 1048,
+      "frequent": 265,
+      "new": 50,
+      "fetchedAt": "2026-11-13T06:16:03.659Z"
     },
     "prevDate": "2026-11-12",
     "rows": [
@@ -17639,10 +17639,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 **12주 전 67건에서 오늘 89건으로 꾸준히 늘어** 30일 최고치를 기록했고, 30일 전보다 14건 많아 매도 물량이 쌓이는 흐름으로 보입니다. 반면 25평은 오늘 5건으로 30일 전보다 2건 줄었으며, 10월 중순 8건 정점 이후 **완만하게 감소**하고 있어 물량이 일부 소진된 것으로 보입니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래되어 **그전 30일(8억 7,000만 원)보다 높아졌고**, 10월 28일 15층이 역대 최고인 10억 원을 기록했습니다. 다만 같은 달 2층 거래는 8억 2,000만 원으로 층에 따라 가격 차이가 큽니다. 25평은 11월 11일 7억 1,000만 원 1건뿐이라 평균의 의미는 제한적이지만, **1년 전 무렵 평균 5억 3,200만 원보다 높은 수준**입니다.",
+      "listing": "33평 매물은 12주 전 67건에서 오늘 **89건으로 꾸준히 늘어** 30일 최고치를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 **30일 전보다 2건 줄어** 소폭 감소세를 보이고 있습니다.",
+      "real": "33평은 최근 30일 6건, **평균 9억 1,700만 원**으로 그전 30일(8억 7,000만 원)보다 올랐고, 10월 28일 15층이 역대 최고인 10억 원에 거래됐습니다. 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **큰 폭의 상승 흐름**으로 보입니다. 25평은 최근 30일 거래가 11월 11일 7억 1,000만 원 1건뿐이라 평균만으로 추세를 판단하기는 어렵습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-13T05:46:08.240Z"
+      "generatedAt": "2026-11-13T06:16:08.582Z"
     },
     "history": [
       {
@@ -21583,7 +21583,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-13T05:16:15.080Z",
+    "fetchedAt": "2026-11-13T06:16:09.404Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21659,7 +21659,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-13T05:16:15.262Z",
+    "fetchedAt": "2026-11-13T06:16:09.433Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21677,10 +21677,17 @@
         "isToday": true
       },
       {
+        "title": "화성동탄중앙도서관, 개관 1주년 문화공연 개최",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9uZmp3b0QwMHFOVUdaMUFZcE1jeDF5NjF4X3JpMXMySDFYZFIyWmNjMXM4N2xFbDhpUC1PQ1FpUHBreGdha0NsbXRmR2E3Vm1CUWtDWGZHSG9jWHZmNlBERnhB?oc=5",
+        "source": "경기뉴스광장",
+        "time": "2026-11-13T01:46:39.000Z",
+        "isToday": true
+      },
+      {
         "title": "\"책과 음악이 어우러진 도서관\" 화성동탄중앙도서관, 개관 1주년 문화공연 개최",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pZ2ZXWVhHSWJXLTRkZ05OYWl6TFdORTNkd0xKZm1zRlJmZW54X2J3aHI1LVBZOVFoYUg5QWZUT1p2WjFCNTR2UlA4UG5sVmZxNVRWODVDR0c1T3RmeS1aZVBpTlNtVWo1a0FEdHQ4RQ?oc=5",
-        "source": "뉴스파노라마",
-        "time": "2026-11-13T02:30:31.000Z",
+        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5wSnpyWHhjeTJnYkRlTTFKVFk0RlZ5dFNLM0hmcG5mbjBtaHZYeVl4X0RDd0NYbE9WY3F4ZVBRdlhsbmI4Q2QxQk1n?oc=5",
+        "source": "경기평화신문",
+        "time": "2026-11-12T21:23:00.000Z",
         "isToday": true
       },
       {
@@ -21723,13 +21730,6 @@
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BazFZVmlXVlB5OXFQYnlIc0FVRGN6a1FWUWFSR1JMandBZ1p1cVF4Z3ExeFdBM0J4ZEtUay1mSHN4a1hEWjYxeGd5bm5HZVFaeWFyUl9iYzBWOC1GQkpRbzNIZnphV2NjTVE?oc=5",
         "source": "경기도민일보 미디어",
         "time": "2026-11-08T02:59:15.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄역신안인스빌리베라 1차, 가을 음악회·푸드 페스타 개최 - 보도자료 | 기사",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1JcEFCUHNaYjhXRS1zTG1sNTMxa1BwbWpwRVgxR203VUdCVGpWemNBRUxZcWhuOVdDb19UVGdZN0tkTDF2R0RYSEhqZEMxRno3SjFEMzZBUjhjdGFLQkk4?oc=5",
-        "source": "더팩트",
-        "time": "2026-11-08T02:49:19.000Z",
         "isToday": false
       }
     ]
