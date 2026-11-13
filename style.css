@@ -778,6 +778,25 @@ button.dong-count:hover { background: var(--primary); color: #fff; }
 .gb-r-send { flex: none; padding: 8px 14px; }
 .gb-r-msg { margin: 0; font-size: 12.5px; color: #d92d20; }
 .gb-r-msg:empty { display: none; }
+/* 이모티콘 반응 */
+.gb-react-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 6px; }
+.gb-react-row .gb-reply-btn { margin-top: 0; }
+.gb-chip { display: inline-flex; align-items: center; gap: 4px; height: 28px; padding: 0 9px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); font: inherit; font-size: 12.5px; color: var(--text); cursor: pointer; transition: background .15s, border-color .15s, transform .1s; }
+.gb-chip span { font-size: 15px; line-height: 1; }
+.gb-chip b { font-weight: 600; font-variant-numeric: tabular-nums; }
+.gb-chip:hover { border-color: var(--primary); }
+.gb-chip:active { transform: scale(.94); }
+.gb-chip.mine { border-color: var(--primary); background: rgba(84, 104, 255, .1); color: var(--primary); }
+.gb-react-add { display: inline-grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 1px dashed var(--border); border-radius: 999px; background: none; color: var(--muted); cursor: pointer; }
+.gb-react-add:hover, .gb-react-add:focus-visible { color: var(--primary); border-color: var(--primary); border-style: solid; }
+.gb-picker { position: fixed; z-index: 1000; width: min(320px, calc(100vw - 16px)); padding: 10px 10px 8px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: 0 12px 32px rgba(15, 23, 42, .18); }
+.gb-picker[hidden] { display: none; }
+.gb-picker-title { margin: 0 4px 6px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.gb-picker-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px; }
+.gb-picker-grid button { aspect-ratio: 1; display: grid; place-items: center; padding: 0; border: 0; border-radius: 10px; background: none; font-size: 24px; line-height: 1; cursor: pointer; transition: background .12s, transform .12s; }
+.gb-picker-grid button:hover, .gb-picker-grid button:focus-visible { background: rgba(84, 104, 255, .1); transform: scale(1.12); outline: none; }
+.gb-picker-grid button.mine { background: rgba(84, 104, 255, .16); box-shadow: inset 0 0 0 1.5px var(--primary); }
+@media (prefers-reduced-motion: reduce) { .gb-chip, .gb-picker-grid button { transition: none; } .gb-picker-grid button:hover { transform: none; } }
 @media (max-width: 480px) { .gb-r-row { flex-wrap: wrap; } .gb-r-row input { flex: 1 1 40%; } .gb-r-send { flex: 1 1 100%; } }
 /* 호갱노노 이야기 바로가기 */
 .hg-story { display: flex; align-items: center; gap: 12px; margin: 0 0 16px; padding: 12px 16px; border-radius: 14px; text-decoration: none; color: var(--text); background: linear-gradient(120deg, #efedff, #e6e3ff); border: 1px solid #d9d5ff; transition: transform .15s var(--ease); }

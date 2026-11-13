@@ -62,14 +62,50 @@ function save(list) {
 const hash = (salt, pw) => crypto.createHash("sha256").update(salt + "|" + pw).digest("hex");
 const sameHash = (a, b) => a.length === b.length && crypto.timingSafeEqual(Buffer.from(a), Buffer.from(b));
 
-// 공개용 — 비밀번호·IP 해시는 빼고 최신 글부터(댓글은 오래된 순)
-const pub = ({ id, name, text, at, hue, dev }) => ({ id, name, text, at, hue, dev: !!dev });
-function list() {
+// ---------- 이모티콘 반응 ----------
+// 정해진 이모티콘만 받는다(자유 입력이 아니라 AI 검사가 필요 없다). 누른 사람은 브라우저 토큰의 해시로만 구분한다.
+const EMOJIS = ["❤️", "👍", "✅", "😄", "😮", "😢", "😍", "😆", "🥺", "🤣", "🥳", "🤔",
+  "😅", "😘", "👀", "😋", "😭", "😓", "😎", "🤮", "😡", "😇", "😈", "👎",
+  "👌", "👏", "🙏", "🙌", "💪", "🎉", "🔥", "💯", "🏠", "💰", "📈", "📉"];
+const reactLog = new Map(); // ip → 최근 1분 반응 시각들
+const REACT_PER_MIN = 30;
+const voterOf = (who) => crypto.createHash("sha256").update("gbr|" + who).digest("hex").slice(0, 16);
+
+// 공개용 — 비밀번호·IP 해시는 빼고 최신 글부터(댓글은 오래된 순). 반응은 개수와 '내가 눌렀는지'만 준다.
+const pubReacts = (r, me) => EMOJIS.filter((e) => r && r[e] && r[e].length).map((e) => ({ e, n: r[e].length, mine: !!me && r[e].includes(me) }));
+const pub = ({ id, name, text, at, hue, dev, reacts }, me) => ({ id, name, text, at, hue, dev: !!dev, reacts: pubReacts(reacts, me) });
+function list(who) {
   const all = load();
+  const me = who ? voterOf(who) : "";
   return {
     total: all.length,
-    list: all.slice(-LIST_MAX).reverse().map((x) => ({ ...pub(x), replies: (x.replies || []).map(pub) })),
+    emojis: EMOJIS,
+    list: all.slice(-LIST_MAX).reverse().map((x) => ({ ...pub(x, me), replies: (x.replies || []).map((y) => pub(y, me)) })),
   };
+}
+
+// 글·댓글에 반응을 누르거나, 이미 누른 것을 다시 눌러 취소한다
+function react(body, who, ip) {
+  if (!body || !body.id || !who) return { code: 400, body: { error: "요청 형식이 올바르지 않습니다." } };
+  const emoji = String(body.emoji || "");
+  if (!EMOJIS.includes(emoji)) return { code: 400, body: { error: "고를 수 없는 이모티콘입니다." } };
+  const now = Date.now();
+  const recent = (reactLog.get(ip) || []).filter((t) => now - t < 60000);
+  if (recent.length >= REACT_PER_MIN) return { code: 429, body: { error: "반응을 너무 자주 눌렀습니다. 잠시 후 다시 눌러 주세요." } };
+  recent.push(now); reactLog.set(ip, recent);
+  const all = load();
+  let target = all.find((x) => x.id === String(body.id));
+  if (!target) for (const p of all) { target = (p.replies || []).find((r) => r.id === String(body.id)); if (target) break; }
+  if (!target) return { code: 404, body: { error: "이미 지워진 글입니다.", ...list(who) } };
+  const me = voterOf(who);
+  const r = (target.reacts = target.reacts || {});
+  const arr = (r[emoji] = r[emoji] || []);
+  const i = arr.indexOf(me);
+  if (i >= 0) arr.splice(i, 1); else arr.push(me);
+  if (!arr.length) delete r[emoji];
+  if (!Object.keys(r).length) delete target.reacts;
+  save(all);
+  return { code: 200, body: { ok: true, ...list(who) } };
 }
 const REPLY_MAX = 100; // 글 하나에 달 수 있는 댓글 수
 
@@ -143,4 +179,4 @@ function remove(id, pw, admin) {
   return { code: 200, body: { ok: true, ...list() } };
 }
 
-module.exports = { list, post, remove };
+module.exports = { list, post, remove, react };

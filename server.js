@@ -822,13 +822,13 @@ const server = http.createServer(async (req, res) => {
   const url = req.url.split("?")[0];
 
   // 공개 페이지(GitHub Pages)의 수동 수집 요청만 교차 출처 허용
-  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence", "/api/dong-override", "/api/guestbook", "/api/guestbook/delete", "/api/admin/infra"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
+  if (["/api/refresh", "/api/contact", "/api/hit", "/api/stats", "/api/presence", "/api/dong-override", "/api/guestbook", "/api/guestbook/delete", "/api/guestbook/react", "/api/admin/infra"].includes(url) && PAGES_ORIGINS.includes(req.headers.origin)) {
     res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Vary", "Origin");
     if (req.method === "OPTIONS") {
       res.writeHead(204, {
         "Access-Control-Allow-Methods": "GET, POST",
-        "Access-Control-Allow-Headers": "bypass-tunnel-reminder, content-type, x-refresh-password, x-admin-password",
+        "Access-Control-Allow-Headers": "bypass-tunnel-reminder, content-type, x-refresh-password, x-admin-password, x-gb-who",
         "Access-Control-Max-Age": "600",
       });
       return res.end();
@@ -937,9 +937,15 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, { html: require("./admin-infra").render() });
   }
 
-  // 방명록 — 목록·글쓰기·지우기(글 비밀번호 또는 관리자 비밀번호)
+  // 방명록 반응을 누른 사람 — 브라우저마다 만든 무작위 토큰(형식이 다르면 빈 값)
+  const gbWho = (q) => { const w = String(q.headers["x-gb-who"] || ""); return /^[0-9a-f]{32}$/.test(w) ? w : ""; };
+  // 방명록 — 목록·글쓰기·지우기(글 비밀번호 또는 관리자 비밀번호)·이모티콘 반응
   if (url === "/api/guestbook" && req.method === "GET") {
-    return send(res, 200, guestbook.list());
+    return send(res, 200, guestbook.list(gbWho(req)));
+  }
+  if (url === "/api/guestbook/react" && req.method === "POST") {
+    const r = guestbook.react(await readJsonLimited(req, 1024), gbWho(req), req.headers["cf-connecting-ip"] || req.socket.remoteAddress || "");
+    return send(res, r.code, r.body);
   }
   if (url === "/api/guestbook" && req.method === "POST") {
     // 관리자 비밀번호를 함께 보낸 경우에만 확인한다(일반 글쓰기는 틀린 횟수에 넣지 않는다)
@@ -949,6 +955,7 @@ const server = http.createServer(async (req, res) => {
       const parent = r.body.parent && r.body.list.find((x) => x.id === r.body.parent);
       notifyGuestbook((parent ? parent.replies : r.body.list).find((x) => x.id === r.body.id), r.body.total, parent);
     }
+    if (r.body.list) Object.assign(r.body, guestbook.list(gbWho(req))); // 내 반응 표시를 살린다
     return send(res, r.code, r.body);
   }
   if (url === "/api/guestbook/delete" && req.method === "POST") {
@@ -962,6 +969,7 @@ const server = http.createServer(async (req, res) => {
       if (denied) return send(res, denied.code === 503 ? 401 : denied.code, { error: denied.code === 503 ? "비밀번호가 맞지 않습니다." : denied.error });
       r = guestbook.remove(String(body.id), "", true);
     }
+    if (r.body.list) Object.assign(r.body, guestbook.list(gbWho(req)));
     return send(res, r.code, r.body);
   }
 
