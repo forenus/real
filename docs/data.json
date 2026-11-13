@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T04:01:54.198Z",
-  "collectUrl": "https://dot-cambridge-july-run.trycloudflare.com",
+  "generatedAt": "2026-11-13T04:45:42.238Z",
+  "collectUrl": "https://spray-characteristics-guam-narrative.trycloudflare.com",
   "state": {
     "complexNo": "110837",
     "complexName": "동탄역포레너스",
@@ -15735,11 +15735,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 386,
-      "recent24h": 990,
-      "frequent": 266,
-      "new": 57,
-      "fetchedAt": "2026-11-13T04:01:46.586Z"
+      "realtime": 388,
+      "recent24h": 1012,
+      "frequent": 275,
+      "new": 55,
+      "fetchedAt": "2026-11-13T04:38:39.329Z"
     },
     "prevDate": "2026-11-12",
     "rows": [
@@ -21583,7 +21583,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-13T03:38:49.867Z",
+    "fetchedAt": "2026-11-13T04:45:42.157Z",
     "today": "2026-11-13",
     "items": [
       {
@@ -21659,7 +21659,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-13T03:38:50.696Z",
+    "fetchedAt": "2026-11-13T04:45:42.236Z",
     "today": "2026-11-13",
     "items": [
       {
