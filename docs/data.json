@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T21:16:50.794Z",
+  "generatedAt": "2026-11-14T21:46:56.334Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-15",
-    "lastFetchedAt": "2026-11-14T21:16:34.528Z",
+    "lastFetchedAt": "2026-11-14T21:46:43.360Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 16,
-      "recent24h": 921,
-      "frequent": 11,
-      "new": 2,
-      "fetchedAt": "2026-11-14T21:16:44.424Z"
+      "realtime": 23,
+      "recent24h": 924,
+      "frequent": 15,
+      "new": 3,
+      "fetchedAt": "2026-11-14T21:46:49.790Z"
     },
     "prevDate": "2026-11-14",
     "rows": [
@@ -17713,10 +17713,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 **67건에서 89건으로 꾸준히 증가**해 30일 최고치를 기록하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
-      "real": "33평은 최근 30일 6건, 평균 9억 1,700으로 그전 30일(8억 7,700)보다 높아졌고, 1년 전 무렵 평균 6억 4,100과 비교하면 **1년 새 약 2억 7,600 상승**했습니다. 10월 28일에는 역대 최고인 10억 거래도 있었습니다. 25평은 최근 30일 **2건, 평균 7억 5,000**으로 1년 전(5억 3,200)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 **67건에서 89건으로 꾸준히 증가**해 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 4~8건 사이에서 **횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 1,700만원에 거래돼 직전 30일(8억 7,700만원)보다 높았고, 1년 전 무렵 평균 6억 4,100만원과 비교하면 **약 2억 7,600만원 오른 수준**입니다. 10월 28일에는 역대 최고가 10억원도 나왔습니다. 25평은 최근 30일 2건 평균 **7억 5,000만원**으로 1년 전(5억 3,200만원)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-14T21:16:49.698Z"
+      "generatedAt": "2026-11-14T21:46:55.362Z"
     },
     "history": [
       {
@@ -21182,7 +21182,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-14T21:16:50.792Z",
+    "fetchedAt": "2026-11-14T21:46:56.333Z",
     "today": "2026-11-15",
     "items": [
       {
@@ -21235,16 +21235,16 @@
         "isToday": false
       },
       {
-        "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
-        "source": "한국일보",
+        "title": "화성 동탄트램 10월 우선시공분 착공 추진… '30분 생활권' 공약 박차",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWaUhfR21mLXJVMzdDbW9JaW1QSU11MXozN1dqbEpSd3oxY29xYUhManM5X3JIdUN1ZHZlSWZDTGdFRXQ5TjRQeTZtODgyLVRiRncwSi1WT2xVOURHUEhDN0t5cmhJRDNLYXhZbzI2LVQ2T2RpV2R1Z3pn0gF_QVVfeXFMT2VBZlhuM1gwa0x6aUZVOWpfZl9qMFhPLWlZVVJ0M2ticW9wMGJBMU91TW9XbGhOalBISExLd3RvanBFamVlMHoxWmh1RE5RNTFQUHdDUkxROWExZXFrWnFTZTZUWGhqcy15RV9Hd3cyMDRiTjBHWnpYMFV2aEQ2OA?oc=5",
+        "source": "뉴데일리 경기",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "화성 동탄트램 10월 우선시공분 착공 추진… '30분 생활권' 공약 박차",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWaUhfR21mLXJVMzdDbW9JaW1QSU11MXozN1dqbEpSd3oxY29xYUhManM5X3JIdUN1ZHZlSWZDTGdFRXQ5TjRQeTZtODgyLVRiRncwSi1WT2xVOURHUEhDN0t5cmhJRDNLYXhZbzI2LVQ2T2RpV2R1Z3pn0gF_QVVfeXFMT2VBZlhuM1gwa0x6aUZVOWpfZl9qMFhPLWlZVVJ0M2ticW9wMGJBMU91TW9XbGhOalBISExLd3RvanBFamVlMHoxWmh1RE5RNTFQUHdDUkxROWExZXFrWnFTZTZUWGhqcy15RV9Hd3cyMDRiTjBHWnpYMFV2aEQ2OA?oc=5",
-        "source": "뉴데일리 경기",
+        "title": "경기 화성시 '30분 생활권' 교통망 확충 속도… 동탄트램 이달 첫 삽",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tYmNpa3N3XzR6Rnd3aEV5M0RHR3FpNi03VWpxcm4yaGk4U25US2JPcU94NDNPWGlCMUxzYzRjbFp2bDRROGpFWTJRNVdlWWlFZlRfZ3RmaTRjbF81dmNZSXJ4TUM4dTJtcFpTWHNn0gFzQVVfeXFMUGJhaVZGVDN0dnY5MFhKQkc3dlp0dzZ3NDZDbE40blRPVFZtWklYVnRzMzVxbExtdUZvT05nYTA5YlNmVGVMNmFDSnNqR0hnVDVfTjdHWU9ialZzdWk2RGZtVjlNMGZFUWN6WGNkOVJNb0prSQ?oc=5",
+        "source": "한국일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
       },
@@ -21258,7 +21258,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-14T21:16:50.565Z",
+    "fetchedAt": "2026-11-14T21:46:56.137Z",
     "today": "2026-11-15",
     "items": [
       {
