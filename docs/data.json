@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T11:46:58.630Z",
+  "generatedAt": "2026-11-14T12:16:56.166Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15771,15 +15771,15 @@
       ]
     },
     "todayDate": "2026-11-14",
-    "lastFetchedAt": "2026-11-14T11:46:50.624Z",
+    "lastFetchedAt": "2026-11-14T12:16:43.798Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 192,
-      "recent24h": 936,
-      "frequent": 93,
-      "new": 61,
-      "fetchedAt": "2026-11-14T11:46:52.975Z"
+      "realtime": 171,
+      "recent24h": 933,
+      "frequent": 81,
+      "new": 54,
+      "fetchedAt": "2026-11-14T12:16:50.234Z"
     },
     "prevDate": "2026-11-13",
     "rows": [
@@ -17692,10 +17692,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주간 67건에서 **89건까지 꾸준히 증가**해 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 오늘 6건으로 최근 12주 내내 **4~7건 범위에서 횡보**하고 있습니다.",
-      "real": "33평 최근 30일 실거래 평균은 6건 기준 9억 1,700만 원으로, 그전 30일(8억 7,000만 원)보다 올랐고 1년 전 무렵(6억 4,100만 원) 대비로는 **약 2억 7,600만 원 높은 수준**입니다. 10월 28일에는 15층이 10억 원에 거래되며 역대 최고가를 기록했습니다. 25평은 최근 30일 2건 평균 **7억 5,000만 원으로 1년 전(5억 3,200만 원)보다 크게 올랐지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 67건에서 **89건까지 꾸준히 증가**해 30일 최고치를 기록하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 30일간 4~8건 사이에서 **소폭 등락하며 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래되어 직전 30일(8억 7,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **1년 새 약 2억 7천만 원 높은 수준**입니다. 10월 28일에는 역대 최고가 10억 원 거래도 있었습니다. 25평은 최근 30일 **2건, 평균 7억 5,000만 원**으로 1년 전보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-14T11:46:58.409Z"
+      "generatedAt": "2026-11-14T12:16:55.141Z"
     },
     "history": [
       {
@@ -21768,7 +21768,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-14T11:17:16.217Z",
+    "fetchedAt": "2026-11-14T12:16:56.033Z",
     "today": "2026-11-14",
     "items": [
       {
@@ -21844,7 +21844,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-14T11:17:16.147Z",
+    "fetchedAt": "2026-11-14T12:16:56.165Z",
     "today": "2026-11-14",
     "items": [
       {
@@ -21883,13 +21883,6 @@
         "isToday": false
       },
       {
-        "title": "2026년도 제9회 화성동탄우체국 실적급 공무직 상시집배원 채용시험 최종합격자 공고",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ZM1FBQ1IzM0FVOHpMVHNFZ1hlcDJ0NFJMR1Y2LUZPSTZQeTk5aHdZVHpxYVFid3JyLTJON0ZvN3ZTVV90VVYzc2lrci1ramNRSnRnVnVBVGhXNXZhS1IxLWFn?oc=5",
-        "source": "서울Pn",
-        "time": "2026-11-13T05:06:33.000Z",
-        "isToday": false
-      },
-      {
         "title": "반도건설, 동탄2신도시서 소장단회의 개최… 안전·시공·CS 관리 역량 강화",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vQVNUNHE1c0otZ1Y0VlZNZTV6aTBZRDVVa3lTQnN4NGFrZmVsTWRjUjF1UDRzYndiZ3FBbDBWQTJ3b1BOTXF4NlZMb3kzUlRUYWYxSUpodUJ4ZDMwelpnWk8yWnhHV0RPb2c?oc=5",
         "source": "퍼블릭뉴스통신",
@@ -21915,6 +21908,13 @@
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBpZVJUcDFnSHRuNGE5Zmc2ZFMwZHU2STY4dGFidE9wejE5THEzNFZDRGJmZ2pTUHVKSmRtOERYMktZRGRMdzFwQTRxbGw3cUNZNmtXOHhlVTREMjBRRU5GSnBTSkNBUQ?oc=5",
         "source": "화성저널",
         "time": "2026-11-12T07:41:42.000Z",
+        "isToday": false
+      },
+      {
+        "title": "신도시 낯선 이웃, 운동장서 하나 됐다… 화성 동탄5·9동 주민 화합 축제 ‘성료’",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1MTGZjQWV1aHQ1cFplWUo5UzNGenFNYkZlajdSVndUQVdmM0MzbWo5MVB0YkVFWDJOcmpIWm9MM0UzNjhRUl9rbjF2QUdzdTBBVkNSVmVjQ0RVNzg3?oc=5",
+        "source": "경기신문",
+        "time": "2026-11-11T07:57:39.000Z",
         "isToday": false
       }
     ]
