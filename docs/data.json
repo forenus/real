@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T17:32:28.848Z",
-  "collectUrl": "https://spray-characteristics-guam-narrative.trycloudflare.com",
+  "generatedAt": "2026-11-14T00:16:07.782Z",
+  "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
     "complexName": "동탄역포레너스",
@@ -15743,11 +15743,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 54,
-      "recent24h": 1059,
-      "frequent": 27,
-      "new": 13,
-      "fetchedAt": "2026-11-13T17:32:23.485Z"
+      "realtime": 52,
+      "recent24h": 1061,
+      "frequent": 23,
+      "new": 14,
+      "fetchedAt": "2026-11-13T17:59:00.895Z"
     },
     "prevDate": "2026-11-13",
     "rows": [
@@ -21095,16 +21095,9 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-13T17:02:29.090Z",
+    "fetchedAt": "2026-11-14T00:16:07.780Z",
     "today": "2026-11-14",
     "items": [
-      {
-        "title": "동탄 트램 우선시공분 착수…\"17년 기다림 끝에 첫 삽\"",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIVkFuN3VYUzU5WUZNMDd5clJIUF96eXdqaGQxTFc4bE5SamNNb05nbUJrNEVpbDR3YnUzcWRWcnJSWnFvcXBscHFuOEpueEdEMkwtSU0xMWQteE9kQVVLSVl4TFhjd0RUSUJn?oc=5",
-        "source": "철도경제신문",
-        "time": "2026-11-04T09:28:35.000Z",
-        "isToday": false
-      },
       {
         "title": "화성 동탄 트램 17년만에 첫삽",
         "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmMi1fNGw5b1p4ZXpmS2RhNEZua1htVG9XbHVfdzh1RFBIWjdwZF9qdlFKQ0NGaXMwNDQtTTM0aTR5ZFNEOHhTT2o2SHZLMW1sZThtai1yRFk?oc=5",
@@ -21162,6 +21155,13 @@
         "isToday": false
       },
       {
+        "title": "화성 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CaFVhT3NlSFJRWXhoUWN6eGt1X0tuR0k1SktwMEJ1UXpKdTA5VS1heDJXcVU5OF9INWpjRWMtN1R1bzdEVlVUSUtVTUpBcFl2S0ZVVjFCbm9vcGV5TmlKN2VR?oc=5",
+        "source": "경인뷰",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
+      },
+      {
         "title": "동탄트램, 6차례 입찰 무산 딛고 계약 수순… 본공사는 내년 8월 목표",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yY3VQdHl1RHBWeXNlS2ZRYko5U1BfMzg2STRMc04zUDV6NDdIclpQTFk3SXVEajFEQmh6WmItcHlLQ1NRd3VyQmgtMk0tUm1jS2c?oc=5",
         "source": "경인일보",
@@ -21171,9 +21171,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-13T17:02:29.238Z",
+    "fetchedAt": "2026-11-14T00:16:07.710Z",
     "today": "2026-11-14",
     "items": [
+      {
+        "title": "“9000만 원 추가 이체 막아라”...태안농협 직원, 보이스피싱 피해 예방",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE80cUFFMWl4LTlQZFBmdnVpT2xtS1hTdS1fMlEzUldjaG1MblhvcUxrdE0tTzdHVkgtN1RINDViUVRERWdsVFhhRlN5NTZFOTl0cHJnTjZzUy1WZ0RZMFBybEN3?oc=5",
+        "source": "경기신문",
+        "time": "2026-11-13T22:40:54.000Z",
+        "isToday": true
+      },
       {
         "title": "조용호 오산시장 “서동탄역 아파트 코앞 급전구분소 이전 절차 신속 추진”",
         "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xR2ZIQTcyRWtPS3ZQZTFXN3YyMFE3Wmh2WVBHRXVyMlJlWmhwdFp5WGp1eTVLb2lpbG55R1RaMTZvVXUzd1loNVNzSzVKRUUzUG1kRy12djdUWkpnVDluNg?oc=5",
@@ -21186,6 +21193,13 @@
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ZM1FBQ1IzM0FVOHpMVHNFZ1hlcDJ0NFJMR1Y2LUZPSTZQeTk5aHdZVHpxYVFid3JyLTJON0ZvN3ZTVV90VVYzc2lrci1ramNRSnRnVnVBVGhXNXZhS1IxLWFn?oc=5",
         "source": "서울Pn",
         "time": "2026-11-13T05:06:33.000Z",
+        "isToday": false
+      },
+      {
+        "title": "반도건설, 동탄2신도시서 소장단회의 개최… 안전·시공·CS 관리 역량 강화",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9pZFRqXzFWeTgwUlFHc0JVRktqbDhPUTNfT2pxNzZLc3hnYmZMeXJZaDlZellfdnJDaFRlVVVDUE5lQk5PUlloWWtzVlZ1eHc3WDJYMGxRNDRSeWlzSmpXT2t3eUhRdDJVLThV?oc=5",
+        "source": "퍼블릭뉴스통신",
+        "time": "2026-11-13T02:58:18.000Z",
         "isToday": false
       },
       {
@@ -21228,20 +21242,6 @@
         "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1MTGZjQWV1aHQ1cFplWUo5UzNGenFNYkZlajdSVndUQVdmM0MzbWo5MVB0YkVFWDJOcmpIWm9MM0UzNjhRUl9rbjF2QUdzdTBBVkNSVmVjQ0RVNzg3?oc=5",
         "source": "경기신문",
         "time": "2026-11-11T07:57:39.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄8동, 봄철 거리 경관 조성 위해 청보리 씨앗 파종",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fV2xUeEdnUHJNYmJZR1FtR0x1cEtOR200dkF4RXM4WHdVZF9GMklHczk0bVhPMjRRbW1fMGhBaHVJSDFIQVFJS3lhX2pzQ0VsZ05DOTlna2p3bUtneFBqNEZZMm4?oc=5",
-        "source": "매일일보",
-        "time": "2026-11-10T01:59:54.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄역신안인스빌리베라 1차 가을 음악회 개최",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BazFZVmlXVlB5OXFQYnlIc0FVRGN6a1FWUWFSR1JMandBZ1p1cVF4Z3ExeFdBM0J4ZEtUay1mSHN4a1hEWjYxeGd5bm5HZVFaeWFyUl9iYzBWOC1GQkpRbzNIZnphV2NjTVE?oc=5",
-        "source": "경기도민일보 미디어",
-        "time": "2026-11-08T02:59:15.000Z",
         "isToday": false
       }
     ]
