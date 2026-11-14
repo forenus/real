@@ -18,13 +18,6 @@ say() { printf '\n\033[1;34m▶ %s\033[0m\n' "$*"; }
 say "1/7 시간대를 한국 시각으로"
 sudo timedatectl set-timezone Asia/Seoul || true
 
-# 메모리 1GB 서버(GCP e2-micro 등)는 Chromium 수집 중 메모리가 모자라므로 스왑 2GB 를 붙인다
-if [ "$(awk '/MemTotal/ {print $2}' /proc/meminfo)" -lt 2000000 ] && ! swapon --show | grep -q /swapfile; then
-  say "메모리가 작아 스왑 2GB 추가"
-  sudo fallocate -l 2G /swapfile && sudo chmod 600 /swapfile && sudo mkswap /swapfile >/dev/null && sudo swapon /swapfile
-  grep -q '^/swapfile' /etc/fstab || echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab >/dev/null
-fi
-
 say "2/7 기본 패키지·Node.js ${NODE_MAJOR}"
 sudo apt-get update -y
 sudo apt-get install -y git curl ca-certificates
