@@ -337,43 +337,45 @@ function renderRealChart(rc) {
     svg.appendChild(txt({ x: x(i), y: H - pad.b + 18, fill: INK.axis, "font-size": 10, "text-anchor": "middle" }, d.slice(5)));
   });
 
-  // 계열별: 값이 있는 구간만 이어서 그린다(결측에서 끊김) + 관측점 + 마지막 점 직접 라벨
+  // 계열별: 매물 추이 그래프와 같은 모양 — 거래가 있던 날끼리 한 줄로 잇고, 선 아래 옅은 면, 마지막 점 + 끝 라벨
+  // (거래가 없던 날은 앞뒤 거래가를 이어 그린다. 그 날의 값은 툴팁에 '거래 없음'으로 보인다.)
+  const defs = svg.appendChild(el("defs", {}));
   series.forEach((s, si) => {
     const color = colorOf(si);
-    let run = [];
-    const flush = () => {
-      if (run.length >= 2) {
-        svg.appendChild(el("polyline", {
-          points: run.map((i) => `${x(i)},${y(s.data[i])}`).join(" "),
-          fill: "none", stroke: color, "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round",
-          ...(s.compare ? { "stroke-dasharray": "6 5" } : {}),
-        }));
-      }
-      run = [];
-    };
-    dates.forEach((d, i) => { if (s.data[i] === null) flush(); else run.push(i); });
-    flush();
-
-    // 관측점 — r=4 (지름 8px) + 배경색 2px 링
-    let lastIdx = -1;
-    dates.forEach((d, i) => {
-      if (s.data[i] === null) return;
-      lastIdx = i;
-      svg.appendChild(s.compare
-        ? el("circle", { cx: x(i), cy: y(s.data[i]), r: 3.5, fill: INK.ring, stroke: color, "stroke-width": 2 })
-        : el("circle", { cx: x(i), cy: y(s.data[i]), r: 4, fill: color, stroke: INK.ring, "stroke-width": 2 }));
-    });
-
-    // 직접 라벨 (계열 4개 이하이므로 색에만 의존하지 않게 평형을 바로 적는다)
-    if (lastIdx >= 0) {
-      const ly = Math.min(pad.t + ih - 2, Math.max(pad.t + 10, y(s.data[lastIdx])));
-      svg.appendChild(txt({ x: x(lastIdx) + 9, y: ly + 4, fill: INK.label, "font-size": 11, "font-weight": s.compare ? 400 : 700 }, nameOf(s)));
+    const obs = [];
+    dates.forEach((d, i) => { if (s.data[i] !== null) obs.push(i); });
+    if (!obs.length) return;
+    const pts = obs.map((i) => `${x(i)},${y(s.data[i])}`).join(" ");
+    const first = obs[0], lastIdx = obs[obs.length - 1];
+    // 선 아래 면 — 우리 단지만(비교 단지까지 칠하면 겹쳐서 탁해진다)
+    if (!s.compare && obs.length >= 2) {
+      const gid = `rg-${si}`;
+      const lg = el("linearGradient", { id: gid, x1: 0, y1: 0, x2: 0, y2: 1 });
+      lg.appendChild(el("stop", { offset: "0%", "stop-color": color, "stop-opacity": 0.12 }));
+      lg.appendChild(el("stop", { offset: "100%", "stop-color": color, "stop-opacity": 0 }));
+      defs.appendChild(lg);
+      svg.appendChild(el("polygon", { points: `${x(first)},${pad.t + ih} ${pts} ${x(lastIdx)},${pad.t + ih}`, fill: `url(#${gid})` }));
     }
+    if (obs.length >= 2) {
+      svg.appendChild(el("polyline", {
+        points: pts, fill: "none", stroke: color, "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round",
+        ...(s.compare ? { "stroke-dasharray": "4 4", opacity: 0.85 } : {}),
+      }));
+    }
+    // 마지막 점 + 직접 라벨 (색에만 의존하지 않게 평형을 바로 적는다)
+    svg.appendChild(s.compare
+      ? el("circle", { cx: x(lastIdx), cy: y(s.data[lastIdx]), r: 3.5, fill: INK.ring, stroke: color, "stroke-width": 2 })
+      : el("circle", { cx: x(lastIdx), cy: y(s.data[lastIdx]), r: 4, fill: color, stroke: INK.ring, "stroke-width": 2 }));
+    const ly = Math.min(pad.t + ih - 2, Math.max(pad.t + 10, y(s.data[lastIdx])));
+    svg.appendChild(txt({ x: x(lastIdx) + 9, y: ly + 4, fill: INK.label, "font-size": 11, "font-weight": s.compare ? 400 : 700 }, nameOf(s)));
   });
 
-  // 크로스헤어 + 툴팁
+  // 크로스헤어 + 마우스가 가리키는 날의 점(거래가 있던 계열만) + 툴팁
   const hair = el("line", { y1: pad.t, y2: pad.t + ih, stroke: INK.hair, "stroke-width": 1, visibility: "hidden" });
   svg.appendChild(hair);
+  const marks = series.map((s, si) => svg.appendChild(s.compare
+    ? el("circle", { r: 3.5, fill: INK.ring, stroke: colorOf(si), "stroke-width": 2, visibility: "hidden" })
+    : el("circle", { r: 4, fill: colorOf(si), stroke: INK.ring, "stroke-width": 2, visibility: "hidden" })));
   const hit = el("rect", { x: pad.l, y: pad.t, width: iw, height: ih, fill: "transparent" });
   svg.appendChild(hit);
 
@@ -390,6 +392,11 @@ function renderRealChart(rc) {
     cur = i;
     hair.setAttribute("x1", x(i)); hair.setAttribute("x2", x(i));
     hair.setAttribute("visibility", "visible");
+    marks.forEach((m, si) => {
+      const v = series[si].data[i];
+      if (v === null) { m.setAttribute("visibility", "hidden"); return; }
+      m.setAttribute("cx", x(i)); m.setAttribute("cy", y(v)); m.setAttribute("visibility", "visible");
+    });
 
     tip.textContent = "";
     const head = document.createElement("div");
@@ -418,7 +425,7 @@ function renderRealChart(rc) {
     tip.style.left = Math.max(4, Math.min(rect.width - tip.offsetWidth - 4, left - tip.offsetWidth / 2)) + "px";
     tip.style.top = Math.max(2, pad.t * scale) + "px";
   }
-  function hide() { tip.hidden = true; hair.setAttribute("visibility", "hidden"); }
+  function hide() { tip.hidden = true; hair.setAttribute("visibility", "hidden"); marks.forEach((m) => m.setAttribute("visibility", "hidden")); }
   function nearest(clientX) {
     const rect = wrap.getBoundingClientRect();
     const scale = rect.width / W;
@@ -429,13 +436,13 @@ function renderRealChart(rc) {
   }
   svg.addEventListener("pointermove", (e) => showAt(nearest(e.clientX)));
   svg.addEventListener("pointerleave", hide);
-  // 키보드 — 마우스와 같은 정보를 제공
-  wrap.addEventListener("keydown", (e) => {
+  // 키보드 — 마우스와 같은 정보를 제공(다시 그릴 때 핸들러가 쌓이지 않게 on* 속성으로 단다)
+  wrap.onkeydown = (e) => {
     if (e.key === "ArrowRight") { showAt(Math.min(dates.length - 1, (cur < 0 ? -1 : cur) + 1)); e.preventDefault(); }
     else if (e.key === "ArrowLeft") { showAt(Math.max(0, (cur < 0 ? dates.length : cur) - 1)); e.preventDefault(); }
     else if (e.key === "Escape") hide();
-  });
-  wrap.addEventListener("blur", hide);
+  };
+  wrap.onblur = hide;
 
   // 범례 — 선 차트이므로 선 모양 키를 쓴다
   legend.innerHTML = series
@@ -444,10 +451,10 @@ function renderRealChart(rc) {
 
   const win = (rc && rc.days) || 10;
   note.innerHTML =
-    `최근 <b>${win}일</b> 실거래 평균가입니다. 그 기간에 거래가 없던 날은 평균을 낼 수 없어 <b>선이 끊깁니다</b> ` +
-    `(점이 찍힌 날만 실제 거래가 있었습니다). 세로축은 변동을 보기 위해 0이 아니라 <b>${(lo / 10000).toFixed(1)}억~${(hi / 10000).toFixed(1)}억</b> 구간만 보여줍니다.` +
+    `최근 <b>${win}일</b> 실거래 평균가입니다. 거래가 없던 날은 앞뒤 거래가를 이어 그렸습니다 ` +
+    `(마우스를 올리면 그 날 거래가 있었는지 보입니다). 세로축은 변동을 보기 위해 0이 아니라 <b>${(lo / 10000).toFixed(1)}억~${(hi / 10000).toFixed(1)}억</b> 구간만 보여줍니다.` +
     (series.some((s) => s.compare)
-      ? ` <b>점선·속빈 점</b>은 비교 단지(${esc([...new Set(series.filter((s) => s.compare).map((s) => s.complex))].join(", "))})입니다.`
+      ? ` <b>점선</b>은 비교 단지(${esc([...new Set(series.filter((s) => s.compare).map((s) => s.complex))].join(", "))})입니다.`
       : "");
 
   // 표로 보기 — 호버 없이도 값에 닿을 수 있게
