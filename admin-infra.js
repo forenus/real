@@ -4,6 +4,9 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = __dirname;
+// 리눅스(클라우드 서버)에서 돌면 구성도의 "내 PC" 표기를 서버 기준으로 바꾼다
+const CLOUD = process.platform === "linux";
+const HOST = CLOUD ? "서버" : "PC";
 const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
 function fileInfo(name) {
@@ -51,14 +54,16 @@ const JOBS = [
   ["30분", "네이버 매물 수집 → 호갱노노 실거래 → 국토부(하루 1회) → AI 해설 → GitHub 게시"],
   ["3분", "호갱노노 실시간 방문자 수(게시 없이 접속자 응답으로 전달)"],
   ["20초", "열린 화면이 현재 접속자 신호를 보냄"],
-  ["10분", "Windows 작업 스케줄러 '매물추적기 감시' — 서버·터널이 꺼져 있으면 다시 실행"],
+  CLOUD ? ["상시", "systemd 서비스 real-server · real-tunnel — 꺼지면 10초 뒤 자동 재시작, 부팅 시 자동 실행"]
+    : ["10분", "Windows 작업 스케줄러 '매물추적기 감시' — 서버·터널이 꺼져 있으면 다시 실행"],
 ];
 
 const node = (cls, title, items) =>
   `<div class="inf-node ${cls}"><b>${title}</b>${items ? `<ul>${items.map((x) => `<li>${x}</li>`).join("")}</ul>` : ""}</div>`;
 
 function render() {
-  const files = STORES.map(([f, what, scope, when]) => {
+  const files = STORES.map(([f, what, scope0, when]) => {
+    const scope = scope0.replace("PC", HOST);
     const i = fileInfo(f);
     const cls = scope.startsWith("비밀") ? "secret" : scope.startsWith("공개") ? "public" : "private";
     return `<tr><td><code>${esc(f)}</code></td><td>${esc(what)}</td><td><span class="inf-tag ${cls}">${esc(scope)}</span></td>` +
@@ -78,17 +83,17 @@ function render() {
     </div>
     <div class="inf-arrow" aria-hidden="true"><span>Playwright<br />브라우저 수집</span></div>
     <div class="inf-col">
-      <h3>② 내 PC (수집 서버)</h3>
+      <h3>② ${CLOUD ? "클라우드 서버 (Ubuntu)" : "내 PC (수집 서버)"}</h3>
       ${node("pc", "Node.js 서버 <code>server.js</code> :5173", ["30분 자동 수집·게시", "API 제공(수집·방명록·통계 등)"])}
       ${node("pc store", "로컬 저장 (JSON 파일)", ["history · guestbook · stats 등", "비밀값: secret · mail"])}
-      ${node("pc", "감시 작업 (작업 스케줄러)", ["10분마다 서버·터널 확인"])}
+      ${CLOUD ? node("pc", "systemd 서비스", ["꺼지면 자동 재시작 · 부팅 시 실행"]) : node("pc", "감시 작업 (작업 스케줄러)", ["10분마다 서버·터널 확인"])}
       ${node("ai", "외부 서비스 호출", ["Claude API — AI 해설·방명록 검사", "Gmail SMTP — 문의·방명록 알림"])}
     </div>
     <div class="inf-arrow" aria-hidden="true"><span>git push<br />/ 터널</span></div>
     <div class="inf-col">
       <h3>③ 공개 통로</h3>
       ${node("pub", "GitHub Pages", ["docs/ 폴더 = 공개 사이트", "화면 파일 + data.json", "forenus.github.io/real"])}
-      ${node("pub", "Cloudflare 터널 <code>tunnel.js</code>", ["PC 서버를 https 로 공개", "주소는 실행마다 바뀜 → data.json 에 기록"])}
+      ${node("pub", "Cloudflare 터널 <code>tunnel.js</code>", [`${HOST} 서버를 https 로 공개`, "주소는 실행마다 바뀜 → data.json 에 기록"])}
     </div>
     <div class="inf-arrow" aria-hidden="true"><span>HTTPS</span></div>
     <div class="inf-col">
@@ -97,11 +102,11 @@ function render() {
       ${node("user", "홈 화면 앱", ["manifest.json · 아이콘"])}
     </div>
   </div>
-  <p class="hint">PC가 꺼지면 공개 사이트는 마지막 게시 데이터로 계속 보이지만, 수동 수집·방명록·문의·접속자 같은 실시간 기능은 멈춥니다.</p>
+  ${CLOUD ? `<p class="hint">서버가 24시간 켜져 있어 PC를 꺼도 수집·방명록·문의·접속자 기능이 계속 동작합니다.</p>` : `<p class="hint">PC가 꺼지면 공개 사이트는 마지막 게시 데이터로 계속 보이지만, 수동 수집·방명록·문의·접속자 같은 실시간 기능은 멈춥니다.</p>`}
 </section>
 
 <section class="card">
-  <div class="table-head"><h2>저장 위치</h2><span class="dates">크기·수정 시각은 지금 PC 기준</span></div>
+  <div class="table-head"><h2>저장 위치</h2><span class="dates">크기·수정 시각은 지금 ${HOST} 기준</span></div>
   <div class="table-wrap"><table class="inf-table">
     <thead><tr><th>파일</th><th>내용</th><th>공개 범위</th><th>바뀌는 때</th><th class="num">크기</th><th class="num">마지막 수정</th></tr></thead>
     <tbody>${files}</tbody>
