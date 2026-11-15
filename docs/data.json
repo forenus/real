@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T08:46:58.351Z",
+  "generatedAt": "2026-11-15T09:17:04.070Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-15",
-    "lastFetchedAt": "2026-11-15T08:46:39.750Z",
+    "lastFetchedAt": "2026-11-15T09:16:43.338Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 135,
-      "recent24h": 613,
-      "frequent": 68,
-      "new": 43,
-      "fetchedAt": "2026-11-15T08:46:51.900Z"
+      "realtime": 145,
+      "recent24h": 596,
+      "frequent": 69,
+      "new": 45,
+      "fetchedAt": "2026-11-15T09:16:55.080Z"
     },
     "prevDate": "2026-11-14",
     "rows": [
@@ -17713,10 +17713,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 최고치이며, 최근 12주 동안 67건에서 **89건까지 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 30일 전보다 14건, 7일 전보다 4건 늘었습니다. 25평은 6건으로 **4~8건 사이에서 횡보**하고 있어 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 6건, 평균 9억 1,700만 원으로 그전 30일(8억 7,700만 원)보다 올랐고, 10월 28일 **10억으로 역대 최고**를 기록했습니다. 1년 전 무렵 평균 6억 4,100만 원과 비교하면 크게 오른 수준입니다. 25평은 최근 30일 2건, **평균 7억 5,000만 원**으로 1년 전(5억 3,200만 원)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 67건에서 89건으로 꾸준히 늘었고, 오늘 **89건으로 30일 최고치**를 기록했습니다. 30일 전보다 14건 많아 **매도 물량이 쌓이는 흐름**으로 보입니다. 25평은 4~8건 사이에서 움직이며 오늘 6건으로 큰 변화 없이 횡보하고 있습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래되어 그전 30일 평균 8억 7,700만 원보다 올랐고, **1년 전 무렵 평균 6억 4,100만 원 대비 크게 상승**했습니다. 10월 28일 10억 원으로 역대 최고가를 기록했으며, 평균 호가는 9억 9,800만 원입니다. 25평은 최근 2건이 **평균 7억 5,000만 원**으로 1년 전 5억 3,200만 원보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-15T08:46:57.013Z"
+      "generatedAt": "2026-11-15T09:17:02.932Z"
     },
     "history": [
       {
@@ -21182,7 +21182,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-15T08:46:58.350Z",
+    "fetchedAt": "2026-11-15T09:17:04.051Z",
     "today": "2026-11-15",
     "items": [
       {
@@ -21258,9 +21258,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-15T08:46:58.271Z",
+    "fetchedAt": "2026-11-15T09:17:03.882Z",
     "today": "2026-11-15",
     "items": [
+      {
+        "title": "오산 서동탄역 급전구분소 이전 공감대…아파트 인근서 다른 곳으로",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9FUHZ3cWRzdDdrOXA1bDItU0N6ZHR5cUV5WVdfOEMwMXVTYU81Qk1XOWNZV3BzbGY0UURkdWtodmNlZ2dzbWk0TDhqV3Fvbnlx?oc=5",
+        "source": "문화일보",
+        "time": "2026-11-15T08:48:58.000Z",
+        "isToday": true
+      },
       {
         "title": "오산시 “서동탄역 ‘급전구분소’ 위치 이전 가시회”",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vODByajJDRUQ4QkFnU0FaRGtUQUI4UXRIT1FmZkpaRHM2UUFRcjNOSlpDb2hLNDZ3QkdQYnk4YTdIeEY0ckhPMW9QSVBtemJGTlRCNmoyMTI5SHIyQXhwYmM5ZDdSaERoWlpfSXpB?oc=5",
@@ -21270,7 +21277,7 @@
       },
       {
         "title": "한화 건설부문, 동탄역 10분 안팎, 수서역 20분대 … 삼성전자 평택캠퍼스 반경 5㎞이내",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE00dFRtYlFpSzE1ZUVDQ3lZZVJrU3N6MFo0THZaRWZQd3BlZ0YzM2pMMGEzRjVyeFJHSlZieGJzakxBdlNVU3BwTFZkS29wSlVJa2hVRXNnM1M?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE52TGZrTVB1WkZybVA5U2wzXzhqcjJHNGtDQ1o0Vm1NUGxwcGxHaUZSdHl5UGIzTzBDN1h2aHA2TTU4NjJoVlE?oc=5",
         "source": "매일경제",
         "time": "2026-11-15T07:01:33.000Z",
         "isToday": true
@@ -21280,13 +21287,6 @@
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96Sm9LSXdHV1ZwT0wwelpKNlFSc19UTHQ3TElXSW8teTJ3VTlTWTF5dzc5UnBKcl9NWmpjeVNUUFF0YTF3MVU1T2VVZkFaZ2dvVWE3Q0pSblJTQl9jeHRlSVI4dGtxUHBGTnVXRFl3?oc=5",
         "source": "전국매일신문",
         "time": "2026-11-15T04:57:24.000Z",
-        "isToday": true
-      },
-      {
-        "title": "“책과 음악이 어우러진 도서관”… 화성동탄중앙도서관, 개관 1주년 문화공연 개최",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE82Y1NVTURiVWJOQWJIODdFTnBCQzlBN0dId3M1OUlCQVdEVmlPS3J0a19ZTzFEMTNtaGJuNWFyV1Mtc2lKOXY5WlhFY2Ewa2c1MmdnOUNzdEN2ZzdmN0g0UFNTRlFkWm4y?oc=5",
-        "source": "광교신문",
-        "time": "2026-11-14T16:52:15.000Z",
         "isToday": true
       },
       {
