@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:46:55.731Z",
+  "generatedAt": "2026-11-15T23:17:07.514Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15759,15 +15759,15 @@
       ]
     },
     "todayDate": "2026-11-16",
-    "lastFetchedAt": "2026-11-15T22:46:33.874Z",
+    "lastFetchedAt": "2026-11-15T23:16:53.066Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 28,
-      "recent24h": 530,
-      "frequent": 18,
-      "new": 3,
-      "fetchedAt": "2026-11-15T22:46:48.626Z"
+      "realtime": 38,
+      "recent24h": 528,
+      "frequent": 25,
+      "new": 5,
+      "fetchedAt": "2026-11-15T23:17:00.853Z"
     },
     "prevDate": "2026-11-15",
     "rows": [
@@ -17706,10 +17706,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 주간 흐름도 12주 전 68건에서 **89건까지 꾸준히 증가**해 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 모습으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄어 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 6건, 평균 9억 1,700만 원으로 그전 30일(8억 9,000만 원)보다 소폭 올랐고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **약 2억 7,000만 원 높은 수준**입니다. 10월 28일에는 15층이 역대 최고인 10억 원에 거래됐습니다. 25평은 최근 30일 **2건, 평균 7억 5,000만 원**으로 1년 전보다 크게 올랐지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 68건에서 **89건으로 꾸준히 증가**해 30일 최고치 수준을 유지하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 4~8건 사이에서 횡보**하며 30일 전보다 2건 줄어 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래되어 그전 30일(8억 9,000만 원)보다 소폭 올랐고, **1년 전 무렵 평균 6억 4,100만 원 대비 크게 높은 수준**입니다. 10월 28일에는 15층이 역대 최고인 10억 원에 거래됐습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 5억 3,200만 원보다 높지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-15T22:46:54.665Z"
+      "generatedAt": "2026-11-15T23:17:06.642Z"
     },
     "history": [
       {
@@ -21180,7 +21180,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-15T22:46:55.695Z",
+    "fetchedAt": "2026-11-15T23:17:07.514Z",
     "today": "2026-11-16",
     "items": [
       {
@@ -21256,7 +21256,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-15T22:46:55.731Z",
+    "fetchedAt": "2026-11-15T23:17:07.506Z",
     "today": "2026-11-16",
     "items": [
       {
@@ -21264,6 +21264,13 @@
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9FUHZ3cWRzdDdrOXA1bDItU0N6ZHR5cUV5WVdfOEMwMXVTYU81Qk1XOWNZV3BzbGY0UURkdWtodmNlZ2dzbWk0TDhqV3Fvbnlx?oc=5",
         "source": "문화일보",
         "time": "2026-11-15T08:48:58.000Z",
+        "isToday": false
+      },
+      {
+        "title": "오산시, 서동탄역 인근 급전구분소 이전 가닥…주민 숙원 해결되나",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE90ZUZsWk5hZVpzTXBCZG93MnN6S0c5X2hzSy1ROEZBc3lxMTBXTHlqaENnaVhzUUhGa3BoLVcyaTRSZmZpSjN2cQ?oc=5",
+        "source": "미디어이슈",
+        "time": "2026-11-15T07:58:00.000Z",
         "isToday": false
       },
       {
@@ -21320,13 +21327,6 @@
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vQVNUNHE1c0otZ1Y0VlZNZTV6aTBZRDVVa3lTQnN4NGFrZmVsTWRjUjF1UDRzYndiZ3FBbDBWQTJ3b1BOTXF4NlZMb3kzUlRUYWYxSUpodUJ4ZDMwelpnWk8yWnhHV0RPb2c?oc=5",
         "source": "퍼블릭뉴스통신",
         "time": "2026-11-13T02:58:18.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성동탄중앙도서관, 개관 1주년 문화공연 개최",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9uZmp3b0QwMHFOVUdaMUFZcE1jeDF5NjF4X3JpMXMySDFYZFIyWmNjMXM4N2xFbDhpUC1PQ1FpUHBreGdha0NsbXRmR2E3Vm1CUWtDWGZHSG9jWHZmNlBERnhB?oc=5",
-        "source": "경기뉴스광장",
-        "time": "2026-11-13T01:46:39.000Z",
         "isToday": false
       }
     ]
