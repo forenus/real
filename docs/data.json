@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T07:17:17.427Z",
+  "generatedAt": "2026-11-16T07:46:53.205Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15759,15 +15759,15 @@
       ]
     },
     "todayDate": "2026-11-16",
-    "lastFetchedAt": "2026-11-16T07:16:53.189Z",
+    "lastFetchedAt": "2026-11-16T07:46:37.570Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 123,
-      "recent24h": 570,
-      "frequent": 75,
-      "new": 20,
-      "fetchedAt": "2026-11-16T07:17:10.794Z"
+      "realtime": 133,
+      "recent24h": 574,
+      "frequent": 76,
+      "new": 25,
+      "fetchedAt": "2026-11-16T07:46:46.229Z"
     },
     "prevDate": "2026-11-15",
     "rows": [
@@ -17706,10 +17706,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 68건에서 89건으로 꾸준히 늘었고, 현재 **30일 전보다 14건 많은 89건으로 30일 내 최고 수준**입니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄어, 물량 변화가 크지 않습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래되어, 1년 전 무렵 평균 6억 4,100만 원보다 높은 수준이며 10월 28일 **역대 최고 10억 원**이 나왔습니다. 다만 같은 기간 8억 2,000만~10억 원으로 층별 편차가 큽니다. 25평은 **11월 2건 평균 7억 5,000만 원**으로 상반기 5억 후반대보다 높아졌지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄어 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 6건이 **평균 9억 1,700만 원**에 거래되어 직전 30일(8억 9,000만 원)보다 소폭 높고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 크게 오른 수준입니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **11월 10일 7억 9,000만 원 역대 최고**가 나왔지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가가 최근 실거래 평균보다 8,000만~1억 원가량 높게 형성돼 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-16T07:17:17.049Z"
+      "generatedAt": "2026-11-16T07:46:52.036Z"
     },
     "history": [
       {
@@ -21725,7 +21725,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-16T06:47:19.330Z",
+    "fetchedAt": "2026-11-16T07:46:53.192Z",
     "today": "2026-11-16",
     "items": [
       {
@@ -21801,14 +21801,21 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-16T06:47:20.179Z",
+    "fetchedAt": "2026-11-16T07:46:53.203Z",
     "today": "2026-11-16",
     "items": [
       {
-        "title": "[속보] 수원 영통· 화성 동탄 ‘날았다’…경기 집값 상승률, 서울 앞질렀다",
+        "title": "수원 영통·화성 동탄 ‘날았다’…경기 집값 상승률, 서울 앞질렀다",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYVnRzYjR4eFM3SFBFYS05M3l0Vng2aDZFRnJ4YUUzcnhCZ3RSa3pONHVVWjhWX0E1M0Vib1d2a00wcWtlZklROHZWeWJKLWN5V01hNDVPdmxnQ2s?oc=5",
         "source": "경기일보",
-        "time": "2026-11-16T06:36:31.000Z",
+        "time": "2026-11-16T07:36:51.000Z",
+        "isToday": true
+      },
+      {
+        "title": "LH ‘화성동탄2 바랑골 느티공원’, 대한민국 조경대상 국무총리상 수상",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zUElBRW5VWU4tRFhsd2xYNXNlUFhVOEVIbXMwWjNXYW11Z0s2ZGUwOXhtRVp5MXlQWWk4c2gxVE1TVk5PanlDRVVVOGxybTZjS3JsRDA3cnM4LWc?oc=5",
+        "source": "경기일보",
+        "time": "2026-11-16T07:13:52.000Z",
         "isToday": true
       },
       {
@@ -21861,18 +21868,11 @@
         "isToday": true
       },
       {
-        "title": "오산 서동탄역 급전구분소 이전 공감대…아파트 인근서 다른 곳으로",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9FUHZ3cWRzdDdrOXA1bDItU0N6ZHR5cUV5WVdfOEMwMXVTYU81Qk1XOWNZV3BzbGY0UURkdWtodmNlZ2dzbWk0TDhqV3Fvbnlx?oc=5",
-        "source": "문화일보",
-        "time": "2026-11-15T08:48:58.000Z",
-        "isToday": false
-      },
-      {
-        "title": "오산시, 서동탄역 인근 급전구분소 이전 가닥…주민 숙원 해결되나",
-        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE90ZUZsWk5hZVpzTXBCZG93MnN6S0c5X2hzSy1ROEZBc3lxMTBXTHlqaENnaVhzUUhGa3BoLVcyaTRSZmZpSjN2cQ?oc=5",
-        "source": "미디어이슈",
-        "time": "2026-11-15T07:58:00.000Z",
-        "isToday": false
+        "title": "화성 동탄호수공원, 주민 손길로 명소로 거듭나",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5kU24xZll0UmRaa2xVQVk3SUcyMHdPQktsQTZoTXpOcUNYdkVrbkM0NWpUeGVoLTE3Zk1acmFSYjV4Q0xlc2o0WGNfZE1WZ01ndW15YktWejZNZTZDcjJWdHpYTVh3OGRlQnkyOWFWeHF1UQ?oc=5",
+        "source": "웹이코노미",
+        "time": "2026-11-16T00:32:43.000Z",
+        "isToday": true
       }
     ]
   }
