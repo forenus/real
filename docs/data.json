@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T04:17:25.594Z",
+  "generatedAt": "2026-11-16T05:20:16.118Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15151,8 +15151,8 @@
             {
               "pyeong": 33,
               "count": 7,
-              "price": 100000,
-              "priceText": "10억"
+              "price": 99571,
+              "priceText": "9억 9,600"
             }
           ]
         },
@@ -15759,15 +15759,15 @@
       ]
     },
     "todayDate": "2026-11-16",
-    "lastFetchedAt": "2026-11-16T04:17:02.478Z",
+    "lastFetchedAt": "2026-11-16T05:19:05.241Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 135,
-      "recent24h": 559,
-      "frequent": 81,
-      "new": 28,
-      "fetchedAt": "2026-11-16T04:17:18.729Z"
+      "realtime": 138,
+      "recent24h": 553,
+      "frequent": 88,
+      "new": 27,
+      "fetchedAt": "2026-11-16T04:50:40.667Z"
     },
     "prevDate": "2026-11-15",
     "rows": [
@@ -17706,10 +17706,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 68건에서 **89건까지 꾸준히 증가**해 30일 최고치 수준입니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 2건 줄었으며, **4~8건 사이에서 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래돼 그전 30일(8억 9,000만 원)보다 소폭 올랐고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **약 2억 7,600만 원 높은 수준**입니다. 10월 28일에는 역대 최고인 10억 원 거래도 있었습니다. 25평은 최근 30일 2건 평균 **7억 5,000만 원**으로 1년 전 무렵(5억 3,200만 원)보다 높지만, 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 오늘 **89건으로 30일 전보다 14건 증가**했고, 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄어 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 6건이 **평균 9억 1,700**에 거래되어 1년 전 무렵(6억 4,100)보다 크게 올랐고, 10월 28일 15층이 **역대 최고 10억**을 기록했습니다. 25평은 최근 30일 2건이 평균 7억 5,000에 거래됐으나 건수가 적어 평균이 층수에 따라 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가(8억 3,600·9억 9,700)가 최근 실거래가보다 높게 형성되어 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-16T04:17:24.266Z"
+      "generatedAt": "2026-11-16T05:20:11.222Z"
     },
     "history": [
       {
@@ -18665,6 +18665,38 @@
         },
         {
           "before": {
+            "no": "2661131100",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "고/25",
+            "dir": "남서향",
+            "confirm": "20261111",
+            "desc": "주인거주,2년전김냉자리,미세방충망,줄눈시공,상태최상",
+            "bldg": "473동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 31,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662157886",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "고/25",
+            "dir": "남서향",
+            "confirm": "20261116",
+            "desc": "84A 관리잘된 집 채광우수 도배 미세방충망 줄눈 ",
+            "bldg": "473동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 32,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2661594750",
             "pyeong": 33,
             "excl": 84,
@@ -18692,6 +18724,38 @@
             "realtor": "포레너스유성공인중개사사무소",
             "firstSeen": "2026-10-02",
             "days": 45,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2661590670",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 4,000",
+            "floor": "6/15",
+            "dir": "남동향",
+            "confirm": "20261113",
+            "desc": "생활편리,탁트인거실뷰",
+            "bldg": "486동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-23",
+            "days": 53,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662148283",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 4,000",
+            "floor": "6/15",
+            "dir": "남동향",
+            "confirm": "20261116",
+            "desc": "내년5월입주가능.셔틀라인제일가까운동.동간넓고개방감아주좋음",
+            "bldg": "486동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-09-23",
+            "days": 54,
             "beforeStart": false
           }
         },
@@ -18936,16 +19000,16 @@
             "beforeStart": true
           },
           "after": {
-            "no": "2662009920",
+            "no": "2662157123",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 5,000",
             "floor": "25/25",
             "dir": "남동향",
             "confirm": "20261116",
-            "desc": "탑층 방마다 상록골프장뷰 멋진매물  한백초중고 근접",
+            "desc": "84A 트인 산 골프장 조망 통풍 일조량 좋아요",
             "bldg": "471동",
-            "realtor": "반도2차동탄골드공인중개사사무소",
+            "realtor": "아이공인중개사사무소",
             "firstSeen": "2026-06-14",
             "days": 155,
             "beforeStart": true
@@ -19346,6 +19410,21 @@
           "beforeStart": false
         },
         {
+          "no": "2662157886",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 7,000",
+          "floor": "고/25",
+          "dir": "남서향",
+          "confirm": "20261116",
+          "desc": "84A 관리잘된 집 채광우수 도배 미세방충망 줄눈 ",
+          "bldg": "473동",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-10-15",
+          "days": 32,
+          "beforeStart": false
+        },
+        {
           "no": "2661811445",
           "pyeong": 33,
           "excl": 84,
@@ -19371,21 +19450,6 @@
           "desc": "A타입. 탁트인 치동천뷰. 일조량 매우 풍부. 화장실타일교체. ",
           "bldg": "485동",
           "realtor": "포레너스대표공인중개사사무소",
-          "firstSeen": "2026-10-15",
-          "days": 32,
-          "beforeStart": false
-        },
-        {
-          "no": "2661131100",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "고/25",
-          "dir": "남서향",
-          "confirm": "20261111",
-          "desc": "주인거주,2년전김냉자리,미세방충망,줄눈시공,상태최상",
-          "bldg": "473동",
-          "realtor": "동탄퀸포레너스공인중개사사무소",
           "firstSeen": "2026-10-15",
           "days": 32,
           "beforeStart": false
@@ -19601,16 +19665,16 @@
           "beforeStart": false
         },
         {
-          "no": "2661590670",
+          "no": "2662148283",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 4,000",
           "floor": "6/15",
           "dir": "남동향",
-          "confirm": "20261113",
-          "desc": "생활편리,탁트인거실뷰",
+          "confirm": "20261116",
+          "desc": "내년5월입주가능.셔틀라인제일가까운동.동간넓고개방감아주좋음",
           "bldg": "486동",
-          "realtor": "탑포레너스공인중개사사무소",
+          "realtor": "동탄퀸포레너스공인중개사사무소",
           "firstSeen": "2026-09-23",
           "days": 54,
           "beforeStart": false
@@ -20126,6 +20190,21 @@
           "beforeStart": false
         },
         {
+          "no": "2662157123",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 5,000",
+          "floor": "25/25",
+          "dir": "남동향",
+          "confirm": "20261116",
+          "desc": "84A 트인 산 골프장 조망 통풍 일조량 좋아요",
+          "bldg": "471동",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 155,
+          "beforeStart": true
+        },
+        {
           "no": "2662058057",
           "pyeong": 33,
           "excl": 84,
@@ -20136,21 +20215,6 @@
           "desc": "급매 탁트인 치동천뷰 27년1월입주 잔금전 인테리어가능 로얄동전자계약가능",
           "bldg": "488동",
           "realtor": "포레너스유성공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 155,
-          "beforeStart": true
-        },
-        {
-          "no": "2662009920",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 5,000",
-          "floor": "25/25",
-          "dir": "남동향",
-          "confirm": "20261116",
-          "desc": "탑층 방마다 상록골프장뷰 멋진매물  한백초중고 근접",
-          "bldg": "471동",
-          "realtor": "반도2차동탄골드공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 155,
           "beforeStart": true
@@ -21661,7 +21725,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-16T04:17:25.575Z",
+    "fetchedAt": "2026-11-16T05:20:16.031Z",
     "today": "2026-11-16",
     "items": [
       {
@@ -21737,9 +21801,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-16T04:17:25.593Z",
+    "fetchedAt": "2026-11-16T05:20:16.113Z",
     "today": "2026-11-16",
     "items": [
+      {
+        "title": "오산시, 서동탄역 인근 급전구분소 이전 협의…대체지는 미정",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOd0JHZmdMTnRMRGZVa1BmQ2VkRE9vM1FYMWxmX01GNEZWeWloaDFjeUVtc0IwWVJfc1RQWjViVnlmclV5ZDFQN0hJVE82emU2NWVFT3VaTGhZclNnY0VNUTZ1QzEydEVPQlBzY245TdIBc0FVX3lxTFB1VnpzZjZPQVh2cUtkbHhTVjRDRjJvUzhGQjg2NkNuVDNoWEk2OG9pS3dKLWgtMWRESnNZUTRmRFJjb3p6VExiNlFkTkF4eHpfd0hPaUI3Umw5TzhoUjlLOGJ6U29oRlRQRUp0WUJBblQ5SWM?oc=5",
+        "source": "뉴스웍스",
+        "time": "2026-11-16T04:33:15.000Z",
+        "isToday": true
+      },
       {
         "title": "LH 조성 화성동탄2 바랑골 느티공원, 대한민국조경대상서 국무총리상 수상",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE50SWhFcUNMOUQ2cU4wSDVpSkdrbWR4RGt4VGdZMHNGUkpwcno3NVJlOXh4ZnZBX2hfNVZNb0wwNTZ5d0N0Z2dULTBhN01PMlYzZEZad3hkN1VXU1FEdHlDQ1l5RUx3dUp0VW1DbEFRNA?oc=5",
@@ -21801,13 +21872,6 @@
         "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE00dFRtYlFpSzE1ZUVDQ3lZZVJrU3N6MFo0THZaRWZQd3BlZ0YzM2pMMGEzRjVyeFJHSlZieGJzakxBdlNVU3BwTFZkS29wSlVJa2hVRXNnM1M?oc=5",
         "source": "매일경제",
         "time": "2026-11-15T07:01:33.000Z",
-        "isToday": false
-      },
-      {
-        "title": "오산시, 서동탄역 인근 급전구분소 이전 협의",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96Sm9LSXdHV1ZwT0wwelpKNlFSc19UTHQ3TElXSW8teTJ3VTlTWTF5dzc5UnBKcl9NWmpjeVNUUFF0YTF3MVU1T2VVZkFaZ2dvVWE3Q0pSblJTQl9jeHRlSVI4dGtxUHBGTnVXRFl3?oc=5",
-        "source": "전국매일신문",
-        "time": "2026-11-15T04:57:24.000Z",
         "isToday": false
       }
     ]
