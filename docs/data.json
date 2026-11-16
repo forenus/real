@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:47:22.178Z",
+  "generatedAt": "2026-11-16T14:17:34.787Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15759,15 +15759,15 @@
       ]
     },
     "todayDate": "2026-11-16",
-    "lastFetchedAt": "2026-11-16T13:46:46.466Z",
+    "lastFetchedAt": "2026-11-16T14:17:02.045Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 129,
-      "recent24h": 575,
-      "frequent": 64,
+      "realtime": 134,
+      "recent24h": 585,
+      "frequent": 65,
       "new": 34,
-      "fetchedAt": "2026-11-16T13:47:15.224Z"
+      "fetchedAt": "2026-11-16T14:17:26.337Z"
     },
     "prevDate": "2026-11-15",
     "rows": [
@@ -17706,10 +17706,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 68건에서 **89건까지 꾸준히 증가**해 30일 최고치 수준입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 4~8건 사이 횡보**하고 있어 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래돼 그전 30일(8억 9,000만 원)보다 소폭 올랐고, 1년 전 무렵(6억 4,100만 원)과 비교하면 **약 2억 7,600만 원 높은 수준**입니다. 10월 28일에는 역대 최고인 10억 원 거래도 있었습니다. 25평은 최근 30일 **2건, 평균 7억 5,000만 원**으로 1년 전 무렵(5억 3,200만 원)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 14건 늘었고, 최근 12주 동안 68건에서 **89건까지 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 30일 최고치도 11월 12일의 89건으로 현재 수준과 같습니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄어 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래돼 그전 30일(8억 9,000만 원)보다 소폭 올랐고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 **약 2억 7,600만 원 높은 수준**입니다. 10월 28일에는 역대 최고가 10억 원이 나왔지만, 같은 시기 8억 2,000만 원 거래도 있어 층별 편차가 큽니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **11월 10일 7억 9,000만 원 최고가**가 나왔으나, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-16T13:47:21.882Z"
+      "generatedAt": "2026-11-16T14:17:33.418Z"
     },
     "history": [
       {
@@ -21949,7 +21949,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-16T13:17:56.193Z",
+    "fetchedAt": "2026-11-16T14:17:34.785Z",
     "today": "2026-11-16",
     "items": [
       {
@@ -22025,12 +22025,12 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-16T13:17:56.102Z",
+    "fetchedAt": "2026-11-16T14:17:34.473Z",
     "today": "2026-11-16",
     "items": [
       {
         "title": "‘LH 조성’ 화성동탄 바랑골 느티공원, 지역 역사 보존해 국무총리상 영예",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9OUzBZb3gxZDZNX1h2Qm9NNWZZUjVSdlhrWmpZYmJObVRmNEIybmhyNnctQXQ5R2VyOUQ2R1VCeUhHb2dxVGhFQVpTQmxDMVo5U2VwOXliSTA4S0dfcmNyZTNPcThGcWE5THBIU3F3?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBJUjY5OGdkYmV1MDhlbjlyTENqSUZBLVV6bFRjTHVNejRaNnFJaEREUFZ2Q2dHc0RNdFZuSzVPTF9ZQTk0cjhxNjZUX2pNYVNYV0dfaWFQVFhRdUhtV1JsbEJBUnBmalcyNzRFcl9xUQ?oc=5",
         "source": "중부일보",
         "time": "2026-11-16T08:23:00.000Z",
         "isToday": true
