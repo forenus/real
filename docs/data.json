@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T08:17:30.901Z",
+  "generatedAt": "2026-11-16T08:47:42.843Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15759,15 +15759,15 @@
       ]
     },
     "todayDate": "2026-11-16",
-    "lastFetchedAt": "2026-11-16T08:17:04.341Z",
+    "lastFetchedAt": "2026-11-16T08:47:17.391Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 129,
-      "recent24h": 568,
-      "frequent": 68,
-      "new": 28,
-      "fetchedAt": "2026-11-16T08:17:22.257Z"
+      "realtime": 126,
+      "recent24h": 559,
+      "frequent": 69,
+      "new": 27,
+      "fetchedAt": "2026-11-16T08:47:34.247Z"
     },
     "prevDate": "2026-11-15",
     "rows": [
@@ -17706,10 +17706,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 68건에서 오늘 89건으로 꾸준히 늘었고, **30일 전보다 14건 증가해 30일 최고치**를 기록 중이어서 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 오늘 5건으로 30일 전보다 2건 줄었으며, **4~8건 사이에서 횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래돼 그전 30일(8억 9,000만 원)보다 소폭 올랐고, **1년 전 무렵 평균 6억 4,100만 원 대비 크게 높은 수준**입니다. 25평은 최근 2건 평균 7억 5,000만 원으로 11월 10일 **역대 최고 7억 9,000만 원**이 나왔지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가가 최근 실거래보다 약 8,600만~9,700만 원 높게 형성돼 있습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 **오늘 89건으로 30일 전보다 14건 증가**했고, 11월 12일 30일 최고치를 기록한 뒤 그 수준을 유지하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **4~8건 사이에서 횡보하며 오늘 5건**으로 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 6건이 **평균 9억 1,700만원**에 거래돼 그전 30일(8억 9,000만원, 2건)보다 소폭 높았고, 1년 전 무렵 평균 6억 4,100만원과 비교하면 크게 오른 수준입니다. 10월 28일 15층이 **역대 최고 10억**을 기록했으나 같은 시기 2층 8억 2,000만원 거래도 있어 층별 편차가 큽니다. 25평은 최근 2건 평균 7억 5,000만원으로 1년 전 5억 3,200만원보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-16T08:17:28.252Z"
+      "generatedAt": "2026-11-16T08:47:39.841Z"
     },
     "history": [
       {
@@ -21725,7 +21725,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-16T08:17:30.895Z",
+    "fetchedAt": "2026-11-16T08:47:42.676Z",
     "today": "2026-11-16",
     "items": [
       {
@@ -21801,9 +21801,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-16T08:17:30.898Z",
+    "fetchedAt": "2026-11-16T08:47:42.699Z",
     "today": "2026-11-16",
     "items": [
+      {
+        "title": "‘LH 조성’ 화성동탄 바랑골 느티공원, 지역 역사 보존해 국무총리상 영예",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9OUzBZb3gxZDZNX1h2Qm9NNWZZUjVSdlhrWmpZYmJObVRmNEIybmhyNnctQXQ5R2VyOUQ2R1VCeUhHb2dxVGhFQVpTQmxDMVo5U2VwOXliSTA4S0dfcmNyZTNPcThGcWE5THBIU3F3?oc=5",
+        "source": "중부일보",
+        "time": "2026-11-16T08:23:00.000Z",
+        "isToday": true
+      },
       {
         "title": "수원 영통·화성 동탄 ‘날았다’…경기 집값 상승률, 서울 앞질렀다",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYVnRzYjR4eFM3SFBFYS05M3l0Vng2aDZFRnJ4YUUzcnhCZ3RSa3pONHVVWjhWX0E1M0Vib1d2a00wcWtlZklROHZWeWJKLWN5V01hNDVPdmxnQ2s?oc=5",
@@ -21865,13 +21872,6 @@
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9YWWZ0MENUVlZWMFI3QmZTbXV1dEhvcldSVUJXZjRGX2oyQk94Tkw1M2tBTHI2aW5QbWhaVzZjb0pJRXFJWlIxdmEwSjFPREFZZ19Ma25vajNtSXk1d1liVTVzaDhYTDlaSmczTHFoRQ?oc=5",
         "source": "비즈니스플러스",
         "time": "2026-11-16T00:43:05.000Z",
-        "isToday": true
-      },
-      {
-        "title": "화성 동탄호수공원, 주민 손길로 명소로 거듭나",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5kU24xZll0UmRaa2xVQVk3SUcyMHdPQktsQTZoTXpOcUNYdkVrbkM0NWpUeGVoLTE3Zk1acmFSYjV4Q0xlc2o0WGNfZE1WZ01ndW15YktWejZNZTZDcjJWdHpYTVh3OGRlQnkyOWFWeHF1UQ?oc=5",
-        "source": "웹이코노미",
-        "time": "2026-11-16T00:32:43.000Z",
         "isToday": true
       }
     ]
