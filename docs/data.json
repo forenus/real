@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T05:20:16.118Z",
+  "generatedAt": "2026-11-16T06:17:13.159Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15759,15 +15759,15 @@
       ]
     },
     "todayDate": "2026-11-16",
-    "lastFetchedAt": "2026-11-16T05:19:05.241Z",
+    "lastFetchedAt": "2026-11-16T06:16:47.108Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 138,
-      "recent24h": 553,
-      "frequent": 88,
+      "realtime": 131,
+      "recent24h": 564,
+      "frequent": 80,
       "new": 27,
-      "fetchedAt": "2026-11-16T04:50:40.667Z"
+      "fetchedAt": "2026-11-16T06:17:05.142Z"
     },
     "prevDate": "2026-11-15",
     "rows": [
@@ -17706,10 +17706,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 오늘 **89건으로 30일 전보다 14건 증가**했고, 30일 최고치를 기록 중입니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄어 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 6건이 **평균 9억 1,700**에 거래되어 1년 전 무렵(6억 4,100)보다 크게 올랐고, 10월 28일 15층이 **역대 최고 10억**을 기록했습니다. 25평은 최근 30일 2건이 평균 7억 5,000에 거래됐으나 건수가 적어 평균이 층수에 따라 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가(8억 3,600·9억 9,700)가 최근 실거래가보다 높게 형성되어 있습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 오늘 **89건으로 30일 전보다 14건 증가**했고, 30일 최고치를 유지하고 있어 매도 물량이 쌓이는 흐름으로 보입니다. 반면 25평은 4~8건 사이에서 움직이며 오늘 5건으로, 30일 전보다 2건 줄어 **소폭 감소한 채 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 6건, **평균 9억 1,700만 원**으로 그전 30일(8억 9,000만 원)보다 올랐고, 1년 전 무렵 평균 6억 4,100만 원과 비교하면 크게 상승했습니다. 10월 28일 15층이 **10억으로 역대 최고**를 기록했지만 같은 시기 2층은 8억 2,000만 원에 거래돼 층에 따라 편차가 큽니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로, 건수가 적어 평균이 크게 흔들릴 수 있다는 점을 감안해 보시는 것이 좋겠습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-16T05:20:11.222Z"
+      "generatedAt": "2026-11-16T06:17:11.549Z"
     },
     "history": [
       {
@@ -21725,7 +21725,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-16T05:20:16.031Z",
+    "fetchedAt": "2026-11-16T06:17:13.152Z",
     "today": "2026-11-16",
     "items": [
       {
@@ -21801,9 +21801,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-16T05:20:16.113Z",
+    "fetchedAt": "2026-11-16T06:17:12.635Z",
     "today": "2026-11-16",
     "items": [
+      {
+        "title": "LH 화성동탄2지구 내 '바랑골 느티공원' 국무총리상 수상",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KQS1rNXc2REtVdDlEY21ZcDFZM3FDOWFtZXByTHlnX25iN2FaZ2R4ZXhaQUQzUDZjWW5GVUVrVUpCUlRIbjQ3R2Q4RGhObEN1MXMzelNRZl9zTGp4?oc=5",
+        "source": "뉴스핌",
+        "time": "2026-11-16T05:20:00.000Z",
+        "isToday": true
+      },
       {
         "title": "오산시, 서동탄역 인근 급전구분소 이전 협의…대체지는 미정",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOd0JHZmdMTnRMRGZVa1BmQ2VkRE9vM1FYMWxmX01GNEZWeWloaDFjeUVtc0IwWVJfc1RQWjViVnlmclV5ZDFQN0hJVE82emU2NWVFT3VaTGhZclNnY0VNUTZ1QzEydEVPQlBzY245TdIBc0FVX3lxTFB1VnpzZjZPQVh2cUtkbHhTVjRDRjJvUzhGQjg2NkNuVDNoWEk2OG9pS3dKLWgtMWRESnNZUTRmRFJjb3p6VExiNlFkTkF4eHpfd0hPaUI3Umw5TzhoUjlLOGJ6U29oRlRQRUp0WUJBblQ5SWM?oc=5",
@@ -21865,13 +21872,6 @@
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vODByajJDRUQ4QkFnU0FaRGtUQUI4UXRIT1FmZkpaRHM2UUFRcjNOSlpDb2hLNDZ3QkdQYnk4YTdIeEY0ckhPMW9QSVBtemJGTlRCNmoyMTI5SHIyQXhwYmM5ZDdSaERoWlpfSXpB?oc=5",
         "source": "아시아투데이",
         "time": "2026-11-15T07:34:30.000Z",
-        "isToday": false
-      },
-      {
-        "title": "한화 건설부문, 동탄역 10분 안팎, 수서역 20분대 … 삼성전자 평택캠퍼스 반경 5㎞이내",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE00dFRtYlFpSzE1ZUVDQ3lZZVJrU3N6MFo0THZaRWZQd3BlZ0YzM2pMMGEzRjVyeFJHSlZieGJzakxBdlNVU3BwTFZkS29wSlVJa2hVRXNnM1M?oc=5",
-        "source": "매일경제",
-        "time": "2026-11-15T07:01:33.000Z",
         "isToday": false
       }
     ]
