@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T11:17:34.814Z",
+  "generatedAt": "2026-11-16T11:47:27.594Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15759,15 +15759,15 @@
       ]
     },
     "todayDate": "2026-11-16",
-    "lastFetchedAt": "2026-11-16T11:17:07.982Z",
+    "lastFetchedAt": "2026-11-16T11:47:04.667Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 126,
-      "recent24h": 567,
-      "frequent": 69,
+      "realtime": 129,
+      "recent24h": 562,
+      "frequent": 72,
       "new": 27,
-      "fetchedAt": "2026-11-16T11:17:25.247Z"
+      "fetchedAt": "2026-11-16T11:47:20.574Z"
     },
     "prevDate": "2026-11-15",
     "rows": [
@@ -17706,10 +17706,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 **오늘 89건으로 30일 전보다 14건 증가**했고, 11월 12일 기록한 30일 최고치를 유지하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄었습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 1,700만 원에 거래되어 **1년 전 무렵 평균 6억 4,100만 원보다 크게 높은 수준**이며, 10월 28일에는 역대 최고가 10억 원이 나왔습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **11월 10일 역대 최고 7억 9,000만 원**을 기록했으나, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가가 최근 실거래 평균보다 8,000만~9,700만 원가량 높게 형성되어 있습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 **오늘 89건으로 30일 최고치**를 기록했고, 30일 전보다 14건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건 안팎에서 횡보**하며 30일 전보다 2건 줄어 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 6건이 **평균 9억 1,700**에 거래되어 1년 전 무렵 평균 6억 4,100보다 크게 올랐고, 10월 28일 15층이 역대 최고인 10억을 기록했습니다. 25평도 최근 2건 평균이 7억 5,000으로 1년 전 5억 3,200보다 높지만, 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 **평균 호가가 최근 실거래보다 약 8,600만~9,700만 원 높게** 형성되어 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-16T11:17:34.529Z"
+      "generatedAt": "2026-11-16T11:47:26.390Z"
     },
     "history": [
       {
@@ -21949,9 +21949,16 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-16T10:47:37.497Z",
+    "fetchedAt": "2026-11-16T11:47:27.581Z",
     "today": "2026-11-16",
     "items": [
+      {
+        "title": "동탄 트램, 첫 삽 떴다… 화성시, 우선시공분 본격 착수",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Od3ZoTzAzeGdYSWlwT1JFQ2dZS1BRQzhtbFY3dlE4bVJjdTNFYkplVVVwMUhVbVl5SU1DeHlHaWV4MUQ1QW9CclB2VFU5NWxhdXVRd2dWUlZ4UlBVVEJrYjNB?oc=5",
+        "source": "경기신문",
+        "time": "2026-11-03T08:00:00.000Z",
+        "isToday": false
+      },
       {
         "title": "화성시, 동탄트램 일부구간 공사 착수…2027년 본공사 착공",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9kclZ5RU0wZktkRmF1RkgtdDRSWDY0cGRCbGptY3JCTGszRUFxTi1Jbzk1S0xhaTYxZDd1QkhaZ1UxblF4MnNua2hTZS1hOUpL?oc=5",
@@ -22014,18 +22021,11 @@
         "source": "뉴데일리 경기",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "화성 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CaFVhT3NlSFJRWXhoUWN6eGt1X0tuR0k1SktwMEJ1UXpKdTA5VS1heDJXcVU5OF9INWpjRWMtN1R1bzdEVlVUSUtVTUpBcFl2S0ZVVjFCbm9vcGV5TmlKN2VR?oc=5",
-        "source": "경인뷰",
-        "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-16T10:47:37.911Z",
+    "fetchedAt": "2026-11-16T11:47:27.481Z",
     "today": "2026-11-16",
     "items": [
       {
