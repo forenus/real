@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-18T10:17:33.799Z",
-  "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
+  "generatedAt": "2026-11-18T23:17:16.774Z",
+  "collectUrl": "https://detected-affiliate-canberra-silver.trycloudflare.com",
   "state": {
     "complexNo": "110837",
     "complexName": "동탄역포레너스",
     "realDeals": {
       "date": "2026-11-18",
-      "today": "2026-11-18",
+      "today": "2026-11-19",
       "list": [
         {
           "date": "2026-11-11",
@@ -14739,12 +14739,12 @@
     "dongs": {
       "date": "2026-11-18",
       "real": {
-        "from": "2025-11-18",
-        "total": 165,
+        "from": "2025-11-19",
+        "total": 164,
         "known": 155,
         "fetchedAt": "2026-11-17T15:17:09.675Z",
         "unknown": {
-          "count": 10,
+          "count": 9,
           "max": {
             "priceText": "9억",
             "pyeong": 33,
@@ -14984,14 +14984,6 @@
             "price": 71000,
             "pyeong": 33,
             "priceText": "7억 1,000",
-            "manualDong": ""
-          },
-          {
-            "date": "2025-11-18",
-            "floor": "10",
-            "price": 63500,
-            "pyeong": 33,
-            "priceText": "6억 3,500",
             "manualDong": ""
           }
         ],
@@ -15735,11 +15727,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 233,
+      "realtime": 55,
       "recent24h": 726,
-      "frequent": 167,
-      "new": 23,
-      "fetchedAt": "2026-11-18T10:17:26.399Z"
+      "frequent": 38,
+      "new": 6,
+      "fetchedAt": "2026-11-18T23:15:21.259Z"
     },
     "prevDate": "2026-11-17",
     "rows": [
@@ -22014,20 +22006,13 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-18T10:17:33.670Z",
-    "today": "2026-11-18",
+    "fetchedAt": "2026-11-18T23:17:16.763Z",
+    "today": "2026-11-19",
     "items": [
       {
         "title": "동탄 트램, 첫 삽 떴다… 화성시, 우선시공분 본격 착수",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Od3ZoTzAzeGdYSWlwT1JFQ2dZS1BRQzhtbFY3dlE4bVJjdTNFYkplVVVwMUhVbVl5SU1DeHlHaWV4MUQ1QW9CclB2VFU5NWxhdXVRd2dWUlZ4UlBVVEJrYjNB?oc=5",
         "source": "경기신문",
-        "time": "2026-11-03T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성시, 동탄트램 일부구간 공사 착수…2027년 본공사 착공",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9kclZ5RU0wZktkRmF1RkgtdDRSWDY0cGRCbGptY3JCTGszRUFxTi1Jbzk1S0xhaTYxZDd1QkhaZ1UxblF4MnNua2hTZS1hOUpL?oc=5",
-        "source": "문화일보",
         "time": "2026-11-03T08:00:00.000Z",
         "isToday": false
       },
@@ -22086,33 +22071,47 @@
         "source": "뉴데일리 경기",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
+      },
+      {
+        "title": "화성 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CaFVhT3NlSFJRWXhoUWN6eGt1X0tuR0k1SktwMEJ1UXpKdTA5VS1heDJXcVU5OF9INWpjRWMtN1R1bzdEVlVUSUtVTUpBcFl2S0ZVVjFCbm9vcGV5TmlKN2VR?oc=5",
+        "source": "경인뷰",
+        "time": "2026-10-12T07:00:00.000Z",
+        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-18T10:17:33.798Z",
-    "today": "2026-11-18",
+    "fetchedAt": "2026-11-18T23:17:16.769Z",
+    "today": "2026-11-19",
     "items": [
       {
         "title": "반도체 호황 온기 번진 상권…전국 ‘사장님’ 증가 1위는 화성 동탄구",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBEd19aZU8xUU1tWFctbzJxRV9nVGFMNkhDN0ZMNXhzQXNRX1g1S3N5R1JDX0xtN29PVnBGamVDOEhvaFdPMjFqVmQzbFN6TFpqODdzV1diMEd5WUdKOHhYMDczbnpYR05jT01uMg?oc=5",
         "source": "와이드경제",
         "time": "2026-11-18T04:22:16.000Z",
-        "isToday": true
+        "isToday": false
       },
       {
         "title": "동탄역 ‘대방 디엠시티 더센텀’ 상업시설 임차인 모집…GTX A 개통 후 상권 지표 개선",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55alpNVFV0TzlWSUpxM1RtN2Z5ZFljWmk1RGVWeVZPTlh1d2xNYlFTei1IWlRDMXJMbTZzRmpaRW8xcDQ1MEc5Mnl6enJhQS1JV3N6Z1BmVm1WajFucDlMU05B?oc=5",
         "source": "이코노미스트",
         "time": "2026-11-18T01:32:00.000Z",
-        "isToday": true
+        "isToday": false
+      },
+      {
+        "title": "동탄역 상가 거리에 ‘뜻밖의 시장’ 열려… ‘동탄역 대방 디엠시티 더센텀’ 팝업 플리마켓 성료",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1XbHllMnZmb05CdlRILXVpbVhadmRNU0lSRDZ2VDU4RGNwXzRvVE5pQ3d3MldQbUFPR2NPT3VtNDl6d2V5dXJ4Q2xjc0JoQQ?oc=5",
+        "source": "www.dt.co.kr",
+        "time": "2026-11-18T01:13:55.000Z",
+        "isToday": false
       },
       {
         "title": "[LH] 3기 신도시 레미콘 품질관리 강화…민간참여 공공주택 2만4000가구 추진…화성동탄2 바랑골 느티공원 국무총리상",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZT1BPbjVja1E3Ykdjc0E0NkRTbGRlcTB6ZnVLbDBNNDV0UEptUWVGUzdYMm12MWRQdHFua1JsdEVwVGFwSEYySUEwN28zRUZXbUlTYVI2MEx0WEg0eGJ3aEpYSm5HbWh5Sl96OUF4T2ZXZw?oc=5",
         "source": "웹이코노미",
         "time": "2026-11-17T15:46:36.000Z",
-        "isToday": true
+        "isToday": false
       },
       {
         "title": "현대건설, 동탄2신도시 A아파트 에어컨 사양 논란…시행·시공 도맡고도 책임 회피",
@@ -22122,24 +22121,10 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄구보건소, 하반기 산후조리원 지도·점검",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0td0JQV0VFYTR1aDFWenNkQ3NxazJ4QXBWTXJVT3VkU2d4NlhuMU53cHIzOXdKcU5uYndYOWV5UnVPU3B6LXhuLWV5MUM5RmtkMmpKQVVJTzNveS1xZXdnT0NpZVItUG9sWXc?oc=5",
-        "source": "경기도민일보 미디어",
-        "time": "2026-11-17T02:42:48.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성 동탄구보건소, 화성소방서와 산후조리원 8곳 소방·안전 합동점검",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBud1U2OTJIQjBWNDhTUENnVlV0SWVoeF90T180cHh3OXBILXBDNXlROS00YWJ4TXJ0OHlOaVBTX0E0a2dXSXYyYWxQN0J3Mm40X3lVdTI2T3NudmFNbG9QSGQwbDc?oc=5",
         "source": "매일일보",
         "time": "2026-11-17T01:47:50.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄구보건소, 산후조리원 8곳 소방·안전 합동점검 실시",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peTd3dWRUaUh1WmZ2OFppdUxzYTNkM3ZSZEFaTEFKc3dvaFdzZWlsenRwaVJFcGpWeko2dXo1WWZTMko1SEo1dGhxbmw1ZXZkRFB3RU1XTmszRUYzTXlHWmR3?oc=5",
-        "source": "경인미래신문",
-        "time": "2026-11-16T22:01:52.000Z",
         "isToday": false
       },
       {
@@ -22161,6 +22146,13 @@
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYVnRzYjR4eFM3SFBFYS05M3l0Vng2aDZFRnJ4YUUzcnhCZ3RSa3pONHVVWjhWX0E1M0Vib1d2a00wcWtlZklROHZWeWJKLWN5V01hNDVPdmxnQ2s?oc=5",
         "source": "경기일보",
         "time": "2026-11-16T06:36:31.000Z",
+        "isToday": false
+      },
+      {
+        "title": "LH 화성동탄2지구 내 '바랑골 느티공원' 국무총리상 수상",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KQS1rNXc2REtVdDlEY21ZcDFZM3FDOWFtZXByTHlnX25iN2FaZ2R4ZXhaQUQzUDZjWW5GVUVrVUpCUlRIbjQ3R2Q4RGhObEN1MXMzelNRZl9zTGp4?oc=5",
+        "source": "뉴스핌",
+        "time": "2026-11-16T05:20:00.000Z",
         "isToday": false
       }
     ]
