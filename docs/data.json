@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:47:23.342Z",
+  "generatedAt": "2026-11-18T08:17:49.287Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15731,15 +15731,15 @@
       ]
     },
     "todayDate": "2026-11-18",
-    "lastFetchedAt": "2026-11-18T07:46:49.291Z",
+    "lastFetchedAt": "2026-11-18T08:16:58.201Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 131,
-      "recent24h": 746,
-      "frequent": 75,
-      "new": 25,
-      "fetchedAt": "2026-11-18T07:47:16.594Z"
+      "realtime": 130,
+      "recent24h": 701,
+      "frequent": 76,
+      "new": 24,
+      "fetchedAt": "2026-11-18T08:15:10.859Z"
     },
     "prevDate": "2026-11-17",
     "rows": [
@@ -17704,10 +17704,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 67건에서 89건으로 꾸준히 늘었고, **30일 전보다 16건 증가해 89건**으로 30일 최고치(90건, 11월 17일)에 근접해 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 2건 줄었으며, 4~8건 사이에서 **소폭 오르내리는 횡보** 흐름입니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 1,900만 원에 거래되어 그전 30일(8억 9,500만 원)보다 소폭 올랐고, **1년 전 무렵 평균 6억 4,000만 원 대비 크게 상승**했습니다. 다만 10월 28일 역대최고 10억 이후 11월 7일 거래는 9억이었습니다. 25평은 11월에 7억 1,000만~7억 9,000만 원에 2건 거래되며 **1년 전 평균 5억 3,400만 원보다 높은 수준**이지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 67건에서 89건으로 꾸준히 늘었고, **30일 전보다 16건 증가해 30일 최고치(90건) 부근**에 머물러 있어 매도 물량이 쌓이는 흐름으로 보입니다. 반면 25평은 10월 19일 8건을 정점으로 줄어 **현재 5건으로 30일 전 대비 2건 감소**했으며, 소진이 이어지는 모습으로 보입니다.",
+      "real": "33평은 **최근 30일 5건, 평균 9억 1,900**으로 그전 30일(8억 9,500)보다 소폭 올랐고, 1년 전 무렵 평균 6억 4,000과 비교하면 크게 높아진 수준이며 10월 28일 15층 10억으로 역대 최고를 기록했습니다. 25평은 11월 10일 2층 7억 9,000으로 역대 최고를 경신하며 **최근 30일 평균 7억 5,000**을 기록해 1년 전 무렵(5억 3,400)보다 높아졌습니다. 다만 25평은 거래가 2건뿐이라 평균이 크게 흔들릴 수 있다는 점을 감안해야 합니다.",
       "source": "ai",
-      "generatedAt": "2026-11-18T07:47:22.808Z"
+      "generatedAt": "2026-11-18T08:17:47.766Z"
     },
     "history": [
       {
@@ -21886,7 +21886,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-18T07:17:32.264Z",
+    "fetchedAt": "2026-11-18T08:17:49.286Z",
     "today": "2026-11-18",
     "items": [
       {
@@ -21962,7 +21962,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-18T07:17:32.268Z",
+    "fetchedAt": "2026-11-18T08:17:49.189Z",
     "today": "2026-11-18",
     "items": [
       {
@@ -22008,6 +22008,13 @@
         "isToday": false
       },
       {
+        "title": "화성 동탄구보건소, 산후조리원 8곳 소방·안전 합동점검 실시",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peTd3dWRUaUh1WmZ2OFppdUxzYTNkM3ZSZEFaTEFKc3dvaFdzZWlsenRwaVJFcGpWeko2dXo1WWZTMko1SEo1dGhxbmw1ZXZkRFB3RU1XTmszRUYzTXlHWmR3?oc=5",
+        "source": "경인미래신문",
+        "time": "2026-11-16T22:01:52.000Z",
+        "isToday": false
+      },
+      {
         "title": "‘LH 조성’ 화성동탄 바랑골 느티공원, 지역 역사 보존해 국무총리상 영예",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBJUjY5OGdkYmV1MDhlbjlyTENqSUZBLVV6bFRjTHVNejRaNnFJaEREUFZ2Q2dHc0RNdFZuSzVPTF9ZQTk0cjhxNjZUX2pNYVNYV0dfaWFQVFhRdUhtV1JsbEJBUnBmalcyNzRFcl9xUQ?oc=5",
         "source": "중부일보",
@@ -22026,13 +22033,6 @@
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYVnRzYjR4eFM3SFBFYS05M3l0Vng2aDZFRnJ4YUUzcnhCZ3RSa3pONHVVWjhWX0E1M0Vib1d2a00wcWtlZklROHZWeWJKLWN5V01hNDVPdmxnQ2s?oc=5",
         "source": "경기일보",
         "time": "2026-11-16T06:36:31.000Z",
-        "isToday": false
-      },
-      {
-        "title": "LH 화성동탄2지구 내 '바랑골 느티공원' 국무총리상 수상",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KQS1rNXc2REtVdDlEY21ZcDFZM3FDOWFtZXByTHlnX25iN2FaZ2R4ZXhaQUQzUDZjWW5GVUVrVUpCUlRIbjQ3R2Q4RGhObEN1MXMzelNRZl9zTGp4?oc=5",
-        "source": "뉴스핌",
-        "time": "2026-11-16T05:20:00.000Z",
         "isToday": false
       }
     ]
