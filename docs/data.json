@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T01:16:53.820Z",
+  "generatedAt": "2026-11-18T01:47:04.533Z",
   "collectUrl": "https://shadows-freebsd-programs-donation.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15083,8 +15083,8 @@
             {
               "pyeong": 33,
               "count": 11,
-              "price": 96455,
-              "priceText": "9억 6,500"
+              "price": 96364,
+              "priceText": "9억 6,400"
             }
           ]
         },
@@ -15683,8 +15683,8 @@
             {
               "pyeong": 33,
               "count": 8,
-              "price": 101875,
-              "priceText": "10억 1,900"
+              "price": 101625,
+              "priceText": "10억 1,600"
             }
           ]
         },
@@ -15731,15 +15731,15 @@
       ]
     },
     "todayDate": "2026-11-18",
-    "lastFetchedAt": "2026-11-18T01:16:37.540Z",
+    "lastFetchedAt": "2026-11-18T01:46:46.195Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 123,
-      "recent24h": 812,
-      "frequent": 80,
-      "new": 18,
-      "fetchedAt": "2026-11-18T01:16:47.827Z"
+      "realtime": 144,
+      "recent24h": 808,
+      "frequent": 99,
+      "new": 19,
+      "fetchedAt": "2026-11-18T01:46:57.038Z"
     },
     "prevDate": "2026-11-17",
     "rows": [
@@ -17704,10 +17704,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 90건으로 30일 최고치**를 기록했고, 30일 전보다 17건 많아 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 한때 8건(10월 19일)까지 늘었다가 **현재 5건으로 30일 전보다 2건 줄어** 소진되는 모습으로 보입니다.",
-      "real": "33평은 최근 30일 5건이 평균 9억 1,900만 원에 거래돼 그전 30일(8억 9,500만 원)보다 소폭 올랐고, **10월 28일 15층 10억 원으로 역대 최고**를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 무렵 평균 5억 3,400만 원보다 크게 높은 수준**이지만, 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가(25평 8억 3,600만 원, 33평 9억 9,500만 원)가 최근 실거래가보다 높게 형성돼 있습니다.",
+      "listing": "33평 매물은 12주 전 67건에서 오늘 **90건으로 꾸준히 늘어** 30일 전보다 17건 많고, 30일 최고치를 이어가고 있어 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 오늘 5건으로 30일 전보다 2건 줄었으며, 10월 중순 **8건 고점 이후 소폭 감소**하는 모습입니다.",
+      "real": "33평은 최근 30일 5건이 평균 **9억 1,900만 원**에 거래돼 그전 30일(8억 9,500만 원)보다 소폭 올랐고, 10월 28일 15층이 역대 최고인 10억 원을 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 무렵(5억 3,400만 원)보다 **약 2억 원 높은 수준**이지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가(25평 8억 3,600만 원, 33평 9억 9,500만 원)가 최근 실거래가보다 높게 형성돼 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-18T01:16:53.604Z"
+      "generatedAt": "2026-11-18T01:47:03.522Z"
     },
     "history": [
       {
@@ -18475,10 +18475,487 @@
       "todayDate": "2026-11-18",
       "prevDate": "2026-11-17",
       "pyeong": 33,
-      "added": [],
-      "sold": [],
-      "relisted": [],
+      "added": [
+        {
+          "no": "2662561281",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 3,000",
+          "floor": "4/25",
+          "dir": "남서향",
+          "confirm": "20261118",
+          "desc": "84A,전세승계,28년1월중순만기,전자계약",
+          "bldg": "471동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-11-18",
+          "days": 0,
+          "beforeStart": false
+        },
+        {
+          "no": "2662563979",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "10/25",
+          "dir": "남서향",
+          "confirm": "20261118",
+          "desc": "추천입주,시에4대,거실개방감좋고 생활편리,주인거주,전자계약",
+          "bldg": "475동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-11-18",
+          "days": 0,
+          "beforeStart": false
+        }
+      ],
+      "sold": [
+        {
+          "no": "2662312858",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 3,000",
+          "floor": "저/25",
+          "dir": "남서향",
+          "confirm": "20261117",
+          "desc": "무주택자갭투물건 84A타입  전세안고 투자",
+          "bldg": "471동",
+          "realtor": "동탄부자공인중개사사무소",
+          "firstSeen": "2026-11-14",
+          "days": 3,
+          "beforeStart": false
+        },
+        {
+          "no": "2662377237",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "중/25",
+          "dir": "남서향",
+          "confirm": "20261117",
+          "desc": "입주가능.2년전풀에어컨설치.동간넓고일조량우수.날짜협의가능",
+          "bldg": "475동",
+          "realtor": "동탄퀸포레너스공인중개사사무소",
+          "firstSeen": "2026-11-13",
+          "days": 4,
+          "beforeStart": false
+        }
+      ],
+      "relisted": [
+        {
+          "before": {
+            "no": "2662313249",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "중/25",
+            "dir": "남동향",
+            "confirm": "20261117",
+            "desc": "84A타입 산조망 숲세권 잔금일협의가능",
+            "bldg": "472동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-11-12",
+            "days": 5,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662550669",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "중/25",
+            "dir": "남동향",
+            "confirm": "20261118",
+            "desc": "84A타입 산조망 숲세권 잔금일협의가능",
+            "bldg": "472동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-11-12",
+            "days": 6,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662312892",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "고/25",
+            "dir": "남동향",
+            "confirm": "20261117",
+            "desc": "84A타입 산조망 멀리골프장조망도나옴 숲세권 잔금일협의가능",
+            "bldg": "472동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-11-04",
+            "days": 13,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662550824",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "고/25",
+            "dir": "남동향",
+            "confirm": "20261118",
+            "desc": "84A타입 산조망 멀리골프장조망도나옴 숲세권 잔금일협의가능",
+            "bldg": "472동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-11-04",
+            "days": 14,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662376746",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "중/25",
+            "dir": "남서향",
+            "confirm": "20261117",
+            "desc": "주인거주.관리잘된집.날짜협의가능.동간넓고조용한동",
+            "bldg": "471동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-10-28",
+            "days": 20,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662561819",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "중/25",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "숲세권 햇살좋은집,입주협의",
+            "bldg": "471동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-28",
+            "days": 21,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662256288",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261116",
+            "desc": "A타입 추천, 입주협의, 전면동,탁트인 치동천뷰,중문,타일교체,로얄동호수",
+            "bldg": "485동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 33,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662564744",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "12/15",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
+            "bldg": "485동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 34,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662255859",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "저/25",
+            "dir": "남동향",
+            "confirm": "20261116",
+            "desc": "A타입, 트인 산뷰, 27년1월2월 입주협의, 기준층, 초중고 인접동",
+            "bldg": "472동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-09-30",
+            "days": 48,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662562230",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 4,000",
+            "floor": "저/25",
+            "dir": "남동향",
+            "confirm": "20261118",
+            "desc": "84A,1월,2월입주,숲세권 산조망,중문,ㄷ주방,알파룸인테리어",
+            "bldg": "472동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-30",
+            "days": 49,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2658569873",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "저/20",
+            "dir": "남서향",
+            "confirm": "20261030",
+            "desc": "전면동 7층 높이감,시에4대.중문,상가,커뮤니티등 생활편리",
+            "bldg": "476동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-30",
+            "days": 48,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662564561",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "저/20",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "전면동 7층 높이감,시에4대.중문,상가,커뮤니티등 생활편리",
+            "bldg": "476동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-30",
+            "days": 49,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662484891",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261117",
+            "desc": "공실, 늦은잔금가능, 최신 시에4대, 강마루, 중문 등 깔끔한 인테리어",
+            "bldg": "482동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 68,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662550688",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "공실  정문상가인접동 잔금일협의가능  시에4대 강마루 중문 인테리어",
+            "bldg": "482동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 69,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662387302",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "15/25",
+            "dir": "남서향",
+            "confirm": "20261117",
+            "desc": "모든 접근성 편리한 로얄동 로얄층 중문 주차편리함 주인거주  ",
+            "bldg": "475동",
+            "realtor": "포레너스유성공인중개사사무소",
+            "firstSeen": "2026-09-06",
+            "days": 72,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662564206",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "15/25",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "84A,선호동,학교,상가,커뮤니티 편리,주인주거,입주협의",
+            "bldg": "475동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-09-06",
+            "days": 73,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2661858258",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "3/15",
+            "dir": "남서향",
+            "confirm": "20261114",
+            "desc": "84A.전면동 .치동천조망. 시에4. 폴리싱타일. 관리잘된집",
+            "bldg": "487동",
+            "realtor": "동탄대박이지부동산공인중개사사무소",
+            "firstSeen": "2026-09-01",
+            "days": 77,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662569533",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "3/15",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "전자계약가능 84A 남서향 입주가능 조망최고 , 잔금전 인테리어 가능",
+            "bldg": "487동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-09-01",
+            "days": 78,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662313280",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "저/15",
+            "dir": "남서향",
+            "confirm": "20261117",
+            "desc": "입주협의 치동천뷰최고  관리잘된 집  학세권",
+            "bldg": "487동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-08-19",
+            "days": 90,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662550660",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "저/15",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "입주협의 치동천뷰최고  관리잘된 집  학세권",
+            "bldg": "487동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-08-19",
+            "days": 91,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662313171",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 8,000",
+            "floor": "중/15",
+            "dir": "남서향",
+            "confirm": "20261117",
+            "desc": "동바로앞 동탄역버스정거장 치동천뷰최고  집상태최상",
+            "bldg": "485동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-08-08",
+            "days": 101,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662550680",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 8,000",
+            "floor": "중/15",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "동바로앞 동탄역버스정거장 치동천뷰최고  집상태최상",
+            "bldg": "485동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-08-08",
+            "days": 102,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662376145",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 2,000",
+            "floor": "고/15",
+            "dir": "남동향",
+            "confirm": "20261117",
+            "desc": "늦은잔금,입주협의,인기A,동간넓고일조권우수",
+            "bldg": "480동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-06-23",
+            "days": 147,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2662550814",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 2,000",
+            "floor": "고/15",
+            "dir": "남동향",
+            "confirm": "20261118",
+            "desc": "급매 무주택자갭투가능 세안고 조용한 단지 조망굿",
+            "bldg": "480동",
+            "realtor": "동탄부자공인중개사사무소",
+            "firstSeen": "2026-06-23",
+            "days": 148,
+            "beforeStart": false
+          }
+        }
+      ],
       "current": [
+        {
+          "no": "2662561281",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 3,000",
+          "floor": "4/25",
+          "dir": "남서향",
+          "confirm": "20261118",
+          "desc": "84A,전세승계,28년1월중순만기,전자계약",
+          "bldg": "471동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-11-18",
+          "days": 0,
+          "beforeStart": false
+        },
+        {
+          "no": "2662563979",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "10/25",
+          "dir": "남서향",
+          "confirm": "20261118",
+          "desc": "추천입주,시에4대,거실개방감좋고 생활편리,주인거주,전자계약",
+          "bldg": "475동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-11-18",
+          "days": 0,
+          "beforeStart": false
+        },
         {
           "no": "2662484250",
           "pyeong": 33,
@@ -18495,43 +18972,13 @@
           "beforeStart": false
         },
         {
-          "no": "2662312858",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 3,000",
-          "floor": "저/25",
-          "dir": "남서향",
-          "confirm": "20261117",
-          "desc": "무주택자갭투물건 84A타입  전세안고 투자",
-          "bldg": "471동",
-          "realtor": "동탄부자공인중개사사무소",
-          "firstSeen": "2026-11-14",
-          "days": 4,
-          "beforeStart": false
-        },
-        {
-          "no": "2662377237",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "중/25",
-          "dir": "남서향",
-          "confirm": "20261117",
-          "desc": "입주가능.2년전풀에어컨설치.동간넓고일조량우수.날짜협의가능",
-          "bldg": "475동",
-          "realtor": "동탄퀸포레너스공인중개사사무소",
-          "firstSeen": "2026-11-13",
-          "days": 5,
-          "beforeStart": false
-        },
-        {
-          "no": "2662313249",
+          "no": "2662550669",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 5,000",
           "floor": "중/25",
           "dir": "남동향",
-          "confirm": "20261117",
+          "confirm": "20261118",
           "desc": "84A타입 산조망 숲세권 잔금일협의가능",
           "bldg": "472동",
           "realtor": "동탄부자공인중개사사무소",
@@ -18600,13 +19047,13 @@
           "beforeStart": false
         },
         {
-          "no": "2662312892",
+          "no": "2662550824",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 5,000",
           "floor": "고/25",
           "dir": "남동향",
-          "confirm": "20261117",
+          "confirm": "20261118",
           "desc": "84A타입 산조망 멀리골프장조망도나옴 숲세권 잔금일협의가능",
           "bldg": "472동",
           "realtor": "동탄부자공인중개사사무소",
@@ -18750,16 +19197,16 @@
           "beforeStart": false
         },
         {
-          "no": "2662376746",
+          "no": "2662561819",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 5,000",
           "floor": "중/25",
           "dir": "남서향",
-          "confirm": "20261117",
-          "desc": "주인거주.관리잘된집.날짜협의가능.동간넓고조용한동",
+          "confirm": "20261118",
+          "desc": "숲세권 햇살좋은집,입주협의",
           "bldg": "471동",
-          "realtor": "동탄퀸포레너스공인중개사사무소",
+          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-10-28",
           "days": 21,
           "beforeStart": false
@@ -18855,6 +19302,21 @@
           "beforeStart": false
         },
         {
+          "no": "2662564744",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "12/15",
+          "dir": "남서향",
+          "confirm": "20261118",
+          "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
+          "bldg": "485동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-10-15",
+          "days": 34,
+          "beforeStart": false
+        },
+        {
           "no": "2662157886",
           "pyeong": 33,
           "excl": 84,
@@ -18865,21 +19327,6 @@
           "desc": "84A 관리잘된 집 채광우수 도배 미세방충망 줄눈 ",
           "bldg": "473동",
           "realtor": "아이공인중개사사무소",
-          "firstSeen": "2026-10-15",
-          "days": 34,
-          "beforeStart": false
-        },
-        {
-          "no": "2662256288",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "12/15",
-          "dir": "남서향",
-          "confirm": "20261116",
-          "desc": "A타입 추천, 입주협의, 전면동,탁트인 치동천뷰,중문,타일교체,로얄동호수",
-          "bldg": "485동",
-          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-10-15",
           "days": 34,
           "beforeStart": false
@@ -19080,28 +19527,28 @@
           "beforeStart": false
         },
         {
-          "no": "2662255859",
+          "no": "2662562230",
           "pyeong": 33,
           "excl": 84,
-          "price": "9억 5,000",
+          "price": "9억 4,000",
           "floor": "저/25",
           "dir": "남동향",
-          "confirm": "20261116",
-          "desc": "A타입, 트인 산뷰, 27년1월2월 입주협의, 기준층, 초중고 인접동",
+          "confirm": "20261118",
+          "desc": "84A,1월,2월입주,숲세권 산조망,중문,ㄷ주방,알파룸인테리어",
           "bldg": "472동",
-          "realtor": "예스포레너스공인중개사사무소",
+          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-09-30",
           "days": 49,
           "beforeStart": false
         },
         {
-          "no": "2658569873",
+          "no": "2662564561",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 5,000",
           "floor": "저/20",
           "dir": "남서향",
-          "confirm": "20261030",
+          "confirm": "20261118",
           "desc": "전면동 7층 높이감,시에4대.중문,상가,커뮤니티등 생활편리",
           "bldg": "476동",
           "realtor": "탑포레너스공인중개사사무소",
@@ -19230,16 +19677,16 @@
           "beforeStart": false
         },
         {
-          "no": "2662484891",
+          "no": "2662550688",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 6,000",
           "floor": "13/15",
           "dir": "남서향",
-          "confirm": "20261117",
-          "desc": "공실, 늦은잔금가능, 최신 시에4대, 강마루, 중문 등 깔끔한 인테리어",
+          "confirm": "20261118",
+          "desc": "공실  정문상가인접동 잔금일협의가능  시에4대 강마루 중문 인테리어",
           "bldg": "482동",
-          "realtor": "예스포레너스공인중개사사무소",
+          "realtor": "동탄부자공인중개사사무소",
           "firstSeen": "2026-09-10",
           "days": 69,
           "beforeStart": false
@@ -19260,16 +19707,16 @@
           "beforeStart": false
         },
         {
-          "no": "2662387302",
+          "no": "2662564206",
           "pyeong": 33,
           "excl": 84,
           "price": "10억",
           "floor": "15/25",
           "dir": "남서향",
-          "confirm": "20261117",
-          "desc": "모든 접근성 편리한 로얄동 로얄층 중문 주차편리함 주인거주  ",
+          "confirm": "20261118",
+          "desc": "84A,선호동,학교,상가,커뮤니티 편리,주인주거,입주협의",
           "bldg": "475동",
-          "realtor": "포레너스유성공인중개사사무소",
+          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-09-06",
           "days": 73,
           "beforeStart": false
@@ -19305,16 +19752,16 @@
           "beforeStart": false
         },
         {
-          "no": "2661858258",
+          "no": "2662569533",
           "pyeong": 33,
           "excl": 84,
-          "price": "9억 5,000",
+          "price": "9억 3,000",
           "floor": "3/15",
           "dir": "남서향",
-          "confirm": "20261114",
-          "desc": "84A.전면동 .치동천조망. 시에4. 폴리싱타일. 관리잘된집",
+          "confirm": "20261118",
+          "desc": "전자계약가능 84A 남서향 입주가능 조망최고 , 잔금전 인테리어 가능",
           "bldg": "487동",
-          "realtor": "동탄대박이지부동산공인중개사사무소",
+          "realtor": "포레탑공인중개사사무소",
           "firstSeen": "2026-09-01",
           "days": 78,
           "beforeStart": false
@@ -19380,13 +19827,13 @@
           "beforeStart": false
         },
         {
-          "no": "2662313280",
+          "no": "2662550660",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 7,000",
           "floor": "저/15",
           "dir": "남서향",
-          "confirm": "20261117",
+          "confirm": "20261118",
           "desc": "입주협의 치동천뷰최고  관리잘된 집  학세권",
           "bldg": "487동",
           "realtor": "동탄부자공인중개사사무소",
@@ -19440,13 +19887,13 @@
           "beforeStart": false
         },
         {
-          "no": "2662313171",
+          "no": "2662550680",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 8,000",
           "floor": "중/15",
           "dir": "남서향",
-          "confirm": "20261117",
+          "confirm": "20261118",
           "desc": "동바로앞 동탄역버스정거장 치동천뷰최고  집상태최상",
           "bldg": "485동",
           "realtor": "동탄부자공인중개사사무소",
@@ -19545,16 +19992,16 @@
           "beforeStart": false
         },
         {
-          "no": "2662376145",
+          "no": "2662550814",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 2,000",
           "floor": "고/15",
           "dir": "남동향",
-          "confirm": "20261117",
-          "desc": "늦은잔금,입주협의,인기A,동간넓고일조권우수",
+          "confirm": "20261118",
+          "desc": "급매 무주택자갭투가능 세안고 조용한 단지 조망굿",
           "bldg": "480동",
-          "realtor": "동탄퀸포레너스공인중개사사무소",
+          "realtor": "동탄부자공인중개사사무소",
           "firstSeen": "2026-06-23",
           "days": 148,
           "beforeStart": false
@@ -21185,7 +21632,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-18T00:48:29.465Z",
+    "fetchedAt": "2026-11-18T01:47:04.488Z",
     "today": "2026-11-18",
     "items": [
       {
@@ -21261,9 +21708,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-18T00:48:29.555Z",
+    "fetchedAt": "2026-11-18T01:47:04.532Z",
     "today": "2026-11-18",
     "items": [
+      {
+        "title": "동탄역 ‘대방 디엠시티 더센텀’ 상업시설 임차인 모집…GTX A 개통 후 상권 지표 개선",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55alpNVFV0TzlWSUpxM1RtN2Z5ZFljWmk1RGVWeVZPTlh1d2xNYlFTei1IWlRDMXJMbTZzRmpaRW8xcDQ1MEc5Mnl6enJhQS1JV3N6Z1BmVm1WajFucDlMU05B?oc=5",
+        "source": "이코노미스트",
+        "time": "2026-11-18T01:32:00.000Z",
+        "isToday": true
+      },
       {
         "title": "[LH] 3기 신도시 레미콘 품질관리 강화…민간참여 공공주택 2만4000가구 추진…화성동탄2 바랑골 느티공원 국무총리상",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZT1BPbjVja1E3Ykdjc0E0NkRTbGRlcTB6ZnVLbDBNNDV0UEptUWVGUzdYMm12MWRQdHFua1JsdEVwVGFwSEYySUEwN28zRUZXbUlTYVI2MEx0WEg0eGJ3aEpYSm5HbWh5Sl96OUF4T2ZXZw?oc=5",
@@ -21325,13 +21779,6 @@
         "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KQS1rNXc2REtVdDlEY21ZcDFZM3FDOWFtZXByTHlnX25iN2FaZ2R4ZXhaQUQzUDZjWW5GVUVrVUpCUlRIbjQ3R2Q4RGhObEN1MXMzelNRZl9zTGp4?oc=5",
         "source": "뉴스핌",
         "time": "2026-11-16T05:20:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "오산시, 서동탄역 인근 급전구분소 이전 협의…대체지는 미정",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOd0JHZmdMTnRMRGZVa1BmQ2VkRE9vM1FYMWxmX01GNEZWeWloaDFjeUVtc0IwWVJfc1RQWjViVnlmclV5ZDFQN0hJVE82emU2NWVFT3VaTGhZclNnY0VNUTZ1QzEydEVPQlBzY245TdIBc0FVX3lxTFB1VnpzZjZPQVh2cUtkbHhTVjRDRjJvUzhGQjg2NkNuVDNoWEk2OG9pS3dKLWgtMWRESnNZUTRmRFJjb3p6VExiNlFkTkF4eHpfd0hPaUI3Umw5TzhoUjlLOGJ6U29oRlRQRUp0WUJBblQ5SWM?oc=5",
-        "source": "뉴스웍스",
-        "time": "2026-11-16T04:33:15.000Z",
         "isToday": false
       }
     ]
