@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T17:46:53.467Z",
+  "generatedAt": "2026-11-19T18:16:54.676Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-20",
-    "lastFetchedAt": "2026-11-19T17:46:35.890Z",
+    "lastFetchedAt": "2026-11-19T18:16:39.075Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 48,
-      "recent24h": 917,
-      "frequent": 27,
-      "new": 12,
-      "fetchedAt": "2026-11-19T17:46:45.446Z"
+      "realtime": 32,
+      "recent24h": 913,
+      "frequent": 20,
+      "new": 9,
+      "fetchedAt": "2026-11-19T18:16:47.916Z"
     },
     "prevDate": "2026-11-19",
     "rows": [
@@ -17778,10 +17778,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 70건에서 89건으로 **꾸준히 늘어 30일 전보다 11건 많은** 수준이며, 최근 2주는 89건에서 멈춰 있습니다. 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 7건 안팎까지 늘었다가 **30일 전보다 3건 줄어든 5건**으로, 일부 소진된 것으로 보입니다.",
-      "real": "33평 최근 30일 실거래는 6건, 평균 9억 800만 원으로 그전 30일(8억 9,500만 원)과 비슷하지만, 1년 전 무렵 평균 6억 4,000만 원보다는 **2억 6,800만 원가량 높은** 수준이며 10월 28일 10억으로 역대 최고를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 무렵(5억 3,400만 원)보다 높고 11월 10일 **7억 9,000만 원으로 최고가**를 기록했지만, 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가(25평 8억 3,600만 원, 33평 9억 9,400만 원)는 최근 실거래 평균보다 높게 형성되어 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 70건에서 89건으로 꾸준히 늘었고, **30일 전보다 11건 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 최근 1주일은 89건에서 더 늘지 않아 증가세가 다소 멈춘 모습입니다. 25평은 **30일 전 8건에서 5건으로 줄어** 물량이 일부 소진된 것으로 보입니다.",
+      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했으며, 1년 전 무렵 평균 6억 4,000만 원보다는 크게 높습니다. 10월 28일에는 15층이 역대 최고인 10억 원에 거래되었습니다. 25평은 최근 30일 2건, 평균 7억 5,000만 원으로 **1년 전 무렵(5억 3,400만 원)보다 높아졌지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-19T17:46:52.370Z"
+      "generatedAt": "2026-11-19T18:16:53.827Z"
     },
     "history": [
       {
@@ -21237,7 +21237,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-19T17:46:53.466Z",
+    "fetchedAt": "2026-11-19T18:16:54.622Z",
     "today": "2026-11-20",
     "items": [
       {
@@ -21313,7 +21313,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-19T17:46:53.443Z",
+    "fetchedAt": "2026-11-19T18:16:54.676Z",
     "today": "2026-11-20",
     "items": [
       {
@@ -21342,13 +21342,6 @@
         "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1XbHllMnZmb05CdlRILXVpbVhadmRNU0lSRDZ2VDU4RGNwXzRvVE5pQ3d3MldQbUFPR2NPT3VtNDl6d2V5dXJ4Q2xjc0JoQQ?oc=5",
         "source": "www.dt.co.kr",
         "time": "2026-11-18T01:13:55.000Z",
-        "isToday": false
-      },
-      {
-        "title": "현대건설, 동탄2신도시 A아파트 에어컨 사양 논란…시행·시공 도맡고도 책임 회피",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4yQmdCVGRJNWxZd0x6bzQ2alB5VTVRQXZ0U19ZdEdmQ3hweVdWNzFEaWlTbjBQaGlCNHNPeW9iT254ZXFla190c3pyRFg?oc=5",
-        "source": "아이뉴스24",
-        "time": "2026-11-17T06:29:36.000Z",
         "isToday": false
       },
       {
@@ -21384,6 +21377,13 @@
         "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KQS1rNXc2REtVdDlEY21ZcDFZM3FDOWFtZXByTHlnX25iN2FaZ2R4ZXhaQUQzUDZjWW5GVUVrVUpCUlRIbjQ3R2Q4RGhObEN1MXMzelNRZl9zTGp4?oc=5",
         "source": "뉴스핌",
         "time": "2026-11-16T05:20:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "오산시, 서동탄역 인근 급전구분소 이전 협의…대체지는 미정",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOd0JHZmdMTnRMRGZVa1BmQ2VkRE9vM1FYMWxmX01GNEZWeWloaDFjeUVtc0IwWVJfc1RQWjViVnlmclV5ZDFQN0hJVE82emU2NWVFT3VaTGhZclNnY0VNUTZ1QzEydEVPQlBzY245TdIBc0FVX3lxTFB1VnpzZjZPQVh2cUtkbHhTVjRDRjJvUzhGQjg2NkNuVDNoWEk2OG9pS3dKLWgtMWRESnNZUTRmRFJjb3p6VExiNlFkTkF4eHpfd0hPaUI3Umw5TzhoUjlLOGJ6U29oRlRQRUp0WUJBblQ5SWM?oc=5",
+        "source": "뉴스웍스",
+        "time": "2026-11-16T04:33:15.000Z",
         "isToday": false
       }
     ]
