@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T08:07:29.645Z",
+  "generatedAt": "2026-11-19T08:36:59.865Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15787,15 +15787,15 @@
       ]
     },
     "todayDate": "2026-11-19",
-    "lastFetchedAt": "2026-11-19T08:07:04.610Z",
+    "lastFetchedAt": "2026-11-19T08:36:35.660Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 138,
-      "recent24h": 975,
-      "frequent": 76,
-      "new": 32,
-      "fetchedAt": "2026-11-19T08:07:23.467Z"
+      "realtime": 128,
+      "recent24h": 974,
+      "frequent": 75,
+      "new": 26,
+      "fetchedAt": "2026-11-19T08:36:52.889Z"
     },
     "prevDate": "2026-11-18",
     "rows": [
@@ -17773,10 +17773,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 68건에서 89건으로 꾸준히 늘었고, **30일 전보다 13건 증가한 89건**으로 30일 최고치(90건, 11-17)에 근접해 있습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 2건 줄었으며, 10월 중순 8건을 정점으로 **완만한 감소세**를 보이고 있습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래되어 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했고, 1년 전 무렵(6억 4,000만 원)보다는 **약 2억 7,000만 원 높은 수준**입니다. 10월 28일에는 15층이 역대 최고인 10억 원에 거래되었습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 5억 3,400만 원보다 크게 올랐지만**, 거래가 적어 평균이 크게 흔들릴 수 있다는 점은 감안할 필요가 있습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 **오늘 89건으로 30일 전보다 13건 증가**했으며, 11월 17일 90건으로 30일 최고치를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄어** 소폭 감소 후 횡보하고 있습니다.",
+      "real": "33평은 **최근 30일 6건, 평균 9억 800만 원**으로 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,000만 원보다는 크게 올랐습니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 무렵 5억 3,400만 원보다 높지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-19T08:07:29.385Z"
+      "generatedAt": "2026-11-19T08:36:58.534Z"
     },
     "history": [
       {
@@ -21838,9 +21838,16 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-19T07:37:30.106Z",
+    "fetchedAt": "2026-11-19T08:36:59.864Z",
     "today": "2026-11-19",
     "items": [
+      {
+        "title": "신미숙 경기도의원, 외국인노동자 지원센터는 협약 후 중단·동탄트램은 지연…“경기도 약속 이행 책임져야”",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1xNnkxMC0wYXc2S1o0TEExM1JhS3hnaE5YR3l1UlBtRHlsNDR5bjdpVDRiV1g5bmxqSW43enpwT0w0T2FZTTF3V0Vsdi1qWFJaMm9YWEl2T1ZoYjhvWldQMGZPM0pKZFNGNXg1eG1R?oc=5",
+        "source": "서프라이즈뉴스",
+        "time": "2026-11-19T08:22:55.000Z",
+        "isToday": true
+      },
       {
         "title": "2031년 목표로 '동탄 트램' 첫 삽…서·남동탄 부동산 기대감",
         "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOUGFZc0ROVWIxT195amxDZzkwTGgwSlIzUFFwQ29adThOUTR1Q2JhX1hlVnlISGdxVk5CRmFTVGtEQ25GdkNaZGFuS0xpWlB4MjkwVGp4YWlVcklUWjhiN9IBeEFVX3lxTE5JaXRwY0luOEMxYXVqTHI4aEl0MmhPWC1qN1BRV3V4ckJPRVFIdDc2d2pmdXpYOVZFSVRscVBJc1ZWaU1XWEw2U1pfbDJtYTEtLW53OFFpeDNZUnB1ODQ2al8wakRqZW5FYXlEZnplMW8xX3MyV2hHXw?oc=5",
@@ -21903,18 +21910,11 @@
         "source": "한국일보",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "화성 동탄트램 10월 우선시공분 착공 추진… '30분 생활권' 공약 박차",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWaUhfR21mLXJVMzdDbW9JaW1QSU11MXozN1dqbEpSd3oxY29xYUhManM5X3JIdUN1ZHZlSWZDTGdFRXQ5TjRQeTZtODgyLVRiRncwSi1WT2xVOURHUEhDN0t5cmhJRDNLYXhZbzI2LVQ2T2RpV2R1Z3pn0gF_QVVfeXFMT2VBZlhuM1gwa0x6aUZVOWpfZl9qMFhPLWlZVVJ0M2ticW9wMGJBMU91TW9XbGhOalBISExLd3RvanBFamVlMHoxWmh1RE5RNTFQUHdDUkxROWExZXFrWnFTZTZUWGhqcy15RV9Hd3cyMDRiTjBHWnpYMFV2aEQ2OA?oc=5",
-        "source": "뉴데일리 경기",
-        "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-19T07:37:30.111Z",
+    "fetchedAt": "2026-11-19T08:36:59.612Z",
     "today": "2026-11-19",
     "items": [
       {
