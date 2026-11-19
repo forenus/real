@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T07:07:12.098Z",
+  "generatedAt": "2026-11-19T07:37:30.117Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15787,15 +15787,15 @@
       ]
     },
     "todayDate": "2026-11-19",
-    "lastFetchedAt": "2026-11-19T07:06:42.698Z",
+    "lastFetchedAt": "2026-11-19T07:37:04.647Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 164,
-      "recent24h": 987,
-      "frequent": 91,
-      "new": 43,
-      "fetchedAt": "2026-11-19T07:06:58.451Z"
+      "realtime": 149,
+      "recent24h": 976,
+      "frequent": 81,
+      "new": 35,
+      "fetchedAt": "2026-11-19T07:37:22.293Z"
     },
     "prevDate": "2026-11-18",
     "rows": [
@@ -17773,10 +17773,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 68건에서 89건으로 꾸준히 늘었고, **30일 전보다 13건 증가해 89건**으로 30일 최고치(90건) 부근에 머물러 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 오늘 5건으로 30일 전보다 2건 줄었으며, **4~8건 사이의 적은 물량**에서 횡보하고 있습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,000만 원보다는 크게 높습니다. 10월 28일 15층이 역대 최고인 10억 원에 거래되기도 했습니다. 25평은 최근 30일 2건, **평균 7억 5,000만 원**으로 1년 전 무렵(5억 3,400만 원)보다 올랐지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 68건에서 89건으로 꾸준히 늘었고, **30일 전보다 13건 증가한 89건**으로 30일 최고치(90건, 11-17) 부근에 머물러 있어 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 오늘 5건으로 30일 전보다 2건 줄었으며, 10월 중순 8건을 정점으로 **5건 안팎으로 줄어드는 모습**입니다.",
+      "real": "33평은 최근 30일 6건, 평균 9억 800만 원으로 그전 30일(8억 9,500만 원)과 비슷한 수준이며, **1년 전 무렵 평균 6억 4,000만 원보다 크게 높은 가격대**입니다. 10월 28일 15층이 역대 최고인 10억 원에 거래됐지만 11월 거래는 8억 5,000만~9억 원 선에서 이뤄졌습니다. 25평은 최근 30일 거래가 2건뿐이라 평균이 흔들릴 수 있으나, **평균 7억 5,000만 원으로 1년 전(5억 3,400만 원)보다 높은 수준**을 보이고 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-19T07:07:10.654Z"
+      "generatedAt": "2026-11-19T07:37:28.663Z"
     },
     "history": [
       {
@@ -21838,9 +21838,16 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-19T07:07:11.703Z",
+    "fetchedAt": "2026-11-19T07:37:30.106Z",
     "today": "2026-11-19",
     "items": [
+      {
+        "title": "2031년 목표로 '동탄 트램' 첫 삽…서·남동탄 부동산 기대감",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOUGFZc0ROVWIxT195amxDZzkwTGgwSlIzUFFwQ29adThOUTR1Q2JhX1hlVnlISGdxVk5CRmFTVGtEQ25GdkNaZGFuS0xpWlB4MjkwVGp4YWlVcklUWjhiN9IBeEFVX3lxTE5JaXRwY0luOEMxYXVqTHI4aEl0MmhPWC1qN1BRV3V4ckJPRVFIdDc2d2pmdXpYOVZFSVRscVBJc1ZWaU1XWEw2U1pfbDJtYTEtLW53OFFpeDNZUnB1ODQ2al8wakRqZW5FYXlEZnplMW8xX3MyV2hHXw?oc=5",
+        "source": "뉴시스",
+        "time": "2026-11-04T08:00:00.000Z",
+        "isToday": false
+      },
       {
         "title": "동탄 트램, 첫 삽 떴다… 화성시, 우선시공분 본격 착수",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Od3ZoTzAzeGdYSWlwT1JFQ2dZS1BRQzhtbFY3dlE4bVJjdTNFYkplVVVwMUhVbVl5SU1DeHlHaWV4MUQ1QW9CclB2VFU5NWxhdXVRd2dWUlZ4UlBVVEJrYjNB?oc=5",
@@ -21903,18 +21910,11 @@
         "source": "뉴데일리 경기",
         "time": "2026-10-12T07:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "화성 동탄트램 기술제안서 심의 적격, 계약절차 돌입",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CaFVhT3NlSFJRWXhoUWN6eGt1X0tuR0k1SktwMEJ1UXpKdTA5VS1heDJXcVU5OF9INWpjRWMtN1R1bzdEVlVUSUtVTUpBcFl2S0ZVVjFCbm9vcGV5TmlKN2VR?oc=5",
-        "source": "경인뷰",
-        "time": "2026-10-12T07:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-19T07:07:12.096Z",
+    "fetchedAt": "2026-11-19T07:37:30.111Z",
     "today": "2026-11-19",
     "items": [
       {
