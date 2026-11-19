@@ -851,6 +851,36 @@ button.dong-count:hover { background: var(--primary); color: #fff; }
 .inf-sec li { padding: 5px 0 5px 16px; position: relative; }
 .inf-sec li::before { content: "•"; position: absolute; left: 4px; color: var(--muted); }
 .inf-sub { margin-top: 18px; }
+/* 운영 상태 카드 */
+.inf-kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 6px; }
+.inf-kpi { display: flex; flex-direction: column; gap: 2px; min-width: 0; padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.inf-kpi-label { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.inf-kpi-label i { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.inf-kpi.ok i { background: #12b76a; }
+.inf-kpi.warn i { background: #f79009; }
+.inf-kpi.bad i { background: #d92d20; }
+.inf-kpi.bad { border-color: rgba(217, 45, 32, .4); }
+.inf-kpi b { font-size: 18px; font-variant-numeric: tabular-nums; }
+.inf-kpi small { font-size: 11.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* 기능표·기술 칩 */
+.inf-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.inf-chip { display: inline-block; padding: 1px 8px; border-radius: 6px; font-size: 11.5px; white-space: nowrap; background: rgba(107, 115, 133, .1); color: var(--text); }
+.inf-feat td:nth-child(2) code { white-space: nowrap; }
+.inf-tag.mem { background: rgba(247, 144, 9, .12); color: #b54708; }
+.inf-tag.none { background: rgba(107, 115, 133, .12); color: var(--muted); }
+.inf-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 10px 0 0; font-size: 12px; color: var(--muted); }
+.inf-method { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; font-weight: 700; color: var(--primary); white-space: nowrap; }
+.inf-stack { display: grid; grid-template-columns: 44px 1fr; gap: 8px 10px; margin: 10px 0 0; font-size: 13px; }
+.inf-stack + .inf-sub { margin-top: 22px; }
+@media (max-width: 640px) { .inf-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.inf-stack dt { font-weight: 700; color: var(--primary); padding-top: 1px; }
+.inf-stack dd { margin: 0; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .inf-tag.mem { color: #fdb022; }
+  :root:not([data-theme="light"]) .inf-chip { background: rgba(255, 255, 255, .08); }
+}
+:root[data-theme="dark"] .inf-tag.mem { color: #fdb022; }
+:root[data-theme="dark"] .inf-chip { background: rgba(255, 255, 255, .08); }
 @media (max-width: 1100px) {
   .inf-flow { grid-template-columns: 1fr; }
   .inf-arrow { height: 40px; }

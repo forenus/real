@@ -455,6 +455,8 @@ function toRecord(a) {
 // 수집이 겹치면(자동 + 수동, 버튼 연타) 진행 중인 수집 결과를 함께 기다린다.
 let refreshing = null;
 let lastRefreshAt = 0;
+// 관리자 메뉴 '운영 상태'용 — 메모리에만 둔다(재시작하면 비워짐)
+const runInfo = { startedAt: Date.now(), nextAutoAt: Date.now() + 5000, auto: null, publish: null };
 async function doRefresh() {
   if (refreshing) return refreshing;
   refreshing = refreshOnce().catch(async (e) => {
@@ -730,8 +732,10 @@ async function publishSafe(tag) {
   }
   try {
     const r = await publishPages();
+    runInfo.publish = { at: Date.now(), ok: true, msg: r.pushed ? "GitHub Pages 푸시 완료" : "변경 없음" };
     console.log(`  [게시] ${tag}: ${r.pushed ? "GitHub Pages 푸시 완료" : "변경 없음"}`);
   } catch (e) {
+    runInfo.publish = { at: Date.now(), ok: false, msg: e.message };
     console.log(`  [게시] ${tag} 실패: ${e.message}`);
   }
 }
@@ -934,7 +938,13 @@ const server = http.createServer(async (req, res) => {
       const denied = checkAdminPassword(req);
       if (denied) return send(res, denied.code, { error: denied.error, auth: denied.code === 401 });
     }
-    return send(res, 200, { html: require("./admin-infra").render() });
+    let tunnel = "";
+    try { tunnel = fs.readFileSync(path.join(ROOT, "tunnel-url.txt"), "utf8").trim(); } catch {}
+    return send(res, 200, { html: require("./admin-infra").render({
+      ...runInfo, lastRefreshAt, tunnel, collecting: !!refreshing,
+      online: stats.presence({}).count,
+      guestbook: guestbook.list().total,
+    }) });
   }
 
   // 방명록 반응을 누른 사람 — 브라우저마다 만든 무작위 토큰(형식이 다르면 빈 값)
@@ -1011,11 +1021,14 @@ const server = http.createServer(async (req, res) => {
 // 서버가 켜져 있으면 AUTO_REFRESH_MS 마다 수집해 오늘 스냅샷을 덮어쓰고 공개 페이지를 다시 게시한다.
 async function autoRefresh() {
   const t = todayStr();
+  runInfo.nextAutoAt = Date.now() + AUTO_REFRESH_MS;
   try {
     const r = await doRefresh();
+    runInfo.auto = { at: Date.now(), ok: !r.warning, msg: r.warning || `매매 ${r.fetched ?? 0}건` };
     if (!r.warning) await publishSafe("자동 갱신");
     console.log(`  [자동] ${t} 갱신 완료 — 매매 ${r.fetched ?? 0}건`);
   } catch (e) {
+    runInfo.auto = { at: Date.now(), ok: false, msg: e.message };
     console.log(`  [자동] ${t} 갱신 실패: ${e.message}`);
   }
 }
