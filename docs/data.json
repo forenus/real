@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T13:03:55.743Z",
+  "generatedAt": "2026-11-19T13:15:45.382Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15787,15 +15787,15 @@
       ]
     },
     "todayDate": "2026-11-19",
-    "lastFetchedAt": "2026-11-19T13:03:35.213Z",
+    "lastFetchedAt": "2026-11-19T13:15:27.114Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 117,
-      "recent24h": 914,
-      "frequent": 58,
-      "new": 27,
-      "fetchedAt": "2026-11-19T13:03:49.776Z"
+      "realtime": 119,
+      "recent24h": 911,
+      "frequent": 59,
+      "new": 29,
+      "fetchedAt": "2026-11-19T13:15:39.014Z"
     },
     "prevDate": "2026-11-18",
     "rows": [
@@ -17773,10 +17773,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 68건에서 89건으로 꾸준히 늘었고, **30일 전보다 13건 증가한 89건**으로 30일 최고치(90건) 부근에 머물러 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄었고**, 4~8건 사이에서 소폭 등락하는 수준입니다.",
-      "real": "33평은 **최근 30일 6건, 평균 9억 800만 원**으로 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,000만 원보다는 크게 높습니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했으며, 거래가는 층에 따라 8억 2,000만~10억 원 사이에 분포했습니다. 25평은 **최근 30일 2건, 평균 7억 5,000만 원**으로 1년 전 무렵(5억 3,400만 원)보다 올랐지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 현재 89건으로, **30일 전보다 13건 증가**했습니다. 최근 일주일은 89건 안팎에서 멈춰 있지만 매도 물량이 쌓여 있는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄었고**, 10월 중순 8건 고점 이후 완만히 줄어드는 모습입니다.",
+      "real": "33평은 최근 30일 6건이 **평균 9억 800만 원**에 거래돼 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했으며, 1년 전 무렵 평균 6억 4,000만 원보다는 크게 높습니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했고, 현재 평균 호가는 9억 9,400만 원입니다. 25평은 최근 30일 2건이 **평균 7억 5,000만 원**에 거래됐으나 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-19T13:03:55.419Z"
+      "generatedAt": "2026-11-19T13:15:45.007Z"
     },
     "history": [
       {
@@ -21838,7 +21838,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-19T13:03:07.586Z",
+    "fetchedAt": "2026-11-19T13:14:32.541Z",
     "today": "2026-11-19",
     "items": [
       {
@@ -21914,7 +21914,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-19T13:03:07.672Z",
+    "fetchedAt": "2026-11-19T13:14:33.086Z",
     "today": "2026-11-19",
     "items": [
       {
@@ -21953,6 +21953,13 @@
         "isToday": false
       },
       {
+        "title": "현대건설, 동탄2신도시 A아파트 에어컨 사양 논란…시행·시공 도맡고도 책임 회피",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4yQmdCVGRJNWxZd0x6bzQ2alB5VTVRQXZ0U19ZdEdmQ3hweVdWNzFEaWlTbjBQaGlCNHNPeW9iT254ZXFla190c3pyRFg?oc=5",
+        "source": "아이뉴스24",
+        "time": "2026-11-17T06:29:36.000Z",
+        "isToday": false
+      },
+      {
         "title": "화성 동탄구보건소, 화성소방서와 산후조리원 8곳 소방·안전 합동점검",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBud1U2OTJIQjBWNDhTUENnVlV0SWVoeF90T180cHh3OXBILXBDNXlROS00YWJ4TXJ0OHlOaVBTX0E0a2dXSXYyYWxQN0J3Mm40X3lVdTI2T3NudmFNbG9QSGQwbDc?oc=5",
         "source": "매일일보",
@@ -21978,13 +21985,6 @@
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYVnRzYjR4eFM3SFBFYS05M3l0Vng2aDZFRnJ4YUUzcnhCZ3RSa3pONHVVWjhWX0E1M0Vib1d2a00wcWtlZklROHZWeWJKLWN5V01hNDVPdmxnQ2s?oc=5",
         "source": "경기일보",
         "time": "2026-11-16T06:36:31.000Z",
-        "isToday": false
-      },
-      {
-        "title": "LH 화성동탄2지구 내 '바랑골 느티공원' 국무총리상 수상",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KQS1rNXc2REtVdDlEY21ZcDFZM3FDOWFtZXByTHlnX25iN2FaZ2R4ZXhaQUQzUDZjWW5GVUVrVUpCUlRIbjQ3R2Q4RGhObEN1MXMzelNRZl9zTGp4?oc=5",
-        "source": "뉴스핌",
-        "time": "2026-11-16T05:20:00.000Z",
         "isToday": false
       }
     ]
