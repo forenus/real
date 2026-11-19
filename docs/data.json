@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T10:37:02.055Z",
+  "generatedAt": "2026-11-19T11:07:05.052Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15787,15 +15787,15 @@
       ]
     },
     "todayDate": "2026-11-19",
-    "lastFetchedAt": "2026-11-19T10:36:39.973Z",
+    "lastFetchedAt": "2026-11-19T11:06:38.010Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 106,
-      "recent24h": 934,
-      "frequent": 63,
-      "new": 13,
-      "fetchedAt": "2026-11-19T10:36:55.449Z"
+      "realtime": 111,
+      "recent24h": 931,
+      "frequent": 61,
+      "new": 15,
+      "fetchedAt": "2026-11-19T11:06:56.328Z"
     },
     "prevDate": "2026-11-18",
     "rows": [
@@ -17773,10 +17773,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 **오늘 89건으로 30일 전보다 13건 증가**했고, 11월 17일 30일 최고치 90건에 근접해 있습니다. 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄었고**, 4~8건 사이에서 큰 변화 없이 움직이고 있습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래돼 직전 30일(8억 9,500만 원)과 비슷했고, **1년 전 무렵 평균 6억 4,000만 원보다 크게 높은 수준**입니다. 10월 28일 15층이 역대 최고 10억 원에 거래되기도 했습니다. 25평은 **최근 30일 2건, 평균 7억 5,000만 원**으로 1년 전 무렵(5억 3,400만 원)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 68건에서 89건으로 꾸준히 늘었고, **30일 전보다 13건 증가해 오늘 89건**입니다. 이달 17일 최고치인 90건 근처에 머물러 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 오늘 5건으로 30일 전보다 2건 줄었으며, 10월 중순 8건을 정점으로 **완만하게 감소**했습니다.",
+      "real": "33평은 최근 30일 6건이 **평균 9억 800만 원**에 거래돼 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,000만 원보다는 크게 높습니다. 10월 28일에는 15층이 역대 최고인 10억 원에 거래됐습니다. 25평은 최근 30일 2건이 **평균 7억 5,000만 원**으로 1년 전 무렵(5억 3,400만 원)보다 높지만, 거래가 2건뿐이어서 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-19T10:37:01.254Z"
+      "generatedAt": "2026-11-19T11:07:02.845Z"
     },
     "history": [
       {
@@ -21838,9 +21838,23 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-19T10:07:02.873Z",
+    "fetchedAt": "2026-11-19T11:07:04.392Z",
     "today": "2026-11-19",
     "items": [
+      {
+        "title": "경기도, 외국인노동자 지원센터 중단·동탄트램 지연 비판",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBhWGZ3VFFxV0UyWFZDVUpFdG95Y3BMVUdDMmhDa2Z3X3Z4R2NBczdXVE9kS2ZnTmJTOTZmWW5iUnhSQm00Y0ZGd0dXNUNPWmNqbF81T0ZSUlotNVp6Um52c2RlZ2ZtRW1weElN?oc=5",
+        "source": "한국사회복지저널",
+        "time": "2026-11-19T10:52:57.000Z",
+        "isToday": true
+      },
+      {
+        "title": "신미숙 경기도의원, 중단된 외국인노동자 지원센터·지연된 동탄트램, 도가 약속 이행 책임져야",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5pWnlzZl96RGtxSDAzTW9tNGVMNnNWTnN0SXVXaTRXeTdmUGRsTHhiemF3WGpYeFJuNjRBOUpQX09OLXdyQW5NZEtBczd4TFEtdkZlT0laZXFFZWJlZ2IyNQ?oc=5",
+        "source": "NSP통신",
+        "time": "2026-11-19T10:33:23.000Z",
+        "isToday": true
+      },
       {
         "title": "신미숙 경기도의원, 외국인노동자 지원센터 중단과 동탄트램 지연 지적",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1yYXRMWHV0TFV2NjJhWXM0aXN4M3VpN3dqb1cwdmxKZF94SC14YzZ0VGUySmdvb25wOE5yd1lSU005cXA0LWVFMHN0RldsZ29BWDRaTEs1ZjFqRDdCajFva01lRC0?oc=5",
@@ -21896,27 +21910,20 @@
         "source": "파이낸셜뉴스",
         "time": "2026-11-02T08:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "화성시, 동탄 트램 첫 공정 착수",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9YR01MWmQ0Z0pEc3NJSFpRYjh3Q3kzbGJMamdXS3RZSU5JNkVnVWYyQ3ZaSGZkZERlRWdhbWtyM3FPOEZvRVpnVlBnTFJhR29QWlHSAVNBVV95cUxPWGNzUS1xc2FrTWRKMDFvWE1jTlp3SG94NkFZSjV4Zzd5SE9OZVBoN043bEd3OXNMeFRUWGgtXzdIMVQ2LUNNa3J0aHA3blJaMGlxRQ?oc=5",
-        "source": "서울경제",
-        "time": "2026-11-02T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄트램 2031년 개통 목표…차량계약 관건",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYkJoQml5X2RtQlNyRHNSZ2xRNWhLZ2JMcTRucXV0VU81eFo3TEJkUFdNTm82dW91MGk0em5NYnlYSzNGSzRDVzN3N25OZFlOSDlFemdXVV9YSGxIQzBDMkZrcmJqU01XWVE?oc=5",
-        "source": "OBC 뉴스",
-        "time": "2026-10-14T07:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-19T10:07:02.842Z",
+    "fetchedAt": "2026-11-19T11:07:05.051Z",
     "today": "2026-11-19",
     "items": [
+      {
+        "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
+        "source": "경기신문",
+        "time": "2026-11-19T09:11:32.000Z",
+        "isToday": true
+      },
       {
         "title": "반도체 호황 온기 번진 상권…전국 ‘사장님’ 증가 1위는 화성 동탄구",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBEd19aZU8xUU1tWFctbzJxRV9nVGFMNkhDN0ZMNXhzQXNRX1g1S3N5R1JDX0xtN29PVnBGamVDOEhvaFdPMjFqVmQzbFN6TFpqODdzV1diMEd5WUdKOHhYMDczbnpYR05jT01uMg?oc=5",
@@ -21943,13 +21950,6 @@
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZT1BPbjVja1E3Ykdjc0E0NkRTbGRlcTB6ZnVLbDBNNDV0UEptUWVGUzdYMm12MWRQdHFua1JsdEVwVGFwSEYySUEwN28zRUZXbUlTYVI2MEx0WEg0eGJ3aEpYSm5HbWh5Sl96OUF4T2ZXZw?oc=5",
         "source": "웹이코노미",
         "time": "2026-11-17T15:46:36.000Z",
-        "isToday": false
-      },
-      {
-        "title": "현대건설, 동탄2신도시 A아파트 에어컨 사양 논란…시행·시공 도맡고도 책임 회피",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4yQmdCVGRJNWxZd0x6bzQ2alB5VTVRQXZ0U19ZdEdmQ3hweVdWNzFEaWlTbjBQaGlCNHNPeW9iT254ZXFla190c3pyRFg?oc=5",
-        "source": "아이뉴스24",
-        "time": "2026-11-17T06:29:36.000Z",
         "isToday": false
       },
       {
