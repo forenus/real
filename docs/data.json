@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T13:17:38.323Z",
+  "generatedAt": "2026-11-19T13:47:29.744Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15787,15 +15787,15 @@
       ]
     },
     "todayDate": "2026-11-19",
-    "lastFetchedAt": "2026-11-19T13:17:15.722Z",
+    "lastFetchedAt": "2026-11-19T13:47:02.994Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 118,
-      "recent24h": 909,
-      "frequent": 58,
-      "new": 29,
-      "fetchedAt": "2026-11-19T13:17:32.042Z"
+      "realtime": 119,
+      "recent24h": 907,
+      "frequent": 59,
+      "new": 31,
+      "fetchedAt": "2026-11-19T13:47:22.188Z"
     },
     "prevDate": "2026-11-18",
     "rows": [
@@ -17773,10 +17773,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 68건에서 89건으로 꾸준히 늘었고, **30일 전보다 13건 증가한 89건**으로 30일 최고치(90건, 11월 17일)에 근접해 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 2건 줄어** 4~8건 사이의 적은 물량에서 횡보하고 있습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래되어 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했으며, **1년 전 무렵 평균 6억 4,000만 원보다 크게 높은 수준**입니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **11월 10일 역대 최고 7억 9,000만 원**이 나왔지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가(25평 8억 3,600만 원, 33평 9억 9,400만 원)가 최근 실거래가보다 높게 형성되어 있습니다.",
+      "listing": "33평 매물은 12주 전 68건에서 꾸준히 늘어 오늘 89건으로, **30일 전보다 13건 증가**했으며 최근 30일 최고치(90건)에 근접해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 최근 1주간은 89건에서 변동이 없어 증가세가 다소 멈춘 모습입니다. 25평은 **오늘 5건으로 30일 전보다 2건 줄어** 4~8건 사이에서 소폭 등락하고 있습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래되어 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했고, **1년 전 무렵 평균 6억 4,000만 원 대비 크게 오른** 상태입니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했지만, 이후 11월 거래는 8억 5,000만~9억 원 선에서 이뤄졌습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 5억 3,400만 원보다 높아졌으나**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-19T13:17:38.005Z"
+      "generatedAt": "2026-11-19T13:47:28.390Z"
     },
     "history": [
       {
@@ -21838,9 +21838,16 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-19T13:16:23.935Z",
+    "fetchedAt": "2026-11-19T13:47:29.739Z",
     "today": "2026-11-19",
     "items": [
+      {
+        "title": "경기도의회 신미숙 의원, 외국인노동자 지원센터 중단·동탄트램 지연 문제 지적",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SVXIyUlY4VGJnRXRLUXZXYWRkSks1dUtyTFQ2V2ZCbE1GUW5kYkNTZ0FPQ2dVZERPbnR1Smpfa25rcm9IcDROZnhGWkFWY20tS1BBRTlneUNMT05YbXp5Rmw1LWx1SjFneF96eEFDQ18zQQ?oc=5",
+        "source": "웹이코노미",
+        "time": "2026-11-19T13:20:25.000Z",
+        "isToday": true
+      },
       {
         "title": "경기도, 외국인노동자 지원센터 중단·동탄트램 지연 비판",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBhWGZ3VFFxV0UyWFZDVUpFdG95Y3BMVUdDMmhDa2Z3X3Z4R2NBczdXVE9kS2ZnTmJTOTZmWW5iUnhSQm00Y0ZGd0dXNUNPWmNqbF81T0ZSUlotNVp6Um52c2RlZ2ZtRW1weElN?oc=5",
@@ -21870,9 +21877,16 @@
         "isToday": true
       },
       {
-        "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
-        "source": "동아일보",
+        "title": "경기도의회, 17년 기다린 동탄트램…남은 과제는 적기 개통",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
+        "source": "서울경제TV",
+        "time": "2026-11-04T09:30:04.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄 트램 우선시공분 착수…\"17년 기다림 끝에 첫 삽\"",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIVkFuN3VYUzU5WUZNMDd5clJIUF96eXdqaGQxTFc4bE5SamNNb05nbUJrNEVpbDR3YnUzcWRWcnJSWnFvcXBscHFuOEpueEdEMkwtSU0xMWQteE9kQVVLSVl4TFhjd0RUSUJn?oc=5",
+        "source": "철도경제신문",
         "time": "2026-11-04T08:00:00.000Z",
         "isToday": false
       },
@@ -21891,30 +21905,16 @@
         "isToday": false
       },
       {
-        "title": "동탄 트램, 첫 삽 떴다… 화성시, 우선시공분 본격 착수",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Od3ZoTzAzeGdYSWlwT1JFQ2dZS1BRQzhtbFY3dlE4bVJjdTNFYkplVVVwMUhVbVl5SU1DeHlHaWV4MUQ1QW9CclB2VFU5NWxhdXVRd2dWUlZ4UlBVVEJrYjNB?oc=5",
-        "source": "경기신문",
+        "title": "17년 기다린 동탄 트램 첫 삽…31.5㎞·정거장 33곳 내년 8월 본공사",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53bVp2OG5ZUXFHYjBjNk1XNnljRDhuNERVVWpFeFBRRU83X3g1RWUyblNwVnN2ZjcwU2M5c3VQY1RwN2dWeVFwSGlxMmM2OFJWemVKblVJUjVHVWlOOGFid0hybFQwS2xqMGNBRG9kV1pMSDFKS0HSAWZBVV95cUxObmlzMEF3SE56bjczWGlwdWkwUFd3TzdMT21sV2FYdGpWTW91ZzF2ZUZpd2JjUW1lTTRnVHl4ZlE2dTZtelRVa0JDV0c0RG56VEJNT01XOGlNakNEX2oxa0pSTnQ0clE?oc=5",
+        "source": "동아일보",
         "time": "2026-11-03T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성시, 동탄트램 일부구간 공사 착수…2027년 본공사 착공",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9kclZ5RU0wZktkRmF1RkgtdDRSWDY0cGRCbGptY3JCTGszRUFxTi1Jbzk1S0xhaTYxZDd1QkhaZ1UxblF4MnNua2hTZS1hOUpL?oc=5",
-        "source": "문화일보",
-        "time": "2026-11-03T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄 트램 17년만에 첫삽",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmMi1fNGw5b1p4ZXpmS2RhNEZua1htVG9XbHVfdzh1RFBIWjdwZF9qdlFKQ0NGaXMwNDQtTTM0aTR5ZFNEOHhTT2o2SHZLMW1sZThtai1yRFk?oc=5",
-        "source": "매일경제",
-        "time": "2026-11-02T08:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-19T13:16:24.042Z",
+    "fetchedAt": "2026-11-19T13:47:29.744Z",
     "today": "2026-11-19",
     "items": [
       {
