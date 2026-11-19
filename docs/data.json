@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T22:47:00.579Z",
+  "generatedAt": "2026-11-19T23:17:07.999Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-20",
-    "lastFetchedAt": "2026-11-19T22:46:41.297Z",
+    "lastFetchedAt": "2026-11-19T23:16:49.151Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 42,
+      "realtime": 46,
       "recent24h": 912,
-      "frequent": 27,
-      "new": 9,
-      "fetchedAt": "2026-11-19T22:46:51.346Z"
+      "frequent": 29,
+      "new": 10,
+      "fetchedAt": "2026-11-19T23:17:01.686Z"
     },
     "prevDate": "2026-11-19",
     "rows": [
@@ -17778,10 +17778,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 70건에서 89건으로 꾸준히 늘었고, **30일 전보다 11건 증가한 89건**으로 30일 최고치(90건) 부근에 머물러 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 3건 줄어** 7건 안팎이던 시기보다 다소 소진된 모습입니다. 두 평형 모두 최근 일주일간은 변동 없이 횡보하고 있습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했으며, 1년 전 무렵(6억 4,000만 원)보다는 크게 높습니다. 25평은 최근 30일 2건, 평균 7억 5,000만 원으로 1년 전(5억 3,400만 원)보다 높고 11월 10일 7억 9,000만 원으로 역대 최고를 기록했습니다. 다만 25평은 **거래가 2건뿐이라** 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주간 70건에서 **89건으로 꾸준히 늘어** 30일 전보다 11건 많고, 11월 17일에는 30일 최고치인 90건까지 올랐습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **5건으로 30일 전보다 3건 줄었고**, 7일 전과 같은 수준에서 소폭 소진되는 모습입니다.",
+      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,000만 원보다 크게 높습니다. 25평은 최근 30일 2건, 평균 7억 5,000만 원으로 11월 10일 **역대최고 7억 9,000만 원**이 나왔지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가(25평 8억 3,600만 원, 33평 9억 9,400만 원)가 최근 실거래가보다 높게 형성돼 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-19T22:46:57.454Z"
+      "generatedAt": "2026-11-19T23:17:07.143Z"
     },
     "history": [
       {
@@ -21237,7 +21237,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-19T22:47:00.577Z",
+    "fetchedAt": "2026-11-19T23:17:07.884Z",
     "today": "2026-11-20",
     "items": [
       {
@@ -21313,7 +21313,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-19T21:46:56.756Z",
+    "fetchedAt": "2026-11-19T23:17:07.999Z",
     "today": "2026-11-20",
     "items": [
       {
@@ -21345,31 +21345,10 @@
         "isToday": false
       },
       {
-        "title": "[LH] 3기 신도시 레미콘 품질관리 강화…민간참여 공공주택 2만4000가구 추진…화성동탄2 바랑골 느티공원 국무총리상",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZT1BPbjVja1E3Ykdjc0E0NkRTbGRlcTB6ZnVLbDBNNDV0UEptUWVGUzdYMm12MWRQdHFua1JsdEVwVGFwSEYySUEwN28zRUZXbUlTYVI2MEx0WEg0eGJ3aEpYSm5HbWh5Sl96OUF4T2ZXZw?oc=5",
-        "source": "웹이코노미",
-        "time": "2026-11-17T15:46:36.000Z",
-        "isToday": false
-      },
-      {
-        "title": "현대건설, 동탄2신도시 A아파트 에어컨 사양 논란…시행·시공 도맡고도 책임 회피",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4yQmdCVGRJNWxZd0x6bzQ2alB5VTVRQXZ0U19ZdEdmQ3hweVdWNzFEaWlTbjBQaGlCNHNPeW9iT254ZXFla190c3pyRFg?oc=5",
-        "source": "아이뉴스24",
-        "time": "2026-11-17T06:29:36.000Z",
-        "isToday": false
-      },
-      {
         "title": "화성 동탄구보건소, 화성소방서와 산후조리원 8곳 소방·안전 합동점검",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBud1U2OTJIQjBWNDhTUENnVlV0SWVoeF90T180cHh3OXBILXBDNXlROS00YWJ4TXJ0OHlOaVBTX0E0a2dXSXYyYWxQN0J3Mm40X3lVdTI2T3NudmFNbG9QSGQwbDc?oc=5",
         "source": "매일일보",
         "time": "2026-11-17T01:47:50.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄구보건소, 산후조리원 8곳 소방·안전 합동점검 실시",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peTd3dWRUaUh1WmZ2OFppdUxzYTNkM3ZSZEFaTEFKc3dvaFdzZWlsenRwaVJFcGpWeko2dXo1WWZTMko1SEo1dGhxbmw1ZXZkRFB3RU1XTmszRUYzTXlHWmR3?oc=5",
-        "source": "경인미래신문",
-        "time": "2026-11-16T22:01:52.000Z",
         "isToday": false
       },
       {
@@ -21380,10 +21359,31 @@
         "isToday": false
       },
       {
-        "title": "화성 동탄 이어 덕절리 물류창고 갈등…민선9기 화성·오산, 상생 해법 찾나",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBya01pcnlIVXNpOTVPT2lXTjFMalM0OEVsTWVYandULXdaeXRSR3poS2gzRm5qRjlHcGNsMjJVTVF0LV81ZFlWZHREM0xweFNHU0FB0gFTQVVfeXFMUHJrTWlyeUhVc2k5NU9PaVdOMUxqUzQ4RWxNZVhqd1Qtd1p5dFJHemhLaDNGbmpGOUdwY2wyMlVNUXQtXzVkWVZkdEQzTHB4U0dTQUE?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-11-16T08:09:48.000Z",
+        "title": "LH ‘화성동탄2 바랑골 느티공원’, 대한민국 조경대상 국무총리상 수상",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zUElBRW5VWU4tRFhsd2xYNXNlUFhVOEVIbXMwWjNXYW11Z0s2ZGUwOXhtRVp5MXlQWWk4c2gxVE1TVk5PanlDRVVVOGxybTZjS3JsRDA3cnM4LWc?oc=5",
+        "source": "경기일보",
+        "time": "2026-11-16T07:13:52.000Z",
+        "isToday": false
+      },
+      {
+        "title": "수원 영통·화성 동탄 ‘날았다’…경기도 집값 상승률, 서울 앞질렀다",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYVnRzYjR4eFM3SFBFYS05M3l0Vng2aDZFRnJ4YUUzcnhCZ3RSa3pONHVVWjhWX0E1M0Vib1d2a00wcWtlZklROHZWeWJKLWN5V01hNDVPdmxnQ2s?oc=5",
+        "source": "경기일보",
+        "time": "2026-11-16T06:36:31.000Z",
+        "isToday": false
+      },
+      {
+        "title": "LH 화성동탄2지구 내 '바랑골 느티공원' 국무총리상 수상",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KQS1rNXc2REtVdDlEY21ZcDFZM3FDOWFtZXByTHlnX25iN2FaZ2R4ZXhaQUQzUDZjWW5GVUVrVUpCUlRIbjQ3R2Q4RGhObEN1MXMzelNRZl9zTGp4?oc=5",
+        "source": "뉴스핌",
+        "time": "2026-11-16T05:20:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "오산시, 서동탄역 인근 급전구분소 이전 협의…대체지는 미정",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOd0JHZmdMTnRMRGZVa1BmQ2VkRE9vM1FYMWxmX01GNEZWeWloaDFjeUVtc0IwWVJfc1RQWjViVnlmclV5ZDFQN0hJVE82emU2NWVFT3VaTGhZclNnY0VNUTZ1QzEydEVPQlBzY245TdIBc0FVX3lxTFB1VnpzZjZPQVh2cUtkbHhTVjRDRjJvUzhGQjg2NkNuVDNoWEk2OG9pS3dKLWgtMWRESnNZUTRmRFJjb3p6VExiNlFkTkF4eHpfd0hPaUI3Umw5TzhoUjlLOGJ6U29oRlRQRUp0WUJBblQ5SWM?oc=5",
+        "source": "뉴스웍스",
+        "time": "2026-11-16T04:33:15.000Z",
         "isToday": false
       }
     ]
