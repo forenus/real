@@ -852,7 +852,7 @@ button.dong-count:hover { background: var(--primary); color: #fff; }
 .inf-sec li::before { content: "•"; position: absolute; left: 4px; color: var(--muted); }
 .inf-sub { margin-top: 18px; }
 /* 운영 상태 카드 */
-.inf-kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 6px; }
+.inf-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 6px; }
 .inf-kpi { display: flex; flex-direction: column; gap: 2px; min-width: 0; padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .inf-kpi-label { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
 .inf-kpi-label i { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
@@ -875,15 +875,43 @@ button.dong-count:hover { background: var(--primary); color: #fff; }
 @media (max-width: 640px) { .inf-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .inf-stack dt { font-weight: 700; color: var(--primary); padding-top: 1px; }
 .inf-stack dd { margin: 0; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .inf-tag.mem { color: #fdb022; }
-  :root:not([data-theme="light"]) .inf-chip { background: rgba(255, 255, 255, .08); }
-}
-:root[data-theme="dark"] .inf-tag.mem { color: #fdb022; }
-:root[data-theme="dark"] .inf-chip { background: rgba(255, 255, 255, .08); }
 @media (max-width: 1100px) {
   .inf-flow { grid-template-columns: 1fr; }
   .inf-arrow { height: 40px; }
   .inf-arrow::before { left: 50%; right: auto; top: 4px; bottom: 10px; border-top: 0; border-left: 2px dashed var(--border); }
   .inf-arrow::after { right: auto; left: calc(50% - 4px); top: auto; bottom: 2px; border: 5px solid transparent; border-top: 7px solid var(--muted); }
 }
+
+/* ---------- 관리자: 개발구성 (시스템 수치 + 구성도) ---------- */
+.dg-banner { margin-bottom: 8px; padding: 14px 24px; border-radius: 16px; background: linear-gradient(90deg, #111827, #1f2a37 70%, #0f3b3a); color: #fff; }
+.dg-banner h2 { margin: 0; font-size: 18px; color: #fff; }
+.dg-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; padding: 0 4px; font-size: 12.5px; color: var(--muted); }
+.dg-bar b { color: var(--text); margin-right: 6px; }
+.dg-actions { display: flex; gap: 6px; }
+.dg-actions .btn { padding: 5px 12px; font-size: 12.5px; }
+.dg-kpis { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+.dg-kpi { display: flex; flex-direction: column; gap: 4px; min-width: 0; padding: 16px 16px 14px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.dg-kpi b { font-size: 21px; letter-spacing: -.01em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.dg-kpi small { font-size: 11.5px; line-height: 1.4; color: var(--muted); }
+@media (max-width: 1100px) { .dg-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .dg-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .dg-kpi b { font-size: 18px; } }
+.dg-wrap { overflow-x: auto; margin-top: 8px; -webkit-overflow-scrolling: touch; }
+.dg-svg { display: block; width: 100%; min-width: 960px; height: auto; font-family: inherit; }
+.dg-node rect { stroke-width: 1.6; }
+.dg-node.user rect { fill: #eef1ff; stroke: #a9b4f5; }
+.dg-node.net rect { fill: #e8f7f2; stroke: #86d0b6; }
+.dg-node.app rect { fill: #f3edff; stroke: #b69cf0; }
+.dg-node.data rect { fill: #fff5e6; stroke: #efbe74; }
+.dg-node.plain rect { fill: var(--surface); stroke: #d3d6dd; }
+.dg-node.ext rect { fill: #eef4fc; stroke: #a6c1e8; }
+.dg-group { fill: rgba(140, 125, 100, .06); stroke: #a8a299; stroke-width: 1.6; stroke-dasharray: 8 6; }
+.dg-title { font-size: 18px; font-weight: 700; fill: var(--text); }
+.dg-gtitle { font-size: 19px; font-weight: 700; fill: var(--text); }
+.dg-sub { font-size: 14px; fill: var(--muted); }
+.dg-label { font-size: 13px; font-weight: 600; fill: var(--muted); paint-order: stroke; stroke: var(--surface); stroke-width: 4px; stroke-linejoin: round; }
+.dg-label.accent { fill: #0f9f7a; }
+.dg-edge { fill: none; stroke: #6b7385; stroke-width: 2; stroke-linejoin: round; }
+.dg-edge.accent { stroke: #12a37f; }
+.dg-edge.dash { stroke-dasharray: 6 5; }
+.dg-head { fill: #6b7385; }
+.dg-head.accent { fill: #12a37f; }

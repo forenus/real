@@ -111,19 +111,133 @@ const kpi = (label, value, sub, state = "") =>
   `<div class="inf-kpi ${state}"><span class="inf-kpi-label">${state ? `<i aria-hidden="true"></i>` : ""}${esc(label)}</span>` +
   `<b>${esc(value)}</b><small title="${esc(sub || "")}">${esc(sub || "")}</small></div>`;
 
+// ---------- 개발구성: 시스템 수치 + 한눈에 보는 구성도 ----------
+const os = require("os");
+const fmtBytes = (b) => (b >= 1024 ** 3 ? `${(b / 1024 ** 3).toFixed(2)} GB` : b >= 1024 ** 2 ? `${(b / 1024 ** 2).toFixed(1)} MB` : `${Math.max(1, Math.round(b / 1024))} KB`);
+const fullClock = (ms) => new Date(ms).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" });
+
+// 데이터 파일(JSON) — 설정·패키지 파일은 빼고 센다
+function dataFiles() {
+  const skip = new Set(["package.json", "package-lock.json", "manifest.json", "config.json"]);
+  const out = [];
+  for (const dir of ["", "viewer"]) {
+    let names = [];
+    try { names = fs.readdirSync(path.join(ROOT, dir)); } catch {}
+    for (const n of names) {
+      if (!n.endsWith(".json") || (!dir && skip.has(n))) continue;
+      try { out.push(fs.statSync(path.join(ROOT, dir, n)).size); } catch {}
+    }
+  }
+  return { count: out.length, bytes: out.reduce((a, b) => a + b, 0) };
+}
+function guestbookCounts() {
+  try {
+    const { total, list } = require("./guestbook").list();
+    let replies = 0, reacts = 0;
+    for (const x of list) {
+      replies += (x.replies || []).length;
+      for (const y of [x, ...(x.replies || [])]) for (const r of y.reacts || []) reacts += r.n;
+    }
+    return { total, replies, reacts };
+  } catch { return { total: 0, replies: 0, reacts: 0 }; }
+}
+
+const sysCard = (value, label) => `<div class="dg-kpi"><b>${esc(value)}</b><small>${esc(label)}</small></div>`;
+function sysCards(st) {
+  const up = process.uptime() * 1000;
+  const data = dataFiles();
+  let disk = null;
+  try { const s = fs.statfsSync(ROOT); disk = { free: s.bavail * s.bsize, total: s.blocks * s.bsize }; } catch {}
+  const memTotal = os.totalmem(), memUsed = memTotal - os.freemem(), rss = process.memoryUsage().rss;
+  const gb = guestbookCounts();
+  return `<div class="dg-kpis">` +
+    sysCard(span(up), `앱 가동 시간 (마지막 재시작 ${fullClock(Date.now() - up)})`) +
+    sysCard(fmtBytes(data.bytes), `데이터 크기 (JSON 파일 ${data.count}개)`) +
+    sysCard(disk ? fmtBytes(disk.free) : "–", disk ? `디스크 남은 공간 (전체 ${fmtBytes(disk.total)})` : "디스크 남은 공간") +
+    sysCard(fmtBytes(memUsed), `메모리 사용 (전체 ${fmtBytes(memTotal)}, 앱 ${fmtBytes(rss)})`) +
+    sysCard(`${gb.total}개`, `방명록 (댓글 ${gb.replies} · 반응 ${gb.reacts})`) +
+    sysCard(`${(st && st.online) || 0}명`, "지금 접속자 (최근 1분 신호)") +
+    `</div>`;
+}
+
+// 구성도 — SVG 한 장(가로 1280 기준). 좁은 화면에서는 가로로 밀어서 본다.
+function diagram() {
+  const data = dataFiles();
+  const up = span(process.uptime() * 1000);
+  const T = (x, y, cls, s) => `<text x="${x}" y="${y}" class="${cls}">${esc(s)}</text>`;
+  const box = (x, y, w, h, cls, icon, title, lines) =>
+    `<g class="dg-node ${cls}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" />` +
+    T(x + 20, y + 33, "dg-title", `${icon} ${title}`) +
+    lines.map((l, i) => T(x + 20, y + 58 + i * 22, "dg-sub", l)).join("") + `</g>`;
+  // 꺾인 화살표: pts = [[x,y],...], 마지막 점에 화살촉
+  const edge = (pts, cls = "") =>
+    `<polyline class="dg-edge ${cls}" points="${pts.map((p) => p.join(",")).join(" ")}" marker-end="url(#dg-arrow${cls.includes("accent") ? "-accent" : ""})" />`;
+  const label = (x, y, s, anchor = "start", cls = "") => `<text x="${x}" y="${y}" text-anchor="${anchor}" class="dg-label ${cls}">${esc(s)}</text>`;
+
+  return `<div class="dg-wrap"><svg class="dg-svg" viewBox="0 0 1280 680" role="img" aria-label="사이트 구성도: 사용자는 GitHub Pages 의 공개 화면과 Cloudflare 터널을 거친 PC 의 Node.js 서버를 쓰고, 서버는 JSON 파일에 저장하며 네이버·호갱노노를 수집하고 Claude API 와 Gmail 을 호출한다">
+  <defs>
+    <marker id="dg-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-head" /></marker>
+    <marker id="dg-arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-head accent" /></marker>
+  </defs>
+
+  <rect x="550" y="30" width="440" height="635" rx="18" class="dg-group" />
+  ${T(575, 68, "dg-gtitle", "💻 내 PC · Windows")}
+  ${T(575, 92, "dg-sub", "D:\\ANTI\\real · 꺼지면 실시간 기능이 멈춤")}
+
+  ${box(20, 270, 200, 120, "user", "👤", "사용자", ["PC · 휴대폰 브라우저", "홈 화면 앱(PWA)", "대시보드·방명록·문의"])}
+  ${box(260, 110, 240, 120, "net", "🌐", "Cloudflare 터널", ["무료 · *.trycloudflare.com", "실행마다 주소가 바뀜", "→ data.json 에 기록"])}
+  ${box(260, 420, 240, 110, "plain", "🐙", "GitHub Pages", ["forenus.github.io/real", "공개 화면 + data.json", "소스 코드 저장소(공개)"])}
+
+  ${box(575, 115, 390, 90, "net", "🔒", "cloudflared (tunnel.js)", ["PC 서버를 https 로 내보냄 · 끊기면 재연결"])}
+  ${box(575, 245, 390, 110, "app", "⚙️", "Node.js 앱 (server.js)", ["API · 30분 자동 수집 · 게시 · 방명록", `Node ${process.version} · 포트 5173 · 가동 ${up}`])}
+  ${box(575, 395, 390, 100, "data", "🗄️", "JSON 파일 (DB 없음)", [`매물 이력·방명록·통계·실거래 (${fmtBytes(data.bytes)})`, "비밀값 secret·mail 은 GitHub 에 안 올림"])}
+  ${box(575, 540, 390, 95, "plain", "🕒", "작업 스케줄러 · 10분마다", ["서버·터널이 꺼져 있으면 다시 실행", "로그인할 때 자동 시작"])}
+
+  ${box(1040, 60, 220, 120, "ext", "🏠", "수집 대상", ["네이버 부동산 · 호갱노노", "국토부 실거래", "Google 뉴스 RSS"])}
+  ${box(1040, 260, 220, 105, "ext", "🤖", "Claude API", ["추이 해설 (Opus 5.5)", "방명록 검사 (Haiku 5.5)"])}
+  ${box(1040, 430, 220, 105, "ext", "✉️", "Gmail SMTP", ["문의 · 방명록 알림 메일", "nodemailer"])}
+
+  ${edge([[220, 305], [240, 305], [240, 167], [258, 167]])}
+  ${label(234, 236, "실시간 API", "end")}
+  ${edge([[220, 355], [240, 355], [240, 475], [258, 475]])}
+  ${label(234, 420, "공개 화면 · HTTPS", "end")}
+  ${edge([[500, 160], [573, 160]])}
+  ${label(537, 150, "터널", "middle")}
+  ${edge([[770, 205], [770, 243]])}
+  ${label(782, 229, "localhost:5173")}
+  ${edge([[770, 355], [770, 393]])}
+  ${label(782, 379, "읽기 · 쓰기")}
+  ${edge([[575, 330], [530, 330], [530, 475], [502, 475]], "accent")}
+  ${label(524, 402, "30분마다 git push", "end", "accent")}
+  ${edge([[965, 587], [985, 587], [985, 340], [967, 340]], "dash")}
+  ${label(979, 521, "꺼지면 다시 실행", "end")}
+  ${edge([[965, 265], [1000, 265], [1000, 120], [1038, 120]])}
+  ${label(1046, 212, "Playwright 브라우저 수집")}
+  ${edge([[965, 290], [1010, 290], [1010, 312], [1038, 312]])}
+  ${edge([[965, 315], [1020, 315], [1020, 482], [1038, 482]])}
+  ${label(1046, 404, "알림 메일")}
+</svg></div>`;
+}
+
+function devSection(st) {
+  return `<div class="dg-banner"><h2>개발구성</h2></div>
+<div class="dg-bar"><span><b>조회 시각</b> ${esc(fullClock(Date.now()))}</span>
+  <span class="dg-actions"><button type="button" class="btn adm-reload">새로 고침</button><button type="button" class="btn adm-lock">🔒 잠그기</button></span></div>
+${sysCards(st)}
+<section class="card"><h2>한눈에 보는 구성도</h2>${diagram()}</section>`;
+}
+
 function statusCards(st) {
   if (!st) return `<p class="hint">운영 상태를 읽지 못했습니다.</p>`;
   const now = Date.now();
   const { auto, publish: pub } = st;
   return `<div class="inf-kpis">` +
-    kpi("서버", "실행 중", `${span(now - st.startedAt)}째 · ${clock(st.startedAt)} 시작`, "ok") +
     (st.collecting
       ? kpi("마지막 자동 수집", "지금 수집 중…", auto ? `직전: ${clock(auto.at)} · ${auto.msg}` : "몇 분 걸립니다", "warn")
       : kpi("마지막 자동 수집", auto ? ago(auto.at) : "아직 없음", auto ? `${clock(auto.at)} · ${auto.msg}` : "서버 시작 직후 한 번 돕니다", auto ? (auto.ok ? "ok" : "bad") : "warn")) +
     kpi("다음 자동 수집", st.nextAutoAt > now ? `${span(st.nextAutoAt - now)} 뒤` : "곧", clock(st.nextAutoAt)) +
     kpi("마지막 게시", pub ? ago(pub.at) : "아직 없음", pub ? `${clock(pub.at)} · ${pub.msg}` : "자동 수집 뒤 게시합니다", pub ? (pub.ok ? "ok" : "bad") : "warn") +
     kpi("터널", st.tunnel ? "연결됨" : "주소 없음", st.tunnel ? st.tunnel.replace(/^https:\/\//, "") : "tunnel.js 를 확인하세요", st.tunnel ? "ok" : "bad") +
-    kpi("지금 접속자 · 방명록", `${st.online ?? 0}명 · ${st.guestbook ?? 0}개`, "접속자는 최근 1분 신호 기준") +
     `</div>`;
 }
 
@@ -143,7 +257,7 @@ function render(st) {
     `<tr><td><code>${esc(u)}</code></td><td><span class="inf-method">${esc(m)}</span></td><td>${esc(what)}</td>` +
     `<td><span class="inf-tag ${AUTH[a][1]}">${esc(AUTH[a][0])}</span></td></tr>`).join("");
 
-  return `
+  return `${devSection(st)}
 <section class="card">
   <div class="table-head"><h2>운영 상태</h2><span class="dates">${esc(clock(Date.now()))} 기준 · 메뉴를 다시 열면 새로 읽습니다</span></div>
   ${statusCards(st)}

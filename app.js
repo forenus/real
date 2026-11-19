@@ -1618,6 +1618,11 @@ async function loadAdmin(msg) {
   lockAdmin(false);
 }
 $("adm-login").addEventListener("click", () => loadAdmin());
+// 개발구성 화면의 새로 고침·잠그기
+$("adm-body").addEventListener("click", (e) => {
+  if (e.target.closest(".adm-reload")) loadAdmin();
+  else if (e.target.closest(".adm-lock")) { saveAdminPw(""); lockAdmin(true); setStatus("관리자 메뉴를 잠갔습니다.", "ok"); }
+});
 
 function stBars(box, entries, total) {
   if (!entries.length) { box.innerHTML = `<p class="empty-sm">아직 기록이 없습니다.</p>`; return; }
