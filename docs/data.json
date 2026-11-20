@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T10:46:54.566Z",
+  "generatedAt": "2026-11-20T11:17:01.056Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-20",
-    "lastFetchedAt": "2026-11-20T10:46:33.596Z",
+    "lastFetchedAt": "2026-11-20T11:16:44.152Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
       "realtime": 101,
-      "recent24h": 576,
-      "frequent": 55,
-      "new": 19,
-      "fetchedAt": "2026-11-20T10:46:47.028Z"
+      "recent24h": 571,
+      "frequent": 56,
+      "new": 17,
+      "fetchedAt": "2026-11-20T11:16:54.790Z"
     },
     "prevDate": "2026-11-19",
     "rows": [
@@ -17778,10 +17778,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 70건에서 89건으로 꾸준히 늘었고, **30일 전보다 11건 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 최근 1주는 89건에서 변동이 없어 증가세가 잠시 멈춘 모습입니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로, 30일 전보다 2건 적습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래되어 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했으며, **1년 전 무렵 평균 6억 4,000만 원 대비 크게 오른** 상태입니다. 10월 28일에는 15층이 **역대 최고 10억 원**에 거래됐습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 무렵(5억 3,400만 원)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 70건에서 89건으로 꾸준히 늘었고, **30일 전보다 11건 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 최근 1주는 89건으로 변동이 없어 증가세가 잠시 멈춘 모습입니다. 25평은 4~8건 사이에서 오르내리며 **오늘 6건으로 횡보** 중입니다.",
+      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 그전 30일(8억 9,500만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,000만 원보다 크게 높습니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **11월 10일 7억 9,000만 원 최고가**가 나왔지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-20T10:46:53.258Z"
+      "generatedAt": "2026-11-20T11:17:00.114Z"
     },
     "history": [
       {
@@ -21717,7 +21717,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-20T10:46:54.558Z",
+    "fetchedAt": "2026-11-20T11:17:01.056Z",
     "today": "2026-11-20",
     "items": [
       {
@@ -21793,12 +21793,12 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-20T10:46:54.565Z",
+    "fetchedAt": "2026-11-20T11:17:00.963Z",
     "today": "2026-11-20",
     "items": [
       {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jNGFmbE1rbmEtaWR5bk4tZ1FUWDFaa3Vha3k2eElpVkdQWk9wTHMyTkczNVlqVUlSZ0FxdGV0cVFDcnNwNWFDWnRUb3MwRkRFYlZKY09GLVhWelQ5d3Qw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
         "isToday": false
