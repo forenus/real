@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T06:16:57.903Z",
+  "generatedAt": "2026-11-20T06:46:49.928Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-20",
-    "lastFetchedAt": "2026-11-20T06:16:44.105Z",
+    "lastFetchedAt": "2026-11-20T06:46:34.351Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 107,
-      "recent24h": 573,
-      "frequent": 56,
-      "new": 27,
-      "fetchedAt": "2026-11-20T06:16:52.497Z"
+      "realtime": 111,
+      "recent24h": 568,
+      "frequent": 61,
+      "new": 28,
+      "fetchedAt": "2026-11-20T06:46:43.147Z"
     },
     "prevDate": "2026-11-19",
     "rows": [
@@ -17778,10 +17778,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 70건에서 **89건까지 꾸준히 늘었고**, 30일 전보다 11건 많아 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 오늘 5건으로 30일 전보다 3건 줄었으며, 7주 전 7건을 정점으로 **완만히 감소하는 흐름**입니다. 다만 25평은 물량 자체가 적어 변동 폭이 작습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 1년 전 무렵 평균 6억 4,000만 원보다 크게 높고, 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 무렵 5억 3,400만 원보다 높으며, 11월 10일 **7억 9,000만 원 역대 최고**가 나왔습니다. 다만 25평은 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 70건에서 89건으로 꾸준히 늘었고, **30일 전보다 11건 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 최근 일주일은 89건 안팎에서 횡보하고 있습니다. 25평은 **30일 전보다 3건 줄어든 5건**으로, 7건 수준에서 점차 소진되는 모습입니다.",
+      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 직전 30일(8억 9,500만 원)과 비슷한 수준을 유지했으며, 1년 전 무렵(6억 4,000만 원)보다는 크게 높습니다. 10월 28일 15층 10억 원으로 역대 최고가가 나왔습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 5억 3,400만 원 대비 높아졌지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-20T06:16:57.587Z"
+      "generatedAt": "2026-11-20T06:46:47.802Z"
     },
     "history": [
       {
@@ -18557,9 +18557,105 @@
       "todayDate": "2026-11-20",
       "prevDate": "2026-11-19",
       "pyeong": 33,
-      "added": [],
-      "sold": [],
+      "added": [
+        {
+          "no": "2663154791",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "고/15",
+          "dir": "남서향",
+          "confirm": "20261120",
+          "desc": "84A 로얄층 입주가능 시AC3대 ",
+          "bldg": "487동",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-11-20",
+          "days": 0,
+          "beforeStart": false
+        }
+      ],
+      "sold": [
+        {
+          "no": "2660837625",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "13/15",
+          "dir": "남서향",
+          "confirm": "20261110",
+          "desc": "치동천로얄동,최고뷰,시.에3대.주인거주,입주협의",
+          "bldg": "487동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-11-10",
+          "days": 9,
+          "beforeStart": false
+        }
+      ],
       "relisted": [
+        {
+          "before": {
+            "no": "2662808446",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "4/25",
+            "dir": "남서향",
+            "confirm": "20261119",
+            "desc": "A타입. 후문인접동. 28.1월중순만기. 조용한 단지뷰. ",
+            "bldg": "471동",
+            "realtor": "포레너스대표공인중개사사무소",
+            "firstSeen": "2026-11-18",
+            "days": 1,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663152255",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "4/25",
+            "dir": "남서향",
+            "confirm": "20261120",
+            "desc": "84A 전세39900만원승계 28년1월입주가능 ",
+            "bldg": "471동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-11-18",
+            "days": 2,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662563979",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "10/25",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "추천입주,시에4대,거실개방감좋고 생활편리,주인거주,전자계약",
+            "bldg": "475동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-11-18",
+            "days": 1,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663153527",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "10/25",
+            "dir": "남서향",
+            "confirm": "20261120",
+            "desc": "84A 입주가능 선호하는 동 시스템AC4대",
+            "bldg": "475동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-11-18",
+            "days": 2,
+            "beforeStart": false
+          }
+        },
         {
           "before": {
             "no": "2659171127",
@@ -18589,6 +18685,102 @@
             "realtor": "포레탑공인중개사사무소",
             "firstSeen": "2026-11-02",
             "days": 18,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662157886",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "고/25",
+            "dir": "남서향",
+            "confirm": "20261116",
+            "desc": "84A 관리잘된 집 채광우수 도배 미세방충망 줄눈 ",
+            "bldg": "473동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 35,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663152843",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 7,000",
+            "floor": "고/25",
+            "dir": "남서향",
+            "confirm": "20261120",
+            "desc": "84A 관리잘된 집 채광우수 도배 미세방충망 줄눈 ",
+            "bldg": "473동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-10-15",
+            "days": 36,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662865981",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261119",
+            "desc": "전자계약가능 84B 남서향 시시템에어컨 4대 강마루 중문 등 인테리어",
+            "bldg": "482동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 70,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663154261",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 6,000",
+            "floor": "13/15",
+            "dir": "남서향",
+            "confirm": "20261120",
+            "desc": "84B 정상입주 시스템AC 4대 강마루 ㄷ주방 중문",
+            "bldg": "482동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-09-10",
+            "days": 71,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2662868066",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "3/15",
+            "dir": "남동향",
+            "confirm": "20261119",
+            "desc": "전자계약가능 입주가능 84A 남동향 조망굿 ",
+            "bldg": "488동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-09-06",
+            "days": 74,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663155076",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "3/15",
+            "dir": "남동향",
+            "confirm": "20261120",
+            "desc": "84A 치동천변 조망  SK셔틀버스 정류장 인접",
+            "bldg": "488동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-09-06",
+            "days": 75,
             "beforeStart": false
           }
         },
@@ -18658,6 +18850,38 @@
         },
         {
           "before": {
+            "no": "2662656879",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 2,000",
+            "floor": "저/15",
+            "dir": "남서향",
+            "confirm": "20261118",
+            "desc": "전자계약가능 480동 84B 남서향 전세승계조건 , 27년7월만기",
+            "bldg": "480동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-06-25",
+            "days": 147,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663154021",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 2,000",
+            "floor": "저/15",
+            "dir": "남서향",
+            "confirm": "20261120",
+            "desc": "84B 일조량좋음 전세승계 27년7월까지",
+            "bldg": "480동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-06-25",
+            "days": 148,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2662888272",
             "pyeong": 33,
             "excl": 84,
@@ -18687,9 +18911,56 @@
             "days": 159,
             "beforeStart": true
           }
+        },
+        {
+          "before": {
+            "no": "2661986457",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "9/15",
+            "dir": "남서향",
+            "confirm": "20261116",
+            "desc": "전자계약가능 84A 남서향 전세승계조건, 전세4.8억 만기28년4월",
+            "bldg": "486동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 158,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2663154494",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "9/15",
+            "dir": "남서향",
+            "confirm": "20261120",
+            "desc": "84A 치동천변 전면 로얄동 전세안고",
+            "bldg": "486동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 159,
+            "beforeStart": true
+          }
         }
       ],
       "current": [
+        {
+          "no": "2663154791",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "고/15",
+          "dir": "남서향",
+          "confirm": "20261120",
+          "desc": "84A 로얄층 입주가능 시AC3대 ",
+          "bldg": "487동",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-11-20",
+          "days": 0,
+          "beforeStart": false
+        },
         {
           "no": "2662703150",
           "pyeong": 33,
@@ -18706,16 +18977,31 @@
           "beforeStart": false
         },
         {
-          "no": "2662808446",
+          "no": "2663152255",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 3,000",
           "floor": "4/25",
           "dir": "남서향",
-          "confirm": "20261119",
-          "desc": "A타입. 후문인접동. 28.1월중순만기. 조용한 단지뷰. ",
+          "confirm": "20261120",
+          "desc": "84A 전세39900만원승계 28년1월입주가능 ",
           "bldg": "471동",
-          "realtor": "포레너스대표공인중개사사무소",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-11-18",
+          "days": 2,
+          "beforeStart": false
+        },
+        {
+          "no": "2663153527",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "10/25",
+          "dir": "남서향",
+          "confirm": "20261120",
+          "desc": "84A 입주가능 선호하는 동 시스템AC4대",
+          "bldg": "475동",
+          "realtor": "아이공인중개사사무소",
           "firstSeen": "2026-11-18",
           "days": 2,
           "beforeStart": false
@@ -18731,21 +19017,6 @@
           "desc": "A타입,입구동,치동천뷰,강마루,주방바닥타일,알파룸시공",
           "bldg": "481동",
           "realtor": "월드호박공인중개사사무소",
-          "firstSeen": "2026-11-18",
-          "days": 2,
-          "beforeStart": false
-        },
-        {
-          "no": "2662563979",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "10/25",
-          "dir": "남서향",
-          "confirm": "20261118",
-          "desc": "추천입주,시에4대,거실개방감좋고 생활편리,주인거주,전자계약",
-          "bldg": "475동",
-          "realtor": "탑포레너스공인중개사사무소",
           "firstSeen": "2026-11-18",
           "days": 2,
           "beforeStart": false
@@ -18808,21 +19079,6 @@
           "realtor": "포레탑공인중개사사무소",
           "firstSeen": "2026-11-11",
           "days": 9,
-          "beforeStart": false
-        },
-        {
-          "no": "2660837625",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "13/15",
-          "dir": "남서향",
-          "confirm": "20261110",
-          "desc": "치동천로얄동,최고뷰,시.에3대.주인거주,입주협의",
-          "bldg": "487동",
-          "realtor": "탑포레너스공인중개사사무소",
-          "firstSeen": "2026-11-10",
-          "days": 10,
           "beforeStart": false
         },
         {
@@ -19096,6 +19352,21 @@
           "beforeStart": false
         },
         {
+          "no": "2663152843",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 7,000",
+          "floor": "고/25",
+          "dir": "남서향",
+          "confirm": "20261120",
+          "desc": "84A 관리잘된 집 채광우수 도배 미세방충망 줄눈 ",
+          "bldg": "473동",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-10-15",
+          "days": 36,
+          "beforeStart": false
+        },
+        {
           "no": "2662564744",
           "pyeong": 33,
           "excl": 84,
@@ -19106,21 +19377,6 @@
           "desc": "추천84A,전면동치동천 최고뷰,생활편리,주인거주,입주",
           "bldg": "485동",
           "realtor": "탑포레너스공인중개사사무소",
-          "firstSeen": "2026-10-15",
-          "days": 36,
-          "beforeStart": false
-        },
-        {
-          "no": "2662157886",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 7,000",
-          "floor": "고/25",
-          "dir": "남서향",
-          "confirm": "20261116",
-          "desc": "84A 관리잘된 집 채광우수 도배 미세방충망 줄눈 ",
-          "bldg": "473동",
-          "realtor": "아이공인중개사사무소",
           "firstSeen": "2026-10-15",
           "days": 36,
           "beforeStart": false
@@ -19441,16 +19697,16 @@
           "beforeStart": false
         },
         {
-          "no": "2662865981",
+          "no": "2663154261",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 6,000",
           "floor": "13/15",
           "dir": "남서향",
-          "confirm": "20261119",
-          "desc": "전자계약가능 84B 남서향 시시템에어컨 4대 강마루 중문 등 인테리어",
+          "confirm": "20261120",
+          "desc": "84B 정상입주 시스템AC 4대 강마루 ㄷ주방 중문",
           "bldg": "482동",
-          "realtor": "포레탑공인중개사사무소",
+          "realtor": "아이공인중개사사무소",
           "firstSeen": "2026-09-10",
           "days": 71,
           "beforeStart": false
@@ -19471,16 +19727,16 @@
           "beforeStart": false
         },
         {
-          "no": "2662868066",
+          "no": "2663155076",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 3,000",
           "floor": "3/15",
           "dir": "남동향",
-          "confirm": "20261119",
-          "desc": "전자계약가능 입주가능 84A 남동향 조망굿 ",
+          "confirm": "20261120",
+          "desc": "84A 치동천변 조망  SK셔틀버스 정류장 인접",
           "bldg": "488동",
-          "realtor": "포레탑공인중개사사무소",
+          "realtor": "아이공인중개사사무소",
           "firstSeen": "2026-09-06",
           "days": 75,
           "beforeStart": false
@@ -19741,16 +19997,16 @@
           "beforeStart": false
         },
         {
-          "no": "2662656879",
+          "no": "2663154021",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 2,000",
           "floor": "저/15",
           "dir": "남서향",
-          "confirm": "20261118",
-          "desc": "전자계약가능 480동 84B 남서향 전세승계조건 , 27년7월만기",
+          "confirm": "20261120",
+          "desc": "84B 일조량좋음 전세승계 27년7월까지",
           "bldg": "480동",
-          "realtor": "포레탑공인중개사사무소",
+          "realtor": "아이공인중개사사무소",
           "firstSeen": "2026-06-25",
           "days": 148,
           "beforeStart": false
@@ -19861,6 +20117,21 @@
           "beforeStart": true
         },
         {
+          "no": "2663154494",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "9/15",
+          "dir": "남서향",
+          "confirm": "20261120",
+          "desc": "84A 치동천변 전면 로얄동 전세안고",
+          "bldg": "486동",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 159,
+          "beforeStart": true
+        },
+        {
           "no": "2662648297",
           "pyeong": 33,
           "excl": 84,
@@ -19916,21 +20187,6 @@
           "desc": "84A 트인 산 골프장 조망 통풍 일조량 좋아요",
           "bldg": "471동",
           "realtor": "아이공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 159,
-          "beforeStart": true
-        },
-        {
-          "no": "2661986457",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "9/15",
-          "dir": "남서향",
-          "confirm": "20261116",
-          "desc": "전자계약가능 84A 남서향 전세승계조건, 전세4.8억 만기28년4월",
-          "bldg": "486동",
-          "realtor": "포레탑공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 159,
           "beforeStart": true
@@ -21366,7 +21622,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-20T05:47:05.001Z",
+    "fetchedAt": "2026-11-20T06:46:49.385Z",
     "today": "2026-11-20",
     "items": [
       {
@@ -21442,7 +21698,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-20T05:47:04.949Z",
+    "fetchedAt": "2026-11-20T06:46:49.927Z",
     "today": "2026-11-20",
     "items": [
       {
