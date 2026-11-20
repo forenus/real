@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T04:46:53.254Z",
+  "generatedAt": "2026-11-20T05:16:49.272Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-20",
-    "lastFetchedAt": "2026-11-20T04:46:42.608Z",
+    "lastFetchedAt": "2026-11-20T05:16:37.809Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 126,
-      "recent24h": 599,
-      "frequent": 67,
-      "new": 31,
-      "fetchedAt": "2026-11-20T04:46:47.133Z"
+      "realtime": 117,
+      "recent24h": 585,
+      "frequent": 62,
+      "new": 27,
+      "fetchedAt": "2026-11-20T05:16:42.372Z"
     },
     "prevDate": "2026-11-19",
     "rows": [
@@ -17778,10 +17778,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 70건에서 89건으로 꾸준히 늘었고, 30일 전보다 11건 많아 **33평 매물이 꾸준히 쌓이는 흐름**으로 보입니다. 다만 최근 2주는 89건으로 횡보하고 있습니다. 25평은 오늘 5건으로 30일 전보다 3건 줄었으며, 7건 안팎이던 물량이 **4~5건 수준으로 줄어든** 모습입니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래돼 그전 30일(8억 9,500만 원)과 비슷한 수준이지만, 1년 전 무렵(6억 4,000만 원)보다는 **약 2억 7,000만 원 높습니다**. 10월 28일에는 15층이 10억 원으로 역대 최고가를 기록했습니다. 25평은 최근 30일 2건이 평균 7억 5,000만 원으로 1년 전 무렵(5억 3,400만 원)보다 크게 올랐고 11월 10일에는 **7억 9,000만 원 역대 최고가**가 나왔으나, 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주간 70건에서 89건으로 꾸준히 늘었고, **30일 전보다 11건 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 5건으로 30일 전보다 3건 줄었으며, 12주 동안 4~7건 사이에서 **소폭 오르내리는 횡보**를 보이고 있습니다.",
+      "real": "33평은 최근 30일 6건, 평균 9억 800만 원에 거래돼 그전 30일(8억 9,500만 원)과 비슷하지만, **1년 전 무렵 6억 4,000만 원보다 크게 오른 수준**이며 10월 28일 10억 원으로 역대 최고가를 기록했습니다. 25평은 최근 30일 2건, 평균 7억 5,000만 원으로 1년 전 무렵(5억 3,400만 원)보다 높고 11월 10일 **7억 9,000만 원 신고가**가 나왔으나, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-20T04:46:52.988Z"
+      "generatedAt": "2026-11-20T05:16:47.966Z"
     },
     "history": [
       {
@@ -21334,12 +21334,26 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-20T04:17:53.523Z",
+    "fetchedAt": "2026-11-20T05:16:49.269Z",
     "today": "2026-11-20",
     "items": [
       {
+        "title": "신미숙 경기도의회 부위원장, 외국인노동자 지원 중단·동탄트램 지연 책임 촉구",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1WSFhtQjUzS1cxV1ZVdjU1VFhZN2JoRWpGNmdYR0hDZ1EyYVBXOHM4Skh5WWhJbHU4dWFDMjlTTVA0SGdoV1ZqM0J4ZW8zQVVrZThvWTVHdm1EclNsUUFBNzFuUFBXUkNzc3ExNzl3?oc=5",
+        "source": "전국매일신문",
+        "time": "2026-11-20T04:04:59.000Z",
+        "isToday": true
+      },
+      {
+        "title": "경기도의회 신미숙 의원, 외국인노동자 지원사업 중단·동탄트램 지연 책임 추궁",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1lNjNSZWV0eFJQc2tiRXRSc2pHbkdRZmRhMzM1VjdGOV95OU9SbjNLQW9hczlJampmX1F0VTV1NkVuX1VvYmc0cGlCNmg0RzF4Y2NqQkV0OExsRDdLR01jQ1g1WkVKT1VR?oc=5",
+        "source": "경인매일",
+        "time": "2026-11-20T01:29:28.000Z",
+        "isToday": true
+      },
+      {
         "title": "신미숙 경기도의원, 외국인노동자 지원센터는 협약 후 중단·동탄트램은 지연…“경기도 약속 이행 책임져야”",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9IckxiTVhYcUZ4dU1RZVlpYXNTcFhVbUNxdkVWRDllYTFIQWxQX3JNNEctLWlwTzNfbVlnUVk0ZENSVVNyZS1RWm1lQmlMZzE5S1R0SThQWklidlZlNEl5anM5Rm10dDc3?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5Nd0hhUFJvcWtTLUd2aGVlTTZRNzRxZWRLbGdOaFhsT2ZYeEpmQW9pU1d1M3lPOXJ0ZVJIWHBmdFFUbUw2eXhKVDBCaF9rcE9QSC04MHVXeUtVaUM5Y0h5T2xZbG1NcHZxWlE?oc=5",
         "source": "경기시사투데이",
         "time": "2026-11-20T00:26:58.000Z",
         "isToday": true
@@ -21359,6 +21373,13 @@
         "isToday": false
       },
       {
+        "title": "신미숙 경기도의원, 중단된 외국인노동자 지원센터·지연된 동탄트램, 도가 약속 이행 책임져야",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5pWnlzZl96RGtxSDAzTW9tNGVMNnNWTnN0SXVXaTRXeTdmUGRsTHhiemF3WGpYeFJuNjRBOUpQX09OLXdyQW5NZEtBczd4TFEtdkZlT0laZXFFZWJlZ2IyNQ?oc=5",
+        "source": "NSP통신",
+        "time": "2026-11-19T10:33:23.000Z",
+        "isToday": false
+      },
+      {
         "title": "신미숙 경기도의원, 외국인노동자 지원센터 중단과 동탄트램 지연 지적",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1yYXRMWHV0TFV2NjJhWXM0aXN4M3VpN3dqb1cwdmxKZF94SC14YzZ0VGUySmdvb25wOE5yd1lSU005cXA0LWVFMHN0RldsZ29BWDRaTEs1ZjFqRDdCajFva01lRC0?oc=5",
         "source": "매일일보",
@@ -21366,56 +21387,35 @@
         "isToday": false
       },
       {
-        "title": "경기도의회 신미숙 의원, 외국인노동자 지원센터 중단과 동탄트램 지연 문제 지적",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBXVlZRaFFwaFdWNUZLMDlfMFk2WjV5NUFtMXBoT1ZaXzFINVNZYkxwa1htUHFSeVpraUhZQTU1eEFWSTBnMlFsY21qTV8?oc=5",
-        "source": "모닝투데이",
-        "time": "2026-11-19T08:43:57.000Z",
+        "title": "17년만에…동탄트램 '착수'",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA0YllpZVRrRzd5TllHNnRxQXM3MExnWnctY2RxZHN5RjJJZUJXNXE5ZzV2bFVnSkNlUG5wTmhPZUxBbDFoZ0E?oc=5",
+        "source": "매일경제",
+        "time": "2026-11-10T08:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "경기도의회, 17년 기다린 동탄트램…남은 과제는 적기 개통",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
-        "source": "서울경제TV",
-        "time": "2026-11-04T09:30:04.000Z",
+        "title": "화성특례시, 동탄트램 건설공사 입찰 공고... 사업 재개 절차 착수",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2b2hSaVJfZkhyLThpVkpnbEpRZDVrOW40MHpiaHJqbF82N1NZUW1nNXMya2VWSGRULWlBMGFSbmdZWnk4ZXd6a3BUMzUtbzFyUUExQ0hORXI2dGVhTkVUVDExa3g5TFVpRGZQVC1uVdIBckFVX3lxTE1pZ0dNWnpBTFlFMWEzekF2SE1pMF9pdVo2NFZjWGY5NC1hQlpBMnNRVC1jcXNnMVBTbnB4NzJpODFBSlkzeXAycjJCWlRxVktXd0ZQMS1MMnl5MnprNDlTYklIM1J1TDZJSzJhbF9qeHdaUQ?oc=5",
+        "source": "부천굴포항뉴스",
+        "time": "2026-11-10T08:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "동탄 트램 우선시공분 착수…\"17년 기다림 끝에 첫 삽\"",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIVkFuN3VYUzU5WUZNMDd5clJIUF96eXdqaGQxTFc4bE5SamNNb05nbUJrNEVpbDR3YnUzcWRWcnJSWnFvcXBscHFuOEpueEdEMkwtSU0xMWQteE9kQVVLSVl4TFhjd0RUSUJn?oc=5",
-        "source": "철도경제신문",
-        "time": "2026-11-04T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "2031년 목표로 '동탄 트램' 첫 삽…서·남동탄 부동산 기대감",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOUGFZc0ROVWIxT195amxDZzkwTGgwSlIzUFFwQ29adThOUTR1Q2JhX1hlVnlISGdxVk5CRmFTVGtEQ25GdkNaZGFuS0xpWlB4MjkwVGp4YWlVcklUWjhiN9IBeEFVX3lxTE5JaXRwY0luOEMxYXVqTHI4aEl0MmhPWC1qN1BRV3V4ckJPRVFIdDc2d2pmdXpYOVZFSVRscVBJc1ZWaU1XWEw2U1pfbDJtYTEtLW53OFFpeDNZUnB1ODQ2al8wakRqZW5FYXlEZnplMW8xX3MyV2hHXw?oc=5",
-        "source": "뉴시스",
-        "time": "2026-11-04T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "병점역~동탄역 잇는 화성 '동탄트램' 본격화…우선시공분 착수",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB1eFZTemFINERkR0dRVTFiV0l6cTNBUUhxQy1rS0xrQTVkelg3TFlvNG9YSXRNM0lvZ3JfTmVZc0pvMkg2TnQ0WFJwcDRmWkRKU3ZBWjJB?oc=5",
-        "source": "뉴스1",
-        "time": "2026-11-04T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
-        "source": "동아일보",
-        "time": "2026-11-04T08:00:00.000Z",
+        "title": "신미숙 경기도의원, 동탄트램 우선시공 착수 환영",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1LTktFbDJWMklqcVRxT1pGNko2empCWmxCZk5hRWZWZC1oRk51QmwtUlRfYnJlb01qYy1sY3dWOXV0RVFlU3ZPUG50U2R0UQ?oc=5",
+        "source": "화성신문",
+        "time": "2026-11-06T08:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-20T04:17:53.619Z",
+    "fetchedAt": "2026-11-20T05:16:49.050Z",
     "today": "2026-11-20",
     "items": [
       {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jNGFmbE1rbmEtaWR5bk4tZ1FUWDFaa3Vha3k2eElpVkdQWk9wTHMyTkczNVlqVUlSZ0FxdGV0cVFDcnNwNWFDWnRUb3MwRkRFYlZKY09GLVhWelQ5d3Qw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
         "isToday": false
