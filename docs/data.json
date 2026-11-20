@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T16:16:47.810Z",
+  "generatedAt": "2026-11-20T16:46:50.999Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-21",
-    "lastFetchedAt": "2026-11-20T16:16:34.460Z",
+    "lastFetchedAt": "2026-11-20T16:46:38.050Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 70,
-      "recent24h": 561,
-      "frequent": 26,
-      "new": 25,
-      "fetchedAt": "2026-11-20T16:16:41.696Z"
+      "realtime": 64,
+      "recent24h": 569,
+      "frequent": 24,
+      "new": 18,
+      "fetchedAt": "2026-11-20T16:46:44.584Z"
     },
     "prevDate": "2026-11-20",
     "rows": [
@@ -17791,10 +17791,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 69건에서 89건으로 꾸준히 늘었고, **30일 전보다 12건 증가**해 매도 물량이 쌓이고 있는 것으로 보입니다. 다만 최근 1주일은 89건으로 변동이 없어 증가세가 잠시 멈춘 모습입니다. 25평은 **6건 안팎에서 횡보**하며 30일 전보다 2건 줄었습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 그전 30일(8억 9,300만 원)과 비슷한 수준이며, 1년 전 무렵 평균 6억 4,000만 원보다 크게 높습니다. 10월 28일에는 15층이 10억 원으로 역대 최고가를 기록했습니다. 25평은 최근 30일 2건, 평균 7억 5,000만 원으로 **11월 10일 7억 9,000만 원 역대 최고**가 나왔지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 69건에서 89건으로 늘었고, **30일 전보다 12건 증가**해 매도 물량이 꾸준히 쌓이는 흐름으로 보입니다. 다만 최근 1주일은 89건으로 변동이 없어 증가세가 잠시 멈춘 모습입니다. 25평은 **6건 안팎에서 횡보**하며 30일 전보다 2건 줄었습니다.",
+      "real": "33평은 최근 30일 6건, 평균 9억 800만 원으로 그전 30일(8억 9,300만 원)보다 소폭 올랐고, **1년 전 무렵 평균 6억 4,000만 원 대비 크게 높은 수준**입니다. 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 5억 3,400만 원보다 높지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-20T16:16:46.966Z"
+      "generatedAt": "2026-11-20T16:46:50.081Z"
     },
     "history": [
       {
@@ -21284,7 +21284,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-20T16:16:47.774Z",
+    "fetchedAt": "2026-11-20T16:46:50.998Z",
     "today": "2026-11-21",
     "items": [
       {
@@ -21351,16 +21351,16 @@
         "isToday": false
       },
       {
-        "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
-        "source": "동아일보",
+        "title": "2031년 목표로 '동탄 트램' 첫 삽…서·남동탄 부동산 기대감",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOUGFZc0ROVWIxT195amxDZzkwTGgwSlIzUFFwQ29adThOUTR1Q2JhX1hlVnlISGdxVk5CRmFTVGtEQ25GdkNaZGFuS0xpWlB4MjkwVGp4YWlVcklUWjhiN9IBeEFVX3lxTE5JaXRwY0luOEMxYXVqTHI4aEl0MmhPWC1qN1BRV3V4ckJPRVFIdDc2d2pmdXpYOVZFSVRscVBJc1ZWaU1XWEw2U1pfbDJtYTEtLW53OFFpeDNZUnB1ODQ2al8wakRqZW5FYXlEZnplMW8xX3MyV2hHXw?oc=5",
+        "source": "뉴시스",
         "time": "2026-11-04T08:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-20T16:16:47.809Z",
+    "fetchedAt": "2026-11-20T16:46:50.922Z",
     "today": "2026-11-21",
     "items": [
       {
