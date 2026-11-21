@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T19:46:53.167Z",
+  "generatedAt": "2026-11-21T20:17:01.416Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15767,15 +15767,15 @@
       ]
     },
     "todayDate": "2026-11-22",
-    "lastFetchedAt": "2026-11-21T19:46:37.923Z",
+    "lastFetchedAt": "2026-11-21T20:16:45.383Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 29,
-      "recent24h": 498,
-      "frequent": 9,
-      "new": 14,
-      "fetchedAt": "2026-11-21T19:46:47.247Z"
+      "realtime": 24,
+      "recent24h": 492,
+      "frequent": 10,
+      "new": 10,
+      "fetchedAt": "2026-11-21T20:16:54.945Z"
     },
     "prevDate": "2026-11-21",
     "rows": [
@@ -17792,10 +17792,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 69건에서 오늘 89건으로 늘었고, **30일 전보다 10건 증가**해 매도 물량이 꾸준히 쌓이는 흐름으로 보입니다. 다만 최근 2주는 89건에서 멈춰 증가세가 잠시 주춤한 모습입니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 800만 원**으로 그전 30일(8억 9,300만 원)보다 소폭 올랐고, 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 무렵 5억 3,400만 원보다 크게 높아졌지만**, 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다. 두 평형 모두 평균 호가(25평 8억 3,700만 원, 33평 9억 9,500만 원)가 최근 실거래가보다 높게 형성돼 있습니다.",
+      "listing": "33평 매물은 12주 전 69건에서 **오늘 89건으로 꾸준히 늘어** 30일 전보다 10건 많으며, 매도 물량이 점차 쌓이는 흐름으로 보입니다. 다만 최근 2주는 89건으로 증가세가 멈춘 모습입니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래돼, **1년 전 무렵 평균 6억 4,000만 원보다 크게 높은 수준**이며 10월 28일 15층이 10억 원으로 역대 최고를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 5억 3,400만 원보다 올랐지만, **거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다**. 두 평형 모두 평균 호가(25평 8억 3,700만 원, 33평 9억 9,500만 원)가 최근 실거래보다 높게 형성돼 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-21T19:46:52.979Z"
+      "generatedAt": "2026-11-21T20:17:00.551Z"
     },
     "history": [
       {
@@ -21289,7 +21289,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-21T19:17:06.583Z",
+    "fetchedAt": "2026-11-21T20:17:01.416Z",
     "today": "2026-11-22",
     "items": [
       {
@@ -21365,12 +21365,12 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-21T19:17:06.596Z",
+    "fetchedAt": "2026-11-21T20:17:01.346Z",
     "today": "2026-11-22",
     "items": [
       {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jNGFmbE1rbmEtaWR5bk4tZ1FUWDFaa3Vha3k2eElpVkdQWk9wTHMyTkczNVlqVUlSZ0FxdGV0cVFDcnNwNWFDWnRUb3MwRkRFYlZKY09GLVhWelQ5d3Qw?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
         "isToday": false
@@ -21404,10 +21404,10 @@
         "isToday": false
       },
       {
-        "title": "LH ‘화성동탄2 바랑골 느티공원’, 대한민국 조경대상 국무총리상 수상",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zUElBRW5VWU4tRFhsd2xYNXNlUFhVOEVIbXMwWjNXYW11Z0s2ZGUwOXhtRVp5MXlQWWk4c2gxVE1TVk5PanlDRVVVOGxybTZjS3JsRDA3cnM4LWc?oc=5",
-        "source": "경기일보",
-        "time": "2026-11-16T07:13:52.000Z",
+        "title": "화성 동탄구보건소, 산후조리원 8곳 소방·안전 합동점검 실시",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peTd3dWRUaUh1WmZ2OFppdUxzYTNkM3ZSZEFaTEFKc3dvaFdzZWlsenRwaVJFcGpWeko2dXo1WWZTMko1SEo1dGhxbmw1ZXZkRFB3RU1XTmszRUYzTXlHWmR3?oc=5",
+        "source": "경인미래신문",
+        "time": "2026-11-16T22:01:52.000Z",
         "isToday": false
       },
       {
@@ -21425,17 +21425,17 @@
         "isToday": false
       },
       {
-        "title": "LH, 대한민국 조경대상 국무총리상 수상",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLWGxBTTg4Z09oN0FyeXo2bFFrSDdpaHpXQll2OUk0emZVXzZSdENwWTJYY1dYTGZ3RXRUbVJKNFZjMklBVG1YbmF5Rm5CQTlOUFZyX3UweW1yY1E1TFh2WVRFY09TUms2WmxF?oc=5",
-        "source": "BBS불교방송",
-        "time": "2026-11-16T02:02:54.000Z",
+        "title": "오산 서동탄역 급전구분소 이전 공감대…아파트 인근서 다른 곳으로",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9FUHZ3cWRzdDdrOXA1bDItU0N6ZHR5cUV5WVdfOEMwMXVTYU81Qk1XOWNZV3BzbGY0UURkdWtodmNlZ2dzbWk0TDhqV3Fvbnlx?oc=5",
+        "source": "문화일보",
+        "time": "2026-11-15T08:48:58.000Z",
         "isToday": false
       },
       {
-        "title": "LH 화성동탄2지구 '바랑골 느티공원', 대한민국 조경대상 국무총리상 수상",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1XMHU2TThfT1lpQ09MWmlRck11S2t1eTJpTnAzOE1vN25JV2VCVm9Xb2gxaTlqVVdMMkd3OFAyYXZhajc1QUZqdi1oX3plWnhvQ3c0YmlrU2RmS2s0cHF4dkZ1RURzdU9SZ1A5MmNB?oc=5",
-        "source": "OBS경인TV",
-        "time": "2026-11-16T01:25:28.000Z",
+        "title": "한화 건설부문, 동탄역 10분 안팎, 수서역 20분대 … 삼성전자 평택캠퍼스 반경 5㎞이내",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE00dFRtYlFpSzE1ZUVDQ3lZZVJrU3N6MFo0THZaRWZQd3BlZ0YzM2pMMGEzRjVyeFJHSlZieGJzakxBdlNVU3BwTFZkS29wSlVJa2hVRXNnM1M?oc=5",
+        "source": "매일경제",
+        "time": "2026-11-15T07:01:33.000Z",
         "isToday": false
       }
     ]
