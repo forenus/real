@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T02:46:57.608Z",
+  "generatedAt": "2026-11-21T03:17:15.888Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-21",
-    "lastFetchedAt": "2026-11-21T02:46:47.360Z",
+    "lastFetchedAt": "2026-11-21T03:16:58.838Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
       "realtime": 125,
-      "recent24h": 555,
-      "frequent": 68,
-      "new": 28,
-      "fetchedAt": "2026-11-21T02:46:52.160Z"
+      "recent24h": 553,
+      "frequent": 73,
+      "new": 25,
+      "fetchedAt": "2026-11-21T03:17:09.572Z"
     },
     "prevDate": "2026-11-20",
     "rows": [
@@ -17791,10 +17791,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 69건에서 오늘 89건으로 **꾸준히 늘어 30일 전보다 12건 증가**했고, 최근 1주는 89건에서 횡보하고 있습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 6건으로 30일 전보다 2건 줄었으며, **4~7건 사이에서 큰 변화 없이 유지**되고 있습니다.",
-      "real": "33평은 최근 30일 6건, **평균 9억 800만 원으로 1년 전 무렵(6억 4,000만 원)보다 크게 오른 수준**이며, 10월 28일 15층이 역대 최고인 10억 원에 거래됐습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 5억 3,400만 원보다 높지만, **거래가 2건뿐이라 평균이 층에 따라 크게 흔들릴 수 있습니다**. 두 평형 모두 평균호가(25평 8억 3,700만 원, 33평 9억 9,500만 원)가 최근 실거래보다 높게 형성되어 있습니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 12건 늘었고, 최근 12주 동안 **69건에서 89건으로 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 최근 1주일은 89건에서 변동이 없어 증가세가 잠시 멈춘 모습입니다. 25평은 **6건 안팎에서 횡보**하며 30일 전보다 2건 적은 수준입니다.",
+      "real": "33평은 최근 30일 6건, 평균 9억 800만 원으로 그전 30일(8억 9,300만 원)과 비슷하지만, 1년 전 무렵 평균 6억 4,000만 원과 비교하면 **약 2억 7천만 원 높은 수준**입니다. 25평은 최근 30일 2건 평균 7억 5,000만 원이며, 11월 10일 **7억 9,000만 원으로 역대 최고가**를 기록했습니다. 다만 25평은 거래가 적어 한두 건에 따라 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-21T02:46:57.372Z"
+      "generatedAt": "2026-11-21T03:17:14.891Z"
     },
     "history": [
       {
@@ -18642,6 +18642,38 @@
       "relisted": [
         {
           "before": {
+            "no": "2663152255",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "4/25",
+            "dir": "남서향",
+            "confirm": "20261120",
+            "desc": "84A 전세39900만원승계 28년1월입주가능 ",
+            "bldg": "471동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-11-18",
+            "days": 2,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663290228",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 3,000",
+            "floor": "4/25",
+            "dir": "남서향",
+            "confirm": "20261121",
+            "desc": "전세39900만원승계조건.,28.1월입주가능,단지조경뷰",
+            "bldg": "471동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-11-18",
+            "days": 3,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2662828156",
             "pyeong": 33,
             "excl": 84,
@@ -18706,6 +18738,38 @@
         },
         {
           "before": {
+            "no": "2662703284",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "4/15",
+            "dir": "남동향",
+            "confirm": "20261118",
+            "desc": "입주가, 2년전 화이트 올인테리어, 시에3, 사이드 치동천뷰, 아주 깨끗",
+            "bldg": "488동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-10-28",
+            "days": 23,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663289945",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억",
+            "floor": "4/15",
+            "dir": "남동향",
+            "confirm": "20261121",
+            "desc": "주인거주.2년전욕실까지올수리.에3대안방거실작은방",
+            "bldg": "488동",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
+            "firstSeen": "2026-10-28",
+            "days": 24,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2662791319",
             "pyeong": 33,
             "excl": 84,
@@ -18721,16 +18785,16 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2663279423",
+            "no": "2663289728",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 3,000",
             "floor": "중/15",
             "dir": "남서향",
             "confirm": "20261121",
-            "desc": "치동천전명동 조망 채광 최고 ",
+            "desc": "주인거주,치동천파노라마전망,온종일해드는집",
             "bldg": "488동",
-            "realtor": "아이공인중개사사무소",
+            "realtor": "동탄퀸포레너스공인중개사사무소",
             "firstSeen": "2026-10-11",
             "days": 41,
             "beforeStart": false
@@ -19185,16 +19249,16 @@
           "beforeStart": false
         },
         {
-          "no": "2663152255",
+          "no": "2663290228",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 3,000",
           "floor": "4/25",
           "dir": "남서향",
-          "confirm": "20261120",
-          "desc": "84A 전세39900만원승계 28년1월입주가능 ",
+          "confirm": "20261121",
+          "desc": "전세39900만원승계조건.,28.1월입주가능,단지조경뷰",
           "bldg": "471동",
-          "realtor": "아이공인중개사사무소",
+          "realtor": "동탄퀸포레너스공인중개사사무소",
           "firstSeen": "2026-11-18",
           "days": 3,
           "beforeStart": false
@@ -19455,6 +19519,21 @@
           "beforeStart": false
         },
         {
+          "no": "2663289945",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "10억",
+          "floor": "4/15",
+          "dir": "남동향",
+          "confirm": "20261121",
+          "desc": "주인거주.2년전욕실까지올수리.에3대안방거실작은방",
+          "bldg": "488동",
+          "realtor": "동탄퀸포레너스공인중개사사무소",
+          "firstSeen": "2026-10-28",
+          "days": 24,
+          "beforeStart": false
+        },
+        {
           "no": "2662561819",
           "pyeong": 33,
           "excl": 84,
@@ -19465,21 +19544,6 @@
           "desc": "숲세권 햇살좋은집,입주협의",
           "bldg": "471동",
           "realtor": "탑포레너스공인중개사사무소",
-          "firstSeen": "2026-10-28",
-          "days": 24,
-          "beforeStart": false
-        },
-        {
-          "no": "2662703284",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억",
-          "floor": "4/15",
-          "dir": "남동향",
-          "confirm": "20261118",
-          "desc": "입주가, 2년전 화이트 올인테리어, 시에3, 사이드 치동천뷰, 아주 깨끗",
-          "bldg": "488동",
-          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-10-28",
           "days": 24,
           "beforeStart": false
@@ -19620,16 +19684,16 @@
           "beforeStart": false
         },
         {
-          "no": "2663279423",
+          "no": "2663289728",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 3,000",
           "floor": "중/15",
           "dir": "남서향",
           "confirm": "20261121",
-          "desc": "치동천전명동 조망 채광 최고 ",
+          "desc": "주인거주,치동천파노라마전망,온종일해드는집",
           "bldg": "488동",
-          "realtor": "아이공인중개사사무소",
+          "realtor": "동탄퀸포레너스공인중개사사무소",
           "firstSeen": "2026-10-11",
           "days": 41,
           "beforeStart": false
@@ -21830,7 +21894,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-21T02:17:07.331Z",
+    "fetchedAt": "2026-11-21T03:17:15.674Z",
     "today": "2026-11-21",
     "items": [
       {
@@ -21906,12 +21970,12 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-21T02:17:07.376Z",
+    "fetchedAt": "2026-11-21T03:17:15.887Z",
     "today": "2026-11-21",
     "items": [
       {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jNGFmbE1rbmEtaWR5bk4tZ1FUWDFaa3Vha3k2eElpVkdQWk9wTHMyTkczNVlqVUlSZ0FxdGV0cVFDcnNwNWFDWnRUb3MwRkRFYlZKY09GLVhWelQ5d3Qw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
         "isToday": false
