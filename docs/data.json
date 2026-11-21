@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T01:46:48.186Z",
+  "generatedAt": "2026-11-21T02:17:07.377Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15779,15 +15779,15 @@
       ]
     },
     "todayDate": "2026-11-21",
-    "lastFetchedAt": "2026-11-21T01:46:33.474Z",
+    "lastFetchedAt": "2026-11-21T02:16:50.815Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 115,
-      "recent24h": 553,
-      "frequent": 64,
-      "new": 22,
-      "fetchedAt": "2026-11-21T01:46:41.922Z"
+      "realtime": 126,
+      "recent24h": 555,
+      "frequent": 72,
+      "new": 26,
+      "fetchedAt": "2026-11-21T02:17:00.581Z"
     },
     "prevDate": "2026-11-20",
     "rows": [
@@ -17791,10 +17791,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 12건 늘었고, 최근 12주 동안 **69건에서 89건으로 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 전일·7일 전 대비로는 변동이 없어 최근에는 증가세가 다소 멈춘 모습입니다. 25평은 **6건 안팎에서 횡보**하며 30일 전보다 2건 줄었습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래돼 그전 30일(8억 9,300만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,000만 원과 비교하면 **약 2억 7,000만 원 높은 수준**입니다. 10월 28일에는 15층이 10억 원으로 역대 최고가를 기록했습니다. 25평은 최근 30일 2건이 **평균 7억 5,000만 원**에 거래돼 1년 전 무렵(5억 3,400만 원)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 12건 늘었고, 최근 12주 동안 **69건에서 89건으로 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 최근 1주일은 89건에서 변동이 없어 증가세가 잠시 멈춘 모습입니다. 25평은 **6건 안팎에서 횡보**하며 30일 전보다 2건 줄어 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래돼 그전 30일(8억 9,300만 원)과 비슷한 수준을 유지했으며, **1년 전 무렵 평균 6억 4,000만 원 대비 크게 오른 상태**입니다. 10월 28일에는 15층이 역대 최고인 10억 원에 거래됐습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **11월 10일 7억 9,000만 원 최고가**가 나왔지만, 거래가 적어 평균이 층에 따라 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-21T01:46:47.247Z"
+      "generatedAt": "2026-11-21T02:17:06.426Z"
     },
     "history": [
       {
@@ -21733,7 +21733,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-21T01:46:48.169Z",
+    "fetchedAt": "2026-11-21T02:17:07.331Z",
     "today": "2026-11-21",
     "items": [
       {
@@ -21809,21 +21809,14 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-21T01:46:48.186Z",
+    "fetchedAt": "2026-11-21T02:17:07.376Z",
     "today": "2026-11-21",
     "items": [
       {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jNGFmbE1rbmEtaWR5bk4tZ1FUWDFaa3Vha3k2eElpVkdQWk9wTHMyTkczNVlqVUlSZ0FxdGV0cVFDcnNwNWFDWnRUb3MwRkRFYlZKY09GLVhWelQ5d3Qw?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
-        "isToday": false
-      },
-      {
-        "title": "반도체 호황 온기 번진 상권…전국 ‘사장님’ 증가 1위는 화성 동탄구",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBEd19aZU8xUU1tWFctbzJxRV9nVGFMNkhDN0ZMNXhzQXNRX1g1S3N5R1JDX0xtN29PVnBGamVDOEhvaFdPMjFqVmQzbFN6TFpqODdzV1diMEd5WUdKOHhYMDczbnpYR05jT01uMg?oc=5",
-        "source": "와이드경제",
-        "time": "2026-11-18T04:22:16.000Z",
         "isToday": false
       },
       {
@@ -21880,6 +21873,13 @@
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE50SWhFcUNMOUQ2cU4wSDVpSkdrbWR4RGt4VGdZMHNGUkpwcno3NVJlOXh4ZnZBX2hfNVZNb0wwNTZ5d0N0Z2dULTBhN01PMlYzZEZad3hkN1VXU1FEdHlDQ1l5RUx3dUp0VW1DbEFRNA?oc=5",
         "source": "기호일보",
         "time": "2026-11-16T02:26:19.000Z",
+        "isToday": false
+      },
+      {
+        "title": "LH, 대한민국 조경대상 국무총리상 수상",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLWGxBTTg4Z09oN0FyeXo2bFFrSDdpaHpXQll2OUk0emZVXzZSdENwWTJYY1dYTGZ3RXRUbVJKNFZjMklBVG1YbmF5Rm5CQTlOUFZyX3UweW1yY1E1TFh2WVRFY09TUms2WmxF?oc=5",
+        "source": "BBS불교방송",
+        "time": "2026-11-16T02:02:54.000Z",
         "isToday": false
       }
     ]
