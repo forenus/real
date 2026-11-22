@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T17:16:48.335Z",
+  "generatedAt": "2026-11-22T17:46:50.552Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15767,15 +15767,15 @@
       ]
     },
     "todayDate": "2026-11-23",
-    "lastFetchedAt": "2026-11-22T17:16:37.806Z",
+    "lastFetchedAt": "2026-11-22T17:46:34.726Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 48,
-      "recent24h": 496,
-      "frequent": 20,
-      "new": 15,
-      "fetchedAt": "2026-11-22T17:16:42.428Z"
+      "realtime": 31,
+      "recent24h": 492,
+      "frequent": 13,
+      "new": 7,
+      "fetchedAt": "2026-11-22T17:46:44.483Z"
     },
     "prevDate": "2026-11-22",
     "rows": [
@@ -17805,10 +17805,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 88건으로, 최근 12주 동안 **69건에서 88건으로 꾸준히 늘어** 30일 전보다 9건 많습니다. 다만 11월 17일 90건을 고점으로 최근 며칠은 소폭 줄어, 증가세가 다소 주춤한 모습으로 보입니다. 25평은 6건으로 12주간 4~7건 사이에서 **횡보**하고 있습니다.",
-      "real": "33평은 최근 30일 6건이 **평균 9억 800만 원**에 거래되어 그전 30일(8억 9,300만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,200만 원보다는 크게 높습니다. 10월 28일에는 15층이 10억 원으로 역대 최고가를 기록했습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전(5억 3,400만 원)보다 뚜렷이 상승**했으나, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 88건으로, 최근 12주 동안 **69건에서 88건으로 꾸준히 증가**했습니다. 30일 전보다 9건 많고 11월 17일 90건으로 고점을 찍은 뒤 소폭 줄었지만, 매도 물량이 쌓이고 있는 흐름으로 보입니다. 25평은 오늘 6건으로 **4~7건 사이에서 횡보**하고 있어 큰 변화는 없습니다.",
+      "real": "33평은 최근 30일 6건이 거래되어 **평균 9억 800만 원**으로, 그전 30일(2건, 8억 9,300만 원)과 비슷한 수준을 유지했습니다. 1년 전 무렵 평균 6억 4,200만 원과 비교하면 크게 오른 상태이며, 10월 28일 15층이 역대 최고인 10억 원에 거래되었습니다. 25평은 최근 30일 2건, 평균 7억 5,000만 원으로 **1년 전 5억 3,400만 원보다 높아졌지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-22T17:16:47.336Z"
+      "generatedAt": "2026-11-22T17:46:49.595Z"
     },
     "history": [
       {
@@ -21307,7 +21307,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-22T17:16:48.151Z",
+    "fetchedAt": "2026-11-22T17:46:50.551Z",
     "today": "2026-11-23",
     "items": [
       {
@@ -21383,7 +21383,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-22T17:16:48.335Z",
+    "fetchedAt": "2026-11-22T17:46:50.475Z",
     "today": "2026-11-23",
     "items": [
       {
@@ -21409,7 +21409,7 @@
       },
       {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jNGFmbE1rbmEtaWR5bk4tZ1FUWDFaa3Vha3k2eElpVkdQWk9wTHMyTkczNVlqVUlSZ0FxdGV0cVFDcnNwNWFDWnRUb3MwRkRFYlZKY09GLVhWelQ5d3Qw?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
         "isToday": false
@@ -21436,6 +21436,13 @@
         "isToday": false
       },
       {
+        "title": "화성 동탄구보건소, 산후조리원 8곳 소방·안전 합동점검 실시",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peTd3dWRUaUh1WmZ2OFppdUxzYTNkM3ZSZEFaTEFKc3dvaFdzZWlsenRwaVJFcGpWeko2dXo1WWZTMko1SEo1dGhxbmw1ZXZkRFB3RU1XTmszRUYzTXlHWmR3?oc=5",
+        "source": "경인미래신문",
+        "time": "2026-11-16T22:01:52.000Z",
+        "isToday": false
+      },
+      {
         "title": "‘LH 조성’ 화성동탄 바랑골 느티공원, 지역 역사 보존해 국무총리상 영예",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBJUjY5OGdkYmV1MDhlbjlyTENqSUZBLVV6bFRjTHVNejRaNnFJaEREUFZ2Q2dHc0RNdFZuSzVPTF9ZQTk0cjhxNjZUX2pNYVNYV0dfaWFQVFhRdUhtV1JsbEJBUnBmalcyNzRFcl9xUQ?oc=5",
         "source": "중부일보",
@@ -21447,13 +21454,6 @@
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zUElBRW5VWU4tRFhsd2xYNXNlUFhVOEVIbXMwWjNXYW11Z0s2ZGUwOXhtRVp5MXlQWWk4c2gxVE1TVk5PanlDRVVVOGxybTZjS3JsRDA3cnM4LWc?oc=5",
         "source": "경기일보",
         "time": "2026-11-16T07:13:52.000Z",
-        "isToday": false
-      },
-      {
-        "title": "수원 영통·화성 동탄 ‘날았다’…경기도 집값 상승률, 서울 앞질렀다",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYVnRzYjR4eFM3SFBFYS05M3l0Vng2aDZFRnJ4YUUzcnhCZ3RSa3pONHVVWjhWX0E1M0Vib1d2a00wcWtlZklROHZWeWJKLWN5V01hNDVPdmxnQ2s?oc=5",
-        "source": "경기일보",
-        "time": "2026-11-16T06:36:31.000Z",
         "isToday": false
       }
     ]
