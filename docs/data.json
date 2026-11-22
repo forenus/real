@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T21:16:48.258Z",
+  "generatedAt": "2026-11-22T21:46:42.541Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15767,15 +15767,15 @@
       ]
     },
     "todayDate": "2026-11-23",
-    "lastFetchedAt": "2026-11-22T21:16:37.939Z",
+    "lastFetchedAt": "2026-11-22T21:46:32.227Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 13,
-      "recent24h": 487,
-      "frequent": 7,
-      "new": 4,
-      "fetchedAt": "2026-11-22T21:16:42.146Z"
+      "realtime": 16,
+      "recent24h": 488,
+      "frequent": 9,
+      "new": 5,
+      "fetchedAt": "2026-11-22T21:46:36.870Z"
     },
     "prevDate": "2026-11-22",
     "rows": [
@@ -17805,10 +17805,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 88건으로, 최근 12주 동안 **69건에서 88건으로 꾸준히 늘어난** 흐름입니다. 30일 전보다 9건 많고 11월 17일 90건으로 고점을 찍은 뒤 소폭 줄었지만, 매도 물량이 쌓이고 있는 것으로 보입니다. 25평은 **6건 안팎에서 횡보**하며 30일간 4~7건 범위에 머물러 큰 변화는 없습니다.",
-      "real": "33평은 최근 30일 6건이 **평균 9억 800만 원**에 거래되어, 1년 전 무렵 평균 6억 4,200만 원보다 크게 높은 수준이며 10월 28일 15층이 역대 최고인 10억 원을 기록했습니다. 25평은 최근 30일 2건이 평균 7억 5,000만 원으로, 11월 10일 2층이 **역대 최고 7억 9,000만 원**에 거래되었습니다. 다만 25평은 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 88건으로 30일 전보다 9건 늘었고, 최근 12주 동안 **69건에서 88건으로 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 11월 17일 30일 최고치 90건을 찍은 뒤 소폭 줄어 최근에는 증가세가 주춤한 모습입니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
+      "real": "33평은 최근 30일 6건, 평균 9억 800만 원으로 그전 30일(8억 9,300만 원)과 비슷한 수준을 유지했으며, **1년 전 무렵 평균 6억 4,200만 원 대비 크게 오른 상태**입니다. 10월 28일 15층이 역대 최고인 10억 원에 거래되기도 했습니다. 25평은 최근 30일 2건 평균 **7억 5,000만 원으로 1년 전(5억 3,400만 원)보다 높지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-22T21:16:47.465Z"
+      "generatedAt": "2026-11-22T21:46:41.726Z"
     },
     "history": [
       {
@@ -21383,21 +21383,21 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-22T20:46:48.739Z",
+    "fetchedAt": "2026-11-22T21:46:42.540Z",
     "today": "2026-11-23",
     "items": [
-      {
-        "title": "책으로 꿈 찾는 청소년... 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBXbWRKV3Q5OU9JNERia2NTWUt5Q1FSWi1LM2dBR3doamNzT0F6VEFuTFFzZm0xTEtmeW0xQThWZUZrQVVrYVpPYnNyYk11TXQxX3B4dWhWTlRfVFFjUVJ2TG9R?oc=5",
-        "source": "https://www.timess.co.kr/",
-        "time": "2026-11-22T08:50:39.000Z",
-        "isToday": false
-      },
       {
         "title": "책으로 꿈 찾는 청소년... 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결 > 뉴스",
         "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5kYmxmbWdUZlM1eHJNSXE4Nnc2eWh4RHFNRndrSThJUEFSN2RsWWJKczlRSFlSaTVfZ2w2YUR4TS1ZUlRfSGlpS2pmWQ?oc=5",
         "source": "더코리아",
         "time": "2026-11-22T07:43:53.000Z",
+        "isToday": false
+      },
+      {
+        "title": "책으로 꿈 찾는 청소년... 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결",
+        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9GeEx3aWFMSk1TUkI5cHRhQ1Vrak1vamZnLWhkVjhENEdmWE4tc3REeHY3NzZxWUt0T1hLb1prQ1Jjdw?oc=5",
+        "source": "화성인터넷신문",
+        "time": "2026-11-22T04:00:00.000Z",
         "isToday": false
       },
       {
@@ -21409,7 +21409,7 @@
       },
       {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jNGFmbE1rbmEtaWR5bk4tZ1FUWDFaa3Vha3k2eElpVkdQWk9wTHMyTkczNVlqVUlSZ0FxdGV0cVFDcnNwNWFDWnRUb3MwRkRFYlZKY09GLVhWelQ5d3Qw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
         "isToday": false
