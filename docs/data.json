@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T02:46:56.289Z",
+  "generatedAt": "2026-11-23T03:17:29.396Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15767,15 +15767,15 @@
       ]
     },
     "todayDate": "2026-11-23",
-    "lastFetchedAt": "2026-11-23T02:46:45.896Z",
+    "lastFetchedAt": "2026-11-23T03:17:12.138Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 239,
-      "recent24h": 627,
-      "frequent": 166,
-      "new": 31,
-      "fetchedAt": "2026-11-23T02:46:50.293Z"
+      "realtime": 247,
+      "recent24h": 635,
+      "frequent": 174,
+      "new": 33,
+      "fetchedAt": "2026-11-23T03:17:22.705Z"
     },
     "prevDate": "2026-11-22",
     "rows": [
@@ -17805,10 +17805,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 69건에서 88건으로 늘었고, 30일 전보다 9건 많아 **매도 물량이 꾸준히 쌓이는 흐름**으로 보입니다. 다만 11월 17일 30일 최고치인 90건을 찍은 뒤 88건으로 소폭 줄었습니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래되어 직전 30일(8억 9,300만 원)과 비슷한 수준을 유지했고, 1년 전 무렵 평균 6억 4,200만 원과 비교하면 **약 2억 6,000만 원 높은 수준**입니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 무렵 5억 3,400만 원보다 크게 올랐고, 11월 10일 **역대 최고 7억 9,000만 원**이 나왔습니다. 다만 25평은 거래가 2건뿐이라 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 12주 전 69건에서 오늘 88건으로 **꾸준히 늘어나는 흐름**을 보이며, 30일 전보다 9건 많고 11월 17일에는 30일 최고치인 90건을 기록했습니다. 최근 일주일은 1건 줄어 다소 주춤하지만 매도 물량이 쌓여 있는 상태로 보입니다. 25평은 오늘 6건으로 **4~7건 사이에서 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래돼 그전 30일(8억 9,300만 원)과 비슷한 수준이며, **1년 전 무렵 평균 6억 4,200만 원보다 크게 오른** 상태입니다. 10월 28일 15층이 역대 최고인 10억 원에 거래됐습니다. 25평은 11월에 7억 9,000만 원(2층, 역대 최고)과 7억 1,000만 원 2건이 거래돼 **평균 7억 5,000만 원**을 기록했으나, 건수가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-23T02:46:55.893Z"
+      "generatedAt": "2026-11-23T03:17:28.296Z"
     },
     "history": [
       {
@@ -18711,6 +18711,38 @@
         },
         {
           "before": {
+            "no": "2663135459",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 4,000",
+            "floor": "중/15",
+            "dir": "남동향",
+            "confirm": "20261120",
+            "desc": "전자계약가능 84A 남동향 에어컨3 중문 빌트인 식세기와 정수기 ",
+            "bldg": "480동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-11-02",
+            "days": 20,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663557699",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 4,000",
+            "floor": "중/15",
+            "dir": "남동향",
+            "confirm": "20261123",
+            "desc": "84A,시에3대,숲세권 주인거주,식세기등,중문등,입주2월협의",
+            "bldg": "480동",
+            "realtor": "탑포레너스공인중개사사무소",
+            "firstSeen": "2026-11-02",
+            "days": 21,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
             "no": "2659168822",
             "pyeong": 33,
             "excl": 84,
@@ -19432,6 +19464,21 @@
           "beforeStart": false
         },
         {
+          "no": "2663557699",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 4,000",
+          "floor": "중/15",
+          "dir": "남동향",
+          "confirm": "20261123",
+          "desc": "84A,시에3대,숲세권 주인거주,식세기등,중문등,입주2월협의",
+          "bldg": "480동",
+          "realtor": "탑포레너스공인중개사사무소",
+          "firstSeen": "2026-11-02",
+          "days": 21,
+          "beforeStart": false
+        },
+        {
           "no": "2663555380",
           "pyeong": 33,
           "excl": 84,
@@ -19442,21 +19489,6 @@
           "desc": "숲세권 탁트인 거실뷰 탑층,27년2월 입주협의,전자계약",
           "bldg": "472동",
           "realtor": "탑포레너스공인중개사사무소",
-          "firstSeen": "2026-11-02",
-          "days": 21,
-          "beforeStart": false
-        },
-        {
-          "no": "2663135459",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "9억 4,000",
-          "floor": "중/15",
-          "dir": "남동향",
-          "confirm": "20261120",
-          "desc": "전자계약가능 84A 남동향 에어컨3 중문 빌트인 식세기와 정수기 ",
-          "bldg": "480동",
-          "realtor": "포레탑공인중개사사무소",
           "firstSeen": "2026-11-02",
           "days": 21,
           "beforeStart": false
@@ -21852,7 +21884,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-23T02:17:18.664Z",
+    "fetchedAt": "2026-11-23T03:17:29.310Z",
     "today": "2026-11-23",
     "items": [
       {
@@ -21928,7 +21960,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-23T02:17:18.534Z",
+    "fetchedAt": "2026-11-23T03:17:29.395Z",
     "today": "2026-11-23",
     "items": [
       {
@@ -21954,7 +21986,7 @@
       },
       {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jNGFmbE1rbmEtaWR5bk4tZ1FUWDFaa3Vha3k2eElpVkdQWk9wTHMyTkczNVlqVUlSZ0FxdGV0cVFDcnNwNWFDWnRUb3MwRkRFYlZKY09GLVhWelQ5d3Qw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
         "isToday": false
