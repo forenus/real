@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T04:47:19.851Z",
+  "generatedAt": "2026-11-24T05:17:57.972Z",
   "collectUrl": "https://hazardous-manufacturers-preserve-amino.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15079,8 +15079,8 @@
             {
               "pyeong": 33,
               "count": 7,
-              "price": 96429,
-              "priceText": "9억 6,400"
+              "price": 94714,
+              "priceText": "9억 4,700"
             }
           ]
         },
@@ -15767,15 +15767,15 @@
       ]
     },
     "todayDate": "2026-11-24",
-    "lastFetchedAt": "2026-11-24T04:47:07.812Z",
+    "lastFetchedAt": "2026-11-24T05:17:29.470Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 111,
-      "recent24h": 506,
-      "frequent": 66,
-      "new": 20,
-      "fetchedAt": "2026-11-24T04:47:12.786Z"
+      "realtime": 100,
+      "recent24h": 502,
+      "frequent": 60,
+      "new": 19,
+      "fetchedAt": "2026-11-24T05:17:50.409Z"
     },
     "prevDate": "2026-11-23",
     "rows": [
@@ -15800,7 +15800,7 @@
         "prev": 89,
         "today": 89,
         "diff": 0,
-        "avgPrice": "9억 9,500",
+        "avgPrice": "9억 9,300",
         "realPrice": "",
         "realCount": 0,
         "realDays": 10,
@@ -17818,10 +17818,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 70건에서 89건으로 꾸준히 늘었고, 30일 전보다 10건 많은 **89건으로 30일 최고치(90건) 부근**에 머물러 매도 물량이 쌓이는 흐름으로 보입니다. 25평은 최근 12주 동안 4~7건 사이를 오가며 오늘 6건으로, **소폭 등락 속 횡보** 중입니다.",
-      "real": "33평은 최근 30일 6건, 평균 9억 800만 원으로 그전 30일(8억 9,300만 원)과 비슷하지만 **1년 전 무렵 평균 6억 4,200만 원 대비 크게 오른 수준**이며, 10월 28일 15층이 역대 최고 10억 원에 거래됐습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 무렵(5억 3,500만 원)보다 높고 11월 10일 **역대 최고 7억 9,000만 원**도 나왔지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 오늘 89건으로 30일 전보다 10건 늘었고, 최근 12주 동안 **70건에서 89건으로 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 지난주 90건으로 최고치를 찍은 뒤 1건 줄어 증가세는 다소 주춤한 모습입니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
+      "real": "33평은 최근 30일 6건이 평균 9억 800만 원에 거래돼 그전 30일(8억 9,300만 원)과 비슷했고, 1년 전 무렵 평균 6억 4,200만 원과 비교하면 **약 2억 6,600만 원 높은 수준**입니다. 10월 28일에는 15층이 **역대 최고가 10억 원**에 거래됐습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 무렵(5억 3,500만 원)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-24T04:47:18.659Z"
+      "generatedAt": "2026-11-24T05:17:56.873Z"
     },
     "history": [
       {
@@ -18695,16 +18695,16 @@
             "beforeStart": false
           },
           "after": {
-            "no": "2663775609",
+            "no": "2663875394",
             "pyeong": 33,
             "excl": 84,
             "price": "9억 3,000",
             "floor": "4/25",
             "dir": "남서향",
             "confirm": "20261124",
-            "desc": "전자계약가능 84A 남서향 7층높이 , 전세39,900 계약갱신 행사완료",
+            "desc": "84A 전세39900만원승계 28년1월입주가능 ",
             "bldg": "471동",
-            "realtor": "포레탑공인중개사사무소",
+            "realtor": "아이공인중개사사무소",
             "firstSeen": "2026-11-18",
             "days": 6,
             "beforeStart": false
@@ -18739,6 +18739,38 @@
             "realtor": "동탄부자공인중개사사무소",
             "firstSeen": "2026-11-12",
             "days": 12,
+            "beforeStart": false
+          }
+        },
+        {
+          "before": {
+            "no": "2659041021",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "13억",
+            "floor": "중/20",
+            "dir": "남서향",
+            "confirm": "20261102",
+            "desc": "전자계약가능 입주가능 84A 에어컨4 강마루 중문 타일 등 집상태굿",
+            "bldg": "477동",
+            "realtor": "포레탑공인중개사사무소",
+            "firstSeen": "2026-10-21",
+            "days": 33,
+            "beforeStart": false
+          },
+          "after": {
+            "no": "2663874763",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "13억",
+            "floor": "중/20",
+            "dir": "남서향",
+            "confirm": "20261124",
+            "desc": "84A 로얄전면 출입구동 초중고 인접",
+            "bldg": "477동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-10-21",
+            "days": 34,
             "beforeStart": false
           }
         },
@@ -19096,6 +19128,38 @@
         },
         {
           "before": {
+            "no": "2663231601",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "10억 7,000",
+            "floor": "25/25",
+            "dir": "남동향",
+            "confirm": "20261121",
+            "desc": "입주협의, 탁트인 시원한 힐링 산뷰, 주인거주, 숲세권",
+            "bldg": "471동",
+            "realtor": "예스포레너스공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 162,
+            "beforeStart": true
+          },
+          "after": {
+            "no": "2663875786",
+            "pyeong": 33,
+            "excl": 84,
+            "price": "9억 5,000",
+            "floor": "25/25",
+            "dir": "남동향",
+            "confirm": "20261124",
+            "desc": "84A 트인 산 골프장 조망 통풍 일조량 좋아요",
+            "bldg": "471동",
+            "realtor": "아이공인중개사사무소",
+            "firstSeen": "2026-06-14",
+            "days": 163,
+            "beforeStart": true
+          }
+        },
+        {
+          "before": {
             "no": "2663231515",
             "pyeong": 33,
             "excl": 84,
@@ -19174,16 +19238,16 @@
           "beforeStart": false
         },
         {
-          "no": "2663775609",
+          "no": "2663875394",
           "pyeong": 33,
           "excl": 84,
           "price": "9억 3,000",
           "floor": "4/25",
           "dir": "남서향",
           "confirm": "20261124",
-          "desc": "전자계약가능 84A 남서향 7층높이 , 전세39,900 계약갱신 행사완료",
+          "desc": "84A 전세39900만원승계 28년1월입주가능 ",
           "bldg": "471동",
-          "realtor": "포레탑공인중개사사무소",
+          "realtor": "아이공인중개사사무소",
           "firstSeen": "2026-11-18",
           "days": 6,
           "beforeStart": false
@@ -19504,6 +19568,21 @@
           "beforeStart": false
         },
         {
+          "no": "2663874763",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "13억",
+          "floor": "중/20",
+          "dir": "남서향",
+          "confirm": "20261124",
+          "desc": "84A 로얄전면 출입구동 초중고 인접",
+          "bldg": "477동",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-10-21",
+          "days": 34,
+          "beforeStart": false
+        },
+        {
           "no": "2662703816",
           "pyeong": 33,
           "excl": 84,
@@ -19514,21 +19593,6 @@
           "desc": "입주협의 주출입구 전면동, 탁트인 치동천뷰, 풀에어컨, 로얄동호수에요",
           "bldg": "481동",
           "realtor": "예스포레너스공인중개사사무소",
-          "firstSeen": "2026-10-21",
-          "days": 34,
-          "beforeStart": false
-        },
-        {
-          "no": "2659041021",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "13억",
-          "floor": "중/20",
-          "dir": "남서향",
-          "confirm": "20261102",
-          "desc": "전자계약가능 입주가능 84A 에어컨4 강마루 중문 타일 등 집상태굿",
-          "bldg": "477동",
-          "realtor": "포레탑공인중개사사무소",
           "firstSeen": "2026-10-21",
           "days": 34,
           "beforeStart": false
@@ -20314,6 +20378,21 @@
           "beforeStart": true
         },
         {
+          "no": "2663875786",
+          "pyeong": 33,
+          "excl": 84,
+          "price": "9억 5,000",
+          "floor": "25/25",
+          "dir": "남동향",
+          "confirm": "20261124",
+          "desc": "84A 트인 산 골프장 조망 통풍 일조량 좋아요",
+          "bldg": "471동",
+          "realtor": "아이공인중개사사무소",
+          "firstSeen": "2026-06-14",
+          "days": 163,
+          "beforeStart": true
+        },
+        {
           "no": "2663819412",
           "pyeong": 33,
           "excl": 84,
@@ -20324,21 +20403,6 @@
           "desc": "인기동 학세권 교통 상권 다 갖춘 아파트",
           "bldg": "486동",
           "realtor": "신안코너단지내공인중개사사무소",
-          "firstSeen": "2026-06-14",
-          "days": 163,
-          "beforeStart": true
-        },
-        {
-          "no": "2663231601",
-          "pyeong": 33,
-          "excl": 84,
-          "price": "10억 7,000",
-          "floor": "25/25",
-          "dir": "남동향",
-          "confirm": "20261121",
-          "desc": "입주협의, 탁트인 시원한 힐링 산뷰, 주인거주, 숲세권",
-          "bldg": "471동",
-          "realtor": "예스포레너스공인중개사사무소",
           "firstSeen": "2026-06-14",
           "days": 163,
           "beforeStart": true
@@ -21804,65 +21868,9 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-24T04:47:19.851Z",
+    "fetchedAt": "2026-11-24T05:17:57.972Z",
     "today": "2026-11-24",
     "items": [
-      {
-        "title": "신미숙 경기도의회 부위원장, 외국인노동자 지원 중단·동탄트램 지연 책임 촉구",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1WSFhtQjUzS1cxV1ZVdjU1VFhZN2JoRWpGNmdYR0hDZ1EyYVBXOHM4Skh5WWhJbHU4dWFDMjlTTVA0SGdoV1ZqM0J4ZW8zQVVrZThvWTVHdm1EclNsUUFBNzFuUFBXUkNzc3ExNzl3?oc=5",
-        "source": "전국매일신문",
-        "time": "2026-11-20T04:04:59.000Z",
-        "isToday": false
-      },
-      {
-        "title": "경기도의회 신미숙 의원, 외국인노동자 지원사업 중단·동탄트램 지연 책임 추궁",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1lNjNSZWV0eFJQc2tiRXRSc2pHbkdRZmRhMzM1VjdGOV95OU9SbjNLQW9hczlJampmX1F0VTV1NkVuX1VvYmc0cGlCNmg0RzF4Y2NqQkV0OExsRDdLR01jQ1g1WkVKT1VR?oc=5",
-        "source": "경인매일",
-        "time": "2026-11-20T01:29:28.000Z",
-        "isToday": false
-      },
-      {
-        "title": "신미숙 경기도의원, 외국인노동자 지원센터는 협약 후 중단·동탄트램은 지연…“경기도 약속 이행 책임져야”",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpZVB3bmpSbndvblZPOGFGRjZ6M2s3LVBQY1c4UnVkM3FhdTZybEdrY25LVXdtYjE1ZEstdzhiWE1vTUZuZkcxeDJ4T2xQYlVvcGUxNTgxV29kVHRZS0JzVzNzMl8?oc=5",
-        "source": "정도일보",
-        "time": "2026-11-19T22:56:03.000Z",
-        "isToday": false
-      },
-      {
-        "title": "경기도의회 신미숙 의원, 외국인노동자 지원센터 중단·동탄트램 지연 문제 지적",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SVXIyUlY4VGJnRXRLUXZXYWRkSks1dUtyTFQ2V2ZCbE1GUW5kYkNTZ0FPQ2dVZERPbnR1Smpfa25rcm9IcDROZnhGWkFWY20tS1BBRTlneUNMT05YbXp5Rmw1LWx1SjFneF96eEFDQ18zQQ?oc=5",
-        "source": "웹이코노미",
-        "time": "2026-11-19T13:20:25.000Z",
-        "isToday": false
-      },
-      {
-        "title": "경기도, 외국인노동자 지원센터 중단·동탄트램 지연 비판",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBhWGZ3VFFxV0UyWFZDVUpFdG95Y3BMVUdDMmhDa2Z3X3Z4R2NBczdXVE9kS2ZnTmJTOTZmWW5iUnhSQm00Y0ZGd0dXNUNPWmNqbF81T0ZSUlotNVp6Um52c2RlZ2ZtRW1weElN?oc=5",
-        "source": "한국사회복지저널",
-        "time": "2026-11-19T10:52:57.000Z",
-        "isToday": false
-      },
-      {
-        "title": "신미숙 경기도의원, 중단된 외국인노동자 지원센터·지연된 동탄트램, 도가 약속 이행 책임져야",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5pWnlzZl96RGtxSDAzTW9tNGVMNnNWTnN0SXVXaTRXeTdmUGRsTHhiemF3WGpYeFJuNjRBOUpQX09OLXdyQW5NZEtBczd4TFEtdkZlT0laZXFFZWJlZ2IyNQ?oc=5",
-        "source": "NSP통신",
-        "time": "2026-11-19T10:33:23.000Z",
-        "isToday": false
-      },
-      {
-        "title": "경기도의회 신미숙 의원, 외국인노동자 지원센터는 협약 후 중단·동탄트램은 지연...“경기도 약속 이행 책임져야”",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1TjB1Vk9jdDczcmswTFJ3eW0tWTQ0TUhxSkNFc0JfWVdSeFhQV19EUzZNd29VSVVBcEdwSnpWNl8xVFpvdTlEMEVwUUlqa2dQU3RweEt3MDhPTmF5UGNuMg?oc=5",
-        "source": "비전21뉴스",
-        "time": "2026-11-19T10:30:19.000Z",
-        "isToday": false
-      },
-      {
-        "title": "신미숙 경기도의원, 외국인노동자 지원센터 중단과 동탄트램 지연 지적",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1yYXRMWHV0TFV2NjJhWXM0aXN4M3VpN3dqb1cwdmxKZF94SC14YzZ0VGUySmdvb25wOE5yd1lSU005cXA0LWVFMHN0RldsZ29BWDRaTEs1ZjFqRDdCajFva01lRC0?oc=5",
-        "source": "매일일보",
-        "time": "2026-11-19T09:05:51.000Z",
-        "isToday": false
-      },
       {
         "title": "경기도의회 신미숙 의원, 외국인노동자 지원센터 중단과 동탄트램 지연 문제 지적",
         "link": "https://news.google.com/rss/articles/CBMiPkFVX3lxTFAxNkdRcXMwZnpfaG1MQWRlVjZsZE9kdllnNmtzRW1HOUFSdkpOSDkzOUdDWnhfU3VvZEdrZkh3?oc=5",
@@ -21871,18 +21879,81 @@
         "isToday": false
       },
       {
-        "title": "17년만에…동탄트램 '착수'",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE11SUV2VlUzMF9XUzhmVzJtdGxGUWRvbHlVNFU1Y2pXMUNhR1N3UHkwOHpmSVd2R2kwU1VBZXREZkY2OFdOQV83dDVaSElUUjNzbEpYR1lyWklxcVN2T2hJ?oc=5",
-        "source": "매일경제",
-        "time": "2026-11-10T08:00:00.000Z",
+        "title": "경기도의회, 17년 기다린 동탄트램…남은 과제는 적기 개통",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
+        "source": "서울경제TV",
+        "time": "2026-11-04T09:30:04.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄 트램 우선시공분 착수…\"17년 기다림 끝에 첫 삽\"",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIVkFuN3VYUzU5WUZNMDd5clJIUF96eXdqaGQxTFc4bE5SamNNb05nbUJrNEVpbDR3YnUzcWRWcnJSWnFvcXBscHFuOEpueEdEMkwtSU0xMWQteE9kQVVLSVl4TFhjd0RUSUJn?oc=5",
+        "source": "철도경제신문",
+        "time": "2026-11-04T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "2031년 목표로 '동탄 트램' 첫 삽…서·남동탄 부동산 기대감",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOUGFZc0ROVWIxT195amxDZzkwTGgwSlIzUFFwQ29adThOUTR1Q2JhX1hlVnlISGdxVk5CRmFTVGtEQ25GdkNaZGFuS0xpWlB4MjkwVGp4YWlVcklUWjhiN9IBeEFVX3lxTE5JaXRwY0luOEMxYXVqTHI4aEl0MmhPWC1qN1BRV3V4ckJPRVFIdDc2d2pmdXpYOVZFSVRscVBJc1ZWaU1XWEw2U1pfbDJtYTEtLW53OFFpeDNZUnB1ODQ2al8wakRqZW5FYXlEZnplMW8xX3MyV2hHXw?oc=5",
+        "source": "뉴시스",
+        "time": "2026-11-04T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
+        "source": "동아일보",
+        "time": "2026-11-04T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "병점역~동탄역 잇는 화성 '동탄트램' 본격화…우선시공분 착수",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB1eFZTemFINERkR0dRVTFiV0l6cTNBUUhxQy1rS0xrQTVkelg3TFlvNG9YSXRNM0lvZ3JfTmVZc0pvMkg2TnQ0WFJwcDRmWkRKU3ZBWjJB?oc=5",
+        "source": "뉴스1",
+        "time": "2026-11-04T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄 트램, 첫 삽 떴다… 화성시, 우선시공분 본격 착수",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Od3ZoTzAzeGdYSWlwT1JFQ2dZS1BRQzhtbFY3dlE4bVJjdTNFYkplVVVwMUhVbVl5SU1DeHlHaWV4MUQ1QW9CclB2VFU5NWxhdXVRd2dWUlZ4UlBVVEJrYjNB?oc=5",
+        "source": "경기신문",
+        "time": "2026-11-03T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "17년 기다린 동탄 트램 첫 삽…31.5㎞·정거장 33곳 내년 8월 본공사",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53bVp2OG5ZUXFHYjBjNk1XNnljRDhuNERVVWpFeFBRRU83X3g1RWUyblNwVnN2ZjcwU2M5c3VQY1RwN2dWeVFwSGlxMmM2OFJWemVKblVJUjVHVWlOOGFid0hybFQwS2xqMGNBRG9kV1pMSDFKS0HSAWZBVV95cUxObmlzMEF3SE56bjczWGlwdWkwUFd3TzdMT21sV2FYdGpWTW91ZzF2ZUZpd2JjUW1lTTRnVHl4ZlE2dTZtelRVa0JDV0c0RG56VEJNT01XOGlNakNEX2oxa0pSTnQ0clE?oc=5",
+        "source": "동아일보",
+        "time": "2026-11-03T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성시, 동탄트램 일부구간 공사 착수…2027년 본공사 착공",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9kclZ5RU0wZktkRmF1RkgtdDRSWDY0cGRCbGptY3JCTGszRUFxTi1Jbzk1S0xhaTYxZDd1QkhaZ1UxblF4MnNua2hTZS1hOUpL?oc=5",
+        "source": "문화일보",
+        "time": "2026-11-03T08:00:00.000Z",
+        "isToday": false
+      },
+      {
+        "title": "[사설] 동탄트램, 17년 기다림 끝에 첫발",
+        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1OU0Z0WVhtWEpFMldWSm90eGRPTzJSUUNwUlVMRFpldGNFV29oSDhJakxiM21lYTROQkNDbW5zeGhnRjQ?oc=5",
+        "source": "수원화성신문",
+        "time": "2026-11-03T08:00:00.000Z",
         "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-24T04:47:19.673Z",
+    "fetchedAt": "2026-11-24T05:17:57.929Z",
     "today": "2026-11-24",
     "items": [
+      {
+        "title": "동탄역 GTX 프리미엄 ‘마지막’ 준공 상가 잡아라",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9wWWptWWlubHRwNFpXNE5OYTNvOEZjT1ByalRNbTFUd0tjT2pibkdLU0p2XzYyT2Zzd1JJbG92eEU2LVowWHpXUnlmTXNrQQ?oc=5",
+        "source": "www.dt.co.kr",
+        "time": "2026-11-24T03:06:58.000Z",
+        "isToday": true
+      },
       {
         "title": "책으로 꿈 찾는 청소년... 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KR2hqMzBFV2YtMkZSVFhtOVF5QVQxUGJOSWNWRXM4LUp0TXJENnNwY1FzUTl5SklTSzh4alY3Tmw1SHlZTkFVZHRDMXVnNnNFWUpEdlM2QlViZXR6ZmhTcVc2cw?oc=5",
@@ -21923,13 +21994,6 @@
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peTd3dWRUaUh1WmZ2OFppdUxzYTNkM3ZSZEFaTEFKc3dvaFdzZWlsenRwaVJFcGpWeko2dXo1WWZTMko1SEo1dGhxbmw1ZXZkRFB3RU1XTmszRUYzTXlHWmR3?oc=5",
         "source": "경인미래신문",
         "time": "2026-11-16T22:01:52.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄 이어 덕절리 물류창고 갈등…민선9기 화성·오산, 상생 해법 찾나",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBPTE8wel9KRFcyNU9VVVV5V1U2ZEp4QzBvQzdDM3VLMnpzR2FzWGh0UURFNTJtWncxYnBhcS1PTXZhcWVqSG1meXcwWlgyMkVuWkJvekdxZ9IBU0FVX3lxTFBya01pcnlIVXNpOTVPT2lXTjFMalM0OEVsTWVYandULXdaeXRSR3poS2gzRm5qRjlHcGNsMjJVTVF0LV81ZFlWZHREM0xweFNHU0FB?oc=5",
-        "source": "KPI뉴스",
-        "time": "2026-11-16T08:09:48.000Z",
         "isToday": false
       },
       {
