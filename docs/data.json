@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T01:57:44.560Z",
+  "generatedAt": "2026-11-25T02:27:45.047Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15807,15 +15807,15 @@
       ]
     },
     "todayDate": "2026-11-25",
-    "lastFetchedAt": "2026-11-25T01:57:34.048Z",
+    "lastFetchedAt": "2026-11-25T02:27:33.513Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 380,
-      "recent24h": 728,
-      "frequent": 253,
-      "new": 42,
-      "fetchedAt": "2026-11-25T01:57:38.699Z"
+      "realtime": 396,
+      "recent24h": 741,
+      "frequent": 263,
+      "new": 49,
+      "fetchedAt": "2026-11-25T02:27:38.615Z"
     },
     "prevDate": "2026-11-24",
     "rows": [
@@ -17871,10 +17871,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 오늘 **89건으로 30일 전보다 10건 증가**했으며, 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 4~8건 사이에서 오르내리며 오늘 6건으로, 30일 전과 같은 수준의 횡보를 보이고 있습니다.",
-      "real": "33평은 최근 30일 6건, 평균 9억 1,300으로 그전 30일(8억 6,800)보다 올랐고, 1년 전 무렵 평균 6억 4,300과 비교하면 **1년 새 약 2억 7천 상승**한 수준입니다. 다만 10월 28일 10억 최고가 이후 최근 거래는 8억 5,000~9억에 체결되고 있고, **평균호가 9억 9,300과 최근 실거래 8억 5,000 사이에 격차**가 있어 보입니다. 25평은 최근 30일 2건, 평균 7억 5,000으로 1년 전 5억 3,500보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 12주 전 67건에서 오늘 89건으로 꾸준히 늘었고, 30일 전보다도 10건 많아 **매도 물량이 점차 쌓이는 흐름**으로 보입니다. 다만 최근 3주는 88~89건으로 증가세가 다소 둔해졌습니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로, 큰 변화는 없습니다.",
+      "real": "33평 최근 30일 실거래는 6건, 평균 9억 1,300만 원으로 그전 30일(8억 6,800만 원)보다 높고, 1년 전 무렵 평균 6억 4,300만 원과 비교하면 **약 2억 7천만 원 오른 수준**입니다. 10월 28일 10억 원으로 역대 최고를 기록한 뒤 11월 21일에는 8억 5,000만 원에 거래되는 등 층에 따라 편차가 큽니다. 25평은 최근 30일 2건, **평균 7억 5,000만 원**으로 1년 전 무렵(5억 3,500만 원)보다 크게 올랐지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-25T01:57:44.222Z"
+      "generatedAt": "2026-11-25T02:27:43.905Z"
     },
     "history": [
       {
@@ -21829,7 +21829,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-25T01:42:18.953Z",
+    "fetchedAt": "2026-11-25T02:27:45.033Z",
     "today": "2026-11-25",
     "items": [
       {
@@ -21905,9 +21905,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-25T01:42:18.885Z",
+    "fetchedAt": "2026-11-25T02:27:45.046Z",
     "today": "2026-11-25",
     "items": [
+      {
+        "title": "직영 매장으로 상권 채운다 '동탄역 대방 디엠시티 더센텀' 26일 대방장 오픈",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0d1FuUG5xQXlSMWdEZmZUWTBjZWI0Qmc2VXpKUmNvMmFSeU5Qc1RRdWs4QlhGX0h1bWtZenNOWmxzZ3hoamhGUldUbkE3dw?oc=5",
+        "source": "전자신문",
+        "time": "2026-11-25T02:22:46.000Z",
+        "isToday": true
+      },
       {
         "title": "[11/25, 매경부동산 추천매물] 동탄2신도시 10%대 본사 직영 편의점 급매가 5억8000만원 등",
         "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1RMGhkZF9aekxpSklWNGI0Y2VoRzhkOTFfUGtMejBoR3NXeEUzaEVrRFY5OXlTenI5azV3b1JWUUEzYkpBV1E?oc=5",
@@ -21958,24 +21965,17 @@
         "isToday": false
       },
       {
-        "title": "동탄역 ‘대방 디엠시티 더센텀’ 상업시설 임차인 모집…GTX A 개통 후 상권 지표 개선",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55alpNVFV0TzlWSUpxM1RtN2Z5ZFljWmk1RGVWeVZPTlh1d2xNYlFTei1IWlRDMXJMbTZzRmpaRW8xcDQ1MEc5Mnl6enJhQS1JV3N6Z1BmVm1WajFucDlMU05B?oc=5",
-        "source": "이코노미스트",
-        "time": "2026-11-18T01:32:00.000Z",
+        "title": "6월 GTX-A 전 구간 개통 위한 사전점검 착수‘",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZMjBiUE45ZFI4Z3RGS2V5bTZ1dWJISkhhTnpWUDJ5ZmE1UzZ2VXBwODBpVF9SSjVSbXBxbi1ubTRWQjVoZ3V6TDJIeXdsdjRlRnVNQVdYTnJKX193cE4tYU1CeGREMW9McXBfV0gtbkc?oc=5",
+        "source": "데일리경기신문",
+        "time": "2026-11-19T08:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "현대건설, 동탄2신도시 A아파트 에어컨 사양 논란…시행·시공 도맡고도 책임 회피",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1yeFBsbjluWVV2QmZOT0JHdHBUOUl3azdCTmtBcl93Vzg1NUd6Z0Z3RkNXNFdSZ2NaNThXV0ZDY2FLNU9hUzVFdFdXOA?oc=5",
-        "source": "아이뉴스24",
-        "time": "2026-11-17T06:29:36.000Z",
-        "isToday": false
-      },
-      {
-        "title": "화성 동탄구보건소, 화성소방서와 산후조리원 8곳 소방·안전 합동점검",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBud1U2OTJIQjBWNDhTUENnVlV0SWVoeF90T180cHh3OXBILXBDNXlROS00YWJ4TXJ0OHlOaVBTX0E0a2dXSXYyYWxQN0J3Mm40X3lVdTI2T3NudmFNbG9QSGQwbDc?oc=5",
-        "source": "매일일보",
-        "time": "2026-11-17T01:47:50.000Z",
+        "title": "반도체 호황 온기 번진 상권…전국 ‘사장님’ 증가 1위는 화성 동탄구",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBEd19aZU8xUU1tWFctbzJxRV9nVGFMNkhDN0ZMNXhzQXNRX1g1S3N5R1JDX0xtN29PVnBGamVDOEhvaFdPMjFqVmQzbFN6TFpqODdzV1diMEd5WUdKOHhYMDczbnpYR05jT01uMg?oc=5",
+        "source": "와이드경제",
+        "time": "2026-11-18T04:22:16.000Z",
         "isToday": false
       }
     ]
