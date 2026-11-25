@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T01:41:43.028Z",
-  "collectUrl": "",
+  "generatedAt": "2026-11-25T01:42:18.965Z",
+  "collectUrl": "https://optimal-motivation-drives-likelihood.trycloudflare.com",
   "state": {
     "complexNo": "110837",
     "complexName": "동탄역포레너스",
@@ -21380,7 +21380,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-24T23:57:25.508Z",
+    "fetchedAt": "2026-11-25T01:42:18.953Z",
     "today": "2026-11-25",
     "items": [
       {
@@ -21456,9 +21456,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-24T23:57:25.284Z",
+    "fetchedAt": "2026-11-25T01:42:18.885Z",
     "today": "2026-11-25",
     "items": [
+      {
+        "title": "[11/25, 매경부동산 추천매물] 동탄2신도시 10%대 본사 직영 편의점 급매가 5억8000만원 등",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1RMGhkZF9aekxpSklWNGI0Y2VoRzhkOTFfUGtMejBoR3NXeEUzaEVrRFY5OXlTenI5azV3b1JWUUEzYkpBV1E?oc=5",
+        "source": "매일경제",
+        "time": "2026-11-25T00:11:12.000Z",
+        "isToday": true
+      },
       {
         "title": "화성 동탄농협, 사랑의 김장김치·쌀 나눔",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEMVQ5YUlvOGQ3Q3pseTNXdy1OZkZVRlVkc3ZBeC01Z0JNTkZyMmVnMkRMcVFiX0szZGczTVFJV3AzU3QtbkduUXhMclBPQXdTekJmd3dYd3RuUQ?oc=5",
@@ -21502,20 +21509,6 @@
         "isToday": false
       },
       {
-        "title": "6월 GTX-A 전 구간 개통 위한 사전점검 착수‘",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZMjBiUE45ZFI4Z3RGS2V5bTZ1dWJISkhhTnpWUDJ5ZmE1UzZ2VXBwODBpVF9SSjVSbXBxbi1ubTRWQjVoZ3V6TDJIeXdsdjRlRnVNQVdYTnJKX193cE4tYU1CeGREMW9McXBfV0gtbkc?oc=5",
-        "source": "데일리경기신문",
-        "time": "2026-11-19T08:00:00.000Z",
-        "isToday": false
-      },
-      {
-        "title": "반도체 호황 온기 번진 상권…전국 ‘사장님’ 증가 1위는 화성 동탄구",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBEd19aZU8xUU1tWFctbzJxRV9nVGFMNkhDN0ZMNXhzQXNRX1g1S3N5R1JDX0xtN29PVnBGamVDOEhvaFdPMjFqVmQzbFN6TFpqODdzV1diMEd5WUdKOHhYMDczbnpYR05jT01uMg?oc=5",
-        "source": "와이드경제",
-        "time": "2026-11-18T04:22:16.000Z",
-        "isToday": false
-      },
-      {
         "title": "동탄역 ‘대방 디엠시티 더센텀’ 상업시설 임차인 모집…GTX A 개통 후 상권 지표 개선",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55alpNVFV0TzlWSUpxM1RtN2Z5ZFljWmk1RGVWeVZPTlh1d2xNYlFTei1IWlRDMXJMbTZzRmpaRW8xcDQ1MEc5Mnl6enJhQS1JV3N6Z1BmVm1WajFucDlMU05B?oc=5",
         "source": "이코노미스트",
@@ -21523,10 +21516,17 @@
         "isToday": false
       },
       {
-        "title": "동탄역 상가 거리에 ‘뜻밖의 시장’ 열려… ‘동탄역 대방 디엠시티 더센텀’ 팝업 플리마켓 성료",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1XbHllMnZmb05CdlRILXVpbVhadmRNU0lSRDZ2VDU4RGNwXzRvVE5pQ3d3MldQbUFPR2NPT3VtNDl6d2V5dXJ4Q2xjc0JoQQ?oc=5",
-        "source": "www.dt.co.kr",
-        "time": "2026-11-18T01:13:55.000Z",
+        "title": "현대건설, 동탄2신도시 A아파트 에어컨 사양 논란…시행·시공 도맡고도 책임 회피",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1yeFBsbjluWVV2QmZOT0JHdHBUOUl3azdCTmtBcl93Vzg1NUd6Z0Z3RkNXNFdSZ2NaNThXV0ZDY2FLNU9hUzVFdFdXOA?oc=5",
+        "source": "아이뉴스24",
+        "time": "2026-11-17T06:29:36.000Z",
+        "isToday": false
+      },
+      {
+        "title": "화성 동탄구보건소, 화성소방서와 산후조리원 8곳 소방·안전 합동점검",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBud1U2OTJIQjBWNDhTUENnVlV0SWVoeF90T180cHh3OXBILXBDNXlROS00YWJ4TXJ0OHlOaVBTX0E0a2dXSXYyYWxQN0J3Mm40X3lVdTI2T3NudmFNbG9QSGQwbDc?oc=5",
+        "source": "매일일보",
+        "time": "2026-11-17T01:47:50.000Z",
         "isToday": false
       }
     ]
