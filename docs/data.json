@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T08:27:17.713Z",
+  "generatedAt": "2026-11-25T08:57:31.671Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15807,15 +15807,15 @@
       ]
     },
     "todayDate": "2026-11-25",
-    "lastFetchedAt": "2026-11-25T08:27:02.230Z",
+    "lastFetchedAt": "2026-11-25T08:57:16.038Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 129,
-      "recent24h": 840,
+      "realtime": 132,
+      "recent24h": 843,
       "frequent": 75,
-      "new": 23,
-      "fetchedAt": "2026-11-25T08:27:11.816Z"
+      "new": 22,
+      "fetchedAt": "2026-11-25T08:57:25.008Z"
     },
     "prevDate": "2026-11-24",
     "rows": [
@@ -17871,10 +17871,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 67건에서 91건으로 꾸준히 늘었고, 오늘 **91건으로 30일 내 최고치**를 기록했습니다. 30일 전보다 12건 많아 **매도 물량이 쌓이는 흐름**으로 보입니다. 25평은 4~8건 사이에서 오르내리며 오늘 6건으로 큰 변화 없이 횡보하고 있습니다.",
-      "real": "33평은 최근 30일 6건이 평균 9억 1,300만 원에 거래되어 그전 30일(8억 6,800만 원)보다 높고, **1년 전 무렵 평균 6억 4,300만 원 대비 크게 오른 수준**입니다. 다만 10월 28일 10억 원 최고가 이후 11월 거래는 8억 5,000만~9억 원에 머물렀고, 평균호가 9억 9,300만 원과 **최근 실거래 8억 5,000만 원 사이에 격차**가 있습니다. 25평은 최근 30일 2건(평균 7억 5,000만 원)으로 1년 전 5억 3,500만 원보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주간 67건에서 91건으로 꾸준히 늘었고, 오늘 **91건으로 30일 내 최고치**를 기록해 30일 전보다 12건 많습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 4~8건 사이에서 오르내리며 **6건 수준에서 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 6건, 평균 9억 1,300만 원으로 그전 30일(8억 6,800만 원)보다 올랐고, **1년 전 무렵 6억 4,300만 원 대비 크게 상승**했습니다. 다만 10월 28일 10억 최고가 이후 11월 거래는 8억 5,000만~9억 원에 그쳐, **평균호가 9억 9,300만 원과 실거래 사이에 간격**이 있습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-25T08:27:17.523Z"
+      "generatedAt": "2026-11-25T08:57:30.737Z"
     },
     "history": [
       {
@@ -21953,7 +21953,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-25T07:57:39.377Z",
+    "fetchedAt": "2026-11-25T08:57:31.663Z",
     "today": "2026-11-25",
     "items": [
       {
@@ -22029,7 +22029,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-25T07:57:39.436Z",
+    "fetchedAt": "2026-11-25T08:57:31.666Z",
     "today": "2026-11-25",
     "items": [
       {
@@ -22048,7 +22048,7 @@
       },
       {
         "title": "[11/25, 매경부동산 추천매물] 동탄2신도시 10%대 본사 직영 편의점 급매가 5억8000만원 등",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1XQTNhSll0Y1BkZ3N4MHhZX1VDb2ZOejhXNTdwQVVrZkJxcUhvRWRxd3NLTHRYZEJyRGRRTUpMVTkxaTkzWlJSdVRFbVZBcFlXYnV5N3ZaTFY?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1RMGhkZF9aekxpSklWNGI0Y2VoRzhkOTFfUGtMejBoR3NXeEUzaEVrRFY5OXlTenI5azV3b1JWUUEzYkpBV1E?oc=5",
         "source": "매일경제",
         "time": "2026-11-25T00:11:12.000Z",
         "isToday": true
