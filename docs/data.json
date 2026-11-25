@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T23:27:10.485Z",
+  "generatedAt": "2026-11-25T23:57:16.693Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15807,15 +15807,15 @@
       ]
     },
     "todayDate": "2026-11-26",
-    "lastFetchedAt": "2026-11-25T23:26:56.255Z",
+    "lastFetchedAt": "2026-11-25T23:57:00.852Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 73,
-      "recent24h": 918,
-      "frequent": 37,
-      "new": 22,
-      "fetchedAt": "2026-11-25T23:27:05.261Z"
+      "realtime": 85,
+      "recent24h": 917,
+      "frequent": 41,
+      "new": 26,
+      "fetchedAt": "2026-11-25T23:57:10.745Z"
     },
     "prevDate": "2026-11-25",
     "rows": [
@@ -17884,10 +17884,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 65건에서 91건으로 꾸준히 늘었고, **30일 전보다 12건 증가해 오늘 91건으로 30일 최고치**를 기록했습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **4~8건 사이에서 횡보하며 오늘 6건**으로 큰 변화가 없습니다.",
-      "real": "33평은 **최근 30일 4건, 평균 9억으로 그전 30일(8억 9,600)과 비슷한 수준**을 유지했습니다. 10월 28일 10억 최고가 이후 11월에는 8억 5,000~9억 거래가 이어져, 평균호가 9억 9,300과는 차이가 있습니다. 25평은 최근 30일 2건으로 평균 7억 5,000이며, **1년 전 무렵 평균 5억 3,500보다 높은 수준**이지만 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 65건에서 91건으로 꾸준히 늘었고, 오늘 **91건으로 30일 최고치**를 기록해 30일 전보다 12건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
+      "real": "33평은 최근 30일 4건 평균 9억으로 그전 30일(8억 9,600)과 비슷해 **9억 안팎에서 횡보**하는 모습이며, 1년 전 무렵 평균 6억 4,300보다는 크게 높습니다. 다만 10월 28일 10억 최고가 이후 최근 거래는 8억 5,000~9억에 체결됐고, 평균호가 9억 9,300과는 차이가 있습니다. 25평은 최근 30일 2건 평균 7억 5,000으로 **1년 전 무렵(5억 3,500)보다 높은 수준**이나, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-25T23:27:10.212Z"
+      "generatedAt": "2026-11-25T23:57:15.808Z"
     },
     "history": [
       {
@@ -21457,7 +21457,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-25T22:58:37.622Z",
+    "fetchedAt": "2026-11-25T23:57:16.692Z",
     "today": "2026-11-26",
     "items": [
       {
@@ -21533,7 +21533,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-25T22:58:37.606Z",
+    "fetchedAt": "2026-11-25T23:57:16.655Z",
     "today": "2026-11-26",
     "items": [
       {
@@ -21579,10 +21579,10 @@
         "isToday": false
       },
       {
-        "title": "책으로 꿈 찾는 청소년... 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KR2hqMzBFV2YtMkZSVFhtOVF5QVQxUGJOSWNWRXM4LUp0TXJENnNwY1FzUTl5SklTSzh4alY3Tmw1SHlZTkFVZHRDMXVnNnNFWUpEdlM2QlViZXR6ZmhTcVc2cw?oc=5",
-        "source": "경기탑뉴스",
-        "time": "2026-11-22T08:50:24.000Z",
+        "title": "책으로 꿈 찾는 청소년… 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9UQjZLSjRQMlU2STVCUUlreXQ5d0ROMVhfRlhSZGQydHJoazdraTc5dHdnZUd4ZF8tT0MyTGttQzZhN3h6b1g1M2EyNFVJbXZGRTJTNURBSmpUT0p1YlhTV1NReEEzVG05?oc=5",
+        "source": "광교신문",
+        "time": "2026-11-22T17:06:26.000Z",
         "isToday": false
       },
       {
@@ -21600,10 +21600,10 @@
         "isToday": false
       },
       {
-        "title": "동탄역 ‘대방 디엠시티 더센텀’ 상업시설 임차인 모집…GTX A 개통 후 상권 지표 개선",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55alpNVFV0TzlWSUpxM1RtN2Z5ZFljWmk1RGVWeVZPTlh1d2xNYlFTei1IWlRDMXJMbTZzRmpaRW8xcDQ1MEc5Mnl6enJhQS1JV3N6Z1BmVm1WajFucDlMU05B?oc=5",
-        "source": "이코노미스트",
-        "time": "2026-11-18T01:32:00.000Z",
+        "title": "6월 GTX-A 전 구간 개통 위한 사전점검 착수‘",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZMjBiUE45ZFI4Z3RGS2V5bTZ1dWJISkhhTnpWUDJ5ZmE1UzZ2VXBwODBpVF9SSjVSbXBxbi1ubTRWQjVoZ3V6TDJIeXdsdjRlRnVNQVdYTnJKX193cE4tYU1CeGREMW9McXBfV0gtbkc?oc=5",
+        "source": "데일리경기신문",
+        "time": "2026-11-19T08:00:00.000Z",
         "isToday": false
       }
     ]
