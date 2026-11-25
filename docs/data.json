@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T01:01:21.827Z",
-  "collectUrl": "https://api.trycloudflare.com",
+  "generatedAt": "2026-11-25T01:36:36.570Z",
+  "collectUrl": "",
   "state": {
     "complexNo": "110837",
     "complexName": "동탄역포레너스",
@@ -15811,11 +15811,11 @@
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 319,
-      "recent24h": 686,
-      "frequent": 224,
-      "new": 26,
-      "fetchedAt": "2026-11-25T00:59:39.687Z"
+      "realtime": 364,
+      "recent24h": 715,
+      "frequent": 245,
+      "new": 35,
+      "fetchedAt": "2026-11-25T01:35:40.843Z"
     },
     "prevDate": "2026-11-24",
     "rows": [
