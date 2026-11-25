@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T16:57:13.757Z",
+  "generatedAt": "2026-11-25T17:27:12.858Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15807,15 +15807,15 @@
       ]
     },
     "todayDate": "2026-11-26",
-    "lastFetchedAt": "2026-11-25T16:56:57.835Z",
+    "lastFetchedAt": "2026-11-25T17:26:58.476Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 74,
-      "recent24h": 899,
-      "frequent": 28,
-      "new": 22,
-      "fetchedAt": "2026-11-25T16:57:07.240Z"
+      "realtime": 51,
+      "recent24h": 897,
+      "frequent": 20,
+      "new": 17,
+      "fetchedAt": "2026-11-25T17:27:06.670Z"
     },
     "prevDate": "2026-11-25",
     "rows": [
@@ -17884,10 +17884,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 65건에서 91건으로 꾸준히 늘었고, 오늘 **91건으로 30일 최고치**를 기록해 30일 전보다 12건 많습니다. 매도 물량이 점차 쌓이고 있는 흐름으로 보입니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
-      "real": "33평 최근 30일 실거래 평균은 9억 원(4건)으로 그전 30일 8억 9,600만 원과 비슷한 수준이지만, 1년 전 무렵 6억 4,300만 원과 비교하면 **약 2억 6천만 원 높은 수준**입니다. 다만 10월 28일 10억 원 최고가 이후 최근 거래는 **8억 5,000만~9억 원대**에 머물고 있고, 평균호가 9억 9,300만 원과도 차이가 있습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 65건에서 91건으로 꾸준히 늘었고, 오늘 **91건으로 30일 최고치**를 기록해 30일 전보다 12건 많습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
+      "real": "33평은 최근 30일 4건 평균 9억으로 그전 30일(8억 9,600)과 비슷하지만, 1년 전 무렵 평균 6억 4,300보다 **약 2억 5,700 높은 수준**입니다. 10월 28일 10억 최고가 이후 최근 거래는 8억 5,000~9억에 머물렀고, 평균호가 9억 9,300과 최근 실거래 사이에 차이가 있습니다. 25평은 11월 2건 평균 7억 5,000으로 **1년 전 5억 3,500보다 크게 올랐으나**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-25T16:57:12.694Z"
+      "generatedAt": "2026-11-25T17:27:11.983Z"
     },
     "history": [
       {
@@ -21533,7 +21533,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-25T16:27:15.073Z",
+    "fetchedAt": "2026-11-25T17:27:12.857Z",
     "today": "2026-11-26",
     "items": [
       {
@@ -21587,9 +21587,9 @@
       },
       {
         "title": "책으로 꿈 찾는 청소년... 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KR2hqMzBFV2YtMkZSVFhtOVF5QVQxUGJOSWNWRXM4LUp0TXJENnNwY1FzUTl5SklTSzh4alY3Tmw1SHlZTkFVZHRDMXVnNnNFWUpEdlM2QlViZXR6ZmhTcVc2cw?oc=5",
-        "source": "경기탑뉴스",
-        "time": "2026-11-22T08:50:24.000Z",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8xNmppeW1VT2dsRUVrTVZ1Qk96LWZCT1pkLVlDTnVadFd5VWM3ZHJpQmlqME10UzBQWGY3eVhsQXBMYjByRUNDazB6Qmd1dWhXY1R0UkdqUzNSX3JNNDVSSU1DOXdqS3BkS2lUWDlZUHAwZ9IBckFVX3lxTE8xNmppeW1VT2dsRUVrTVZ1Qk96LWZCT1pkLVlDTnVadFd5VWM3ZHJpQmlqME10UzBQWGY3eVhsQXBMYjByRUNDazB6Qmd1dWhXY1R0UkdqUzNSX3JNNDVSSU1DOXdqS3BkS2lUWDlZUHAwZw?oc=5",
+        "source": "엔디엔뉴스",
+        "time": "2026-11-22T14:12:01.000Z",
         "isToday": false
       },
       {
