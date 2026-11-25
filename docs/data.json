@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T10:27:17.627Z",
+  "generatedAt": "2026-11-25T10:57:19.476Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15807,15 +15807,15 @@
       ]
     },
     "todayDate": "2026-11-25",
-    "lastFetchedAt": "2026-11-25T10:27:01.934Z",
+    "lastFetchedAt": "2026-11-25T10:57:08.222Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 122,
-      "recent24h": 832,
-      "frequent": 72,
-      "new": 18,
-      "fetchedAt": "2026-11-25T10:27:11.033Z"
+      "realtime": 110,
+      "recent24h": 838,
+      "frequent": 64,
+      "new": 20,
+      "fetchedAt": "2026-11-25T10:57:13.178Z"
     },
     "prevDate": "2026-11-24",
     "rows": [
@@ -17871,10 +17871,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 67건에서 꾸준히 늘어 **오늘 91건으로 30일 최고치**를 기록했고, 30일 전보다 12건 많습니다. 주간 흐름상 한 번도 크게 꺾이지 않고 쌓이고 있어 매도 물량이 누적되는 모습으로 보입니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
-      "real": "33평 최근 30일 실거래는 6건, **평균 9억 1,300만 원으로 그전 30일(8억 6,800만 원)보다 높아졌고**, 1년 전 무렵 평균 6억 4,300만 원과 비교하면 큰 폭으로 올랐습니다. 다만 10월 28일 10억 원 최고가 이후 11월 거래는 8억 5,000만~9억 원 수준이며, 평균 호가 9억 9,300만 원과 실거래 사이에 격차가 있습니다. 25평은 최근 30일 2건, **평균 7억 5,000만 원**으로 1년 전 무렵(5억 3,500만 원)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 67건에서 91건으로 꾸준히 늘었고, 오늘 **91건으로 30일 최고치**를 기록했습니다. 30일 전보다 12건 많아 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 4~8건 사이에서 움직이며 현재 6건으로, **큰 변화 없이 횡보**하고 있습니다.",
+      "real": "33평은 최근 30일 6건, **평균 9억 1,300만 원**으로 직전 30일(8억 6,800만 원)보다 올랐고, 1년 전 무렵 평균 6억 4,300만 원과 비교하면 크게 상승했습니다. 10월 28일 10억 원으로 역대 최고를 찍은 뒤 11월 21일에는 8억 5,000만 원에 거래되어, 평균호가 9억 9,300만 원과 차이가 있습니다. 25평은 최근 30일 2건, **평균 7억 5,000만 원**으로 1년 전 무렵 5억 3,500만 원보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-25T10:27:16.768Z"
+      "generatedAt": "2026-11-25T10:57:18.332Z"
     },
     "history": [
       {
@@ -21953,7 +21953,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-25T10:27:17.627Z",
+    "fetchedAt": "2026-11-25T10:57:19.475Z",
     "today": "2026-11-25",
     "items": [
       {
@@ -22029,9 +22029,16 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-25T10:27:17.571Z",
+    "fetchedAt": "2026-11-25T10:57:19.138Z",
     "today": "2026-11-25",
     "items": [
+      {
+        "title": "장애물 없는 우수등급, 화성동탄중앙도서관 장애인 편의 점검",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHWk8xS3dwTXdIRnlyRmx3Ti0yanJzUDNBMHVscXhjbGR5NG1XT3oyM0dKb1c5V2U1QWV0bW1ldUczNFVtMzdDYkxYTXJJLTRmSWpGTm9TdVZrRUVNS3dJYWRMTjRrY0JPaTZRWWx5NldzQdIBckFVX3lxTFBHWk8xS3dwTXdIRnlyRmx3Ti0yanJzUDNBMHVscXhjbGR5NG1XT3oyM0dKb1c5V2U1QWV0bW1ldUczNFVtMzdDYkxYTXJJLTRmSWpGTm9TdVZrRUVNS3dJYWRMTjRrY0JPaTZRWWx5NldzQQ?oc=5",
+        "source": "에이블뉴스",
+        "time": "2026-11-25T08:58:14.000Z",
+        "isToday": true
+      },
       {
         "title": "화성 무봉산자연휴양림, 동탄신도시 곁 9만6000평의 숲…산책부터 캠핑·숙박까지",
         "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVnRzWXUtLTgxQ1RaSTJ5QmdDTTcyN1cyemRnTFFOeF9ZcUg2TU84NmxvRXl5dnMwbGFpSk1JRkpRd09VenFhZmRWQndNRlh2LXlucFNIQzRIZXNDcjZJZ0poTUxYS08wTll4YjlNLU1VdE1zUERCQm1hU2JxQ1VGNUs3cEExQjNR?oc=5",
@@ -22093,13 +22100,6 @@
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄역 ‘대방 디엠시티 더센텀’ 상업시설 임차인 모집…GTX A 개통 후 상권 지표 개선",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55alpNVFV0TzlWSUpxM1RtN2Z5ZFljWmk1RGVWeVZPTlh1d2xNYlFTei1IWlRDMXJMbTZzRmpaRW8xcDQ1MEc5Mnl6enJhQS1JV3N6Z1BmVm1WajFucDlMU05B?oc=5",
-        "source": "이코노미스트",
-        "time": "2026-11-18T01:32:00.000Z",
         "isToday": false
       }
     ]
