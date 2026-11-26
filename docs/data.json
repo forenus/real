@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:27:17.187Z",
+  "generatedAt": "2026-11-26T14:57:30.571Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15800,15 +15800,15 @@
       ]
     },
     "todayDate": "2026-11-26",
-    "lastFetchedAt": "2026-11-26T14:26:58.981Z",
+    "lastFetchedAt": "2026-11-26T14:57:11.877Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 132,
-      "recent24h": 612,
-      "frequent": 58,
-      "new": 39,
-      "fetchedAt": "2026-11-26T14:27:10.330Z"
+      "realtime": 125,
+      "recent24h": 616,
+      "frequent": 53,
+      "new": 34,
+      "fetchedAt": "2026-11-26T14:57:23.707Z"
     },
     "prevDate": "2026-11-25",
     "rows": [
@@ -17877,10 +17877,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 오늘 89건으로 30일 전보다 10건 늘었고, 최근 12주 동안 **65건에서 89건까지 꾸준히 증가**해 매도 물량이 쌓이는 흐름으로 보입니다. 다만 최근 3주는 89건에서 횡보하고 있습니다. 25평은 **6건 안팎에서 4~8건 사이를 오가며** 큰 변화 없이 유지되고 있습니다.",
-      "real": "33평은 최근 30일 4건 평균 9억으로 그전 30일(8억 9,600)과 비슷하지만, 1년 전 무렵 평균 6억 4,300보다 **약 2억 5,700 높은 수준**입니다. 10월 28일 역대 최고 10억 이후 11월 거래는 8억 5,000~9억에 체결됐고, 평균호가 9억 9,500과 최근 10일 실거래 8억 5,000 사이에 **1억 4,500의 차이**가 있습니다. 25평은 최근 30일 2건 평균 7억 5,000으로 1년 전 무렵(5억 3,500)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 65건에서 89건으로 꾸준히 늘었고, **30일 전보다 10건 증가한 89건**으로 매도 물량이 쌓이는 흐름으로 보입니다. 다만 최근 3주는 89건에서 멈춰 증가세가 주춤한 모습입니다. 25평은 **4~8건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
+      "real": "33평은 최근 30일 4건 평균 9억으로 그전 30일(8억 9,600)과 비슷하지만, **1년 전 무렵 평균 6억 4,300보다 크게 오른 수준**입니다. 10월 28일 10억 최고가 이후 11월 21일 8억 5,000 거래가 있어, **평균호가 9억 9,500과 실거래 사이에 간격**이 보입니다. 25평은 최근 30일 2건 평균 7억 5,000으로 1년 전(5억 3,500)보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-26T14:27:16.077Z"
+      "generatedAt": "2026-11-26T14:57:29.306Z"
     },
     "history": [
       {
@@ -21899,7 +21899,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-26T14:27:17.186Z",
+    "fetchedAt": "2026-11-26T14:57:30.570Z",
     "today": "2026-11-26",
     "items": [
       {
@@ -21910,16 +21910,16 @@
         "isToday": false
       },
       {
-        "title": "경기도의회, 17년 기다린 동탄트램…남은 과제는 적기 개통",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
-        "source": "서울경제TV",
+        "title": "2031년 목표로 '동탄 트램' 첫 삽…서·남동탄 부동산 기대감",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOUGFZc0ROVWIxT195amxDZzkwTGgwSlIzUFFwQ29adThOUTR1Q2JhX1hlVnlISGdxVk5CRmFTVGtEQ25GdkNaZGFuS0xpWlB4MjkwVGp4YWlVcklUWjhiN9IBeEFVX3lxTE5JaXRwY0luOEMxYXVqTHI4aEl0MmhPWC1qN1BRV3V4ckJPRVFIdDc2d2pmdXpYOVZFSVRscVBJc1ZWaU1XWEw2U1pfbDJtYTEtLW53OFFpeDNZUnB1ODQ2al8wakRqZW5FYXlEZnplMW8xX3MyV2hHXw?oc=5",
+        "source": "뉴시스",
         "time": "2026-11-04T08:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "2031년 목표로 '동탄 트램' 첫 삽…서·남동탄 부동산 기대감",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOUGFZc0ROVWIxT195amxDZzkwTGgwSlIzUFFwQ29adThOUTR1Q2JhX1hlVnlISGdxVk5CRmFTVGtEQ25GdkNaZGFuS0xpWlB4MjkwVGp4YWlVcklUWjhiN9IBeEFVX3lxTE5JaXRwY0luOEMxYXVqTHI4aEl0MmhPWC1qN1BRV3V4ckJPRVFIdDc2d2pmdXpYOVZFSVRscVBJc1ZWaU1XWEw2U1pfbDJtYTEtLW53OFFpeDNZUnB1ODQ2al8wakRqZW5FYXlEZnplMW8xX3MyV2hHXw?oc=5",
-        "source": "뉴시스",
+        "title": "경기도의회, 17년 기다린 동탄트램…남은 과제는 적기 개통",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
+        "source": "서울경제TV",
         "time": "2026-11-04T08:00:00.000Z",
         "isToday": false
       },
@@ -21975,7 +21975,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-26T14:27:17.153Z",
+    "fetchedAt": "2026-11-26T14:57:30.261Z",
     "today": "2026-11-26",
     "items": [
       {
@@ -21997,13 +21997,6 @@
         "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0d1FuUG5xQXlSMWdEZmZUWTBjZWI0Qmc2VXpKUmNvMmFSeU5Qc1RRdWs4QlhGX0h1bWtZenNOWmxzZ3hoamhGUldUbkE3dw?oc=5",
         "source": "전자신문",
         "time": "2026-11-25T02:22:46.000Z",
-        "isToday": false
-      },
-      {
-        "title": "[11/25, 매경부동산 추천매물] 동탄2신도시 10%대 본사 직영 편의점 급매가 5억8000만원 등",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1RMGhkZF9aekxpSklWNGI0Y2VoRzhkOTFfUGtMejBoR3NXeEUzaEVrRFY5OXlTenI5azV3b1JWUUEzYkpBV1E?oc=5",
-        "source": "매일경제",
-        "time": "2026-11-25T00:11:12.000Z",
         "isToday": false
       },
       {
@@ -22046,6 +22039,13 @@
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
+        "isToday": false
+      },
+      {
+        "title": "동탄역 ‘대방 디엠시티 더센텀’ 상업시설 임차인 모집…GTX A 개통 후 상권 지표 개선",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55alpNVFV0TzlWSUpxM1RtN2Z5ZFljWmk1RGVWeVZPTlh1d2xNYlFTei1IWlRDMXJMbTZzRmpaRW8xcDQ1MEc5Mnl6enJhQS1JV3N6Z1BmVm1WajFucDlMU05B?oc=5",
+        "source": "이코노미스트",
+        "time": "2026-11-18T01:32:00.000Z",
         "isToday": false
       }
     ]
