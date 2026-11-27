@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T13:27:16.885Z",
+  "generatedAt": "2026-11-27T13:57:15.301Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15800,15 +15800,15 @@
       ]
     },
     "todayDate": "2026-11-27",
-    "lastFetchedAt": "2026-11-27T13:26:56.754Z",
+    "lastFetchedAt": "2026-11-27T13:57:02.861Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 126,
-      "recent24h": 723,
-      "frequent": 55,
+      "realtime": 131,
+      "recent24h": 732,
+      "frequent": 58,
       "new": 42,
-      "fetchedAt": "2026-11-27T13:27:10.127Z"
+      "fetchedAt": "2026-11-27T13:57:08.571Z"
     },
     "prevDate": "2026-11-26",
     "rows": [
@@ -17890,10 +17890,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주 동안 64건에서 88건으로 **꾸준히 늘어 30일 전보다 7건 많은 수준**이며, 25일 91건으로 최고치를 찍은 뒤 소폭 줄었습니다. 매도 물량이 점차 쌓이는 흐름으로 보입니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 변동이 거의 없습니다.",
-      "real": "33평은 최근 30일 3건의 평균이 8억 6,700만 원으로, **그전 30일(6건, 9억 1,300만 원)보다 낮아졌고** 가장 최근 거래도 8억 5,000만 원으로 10월 말 역대최고 10억 원보다 낮습니다. 다만 1년 전 무렵 평균 6억 4,300만 원과 비교하면 여전히 높은 수준입니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 5억 3,500만 원보다 크게 올랐으나**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 64건에서 88건으로 늘어 **꾸준한 증가 흐름**을 보였고, 30일 전보다 7건 많습니다. 다만 11월 25일 91건을 고점으로 최근 이틀 사이 소폭 줄어 증가세가 다소 주춤한 모습입니다. 25평은 **6건 안팎에서 횡보**하고 있어 물량 변화가 거의 없는 것으로 보입니다.",
+      "real": "33평 최근 30일 실거래 평균은 8억 6,700만 원(3건)으로, 그전 30일 평균 9억 1,300만 원(6건)보다 **약 4,700만 원 낮아졌습니다**. 10월 28일 역대최고 10억 원 이후 8억 5,000만~9억 원 선에서 거래되고 있으며, 평균호가 9억 9,700만 원과는 차이가 있습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 무렵 5억 3,500만 원보다 크게 높지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-27T13:27:15.895Z"
+      "generatedAt": "2026-11-27T13:57:14.293Z"
     },
     "history": [
       {
@@ -22410,7 +22410,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-27T12:57:18.348Z",
+    "fetchedAt": "2026-11-27T13:57:15.300Z",
     "today": "2026-11-27",
     "items": [
       {
@@ -22456,10 +22456,10 @@
         "isToday": false
       },
       {
-        "title": "책으로 꿈 찾는 청소년... 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05cEFsWm85ZXpOUm44NGNEYWxIM0Y2QnNjWHcwTmNPNktXZEpHZjdvaTVLOGVFazFURC1hUW9fRzNoZG41Q2NFMjl2RDJ5eVFEc1pCa1d4S0YyeUZwakVVM0xpUUlvVklLZVBkTTFn0gFyQVVfeXFMTzE2aml5bVVPZ2xFRWtNVnVCT3otZkJPWmQtWUNOdVp0V3lVYzdkcmlCaWowTXRTMFBYZjd5WGxBcExiMHJFQ0NrMHpCZ3V1aFdjVHRSR2pTM1Jfck00NVJJTUM5d2pLcGRLaVRYOVlQcDBn?oc=5",
-        "source": "엔디엔뉴스",
-        "time": "2026-11-22T12:51:32.000Z",
+        "title": "책으로 꿈 찾는 청소년… 화성동탄중앙도서관, 솔빛중학교와 업무협약 체결",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9UQjZLSjRQMlU2STVCUUlreXQ5d0ROMVhfRlhSZGQydHJoazdraTc5dHdnZUd4ZF8tT0MyTGttQzZhN3h6b1g1M2EyNFVJbXZGRTJTNURBSmpUT0p1YlhTV1NReEEzVG05?oc=5",
+        "source": "광교신문",
+        "time": "2026-11-22T17:06:26.000Z",
         "isToday": false
       },
       {
@@ -22470,17 +22470,17 @@
         "isToday": false
       },
       {
+        "title": "화성시 동탄농협, 김장김치 300통 담가 겨울나기 나눔",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE82Q2t4U0p1cFpVcXVhbU1lYmxyeVFPV2lkNDdWaVRkM21heWlBWElfSmJBZE9rZEdzSWZ3c1FZYUZjMzNoejVBZHhha0NCY2FQOURFOTVRSlF1TG9RS1FzeV9tVzVTZWg0MF9fbTJhM0hrVFpzbDdpQtIBeEFVX3lxTE82Q2t4U0p1cFpVcXVhbU1lYmxyeVFPV2lkNDdWaVRkM21heWlBWElfSmJBZE9rZEdzSWZ3c1FZYUZjMzNoejVBZHhha0NCY2FQOURFOTVRSlF1TG9RS1FzeV9tVzVTZWg0MF9fbTJhM0hrVFpzbDdpQg?oc=5",
+        "source": "뉴시스",
+        "time": "2026-11-20T04:55:58.000Z",
+        "isToday": false
+      },
+      {
         "title": "겨울철 화성 동탄·병점 야생 너구리 출몰 '비상'…기생충 확산 우려 속 시 정밀대응 착수",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tWGFjcVpSUENqcUQ4YmhBY1UybUE0eW1hVi1DaEtKZ09jMURzYi1lR3lBYkZfLXN4MUVuMFpVeHVjXzlJUUVoMHM5eTNOS0p6MmJwenRlbkhsYXFjZVNQNVlR?oc=5",
         "source": "경기신문",
         "time": "2026-11-19T09:11:32.000Z",
-        "isToday": false
-      },
-      {
-        "title": "동탄역 ‘대방 디엠시티 더센텀’ 상업시설 임차인 모집…GTX A 개통 후 상권 지표 개선",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55alpNVFV0TzlWSUpxM1RtN2Z5ZFljWmk1RGVWeVZPTlh1d2xNYlFTei1IWlRDMXJMbTZzRmpaRW8xcDQ1MEc5Mnl6enJhQS1JV3N6Z1BmVm1WajFucDlMU05B?oc=5",
-        "source": "이코노미스트",
-        "time": "2026-11-18T08:00:00.000Z",
         "isToday": false
       }
     ]
