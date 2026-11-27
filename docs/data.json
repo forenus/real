@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T17:27:15.435Z",
+  "generatedAt": "2026-11-27T17:57:09.704Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15792,15 +15792,15 @@
       ]
     },
     "todayDate": "2026-11-28",
-    "lastFetchedAt": "2026-11-27T17:26:57.226Z",
+    "lastFetchedAt": "2026-11-27T17:56:53.213Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 46,
-      "recent24h": 723,
-      "frequent": 22,
-      "new": 12,
-      "fetchedAt": "2026-11-27T17:27:06.551Z"
+      "realtime": 30,
+      "recent24h": 721,
+      "frequent": 16,
+      "new": 6,
+      "fetchedAt": "2026-11-27T17:57:02.865Z"
     },
     "prevDate": "2026-11-27",
     "rows": [
@@ -17895,10 +17895,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 64건에서 87건으로 늘어 **12주 새 약 23건 증가**했으며, 30일 전보다 6건 많은 수준입니다. 다만 11월 25일 91건을 고점으로 최근 일주일은 2건 줄어 **증가세가 다소 멈춘 모습**으로 보입니다. 25평은 4~7건 사이에서 6건을 유지하며 횡보하고 있습니다.",
-      "real": "33평은 최근 30일 3건 평균 8억 6,700으로 그전 30일(6건, 9억 1,300)보다 낮아졌지만, 1년 전 무렵 평균 6억 4,300과 비교하면 **1년 새 2억 원 이상 높은 수준**입니다. 10월 28일 역대최고 10억 이후 8억 5,000~9억 선에서 거래되고 있으며, 평균호가 9억 9,600과 **최근 실거래 사이에 1억 원 이상 차이**가 있습니다. 25평은 11월 2건 평균 7억 5,000으로 1년 전 5억 3,500보다 높지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 64건에서 87건으로 늘어 **12주간 약 23건 증가**했고, 30일 전보다 6건 많아 매도 물량이 쌓이는 흐름으로 보입니다. 다만 11월 25일 91건을 고점으로 최근 7일간 2건 줄어 증가세는 다소 주춤한 모습입니다. 25평은 **6건 안팎에서 횡보**하고 있어 큰 변화가 없습니다.",
+      "real": "33평 최근 30일 실거래 평균은 **8억 6,700만 원으로 그전 30일(9억 1,300만 원)보다 낮아졌고**, 10월 28일 역대 최고 10억 원 이후 8억 5,000만~9억 원 선에서 거래되고 있습니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 1년 전 무렵(5억 3,500만 원)보다 높은 수준이나, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 33평 평균호가 9억 9,600만 원은 **최근 10일 실거래 평균 8억 5,000만 원과 약 1억 원 이상 차이**가 납니다.",
       "source": "ai",
-      "generatedAt": "2026-11-27T17:27:15.221Z"
+      "generatedAt": "2026-11-27T17:57:08.643Z"
     },
     "history": [
       {
@@ -21387,7 +21387,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-27T16:57:21.700Z",
+    "fetchedAt": "2026-11-27T17:57:09.704Z",
     "today": "2026-11-28",
     "items": [
       {
@@ -21405,16 +21405,16 @@
         "isToday": false
       },
       {
-        "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
-        "source": "동아일보",
+        "title": "경기도의회, 17년 기다린 동탄트램…남은 과제는 적기 개통",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
+        "source": "서울경제TV",
         "time": "2026-11-04T08:00:00.000Z",
         "isToday": false
       },
       {
-        "title": "경기도의회, 17년 기다린 동탄트램…남은 과제는 적기 개통",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vMFRoVkZUTFJFZVFtQV9zOXlnTDhGemdkYkVvQjE2TUFGLUoxSXZMNHRNeU1mVmRfUjR6eVppWVA4OTNDaGNoRV9SMzllRHFDdlBQaGFQRnZ4M2w4bGJ3cmtQNWs?oc=5",
-        "source": "서울경제TV",
+        "title": "17년 기다린 ‘동탄 트램’, 31.5km 구간 첫 삽",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jRVZOTGtGeXk0UnRNOVFPV2dfVXJkcDRqMVVWUVY4NFc2ZFNsNld1SGlLZTNfSHhDS3o2bXNoMDlCMTJ2VTVDNjh5S2Zvc19INWFILW5CTHhGRVd1QVlvWGE5ZXhWRHgtLWxmSVc5NzVvSGlXY3fSAWZBVV95cUxQMHRtQi1JQk80YmlBYnJVSkVqbEJyRlZibHhsUVJUTDVUWDF4Z2RDT2ZDdllwbTAzaXNLWjBvNl9ITXc2OVV5RHhQeW5JanVCOThzN1Fvb1lNN004clBxM01MTTNPVEE?oc=5",
+        "source": "동아일보",
         "time": "2026-11-04T08:00:00.000Z",
         "isToday": false
       },
@@ -21463,7 +21463,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-27T16:57:21.548Z",
+    "fetchedAt": "2026-11-27T17:57:09.558Z",
     "today": "2026-11-28",
     "items": [
       {
