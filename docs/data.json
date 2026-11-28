@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T01:57:22.687Z",
+  "generatedAt": "2026-11-28T02:27:34.569Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15856,15 +15856,15 @@
       ]
     },
     "todayDate": "2026-11-28",
-    "lastFetchedAt": "2026-11-28T01:57:09.912Z",
+    "lastFetchedAt": "2026-11-28T02:27:23.015Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 160,
-      "recent24h": 726,
-      "frequent": 101,
-      "new": 21,
-      "fetchedAt": "2026-11-28T01:57:15.815Z"
+      "realtime": 177,
+      "recent24h": 730,
+      "frequent": 109,
+      "new": 27,
+      "fetchedAt": "2026-11-28T02:27:28.339Z"
     },
     "prevDate": "2026-11-27",
     "rows": [
@@ -17959,10 +17959,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 12주 전 64건에서 꾸준히 늘어 **현재 87건으로 약 36% 증가**했으며, 30일 전보다 6건 많아 매도 물량이 쌓여 온 것으로 보입니다. 다만 11월 25일 91건을 고점으로 최근 7일간 2건 줄어 증가세가 다소 주춤한 모습입니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 300만 원으로 그전 30일(9억 1,300만 원)과 비슷한 수준이지만, **1년 전 6억 4,300만 원 대비 크게 오른** 상태입니다. 최근 거래는 8억 5,000만~9억 7,000만 원으로 층별 편차가 크며, 평균호가 9억 9,600만 원이 최근 10일 실거래 평균 9억 2,200만 원보다 높게 형성되어 있습니다. 25평은 11월 2건 평균 7억 5,000만 원으로 **역대최고 7억 9,000만 원(11월 10일)**이 나왔으나, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 64건에서 87건으로 늘어 **매도 물량이 꾸준히 쌓여 온 흐름**으로 보입니다. 다만 11월 25일 91건을 고점으로 최근 7일간 2건 줄어 증가세가 다소 주춤한 모습입니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 큰 변화가 없습니다.",
+      "real": "33평 최근 30일 실거래는 5건, 평균 9억 300만 원으로 그전 30일(9억 1,300만 원)과 비슷해 **9억 원 안팎에서 횡보**하는 흐름입니다. 1년 전 무렵 평균 6억 4,300만 원과 비교하면 높은 수준이며, 10월 28일 10억 원으로 최고가를 기록했습니다. 25평은 최근 30일 2건, 평균 7억 5,000만 원으로 **1년 전(5억 3,500만 원)보다 크게 올랐지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-28T01:57:21.763Z"
+      "generatedAt": "2026-11-28T02:27:33.560Z"
     },
     "history": [
       {
@@ -21451,7 +21451,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-28T01:57:22.686Z",
+    "fetchedAt": "2026-11-28T02:27:34.569Z",
     "today": "2026-11-28",
     "items": [
       {
@@ -21477,9 +21477,9 @@
       },
       {
         "title": "신미숙 경기도의원, 외국인노동자 지원센터는 협약 후 중단·동탄트램은 지연…“경기도 약속 이행 책임져야”",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpZVB3bmpSbndvblZPOGFGRjZ6M2s3LVBQY1c4UnVkM3FhdTZybEdrY25LVXdtYjE1ZEstdzhiWE1vTUZuZkcxeDJ4T2xQYlVvcGUxNTgxV29kVHRZS0JzVzNzMl8?oc=5",
-        "source": "정도일보",
-        "time": "2026-11-19T22:56:03.000Z",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vNHpKa3AwdHMybFFKa2FZZDNWRHJ2NTg0eFZxWnMzTlRmaEhKVFphemVHSFFfS20xSTZjemJ5cU5KQXQwLWNGS2FJdkd0Z0Q1TzZr0gFTQVVfeXFMT280ekprcDB0czJsUUprYVlkM1ZEcnY1ODR4VnFaczNOVGZoSEpUWmF6ZUdIUV9LbTFJNmN6YnlxTkpBdDAtY0ZLYUl2R3RnRDVPNms?oc=5",
+        "source": "세계타임즈",
+        "time": "2026-11-19T13:38:32.000Z",
         "isToday": false
       },
       {
@@ -21505,9 +21505,16 @@
       },
       {
         "title": "경기도의회 신미숙 의원, 외국인노동자 지원센터는 협약 후 중단·동탄트램은 지연...“경기도 약속 이행 책임져야”",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB6ZnpCQTNUM3o3YWJHSm9WYUFBRGJSVG9tUGowYldDOHFMVkk0el9TdFdidVdMc2hCWHFudUpMZDhLdVNkUGlqMURhVGpuaHN2OHZ0R0NKNUNvek41Yk9OODdUazhmaE940gFsQVVfeXFMTllZc1paV3ZZbEVyanBvRWN5SWpMNmFrU1JQTXIyR3dwMlFqbTJoRklacTVvZE9SWXAxbGFiWXY2ekEyWDE3Z0tlNi1rVmFpR2NQVU52enY3Z3p4OGc0RUVqc0poNzNVWTliWkl4?oc=5",
-        "source": "시사팩트",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hcW9sQlFJR2VJbm1yaG9hbDcyRm9HRnlxYkJraDdlUThkcDV6b1BFZGs3Ql9nZ3VsckhjOVJ2UXdYV0VaaVNMMi13aW5HU25jRVZUbDk1WnpxSldyY3ZuUzlxXzlBd0dFR3BiNA?oc=5",
+        "source": "경기포커스",
         "time": "2026-11-19T09:03:49.000Z",
+        "isToday": false
+      },
+      {
+        "title": "경기도의회 신미숙 의원, 외국인노동자 지원센터 중단과 동탄트램 지연 문제 지적",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBiU3AtTGRCXzJOWmJ0VmxpRm00WnZTZ0JjeFlBbkNTdWhrMEJNbWUtMmlSTU9JeEtmOFd0ZDhTUy1BTlRYRUlKSkhkSVhlNW5JblVWag?oc=5",
+        "source": "팝업뉴스",
+        "time": "2026-11-19T08:43:57.000Z",
         "isToday": false
       },
       {
@@ -21516,20 +21523,20 @@
         "source": "매일경제",
         "time": "2026-11-10T08:00:00.000Z",
         "isToday": false
-      },
-      {
-        "title": "신미숙 경기도의원, 동탄트램 우선시공 착수 환영",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1LTktFbDJWMklqcVRxT1pGNko2empCWmxCZk5hRWZWZC1oRk51QmwtUlRfYnJlb01qYy1sY3dWOXV0RVFlU3ZPUG50U2R0UQ?oc=5",
-        "source": "화성신문",
-        "time": "2026-11-06T08:00:00.000Z",
-        "isToday": false
       }
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-28T01:57:22.627Z",
+    "fetchedAt": "2026-11-28T02:27:34.453Z",
     "today": "2026-11-28",
     "items": [
+      {
+        "title": "화성 동탄구서 신호 위반 차량 인도 돌진…오토바이 운전자 등 3명 부상",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5YWWJVeThoSzlqd3NXUkhiTXVGMS04YkM3VVppUkJ2bGVMUkdGcUZQMUdpOTlPeVRRd2hyTXVSSEVhN3dEWWJLNnJVZDlhNXBRUGRBcGx5YzBydFR3VmoyQjdB?oc=5",
+        "source": "경기신문",
+        "time": "2026-11-28T02:09:30.000Z",
+        "isToday": true
+      },
       {
         "title": "화성 동탄 사거리서 신호위반 승용차, 오토바이·보행자 잇달아 들이받아 3명 부상",
         "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB6eGtMOHNzMm5TbjJMcjU3MG90MEtDalBCeHpjckp6NGVXZVF0d0IyTDVFcUg1U2lESEhsall6dmRZTFlodnZodEp4YV8yZjNHcXdkSXRlQU0xSWxELTNTLTJwSVhBZ0Nib0lsWXZRV3hram8?oc=5",
@@ -21591,13 +21598,6 @@
         "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVnRzWXUtLTgxQ1RaSTJ5QmdDTTcyN1cyemRnTFFOeF9ZcUg2TU84NmxvRXl5dnMwbGFpSk1JRkpRd09VenFhZmRWQndNRlh2LXlucFNIQzRIZXNDcjZJZ0poTUxYS08wTll4YjlNLU1VdE1zUERCQm1hU2JxQ1VGNUs3cEExQjNR?oc=5",
         "source": "여행레저신문",
         "time": "2026-11-25T06:38:59.000Z",
-        "isToday": false
-      },
-      {
-        "title": "직영 매장으로 상권 채운다 '동탄역 대방 디엠시티 더센텀' 26일 대방장 오픈",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0d1FuUG5xQXlSMWdEZmZUWTBjZWI0Qmc2VXpKUmNvMmFSeU5Qc1RRdWs4QlhGX0h1bWtZenNOWmxzZ3hoamhGUldUbkE3dw?oc=5",
-        "source": "전자신문",
-        "time": "2026-11-25T02:22:46.000Z",
         "isToday": false
       }
     ]
