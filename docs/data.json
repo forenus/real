@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T04:27:39.237Z",
+  "generatedAt": "2026-11-28T04:57:57.721Z",
   "collectUrl": "https://applicants-front-streets-sought.trycloudflare.com",
   "state": {
     "complexNo": "110837",
@@ -15856,15 +15856,15 @@
       ]
     },
     "todayDate": "2026-11-28",
-    "lastFetchedAt": "2026-11-28T04:27:24.641Z",
+    "lastFetchedAt": "2026-11-28T04:57:26.022Z",
     "hogangnonoUrl": "https://hogangnono.com/apt/aCHdb/0/1",
     "hogangnono": {
       "url": "https://hogangnono.com/apt/aCHdb/0/1",
-      "realtime": 138,
+      "realtime": 126,
       "recent24h": 738,
-      "frequent": 81,
+      "frequent": 74,
       "new": 25,
-      "fetchedAt": "2026-11-28T04:27:32.722Z"
+      "fetchedAt": "2026-11-28T04:57:49.403Z"
     },
     "prevDate": "2026-11-27",
     "rows": [
@@ -17959,10 +17959,10 @@
       "mainName": "동탄역포레너스"
     },
     "analysis": {
-      "listing": "33평 매물은 최근 12주간 64건에서 87건까지 꾸준히 늘어 **12주 새 약 23건 증가**했고, 30일 전보다도 6건 많아 매도 물량이 쌓이는 흐름으로 보입니다. 다만 11월 25일 91건을 고점으로 최근 7일간 2건 줄어 증가세가 다소 주춤한 모습입니다. 25평은 **6건 안팎에서 횡보**하며 큰 변화가 없습니다.",
-      "real": "33평은 최근 30일 5건, 평균 9억 300만 원으로 그전 30일(6건, 9억 1,300만 원)과 비슷해 **9억 원대 초반에서 횡보**하고 있으며, 1년 전 무렵 평균 6억 4,300만 원과 비교하면 크게 오른 수준입니다. 25평은 최근 30일 2건 평균 7억 5,000만 원으로 **1년 전 무렵 5억 3,500만 원보다 높아졌지만**, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 33평 평균 호가 9억 9,600만 원은 최근 10일 실거래 평균 9억 2,200만 원보다 7천만 원가량 높게 형성돼 있습니다.",
+      "listing": "33평 매물은 최근 12주 동안 64건에서 87건으로 늘어 **매도 물량이 꾸준히 쌓여 온 흐름**으로 보입니다. 다만 11월 25일 91건으로 30일 최고를 찍은 뒤 오늘 87건으로 소폭 줄어 증가세는 다소 주춤한 모습입니다. 25평은 **4~7건 사이에서 횡보**하며 오늘 6건으로 변동이 없습니다.",
+      "real": "33평은 최근 30일 5건, 평균 9억 300만 원으로 그전 30일(6건, 9억 1,300만 원)과 비슷한 수준이며, 1년 전 무렵 평균 6억 4,300만 원과 비교하면 **약 2억 6천만 원 높은 수준**입니다. 25평은 11월에 7억 9,000만 원(2층)과 7억 1,000만 원에 2건이 거래돼 1년 전 평균 5억 3,500만 원보다 크게 올랐지만, 거래가 적어 평균이 크게 흔들릴 수 있습니다. 33평 평균호가는 9억 9,600만 원으로 **최근 10일 실거래 평균 9억 2,200만 원보다 7천만 원가량 높게** 형성돼 있습니다.",
       "source": "ai",
-      "generatedAt": "2026-11-28T04:27:38.996Z"
+      "generatedAt": "2026-11-28T04:57:56.446Z"
     },
     "history": [
       {
@@ -21451,7 +21451,7 @@
     }
   },
   "news": {
-    "fetchedAt": "2026-11-28T03:57:51.344Z",
+    "fetchedAt": "2026-11-28T04:57:57.720Z",
     "today": "2026-11-28",
     "items": [
       {
@@ -21527,7 +21527,7 @@
     ]
   },
   "newsDongtan": {
-    "fetchedAt": "2026-11-28T03:57:50.932Z",
+    "fetchedAt": "2026-11-28T04:57:57.365Z",
     "today": "2026-11-28",
     "items": [
       {
@@ -21567,7 +21567,7 @@
       },
       {
         "title": "화성 동탄서 승용차 인도 돌진 사고...보행자 등 3명 부상",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13MnRWLWdQcUt2M1dKT0xrVXYtQXdrRGR5ZUlBLWJpSUdxR3huanBOYW02Ry05WjVzYnZkU2E1MXFobnp2dmo5NXhUMmlaTEZtaGNfVlhueUpYUFVJYjFGTG1lbGZRSTlULV9hanNB0gFzQVVfeXFMUG9teUtOMEJaM0dybnZyRE4yOS1lLTJZRjFnS3NjcUhsYmVZX1h6NHlhb25kWTB4Z0xkcndjZklVU0ZMT0tDV1ZvYkVMNWs2dHBzdU9xOXZZamdncUJfQnd3alU4NEJoMW1IUEg2X0hmTklWUQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvbXlLTjBCWjNHcm52ckROMjktZS0yWUYxZ0tzY3FIbGJlWV9YejR5YW9uZFkweGdMZHJ3Y2ZJVVNGTE9LQ1dWb2JFTDVrNnRwc3VPcTl2WWpnZ3FCX0J3d2pVODRCaDFtSFBINl9IZk5JVlHSAXNBVV95cUxQb215S04wQlozR3JudnJETjI5LWUtMllGMWdLc2NxSGxiZVlfWHo0eWFvbmRZMHhnTGRyd2NmSVVTRkxPS0NXVm9iRUw1azZ0cHN1T3E5dllqZ2dxQl9Cd3dqVTg0QmgxbUhQSDZfSGZOSVZR?oc=5",
         "source": "한국일보",
         "time": "2026-11-27T14:59:00.000Z",
         "isToday": false
